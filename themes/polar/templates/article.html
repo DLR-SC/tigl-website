@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+
+	<div class="page-name background-bg page-name-bg">
+		<div class="overlay">
+			<div class="container">
+				<h2 class="page-title m0">
+					{{ article.title }} 
+				</h2>
+				<div class="page-location">
+					<a href="{{ SITEURL }}/">Home</a> <a href="#">News</a> <span>{{ article.title }}</span>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.overlay -->
+	</div><!-- /.page-name -->
+
+
+	<div id="contents"> 
+		<div class="container section-padding"> 
+			<div class="row">
+				<div class="col-md-9">
+					<div class="news-single"> 
+						<article class="type-post single-news single-post">
+							{% if article.image %} 
+								<div class="post-thumbnail">
+									<img src="{{ SITEURL }}/images/{{ article.image }}" alt="Event Post Thumbnail Image">   
+								</div><!-- /.post-thumbnail --> 	
+							{% endif %}
+
+
+							<div class="post-author-avatar">
+								<img src="{{ SITEURL }}/images/authors/{{ article.author}}.jpg" alt="Post Author Avatar">
+							</div>
+
+							<h2 class="post-title">
+								<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+							</h2> 
+
+							<footer class="entry-meta">
+								<span class="author">
+								{% for author in article.authors %}
+									<a href="{{ SITEURL }}/{{ author.url }}" rel="author">
+										<i class="fa fa-user"></i>
+										{{ author }}
+									</a> 
+								{% endfor %}
+								</span>
+								<span class="entry-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date">{{ article.locale_date }}</span>
+								</span>
+								<span class="comments-link">
+									<a href="{{ SITEURL }}/{{ article.url }}" rel="link">
+										<i class="fa fa-link"></i>
+											Permalink
+									</a>
+								</span>
+								{% if article.category %} 
+									<span class="cat-links">
+										<i class="fa fa-folder-o"></i>
+										<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+									</span>
+								{% endif %}
+								{% if article.tags %} 
+									<span class="cat-links">
+										<i class="fa fa-tags"></i>
+										{% for tag in article.tags %}
+											<a href="{{ SITEURL }}/{{ tag.url }}" rel="category tag">{{ tag }}</a>,
+										{% endfor %}
+									</span>
+								{% endif %}
+
+							</footer><!-- /.entry-meta --> 
+							<div class="entry">
+								{{ article.content }}  
+							</div><!-- /.entry --> 
+						</article>
+
+						<!--<div class="follow-us follow-share social-share">
+							<div class="follow-title">
+								<span>Share on Social Network</span>
+							</div>
+							<div class="social-btn text-center">
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+									<span>Facebook</span>
+								</a>
+								<a href="#" class="google-plus">
+									<i class="fa fa-google-plus"></i>
+									<span>Google +</span>
+								</a>
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+								<a href="#" class="linked-in">
+									<i class="fa fa-linkedin"></i>
+									<span>linked in</span>
+								</a>
+								<a href="#" class="instagram">
+									<i class="fa fa-instagram"></i>
+									<span>Instagram</span>		
+								</a>
+							</div><!-- /.social-btn --> 
+						</div><!-- /.follow-us --> 
+
+
+						{% if DISQUS_SITENAME %}
+        					<div id="comments" class="comments-area">
+							<h3 class="comments-title"> 
+								 Comments 
+							</h3><!-- /.comments-title -->
+        					{% include "disqus.html" %}
+        					</div>
+    					{% endif %}
+
+					</div><!-- /.news-single -->
+					
+				</div><!-- /.col-md-9 -->
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						{% if categories %}
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Categories
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+								{% for cat, null in categories %}
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+										</span> 
+									</li>
+								{% endfor %}   
+							</ul>
+						</aside><!-- /.widget -->
+						{% endif %}
+
+						{% if tags %}
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Tags
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+								{% for tag, null in tags %}
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+										</span> 
+									</li>
+								{% endfor %}   
+							</ul>
+						</aside><!-- /.widget -->
+						{% endif %}
+
+
+					</div><!-- /.sidebar -->
+				</div><!-- /.col-md-3 --> 
+
+
+		</div><!-- /.container -->  
+	</div><!-- /.contents -->
+
+
+</section><!-- /#content -->
+{% endblock content %}

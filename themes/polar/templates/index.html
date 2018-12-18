@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+
+
+	<section id="home-slider">
+		<div class="top-section image-slide">
+			<div id="top-carousel" class="carousel slide top-slider-container v2" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div id="home-slide-1" class="slide-img-bg"> 
+							<div class="slide-contents overlay"> 
+								<div class="container">
+									<div class="top-headings">
+										<h2 class="top-heading-1"> 
+											DISTRIBUTED
+											INTEGRATION ENVIRONMENT
+										</h2> 
+									</div><!-- /.top-headings -->
+									<p class="top-sec-txt">
+										Standalone tools can be integrated into RCE to build automated, executable workflows. Tools may run on different servers.
+									</p>
+									<div class="button-container">
+										<a href="{{ SITEURL }}/pages/features.html">
+											<button type="button" class="btn top-sec-btn">More Information</button>
+										</a>
+										<a class="video-link" href="https://www.youtube-nocookie.com/embed/0OfmtIhmozY"><span class="icon"><i class="fa fa-play-circle-o"></i></span> Graphical User Interface - Fly Through </a>
+									</div><!-- /.button-container -->
+								</div><!-- /.container -->
+							</div><!-- /.slide-contents --> 
+						</div><!-- /.background-bg -->
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div id="home-slide-2" class="slide-img-bg"> 
+							<div class="slide-contents overlay"> 
+								<div class="container">
+									<div class="top-headings">
+										<h2 class="top-heading-1"> 
+											SIMULATION OF
+											COMPLEX SYSTEMS
+										</h2> 
+									</div><!-- /.top-headings -->
+									<p class="top-sec-txt">
+										RCE helps engineers and scientists to analyze, optimize, and design complex systems like aircraft, ships, or satellites.
+									</p>
+									<div class="button-container">
+										<a href="{{ SITEURL }}/pages/download.html">
+											<button type="button" class="btn top-sec-btn">Download Now</button> 
+										</a>
+									</div><!-- /.button-container -->
+								</div>
+							</div><!-- /.slide-contents --> 
+						</div><!-- /.background-bg -->
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div id="home-slide-3" class="slide-img-bg">  
+							<div class="slide-contents overlay"> 
+								<div class="container">
+									<div class="top-headings">
+										<h2 class="top-heading-1"> 
+											CONCURRENT 
+											ENGINEERING
+										</h2> 
+									</div><!-- /.top-headings -->
+									<p class="top-sec-txt">
+										Handling complex systems requires many experts and several tools.
+										RCE is especially suited for multidisciplinary collaboration and concurrent engineering.
+									</p>
+									<div class="button-container">
+										<a href="{{ SITEURL }}/pages/download.html">
+											<button type="button" class="btn top-sec-btn">Download Now</button>
+										</a>
+									</div><!-- /.button-container -->
+								</div>
+							</div><!-- /.slide-contents --> 
+						</div><!-- /.background-bg -->
+					</div><!-- /.item -->
+					
+										<div class="item">
+						<div id="home-slide-2" class="slide-img-bg"> 
+							<div class="slide-contents overlay"> 
+								<div class="container">
+									<div class="top-headings">
+										<h2 class="top-heading-1"> 
+											MORE SUCH SECTIONS
+											UNDER
+										</h2> 
+									</div><!-- /.top-headings -->
+									<p class="top-sec-txt">
+										rce-website\themes\polar\templates\index.html
+									</p>
+									<div class="button-container">
+										<a href="{{ SITEURL }}/pages/download.html">
+											<button type="button" class="btn top-sec-btn">Download Now</button> 
+										</a>
+									</div><!-- /.button-container -->
+								</div>
+							</div><!-- /.slide-contents --> 
+						</div><!-- /.background-bg -->
+					</div><!-- /.item -->
+					
+					
+					
+					
+				</div><!-- /.carousel-inner --> 
+				<!-- Controls -->
+				<a class="left slide-nav" href="#top-carousel" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right slide-nav" href="#top-carousel" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div><!-- /#top-carousel /.top-carousel-container --> 
+		</div><!-- /.top-section -->
+	</section>
+
+
+
+	<div id="contents"> 
+		<div class="container">
+			<section class="row about-us section-padding pb0">
+				<h3 class="section-title">What is TiGL?</h3>
+				<div class="col-md-6 md-bm-50">
+					
+					<p>
+					    TiGL is an open source software package for the parametric modeling of aircraft geometries. 
+						At the DLR, TiGL is used as a central tool for the analysis and optimization of aircraft, 
+					    in which the aircraft geometries generated in TiGL are made available to the simulation tools 
+						via various interfaces. An overview about TiGL gives this <a href="https://elib.dlr.de/124524/">survey article</a>.<br/>
+
+						
+					</p>
+				</div><!-- /.col-md-6 -->
+				<div class="col-md-6">
+					<div class="video-container">
+						<iframe width="560" height="315" src="/theme/images/flugzeug-animiert-380px.mp4" frameborder="0" allowfullscreen></iframe>
+						<!--  https://www.youtube-nocookie.com/embed/0OfmtIhmozY -->
+						
+					</div>
+				</div><!-- /.col-md-6 -->
+			</section><!-- /.about-us -->
+
+
+		
+
+			<section id="news" class="news row section-padding pb0">
+				<!-- <div class="row"> -->
+					<div class="col-md-9">
+						<div class="blog-page"> 
+
+							{% for article in articles_page.object_list %}
+
+							<article class="type-post single-news single-post">
+								{% if article.image %} 
+									<div class="post-thumbnail">
+										<img src="{{ SITEURL }}/images/{{ article.image }}" alt="Event Post Thumbnail Image">   
+									</div><!-- /.post-thumbnail --> 	
+								{% endif %}
+										 
+
+								<h2 class="post-title">
+									<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+								</h2> 
+
+								<footer class="entry-meta">
+									<span class="author">
+									{% for author in article.authors %}
+										<a href="{{ SITEURL }}/{{ author.url }}" rel="author">
+											<i class="fa fa-user"></i>
+											{{ author }}
+										</a> 
+									{% endfor %}
+									</span>
+									<span class="entry-date">
+										<i class="fa fa-calendar-o"></i>
+										<span class="date">{{ article.locale_date }}</span>
+
+									</span>
+									<span class="comments-link">
+										<a href="{{ SITEURL }}/{{ article.url }}" rel="link">
+											<i class="fa fa-link"></i>
+											Permalink
+										</a>
+									</span>
+									<!--
+									<span class="comments-link">
+										<i class="fa fa-comment-o"></i>
+										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
+									</span>
+									-->
+									{% if article.category %} 
+										<span class="cat-links">
+											<i class="fa fa-folder-o"></i>
+											<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+										</span>
+									{% endif %}
+
+									{% if article.tags %} 
+										<span class="cat-links">
+											<i class="fa fa-tags"></i>
+											{% for tag in article.tags %}
+												<a href="{{ SITEURL }}/{{ tag.url }}" rel="category tag">{{ tag }}</a>,
+											{% endfor %}
+										</span>
+									{% endif %}
+										
+
+
+								</footer><!-- /.entry-meta --> 
+								<div class="entry"> 
+									<p>
+										{{ article.summary }}  
+								</div><!-- /.entry --> 
+								<div class="btn-container">
+									<a href="{{ SITEURL }}/{{ article.url }}" class="read-more">
+										Learn more <i class="fa fa-arrow-circle-o-right"></i>
+									</a>
+								</div>
+
+							</article> 
+							{% endfor %}
+
+
+
+							<nav class="pagination paging-navigation" role="navigation">
+								{% if articles_page.has_previous() %}
+								{% set num = articles_page.previous_page_number() %}
+	    							<a class="prev page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html"><i class="fa fa-angle-double-left"></i></a>
+								{% else %}
+	    							<a class="prev disabled" href="#"><i class="fa fa-angle-double-left"></i></a>
+								{% endif %}
+
+								{% for num in range( 1, 1 + articles_paginator.num_pages ) %}
+	    							<a class="page-numbers {{ 'active' if num == articles_page.number else '' }}" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a>
+								{% endfor %}
+
+								{% if articles_page.has_next() %}
+	    							<a class="next page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" title="Next"><i class="fa fa-angle-double-right"></i></a>
+								{% else %}
+							    	<a class="next disabled" href="#"><i class="fa fa-angle-double-right"></i></a>
+								{% endif %}
+							</nav><!-- /.paging-navigation -->
+
+
+
+
+						</div><!-- /.blog-page -->
+
+
+					</div><!-- /.col-md-9 -->
+
+			<!--	</div><!-- /.row --> 
+			</section><!-- /.news -->		
+
+		</div><!-- /.container --> 
+
+	</div><!-- /.contents -->
+
+
+
+</section><!-- /#content -->
+{% endblock content %}

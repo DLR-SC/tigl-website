@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+<section id="content">
+
+	<div class="page-name background-bg page-name-bg">
+		<div class="overlay">
+			<div class="container">
+				<h2 class="page-title m0">
+					{{ page.title }}
+				</h2>
+				<div class="page-location">
+					<a href="{{ SITEURL }}/">Home</a> <span> {{ page.title }} </span>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.overlay -->
+	</div><!-- /.page-name -->
+
+
+
+	<section id="team"> 
+		<div id="contents"> 
+			<div class="container section-padding"> 
+				<h2 class="section-title">{{ page.title }}</h2>
+				{{ page.content }}
+			</div><!-- /.container -->
+		</div>
+	</section><!-- /#team -->
+
+
+	
+
+
+</section><!-- /#content -->
+{% endblock content %}
