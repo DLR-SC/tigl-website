@@ -3186,13 +3186,13 @@ article.news-container  .entry {
 /* 36 - Background  Images 
 ******************************************************/
 #home-slide-1 {
-	background-image: url('../../images/slider/slider-1.jpg');
+	background-image: url('../../images/slider/slider1.jpg');
 }
 #home-slide-2 {
-	background-image: url('../../images/slider/slider-2.jpg');
+	background-image: url('../../images/slider/slider2.jpg');
 }
 #home-slide-3 {
-	background-image: url('../../images/slider/slider-3.jpg');
+	background-image: url('../../images/slider/slider3.jpg');
 }
 #home-slide-4 {
 	background-image: url('../../images/slider/slider-4.jpg');
