@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DLR'
-SITENAME = u'RCE'
+SITENAME = u'TiGL'
 SITEURL = ''
 
 PATH = 'content'
@@ -30,8 +30,7 @@ LINKS = (('Simulation and Software Technology', 'http://www.dlr.de/sc'),
 		 ('Privacy', '/pages/privacy.html'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/RCEnvironment'),
-          ('YouTube', 'https://www.youtube.com/user/rcenvironment'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 
