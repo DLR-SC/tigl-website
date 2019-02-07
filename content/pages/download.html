@@ -2,15 +2,16 @@
     <head>
         <title>Download</title>
         <meta name="status" content="hidden" />
-        <meta name="date" content="2012-07-09 22:28" />
-        <meta name="authors" content="Doreen Seider" />
-        <meta name="summary" content="Download of RCE" />
+        <meta name="date" content="2019-02-07 22:28" />
+        <meta name="authors" content="Martin Siggel" />
+        <meta name="summary" content="Download TiGL" />
     </head>
     <body>
   		
         <div class="col-md-9">
 
-			<p>TiGL runs on several old machines. Currently we also support the python 2.7 extension module of TiGL. See more details in the <a href="http://tigl.sourceforge.net/Doc/index.html"><i class="fa fa-file-pdf-o"></i> user guide</a>.
+			TiGL runs on a Windows, Linux, macOS and Android. We support a range of Linux distributions, including Ubuntu and CentOS. 
+            TiGL supports Python 3.5 and above. See more details in the <a href="http://tigl.sourceforge.net/Doc/index.html"><i class="fa fa-file-pdf-o"></i> user guide</a>.
         </div>
 
         <div class="col-md-3">
@@ -20,7 +21,7 @@
                         Open Source
                     </h3><!-- /.widget-title -->
                     <p>
-                        RCE is Open Source, published under the <a href="http://opensource.org/licenses/EPL-1.0">Eclipse Public License (EPL)</a>, and built upon the Eclipse Rich Client Platform (RCP).
+                        TiGL is Open Source, published under the <a href="http://opensource.org/licenses/apache2.0.php">Apache 2 License</a>, and uses other Open Source software.
                     </p>
                 </aside><!-- /.widget -->
             </div><!-- /.sidebar -->
@@ -40,12 +41,26 @@
                             <p>
                                 <a href="https://github.com/DLR-SC/tigl/releases"><i class="fa fa-download"></i> Download</a>
                             </p>
-                            <p>
-                                <a href="http://tigl.sourceforge.net/Doc/index.html"><i class="fa fa-file-pdf-o"></i> User Guide</a>
-                            <p>
                         </p>
                     </div>
                 </div><!-- /.col-md-3 -->
+
+                <div class="col-md-3 md-bm-50">
+                        <div class="todobox">
+                            <h6 class="box-title">
+                                macOS
+                            </h6>
+                            <div class="icon">
+                                <i class="fa fa-apple"></i>
+                            </div>
+                            <p class="texts">
+                                On macOS, we provide a apple disk image (DMG) file. To install, drag TiGL Viewer into your app folder.
+                                <p>
+                                    <a href="https://github.com/DLR-SC/tigl/releases"><i class="fa fa-download"></i> Download</a>
+                                </p>
+                            </p>
+                        </div>
+                    </div><!-- /.col-md-3 -->
 
                 <div class="col-md-3 md-bm-50">
                     <div class="todobox">
@@ -60,9 +75,6 @@
                             <p>
                                 <a href="https://software.opensuse.org/download.html?project=science:dlr&package=tigl"><i class="fa fa-download"></i> Download</a>
                             </p>
-                            <p>
-                                <a href="http://tigl.sourceforge.net/Doc/index.html"><i class="fa fa-file-pdf-o"></i> User Guide</a>
-                            <p>
 
                         </p>
                     </div>
@@ -74,7 +86,7 @@
                             Source Code
                         </h6>
                         <div class="icon">
-                            <i class="fa fa-github-alt"></i>
+                            <i class="fa fa-github"></i>
                         </div>
                         <p class="texts">
                             Clone or fork the source code from github to build or modify TiGL by yourself.
@@ -118,7 +130,13 @@
 
             </section><!-- /.co2-emission -->
 
-
+            <div class="col-md-9">
+                    <h2>Python</h2>
+                    <p>
+                        TiGL and all it's dependencies can be installed best with the conda package manager as follows:
+                    </p>
+                    <code> conda install -c dlr-sc tigl3</code>
+            </div>
 
     </body>
 </html>
