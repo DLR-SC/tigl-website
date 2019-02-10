@@ -35,8 +35,8 @@
     {% endblock head %}
 	
 	<!-- META DATA -->
-	<meta name="description" content="RCE is a distributed, workflow-driven integration environment." >
-	<meta name="keywords" content="rce, DLR, distributed-systems, simulation, aeronautics, aerospace, space, optimization, MDO, Open Source">
+	<meta name="description" content="The TiGL Geometry Library to process aircraft geometries in pre-design." >
+	<meta name="keywords" content="tigl, dlr, cad, geometry, design, simulation, aeronautics, aerospace, space, optimization, MDO, Open Source">
 	<meta name="author" content="Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR)">
 
 	<!-- Mobile Specific Meta -->
@@ -47,26 +47,26 @@
       FAV AND TOUCH ICONS  
     ============================== -->
 
-    <!-- ****** faviconit.com Favicons ****** -->
-	<link rel="shortcut icon" href="{{ SITEURL }}/theme/images/TiGL.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="{{ SITEURL }}/theme/images/TiGL.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="{{ SITEURL }}/theme/images/rce-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="{{ SITEURL }}/theme/images/rce-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="{{ SITEURL }}/theme/images/rce-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="{{ SITEURL }}/theme/images/Icon_TIGL_64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/Icon_TIGL_32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/images/Icon_TIGL_16.png">
-	<link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/rce-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/rce-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/rce-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/rce-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/rce-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/rce-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/rce-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/rce-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/rce-180.png">
+	<!-- ****** faviconit.com Favicons ****** -->
+	<link rel="shortcut icon" href="{{ SITEURL }}/theme/images/icon/TiGL.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-16.png">
+	<link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/icon/Icon_TIGL-180.png">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/rce-144.png">
+	<meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/icon/Icon_TIGL-144.png">
 	<meta name="msapplication-config" content="{{ SITEURL }}/theme/browserconfig.xml">
 	<!-- ****** faviconit.com Favicons ****** -->
 
@@ -129,7 +129,7 @@
 
 					<!--	<li><a href="{{ SITEURL }}/#contents">What is TiGL?</a></li>   -->
 						
-						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#contents">What is TiGL?</a></li>
+						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#contents">About TiGL</a></li>
 						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#news">News</a></li>
 
 						{% for title, link in MENUITEMS %}

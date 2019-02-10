@@ -1,6 +1,6 @@
 # Website for RCE
 
-Homepage (landing page) and announcements for RCE (http://rcenvironment.de).
+Homepage (landing page) and announcements for TiGL (http://tigl.github.io).
 
 Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [CodePassenger](http://www.codepassenger.com/).
 
@@ -17,18 +17,18 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
   pip install ghp-import
   ```
 
-* Clone rce-website
+* Clone tigl-website
 
   ```
-  git clone https://github.com/DLR-SC/rce-website
+  git clone https://github.com/DLR-SC/tigl-website
   ```
   or
   ```
-  git clone git@github.com:DLR-SC/rce-website.git
+  git clone git@github.com:DLR-SC/tigl-website.git
   ```
 * Change to 
   ```
-  rce-website/
+  tigl-website/
   ```
 
 ### Configuration
@@ -71,12 +71,12 @@ Add new articles to `content`.
 
 ### Metadata
 
-The required meta data for RCE release announcements are:
+The required meta data for TiGL release announcements are:
 ```
-Title: Release 6.3.0 
-Date: 2015-07-29 10:20
+Title: Release 3.0.0
+Date: 2019-01-01 00:00
 Category: Releases
-Author: RCE
+Author: TiGL
 ```
 
 
