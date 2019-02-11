@@ -8,7 +8,7 @@
     <body>
 
 	<p>  		
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		TiGL is a C++ library for aircraft design. It's main features are:
 	</p>
 
 	<section id="success-story">
@@ -21,7 +21,7 @@
 								Parametric Geometry
 							</h2>
 							<p>
-								TiGL transforms parametric <a href="http://localhost:8001/pages/ecosystem.html#ecosystem_cpacs">CPACS</a>
+								TiGL transforms parametric <a href="ecosystem.html#ecosystem_cpacs">CPACS</a>
 								models into 3D aircraft geometries.
 								It plays a central role in the preliminary aircraft design process,
 								allowing to access and analyze a variety of aircraft concepts.
@@ -117,7 +117,14 @@
 								Standardized Geometry Exports
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+								To use TiGL's geometries in other software - like mesh generators, 
+								cad programs or 3D rendering tools - TiGL can export them
+								into different standardized file formats. 
+								TiGL supports CAD standards like STEP (ISO 10303) or IGES
+								as well as Open CASCADE's internal BREP format.
+								TiGL also allows to export the triangulated surfaces into 
+								the VTK or STL format. The collada file format can directly
+								be imported into Blender to create visually impressive 3D renderings.
 							</p>
 						</div><!-- /.col-md-6 -->
 
@@ -140,10 +147,48 @@
 					<div class="row">
 						<div class="col-md-6">
 							<h2 class="title">
+								Script with Python
+							</h2>
+							<p>
+								TiGL's C++ class structure can be used from Python and is fully
+								interoperable with <a href="ecosystem.html#ecosystem_oce">pythonOCC</a>.
+								You can access the CPACS data tree this way or you can query the geometries.
+								With pythonOCC, it is even possible to alter
+								the geometries created by TiGL or to reuse them to create new geometries.
+								PythonOCC comes with a simple 3D viewer that you can use to visualize
+								TiGL geometries in your own Python programs.
+							</p>
+						</div><!-- /.col-md-6 -->
+
+						<div class="col-md-6">
+							<div class="video-container">
+								<img width="570px" src="images/features/PythonLight.png"/>
+
+							</div>
+						</div><!-- /.col-md-6 -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.overlay -->
+		</div><!-- /.background-bg -->
+	</section><!-- /#success-story -->
+
+	<section id="success-story">
+		<div class="success-story background-bg"> 
+			<div class="overlay subsection-padding"> 
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2 class="title">
 								Visualization
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+								Instead of using directly the TiGL library, we also ship the program TiGL Viewer
+								with each software release. This is a simple viewer visualizes the geometries
+								created by TiGL. It comes with a JavaScript based console that allows to 
+								automatize the visualization to e.g. create movies. 
+								TiGL Viewer can import also other CAD formats. This comes really handy when
+								developing CPACS files to re-create existing aircraft configurations.
+
 							</p>
 						</div><!-- /.col-md-6 -->
 
