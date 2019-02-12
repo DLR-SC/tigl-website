@@ -45,4 +45,4 @@ PLUGIN_PATHS = ["plugins", "d:\\rce\\plugins"]
 PLUGINS = ['pelican-page-hierarchy.page_hierarchy',]
 
 # Github pages domain name
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+# EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
