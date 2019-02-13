@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DLR'
-SITENAME = u'TiGL'
+SITENAME = u'The TiGL Geometry Library'
 SITEURL = ''
 
 PATH = 'content'
