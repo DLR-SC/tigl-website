@@ -20,8 +20,21 @@ If you have any questions, contact
   </p>
 </div>
 
-### Mailing List ###
+### Subscribe Mailing List ###
 
-If you want to keep in touch with news around TiGL, please join our mailing list:
+If you want to keep in touch with news around TiGL, please join our mailing list. This can be done by sending a mail with the following link:
 
-[Coming soon]()
+[Subscribe for TiGL-News](mailto:listserv@dlr.de?subject=Subscribe&body=subscribe%20tigl)
+
+### Unsubscribe Mailing List ###
+
+If you do not want to receive messages from the mailing list you can unsubscribe by sending the email prepared at the following link:
+
+[Unsubscribe from TiGL-News](mailto:listserv@dlr.de?subject=Unsubscribe&body=signoff%20tigl)
+
+__If you experience problems subscribing or unsubscribing please let us know by sending a mail to [tigl@dlr.de](mailto:listserv@dlr.de).__
+
+We store the information entered by you in order to provide you with service.
+It is only used for this purpose and is not transferred to third parties.
+The data is deleted as soon as it is no longer required for the purpose for which it was collected.
+The legal basis for processing of the data is set out in Art. 6 Paragraph 1 (f) GDPR. [privacy](privacy.html)
