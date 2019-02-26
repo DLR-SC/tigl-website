@@ -98,21 +98,21 @@
 	<div id="contents"> 
 		<div class="container">
 			<section class="row about-us section-padding pb0">
-				<div class="col-md-6 md-bm-50">
+				<div class="col-md-6">
 					<h3 class="section-title">About</h3>
 					<p>
-					    The TiGL Geometry Library (TiGL) is an open source software package for the parametric modeling of aircraft geometries. 
-						It is developed at the German Aerospace Center (DLR) at the department of 
-						<a href="https://www.dlr.de/sc/en/desktopdefault.aspx/tabid-11647/20362_read-47646/">High-Performace Computing</a>.
-						At the DLR, TiGL is used as a central tool for the analysis and optimization of aircraft, 
-					    in which the aircraft geometries generated in TiGL are made available to the simulation tools 
-						via various interfaces.
-						TiGL thus provides the link between the parametric CPACS description of the aircraft and these tools.
-						It offers functions for exporting the geometry to common CAD formats (IGES, STEP, VTK) as well as
-						functions for calculating points and curves on the aircraft surface.
+						The optimization of an aircraft e.g. to minimize fuel consumption involves many disciplines, each with their own simulation tools.
+						Many of these simulation tools require a precise modeling of the aircraft geometry.
+						At the DLR, this task is performed by the software TiGL (TiGL Geometry Library), 
+						which generates a complete 3-dimensional geometric representation of the aircraft from a parametric geometry description.
+						This includes both the outer geometry, which is exposed to the air flow, and the inner structural geometry,
+						which is crucial for the load stability of the aircraft.
 					</p>
-					<p>	Find an overview about TiGL on the <a href="pages/features.html">feature</a> page
-						or have a look at this <a href="https://elib.dlr.de/124524/">survey article</a>.
+					<p>	
+						TiGL thus provides the interface between the parametric CPACS description of the aircraft and the simulation tools.
+						TiGL offers functions for exporting the geometry to common
+						CAD formats (IGES, STEP, VTK) as well as functions for calculating
+						points and curves on the aircraft surface.
 					</p>
 				</div><!-- /.col-md-6 -->
 				<div class="col-md-6">
@@ -125,7 +125,33 @@
 					</div>
 				</div><!-- /.col-md-6 -->
 			</section><!-- /.about-us -->
-		
+			<section class="row about-us pb0">
+				<div class="col-md-12 md-bm-50">
+					<p>	
+						TiGL uses the OpenCASCADE CAD kernel to model the aircraft geometry with NURBS surfaces.
+						The library also provides interfaces to many common programming languages such as C, C++, Python, Java and MATLAB.
+						In addition, the TiGL software package includes the TiGL Viewer that enables also the visualization of the aircraft geometries and other CAD files.
+					</p>
+					<p>	
+						TiGL is developed at the German Aerospace Center (DLR) at the department of 
+						<a href="https://www.dlr.de/sc/en/desktopdefault.aspx/tabid-11647/20362_read-47646/">High-Performace Computing</a>.
+						Find an overview about TiGL on the <a href="pages/features.html">feature</a> page
+						or have a look at this <a href="https://elib.dlr.de/124524/">survey article</a>.
+					</p>
+				</div><!-- /.col-md-12 -->
+			</section><!-- /.about-us -->
+
+			<section class="row about-us section-padding pb0">
+				<div class="col-md-12 md-bm-50">
+					<h3 class="section-title">Cite &amp; Acknowledge</h3>
+					<p>
+						TiGL is available as Open Source and we encourage anyone to make use of it. If you are applying TiGL in a scientific environment and publish any related work, please cite the following artice:
+					</p>
+					<p>
+						M. Siggel, J. Kleinert, T. Stollenwerk, R. Maierl (2018): <a href="https://arxiv.org/abs/1810.10795"><em>TiGL - An Open Source Computational Geometry Library for Parametric Aircraft Design.</em></a>, arXiv:1810.10795 [cs.CG]
+					</p>
+				</div><!-- /.col-md-12 -->
+			</section><!-- /.about-us -->
 
 			<section id="news" class="news row section-padding pb0">
 				<!-- <div class="row"> -->
