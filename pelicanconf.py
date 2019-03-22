@@ -35,6 +35,16 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 
+SITEMAP = {
+    'exclude': ['author/'],
+    'format': 'xml',
+    'changefreqs': {
+        'articles': 'weekly',
+        'pages': 'monthly',
+        'indexes': 'yearly'
+    }
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
@@ -42,8 +52,8 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME']
 
 # Plugins
-PLUGIN_PATHS = ["plugins", "d:\\rce\\plugins"]
-PLUGINS = ['pelican-page-hierarchy.page_hierarchy',]
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ['pelican-page-hierarchy.page_hierarchy', 'sitemap']
 
 # Github pages domain name
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
