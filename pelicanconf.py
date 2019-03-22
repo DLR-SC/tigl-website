@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'DLR'
 SITENAME = u'The TiGL Geometry Library'
 SITEURL = ''
+SITE_SUMMARY = 'The TiGL Geometry Library to process aircraft geometries in pre-design.'
 
 PATH = 'content'
 

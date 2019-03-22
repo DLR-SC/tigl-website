@@ -5,8 +5,15 @@
 	<meta charset="UTF-8">
 	
 	<!-- TITLE OF SITE -->
+	{% if article %}
+	<title>{{ article.title }} | {{ SITENAME }}</title>
+	{% else %}
 	<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+	{% endif%}
 
+	{% if article %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}"/>
+	{% endif%}
 
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -35,8 +42,12 @@
     {% endblock head %}
 	
 	<!-- META DATA -->
-	<meta name="description" content="The TiGL Geometry Library to process aircraft geometries in pre-design." >
-	<meta name="keywords" content="tigl, dlr, cad, geometry, design, simulation, aeronautics, aerospace, space, optimization, MDO, Open Source">
+	{% if article and article.summary %}
+    <meta name="description" content="{{ article.summary|striptags }}"/>
+    {% else %}
+    <meta name="description" content="{{ SITE_SUMMARY }}"/>
+    {% endif%} 
+	<meta name="keywords" content="tigl, aircraft, dlr, cad, geometry, design, simulation, aeronautics, aerospace, space, optimization, MDO, Open Source">
 	<meta name="author" content="Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR)">
 
 	<!-- Mobile Specific Meta -->

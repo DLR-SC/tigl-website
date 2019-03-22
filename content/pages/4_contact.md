@@ -1,7 +1,7 @@
 Title: Contact
 Date: 2019-02-07 10:20
-Category: Contancs
-Author: TiGL
+Category: Contacts
+Author: Martin Siggel
 
 
 TiGL is developed by the [High-Performance Computing department](https://www.dlr.de/sc/en/desktopdefault.aspx/tabid-11647/20362_read-47646/)
