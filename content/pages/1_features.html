@@ -8,7 +8,7 @@
     <body>
 
 	<p>  		
-		TiGL is a geometry library for aircraft design. It is the connection between the CPACS parametrization of the aicraft and 
+		TiGL is a geometry library for aircraft design. It is the connection between the CPACS parametrization of the aircraft and 
 		the simulation tools. TiGL is written in C++ but comes with a variety of language bindings
 		for the major programming languages used by engineers. Here's a short overview about the core
 		features of TiGL.
@@ -27,7 +27,7 @@
 								TiGL transforms parametric <a href="ecosystem.html#ecosystem_cpacs">CPACS</a>
 								models into 3D aircraft geometries.
 								It plays a central role in the preliminary aircraft design process,
-								allowing to access and analyze a variety of aircraft concepts.
+								allowing accessing and analyzing a variety of aircraft concepts.
 								The CPACS model contains a parametric description of wings, fuselages,
 								engines, control surfaces or the inner aircraft structure. TiGL computes
 								CAD models from these components and gives access to them via
@@ -60,7 +60,7 @@
 									The backbone of TiGL surface modeling algorithms is the curve network 
 									interpolation based on Gordon surfaces. The curve network interpolation
 									allows to model surfaces using additional guide curves, which adds
-									more flexibilty in surface design while keeping the surface complexity
+									more flexibility in surface design while keeping the surface complexity
 									low at the same time. The algorithm is used for most of modeling tasks, 
 									including wings, fuselages, nacelles or pylons.
 								</p>
@@ -121,12 +121,12 @@
 							</h2>
 							<p>
 								To use TiGL's geometries in other software - like mesh generators, 
-								cad programs or 3D rendering tools - TiGL can export them
+								CAD programs or 3D rendering tools - TiGL can export them
 								into different standardized file formats. 
 								TiGL supports CAD standards like STEP (ISO 10303) or IGES
 								as well as Open CASCADE's internal BREP format.
 								TiGL also allows to export the triangulated surfaces into 
-								the VTK or STL format. The collada file format can directly
+								the VTK or STL format. The Collada file format can directly
 								be imported into Blender to create visually impressive 3D renderings.
 							</p>
 						</div><!-- /.col-md-6 -->
@@ -155,7 +155,7 @@
 							<p>
 								TiGL's C++ class structure can be used from Python and is fully
 								interoperable with <a href="ecosystem.html#ecosystem_oce">pythonOCC</a>.
-								You can access the CPACS data tree this way or you can query the geometries.
+								You can access the CPACS parameter tree this way or you can query the geometries.
 								With pythonOCC, it is even possible to alter
 								the geometries created by TiGL or to reuse them to create new geometries.
 								PythonOCC comes with a simple 3D viewer that you can use to visualize
@@ -188,8 +188,8 @@
 								Instead of using directly the TiGL library, we also ship the program TiGL Viewer
 								with each software release. This is a simple viewer visualizes the geometries
 								created by TiGL. It comes with a JavaScript based console that allows to 
-								automatize the visualization to e.g. create movies. 
-								TiGL Viewer can import also other CAD formats. This comes really handy when
+								automate the visualization to e.g. create movies. 
+								TiGL Viewer can import and display also other CAD formats. This comes really handy when
 								developing CPACS files to re-create existing aircraft configurations.
 
 							</p>
