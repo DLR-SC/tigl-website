@@ -53,7 +53,7 @@ STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME']
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ['pelican-page-hierarchy.page_hierarchy', 'sitemap']
+PLUGINS = ['pelican-page-hierarchy.page_hierarchy', 'sitemap', 'pelican-open_graph']
 
 # Github pages domain name
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}

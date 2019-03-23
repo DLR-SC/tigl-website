@@ -15,6 +15,7 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
   pip install markdown
   pip install fabric
   pip install ghp-import
+  pip install bs4
   ```
 
 * Clone tigl-website

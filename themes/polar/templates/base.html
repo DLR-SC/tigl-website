@@ -50,6 +50,18 @@
 	<meta name="keywords" content="tigl, aircraft, dlr, cad, geometry, design, simulation, aeronautics, aerospace, space, optimization, MDO, Open Source">
 	<meta name="author" content="Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR)">
 
+	{% if article %}
+	{% for tag in article.ogtags %}
+	<meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
+	{% endfor %}
+	{% endif %}
+	
+	{% if page  %}
+	{% for tag in page.ogtags %}
+	<meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
+	{% endfor %}
+	{% endif %}
+
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
