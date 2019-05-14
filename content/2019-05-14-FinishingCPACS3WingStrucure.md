@@ -53,7 +53,7 @@ CPACS 2 allowed to explicitly placing a rib in a wing section element.
 With the new definition, ribs can be placed with arbitrary eta/xsi
 coordinate combinations, which also enables to place a rib in a section.
 
-In TiGL 2 however, ribs that have been placed into a section where not
+In TiGL 2 however, ribs that have been placed into a section were not
 affected by a rib rotation around the z axis. Meaning, the rib kept always
 to be in the section. With the new definition, this is not the case anymore.
 The cpacs2to3 converter will return a warning in this case.
