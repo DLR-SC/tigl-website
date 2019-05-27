@@ -1,4 +1,4 @@
-# Website for RCE
+# Website for TiGL
 
 Homepage (landing page) and announcements for TiGL (http://tigl.github.io).
 
@@ -6,17 +6,19 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 ## Local Installation
 
-* Install Python ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
+* Install Python 2.7 ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
 
 * Install Pelican and supporting libraries
 
   ```
   pip install pelican==3.7.1
   pip install markdown
-  pip install fabric
+  pip install "fabric<2"
   pip install ghp-import
   pip install bs4
   ```
+
+***To Do: The API of fabric changed from version 1.14 to 2.4. We need 1.14 which only exists for python 2.7. We should probably modernize these two dependencies...***
 
 * Clone tigl-website
 
