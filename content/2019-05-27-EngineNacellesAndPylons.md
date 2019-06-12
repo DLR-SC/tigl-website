@@ -5,7 +5,13 @@ Author: Jan Kleinert
 
 Parametric modeling of engine nacelles and pylons are now possible with TiGL 3.0.
 
-![Engine Nacelle Animation](images/engine.gif)
+<div class="row">
+	<div class="col-md-8">
+		<div class="feature-image">
+			<img src="images/engine.gif"/>
+		</div>
+	</div>
+</div>
 
 Within the [DLR internal project Victoria](https://www.dlr.de/as/en/desktopdefault.aspx/tabid-11460/20078_read-47033/), parametric descriptions of both engine pylons and engine nacelles were added to the CPACS standard.
 Previously these airplane components could only be added as an external geometric component, that is by linking a CAD file in the CPACS file. 
@@ -23,8 +29,14 @@ Optionally, a rotationally symmetric inner surface can be defined, as this is ma
  
 # Engine pylons
 
-![Engine Pylons](images/pylon.png)
- 
+<div class="row">
+	<div class="col-md-12">
+		<div class="feature-image">
+			<img src="images/pylon.png"/ alt="Engine Pylons">
+		</div>
+	</div>
+</div>
+
 Pylons are modeled analogously to wings. They are defined using a curve network of profile and guide curves. These curves are defined as a set of two-dimensional points in the CPACS file.
 
 Simple example CPACS files for both pylons and nacelles can be found in the test suite of [TiGL on Github](https://github.com/DLR-SC/tigl).
