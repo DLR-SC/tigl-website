@@ -30,7 +30,6 @@ from pelican import generators, signals
 from pelican.utils import strftime
 from bs4 import BeautifulSoup
 
-
 def open_graph_tag_articles(content_generators):
 
     for generator in content_generators:
@@ -65,7 +64,7 @@ def open_graph_tag(item):
                     img_src = item.settings.get('SITEURL', '') + "/" + img_src
             ogtags.append(('og:image', img_src))
 
-    url = os.path.join(item.settings.get('SITEURL', ''), item.url)
+    url = item.settings.get('SITEURL', '') + "/" + item.url
     ogtags.append(('og:url', url))
 
     default_summary = item.summary
@@ -92,7 +91,7 @@ def open_graph_tag(item):
 
     if hasattr(item, 'related_posts'):
         for related_post in item.related_posts:
-            url = os.path.join(item.settings.get('SITEURL', ''), related_post.url)
+            url = item.settings.get('SITEURL', '') + "/" + related_post.url
             ogtags.append(('og:see_also', url))
 
     author_fb_profiles = item.settings.get('AUTHOR_FB_ID', {})

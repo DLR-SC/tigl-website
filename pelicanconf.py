@@ -12,7 +12,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
-
+LOCALE = "C"
 DEFAULT_DATE_FORMAT = '%a %d %B %Y'
 
 
