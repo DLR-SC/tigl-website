@@ -27,9 +27,9 @@ The high-level cpacs editing functions are also available in the API. You can no
 ```python
 wing = wings.get_wing("Wing")
 
-    for sweep in range(50, 80, 2):
-        wing.set_sweep(sweep)
-        save(tixi_h, aircraft, "Output/out-sweep-" + str(sweep) + ".xml")
+for sweep in range(50, 80, 2):
+    wing.set_sweep(sweep)
+    save(tixi_h, aircraft, "Output/out-sweep-" + str(sweep) + ".xml")
 ```
 
 ## Installation
