@@ -15,7 +15,7 @@ In TiGL Viewer, the flaps can be moved using the sliders in the control surface 
 
 <div class="row">
 	<div class="feature-image">
-		<a href="images/road-tigl-3.1/flaps.png" class="boxer"><span class="item-title"><img src="images/road-tigl-3.1/flaps.png"/></a>
+		<a href="images/road-tigl-3.1/Flaps.png" class="boxer"><span class="item-title"><img src="images/road-tigl-3.1/Flaps.png"/></a>
 	</div>
 </div>
 
