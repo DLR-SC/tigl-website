@@ -13,7 +13,9 @@ from pelicanconf import *
 OUTPUT_PATH = 'published/'
 
 SITEURL = 'https://dlr-sc.github.io/tigl'
-RELATIVE_URLS = False
+RELATIVE_URLS = True
+STATIC_PATHS = ['doc']
+ARTICLE_EXCLUDES = ['doc']
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
 #CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
