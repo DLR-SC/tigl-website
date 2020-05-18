@@ -30,10 +30,18 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 * Run 
   ```
+  pelican -s pelicanconf.py
+  ```
+
+  to generate the site locally in `content.
+
+  For a publication-ready version run
+
+  ```
   pelican -s publishconf.py
   ```
 
-  to generate the site. It will be generated in the `published` subdirectory.
+  The generated site will be in `published`.
 
 
 ## Writing Content
