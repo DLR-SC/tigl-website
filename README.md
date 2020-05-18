@@ -26,43 +26,23 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
   pip install -r requirements.txt
   ```
 
-### Configuration
-
- * Set proper port for local testing which works on your machine in `fabfile.py`
-  ```
-  # Port for `serve`
-  PORT = 8001
-  ```
-
 ## Build 
 
-* Generate website 
+* Run 
   ```
-  fab build
-  ```
-
-* Start local server for testing (accessible via http://localhost:[port]/)
-  ```
-  fab serve
+  pelican -s pelicanconf.py
   ```
 
-* Convenience target for rebuild and starting local server
+  to generate the site locally in `content.
+
+  For a publication-ready version run
+
   ```
-  fab reserve
+  pelican -s publishconf.py
   ```
 
-## Build publish configuration
+  The generated site will be in `published`.
 
-```
-pelican -s publishconf.py
-```
-
-## Deployment
-
-Deploy to github pages with
-  ```
-  fab gh_pages
-  ```
 
 ## Writing Content
 

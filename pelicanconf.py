@@ -46,10 +46,11 @@ SITEMAP = {
 }
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # Static paths
-STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME']
+STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME', 'doc']
+ARTICLE_EXCLUDES = ['doc']
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
