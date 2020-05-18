@@ -1,0 +1,10 @@
+on: [status]
+
+jobs:
+  html-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: larsoner/circleci-artifacts-redirector-action@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          artifact-path: 0/html/index.html
