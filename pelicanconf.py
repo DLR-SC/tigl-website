@@ -49,7 +49,8 @@ SITEMAP = {
 #RELATIVE_URLS = True
 
 # Static paths
-STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME']
+STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME', 'doc']
+ARTICLE_EXCLUDES = ['doc']
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
