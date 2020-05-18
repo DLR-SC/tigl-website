@@ -85,7 +85,7 @@ jobs:
       - run:
           name: Push site to gh-pages
           command: |
-            git remote add pages git@github.com:DLR-SC/tigl.git
+            git remote add pages https://github.com/DLR-SC/tigl.git
             ghp-import -r pages -m "[skip ci] Update Site" -p -n -f published
 
 
