@@ -1,0 +1,5 @@
+pelican
+markdown
+fabric3
+ghp-import
+bs4
