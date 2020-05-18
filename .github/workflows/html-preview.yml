@@ -3,6 +3,7 @@ on: [status]
 jobs:
   html-preview:
     runs-on: ubuntu-latest
+    name: html-preview
     steps:
       - uses: larsoner/circleci-artifacts-redirector-action@master
         with:
