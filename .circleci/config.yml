@@ -84,7 +84,7 @@ jobs:
       # Push the `_site` folder to our gh-pages branch for it to go live
       - run:
           name: Push site to gh-pages
-          command: ghp-import -r https://github.com/DLR-SC/tigl -m "[skip ci] Update Site" -p -n -f published
+          command: ghp-import -r git@github.com:DLR-SC/tigl.git -m "[skip ci] Update Site" -p -n -f published
 
 
 # These workflows define how the jobs above will run. In our case, we
