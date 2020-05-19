@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['examples',['Examples',['../tigl_examples.html',1,'']]]
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]]
 ];
