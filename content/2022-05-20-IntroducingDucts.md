@@ -1,44 +1,97 @@
 Title: Introducing ducts
-Date: 2022-05-20 16:13
+Date: 2022-05-24 17:45
 Category: News
 Author: Anton Reiswich
 
-We are happy to announce TiGL’s new duct feature, allowing the user to create duct cutouts in wings and fuselages.
 
 <div class="row">
 	<div class="col-md-8">
 		<div class="feature-image">
-			<img src="images/engine.gif"/>
+			<img src="images/ductPicture1.png"/>
 		</div>
 	</div>
 </div>
 
+We are happy to announce TiGL’s new duct feature, that will be included in the coming release. It allows the user to create duct cutouts in wings and fuselages.
 
 
-Within the [DLR internal project Victoria](https://www.dlr.de/as/en/desktopdefault.aspx/tabid-11460/20078_read-47033/), parametric descriptions of both engine pylons and engine nacelles were added to the CPACS standard.
-Previously these airplane components could only be added as an external geometric component, that is by linking a CAD file in the CPACS file. 
+Based on a corresponding new CPACS development, TiGL was extended to support ducts and duct assemblies for aircraft configurations.
 
-# Engine nacelles
+### Duct geometry ###
 
-In CPACS, an engine nacelle consists of three components, a fan cowl, a center cowl and a core cowl.
-
- - The **fan cowl** defines the outer geometry that is exposed to the external airflow.
- It is parametrized using a set of profile curves that are arranged at different angles and radii around the engine's symmetry axis.
-The profile curves are defined using two dimensional points and additional guide curves can be used to modify the surface generation.
-Optionally, a rotationally symmetric inner surface can be defined, as this is mandatory for the fan. 
- - The **core cowl** separates the bypass airflow from the internal combustion chamber. It is defined analogously to the fan cowl.
- - The **center cowl** is the geometry of the shaft without the blades. It is defined using two-dimensional points that define a rotation surface around the engine's symmetry axis.
- 
-# Engine pylons
+As for the case of a fuselage, the geometry of a duct is modelled using a network of profile and guide curves.
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-8">
 		<div class="feature-image">
-			<img src="images/pylon.png"/ alt="Engine Pylons">
+			<img src="images/ductPicture2.png"/>
 		</div>
 	</div>
 </div>
 
-Pylons are modeled analogously to wings. They are defined using a curve network of profile and guide curves. These curves are defined as a set of two-dimensional points in the CPACS file.
+Ducts are implemented in such a way, that TiGL always considers them as solids. 
 
-Simple example CPACS files for both pylons and nacelles can be found in the test suite of [TiGL on Github](https://github.com/DLR-SC/tigl).
+### Basic modelling workflow ###
+
+The related basic modelling workflow is as follows: 
+
+  1. Define ducts.
+  
+     <div class="row">
+	    <div class="col-md-8">
+    		<div class="feature-image">
+    			<img src="images/ductPicture33.png"/>
+    		</div>
+    	</div>
+     </div>
+  
+  2. Define duct assemblies. Each duct assembly references the ducts it is composed of.
+  
+     <div class="row">
+	   <div class="col-md-8">
+		   <div class="feature-image">
+			   <img src="images/ductPicture6.png"/>
+		   </div>
+     	</div>
+     </div>
+  
+  3. Use the duct assemblies as a cutting tool to create cutouts of wings and fuselages via Boolean subtraction.
+
+     <div class="row">
+	   <div class="col-md-8">
+		   <div class="feature-image">
+			   <img src="images/ductPicture7.png"/>
+		   </div>
+	   </div>
+     </div>
+	
+### Exclusion lists ###
+	
+For a higher level of control, there is an option to define an exclusion list for each duct assembly. Such a list contains the particular wings and fuselages that should not be cut by the considered assembly.
+
+```xml
+<excludeObjectUIDs>
+              <uID>Fuselage</uID>
+</excludeObjectUIDs>
+```
+
+<div class="row">
+	<div class="col-md-8">
+		<div class="feature-image">
+			<img src="images/ductPicture9.png"/>
+		</div>
+	</div>
+</div>
+
+### Symmetry flag ###
+
+Furthermore, ducts come with a symmetry flag, allowing the user to save modelling time in the case of symmetric configurations.
+
+<div class="row">
+	<div class="col-md-8">
+		<div class="feature-image">
+			<img src="images/ductPicture8.png"/>
+		</div>
+	</div>
+</div>
+
