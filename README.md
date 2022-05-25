@@ -33,7 +33,7 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
   pelican -s pelicanconf.py
   ```
 
-  to generate the site locally in `content.
+  to generate the site locally in `output`.
 
   For a publication-ready version run
 
