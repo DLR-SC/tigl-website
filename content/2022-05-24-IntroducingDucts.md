@@ -16,6 +16,7 @@ We are happy to announce TiGL’s new duct feature, that will be included in the
 
 
 Based on a corresponding new CPACS development, TiGL was extended to support ducts and duct assemblies for aircraft configurations.
+It is to mention, that currently wings and fuselages are the only components that enable duct cutouts.
 
 ### Duct geometry ###
 
