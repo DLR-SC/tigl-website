@@ -11,12 +11,12 @@ If you have any questions, contact
 
 <div class="contact-text">
   <p class="address">
-    <a href="https://www.dlr.de/sc/en/desktopdefault.aspx/tabid-1195/mailcontact-27193/" class="contact-title"><i class="fa fa-envelope"></i> Dr. Martin Siggel</a><br/>
-    Group Lead of "Intelligent Algorithms and Optimization"<br/>
+    <a href="https://www.dlr.de/sc/desktopdefault.aspx/tabid-1195/mailcontact-34880/" class="contact-title"><i class="fa fa-envelope"></i> Dr. Jan Kleinert</a><br/>
+    Group Lead of "Simulation and Optimization of technical Systems"<br/>
     German Aerospace Center (DLR)<br/>
-    Simulation and Software Technology, High-Performance Computing<br/>
+    Institute for Software Technology, High-Performance Computing<br/>
     D-51147, Cologne<br/>
-    <a href="tel:+4922036012264"><i class="fa fa-phone"></i> +49 2203 601-2264 </a>
+    <a href="tel:+4922036013000"><i class="fa fa-phone"></i> +49 2203 601 3000 </a>
   </p>
 </div>
 
