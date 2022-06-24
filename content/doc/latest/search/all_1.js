@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['blunt_5ftrailingedge',['BLUNT_TRAILINGEDGE',['../tigl_8h.html#a54d51a6fb9ec60838631a3b0bbe940d2a4eb57b6b4cd1668202308215f7bf4643',1,'tigl.h']]],
-  ['basic_20usage',['Basic usage',['../tigl_usage.html',1,'']]]
+  ['balance_5frounds_10',['balance_rounds',['../structt8__profile.html#ac08fa113f773ff1c4a2f83199323dc14',1,'t8_profile']]],
+  ['balance_5fruntime_11',['balance_runtime',['../structt8__profile.html#a50c19c111fc7fb3b8699ca09f0244115',1,'t8_profile']]]
 ];
