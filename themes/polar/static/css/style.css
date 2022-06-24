@@ -54,7 +54,7 @@ Table of Contents
 Table of Contents End
 ******************************************************/  
 
-/** Custom TiGL styles **/
+/** Custom t8code styles **/
 .feature-image, .video-container {
 	max-width: 570px;
 }
@@ -99,7 +99,7 @@ a:before,
 	        transition: all .25s ease;
 }
 a {
-	color: #1B8E55;
+	color: #9231ab;
 }  
 a:focus,
 a:hover {
@@ -122,7 +122,7 @@ a:focus{
 	box-shadow: 0 0 7px 1px #ddd;
 }
 .section-title { 
-	color: #1B8E55; /* #1B8E55 */
+	color: #9231ab; /* #9231ab */
 	font-size: 2.3125em;
 	margin-top: 0;
 	padding-bottom: 15px;
@@ -139,7 +139,7 @@ a:focus{
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 }
 .section-title.stripe:after {
 	width: 200px;
@@ -225,7 +225,7 @@ a:focus{
 	margin: 3px;
 }
 .owl-dots .owl-dot.active {
-	background: #1B8E55;
+	background: #9231ab;
 }
 .carousel-indicators li.active,
 .carousel-indicators li {
@@ -237,13 +237,13 @@ a:focus{
 	background: #b8b8b8;
 }
 .carousel-indicators li.active {
-	background: #1B8E55;
+	background: #9231ab;
 }  
 #boxer {
 	z-index: 99999;
 }
 .title.about-title {
-	color: #1B8E55;
+	color: #9231ab;
     font-size: 2.3125em;
     margin-top: 0;
     margin-bottom: 20px;
@@ -269,7 +269,7 @@ a:focus{
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
-	color: #1B8E55;
+	color: #9231ab;
 }
 .navbar-default .navbar-brand {
 	padding-top: 20px;
@@ -303,7 +303,7 @@ a:focus{
 }
 .main-mav .sub-menu li {
 	width: 160px;  
-	background: #1B8E55;
+	background: #9231ab;
 	padding: 0;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
@@ -338,7 +338,7 @@ a:focus{
 	line-height: 45px;
 	margin-top: 25px;
 	margin-left: 50px;
-	background: #1B8E55;
+	background: #9231ab;
 	position: relative;
 }
 .main-mav>li>a.donate:focus,
@@ -466,7 +466,7 @@ a:focus{
 	border-radius: 3px 0  0 3px;
 }
 .top-slider-container .slide-nav:hover {
-	background: #1B8E55;
+	background: #9231ab;
 	opacity: 1;
 }
 .top-slider-container:hover .slide-nav.left {
@@ -513,7 +513,7 @@ a:focus{
 	background: #114229;
 }
 .top-sec-btn:hover:after { 
-	background: #1B8E55;
+	background: #9231ab;
 }
 .top-sec-btn i {
 	padding-right: 5px;
@@ -584,7 +584,7 @@ a:focus{
 	max-width: 600px;
 	text-align: left;
 	font-size: 3.5em;
-	color: #1B8E55;
+	color: #9231ab;
 	font-weight: 700;
 }
 .top-slider-container.v2 .top-sec-txt {
@@ -600,7 +600,7 @@ a:focus{
 	padding-bottom: 50px;
 }
 .top-slider-container.v2 .top-sec-btn {
-	background: #1B8E55;
+	background: #9231ab;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -615,7 +615,7 @@ a:focus{
 	display: none;
 }
 .top-slider-container.v2 .video-link {
-	color: #1B8E55;
+	color: #9231ab;
 	font-size: 14px;
 	line-height: 40px; 
 	padding-left: 80px;
@@ -670,7 +670,7 @@ a:focus{
 }
 
 .todobox .icon {
-	color: #1B8E55;
+	color: #9231ab;
 	float: left;
 	font-size: 2.85em;
 	padding-right: 12px;
@@ -709,7 +709,7 @@ a:focus{
 
 	text-align: center;
 	font-size: 50px;
-	color: #1B8E55;
+	color: #9231ab;
 	line-height: 108px;
 }
 
@@ -918,14 +918,14 @@ a:focus{
 	left: 25px;
 	right: 25px;
 	height: 2px;
-	background: #1B8E55;
+	background: #9231ab;
 	position: absolute;
 	z-index: -1;
 }
 .rehabilitates .steps .txt,
 .rehabilitates .count-step {
 	display: inline-block;
-	background: #1B8E55;
+	background: #9231ab;
 	color: #ffffff;
 	text-align: center;
 }
@@ -953,7 +953,7 @@ a:focus{
 	width: 2px;
 	height: 165px;
 	bottom: 100%;
-	background: #1B8E55;
+	background: #9231ab;
 }
 /* 8 - Rehabilitates End 
 ******************************************************/
@@ -1020,7 +1020,7 @@ a:focus{
 }
 .communities .take-part .donate:hover:before,
 .communities .take-part .volunteer:before {
-	background: #1B8E55;
+	background: #9231ab;
 }
 .communities .take-part .volunteer:hover:before,
 .communities .take-part .donate:before {
@@ -1064,7 +1064,7 @@ a:focus{
 	text-transform: uppercase; 
 }
 .follow-us .social-btn a:hover {
-	color: #1B8E55;
+	color: #9231ab;
 	text-decoration: none;
 }
 .follow-us .social-btn span {
@@ -1137,7 +1137,7 @@ a:focus{
 	left: 50%;
 	bottom: 5px;
 	height: 2px;
-	background: #1B8E55;
+	background: #9231ab;
 	width: 0;
 }
 .isotope-filters button:hover:after,
@@ -1234,7 +1234,7 @@ a:focus{
 	color: #fff;
 } 
 .single-member .name {
-	color: #1B8E55;
+	color: #9231ab;
 	font-size: 0.9375em;
 	font-weight:700; 
 	text-transform: uppercase;	
@@ -1286,7 +1286,7 @@ a:focus{
 .partners-logo-title {
 	font-size: 1.75em;
 	font-weight: 300;
-	color: #1B8E55;
+	color: #9231ab;
 	margin: 0;
 	text-align: center;
 	padding: 0 0 60px 0;
@@ -1321,7 +1321,7 @@ a:focus{
 	padding-top: 40px;
 }
 .testimonial .t-author-name {
-	color: #1B8E55;
+	color: #9231ab;
 	font-size: 0.9375em; 
 	text-transform: uppercase;
 	display: inline-block;
@@ -1397,7 +1397,7 @@ a:focus{
 	border: 3px solid transparent;
 }
 .testimonial .slick-center .given-by-box:before  {
-	border: 3px solid #1B8E55;
+	border: 3px solid #9231ab;
 }
 .testimonial .slick-center .given-by-dtls {
 	background: transparent;
@@ -1414,7 +1414,7 @@ a:focus{
 .testimonial-title {
 	font-size: 2.3125em;
 	font-weight: 300;
-	color: #1B8E55;
+	color: #9231ab;
 }
 .testimonial-quote {  
 	color: #282828;
@@ -1471,7 +1471,7 @@ a:focus{
 	color: #a0a0a0;
 }
 .entry-meta a:hover {
-	color: #1B8E55;
+	color: #9231ab;
 }
 .entry-meta i {
 	font-size: 14px;
@@ -1490,7 +1490,7 @@ a:focus{
 	padding-left: 5px;
 }
 .btn-container .read-more:hover {
-	color: #1B8E55;
+	color: #9231ab;
 }
 article .entry {
 	padding-bottom: 20px;
@@ -1566,7 +1566,7 @@ article.single-post {
 	padding-right: 5px;
 }
 .post-navigation a:hover {
-	color: #1B8E55;
+	color: #9231ab;
 }
 /*17 -  Single Page  End 
 ******************************************************/
@@ -1621,7 +1621,7 @@ article.single-post {
 }
 .comment-time a:hover,
 .comment-author a:hover {
-	color: #1B8E55;
+	color: #9231ab;
 }
 .comment-body .reply {
 	display: inline-block;
@@ -1632,7 +1632,7 @@ article.single-post {
 	line-height: 40px;
 	padding: 0 35px;
 	text-transform: uppercase;
-	background: #1B8E55;
+	background: #9231ab;
 	color: #fff;
 } 
 .comment-body .reply a:hover {
@@ -1711,7 +1711,7 @@ article.single-post {
 	background-image: none;
 	min-height: 55px;
 	margin: 0 0 30px 0;
-	border:1px solid #1B8E55;
+	border:1px solid #9231ab;
 	border-left-width: 75px;
 	-webkit-transition: all .25s ease;
 	-moz-transition: all .25s ease;
@@ -1725,7 +1725,7 @@ textarea.wpcf7-form-control {
 }
 .comment-form .form-control:focus,
 .wpcf7-form-control:focus {
-	border:1px solid #1B8E55;
+	border:1px solid #9231ab;
 }
 .comment-form .form-control,
 .comment-form .form-control:focus,
@@ -1741,7 +1741,7 @@ textarea.wpcf7-form-control {
 }  
 .contact-form .wpcf7-form-control.wpcf7-submit { 
 	border:none;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	color: #fff;
 	text-transform: uppercase;
 
@@ -1774,7 +1774,7 @@ div.wpcf7-mail-sent-ok {
 ******************************************************/
 .comment-reply-title {
 	font-size: 1.375em;
-	color: #1B8E55;
+	color: #9231ab;
 	padding-top: 55px;
 	padding-bottom: 20px;
 } 
@@ -1782,7 +1782,7 @@ div.wpcf7-mail-sent-ok {
 
 .comment-form .submit-btn {
 	border:none;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	color: #fff; 
 	line-height: 55px;
 	padding: 0 35px;
@@ -1814,7 +1814,7 @@ div.wpcf7-mail-sent-ok {
 }
 .widget-title:before {
 	position: absolute;
-	background: #1B8E55;
+	background: #9231ab;
 	content: "";
 	height: 11px;
 	width: 4px;
@@ -1837,7 +1837,7 @@ div.wpcf7-mail-sent-ok {
 	color: #4c4c4c;
 }
 .widget .latest-post .post-title:hover {
-	color: #1B8E55;
+	color: #9231ab;
 }
 .widget .widget_img {
 	float: left;
@@ -1858,11 +1858,11 @@ div.wpcf7-mail-sent-ok {
 .widget_news_subs .form-control {
 	line-height: 45px;
 	height: 45px;
-	border:1px solid #1B8E55;
+	border:1px solid #9231ab;
 	border-radius: 0;
 }
 .widget_news_subs input[type="submit"]  {
-	background: #1B8E55; 
+	background: #9231ab; 
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1926,11 +1926,11 @@ div.wpcf7-mail-sent-ok {
 .search-form .form-control {
 	line-height: 45px;
 	height: 45px;
-	border: 1px solid #1B8E55;
+	border: 1px solid #9231ab;
 	border-radius: 0;
 }
 .search-form button[type="submit"] {
-	background: #1B8E55;
+	background: #9231ab;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1971,8 +1971,8 @@ div.wpcf7-mail-sent-ok {
 	color: #fff;
 	height: 40px;
 	text-align: center;
-	border: 1px solid #1B8E55;
-	background: #1B8E55;
+	border: 1px solid #9231ab;
+	background: #9231ab;
 }
 .widget_calendar td {
 	height: 40px;
@@ -2007,7 +2007,7 @@ div.wpcf7-mail-sent-ok {
 	color: #a0a0a0;
 }
 .widget_recent_comments a:hover {
-	color: #1B8E55;
+	color: #9231ab;
 } 
 /* 22 - Widget End
 ******************************************************/
@@ -2032,8 +2032,8 @@ div.wpcf7-mail-sent-ok {
  	font-size: 13px;
 }
 .paging-navigation .page-numbers:hover {
-	border-color: #1B8E55;
-	background: #1B8E55;
+	border-color: #9231ab;
+	background: #9231ab;
 	color: #fff;
 } 
 /* 23 - Pagination End  
@@ -2100,7 +2100,7 @@ article.news-container  .entry {
 	cursor: pointer;
 }
 .donate-title {
-	color: #1B8E55;
+	color: #9231ab;
 	font-size: 30px;
 	max-width: 850px;
 	line-height: 48px;
@@ -2125,7 +2125,7 @@ article.news-container  .entry {
     width: 100%;
 }
 .select-cause .title {
-	color: #1B8E55; 
+	color: #9231ab; 
 	font-size: 30px;
 	padding: 0 15px;
 	padding-top: 10px;
@@ -2161,7 +2161,7 @@ article.news-container  .entry {
 	left: 0;
 	right: 0;
 	bottom: 50px;
-	background: #1B8E55;
+	background: #9231ab;
 	color: #fff;
 	font-size: 72px;
 	padding-top: 5px;
@@ -2210,9 +2210,9 @@ article.news-container  .entry {
 	        transition: all .25s ease;
 }
 .donate-amount-btn:checked+label {
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	color: #fff;
-	border-color: #1B8E55;
+	border-color: #9231ab;
 }
 
 
@@ -2341,8 +2341,8 @@ article.news-container  .entry {
 	line-height: 20px;
 }
 .card-option .nav-tabs>li.active>a:after {
-	background: #1B8E55;
-	border-color:#1B8E55; 
+	background: #9231ab;
+	border-color:#9231ab; 
 	content: "\f00c";
 }
  
@@ -2362,7 +2362,7 @@ article.news-container  .entry {
 .donate-from .donate-submit {
 	border-radius: 0;
 	line-height: 50px;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	text-transform: uppercase;
 	text-align: center;
 	width: 180px;
@@ -2404,7 +2404,7 @@ article.news-container  .entry {
 }
 
 .upcoming-event {
-	background: #1B8E55;
+	background: #9231ab;
 	color: #ffffff;
 	padding: 30px 0 40px 0;
 }
@@ -2509,7 +2509,7 @@ article.news-container  .entry {
 }
 .event-news .btn.news-btn:hover:before,
 .event-news .btn.event-btn:before {
-	background: #1B8E55;
+	background: #9231ab;
 }
 .event-news .btn.event-btn:hover:before,
 .event-news .btn.news-btn:before {
@@ -2570,7 +2570,7 @@ article.news-container  .entry {
 /* 30 - Success Story 
 ******************************************************/
 .success-story .title {
-	color: #1B8E55;
+	color: #9231ab;
 	font-size: 2.3125em;
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -2630,14 +2630,14 @@ article.news-container  .entry {
 }
 .pricing-box {
 	position: relative;
-	border:1px solid #1B8E55;
+	border:1px solid #9231ab;
 	padding: 20px 0;
 	z-index: 1;
 }
 .pricing-table .price {
 	border-radius: 100%;
-	border: 3px solid #1B8E55;
-	color: #1B8E55;
+	border: 3px solid #9231ab;
+	color: #9231ab;
 	line-height: 140px;
 	font-size: 3em;
 	font-weight: 300;
@@ -2651,7 +2651,7 @@ article.news-container  .entry {
 	content: "";
 	position: absolute;
 	height: 2px;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	top: 50%;
 	margin-top: -1px; 
 	width: 220px;
@@ -2663,7 +2663,7 @@ article.news-container  .entry {
 	right: 100%;
 }
 .pricing-table .price-title { 
-	color: #1B8E55;
+	color: #9231ab;
 	font-weight: 600;
 	font-size: 1.5em;
 	margin: 20px 0 30px 0;
@@ -2692,7 +2692,7 @@ article.news-container  .entry {
 }
 .pricing-table .feature-options li.yes:before {
 	content: "\f00c";
-	color: #1B8E55;
+	color: #9231ab;
 }
 
 .pricing-table .feature-options li.no:before {
@@ -2720,7 +2720,7 @@ article.news-container  .entry {
 	left: -1px;
 	right: -1px;
 	bottom: 0;
-	background-color: #1B8E55;
+	background-color: #9231ab;
 	z-index: 0; 
 }
 .pricing-table.featured .pricing-box:before{
@@ -2760,8 +2760,8 @@ article.news-container  .entry {
 }
 .footer-social.social-btn a:hover {
 	color: #fff;
-	background: #1B8E55;
-	border-color: #1B8E55;
+	background: #9231ab;
+	border-color: #9231ab;
 }
 .footer-social.social-btn a.facebook:hover {
 	background: #3B5998;
@@ -2888,7 +2888,7 @@ article.news-container  .entry {
     }
     .navbar-default .navbar-nav>li>a:focus, 
     .navbar-default .navbar-nav>li>a:hover {
-    	background: #1B8E55;
+    	background: #9231ab;
     	color: #fff;
     }
     .navbar-nav>li>a:after {
@@ -2945,7 +2945,7 @@ article.news-container  .entry {
 	.navbar-default .navbar-toggle:hover, 
 	.navbar-default .navbar-toggle:focus {
 		background-color: transparent;
-		color: #1B8E55;
+		color: #9231ab;
 	}
 	.navbar-default .navbar-toggle {
 		border-color: transparent;
@@ -3198,7 +3198,7 @@ article.news-container  .entry {
 /* 36 - Background  Images 
 ******************************************************/
 #home-slide-1 {
-	background-image: url('../../images/slider/slider1.jpg');
+	background-image: url('../../images/slider/slider1.png');
 }
 #home-slide-2 {
 	background-image: url('../../images/slider/slider2.jpg');
