@@ -12,7 +12,7 @@ from pelicanconf import *
 
 OUTPUT_PATH = 'published/'
 
-SITEURL = 'https://dlr-sc.github.io/tigl'
+SITEURL = 'https://github.com/holke/t8code'
 RELATIVE_URLS = False
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'

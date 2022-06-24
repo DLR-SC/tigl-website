@@ -13,12 +13,12 @@
 								<div class="container">
 									<div class="top-headings">
 										<h2 class="top-heading-1"> 
-											PARAMETRIC AIRCRAFT
-											GEOMETRY MODELLER
+											EXASCALE READY
+											ADAPTIVE MESH REFINEMENT
 										</h2> 
 									</div><!-- /.top-headings -->
 									<p class="top-sec-txt">
-										Using the CPACS file format and TiGL, you can model a wide range of aircraft, spacecraft and rotorcraft.
+										With the help of t8code you are ready for some really heavy HPC shit!
 									</p>
 									<div class="button-container">
 										<a href="{{ SITEURL }}/pages/features.html">
@@ -100,59 +100,59 @@
 			<section class="row about-us section-padding pb0">
 				<div class="col-md-6">
 					<h2 class="section-title">About</h2>
-					<p>
-						The optimization of an aircraft e.g. to minimize fuel consumption involves many disciplines, each with their own simulation tools.
-						Many of these simulation tools require a precise modeling of the aircraft geometry.
-						At the DLR, this task is performed by the software TiGL (TiGL Geometry Library), 
-						which generates a complete 3-dimensional geometric representation of the aircraft from a parametric geometry description.
-						This includes both the outer geometry, which is exposed to the air flow, and the inner structural geometry,
-						which is crucial for the load stability of the aircraft.
+					<p>  		
+						t8code (spoken as "tetcode") is a C/C++ library to manage parallel adaptive meshes with various element types.
+						t8code uses a collection (a forest) of multiple connected adaptive space-trees in parallel and scales to at least one million MPI ranks and over 1 Trillion mesh elements.
 					</p>
-					<p>	
-						TiGL thus provides the interface between the parametric CPACS description of the aircraft and the simulation tools.
-						TiGL offers functions for exporting the geometry to common
-						CAD formats (IGES, STEP, VTK) as well as functions for calculating
-						points and curves on the aircraft surface.
+					<p>
+						t8code is intended to be used as a thirdparty library for numerical simulation codes or any other applications that require meshes.
 					</p>
 				</div><!-- /.col-md-6 -->
 				<div class="col-md-6">
-					<div class="video-container">
-						<!--  https://www.youtube-nocookie.com/embed/0OfmtIhmozY -->
-						<video width="560" autoplay loop>
-							<source src="theme/images/flugzeug-animiert-380px.mp4" type="video/mp4" />
-						  Your browser does not support the video tag.
-						</video>
+					<div class="feature-image">
+						<img src="pages/images/home/AirplaneWithTetMesh.png"/>
+
 					</div>
 				</div><!-- /.col-md-6 -->
 			</section><!-- /.about-us -->
 			<section class="row about-us pb0">
 				<div class="col-md-12 md-bm-50">
-					<p>	
-						TiGL uses the OpenCASCADE CAD kernel to model the aircraft geometry with NURBS surfaces.
-						The library also provides interfaces to many common programming languages such as C, C++, Python, Java and MATLAB.
-						In addition, the TiGL software package includes the TiGL Viewer that enables also the visualization of the aircraft geometries and other CAD files.
-					</p>
-					<p>	
-						TiGL is developed at the German Aerospace Center (DLR) at the department of 
-						<a href="https://www.dlr.de/sc/en/desktopdefault.aspx/tabid-11647/20362_read-47646/">High-Performace Computing</a>.
-						Find an overview about TiGL on the <a href="pages/features.html">feature</a> page
-						or have a look at this <a href="https://elib.dlr.de/124524/">survey article</a>.
-					</p>
+					<p>Use what you see, don't plan it. This is your world, whatever makes you happy you can put in it. Go crazy. Now it's beginning to make a little sense. All you need to paint is a few tools, a little instruction, and a vision in your mind.</p>
+					<p>Volunteering your time; it pays you and your whole community fantastic dividends. Very easy to work these to death. In your world you have total and absolute power. Nice little clouds playing around in the sky. Isn't it fantastic that you can change your mind and create all these happy things? A tree needs to be your friend if you're going to paint him. Only think about one thing at a time. Don't get greedy.</p>
 				</div><!-- /.col-md-12 -->
 			</section><!-- /.about-us -->
 
 			<section class="row about-us section-padding pb0">
 				<div class="col-md-12 md-bm-50">
+					<h2 class="section-title">Publications</h2>
+						<p>
+							[1] Johannes Holke, Scalable algorithms for parallel tree-based adaptive mesh refinement with general element types, PhD thesis at University of Bonn, 2018,
+							<a href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/7661" target="_blank">Full text available</a>
+							<br>
+							[2] Carsten Burstedde and Johannes Holke, A Tetrahedral Space-Filling Curve for Nonconforming Adaptive Meshes, SIAM Journal on Scientific Computing, 2016, 
+							<a href="https://doi.org/10.1137/15M1040049" target="_blank">10.1137/15M1040049</a>
+							<br>
+							[3] Carsten Burstedde and Johannes Holke, Coarse mesh partitioning for tree-based AMR, SIAM Journal on Scientific Computing, 2017, 
+							<a href="https://doi.org/10.1137/16M1103518" target="_blank">10.1137/16M1103518</a>
+							<br>
+							[4] Johannes Holke and David Knapp and Carsten Burstedde, An Optimized, Parallel Computation of the Ghost Layer for Adaptive Hybrid Forest Meshes, Submitted to SIAM Journal on Scientific Computing, 2019, 
+							<a href="https://arxiv.org/abs/1910.10641" target="_blank">Prepring available</a>
+					</p>
+					</dl>
+				</div><!-- /.col-md-12 -->
+			</section><!-- /.about-us -->
+			
+			<section class="row about-us section-padding pb0">
+				<div class="col-md-12 md-bm-50">
 					<h2 class="section-title">Cite &amp; Acknowledge</h2>
 					<p>
-						TiGL is available as Open Source and we encourage anyone to make use of it. If you are applying TiGL in a scientific environment and publish any related work, please cite the following artice:
+						If you use t8code in any of your publications, please cite the [github repository](https://github.com/holke/t8code) and [1]. For publications specifically related to 
 					</p>
-					<p>
-						Siggel, M., Kleinert, J., Stollenwerk, T. et al.: <em>TiGL: An Open Source Computational Geometry Library for Parametric Aircraft Design.</em> Math.Comput.Sci. (2019). <a href="https://doi.org/10.1007/s11786-019-00401-y">https://doi.org/10.1007/s11786-019-00401-y</a>
-					</p>
-					<p>
-					A free copy of this paper can be accessed under the following link: <a href="https://rdcu.be/bIGUH">https://rdcu.be/bIGUH</a>
-					</p>
+					<ul>
+					<li>the TM index, please cite [2].</li>
+					<li>coarse mesh partitioning, please cite [3].</li>
+					<li>construction and handling of the ghost layer, please cite [4].</li>
+					</ul>
 				</div><!-- /.col-md-12 -->
 			</section><!-- /.about-us -->
 

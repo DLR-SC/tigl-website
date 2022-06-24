@@ -1,23 +1,23 @@
-# Website for TiGL
+# Website for t8code
 
-Homepage (landing page) and announcements for TiGL (http://tigl.github.io).
+Homepage (landing page) and announcements for t8code (https://github.com/holke/t8code).
 
 Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [CodePassenger](http://www.codepassenger.com/).
 
 ## Local Installation
 
-* Clone tigl-website
+* Clone t8code-website
 
   ```
-  git clone https://github.com/DLR-SC/tigl-website
+  git clone https://github.com/sandro-elsweijer/t8code-website.git
   ```
   or
   ```
-  git clone git@github.com:DLR-SC/tigl-website.git
+  git clone git@github.com:sandro-elsweijer/t8code-website.git
   ```
 * Change to 
   ```
-  tigl-website/
+  t8code-website/
   ```
 
 * Install pelican, fabric3 and some other dependencies
@@ -52,12 +52,12 @@ Add new articles to `content`.
 
 ### Metadata
 
-The required meta data for TiGL release announcements are:
+The required meta data for t8code release announcements are:
 ```
 Title: Release 3.0.0
 Date: 2019-01-01 00:00
 Category: Releases
-Author: TiGL
+Author: t8code
 ```
 
 

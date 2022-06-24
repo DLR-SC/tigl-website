@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DLR'
-SITENAME = u'The TiGL Geometry Library'
+SITENAME = u't8code'
 SITEURL = ''
-SITE_SUMMARY = 'The TiGL Geometry Library to process aircraft geometries in pre-design.'
+SITE_SUMMARY = 't8code - Parallel algorithms and data structures for tree-based AMR with arbitrary element shapes.'
 
 PATH = 'content'
 
