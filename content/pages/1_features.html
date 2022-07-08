@@ -73,17 +73,35 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h2 class="title">
-										Something about curved geometry
+										Enabling geometry-based h- and p-refinement
 									</h2>
 									<p>
-										That is when you can experience true joy, when you have no fear. Every day I learn. Even the worst thing we can do here is good. That's what makes life fun. That you can make these decisions. That you can create the world that you want. We don't have anything but happy trees here. We have no limits to our world. We're only limited by our imagination. I'm gonna add just a tiny little amount of Prussian Blue. At home you have unlimited time. Let's do that again.
+										With version 1.0.0 we introduce curved cell geometries. With these geometries you are able to link features (edges and faces) of cells directly to <a href="https://www.opencascade.com/" target="_blank">OpenCASCADE Technology</a> geometries (curves and surfaces).
+										As you can see on the right, the linkage enables t8code to refine the cells along the provided geometry and even points evaluated inside an element are located with respect to the provided geometry.
+									</p>
+									<p>
+										Additionaly, you can use the mesh generator <a href="https://gmsh.info/" target="_blank">Gmsh</a>, to create parametric mesh files. If you load these mesh files along with the meshed geometry, the cells get automatically linked to the geometry. This results in optimal h- and p-refinement along the geometries.
+									</p>
+									<p>
+										Take a look at our three publications for additional information.
+										<br>
+										[1] Sandro Elsweijer, Evaluation and generic application scenarios for curved hexahedral adaptive mesh refinement, Masters thesis at the UAS Bonn-Rhein-Sieg, 2022,
+										<a href="https://elib.dlr.de/186561/" target="_blank">Full text available</a>
+										<br>
+										[2] Sandro Elsweijer and Johannes Holke and Jan Kleinert and Dirk Reith, Constructing a Volume Geometry Map for Hexahedra with Curved Boundary Geometries, SIAM International Meshing Roundtable Workshop, 2022,
+										<a href="https://elib.dlr.de/186570/" target="_blank">Preprint available</a>
+										<br>
+										[3] Sandro Elsweijer, Curved Domain Adaptive Mesh Refinement with Hexahedra, Project at the UAS Bonn-Rhein-Sieg, 2021,
+										<a href="https://elib.dlr.de/186571/" target="_blank">Full text available</a>
+									</p>
+									<p>
+										Currently, this feature is only available with hex-only meshes.
 									</p>
 								</div><!-- /.col-md-6 -->
 		
 								<div class="col-md-6">
 									<div class="feature-image">
-										<img src="images/features/naca.gif"/>
-		
+										<img src="images/features/naca_merged.gif"/>
 									</div>
 								</div><!-- /.col-md-6 -->
 							</div><!-- /.row -->
