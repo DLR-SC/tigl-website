@@ -67,6 +67,12 @@ Table of Contents End
 	width: 100%;
 }
 
+/* Adds a consecutive publication number to each publication on a page */
+publication::before {
+	counter-increment: publication_counter;   /* Erhöht den Abschnittszähler */
+	content: "[" counter(publication_counter) "]"; /* Zeigt den Zähler an */
+  }
+
 
 /* 1 - Google Font 
 ******************************************************/
@@ -80,6 +86,7 @@ body {
 	color: #282828;
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
+	counter-reset: publication_counter;
 }
 p {
 	font-size: 0.9375em;
