@@ -28,7 +28,9 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Simulation and Software Technology', 'http://www.dlr.de/sc'),
          ('Imprint', '%s/pages/imprint.html' % SITEURL),
-         ('Privacy', '%s/pages/privacy.html' % SITEURL),)
+         ('Privacy', '%s/pages/privacy.html' % SITEURL),
+         ('Terms of use', '%s/pages/terms_of_use.html' % SITEURL),
+         ('Accessibility', '%s/pages/accessibility.html' % SITEURL),)
 
 # Social widget
 SOCIAL = ()
