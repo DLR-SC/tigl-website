@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/DLR-AMR/t8code-website/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/DLR-AMR/t8code-website/tree/main)
+
 # Website for t8code
 
 Homepage (landing page) and announcements for t8code (https://github.com/holke/t8code).
@@ -9,11 +11,11 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 * Clone t8code-website
 
   ```
-  git clone https://github.com/sandro-elsweijer/t8code-website.git
+  git clone git@github.com:DLR-AMR/t8code-website.git
   ```
   or
   ```
-  git clone git@github.com:sandro-elsweijer/t8code-website.git
+  git clone https://github.com/DLR-AMR/t8code-website.git
   ```
 * Change to 
   ```
