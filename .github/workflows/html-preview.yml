@@ -1,5 +1,6 @@
 name: html-preview
 on: [status]
+  workflow_dispatch: # be able to trigger workflow manually
 
 jobs:
   html-preview:
