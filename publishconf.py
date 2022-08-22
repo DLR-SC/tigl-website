@@ -12,7 +12,7 @@ from pelicanconf import *
 
 OUTPUT_PATH = 'published/'
 
-SITEURL = 'https://github.com/holke/t8code'
+SITEURL = 'https://dlr-amr.github.io/t8code'
 RELATIVE_URLS = False
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -22,7 +22,9 @@ DELETE_OUTPUT_DIRECTORY = False
 
 LINKS = (('Simulation and Software Technology', 'http://www.dlr.de/sc'),
          ('Imprint', '%s/pages/imprint.html' % SITEURL),
-         ('Privacy', '%s/pages/privacy.html' % SITEURL),)
+         ('Privacy', '%s/pages/privacy.html' % SITEURL),
+         ('Terms of use', '%s/pages/terms-of-use.html' % SITEURL),
+         ('Accessibility', '%s/pages/accessibility.html' % SITEURL),)
 
 
 # Following items are often useful when publishing
