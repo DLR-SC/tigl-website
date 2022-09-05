@@ -88,9 +88,11 @@ body {
 	font-family: "Open Sans", sans-serif;
 	counter-reset: publication_counter;
 }
-p {
+p, ul, ol {
 	font-size: 0.9375em;
 	font-weight: 400;
+}
+p {
 	line-height: 30px;
 }
 a,
