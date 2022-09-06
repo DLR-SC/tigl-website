@@ -1,5 +1,15 @@
 name: html-preview
-on: [status]
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch: # be able to trigger workflow manually
+
 
 jobs:
   html-preview:
