@@ -13,22 +13,22 @@
 								<div class="container">
 									<div class="top-headings">
 										<h2 class="top-heading-1"> 
-											EXASCALE READY
-											ADAPTIVE MESH REFINEMENT
+											t8code
 										</h2> 
 										<h3 class="top-heading-2"> 
-											For all element shapes!
+											Exascale ready adaptive mesh refinement 
+											for all element shapes!
 										</h3>
 									</div><!-- /.top-headings -->
 									<p class="top-sec-txt">
 										Don't worry about your mesh data! t8code provides fast mesh and data management with excellent scaling properties and was tested on up to 1 million cores with up to 1.1 trillion elements.
 									</p>
-									<div class="button-container">
+									<!--<div class="button-container">
 										<a href="{{ SITEURL }}/pages/features.html">
 											<button type="button" class="btn top-sec-btn">Features</button>
-										</a>
+										</a>-->
 										<!--<a class="video-link" href="https://www.youtube-nocookie.com/embed/0OfmtIhmozY"><span class="icon"><i class="fa fa-play-circle-o"></i></span> Graphical User Interface - Fly Through </a>-->
-									</div><!-- /.button-container -->
+									<!--</div--><!-- /.button-container -->
 								</div><!-- /.container -->
 							</div><!-- /.slide-contents --> 
 						</div><!-- /.background-bg -->
@@ -70,7 +70,7 @@
 										If you have any questions about t8code, its usage or any ideas, feel free to contact the developers.
 									</p>
 									<div class="button-container">
-										<a href="https://github.com/holke/t8code/discussions" target="_blank">
+										<a href="{{ SITEURL }}/pages/contact.html" target="_blank">
 											<button type="button" class="btn top-sec-btn">Contact us</button>
 										</a>
 									</div><!-- /.button-container -->
@@ -117,29 +117,63 @@
 					</div>
 				</div><!-- /.col-md-6 -->
 			</section><!-- /.about-us -->
-			<section class="row about-us pb0">
-				<div class="col-md-12 md-bm-50">
-					<p>Use what you see, don't plan it. This is your world, whatever makes you happy you can put in it. Go crazy. Now it's beginning to make a little sense. All you need to paint is a few tools, a little instruction, and a vision in your mind.</p>
-					<p>Volunteering your time; it pays you and your whole community fantastic dividends. Very easy to work these to death. In your world you have total and absolute power. Nice little clouds playing around in the sky. Isn't it fantastic that you can change your mind and create all these happy things? A tree needs to be your friend if you're going to paint him. Only think about one thing at a time. Don't get greedy.</p>
-				</div><!-- /.col-md-12 -->
+			<section class="row about-us section-padding pb0">
+				<div class="col-md-6">
+					<h2 class="section-title">Key-features</h2>
+					<p>
+						Among other features, t8code offers the following functionalities:
+						<!-- TODO: Insert line break -->
+
+						<!-- TODO: Make these bullet points -->
+						<ul>
+						<li>Managing distributed adaptive meshes over complex domain geometries</li>
+						<li>Adapting meshes according to user given refinement/coarsening criteria</li>
+						<li>Establishing a 2:1 balance condition</li>
+						<li>(Re-)partitioning/load-balancing a mesh (and associated data) among MPI ranks</li>
+						<li>Managing ghost (halo) elements and data</li>
+						<li>Searching the mesh efficiently</li>
+						<li>Supporting curved meshes</li>
+						</ul>
+					</p>
+
+				</div><!-- /.col-md-6 -->
+			</section><!-- /.about-us -->
+			
+			<section class="row about-us section-padding pb0">
+				<div class="col-md-6">
+					<h2 class="section-title">Getting started</h2>
+					<p>
+						Get started using t8code now. We have a collection of <a href="https://github.com/DLR-AMR/t8code/wiki/Tutorial---Overview" target="_blank">Tutorials</a>
+						that help you understand the data structures and algorithms of t8code and how to best connect it to your application.
+						Additionally our large collection of <a href="https://github.com/DLR-AMR/t8code/tree/main/example" target="_blank">examples</a> demonstrates the features of t8code.					</p>
+
+				</div><!-- /.col-md-6 -->
 			</section><!-- /.about-us -->
 
 			<section class="row about-us section-padding pb0">
 				<div class="col-md-12 md-bm-50">
 					<h2 class="section-title">Publications</h2>
 						<p>
-							[1] Johannes Holke, Scalable algorithms for parallel tree-based adaptive mesh refinement with general element types, PhD thesis at University of Bonn, 2018,
-							<a href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/7661" target="_blank">Full text available</a>
+							<publication>
+								Johannes Holke, Scalable algorithms for parallel tree-based adaptive mesh refinement with general element types, PhD thesis at University of Bonn, 2018,
+								<a href="https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/7661" target="_blank">Full text available</a>
+							</publication>
 							<br>
-							[2] Carsten Burstedde and Johannes Holke, A Tetrahedral Space-Filling Curve for Nonconforming Adaptive Meshes, SIAM Journal on Scientific Computing, 2016, 
-							<a href="https://doi.org/10.1137/15M1040049" target="_blank">10.1137/15M1040049</a>
+							<publication>
+								Carsten Burstedde and Johannes Holke, A Tetrahedral Space-Filling Curve for Nonconforming Adaptive Meshes, SIAM Journal on Scientific Computing, 2016, 
+								<a href="https://doi.org/10.1137/15M1040049" target="_blank">10.1137/15M1040049</a>
+							</publication>
 							<br>
-							[3] Carsten Burstedde and Johannes Holke, Coarse mesh partitioning for tree-based AMR, SIAM Journal on Scientific Computing, 2017, 
-							<a href="https://doi.org/10.1137/16M1103518" target="_blank">10.1137/16M1103518</a>
+							<publication>
+								Carsten Burstedde and Johannes Holke, Coarse mesh partitioning for tree-based AMR, SIAM Journal on Scientific Computing, 2017, 
+								<a href="https://doi.org/10.1137/16M1103518" target="_blank">10.1137/16M1103518</a>
+							</publication>
 							<br>
-							[4] Johannes Holke and David Knapp and Carsten Burstedde, An Optimized, Parallel Computation of the Ghost Layer for Adaptive Hybrid Forest Meshes, Submitted to SIAM Journal on Scientific Computing, 2019, 
-							<a href="https://arxiv.org/abs/1910.10641" target="_blank">Preprint available</a>
-					</p>
+							<publication>
+								Johannes Holke and David Knapp and Carsten Burstedde, An Optimized, Parallel Computation of the Ghost Layer for Adaptive Hybrid Forest Meshes, SIAM Journal on Scientific Computing, 2021, 
+								<a href="https://epubs.siam.org/doi/abs/10.1137/20M1383033" target="_blank">10.1137/20M1383033</a>
+							</publication>
+						</p>
 					</dl>
 				</div><!-- /.col-md-12 -->
 			</section><!-- /.about-us -->
@@ -148,7 +182,7 @@
 				<div class="col-md-12 md-bm-50">
 					<h2 class="section-title">Cite &amp; Acknowledge</h2>
 					<p>
-						If you use t8code in any of your publications, please cite the [github repository](https://github.com/holke/t8code) and [1]. For publications specifically related to 
+						If you use t8code in any of your publications, please cite the <a href="https://github.com/DLR-AMR/t8code/">github repository</a> and [1]. For publications specifically related to 
 					</p>
 					<ul>
 					<li>the TM index, please cite [2].</li>
