@@ -109,7 +109,7 @@ jobs:
       - run:
           name: Push site to gh-pages
           command: |
-            git remote add pages https://github.com/holke/t8code.git
+            git remote add pages https://github.com/dlr-amr/t8code.git
             ghp-import -r pages -m "[skip ci] Update Site" -p -n -f published
 
 
@@ -129,11 +129,11 @@ workflows:
           requires:
             - build_html_demo
 
-      # If we're on master branch, also push the HTML live
+      # If we're on main branch, also push the HTML live
       - html_live:
           requires:
             - build_html_live
           filters:
             branches:
               only:
-                - master
+                - main
