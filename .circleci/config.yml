@@ -103,7 +103,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             # The SSH key fingerprint
-            - "11:7f:7c:10:20:13:b4:28:e4:94:1b:07:10:e0:b9:a0"
+            - "bf:ed:fb:96:81:13:cc:56:4c:95:3c:ea:1f:9d:92:03"
 
       # Push the `_site` folder to our gh-pages branch for it to go live
       - run:
