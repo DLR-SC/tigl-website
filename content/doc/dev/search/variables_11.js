@@ -43,9 +43,9 @@ var searchData=
   ['t8_5fface_5fedge_5fto_5ftree_5fedge_1976',['t8_face_edge_to_tree_edge',['../t8__geometry__occ_8hxx.html#a3e32e0e7f87363a01236459c136d20ed',1,'t8_geometry_occ.cxx']]],
   ['t8_5fface_5fvertex_5fto_5ftree_5fvertex_1977',['t8_face_vertex_to_tree_vertex',['../t8__eclass_8h.html#abe4e86182e7c753bdfaf9b0642ebef58',1,'t8_eclass.c']]],
   ['t8code_5fdata_1978',['t8code_data',['../structt8__forest.html#a7ad3b9940890af8853cff020ffd2abe4',1,'t8_forest']]],
-  ['tree_5foffsets_1979',['tree_offsets',['../structt8__forest.html#ac3bb8f8f6ededc75b72b7eafe372b893',1,'t8_forest::tree_offsets()'],['../structt8__cmesh.html#a68a1a0da2ce018002a076ab2aa01a610',1,'t8_cmesh::tree_offsets()']]],
-  ['treeid_1980',['treeid',['../structt8__ctree.html#adbe0987151e05cdf42bf8c5e0145125d',1,'t8_ctree::treeid()'],['../structt8__cghost.html#af9430916f0925a53b018417c8d4a70fc',1,'t8_cghost::treeid()']]],
+  ['tree_5foffsets_1979',['tree_offsets',['../structt8__cmesh.html#a68a1a0da2ce018002a076ab2aa01a610',1,'t8_cmesh::tree_offsets()'],['../structt8__forest.html#ac3bb8f8f6ededc75b72b7eafe372b893',1,'t8_forest::tree_offsets()']]],
+  ['treeid_1980',['treeid',['../structt8__cghost.html#af9430916f0925a53b018417c8d4a70fc',1,'t8_cghost::treeid()'],['../structt8__ctree.html#adbe0987151e05cdf42bf8c5e0145125d',1,'t8_ctree::treeid()']]],
   ['trees_1981',['trees',['../structt8__cmesh.html#a5e01668c149230caaa48f344b0cbfddd',1,'t8_cmesh']]],
   ['ts_5fcontext_1982',['ts_context',['../structt8__eclass__scheme.html#aaf16793349e86b890d03c21a1b82043d',1,'t8_eclass_scheme']]],
-  ['type_1983',['type',['../structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9',1,'t8_vtk_data_field_t::type()'],['../structt8__dtet.html#aa54f6a407907961760455faa41dd67d9',1,'t8_dtet::type()']]]
+  ['type_1983',['type',['../structt8__dtet.html#aa54f6a407907961760455faa41dd67d9',1,'t8_dtet::type()'],['../structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9',1,'t8_vtk_data_field_t::type()']]]
 ];
