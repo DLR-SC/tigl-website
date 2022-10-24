@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.21-34bb</span>
+   &#160;<span id="projectnumber">1.0.0.22-6db9</span>
    </div>
   </td>
  </tr>
@@ -105,13 +105,19 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">   56</a></span>&#160;<span class="keyword">typedef</span> int8_t <a class="code" href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">t8_dpyramid_type_t</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#ae4d75e96936897f38e8e84e0959b8f05">   59</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="structt8__dtet.html">t8_dtet_t</a> <a class="code" href="t8__dpyramid_8h.html#ae4d75e96936897f38e8e84e0959b8f05">t8_dpyramid_t</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structt8__dpyramid.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dpyramid.html">t8_dpyramid</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="structt8__dtet.html">t8_dtet_t</a>           pyramid;  <span class="comment">/* Coordinates, level and type */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t              switch_shape_at_level;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructt8__dpyramid_html"><div class="ttname"><a href="structt8__dpyramid.html">t8_dpyramid</a></div><div class="ttdoc">This data type stores a pyramid.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:64</div></div>
 <div class="ttc" id="astructt8__dtet_html"><div class="ttname"><a href="structt8__dtet.html">t8_dtet</a></div><div class="ttdoc">This data type stores a tetrahedron.</div><div class="ttdef"><b>Definition:</b> t8_dtet.h:70</div></div>
 <div class="ttc" id="at8__dtet_8h_html"><div class="ttname"><a href="t8__dtet_8h.html">t8_dtet.h</a></div></div>
-<div class="ttc" id="at8__dpyramid_8h_html_ae4d75e96936897f38e8e84e0959b8f05"><div class="ttname"><a href="t8__dpyramid_8h.html#ae4d75e96936897f38e8e84e0959b8f05">t8_dpyramid_t</a></div><div class="ttdeci">t8_dtet_t t8_dpyramid_t</div><div class="ttdoc">This data type stores a pyramid.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:59</div></div>
+<div class="ttc" id="at8__dpyramid_8h_html_af4f0694d239abc911689b96ce09ed924"><div class="ttname"><a href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a></div><div class="ttdeci">struct t8_dpyramid t8_dpyramid_t</div><div class="ttdoc">This data type stores a pyramid.</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div></div>
 <div class="ttc" id="at8__dpyramid_8h_html_aa2c1284d03da8a90691ecf8190c3f275"><div class="ttname"><a href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">t8_dpyramid_type_t</a></div><div class="ttdeci">int8_t t8_dpyramid_type_t</div><div class="ttdoc">The type of pyramid in 0, ...,7.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:56</div></div>
 <div class="ttc" id="at8__dpyramid_8h_html_a2d59658b710e740b1da3ff880ac9896b"><div class="ttname"><a href="t8__dpyramid_8h.html#a2d59658b710e740b1da3ff880ac9896b">t8_dpyramid_coord_t</a></div><div class="ttdeci">int32_t t8_dpyramid_coord_t</div><div class="ttdoc">The coordinates of a pyramid are integers relative to the maximum refinement.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:50</div></div>

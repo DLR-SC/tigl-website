@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: Data Fields</title>
+<title>t8: t8_dpyramid Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,16 +60,34 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">t8_dpyramid Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
-<h3><a id="index_u"></a>- u -</h3><ul>
-<li>user_data
-: <a class="el" href="structt8__forest.html#a11105c5cc477058d72d0cc090a06c64a">t8_forest</a>
-</li>
-<li>user_function
-: <a class="el" href="structt8__forest.html#a807b7a6f5f21129753ab406993650667">t8_forest</a>
-</li>
+<p>This data type stores a pyramid.  
+ <a href="structt8__dpyramid.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="t8__dpyramid_8h_source.html">t8_dpyramid.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ab394a2af8daf110830ec04ce3f6fd50e"><td class="memItemLeft" align="right" valign="top"><a id="ab394a2af8daf110830ec04ce3f6fd50e"></a>
+<a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pyramid</b></td></tr>
+<tr class="separator:ab394a2af8daf110830ec04ce3f6fd50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271fceccb3f5af95332227f47974b609"><td class="memItemLeft" align="right" valign="top"><a id="a271fceccb3f5af95332227f47974b609"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>switch_shape_at_level</b></td></tr>
+<tr class="separator:a271fceccb3f5af95332227f47974b609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This data type stores a pyramid. </p>
+<p>The coordinates, the level and the type of a pyramid are stored in the tet-struct <em>pyramid</em>. Level, at which the shape switches from tet, to pyra. -1 if not computed for a pyramid with the shape of a tet undefined, if the pyramid has the shape of a pyramid. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/t8_schemes/t8_default/t8_default_pyramid/<a class="el" href="t8__dpyramid_8h_source.html">t8_dpyramid.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.21-34bb</span>
+   &#160;<span id="projectnumber">1.0.0.22-6db9</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
@@ -78,6 +79,12 @@ $(function() {
 </div>
 <p><a href="t8__dpyramid_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__dpyramid.html">t8_dpyramid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This data type stores a pyramid.  <a href="structt8__dpyramid.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5b4ec3eb4bca8cdf54e4bf463ad3f104"><td class="memItemLeft" align="right" valign="top"><a id="a5b4ec3eb4bca8cdf54e4bf463ad3f104"></a>
@@ -137,10 +144,9 @@ typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memitem:aa2c1284d03da8a90691ecf8190c3f275"><td class="memItemLeft" align="right" valign="top">typedef int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">t8_dpyramid_type_t</a></td></tr>
 <tr class="memdesc:aa2c1284d03da8a90691ecf8190c3f275"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of pyramid in 0, ...,7.  <a href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">More...</a><br /></td></tr>
 <tr class="separator:aa2c1284d03da8a90691ecf8190c3f275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d75e96936897f38e8e84e0959b8f05"><td class="memItemLeft" align="right" valign="top"><a id="ae4d75e96936897f38e8e84e0959b8f05"></a>
-typedef <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#ae4d75e96936897f38e8e84e0959b8f05">t8_dpyramid_t</a></td></tr>
-<tr class="memdesc:ae4d75e96936897f38e8e84e0959b8f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">This data type stores a pyramid. <br /></td></tr>
-<tr class="separator:ae4d75e96936897f38e8e84e0959b8f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f0694d239abc911689b96ce09ed924"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__dpyramid.html">t8_dpyramid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a></td></tr>
+<tr class="memdesc:af4f0694d239abc911689b96ce09ed924"><td class="mdescLeft">&#160;</td><td class="mdescRight">This data type stores a pyramid.  <a href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">More...</a><br /></td></tr>
+<tr class="separator:af4f0694d239abc911689b96ce09ed924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this. </p>
@@ -163,6 +169,23 @@ typedef <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="af4f0694d239abc911689b96ce09ed924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f0694d239abc911689b96ce09ed924">&#9670;&nbsp;</a></span>t8_dpyramid_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structt8__dpyramid.html">t8_dpyramid</a> <a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This data type stores a pyramid. </p>
+<p>The coordinates, the level and the type of a pyramid are stored in the tet-struct <em>pyramid</em>. Level, at which the shape switches from tet, to pyra. -1 if not computed for a pyramid with the shape of a tet undefined, if the pyramid has the shape of a pyramid. </p>
+
+</div>
+</div>
 <a id="aa2c1284d03da8a90691ecf8190c3f275"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2c1284d03da8a90691ecf8190c3f275">&#9670;&nbsp;</a></span>t8_dpyramid_type_t</h2>
 
