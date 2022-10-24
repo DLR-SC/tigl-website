@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.22-6db9</span>
+   &#160;<span id="projectnumber">1.0.0.23-3487</span>
    </div>
   </td>
  </tr>
@@ -239,22 +239,23 @@ $(function() {
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                                           <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *s, <span class="keyword">const</span> <span class="keywordtype">int</span> level);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keywordtype">void</span>                t8_dpyramid_vertex_reference_coords (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                                         *elem, <span class="keywordtype">int</span> vertex,</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                                         <span class="keywordtype">double</span> coords[]);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keywordtype">void</span>                t8_dpyramid_nearest_common_ancestor (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                                         *pyra1,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                                         <span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                                         *pyra2,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                                         <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *nca);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keywordtype">int</span>                 t8_dpyramid_is_valid (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *p);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keywordtype">void</span>                t8_dpyramid_debug_print (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *p);</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_BITS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                                         *elem,</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                                         <span class="keyword">const</span> <span class="keywordtype">int</span> vertex,</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                                         <span class="keywordtype">double</span> coords[]);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keywordtype">void</span>                t8_dpyramid_nearest_common_ancestor (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                                         *pyra1,</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                                         <span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                                         *pyra2,</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                                         <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *nca);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keywordtype">int</span>                 t8_dpyramid_is_valid (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *p);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keywordtype">void</span>                t8_dpyramid_debug_print (<span class="keyword">const</span> <a class="code" href="structt8__dpyramid.html">t8_dpyramid_t</a> *p);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_BITS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructt8__dpyramid_html"><div class="ttname"><a href="structt8__dpyramid.html">t8_dpyramid</a></div><div class="ttdoc">This data type stores a pyramid.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:64</div></div>
 <div class="ttc" id="at8__element_8h_html_ac4c605cddc1aad4d36398a773768f738"><div class="ttname"><a href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a></div><div class="ttdeci">struct t8_element t8_element_t</div><div class="ttdoc">Opaque structure for a generic element, only used as pointer.</div><div class="ttdef"><b>Definition:</b> t8_element.h:42</div></div>

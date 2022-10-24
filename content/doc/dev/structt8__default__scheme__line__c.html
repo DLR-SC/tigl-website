@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.22-6db9</span>
+   &#160;<span id="projectnumber">1.0.0.23-3487</span>
    </div>
   </td>
  </tr>
@@ -215,9 +215,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8083f6de987fe142ff0eac33ba3a621d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__line__c.html#a8083f6de987fe142ff0eac33ba3a621d">t8_element_vertex_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int vertex, int coords[])</td></tr>
 <tr class="memdesc:a8083f6de987fe142ff0eac33ba3a621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integer coordinates of a given element vertex.  <a href="structt8__default__scheme__line__c.html#a8083f6de987fe142ff0eac33ba3a621d">More...</a><br /></td></tr>
 <tr class="separator:a8083f6de987fe142ff0eac33ba3a621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af993d7e2fca1f6bd40299f02ba75d861"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__line__c.html#af993d7e2fca1f6bd40299f02ba75d861">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int vertex, double coords[])</td></tr>
-<tr class="memdesc:af993d7e2fca1f6bd40299f02ba75d861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="structt8__default__scheme__line__c.html#af993d7e2fca1f6bd40299f02ba75d861">More...</a><br /></td></tr>
-<tr class="separator:af993d7e2fca1f6bd40299f02ba75d861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f0c10be484476abff675e996177ea9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__line__c.html#ac7f0c10be484476abff675e996177ea9">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[])</td></tr>
+<tr class="memdesc:ac7f0c10be484476abff675e996177ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="structt8__default__scheme__line__c.html#ac7f0c10be484476abff675e996177ea9">More...</a><br /></td></tr>
+<tr class="separator:ac7f0c10be484476abff675e996177ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649edfd650af095e5db7439d63664a07"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__line__c.html#a649edfd650af095e5db7439d63664a07">t8_element_refines_irregular</a> (void)</td></tr>
 <tr class="memdesc:a649edfd650af095e5db7439d63664a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if there is one element in the tree, that does not refine into 2^dim children.  <a href="structt8__default__scheme__line__c.html#a649edfd650af095e5db7439d63664a07">More...</a><br /></td></tr>
 <tr class="separator:a649edfd650af095e5db7439d63664a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2480,8 +2480,8 @@ t8_element_is_valid </dd></dl>
 
 </div>
 </div>
-<a id="af993d7e2fca1f6bd40299f02ba75d861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af993d7e2fca1f6bd40299f02ba75d861">&#9670;&nbsp;</a></span>t8_element_vertex_reference_coords()</h2>
+<a id="ac7f0c10be484476abff675e996177ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f0c10be484476abff675e996177ea9">&#9670;&nbsp;</a></span>t8_element_vertex_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2498,7 +2498,7 @@ t8_element_is_valid </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>vertex</em>, </td>
         </tr>
         <tr>
@@ -2530,7 +2530,7 @@ t8_element_is_valid </dd></dl>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="structt8__eclass__scheme.html#a3569c66524777d58b27473e3643fa220">t8_eclass_scheme</a>.</p>
+<p>Implements <a class="el" href="structt8__eclass__scheme.html#a9823894596e01e650ed24a6be9a53067">t8_eclass_scheme</a>.</p>
 
 </div>
 </div>
