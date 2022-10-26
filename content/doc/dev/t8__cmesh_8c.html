@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.23-3487</span>
+   &#160;<span id="projectnumber">1.0.0.27-9d9a</span>
    </div>
   </td>
  </tr>
@@ -80,6 +80,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="t8__refcount_8h_source.html">t8_refcount.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__shmem_8h_source.html">t8_data/t8_shmem.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__vec_8h_source.html">t8_vec.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t8__eclass_8h_source.html">t8_eclass.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="t8__cmesh__trees_8h_source.html">t8_cmesh_trees.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -241,6 +242,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <tr class="memitem:a9ab6ecae069da4b4b52e692c6724cff6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a9ab6ecae069da4b4b52e692c6724cff6">t8_cmesh_coords_axb</a> (const double *coords_in, double *coords_out, int num_vertices, double alpha, const double b[3])</td></tr>
 <tr class="memdesc:a9ab6ecae069da4b4b52e692c6724cff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute y = ax + b on an array of doubles, interpreting each 3 as one vector x.  <a href="t8__cmesh_8c.html#a9ab6ecae069da4b4b52e692c6724cff6">More...</a><br /></td></tr>
 <tr class="separator:a9ab6ecae069da4b4b52e692c6724cff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac20964d5fd3f9732ce3d991ff6e1cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a2ac20964d5fd3f9732ce3d991ff6e1cc">t8_cmesh_debug_print_trees</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a2ac20964d5fd3f9732ce3d991ff6e1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this file </p>
@@ -420,6 +423,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
     <tr><td class="paramdir">[in]</td><td class="paramname">num_vertices</td><td>The number of vertices/vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>Scaling factor for the vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Translation of the vectors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ac20964d5fd3f9732ce3d991ff6e1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac20964d5fd3f9732ce3d991ff6e1cc">&#9670;&nbsp;</a></span>t8_cmesh_debug_print_trees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_debug_print_trees </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This function is only available in debug-modus and should only be used in debug-modus.</dd></dl>
+<p>Prints the vertices of each tree of each process</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>Source-cmesh, which trees get printed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1000,7 +1039,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>The id of a loca tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>The id of a local tree. </td></tr>
   </table>
   </dd>
 </dl>
