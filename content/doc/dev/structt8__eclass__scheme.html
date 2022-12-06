@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.51-8fc5</span>
+   &#160;<span id="projectnumber">1.0.0.52-f8bc</span>
    </div>
   </td>
  </tr>
@@ -1752,6 +1752,7 @@ t8_element_is_valid </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if <em>face</em> is a subface of the element's root element. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You can compute the corresponding face number of the tree via <a class="el" href="structt8__eclass__scheme.html#a0872df58d71f57be00c68927178b16ac">t8_element_tree_face</a>. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__quad__c.html#aa864ee8d214fae9c160504c90b53e9b8">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a8f5746ed141867826b9b4838dbee8672">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#af548e28caf1bc9ddcd893b1f633719ff">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#aaa0623ea8983fbd6d1e0990de95139e4">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a585019fd1edb53f52f4d92f19512b21b">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ae61ce78e41c1a5d5302699ce6868b734">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a417f65a14df3f94e87e23763f6954da4">t8_default_scheme_hex_c</a>, and <a class="el" href="structt8__default__scheme__tri__c.html#a45c20c3ad40121e556011082f06eb6eb">t8_default_scheme_tri_c</a>.</p>
 
@@ -2735,7 +2736,7 @@ t8_element_is_valid </dd></dl>
 </div><div class="memdoc">
 
 <p>Given an element and a face of this element. </p>
-<p>If the face lies on the tree boundary, return the face number of the tree face. If not the return value is arbitrary. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the face lies on the tree boundary, return the face number of the tree face. If not the return value is arbitrary. You can call <a class="el" href="structt8__eclass__scheme.html#aaa2e3a97a675b784fefb0cef6e83f6cc">t8_element_is_root_boundary</a> to query whether the face is at the tree boundary. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The index of a face of <em>elem</em>. </td></tr>
@@ -2743,6 +2744,7 @@ t8_element_is_valid </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the tree face that <em>face</em> is a subface of, if <em>face</em> is on a tree boundary. Any arbitrary integer if <em>is</em> not at a tree boundary. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The return value may look like a valid face of the tree even if the element does not lie on the root boundary. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__quad__c.html#a5dca2b142e5b5eafd11817f9b924b316">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a3f4eb9205b51dba48ec2eae97a0834c8">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a93a4af34af7f961c5771c484af9561ce">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a4b635a1f3d3a7a7a8e3e3b93b2709a14">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a70ad05a205dba7cae9e7de1444d39d27">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a2e716bb06bdaa5ab53fcbf61696312a1">t8_default_scheme_hex_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#aeac6def8a2de546e066ec2b1274e5f1b">t8_default_scheme_tet_c</a>, and <a class="el" href="structt8__default__scheme__tri__c.html#ab3029498d121a6c01a743ba56161a906">t8_default_scheme_tri_c</a>.</p>
 
