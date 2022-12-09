@@ -257,6 +257,12 @@ a:focus{
     margin-top: 0;
     margin-bottom: 20px;
 }
+.website-title {
+	font-size:2em;
+	line-height: 20px;
+	color: #9231ab;
+	font-weight: bold;
+}
 
 /* 2 - General Styles End
 ******************************************************/

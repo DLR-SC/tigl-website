@@ -1,23 +1,17 @@
 name: html-preview
-on:
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - main
-      - develop
-  workflow_dispatch: # be able to trigger workflow manually
-
+on: [status]
 
 jobs:
-  html-preview:
+  circleci_artifacts_redirector_job:
     runs-on: ubuntu-latest
-    name: html-preview
+    if: "${{ github.event.context == 'ci/circleci: html_demo' }}"
+    name: Run CircleCI artifacts redirector
     steps:
-      - uses: larsoner/circleci-artifacts-redirector-action@master
+      - name: GitHub Action step
+        id: step1
+        uses: larsoner/circleci-artifacts-redirector-action@master
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           artifact-path: 0/html/index.html
           circleci-jobs: html_demo
+          job-title: Check the built artifact here
