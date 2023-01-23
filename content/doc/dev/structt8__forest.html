@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.73-fcca</span>
+   &#160;<span id="projectnumber">1.0.0.76-afa6</span>
    </div>
   </td>
  </tr>
@@ -167,11 +167,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a637c5a1012dc49f78bd487264bbcb699">mpirank</a></td></tr>
 <tr class="memdesc:a637c5a1012dc49f78bd487264bbcb699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of this MPI process. <br /></td></tr>
 <tr class="separator:a637c5a1012dc49f78bd487264bbcb699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff12e7168a5580243b7a8806adcbeef"><td class="memItemLeft" align="right" valign="top"><a id="a0ff12e7168a5580243b7a8806adcbeef"></a>
-<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>first_local_tree</b></td></tr>
+<tr class="memitem:a0ff12e7168a5580243b7a8806adcbeef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a0ff12e7168a5580243b7a8806adcbeef">first_local_tree</a></td></tr>
+<tr class="memdesc:a0ff12e7168a5580243b7a8806adcbeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global index of the first local tree on this process.  <a href="structt8__forest.html#a0ff12e7168a5580243b7a8806adcbeef">More...</a><br /></td></tr>
 <tr class="separator:a0ff12e7168a5580243b7a8806adcbeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d08dbfd69857e15bae0caaf04200aea"><td class="memItemLeft" align="right" valign="top"><a id="a0d08dbfd69857e15bae0caaf04200aea"></a>
-<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>last_local_tree</b></td></tr>
+<tr class="memitem:a0d08dbfd69857e15bae0caaf04200aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a0d08dbfd69857e15bae0caaf04200aea">last_local_tree</a></td></tr>
+<tr class="memdesc:a0d08dbfd69857e15bae0caaf04200aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global index of the last local tree on this process.  <a href="structt8__forest.html#a0d08dbfd69857e15bae0caaf04200aea">More...</a><br /></td></tr>
 <tr class="separator:a0d08dbfd69857e15bae0caaf04200aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c20d475398a3fab0ab825cf98cddbdb"><td class="memItemLeft" align="right" valign="top"><a id="a2c20d475398a3fab0ab825cf98cddbdb"></a>
 <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a2c20d475398a3fab0ab825cf98cddbdb">global_num_trees</a></td></tr>
@@ -231,6 +231,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 
 </div>
 </div>
+<a id="a0ff12e7168a5580243b7a8806adcbeef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff12e7168a5580243b7a8806adcbeef">&#9670;&nbsp;</a></span>first_local_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_forest::first_local_tree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The global index of the first local tree on this process. </p>
+<p>If first_local_tree is larger than last_local_tree then this processor/forest is empty. See <a href="https://github.com/DLR-AMR/t8code/wiki/Tree-indexing">https://github.com/DLR-AMR/t8code/wiki/Tree-indexing</a> </p>
+
+</div>
+</div>
 <a id="a6babe7131e665da7e41ac44a8d9a39dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6babe7131e665da7e41ac44a8d9a39dc">&#9670;&nbsp;</a></span>ghost_algorithm</h2>
 
@@ -279,6 +296,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 
 <p>If partitioned, for each process the linear id (at maxlevel) of its first element's first descendant. </p>
 <p><a class="el" href="t8__element__c__interface_8h.html#a6abafdd47453c6cc6e59cc6ebf7b605b">t8_element_set_linear_id</a>. Stores 0 for empty processes. Since it is memory consuming, it is usually only constructed when needed and otherwise unallocated. </p>
+
+</div>
+</div>
+<a id="a0d08dbfd69857e15bae0caaf04200aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d08dbfd69857e15bae0caaf04200aea">&#9670;&nbsp;</a></span>last_local_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_forest::last_local_tree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The global index of the last local tree on this process. </p>
+<p>-1 if this processor is empty. </p>
 
 </div>
 </div>

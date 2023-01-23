@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.73-fcca</span>
+   &#160;<span id="projectnumber">1.0.0.76-afa6</span>
    </div>
   </td>
  </tr>
@@ -100,8 +100,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_init<
 <tr class="memitem:ad4c4c4aa0def1290e4e7aad981a15f75"><td class="memItemLeft" align="right" valign="top"><a id="ad4c4c4aa0def1290e4e7aad981a15f75"></a>
 <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_get_tree_class</b> (<a class="el" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lghost_tree)</td></tr>
 <tr class="separator:ad4c4c4aa0def1290e4e7aad981a15f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4980d8397ff2bf25262655b814086f6d"><td class="memItemLeft" align="right" valign="top"><a id="a4980d8397ff2bf25262655b814086f6d"></a>
-<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_get_global_treeid</b> (<a class="el" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lghost_tree)</td></tr>
+<tr class="memitem:a4980d8397ff2bf25262655b814086f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__ghost_8h.html#a4980d8397ff2bf25262655b814086f6d">t8_forest_ghost_get_global_treeid</a> (<a class="el" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lghost_tree)</td></tr>
+<tr class="memdesc:a4980d8397ff2bf25262655b814086f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local ghost tree compute the global tree id of it.  <a href="t8__forest__ghost_8h.html#a4980d8397ff2bf25262655b814086f6d">More...</a><br /></td></tr>
 <tr class="separator:a4980d8397ff2bf25262655b814086f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c7270038627b4879de8f6fc95d810e"><td class="memItemLeft" align="right" valign="top"><a id="ae9c7270038627b4879de8f6fc95d810e"></a>
 <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_get_element</b> (<a class="el" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lghost_tree, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lelement)</td></tr>
@@ -252,6 +252,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_creat
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If <em>gtreeid</em> is also a ghost tree, the index in the ghost-&gt;ghost_trees array of the tree. Otherwise a negative number. <em>forest</em> must be committed before calling this function. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/DLR-AMR/t8code/wiki/Tree-indexing">https://github.com/DLR-AMR/t8code/wiki/Tree-indexing</a> for more details about tree indexing. </dd></dl>
+
+</div>
+</div>
+<a id="a4980d8397ff2bf25262655b814086f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4980d8397ff2bf25262655b814086f6d">&#9670;&nbsp;</a></span>t8_forest_ghost_get_global_treeid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_forest_ghost_get_global_treeid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>lghost_tree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a local ghost tree compute the global tree id of it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. Ghost layer must exist. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lghost_tree</td><td>The ghost tree id of a ghost tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The global id of the local ghost tree <em>lghost_tree</em>. <em>forest</em> must be committed before calling this function. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/DLR-AMR/t8code/wiki/Tree-indexing">https://github.com/DLR-AMR/t8code/wiki/Tree-indexing</a> for more details about tree indexing. </dd></dl>
 
 </div>
 </div>
