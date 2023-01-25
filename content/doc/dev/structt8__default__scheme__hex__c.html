@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.78-4e99</span>
+   &#160;<span id="projectnumber">1.0.0.81-97cfa</span>
    </div>
   </td>
  </tr>
@@ -1447,11 +1447,12 @@ t8_element_is_valid </dd></dl>
 <p>Query whether a given set of elements is a family or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fam</td><td>An array of as many elements as an element of class <b>ts</b> has children. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fam</td><td>An array of as many elements as an element of class <b>ts</b> has siblings. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero if <b>fam</b> is not a family, nonzero if it is. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>level 0 elements do not form a family. </dd></dl>
 
 <p>Implements <a class="el" href="structt8__eclass__scheme.html#af548429bd3de07d64e0b470c0d567508">t8_eclass_scheme</a>.</p>
 

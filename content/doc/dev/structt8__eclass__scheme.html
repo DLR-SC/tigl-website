@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.78-4e99</span>
+   &#160;<span id="projectnumber">1.0.0.81-97cfa</span>
    </div>
   </td>
  </tr>
@@ -1699,11 +1699,12 @@ t8_element_is_valid </dd></dl>
 <p>Query whether a given set of elements is a family or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fam</td><td>An array of as many elements as an element of class <b>ts</b> has children. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fam</td><td>An array of as many elements as an element of class <b>ts</b> has siblings. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero if <b>fam</b> is not a family, nonzero if it is. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>level 0 elements do not form a family. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__quad__c.html#ac0617e3327b83392e8855fc833133ae2">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#abb797d2e2c076125aec76c991ef3f1fe">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a47fb511a6a084f123ef9b83ae190f71e">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#ab69f2fa8db05a636f2f90b76b6783b3f">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#af669a079260aa056d1363da97f172976">t8_default_scheme_hex_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a4837af85583c35e307cf3f0b5d65abbb">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a6e502ae1e444f0eee1cd863b5bdbb212">t8_default_scheme_vertex_c</a>, and <a class="el" href="structt8__default__scheme__tri__c.html#aa02d59c8e38246d43c33d6efc9917fb6">t8_default_scheme_tri_c</a>.</p>
 
