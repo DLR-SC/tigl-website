@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.121-b282</span>
+   &#160;<span id="projectnumber">1.0.0.126-a9bae</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure holds the data of a local tree including the information about face neighbors. </p>
-<p>For those the tree_to_face index is computed as follows. Let F be the maximal number of faces of any eclass of the cmesh's dimension, then ttf % F is the face number and ttf / F is the orientation. (<a class="el" href="t8__eclass_8h.html#a803f35807b96762457efead899f4f6e3">t8_eclass_max_num_faces</a>) The orientation is determined as follows. Let my_face and other_face be the two face numbers of the connecting trees. We chose a master_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the master_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle &lt; square, hex &lt; tet &lt; prism &lt; pyramid, is the master_face. Then the first face corner of the master_face connects to a face corner in the other face. The face orientation is defined as the number of this corner. If the classes are equal and my_face == other_face, treating either of both faces as the master_face leads to the same result. </p>
+<p>For those the tree_to_face index is computed as follows. Let F be the maximal number of faces of any eclass of the cmesh's dimension, then ttf % F is the face number and ttf / F is the orientation. (<a class="el" href="t8__eclass_8h.html#a803f35807b96762457efead899f4f6e3">t8_eclass_max_num_faces</a>) The orientation is determined as follows. Let my_face and other_face be the two face numbers of the connecting trees. We chose a main_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the main_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle &lt; square, hex &lt; tet &lt; prism &lt; pyramid, is the main_face. Then face corner 0 of the main_face connects to a face corner k in the other face. The face orientation is defined as the number k. If the classes are equal and my_face == other_face, treating either of both faces as the main_face leads to the same result. See <a href="https://arxiv.org/pdf/1611.02929.pdf">https://arxiv.org/pdf/1611.02929.pdf</a> for more details. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/t8_cmesh/<a class="el" href="t8__cmesh__types_8h_source.html">t8_cmesh_types.h</a></li>
 </ul>
