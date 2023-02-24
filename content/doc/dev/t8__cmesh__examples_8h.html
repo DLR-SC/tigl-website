@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.0.0.170-73a9</span>
+   &#160;<span id="projectnumber">1.0.0.196-47bca</span>
    </div>
   </td>
  </tr>
@@ -152,6 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">t8_cmesh_new_long_brick_pyramid</a> (sc_MPI_Comm comm, int num_cubes)</td></tr>
 <tr class="memdesc:a50cd0d42f38fa6f73b261feb84f62e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a bigger mesh, consisting of many cubes made by pyramids.  <a href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">More...</a><br /></td></tr>
 <tr class="separator:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78da3e414a1641b092ab04a8b2c1ded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ac78da3e414a1641b092ab04a8b2c1ded">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:ac78da3e414a1641b092ab04a8b2c1ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#ac78da3e414a1641b092ab04a8b2c1ded">More...</a><br /></td></tr>
+<tr class="separator:ac78da3e414a1641b092ab04a8b2c1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide example coarse meshes in this file </p>
@@ -692,10 +695,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_cubes</td><td>The number of cubes of pyramids return A cmesh with <em>num_cubes</em> many hypercubes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_cubes</td><td>The number of cubes of pyramids </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A cmesh with <em>num_cubes</em> many hypercubes </dd></dl>
 
 </div>
 </div>
@@ -999,6 +1003,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A valid cmesh; as if _init and _commit had been called. </dd></dl>
+
+</div>
+</div>
+<a id="ac78da3e414a1641b092ab04a8b2c1ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78da3e414a1641b092ab04a8b2c1ded">&#9670;&nbsp;</a></span>t8_cmesh_new_row_of_cubes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_row_of_cubes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_trees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>set_attributes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trees</td><td>The number of trees along the x-axis </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">set_attributes</td><td>If 1, set tree_id and num_trees as additional attribute for each tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A cmesh with <em>num_trees</em> many hexahedrons. </dd></dl>
 
 </div>
 </div>
