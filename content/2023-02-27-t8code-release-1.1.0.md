@@ -1,0 +1,9 @@
+
+
+Title: t8code-1.1.0 released Date: 2023-02-27 16:00 Category: News Authors: Johannes Holke
+
+We have released version 1.1.0 of t8code!
+
+New features include an improved handling of cmesh attributes. Now, multiple attributes per tree are supported.
+
+For the full change log see: https://github.com/DLR-AMR/t8code/releases/tag/v1.1.0
