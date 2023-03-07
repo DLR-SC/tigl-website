@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.1.0.12-a2e87</span>
+   &#160;<span id="projectnumber">1.1.0.15-7c352</span>
    </div>
   </td>
  </tr>
@@ -84,18 +84,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a846698b05fa80cb3980e7c05aaa5436d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a846698b05fa80cb3980e7c05aaa5436d">t8_vec_dist</a> (const double vec_x[3], const double vec_y[3])</td></tr>
 <tr class="memdesc:a846698b05fa80cb3980e7c05aaa5436d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Euclidean distance of X and Y.  <a href="t8__vec_8h.html#a846698b05fa80cb3980e7c05aaa5436d">More...</a><br /></td></tr>
 <tr class="separator:a846698b05fa80cb3980e7c05aaa5436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a208ad2944a0706dcd4e0043445cb71b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a208ad2944a0706dcd4e0043445cb71b8">t8_vec_ax</a> (double vec_x[3], double alpha)</td></tr>
-<tr class="memdesc:a208ad2944a0706dcd4e0043445cb71b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute X = alpha * X.  <a href="t8__vec_8h.html#a208ad2944a0706dcd4e0043445cb71b8">More...</a><br /></td></tr>
-<tr class="separator:a208ad2944a0706dcd4e0043445cb71b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab637e544ea08fbd8e2635eb2cd80bba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#ab637e544ea08fbd8e2635eb2cd80bba3">t8_vec_axb</a> (const double vec_x[3], double vec_y[3], double alpha, double b)</td></tr>
-<tr class="memdesc:ab637e544ea08fbd8e2635eb2cd80bba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y = alpha * X + b.  <a href="t8__vec_8h.html#ab637e544ea08fbd8e2635eb2cd80bba3">More...</a><br /></td></tr>
-<tr class="separator:ab637e544ea08fbd8e2635eb2cd80bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a895912694e253fbfecd480c29a670422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a895912694e253fbfecd480c29a670422">t8_vec_axpy</a> (const double vec_x[3], double vec_y[3], double alpha)</td></tr>
-<tr class="memdesc:a895912694e253fbfecd480c29a670422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y = Y + alpha * X.  <a href="t8__vec_8h.html#a895912694e253fbfecd480c29a670422">More...</a><br /></td></tr>
-<tr class="separator:a895912694e253fbfecd480c29a670422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21eecb47b09179f311a56cc919aec106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a21eecb47b09179f311a56cc919aec106">t8_vec_axpyz</a> (const double vec_x[3], const double vec_y[3], double vec_z[3], double alpha)</td></tr>
-<tr class="memdesc:a21eecb47b09179f311a56cc919aec106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z = Y + alpha * X.  <a href="t8__vec_8h.html#a21eecb47b09179f311a56cc919aec106">More...</a><br /></td></tr>
-<tr class="separator:a21eecb47b09179f311a56cc919aec106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af369c593d4a2a84f1fa48a105309d029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#af369c593d4a2a84f1fa48a105309d029">t8_vec_ax</a> (double vec_x[3], const double alpha)</td></tr>
+<tr class="memdesc:af369c593d4a2a84f1fa48a105309d029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute X = alpha * X.  <a href="t8__vec_8h.html#af369c593d4a2a84f1fa48a105309d029">More...</a><br /></td></tr>
+<tr class="separator:af369c593d4a2a84f1fa48a105309d029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7919df7a357a8d6e7e8ec017895d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a0d7919df7a357a8d6e7e8ec017895d75">t8_vec_axy</a> (const double vec_x[3], double vec_y[3], const double alpha)</td></tr>
+<tr class="memdesc:a0d7919df7a357a8d6e7e8ec017895d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Y = alpha * X.  <a href="t8__vec_8h.html#a0d7919df7a357a8d6e7e8ec017895d75">More...</a><br /></td></tr>
+<tr class="separator:a0d7919df7a357a8d6e7e8ec017895d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71db0ac770963fef518cfb55f04ba46d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a71db0ac770963fef518cfb55f04ba46d">t8_vec_axb</a> (const double vec_x[3], double vec_y[3], const double alpha, const double b)</td></tr>
+<tr class="memdesc:a71db0ac770963fef518cfb55f04ba46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y = alpha * X + b.  <a href="t8__vec_8h.html#a71db0ac770963fef518cfb55f04ba46d">More...</a><br /></td></tr>
+<tr class="separator:a71db0ac770963fef518cfb55f04ba46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c67857e2390c8c44d684da83b79ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a22c67857e2390c8c44d684da83b79ca6">t8_vec_axpy</a> (const double vec_x[3], double vec_y[3], const double alpha)</td></tr>
+<tr class="memdesc:a22c67857e2390c8c44d684da83b79ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y = Y + alpha * X.  <a href="t8__vec_8h.html#a22c67857e2390c8c44d684da83b79ca6">More...</a><br /></td></tr>
+<tr class="separator:a22c67857e2390c8c44d684da83b79ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91f4db0480901922239cbe00112a29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#ad91f4db0480901922239cbe00112a29d">t8_vec_axpyz</a> (const double vec_x[3], const double vec_y[3], double vec_z[3], const double alpha)</td></tr>
+<tr class="memdesc:ad91f4db0480901922239cbe00112a29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z = Y + alpha * X.  <a href="t8__vec_8h.html#ad91f4db0480901922239cbe00112a29d">More...</a><br /></td></tr>
+<tr class="separator:ad91f4db0480901922239cbe00112a29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9154d3f9c1ca7b04aeb8b8096c09f9d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__vec_8h.html#a9154d3f9c1ca7b04aeb8b8096c09f9d7">t8_vec_dot</a> (const double vec_x[3], const double vec_y[3])</td></tr>
 <tr class="memdesc:a9154d3f9c1ca7b04aeb8b8096c09f9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product of X and Y.  <a href="t8__vec_8h.html#a9154d3f9c1ca7b04aeb8b8096c09f9d7">More...</a><br /></td></tr>
 <tr class="separator:a9154d3f9c1ca7b04aeb8b8096c09f9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,8 +109,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define routines to handle 3-dimensional vectors. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a208ad2944a0706dcd4e0043445cb71b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a208ad2944a0706dcd4e0043445cb71b8">&#9670;&nbsp;</a></span>t8_vec_ax()</h2>
+<a id="af369c593d4a2a84f1fa48a105309d029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af369c593d4a2a84f1fa48a105309d029">&#9670;&nbsp;</a></span>t8_vec_ax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,7 +124,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>alpha</em>&#160;</td>
         </tr>
         <tr>
@@ -143,8 +146,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab637e544ea08fbd8e2635eb2cd80bba3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab637e544ea08fbd8e2635eb2cd80bba3">&#9670;&nbsp;</a></span>t8_vec_axb()</h2>
+<a id="a71db0ac770963fef518cfb55f04ba46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71db0ac770963fef518cfb55f04ba46d">&#9670;&nbsp;</a></span>t8_vec_axb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,13 +167,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -195,8 +198,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a895912694e253fbfecd480c29a670422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a895912694e253fbfecd480c29a670422">&#9670;&nbsp;</a></span>t8_vec_axpy()</h2>
+<a id="a22c67857e2390c8c44d684da83b79ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c67857e2390c8c44d684da83b79ca6">&#9670;&nbsp;</a></span>t8_vec_axpy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +219,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>alpha</em>&#160;</td>
         </tr>
         <tr>
@@ -239,8 +242,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a21eecb47b09179f311a56cc919aec106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21eecb47b09179f311a56cc919aec106">&#9670;&nbsp;</a></span>t8_vec_axpyz()</h2>
+<a id="ad91f4db0480901922239cbe00112a29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91f4db0480901922239cbe00112a29d">&#9670;&nbsp;</a></span>t8_vec_axpyz()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +269,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>alpha</em>&#160;</td>
         </tr>
         <tr>
@@ -283,6 +286,50 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_x</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_y</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vec_z</td><td>On output set <em>to</em> vec_y + <em>alpha</em> * <em>vec_x</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d7919df7a357a8d6e7e8ec017895d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7919df7a357a8d6e7e8ec017895d75">&#9670;&nbsp;</a></span>t8_vec_axy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_vec_axy </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>vec_x</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vec_y</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute Y = alpha * X. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec_x</td><td>A 3D vector. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vec_z</td><td>On output set to <em>alpha</em> * <em>vec_x</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>A factor. </td></tr>
   </table>
   </dd>
 </dl>
