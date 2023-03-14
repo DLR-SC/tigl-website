@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.1.0.120-85c2</span>
+   &#160;<span id="projectnumber">1.1.0.127-6fb5</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,22 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#abe4e86182e7c753bdfaf9b0642ebef58">t8_face_vertex_to_tree_vertex</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#a05f85727adfc2a7d3836ac390be5aab8">T8_ECLASS_MAX_CORNERS_2D</a>]</td></tr>
 <tr class="memdesc:abe4e86182e7c753bdfaf9b0642ebef58"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each face f the entry i gives the vertex number of f's i-th vertex within all vertices of the tree. <br /></td></tr>
 <tr class="separator:abe4e86182e7c753bdfaf9b0642ebef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ceb3caf774f1a1790142e48a714e0"><td class="memItemLeft" align="right" valign="top"><a id="a500ceb3caf774f1a1790142e48a714e0"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a500ceb3caf774f1a1790142e48a714e0">t8_face_edge_to_tree_edge_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#acbd0f18b10d00c8460a68a149a5d8c61">T8_ECLASS_MAX_EDGES_2D</a>]</td></tr>
+<tr class="memdesc:a500ceb3caf774f1a1790142e48a714e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each face f the entry i gives the edge number of f's i-th edge within all edges of the tree. <br /></td></tr>
+<tr class="separator:a500ceb3caf774f1a1790142e48a714e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6be50e61ca11827d8b45211d3a0c14"><td class="memItemLeft" align="right" valign="top"><a id="a2a6be50e61ca11827d8b45211d3a0c14"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a2a6be50e61ca11827d8b45211d3a0c14">t8_face_to_edge_neighbor</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#a05f85727adfc2a7d3836ac390be5aab8">T8_ECLASS_MAX_CORNERS_2D</a>]</td></tr>
+<tr class="memdesc:a2a6be50e61ca11827d8b45211d3a0c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass, each face f and the face vertex v, we get the edge number of the tree which is incident to vertex v but not part of f. <br /></td></tr>
+<tr class="separator:a2a6be50e61ca11827d8b45211d3a0c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ad301151b24351752aace1ce8bb030"><td class="memItemLeft" align="right" valign="top"><a id="a11ad301151b24351752aace1ce8bb030"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a11ad301151b24351752aace1ce8bb030">t8_edge_vertex_to_tree_vertex_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
+<tr class="memdesc:a11ad301151b24351752aace1ce8bb030"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the vertex number of e's i-th vertex within all vertices of the tree. <br /></td></tr>
+<tr class="separator:a11ad301151b24351752aace1ce8bb030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee727a80c382d88fc5282033a727df33"><td class="memItemLeft" align="right" valign="top"><a id="aee727a80c382d88fc5282033a727df33"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#aee727a80c382d88fc5282033a727df33">t8_edge_to_face_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
+<tr class="memdesc:aee727a80c382d88fc5282033a727df33"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the face number of e's i-th incident face within all faces of the tree. <br /></td></tr>
+<tr class="separator:aee727a80c382d88fc5282033a727df33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62982c7b72a0ab0b8d836beaf97bc430"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a62982c7b72a0ab0b8d836beaf97bc430">t8_eclass_face_orientation</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>]</td></tr>
 <tr class="memdesc:a62982c7b72a0ab0b8d836beaf97bc430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each face is either 0 or 1 oriented, depending on the order of its vertices.  <a href="t8__eclass_8h.html#a62982c7b72a0ab0b8d836beaf97bc430">More...</a><br /></td></tr>
 <tr class="separator:a62982c7b72a0ab0b8d836beaf97bc430"><td class="memSeparator" colspan="2">&#160;</td></tr>
