@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.1.2.118-138d</span>
+   &#160;<span id="projectnumber">1.1.2.123-57de</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1a3e9a513a70d5fdd82ba2222f33f22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new array structure with 0 elements.  <a href="t8__containers_8cxx.html#a1a3e9a513a70d5fdd82ba2222f33f22f">More...</a><br /></td></tr>
 <tr class="separator:a1a3e9a513a70d5fdd82ba2222f33f22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d4f817110c89695c3fb372083cedb33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8cxx.html#a0d4f817110c89695c3fb372083cedb33">t8_element_array_new_count</a> (<a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *scheme, size_t num_elements)</td></tr>
-<tr class="memdesc:a0d4f817110c89695c3fb372083cedb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new array structure with a given length (number of elements) and calls <a class="el" href="t8__element__c__interface_8h.html#a1886c2ddcfdd946c4b8a70db70d229be">t8_element_new</a> for those elements.  <a href="t8__containers_8cxx.html#a0d4f817110c89695c3fb372083cedb33">More...</a><br /></td></tr>
+<tr class="memdesc:a0d4f817110c89695c3fb372083cedb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new array structure with a given length (number of elements) and calls <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> for those elements.  <a href="t8__containers_8cxx.html#a0d4f817110c89695c3fb372083cedb33">More...</a><br /></td></tr>
 <tr class="separator:a0d4f817110c89695c3fb372083cedb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f46f7417d424206782386806ec98d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8cxx.html#a14f46f7417d424206782386806ec98d1">t8_element_array_init</a> (<a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *element_array, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *scheme)</td></tr>
 <tr class="memdesc:a14f46f7417d424206782386806ec98d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an already allocated (or static) array structure.  <a href="t8__containers_8cxx.html#a14f46f7417d424206782386806ec98d1">More...</a><br /></td></tr>
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">element_array</td><td>Array structure to be initialized. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The eclass scheme of which elements should be stored. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>An array of t8_element_t which will be copied into <em>element_array</em>. The elements in <em>data</em> must belong to <em>scheme</em> and must be properly initialized with either <a class="el" href="t8__element__c__interface_8h.html#a1886c2ddcfdd946c4b8a70db70d229be">t8_element_new</a> or t8_element_init. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>An array of t8_element_t which will be copied into <em>element_array</em>. The elements in <em>data</em> must belong to <em>scheme</em> and must be properly initialized with either <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> or t8_element_init. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_elements</td><td>Number of elements in <em>data</em> to be copied. </td></tr>
   </table>
   </dd>
@@ -677,7 +677,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new array structure with a given length (number of elements) and calls <a class="el" href="t8__element__c__interface_8h.html#a1886c2ddcfdd946c4b8a70db70d229be">t8_element_new</a> for those elements. </p>
+<p>Creates a new array structure with a given length (number of elements) and calls <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> for those elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The eclass scheme of which elements should be stored. </td></tr>
@@ -685,7 +685,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return an allocated array with allocated and initialized elements for which <a class="el" href="t8__element__c__interface_8h.html#a1886c2ddcfdd946c4b8a70db70d229be">t8_element_new</a> was called. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return an allocated array with allocated and initialized elements for which <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> was called. </dd></dl>
 
 </div>
 </div>
