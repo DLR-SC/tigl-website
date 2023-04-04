@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.1.2.123-57de</span>
+   &#160;<span id="projectnumber">1.1.2.135-70f1</span>
    </div>
+   <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
  </tr>
  </tbody>
@@ -66,175 +67,17 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">t8_windows.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><a href="t8__windows_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9c9af6d232f615bd290bc54a2d38f06b"><td class="memItemLeft" align="right" valign="top">static ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__windows_8h.html#a9c9af6d232f615bd290bc54a2d38f06b">getdelim</a> (char **lineptr, size_t *n, int delimiter, FILE *stream)</td></tr>
-<tr class="memdesc:a9c9af6d232f615bd290bc54a2d38f06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read string from file stream up to a given delimiter and store it in a buffer.  <a href="t8__windows_8h.html#a9c9af6d232f615bd290bc54a2d38f06b">More...</a><br /></td></tr>
-<tr class="separator:a9c9af6d232f615bd290bc54a2d38f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e94e3e76d453a2163e89fbd3e4af59"><td class="memItemLeft" align="right" valign="top">static ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__windows_8h.html#af4e94e3e76d453a2163e89fbd3e4af59">getline</a> (char **lineptr, size_t *n, FILE *stream)</td></tr>
-<tr class="memdesc:af4e94e3e76d453a2163e89fbd3e4af59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read line from file stream and store it in a buffer.  <a href="t8__windows_8h.html#af4e94e3e76d453a2163e89fbd3e4af59">More...</a><br /></td></tr>
-<tr class="separator:af4e94e3e76d453a2163e89fbd3e4af59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1112b993837e11bf1737040ebdf2b4"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__windows_8h.html#a0d1112b993837e11bf1737040ebdf2b4">strsep</a> (char **stringp, const char *delim)</td></tr>
-<tr class="memdesc:a0d1112b993837e11bf1737040ebdf2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract token from string up to a given delimiter.  <a href="t8__windows_8h.html#a0d1112b993837e11bf1737040ebdf2b4">More...</a><br /></td></tr>
-<tr class="separator:a0d1112b993837e11bf1737040ebdf2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements additional C functions that are used in t8code but are not part of the C standard library. Since these functions are missing on Windows, we provide an alternative implementation here, which is only used when compiling on Windows. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a9c9af6d232f615bd290bc54a2d38f06b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c9af6d232f615bd290bc54a2d38f06b">&#9670;&nbsp;</a></span>getdelim()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ssize_t getdelim </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>lineptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>delimiter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>stream</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read string from file stream up to a given delimiter and store it in a buffer. </p>
-<p>For a full description see <a href="https://linux.die.net/man/3/getdelim">https://linux.die.net/man/3/getdelim</a>.</p>
-<p>The implementation is based on a code that was published under the Zero-Clause BSD license, i.e., as public domain code.</p>
-<p>Source: <a href="https://github.com/arnavyc/getdelim/blob/0129a33c182b46e62b3137623a5569449fd3cc94/include/ay/getdelim.h">https://github.com/arnavyc/getdelim/blob/0129a33c182b46e62b3137623a5569449fd3cc94/include/ay/getdelim.h</a> </p>
-
-</div>
-</div>
-<a id="af4e94e3e76d453a2163e89fbd3e4af59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4e94e3e76d453a2163e89fbd3e4af59">&#9670;&nbsp;</a></span>getline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ssize_t getline </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>lineptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>stream</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read line from file stream and store it in a buffer. </p>
-<p>For a full description see <a href="https://linux.die.net/man/3/getline">https://linux.die.net/man/3/getline</a>.</p>
-<p>The implementation is based on a code that was published under the Zero-Clause BSD license, i.e., as public domain code.</p>
-<p>Source: <a href="https://github.com/arnavyc/getdelim/blob/0129a33c182b46e62b3137623a5569449fd3cc94/include/ay/getdelim.h">https://github.com/arnavyc/getdelim/blob/0129a33c182b46e62b3137623a5569449fd3cc94/include/ay/getdelim.h</a> </p>
-
-</div>
-</div>
-<a id="a0d1112b993837e11bf1737040ebdf2b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d1112b993837e11bf1737040ebdf2b4">&#9670;&nbsp;</a></span>strsep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static char* strsep </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>stringp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>delim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extract token from string up to a given delimiter. </p>
-<p>For a full description see <a href="https://linux.die.net/man/3/strsep">https://linux.die.net/man/3/strsep</a> </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<hr class="footer"/>
 </body>
 </html>
