@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.1-8f8b</span>
+   &#160;<span id="projectnumber">1.2.0.24-e237</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -96,12 +96,12 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef T8_FOREST_NETCDF_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define T8_FOREST_NETCDF_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__forest_8h.html">t8_forest.h</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;t8_forest/t8_forest_general.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;t8_netcdf.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__netcdf_8h.html#a1ce394cc444dd4ac2ce679855268c56c">t8_forest_write_netcdf</a> (<a class="code" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__netcdf_8h.html#a1ce394cc444dd4ac2ce679855268c56c">t8_forest_write_netcdf</a> (t8_forest_t forest,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">char</span> *file_prefix,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">char</span> *file_title, <span class="keywordtype">int</span> dim,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                            <span class="keywordtype">int</span> num_extern_netcdf_vars,</div>
@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                            ext_variables[],</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                            sc_MPI_Comm comm);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__netcdf_8h.html#a0851d053371a3077a0fda4f1de0ec768">t8_forest_write_netcdf_ext</a> (<a class="code" href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__netcdf_8h.html#a0851d053371a3077a0fda4f1de0ec768">t8_forest_write_netcdf_ext</a> (t8_forest_t forest,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">char</span> *file_prefix,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">char</span> *file_title,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                <span class="keywordtype">int</span> dim,</div>
@@ -126,8 +126,6 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="at8__forest__netcdf_8h_html_a0851d053371a3077a0fda4f1de0ec768"><div class="ttname"><a href="t8__forest__netcdf_8h.html#a0851d053371a3077a0fda4f1de0ec768">t8_forest_write_netcdf_ext</a></div><div class="ttdeci">void t8_forest_write_netcdf_ext(t8_forest_t forest, const char *file_prefix, const char *file_title, int dim, int num_extern_netcdf_vars, t8_netcdf_variable_t *ext_variables[], sc_MPI_Comm comm, int netcdf_var_storage_mode, int netcdf_var_mpi_access)</div><div class="ttdoc">Creates a netCDF-4 file containing the (geometrical) information about the given forest mesh and addi...</div></div>
 <div class="ttc" id="astructt8__netcdf__variable__t_html"><div class="ttname"><a href="structt8__netcdf__variable__t.html">t8_netcdf_variable_t</a></div><div class="ttdef"><b>Definition:</b> t8_netcdf.h:53</div></div>
-<div class="ttc" id="at8__forest_8h_html"><div class="ttname"><a href="t8__forest_8h.html">t8_forest.h</a></div></div>
-<div class="ttc" id="at8__forest_8h_html_a8c66cd971abdb628a06dc8d9446b2f22"><div class="ttname"><a href="t8__forest_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a></div><div class="ttdeci">struct t8_forest * t8_forest_t</div><div class="ttdoc">Opaque pointer to a forest implementation.</div><div class="ttdef"><b>Definition:</b> t8_forest.h:39</div></div>
 <div class="ttc" id="at8__forest__netcdf_8h_html_a1ce394cc444dd4ac2ce679855268c56c"><div class="ttname"><a href="t8__forest__netcdf_8h.html#a1ce394cc444dd4ac2ce679855268c56c">t8_forest_write_netcdf</a></div><div class="ttdeci">void t8_forest_write_netcdf(t8_forest_t forest, const char *file_prefix, const char *file_title, int dim, int num_extern_netcdf_vars, t8_netcdf_variable_t *ext_variables[], sc_MPI_Comm comm)</div><div class="ttdoc">Creates a netCDF-4 file containing the (geometrical) information about the given forest mesh and addi...</div></div>
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
