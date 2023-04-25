@@ -15,4 +15,4 @@ New features include:
 
 - Performance improvement for curved geometries.
 
-For the full change log see: https://github.com/DLR-AMR/t8code/releases/tag/v1.2.0
+Click <a href="https://github.com/DLR-AMR/t8code/releases/tag/v1.2.0">here</a> for the full change log.
