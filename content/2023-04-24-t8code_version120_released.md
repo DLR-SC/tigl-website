@@ -8,10 +8,10 @@ New features include:
 
 - A new cmesh reader for VTK files.
 
-- All of our test cases have been migrated to GoogleTest
+- All of our test cases have been migrated to GoogleTest.
   
-- We updated to the newest p4est and sc versions
+- We updated to the newest p4est and sc versions.
 
-- Performance improvement for curved geometries
+- Performance improvement for curved geometries.
 
 For the full change log see: https://github.com/DLR-AMR/t8code/releases/tag/v1.2.0
