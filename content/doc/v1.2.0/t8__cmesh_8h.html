@@ -115,13 +115,13 @@ Functions</h2></td></tr>
 <tr class="memitem:aec27dd0425316269576fa4c69d7121e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aec27dd0425316269576fa4c69d7121e4">t8_cmesh_set_derive</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> set_from)</td></tr>
 <tr class="memdesc:aec27dd0425316269576fa4c69d7121e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets a cmesh to be derived from.  <a href="t8__cmesh_8h.html#aec27dd0425316269576fa4c69d7121e4">More...</a><br /></td></tr>
 <tr class="separator:aec27dd0425316269576fa4c69d7121e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb2e85d4fb304e334fa2e9bfdc93d30"><td class="memItemLeft" align="right" valign="top">t8_shmem_array_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a9cb2e85d4fb304e334fa2e9bfdc93d30">t8_cmesh_alloc_offsets</a> (int mpisize, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a9cb2e85d4fb304e334fa2e9bfdc93d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a9cb2e85d4fb304e334fa2e9bfdc93d30">t8_cmesh_alloc_offsets</a> (int mpisize, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a9cb2e85d4fb304e334fa2e9bfdc93d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a shared memory array to store the tree offsets of a cmesh.  <a href="t8__cmesh_8h.html#a9cb2e85d4fb304e334fa2e9bfdc93d30">More...</a><br /></td></tr>
 <tr class="separator:a9cb2e85d4fb304e334fa2e9bfdc93d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a451d882f47237168073f1b4bf011630f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a451d882f47237168073f1b4bf011630f">t8_cmesh_set_partition_range</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int set_face_knowledge, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> last_local_tree)</td></tr>
 <tr class="memdesc:a451d882f47237168073f1b4bf011630f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh and specify the processor local tree range.  <a href="t8__cmesh_8h.html#a451d882f47237168073f1b4bf011630f">More...</a><br /></td></tr>
 <tr class="separator:a451d882f47237168073f1b4bf011630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6375ec7b82c96a966472293fc2cfa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">t8_cmesh_set_partition_offsets</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, t8_shmem_array_t tree_offsets)</td></tr>
+<tr class="memitem:aef6375ec7b82c96a966472293fc2cfa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">t8_cmesh_set_partition_offsets</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> tree_offsets)</td></tr>
 <tr class="memdesc:aef6375ec7b82c96a966472293fc2cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh and specify the first local tree for each process.  <a href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">More...</a><br /></td></tr>
 <tr class="separator:aef6375ec7b82c96a966472293fc2cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">t8_cmesh_set_partition_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int element_level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts)</td></tr>
@@ -241,7 +241,7 @@ const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa
 <tr class="memitem:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ae1ef646ebb5234eba7993c1ed4cfafa1">t8_cmesh_get_attribute</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int package_id, int key, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
 <tr class="memdesc:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree.  <a href="t8__cmesh_8h.html#ae1ef646ebb5234eba7993c1ed4cfafa1">More...</a><br /></td></tr>
 <tr class="separator:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top">t8_shmem_array_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
+<tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a4918cb34d7d837ead1c8963adda4363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory array storing the partition table of a partitioned cmesh.  <a href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">More...</a><br /></td></tr>
 <tr class="separator:a4918cb34d7d837ead1c8963adda4363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfeb3d5cbc3a560365fc4c22705ecff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#acfeb3d5cbc3a560365fc4c22705ecff9">t8_cmesh_uniform_bounds</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared)</td></tr>
@@ -282,7 +282,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">t8_shmem_array_t t8_cmesh_alloc_offsets </td>
+          <td class="memname"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> t8_cmesh_alloc_offsets </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
@@ -309,7 +309,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A t8_shmem_array struct that stores <em>mpisize</em> + 1 t8_gloidx_t entries. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a> struct that stores <em>mpisize</em> + 1 t8_gloidx_t entries. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__shmem_8h.html" title="We define basic shared memory routines.">t8_shmem.h</a> </dd></dl>
 
 </div>
@@ -978,7 +978,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">t8_shmem_array_t t8_cmesh_get_partition_table </td>
+          <td class="memname"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> t8_cmesh_get_partition_table </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em></td><td>)</td>
@@ -1674,7 +1674,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">t8_shmem_array_t&#160;</td>
+          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>tree_offsets</em>&#160;</td>
         </tr>
         <tr>

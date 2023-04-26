@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* TODO: Should this function be part of the interface?</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * Not for now: Move to _vtk.h but mark as DEPRECATED */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>                t8_cmesh_set_tree_vertices (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__cmesh_8c.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                <span class="keywordtype">double</span> *vertices,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                <span class="keywordtype">int</span> num_vertices);</div>
@@ -122,6 +122,7 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_VTK_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
 <div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:94</div></div>
+<div class="ttc" id="at8__cmesh_8c_html_a0e5d64eb8595f2167087eb001fdd8a50"><div class="ttname"><a href="t8__cmesh_8c.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a></div><div class="ttdeci">void t8_cmesh_set_tree_vertices(t8_cmesh_t cmesh, t8_locidx_t ltree_id, double *vertices, int num_vertices)</div><div class="ttdoc">Set the vertex coordinates of a tree in the cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.c:604</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
