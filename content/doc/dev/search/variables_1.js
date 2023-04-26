@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['eclass_5fschemes_428',['eclass_schemes',['../structt8__scheme__cxx.html#aeb55971c38b4c917b0441a42c1046461',1,'t8_scheme_cxx']]]
+  ['balance_5frounds_1954',['balance_rounds',['../structt8__profile.html#ac08fa113f773ff1c4a2f83199323dc14',1,'t8_profile']]],
+  ['balance_5fruntime_1955',['balance_runtime',['../structt8__profile.html#a50c19c111fc7fb3b8699ca09f0244115',1,'t8_profile']]]
 ];

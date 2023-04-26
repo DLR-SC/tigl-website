@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.26-2c59</span>
+   &#160;<span id="projectnumber">1.2.0.28-1775</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -98,73 +98,73 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__element_8h.html">t8_element.h</a>&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>t8_mesh t8_mesh_t;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__mesh.html">t8_mesh</a> <a class="code" href="structt8__mesh.html">t8_mesh_t</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/************************* preallocate **************************/</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;t8_mesh_t          *t8_mesh_new (<span class="keywordtype">int</span> dimension,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="structt8__mesh.html">t8_mesh_t</a>          *t8_mesh_new (<span class="keywordtype">int</span> dimension,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> Kglobal, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> Klocal);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/************* all-in-one convenience constructors **************/</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;t8_mesh_t          *t8_mesh_new_unitcube (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> theclass);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="structt8__mesh.html">t8_mesh_t</a>          *t8_mesh_new_unitcube (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> theclass);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/***************************** setters **************************/</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_comm (t8_mesh_t *mesh, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_comm (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh, sc_MPI_Comm comm);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#a44fb8f4456bc17cb82027219648aea8b">t8_mesh_set_partition</a> (t8_mesh_t *mesh, <span class="keywordtype">int</span> enable);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#a44fb8f4456bc17cb82027219648aea8b">t8_mesh_set_partition</a> (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh, <span class="keywordtype">int</span> enable);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_element (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_element (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                         <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> theclass,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                         <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gloid,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                         <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_local_to_global (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_local_to_global (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                 <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltog_length,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                 <span class="keyword">const</span> <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *ltog);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_face (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_face (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                      <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid1, <span class="keywordtype">int</span> face1,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                      <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid2, <span class="keywordtype">int</span> face2,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                      <span class="keywordtype">int</span> orientation);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_element_vertices (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>                t8_mesh_set_element_vertices (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> vids_length,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                  <span class="keyword">const</span> <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *vids);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/***************************** construct ************************/</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#ace27812ab45c58e029b504c95eeea926">t8_mesh_build</a> (t8_mesh_t *mesh);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#ace27812ab45c58e029b504c95eeea926">t8_mesh_build</a> (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/****************************** queries *************************/</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;sc_MPI_Comm         t8_mesh_get_comm (t8_mesh_t *mesh);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;sc_MPI_Comm         t8_mesh_get_comm (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         t8_mesh_get_element_count (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         t8_mesh_get_element_count (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                               <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> theclass);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         <a class="code" href="t8__mesh_8h.html#a324a78f5961c50e5aa9ba4b4a9f867a4">t8_mesh_get_element_class</a> (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         <a class="code" href="t8__mesh_8h.html#a324a78f5961c50e5aa9ba4b4a9f867a4">t8_mesh_get_element_class</a> (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                               <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         t8_mesh_get_element_locid (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>         t8_mesh_get_element_locid (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                               <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gloid);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>         t8_mesh_get_element_gloid (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>         t8_mesh_get_element_gloid (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                               <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a>        t8_mesh_get_element (t8_mesh_t *mesh, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a>        t8_mesh_get_element (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span>                t8_mesh_get_element_boundary (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span>                t8_mesh_get_element_boundary (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                  <span class="keywordtype">int</span> length_boundary,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *elemid,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                  <span class="keywordtype">int</span> *orientation);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__mesh_8h.html#a38008b2d37c37cfb7fd575df670c47d0">t8_mesh_get_maximum_support</a> (t8_mesh_t *mesh);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__mesh_8h.html#a38008b2d37c37cfb7fd575df670c47d0">t8_mesh_get_maximum_support</a> (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#a33fa94726e4cc131390f0758097cd4a8">t8_mesh_get_element_support</a> (t8_mesh_t *mesh,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__mesh_8h.html#a33fa94726e4cc131390f0758097cd4a8">t8_mesh_get_element_support</a> (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh,</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                                 <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> locid,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                 <span class="keywordtype">int</span> *length_support,</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                 <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *elemid,</div>
@@ -172,16 +172,17 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/***************************** destruct *************************/</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span>                t8_mesh_destroy (t8_mesh_t *mesh);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span>                t8_mesh_destroy (<a class="code" href="structt8__mesh.html">t8_mesh_t</a> *mesh);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_MESH_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructt8__mesh_html"><div class="ttname"><a href="structt8__mesh.html">t8_mesh</a></div><div class="ttdef"><b>Definition:</b> t8_mesh.c:25</div></div>
 <div class="ttc" id="at8__element_8h_html_ac4c605cddc1aad4d36398a773768f738"><div class="ttname"><a href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a></div><div class="ttdeci">struct t8_element t8_element_t</div><div class="ttdoc">Opaque structure for a generic element, only used as pointer.</div><div class="ttdef"><b>Definition:</b> t8_element.h:42</div></div>
 <div class="ttc" id="at8__element_8h_html"><div class="ttname"><a href="t8__element_8h.html">t8_element.h</a></div></div>
 <div class="ttc" id="at8__mesh_8h_html_a33fa94726e4cc131390f0758097cd4a8"><div class="ttname"><a href="t8__mesh_8h.html#a33fa94726e4cc131390f0758097cd4a8">t8_mesh_get_element_support</a></div><div class="ttdeci">void t8_mesh_get_element_support(t8_mesh_t *mesh, t8_locidx_t locid, int *length_support, t8_locidx_t *elemid, int *orientation)</div></div>
 <div class="ttc" id="at8__eclass_8h_html_a343c2af26e5b41822905b164cab176ec"><div class="ttname"><a href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a></div><div class="ttdeci">enum t8_eclass t8_eclass_t</div><div class="ttdoc">This enumeration contains all possible element classes.</div></div>
 <div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:94</div></div>
-<div class="ttc" id="at8__mesh_8h_html_ace27812ab45c58e029b504c95eeea926"><div class="ttname"><a href="t8__mesh_8h.html#ace27812ab45c58e029b504c95eeea926">t8_mesh_build</a></div><div class="ttdeci">void t8_mesh_build(t8_mesh_t *mesh)</div><div class="ttdoc">Setup a mesh and turn it into a usable object.</div></div>
+<div class="ttc" id="at8__mesh_8h_html_ace27812ab45c58e029b504c95eeea926"><div class="ttname"><a href="t8__mesh_8h.html#ace27812ab45c58e029b504c95eeea926">t8_mesh_build</a></div><div class="ttdeci">void t8_mesh_build(t8_mesh_t *mesh)</div><div class="ttdoc">Setup a mesh and turn it into a usable object.</div><div class="ttdef"><b>Definition:</b> t8_mesh.c:44</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:105</div></div>
 <div class="ttc" id="at8__mesh_8h_html_a44fb8f4456bc17cb82027219648aea8b"><div class="ttname"><a href="t8__mesh_8h.html#a44fb8f4456bc17cb82027219648aea8b">t8_mesh_set_partition</a></div><div class="ttdeci">void t8_mesh_set_partition(t8_mesh_t *mesh, int enable)</div><div class="ttdoc">Determine whether we partition in t8_mesh_build.</div></div>
 <div class="ttc" id="at8__mesh_8h_html_a324a78f5961c50e5aa9ba4b4a9f867a4"><div class="ttname"><a href="t8__mesh_8h.html#a324a78f5961c50e5aa9ba4b4a9f867a4">t8_mesh_get_element_class</a></div><div class="ttdeci">t8_locidx_t t8_mesh_get_element_class(t8_mesh_t *mesh, t8_locidx_t locid)</div></div>
