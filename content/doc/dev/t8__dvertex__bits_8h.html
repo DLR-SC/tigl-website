@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.48-e2675</span>
+   &#160;<span id="projectnumber">1.2.0.56-5115</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -137,6 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#ad15caeb0c93b80c9410b1add4cb2e6cb">t8_dvertex_vertex_ref_coords</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, int vertex, double coords[])</td></tr>
 <tr class="memdesc:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex (always 0) inside the [0,1]^0 reference space.  <a href="t8__dvertex__bits_8h.html#ad15caeb0c93b80c9410b1add4cb2e6cb">More...</a><br /></td></tr>
 <tr class="separator:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c56fc2cc05d8dc5507ba5616d95481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#a17c56fc2cc05d8dc5507ba5616d95481">t8_dvertex_compute_reference_coords</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, const double *ref_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a17c56fc2cc05d8dc5507ba5616d95481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a refrence coordinate (always 0) inside the [0,1]^0 reference space.  <a href="t8__dvertex__bits_8h.html#a17c56fc2cc05d8dc5507ba5616d95481">More...</a><br /></td></tr>
+<tr class="separator:a17c56fc2cc05d8dc5507ba5616d95481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53985baca874fef7d0f2d01a372b1c40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#a53985baca874fef7d0f2d01a372b1c40">t8_dvertex_linear_id</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, int level)</td></tr>
 <tr class="memdesc:a53985baca874fef7d0f2d01a372b1c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the linear position of a vertex in an uniform grid.  <a href="t8__dvertex__bits_8h.html#a53985baca874fef7d0f2d01a372b1c40">More...</a><br /></td></tr>
 <tr class="separator:a53985baca874fef7d0f2d01a372b1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,6 +324,50 @@ Functions</h2></td></tr>
 
 <p>Compare two elements. </p>
 <p>returns negativ if l1 &lt; l2, zero if l1 equals l2 and positiv if l1 &gt; l2. If l2 is a copy of l1 then the elements are equal. </p>
+
+</div>
+</div>
+<a id="a17c56fc2cc05d8dc5507ba5616d95481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c56fc2cc05d8dc5507ba5616d95481">&#9670;&nbsp;</a></span>t8_dvertex_compute_reference_coords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_dvertex_compute_reference_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>out_coords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the coordinates of a refrence coordinate (always 0) inside the [0,1]^0 reference space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Vertex whose vertex is computed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinate inside the vertex (must be 0). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The coordinates of the computed vertex, must have one entry (will be set to 0). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

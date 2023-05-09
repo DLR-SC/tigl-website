@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.48-e2675</span>
+   &#160;<span id="projectnumber">1.2.0.56-5115</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -86,6 +86,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a77a333634feb64d120970ac7374164a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtet__bits_8h.html#a77a333634feb64d120970ac7374164a8">t8_dtet_compute_vertex_ref_coords</a> (const <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> *elem, int vertex, double coordinates[3])</td></tr>
 <tr class="memdesc:a77a333634feb64d120970ac7374164a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex of a tetrahedron when the tree (level 0 tetrahedron) is embedded in [0,1]^3.  <a href="t8__dtet__bits_8h.html#a77a333634feb64d120970ac7374164a8">More...</a><br /></td></tr>
 <tr class="separator:a77a333634feb64d120970ac7374164a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46550dcb820dea40e6344a332cff47db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtet__bits_8h.html#a46550dcb820dea40e6344a332cff47db">t8_dtet_compute_reference_coords</a> (const <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> *elem, const double *ref_coords, double out_coords[3])</td></tr>
+<tr class="memdesc:a46550dcb820dea40e6344a332cff47db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of a tet element to a point in the reference space of the tree (level 0) embedded in [0,1]^3.  <a href="t8__dtet__bits_8h.html#a46550dcb820dea40e6344a332cff47db">More...</a><br /></td></tr>
+<tr class="separator:a46550dcb820dea40e6344a332cff47db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a884f141b09f818bbbd7c533d6b4a51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtet__bits_8h.html#a1a884f141b09f818bbbd7c533d6b4a51">t8_dtet_compute_all_coords</a> (const <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> *elem, <a class="el" href="t8__dtet_8h.html#a1875719aa2bc7dedfa73cb1837cba4b8">t8_dtet_coord_t</a> coordinates[4][3])</td></tr>
 <tr class="memdesc:a1a884f141b09f818bbbd7c533d6b4a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of the four vertices of a tetrahedron.  <a href="t8__dtet__bits_8h.html#a1a884f141b09f818bbbd7c533d6b4a51">More...</a><br /></td></tr>
 <tr class="separator:a1a884f141b09f818bbbd7c533d6b4a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,6 +565,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_dtet_debug_print</
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>Input tetrahedron. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertex</td><td>The number of the vertex. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">coordinates</td><td>An array of 3 t8_dtet_coord_t that will be filled with the coordinates of the vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46550dcb820dea40e6344a332cff47db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46550dcb820dea40e6344a332cff47db">&#9670;&nbsp;</a></span>t8_dtet_compute_reference_coords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_dtet_compute_reference_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>out_coords</em>[3]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a point in the reference space of a tet element to a point in the reference space of the tree (level 0) embedded in [0,1]^3. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input tetrahedron. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates inside the tet element [0,1]^2 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of 3 doubles that will be filled with the reference coordinates in the tree of the tet. </td></tr>
   </table>
   </dd>
 </dl>
