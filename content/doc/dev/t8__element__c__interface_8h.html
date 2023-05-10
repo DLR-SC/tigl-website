@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -217,6 +217,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a9e468b415f696b3f13a642fce87ad1b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a9e468b415f696b3f13a642fce87ad1b3">t8_element_general_function</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const void *indata, void *outdata)</td></tr>
 <tr class="memdesc:a9e468b415f696b3f13a642fce87ad1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has no defined effect but each implementation is free to provide its own meaning of it.  <a href="t8__element__c__interface_8h.html#a9e468b415f696b3f13a642fce87ad1b3">More...</a><br /></td></tr>
 <tr class="separator:a9e468b415f696b3f13a642fce87ad1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2013dcbd159a99901a5a819eeb9441e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e">t8_element_is_valid</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
+<tr class="memdesc:ac2013dcbd159a99901a5a819eeb9441e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e">More...</a><br /></td></tr>
+<tr class="separator:ac2013dcbd159a99901a5a819eeb9441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f28d83361a808fa265b872dff9ad5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a62f28d83361a808fa265b872dff9ad5e">t8_element_debug_print</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
+<tr class="memdesc:a62f28d83361a808fa265b872dff9ad5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given element.  <a href="t8__element__c__interface_8h.html#a62f28d83361a808fa265b872dff9ad5e">More...</a><br /></td></tr>
+<tr class="separator:a62f28d83361a808fa265b872dff9ad5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d75e09b14098e69b7b7ba48de4d1d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elems)</td></tr>
 <tr class="memdesc:a0d75e09b14098e69b7b7ba48de4d1d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for an array of elements of a given class and initialize them.  <a href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">More...</a><br /></td></tr>
 <tr class="separator:a0d75e09b14098e69b7b7ba48de4d1d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -758,6 +764,44 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="t8__element__c__interface_8h.html#a768f979bf3a2b707adf51abd6e381f3f">t8_element_count_leafs</a> if the input element is the root (level 0) element.</dd></dl>
 <p>This is a convenience function, and can be implemented via <a class="el" href="t8__element__c__interface_8h.html#a768f979bf3a2b707adf51abd6e381f3f">t8_element_count_leafs</a>. </p>
+
+</div>
+</div>
+<a id="a62f28d83361a808fa265b872dff9ad5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f28d83361a808fa265b872dff9ad5e">&#9670;&nbsp;</a></span>t8_element_debug_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_element_debug_print </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a given element. </p>
+<p>For a example for a triangle print the coordinates and the level of the triangle. This function is only available in the debugging configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to print </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1475,6 +1519,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac2013dcbd159a99901a5a819eeb9441e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2013dcbd159a99901a5a819eeb9441e">&#9670;&nbsp;</a></span>t8_element_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_element_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it. </p>
+<p>For example this could mean that all coordinates are in valid ranges and other membervariables do have meaningful values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>elem</em> is safe to use. False otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>An element that is constructed with <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> must pass this test. </dd>
+<dd>
+An element for which t8_element_init was called must pass this test. </dd>
+<dd>
+This function is used for debugging to catch certain errors. These can for example occur when an element points to a region of memory which should not be interpreted as an element. </dd>
+<dd>
+We recommend to use the assertion T8_ASSERT (t8_element_is_valid (elem)) in the implementation of each of the functions in this file. </dd></dl>
+
+</div>
+</div>
 <a id="a716501b713d90046fbc4b84da820897c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a716501b713d90046fbc4b84da820897c">&#9670;&nbsp;</a></span>t8_element_last_descendant()</h2>
 
@@ -1780,12 +1869,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Not every element that is created in t8code will be created by a call to this function. However, if an element is not created using <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a>, then it is guaranteed that t8_element_init is called on it. </dd>
 <dd>
-In debugging mode, an element that was created with <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> must pass t8_element_is_valid. </dd>
+In debugging mode, an element that was created with <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> must pass <a class="el" href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e">t8_element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> then t8_element_init may not be called for it. Thus, <a class="el" href="t8__element__c__interface_8h.html#a0d75e09b14098e69b7b7ba48de4d1d8f">t8_element_new</a> should initialize an element in the same way as a call to t8_element_init would. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>t8_element_init </dd>
 <dd>
-t8_element_is_valid </dd></dl>
+<a class="el" href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">t8_element_is_valid</a> </dd></dl>
 
 </div>
 </div>

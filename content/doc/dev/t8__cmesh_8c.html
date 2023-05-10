@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -161,6 +161,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abe9d9f1723f43f14ac47afbd2c8ced17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#abe9d9f1723f43f14ac47afbd2c8ced17">t8_cmesh_tree_vertices_negative_volume</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, double *vertices, int num_vertices)</td></tr>
 <tr class="memdesc:abe9d9f1723f43f14ac47afbd2c8ced17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a set of vertex coordinates for a tree of a given eclass.  <a href="t8__cmesh_8c.html#abe9d9f1723f43f14ac47afbd2c8ced17">More...</a><br /></td></tr>
 <tr class="separator:abe9d9f1723f43f14ac47afbd2c8ced17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca420ae1dff4761f7c6ceb7e7574701b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#aca420ae1dff4761f7c6ceb7e7574701b">t8_cmesh_no_negative_volume</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
+<tr class="memdesc:aca420ae1dff4761f7c6ceb7e7574701b"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a cmesh is committed, check whether all trees in a cmesh do have positive volume.  <a href="t8__cmesh_8c.html#aca420ae1dff4761f7c6ceb7e7574701b">More...</a><br /></td></tr>
+<tr class="separator:aca420ae1dff4761f7c6ceb7e7574701b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5d64eb8595f2167087eb001fdd8a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, double *vertices, int num_vertices)</td></tr>
 <tr class="memdesc:a0e5d64eb8595f2167087eb001fdd8a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vertex coordinates of a tree in the cmesh.  <a href="t8__cmesh_8c.html#a0e5d64eb8595f2167087eb001fdd8a50">More...</a><br /></td></tr>
 <tr class="separator:a0e5d64eb8595f2167087eb001fdd8a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1245,6 +1248,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the ghost whithin all ghosts, thus an index 0 &lt;= index &lt; num_ghosts <em>cmesh</em> must be committed before calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="aca420ae1dff4761f7c6ceb7e7574701b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca420ae1dff4761f7c6ceb7e7574701b">&#9670;&nbsp;</a></span>t8_cmesh_no_negative_volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_cmesh_no_negative_volume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>After a cmesh is committed, check whether all trees in a cmesh do have positive volume. </p>
+<p>Returns true if all trees have positive volume. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>This cmesh is examined. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>cmesh</em> is not NULL and all trees for which <a class="el" href="t8__cmesh_8c.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> was called, do have positive geometric volume. False otherwise. </dd></dl>
 
 </div>
 </div>

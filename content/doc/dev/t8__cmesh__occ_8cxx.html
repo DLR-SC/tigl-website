@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -77,6 +77,20 @@ $(function() {
 <code>#include &lt;<a class="el" href="t8__geometry__linear_8h_source.html">t8_geometry/t8_geometry_implementations/t8_geometry_linear.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__geometry__occ_8hxx_source.html">t8_geometry/t8_geometry_implementations/t8_geometry_occ.hxx</a>&gt;</code><br />
 <code>#include &lt;t8_cmesh_vtk_writer.h&gt;</code><br />
+<code>#include &lt;gp_Pnt.hxx&gt;</code><br />
+<code>#include &lt;BRepBuilderAPI_MakeEdge.hxx&gt;</code><br />
+<code>#include &lt;BRepBuilderAPI_MakeFace.hxx&gt;</code><br />
+<code>#include &lt;BRepPrimAPI_MakePrism.hxx&gt;</code><br />
+<code>#include &lt;BRepAlgoAPI_Fuse.hxx&gt;</code><br />
+<code>#include &lt;TopoDS_Face.hxx&gt;</code><br />
+<code>#include &lt;TopoDS_Edge.hxx&gt;</code><br />
+<code>#include &lt;TopoDS.hxx&gt;</code><br />
+<code>#include &lt;gp_Ax2.hxx&gt;</code><br />
+<code>#include &lt;gp_Dir.hxx&gt;</code><br />
+<code>#include &lt;gp_Circ.hxx&gt;</code><br />
+<code>#include &lt;gp_Vec.hxx&gt;</code><br />
+<code>#include &lt;BRep_Tool.hxx&gt;</code><br />
+<code>#include &lt;Geom_Surface.hxx&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -246,6 +246,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0f89b4c910dddf3b6574dd1c359462f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aa0f89b4c910dddf3b6574dd1c359462f">t8_element_general_function</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const void *indata, void *outdata) const =0</td></tr>
 <tr class="memdesc:aa0f89b4c910dddf3b6574dd1c359462f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has no defined effect but each implementation is free to provide its own meaning of it.  <a href="structt8__eclass__scheme.html#aa0f89b4c910dddf3b6574dd1c359462f">More...</a><br /></td></tr>
 <tr class="separator:aa0f89b4c910dddf3b6574dd1c359462f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a550c35b8b1bfbfb075175bc959463c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">t8_element_is_valid</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
+<tr class="memdesc:a5a550c35b8b1bfbfb075175bc959463c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">More...</a><br /></td></tr>
+<tr class="separator:a5a550c35b8b1bfbfb075175bc959463c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f47aac7c50adeb0f234c19d31f96c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ae0f47aac7c50adeb0f234c19d31f96c9">t8_element_debug_print</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
+<tr class="memdesc:ae0f47aac7c50adeb0f234c19d31f96c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given element.  <a href="structt8__eclass__scheme.html#ae0f47aac7c50adeb0f234c19d31f96c9">More...</a><br /></td></tr>
+<tr class="separator:ae0f47aac7c50adeb0f234c19d31f96c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65ee85ba8aa323f05c46c1f63e9036b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> (int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elem) const =0</td></tr>
 <tr class="memdesc:af65ee85ba8aa323f05c46c1f63e9036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for an array of elements of a given class and initialize them.  <a href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">More...</a><br /></td></tr>
 <tr class="separator:af65ee85ba8aa323f05c46c1f63e9036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -957,6 +963,43 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
+<a id="ae0f47aac7c50adeb0f234c19d31f96c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f47aac7c50adeb0f234c19d31f96c9">&#9670;&nbsp;</a></span>t8_element_debug_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_eclass_scheme::t8_element_debug_print </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print a given element. </p>
+<p>For a example for a triangle print the coordinates and the level of the triangle. This function is only available in the debugging configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to print </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#a296f7184fdac1fa6e69a9effc33409bb">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a53c13dc885cc87cf4277c711d860ca89">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a4138568707af7949a5c21f931922724c">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#aad47a31a31fb080f60db78a52ced043d">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a1c222bad7a03ddc9c363f17ea1a11e69">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a69fdfa83d8ac77a4be54ec5a53919bf3">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#add217b4b7c6df02098dff18a3b3f556b">t8_default_scheme_tri_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a40a6d168aff8ad3b893385624ff3014c">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
 <a id="a3c98178cbcc9fefb1394875decc81f79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c98178cbcc9fefb1394875decc81f79">&#9670;&nbsp;</a></span>t8_element_destroy()</h2>
 
@@ -1665,12 +1708,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>In debugging mode, an element that was passed to <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> must pass t8_element_is_valid. </dd>
+<dl class="section note"><dt>Note</dt><dd>In debugging mode, an element that was passed to <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> must pass <a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">t8_element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> then <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> may not be called for it. Thus, <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> should initialize an element in the same way as a call to <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> would. Thus, if <em>called_new</em> is true this function should usually do nothing. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b" title="Allocate memory for an array of elements of a given class and initialize them.">t8_element_new</a> </dd>
 <dd>
-t8_element_is_valid </dd></dl>
+<a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">t8_element_is_valid</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__quad__c.html#a234d4257d1acb73750a61c5b33a5b140">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a61ffb3641cc2981cd23701460fb42e29">t8_default_scheme_hex_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a505efc1d55b91d5fcf2541ca9d47a96c">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a8973305111063fc275bd1e4ec5216e6a">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a9ab0d7f32bcccd62b2c9e9a8b1f2a124">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ada9ba6920b3a5de96f113a3f40283cd6">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a5b18331a02a9b874717ed8a92cafc94f">t8_default_scheme_tri_c</a>, and <a class="el" href="structt8__default__scheme__vertex__c.html#adbfb0a18e0e6d44f574abfcbb98e16c8">t8_default_scheme_vertex_c</a>.</p>
 
@@ -1760,6 +1803,50 @@ t8_element_is_valid </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You can compute the corresponding face number of the tree via <a class="el" href="structt8__eclass__scheme.html#afa7f2c8d6dd31f6b8a99080f467c80b9">t8_element_tree_face</a>. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ab4df2c4d5fe7ef7d9034745f62d6fcc7">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a0bea64081d98e258c85b9ad17ca05c31">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aa1c23cf923a36a21d4d4068b67cd0653">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a2f02242d7d8b5ec6cddd0b0996f5b732">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a9d0757ce3b06b523b31cc669486a3241">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a996ad1d70f9fa612be420a9daca80d48">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#ade74327f91a67281b82f34a61124a8f7">t8_default_scheme_hex_c</a>, and <a class="el" href="structt8__default__scheme__tri__c.html#a24387d90949853660436e083dce6bbe3">t8_default_scheme_tri_c</a>.</p>
+
+</div>
+</div>
+<a id="a5a550c35b8b1bfbfb075175bc959463c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a550c35b8b1bfbfb075175bc959463c">&#9670;&nbsp;</a></span>t8_element_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int t8_eclass_scheme::t8_element_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it. </p>
+<p>For example this could mean that all coordinates are in valid ranges and other membervariables do have meaningful values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>elem</em> is safe to use. False otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>An element that is constructed with <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> must pass this test. </dd>
+<dd>
+An element for which <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> was called must pass this test. </dd>
+<dd>
+This function is used for debugging to catch certain errors. These can for example occur when an element points to a region of memory which should not be interpreted as an element. </dd>
+<dd>
+We recommend to use the assertion T8_ASSERT (t8_element_is_valid (elem)) in the implementation of each of the functions in this file. </dd></dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#acf233518db2dd3c7124fb644bb7d71f5">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#ae70ef35b8295c44e5dd2b7d23435ce9f">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aaffa09a96746029f770d85088629fe2e">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#ae821f04e2010979c45f3bedee064f4ab">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a3672fe57b3c1a762c72c8d60bb32ad90">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#acec4bf9acd432e798b4f2781e67eab50">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a22fe05af4855f863edabafb3811ef73b">t8_default_scheme_tri_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a487063fe81f6884991da0f32a8bdf065">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
@@ -2081,12 +2168,12 @@ t8_element_is_valid </dd></dl>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Not every element that is created in t8code will be created by a call to this function. However, if an element is not created using <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a>, then it is guaranteed that <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> is called on it. </dd>
 <dd>
-In debugging mode, an element that was created with <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> must pass t8_element_is_valid. </dd>
+In debugging mode, an element that was created with <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> must pass <a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">t8_element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> then <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> may not be called for it. Thus, <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b">t8_element_new</a> should initialize an element in the same way as a call to <a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> would. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68" title="Initialize an array of allocated elements.">t8_element_init</a> </dd>
 <dd>
-t8_element_is_valid </dd></dl>
+<a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">t8_element_is_valid</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__quad__c.html#a9b4eb51874365c7dad53e5c1d26fdb6d">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a51349f123c1f86d5961a52eaf24f6708">t8_default_scheme_hex_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a556d4dd617f1ef399d88728d7251e4e4">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#ade6fbdb99e0f8bcb46167334681aa391">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a7e12bd6b051e64d3b730ddd1ac6de43a">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a37d1aa6f3f44a079ec0781808d9a4445">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a4f559e12ae56d210555f0224f9cf0668">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a9966081bac2cce1e71b3944201c119b3">t8_default_scheme_vertex_c</a>, and <a class="el" href="classt8__default__scheme__common__c.html#af4fb33eb6f42a3995f055867bbe9de17">t8_default_scheme_common_c</a>.</p>
 

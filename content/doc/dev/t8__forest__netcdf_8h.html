@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -246,9 +246,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Only use this extended version of <a class="el" href="t8__forest__netcdf_8h.html#a1ce394cc444dd4ac2ce679855268c56c">t8_forest_write_netcdf</a> if you know exactly what you are doing. In all other cases, we recommend using <a class="el" href="t8__forest__netcdf_8h.html#a1ce394cc444dd4ac2ce679855268c56c">t8_forest_write_netcdf</a> instead. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This prevents the single file to be overwritten if more proceses are involved, in a configuration which does not feature parallel netCDF routines! Otherwise, if several processes try to write in the same file, the result will be an HDF-5 error. Now, each process will create its own file. Each of these files will be as big as if all processes would have written into the same file, but in each file is only the process-local data defined. (-&gt; storage requirement is the #ranks-fold storage requirement of a serial or parallel netCDF run)</dd>
-<dd>
-Therefore, it is advisable to either run the whole program with only one MPI rank or make use of a parallel netCDF/HDF-5 configuration</dd></dl>
 
 </div>
 </div>

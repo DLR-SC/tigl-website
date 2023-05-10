@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -92,7 +92,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#af7408a10eff076bbf888bb8a3500ca38">t8_restrict</a>&#160;&#160;&#160;_sc_restrict</td></tr>
 <tr class="memdesc:af7408a10eff076bbf888bb8a3500ca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Portable way to use the const keyword determined by configure. <br /></td></tr>
 <tr class="separator:af7408a10eff076bbf888bb8a3500ca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee33776137ab765a38d5c84424104b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a>(c)&#160;&#160;&#160;SC_NOOP ()</td></tr>
+<tr class="memitem:afee33776137ab765a38d5c84424104b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a>(c)&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;'&quot;)</td></tr>
 <tr class="memdesc:afee33776137ab765a38d5c84424104b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widely used assertion.  <a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">More...</a><br /></td></tr>
 <tr class="separator:afee33776137ab765a38d5c84424104b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ac6ee19760b635183f1616c18348ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a51ac6ee19760b635183f1616c18348ef">T8_ALLOC</a>(t,  n)</td></tr>
@@ -314,7 +314,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;SC_NOOP ()</td>
+          <td>&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;'&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

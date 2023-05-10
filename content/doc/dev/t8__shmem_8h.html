@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -97,6 +97,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6118807dfe8ca463f93ab12a99955e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a6118807dfe8ca463f93ab12a99955e32">t8_shmem_init</a> (sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a6118807dfe8ca463f93ab12a99955e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize shared memory usage for a communicator.  <a href="t8__shmem_8h.html#a6118807dfe8ca463f93ab12a99955e32">More...</a><br /></td></tr>
 <tr class="separator:a6118807dfe8ca463f93ab12a99955e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b05e6a1965f985b3fd6b06a83adccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">t8_shmem_array_is_initialized</a> (const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memdesc:a46b05e6a1965f985b3fd6b06a83adccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a shared memory array was properly initialized.  <a href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">More...</a><br /></td></tr>
+<tr class="separator:a46b05e6a1965f985b3fd6b06a83adccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9077dfc3dd23a9cb001210041a62a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ad9077dfc3dd23a9cb001210041a62a4f">t8_shmem_finalize</a> (sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ad9077dfc3dd23a9cb001210041a62a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize shared memory usage for a communicator.  <a href="t8__shmem_8h.html#ad9077dfc3dd23a9cb001210041a62a4f">More...</a><br /></td></tr>
 <tr class="separator:ad9077dfc3dd23a9cb001210041a62a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -669,6 +672,33 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a46b05e6a1965f985b3fd6b06a83adccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b05e6a1965f985b3fd6b06a83adccf">&#9670;&nbsp;</a></span>t8_shmem_array_is_initialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_shmem_array_is_initialized </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a shared memory array was properly initialized. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>A shared memory array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-zero if <em>array</em> is initialized correctly. </dd></dl>
 
 </div>
 </div>

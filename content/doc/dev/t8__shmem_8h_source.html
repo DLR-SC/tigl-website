@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if T8_ENABLE_DEBUG</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/* If you need this function outside of debugging mode, feel free</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * to remove the macro protection. */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span>                 t8_shmem_array_is_initialized (<span class="keyword">const</span> <a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">t8_shmem_array_is_initialized</a> (<span class="keyword">const</span> <a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                   array);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -198,6 +198,7 @@ $(function() {
 <div class="ttc" id="at8__shmem_8h_html_af5e7baf594b64749023abf86f5848edf"><div class="ttname"><a href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">t8_shmem_array_get_comm</a></div><div class="ttdeci">sc_MPI_Comm t8_shmem_array_get_comm(t8_shmem_array_t array)</div><div class="ttdoc">Return the MPI communicator associated with a shmem array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:222</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:105</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div></div>
+<div class="ttc" id="at8__shmem_8h_html_a46b05e6a1965f985b3fd6b06a83adccf"><div class="ttname"><a href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">t8_shmem_array_is_initialized</a></div><div class="ttdeci">int t8_shmem_array_is_initialized(const t8_shmem_array_t array)</div><div class="ttdoc">Check whether a shared memory array was properly initialized.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:56</div></div>
 <div class="ttc" id="at8__shmem_8h_html_abd787a4e38879273cf75114503fdf7e1"><div class="ttname"><a href="t8__shmem_8h.html#abd787a4e38879273cf75114503fdf7e1">t8_shmem_array_get_elem_count</a></div><div class="ttdeci">size_t t8_shmem_array_get_elem_count(t8_shmem_array_t array)</div><div class="ttdoc">Get the number of elements of a t8_shmem_array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:236</div></div>
 <div class="ttc" id="at8__shmem_8h_html_af2e432baf332a52241574c0954f32cad"><div class="ttname"><a href="t8__shmem_8h.html#af2e432baf332a52241574c0954f32cad">t8_shmem_array_get_elem_size</a></div><div class="ttdeci">size_t t8_shmem_array_get_elem_size(t8_shmem_array_t array)</div><div class="ttdoc">Get the element size of a t8_shmem_array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:229</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a561ea0c410ec5bbb6c1f8e14f16ef79f"><div class="ttname"><a href="t8__shmem_8h.html#a561ea0c410ec5bbb6c1f8e14f16ef79f">t8_shmem_array_init</a></div><div class="ttdeci">void t8_shmem_array_init(t8_shmem_array_t *parray, size_t elem_size, size_t elem_count, sc_MPI_Comm comm)</div><div class="ttdoc">Initialize and allocate a shared memory array structure.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:118</div></div>

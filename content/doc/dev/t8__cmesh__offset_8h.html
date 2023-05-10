@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -98,6 +98,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8h.html#a7ab69cfa5dae6405a00d2e650adcfcb9">t8_offset_next_nonempty_rank</a> (int rank, int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
 <tr class="memdesc:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the next higher rank that is not empty.  <a href="t8__cmesh__offset_8h.html#a7ab69cfa5dae6405a00d2e650adcfcb9">More...</a><br /></td></tr>
 <tr class="separator:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebbf06b494d1c1aa48d8eb16c290037"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8h.html#acebbf06b494d1c1aa48d8eb16c290037">t8_offset_consistent</a> (int mpisize, const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset_shmem, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
+<tr class="memdesc:acebbf06b494d1c1aa48d8eb16c290037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given offset array represents a valid partition.  <a href="t8__cmesh__offset_8h.html#acebbf06b494d1c1aa48d8eb16c290037">More...</a><br /></td></tr>
+<tr class="separator:acebbf06b494d1c1aa48d8eb16c290037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18a695eea2b6f52314bed2931f594b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8h.html#ae18a695eea2b6f52314bed2931f594b3">t8_offset_in_range</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> tree_id, int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
 <tr class="memdesc:ae18a695eea2b6f52314bed2931f594b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a given global tree id is a local tree of a given process in a certain partition.  <a href="t8__cmesh__offset_8h.html#ae18a695eea2b6f52314bed2931f594b3">More...</a><br /></td></tr>
 <tr class="separator:ae18a695eea2b6f52314bed2931f594b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +235,56 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An MPI rank that has <em>gtree</em> as a local tree. </dd></dl>
+
+</div>
+</div>
+<a id="acebbf06b494d1c1aa48d8eb16c290037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebbf06b494d1c1aa48d8eb16c290037">&#9670;&nbsp;</a></span>t8_offset_consistent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_offset_consistent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mpisize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>offset_shmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_trees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a given offset array represents a valid partition. </p>
+<p>That is:</p><ul>
+<li>the entries in the offset array are increasing,</li>
+<li>if a process is empty then its first tree is not shared,</li>
+<li>if a process is not empty its first tree must be bigger than the last tree of the previous non-empty process, or equal to it if it is shared. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of MPI ranks, also the number of entries in <em>offset</em> minus 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The partition to be considered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trees</td><td>The total number of global trees in the partition. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nonzero if the partition is valid, 0 if not. </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

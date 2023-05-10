@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.162-c8bc</span>
+   &#160;<span id="projectnumber">1.2.0.165-7e418</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if T8_ENABLE_DEBUG</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">int</span>                 t8_offset_consistent (<span class="keywordtype">int</span> mpisize,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__cmesh__offset_8h.html#acebbf06b494d1c1aa48d8eb16c290037">t8_offset_consistent</a> (<span class="keywordtype">int</span> mpisize,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset_shmem,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                          <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -185,6 +185,7 @@ $(function() {
 <div class="ttc" id="at8__cmesh__offset_8h_html_a51aebd9fffb1a6fc387b2bcd63e11325"><div class="ttname"><a href="t8__cmesh__offset_8h.html#a51aebd9fffb1a6fc387b2bcd63e11325">t8_offset_last_owner_of_tree</a></div><div class="ttdeci">int t8_offset_last_owner_of_tree(int mpisize, t8_gloidx_t gtree, const t8_gloidx_t *offset, int *some_owner)</div><div class="ttdoc">Find the biggest process that has a given tree as local tree.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:298</div></div>
 <div class="ttc" id="at8__cmesh__offset_8h_html_a6c54f837a14788d1e8ca43833965f652"><div class="ttname"><a href="t8__cmesh__offset_8h.html#a6c54f837a14788d1e8ca43833965f652">t8_offset_prev_owner_of_tree</a></div><div class="ttdeci">int t8_offset_prev_owner_of_tree(int mpisize, t8_gloidx_t gtree, const t8_gloidx_t *offset, int current_owner)</div><div class="ttdoc">Given a process current_owner that has the tree gtree as local tree, find the next smaller rank that ...</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:287</div></div>
 <div class="ttc" id="at8__cmesh__offset_8h_html_a663783aede5b88d2001b6cb3ae981a36"><div class="ttname"><a href="t8__cmesh__offset_8h.html#a663783aede5b88d2001b6cb3ae981a36">t8_offset_sendstree</a></div><div class="ttdeci">int t8_offset_sendstree(int proc_send, int proc_to, t8_gloidx_t gtree, const t8_gloidx_t *offset_from, const t8_gloidx_t *offset_to)</div><div class="ttdoc">Query whether in a repartitioning setting, a given process sends a given tree to a second process.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:497</div></div>
+<div class="ttc" id="at8__cmesh__offset_8h_html_acebbf06b494d1c1aa48d8eb16c290037"><div class="ttname"><a href="t8__cmesh__offset_8h.html#acebbf06b494d1c1aa48d8eb16c290037">t8_offset_consistent</a></div><div class="ttdeci">int t8_offset_consistent(int mpisize, const t8_shmem_array_t offset_shmem, t8_gloidx_t num_trees)</div><div class="ttdoc">Check whether a given offset array represents a valid partition.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:127</div></div>
 <div class="ttc" id="astructt8__shmem__array_html"><div class="ttname"><a href="structt8__shmem__array.html">t8_shmem_array</a></div><div class="ttdoc">Shared memory array structure.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:34</div></div>
 <div class="ttc" id="at8__cmesh__offset_8h_html_aa0d868eb23292a7848fdc5cf2ec99dcd"><div class="ttname"><a href="t8__cmesh__offset_8h.html#aa0d868eb23292a7848fdc5cf2ec99dcd">t8_offset_first_owner_of_tree</a></div><div class="ttdeci">int t8_offset_first_owner_of_tree(int mpisize, t8_gloidx_t gtree, const t8_gloidx_t *offset, int *some_owner)</div><div class="ttdoc">Find the smallest process that has a given tree as local tree.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:206</div></div>
 <div class="ttc" id="at8__cmesh__offset_8h_html_a286e5dd4a9c8f4e4982c4cb7871a45b0"><div class="ttname"><a href="t8__cmesh__offset_8h.html#a286e5dd4a9c8f4e4982c4cb7871a45b0">t8_offset_first</a></div><div class="ttdeci">t8_gloidx_t t8_offset_first(int proc, const t8_gloidx_t *offset)</div><div class="ttdoc">Return the global id of the first local tree of a given process in a partition.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_offset.c:40</div></div>
