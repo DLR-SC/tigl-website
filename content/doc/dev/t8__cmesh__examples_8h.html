@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.133-8ba4</span>
+   &#160;<span id="projectnumber">1.2.0.141-f9d8</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -156,9 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">t8_cmesh_new_long_brick_pyramid</a> (sc_MPI_Comm comm, int num_cubes)</td></tr>
 <tr class="memdesc:a50cd0d42f38fa6f73b261feb84f62e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a bigger mesh, consisting of many cubes made by pyramids.  <a href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">More...</a><br /></td></tr>
 <tr class="separator:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78da3e414a1641b092ab04a8b2c1ded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ac78da3e414a1641b092ab04a8b2c1ded">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:ac78da3e414a1641b092ab04a8b2c1ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#ac78da3e414a1641b092ab04a8b2c1ded">More...</a><br /></td></tr>
-<tr class="separator:ac78da3e414a1641b092ab04a8b2c1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, const int do_partition, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">More...</a><br /></td></tr>
+<tr class="separator:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide example coarse meshes in this file </p>
@@ -1010,8 +1010,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac78da3e414a1641b092ab04a8b2c1ded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac78da3e414a1641b092ab04a8b2c1ded">&#9670;&nbsp;</a></span>t8_cmesh_new_row_of_cubes()</h2>
+<a id="a66d57f01c6e198254ad1dcaa93bde1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d57f01c6e198254ad1dcaa93bde1f4">&#9670;&nbsp;</a></span>t8_cmesh_new_row_of_cubes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1027,6 +1027,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>set_attributes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>do_partition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.133-8ba4</span>
+   &#160;<span id="projectnumber">1.2.0.141-f9d8</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af010b2f38a724da275dfb25e34b1a2ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#af010b2f38a724da275dfb25e34b1a2ee">t8_cmesh_trees_start_part</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lfirst_tree, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lfirst_ghost, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_ghosts, int alloc)</td></tr>
 <tr class="memdesc:af010b2f38a724da275dfb25e34b1a2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the first_tree array of a given tree_part in a tree struct with a given number of trees and ghosts.  <a href="t8__cmesh__trees_8c.html#af010b2f38a724da275dfb25e34b1a2ee">More...</a><br /></td></tr>
 <tr class="separator:af010b2f38a724da275dfb25e34b1a2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abecf99445bdb3f6346b5b42c77148fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#abecf99445bdb3f6346b5b42c77148fcc">t8_cmesh_trees_finish_part</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc)</td></tr>
-<tr class="memdesc:abecf99445bdb3f6346b5b42c77148fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropiately.  <a href="t8__cmesh__trees_8c.html#abecf99445bdb3f6346b5b42c77148fcc">More...</a><br /></td></tr>
-<tr class="separator:abecf99445bdb3f6346b5b42c77148fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a0764004034bb8aee05b6ef718a888"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#af0a0764004034bb8aee05b6ef718a888">t8_cmesh_trees_finish_part</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc)</td></tr>
+<tr class="memdesc:af0a0764004034bb8aee05b6ef718a888"><td class="mdescLeft">&#160;</td><td class="mdescRight">After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropiately.  <a href="t8__cmesh__trees_8c.html#af0a0764004034bb8aee05b6ef718a888">More...</a><br /></td></tr>
+<tr class="separator:af0a0764004034bb8aee05b6ef718a888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2397c93a6dfd2bf2543bfc7b11ec7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a5d2397c93a6dfd2bf2543bfc7b11ec7c">t8_cmesh_trees_set_all_boundary</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
 <tr class="memdesc:a5d2397c93a6dfd2bf2543bfc7b11ec7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all neighbor fields of all local trees and ghosts to boundary.  <a href="t8__cmesh__trees_8c.html#a5d2397c93a6dfd2bf2543bfc7b11ec7c">More...</a><br /></td></tr>
 <tr class="separator:a5d2397c93a6dfd2bf2543bfc7b11ec7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +153,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_size
 <tr class="memitem:adaf16d99a305b9876b513d178beab702"><td class="memItemLeft" align="right" valign="top"><a id="adaf16d99a305b9876b513d178beab702"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_add_attribute</b> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc, <a class="el" href="t8__cmesh__stash_8h.html#a708282f12534175ec17d01ff29275460">t8_stash_attribute_struct_t</a> *attr, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_id, size_t index)</td></tr>
 <tr class="separator:adaf16d99a305b9876b513d178beab702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32fd9e9ea103cada64be1e6d7a37ca8"><td class="memItemLeft" align="right" valign="top"><a id="ac32fd9e9ea103cada64be1e6d7a37ca8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_add_ghost_attribute</b> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc, <a class="el" href="t8__cmesh__stash_8h.html#a708282f12534175ec17d01ff29275460">t8_stash_attribute_struct_t</a> *attr, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_ghost_id, size_t index, size_t *attribute_data_offset)</td></tr>
+<tr class="separator:ac32fd9e9ea103cada64be1e6d7a37ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a9e47465cce7f5520c4f4a21cf7086bf9">t8_cmesh_trees_get_attribute</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, int package_id, int key, size_t *size, int is_ghost)</td></tr>
 <tr class="memdesc:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an attribute that is stored at a tree.  <a href="t8__cmesh__trees_8c.html#a9e47465cce7f5520c4f4a21cf7086bf9">More...</a><br /></td></tr>
 <tr class="separator:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -512,7 +515,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
     <tr><td class="paramdir">[in,out]</td><td class="paramname">trees_dest</td><td>The trees struct of the destination part. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">part_dest</td><td>The index of the destination part. Must be initialized by <a class="el" href="t8__cmesh__trees_8h.html#af010b2f38a724da275dfb25e34b1a2ee">t8_cmesh_trees_start_part</a> with alloc = 0. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">trees_src</td><td>The trees struct of the source part. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">part_src</td><td>The index of the destination part. Must be a valid part, thus <a class="el" href="t8__cmesh__trees_8h.html#abecf99445bdb3f6346b5b42c77148fcc">t8_cmesh_trees_finish_part</a> must have been called. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">part_src</td><td>The index of the destination part. Must be a valid part, thus <a class="el" href="t8__cmesh__trees_8h.html#af0a0764004034bb8aee05b6ef718a888">t8_cmesh_trees_finish_part</a> must have been called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -596,14 +599,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 
 </div>
 </div>
-<a id="abecf99445bdb3f6346b5b42c77148fcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abecf99445bdb3f6346b5b42c77148fcc">&#9670;&nbsp;</a></span>t8_cmesh_trees_finish_part()</h2>
+<a id="af0a0764004034bb8aee05b6ef718a888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a0764004034bb8aee05b6ef718a888">&#9670;&nbsp;</a></span>t8_cmesh_trees_finish_part()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_cmesh_trees_finish_part </td>
+          <td class="memname">size_t t8_cmesh_trees_finish_part </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
           <td class="paramname"><em>trees</em>, </td>
@@ -1227,7 +1230,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 </div><div class="memdoc">
 
 <p>For one tree in a trees structure set the number of attributes and temporarily store the total size of all of this tree's attributes. </p>
-<p>This temporary value is used in <a class="el" href="t8__cmesh__trees_8h.html#abecf99445bdb3f6346b5b42c77148fcc">t8_cmesh_trees_finish_part</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This temporary value is used in <a class="el" href="t8__cmesh__trees_8h.html#af0a0764004034bb8aee05b6ef718a888">t8_cmesh_trees_finish_part</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">trees</td><td>The trees structure to be updated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local id of one tree in <em>trees</em>. </td></tr>
@@ -1408,7 +1411,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 </div><div class="memdoc">
 
 <p>Allocate the first_tree array of a given tree_part in a tree struct with a given number of trees and ghosts. </p>
-<p>This function allocates the memory for the trees and the ghosts but not for their face neighbor entries or attributes. These must be allocated later when the eclasses of the trees and ghosts are known <a class="el" href="t8__cmesh__trees_8h.html#abecf99445bdb3f6346b5b42c77148fcc">t8_cmesh_trees_finish_part</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function allocates the memory for the trees and the ghosts but not for their face neighbor entries or attributes. These must be allocated later when the eclasses of the trees and ghosts are known <a class="el" href="t8__cmesh__trees_8h.html#af0a0764004034bb8aee05b6ef718a888">t8_cmesh_trees_finish_part</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">trees</td><td>The trees structure to be updated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">proc</td><td>The index of the part to be updated. </td></tr>
