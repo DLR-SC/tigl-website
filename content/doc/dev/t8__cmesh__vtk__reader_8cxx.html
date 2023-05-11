@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.172-f808</span>
+   &#160;<span id="projectnumber">1.2.0.182-00a1</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -74,9 +74,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="t8__cmesh__vtk__reader_8hxx_source.html">t8_cmesh_vtk_reader.hxx</a>&gt;</code><br />
+<code>#include &quot;t8_cmesh_vtk_to_t8/t8_cmesh_vtk_unstructured.hxx&quot;</code><br />
+<code>#include &quot;t8_cmesh_vtk_to_t8/t8_cmesh_vtk_polydata.hxx&quot;</code><br />
+<code>#include &lt;vtkDataObject.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0bb0aa3da135534512dcece9e21c33ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#a0bb0aa3da135534512dcece9e21c33ec">t8_file_to_vtkGrid</a> (const char *filename, vtkDataSet *vtkGrid, const int partition, const int main_proc, sc_MPI_Comm comm, const <a class="el" href="t8__cmesh__vtk__reader_8hxx.html#aafacf7b01d11709e2ab7165f7b92809b">vtk_file_type_t</a> <a class="el" href="t8__cmesh__vtk__reader_8hxx.html#afb026bd2ce55114db574a234b3652614">vtk_file_type</a>)</td></tr>
+<tr class="memdesc:a0bb0aa3da135534512dcece9e21c33ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vtk-file and ShallowCopy its content into a vtkDataSet.  <a href="t8__cmesh__vtk__reader_8cxx.html#a0bb0aa3da135534512dcece9e21c33ec">More...</a><br /></td></tr>
+<tr class="separator:a0bb0aa3da135534512dcece9e21c33ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fccd0286d992c9cc3108c7975059c43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#a0fccd0286d992c9cc3108c7975059c43">t8_cmesh_vtk_reader</a> (const char *filename, const int partition, const int main_proc, sc_MPI_Comm comm, const <a class="el" href="t8__cmesh__vtk__reader_8hxx.html#aafacf7b01d11709e2ab7165f7b92809b">vtk_file_type_t</a> <a class="el" href="t8__cmesh__vtk__reader_8hxx.html#afb026bd2ce55114db574a234b3652614">vtk_file_type</a>)</td></tr>
 <tr class="memdesc:a0fccd0286d992c9cc3108c7975059c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cmesh given a filename refering to a vtk-file either containing an unstructured grid, or vtk-polydata, most likely constructed by vtk.  <a href="t8__cmesh__vtk__reader_8cxx.html#a0fccd0286d992c9cc3108c7975059c43">More...</a><br /></td></tr>
 <tr class="separator:a0fccd0286d992c9cc3108c7975059c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +146,74 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A commited cmesh. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a0bb0aa3da135534512dcece9e21c33ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb0aa3da135534512dcece9e21c33ec">&#9670;&nbsp;</a></span>t8_file_to_vtkGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_file_to_vtkGrid </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vtkDataSet *&#160;</td>
+          <td class="paramname"><em>vtkGrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>partition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>main_proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__cmesh__vtk__reader_8hxx.html#aafacf7b01d11709e2ab7165f7b92809b">vtk_file_type_t</a>&#160;</td>
+          <td class="paramname"><em>vtk_file_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a vtk-file and ShallowCopy its content into a vtkDataSet. </p>
+<p>The success (or failure) of the reading process is communicated over all processes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The name of the file to read </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">vtkGrid</td><td>A pointer to a vtkDataSet. We ShallowCopy the grid there. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partition</td><td>Flag if the input is read partitioned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">main_proc</td><td>The main reading proc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>A communicator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vtk_file_type</td><td>The type of the Data in the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-zero on success, zero if the reading failed. <br  />
  </dd></dl>
 
 </div>
