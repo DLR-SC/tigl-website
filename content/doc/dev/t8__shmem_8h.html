@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.268-59cc</span>
+   &#160;<span id="projectnumber">1.2.0.285-f4d738</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a06264056c2bf4e153c29aab42bbb8156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a06264056c2bf4e153c29aab42bbb8156">t8_shmem_array_allgather</a> (const void *sendbuf, int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> recvarray, int recvcount, sc_MPI_Datatype recvtype)</td></tr>
 <tr class="memdesc:a06264056c2bf4e153c29aab42bbb8156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a t8_shmem array with an allgather.  <a href="t8__shmem_8h.html#a06264056c2bf4e153c29aab42bbb8156">More...</a><br /></td></tr>
 <tr class="separator:a06264056c2bf4e153c29aab42bbb8156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7bf43741ad82c9406f2e0074621bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#abc7bf43741ad82c9406f2e0074621bb6">t8_shmem_array_allgatherv</a> (void *sendbuf, const int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> recvarray, sc_MPI_Datatype recvtype, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:abc7bf43741ad82c9406f2e0074621bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a t8_shmem array with an Allgatherv Computes the recvcount-array and displacement-array for each rank of a node using the sendcount.  <a href="t8__shmem_8h.html#abc7bf43741ad82c9406f2e0074621bb6">More...</a><br /></td></tr>
+<tr class="separator:abc7bf43741ad82c9406f2e0074621bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e7baf594b64749023abf86f5848edf"><td class="memItemLeft" align="right" valign="top">sc_MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">t8_shmem_array_get_comm</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:af5e7baf594b64749023abf86f5848edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the MPI communicator associated with a shmem array.  <a href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">More...</a><br /></td></tr>
 <tr class="separator:af5e7baf594b64749023abf86f5848edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,6 +245,72 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Writing mode must be disabled for <em>recvarray</em>. </dd></dl>
+
+</div>
+</div>
+<a id="abc7bf43741ad82c9406f2e0074621bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7bf43741ad82c9406f2e0074621bb6">&#9670;&nbsp;</a></span>t8_shmem_array_allgatherv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_shmem_array_allgatherv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>sendbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>sendcount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Datatype&#160;</td>
+          <td class="paramname"><em>sendtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>recvarray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Datatype&#160;</td>
+          <td class="paramname"><em>recvtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill a t8_shmem array with an Allgatherv Computes the recvcount-array and displacement-array for each rank of a node using the sendcount. </p>
+<p>The total number of items of each node is then used to compute the recvcount-array and displacement-array between nodes. Use t8_shmem_array_allgather if the sendcount is equal on all procs for better scaling.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sendbuf</td><td>the source from this process </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sendcount</td><td>the number of items to gather on this proc </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sendtype</td><td>the type of items ot gather </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">recvarray</td><td>array of type recvtype where the data gets written to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recvtype</td><td>the type of items to recieve </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>the mpi communicator </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
