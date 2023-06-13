@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.263-6fa85</span>
+   &#160;<span id="projectnumber">1.2.0.265-3c87</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391">t8_forest_iterate_replace</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest_new,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                               <a class="code" href="structt8__forest.html">t8_forest_t</a> forest_old,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                               <a class="code" href="t8__forest__general_8h.html#aee1293f3e1a2c4a1d10fd92c6c318b3a">t8_forest_replace_t</a></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                               <a class="code" href="t8__forest__general_8h.html#aded72f84c192345d214019e9c041cf2d">t8_forest_replace_t</a></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                               replace_fn);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;T8_EXTERN_C_END ();</div>
@@ -185,9 +185,9 @@ $(function() {
 <div class="ttc" id="astructt8__element__array__t_html"><div class="ttname"><a href="structt8__element__array__t.html">t8_element_array_t</a></div><div class="ttdoc">The t8_element_array_t is an array to store t8_element_t * of a given eclass_scheme implementation.</div><div class="ttdef"><b>Definition:</b> t8_containers.h:41</div></div>
 <div class="ttc" id="at8__forest__iterate_8h_html_a0bf6c7e6e226f7df8307df121aa81391"><div class="ttname"><a href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391">t8_forest_iterate_replace</a></div><div class="ttdeci">void t8_forest_iterate_replace(t8_forest_t forest_new, t8_forest_t forest_old, t8_forest_replace_t replace_fn)</div><div class="ttdoc">Given two forest where the elements in one forest are either direct children or parents of the elemen...</div><div class="ttdef"><b>Definition:</b> t8_forest_iterate.cxx:393</div></div>
 <div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:94</div></div>
-<div class="ttc" id="at8__forest__general_8h_html_aee1293f3e1a2c4a1d10fd92c6c318b3a"><div class="ttname"><a href="t8__forest__general_8h.html#aee1293f3e1a2c4a1d10fd92c6c318b3a">t8_forest_replace_t</a></div><div class="ttdeci">void(* t8_forest_replace_t)(t8_forest_t forest_old, t8_forest_t forest_new, t8_locidx_t which_tree, t8_eclass_scheme_c *ts, int refine, int num_outgoing, t8_locidx_t first_outgoing, int num_incoming, t8_locidx_t first_incoming)</div><div class="ttdoc">Callback function prototype to replace one set of elements with another.</div><div class="ttdef"><b>Definition:</b> t8_forest_general.h:87</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div></div>
 <div class="ttc" id="at8__forest__general_8h_html"><div class="ttname"><a href="t8__forest__general_8h.html">t8_forest_general.h</a></div></div>
+<div class="ttc" id="at8__forest__general_8h_html_aded72f84c192345d214019e9c041cf2d"><div class="ttname"><a href="t8__forest__general_8h.html#aded72f84c192345d214019e9c041cf2d">t8_forest_replace_t</a></div><div class="ttdeci">void(* t8_forest_replace_t)(t8_forest_t forest_old, t8_forest_t forest_new, t8_locidx_t which_tree, t8_eclass_scheme_c *ts, const int refine, const int num_outgoing, const t8_locidx_t first_outgoing, const int num_incoming, const t8_locidx_t first_incoming)</div><div class="ttdoc">Callback function prototype to replace one set of elements with another.</div><div class="ttdef"><b>Definition:</b> t8_forest_general.h:87</div></div>
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <hr class="footer"/>
