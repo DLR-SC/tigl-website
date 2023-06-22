@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.287-0ffe4</span>
+   &#160;<span id="projectnumber">1.2.0.300-10840</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -73,37 +73,10 @@ $(function() {
 <div class="title">t8_cmesh_vtk_reader.cxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;t8_cmesh_vtk_writer.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="t8__cmesh__vtk__reader_8hxx_source.html">t8_cmesh_vtk_reader.hxx</a>&gt;</code><br />
-<code>#include &quot;t8_cmesh_vtk_to_t8/t8_cmesh_vtk_unstructured.hxx&quot;</code><br />
-<code>#include &quot;t8_cmesh_vtk_to_t8/t8_cmesh_vtk_polydata.hxx&quot;</code><br />
-<code>#include &lt;<a class="el" href="t8__geometry__linear_8h_source.html">t8_geometry/t8_geometry_implementations/t8_geometry_linear.h</a>&gt;</code><br />
-<code>#include &quot;t8_cmesh_vtk_to_t8/t8_vtk_types.h&quot;</code><br />
-<code>#include &lt;vtkCellIterator.h&gt;</code><br />
-<code>#include &lt;vtkCellData.h&gt;</code><br />
-<code>#include &lt;vtkCellTypes.h&gt;</code><br />
-<code>#include &lt;vtkUnstructuredGrid.h&gt;</code><br />
-<code>#include &lt;vtkUnstructuredGridReader.h&gt;</code><br />
-<code>#include &lt;vtkXMLUnstructuredGridReader.h&gt;</code><br />
-<code>#include &lt;vtkPolyData.h&gt;</code><br />
-<code>#include &lt;vtkBYUReader.h&gt;</code><br />
-<code>#include &lt;vtkOBJReader.h&gt;</code><br />
-<code>#include &lt;vtkPLYReader.h&gt;</code><br />
-<code>#include &lt;vtkPolyDataReader.h&gt;</code><br />
-<code>#include &lt;vtkSTLReader.h&gt;</code><br />
-<code>#include &lt;vtkXMLPolyDataReader.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="t8__cmesh__vtk__reader_8hxx_source.html">t8_cmesh_vtk_reader.hxx</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab8ef6c1339d4e555b708e0ee35a4ea71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#ab8ef6c1339d4e555b708e0ee35a4ea71">t8_cmesh_correct_volume</a> (double *tree_vertices, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
-<tr class="memdesc:ab8ef6c1339d4e555b708e0ee35a4ea71"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the vertices of a tree describe a negative.  <a href="t8__cmesh__vtk__reader_8cxx.html#ab8ef6c1339d4e555b708e0ee35a4ea71">More...</a><br /></td></tr>
-<tr class="separator:ab8ef6c1339d4e555b708e0ee35a4ea71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc4b8b1d41d14ea25455275771a1e88"><td class="memItemLeft" align="right" valign="top">vtk_read_success_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#a3fc4b8b1d41d14ea25455275771a1e88">t8_file_to_vtkGrid</a> (const char *filename, vtkSmartPointer&lt; vtkDataSet &gt; vtkGrid, const int partition, const int main_proc, sc_MPI_Comm comm, const vtk_file_type_t vtk_file_type)</td></tr>
-<tr class="memdesc:a3fc4b8b1d41d14ea25455275771a1e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vtk-file and ShallowCopy its content into a vtkDataSet.  <a href="t8__cmesh__vtk__reader_8cxx.html#a3fc4b8b1d41d14ea25455275771a1e88">More...</a><br /></td></tr>
-<tr class="separator:a3fc4b8b1d41d14ea25455275771a1e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fcf938cee224f889b4b29b1cd65c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#ad7fcf938cee224f889b4b29b1cd65c55">t8_vtkGrid_to_cmesh</a> (vtkSmartPointer&lt; vtkDataSet &gt; vtkGrid, const int partition, const int main_proc, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:ad7fcf938cee224f889b4b29b1cd65c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a pointer to a vtkDataSet a cmesh representing the vtkDataSet is constructed and can be shared over the processes.  <a href="t8__cmesh__vtk__reader_8cxx.html#ad7fcf938cee224f889b4b29b1cd65c55">More...</a><br /></td></tr>
-<tr class="separator:ad7fcf938cee224f889b4b29b1cd65c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fccd0286d992c9cc3108c7975059c43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__vtk__reader_8cxx.html#a0fccd0286d992c9cc3108c7975059c43">t8_cmesh_vtk_reader</a> (const char *filename, const int partition, const int main_proc, sc_MPI_Comm comm, const vtk_file_type_t vtk_file_type)</td></tr>
 <tr class="memdesc:a0fccd0286d992c9cc3108c7975059c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a filename to a vtkUnstructuredGrid or vtkPolyData read the file and construct a cmesh.  <a href="t8__cmesh__vtk__reader_8cxx.html#a0fccd0286d992c9cc3108c7975059c43">More...</a><br /></td></tr>
 <tr class="separator:a0fccd0286d992c9cc3108c7975059c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,44 +84,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of a Reader for vtk/vtu files using the vtk-library. The functions can only be used when t8code is linked with the vtk-library. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ab8ef6c1339d4e555b708e0ee35a4ea71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8ef6c1339d4e555b708e0ee35a4ea71">&#9670;&nbsp;</a></span>t8_cmesh_correct_volume()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_cmesh_correct_volume </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>tree_vertices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
-          <td class="paramname"><em>eclass</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If the vertices of a tree describe a negative. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">permute</td><td>the tree vertices.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">tree_vertices</td><td>The vertices of a tree </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eclass</td><td>The eclass of the tree. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a0fccd0286d992c9cc3108c7975059c43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fccd0286d992c9cc3108c7975059c43">&#9670;&nbsp;</a></span>t8_cmesh_vtk_reader()</h2>
 
@@ -194,7 +129,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given a filename to a vtkUnstructuredGrid or vtkPolyData read the file and construct a cmesh. </p>
-<p>This is a two stage process. First the file is read and stored in a vtkDataSet using <em>t8_file_to_vtkGrid</em>. In the second stage a cmesh is constructed from the vtkDataSet using <em>t8_vtkGrid_to_cmesh</em>.</p>
+<p>This is a two stage process. First the file is read and stored in a vtkDataSet using <em>t8_vtk_reader</em> and <em>t8_file_to_vtkGrid</em>. In the second stage a cmesh is constructed from the vtkDataSet using <em>t8_vtkGrid_to_cmesh</em>.</p>
 <p>Both stages use the vtk-library, therefore the function is only available if t8code is linked against VTK.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -208,126 +143,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A commited cmesh. <br  />
  </dd></dl>
-
-</div>
-</div>
-<a id="a3fc4b8b1d41d14ea25455275771a1e88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fc4b8b1d41d14ea25455275771a1e88">&#9670;&nbsp;</a></span>t8_file_to_vtkGrid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtk_read_success_t t8_file_to_vtkGrid </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vtkSmartPointer&lt; vtkDataSet &gt;&#160;</td>
-          <td class="paramname"><em>vtkGrid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>partition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>main_proc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sc_MPI_Comm&#160;</td>
-          <td class="paramname"><em>comm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const vtk_file_type_t&#160;</td>
-          <td class="paramname"><em>vtk_file_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Read a vtk-file and ShallowCopy its content into a vtkDataSet. </p>
-<p>The success (or failure) of the reading process is communicated over all processes.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The name of the file to read </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">vtkGrid</td><td>A pointer to a vtkDataSet. We ShallowCopy the grid there. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">partition</td><td>Flag if the input is read partitioned </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">main_proc</td><td>The main reading proc. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>A communicator. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">vtk_file_type</td><td>The type of the Data in the file. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if the file was read successfully, 1 otherwise. <br  />
- </dd></dl>
-
-</div>
-</div>
-<a id="ad7fcf938cee224f889b4b29b1cd65c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7fcf938cee224f889b4b29b1cd65c55">&#9670;&nbsp;</a></span>t8_vtkGrid_to_cmesh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_vtkGrid_to_cmesh </td>
-          <td>(</td>
-          <td class="paramtype">vtkSmartPointer&lt; vtkDataSet &gt;&#160;</td>
-          <td class="paramname"><em>vtkGrid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>partition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>main_proc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sc_MPI_Comm&#160;</td>
-          <td class="paramname"><em>comm</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Given a pointer to a vtkDataSet a cmesh representing the vtkDataSet is constructed and can be shared over the processes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vtkGrid</td><td>A pointer to a vtkDataSet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">partition</td><td>Flag if the cmesh should be partitioned </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">main_proc</td><td>The main reading process </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The communicator. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>t8_cmesh_t </dd></dl>
 
 </div>
 </div>
