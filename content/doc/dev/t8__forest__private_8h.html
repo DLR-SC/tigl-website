@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.325-061df5</span>
+   &#160;<span id="projectnumber">1.2.0.612-85e3</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -80,6 +80,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a356acdaea7321fa43bc8f81395ec0c66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__private_8h.html#a356acdaea7321fa43bc8f81395ec0c66">t8_forest_is_incomplete_family</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> el_considered, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *tscheme, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elements, const int elements_size)</td></tr>
+<tr class="memdesc:a356acdaea7321fa43bc8f81395ec0c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether or not <em>elements</em> contains a (in)complete family and return the size of it or zero if no family is considered.  <a href="t8__forest__private_8h.html#a356acdaea7321fa43bc8f81395ec0c66">More...</a><br /></td></tr>
+<tr class="separator:a356acdaea7321fa43bc8f81395ec0c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c9fd73cbd8c74468194ec70724a4d9"><td class="memItemLeft" align="right" valign="top"><a id="ad0c9fd73cbd8c74468194ec70724a4d9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_compute_desc</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
 <tr class="separator:ad0c9fd73cbd8c74468194ec70724a4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1150,6 +1153,76 @@ The element must not exist in the forest, but an ancestor of its first descendan
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the array of elements of the tree. <em>forest</em> must be committed before calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="a356acdaea7321fa43bc8f81395ec0c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356acdaea7321fa43bc8f81395ec0c66">&#9670;&nbsp;</a></span>t8_forest_is_incomplete_family()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_is_incomplete_family </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>ltree_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>el_considered</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>tscheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>elements_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether or not <em>elements</em> contains a (in)complete family and return the size of it or zero if no family is considered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The index of considered local tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">el_considered</td><td>The local id of the first element in <em>elements</em> in the local tree of the forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tscheme</td><td>The scheme for the local tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>Array of elements to consider. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements_size</td><td>Number of elements in <em>elements</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of family or zero, if <em>elements</em> does not contain a family. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The check works for complete and incomplete forests. In the case of complete forests, the scheme based element funktion </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__element__c__interface_8h.html#a32e2876567a049c380ea08ab6d03f96a" title="Query whether a given set of elements is a family or not.">t8_element_is_family</a> is recommended. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the element with id <em>el_considered</em> is not the first family member, return 0. Therefore, if </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>is x &gt; 0, the first x elements in <em>elements</em> form a family. </dd></dl>
 
 </div>
 </div>

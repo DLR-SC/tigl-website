@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.325-061df5</span>
+   &#160;<span id="projectnumber">1.2.0.612-85e3</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -126,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab0c53211d6d83f1487a37321a468b8cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ab0c53211d6d83f1487a37321a468b8cf">t8_forest_is_committed</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
 <tr class="memdesc:ab0c53211d6d83f1487a37321a468b8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a forest is not NULL, initialized and committed.  <a href="t8__forest__general_8h.html#ab0c53211d6d83f1487a37321a468b8cf">More...</a><br /></td></tr>
 <tr class="separator:ab0c53211d6d83f1487a37321a468b8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138d316a8555cfe66337dcac478c3e64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a138d316a8555cfe66337dcac478c3e64">t8_forest_no_overlap</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
+<tr class="memdesc:a138d316a8555cfe66337dcac478c3e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the forest has local overlapping elements.  <a href="t8__forest__general_8h.html#a138d316a8555cfe66337dcac478c3e64">More...</a><br /></td></tr>
+<tr class="separator:a138d316a8555cfe66337dcac478c3e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51b189a3580975642abcdac17da3c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#af51b189a3580975642abcdac17da3c63">t8_forest_is_equal</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_a, <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_b)</td></tr>
 <tr class="memdesc:af51b189a3580975642abcdac17da3c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether two committed forests have the same local elements.  <a href="t8__forest__general_8h.html#af51b189a3580975642abcdac17da3c63">More...</a><br /></td></tr>
 <tr class="separator:af51b189a3580975642abcdac17da3c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,7 +330,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>greater zero if the first entry in <em>elements</em> should be refined, smaller zero if the family <em>elements</em> shall be coarsened, zero else. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the first entry in <em>elements</em> should be refined, -1 if the family <em>elements</em> shall be coarsened, -2 if the first entry in <em>elements</em> should be removed, 0 else. </dd></dl>
 
 </div>
 </div>
@@ -349,9 +352,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">forest_old</td><td>The forest that is adapted </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">forest_new</td><td>The forest that is newly constructed from <em>forest_old</em> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">which_tree</td><td>The local tree containing <em>outgoing</em> and <em>incoming</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">which_tree</td><td>The local tree containing <em>first_outgoing</em> and <em>first_incoming</em> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>The eclass scheme of the tree </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">refine</td><td>-1 if family in <em>forest_old</em> got coarsened, 0 if element has not been touched, 1 if element got refined. See return of t8_forest_adapt_t. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refine</td><td>-1 if family in <em>forest_old</em> got coarsened, 0 if element has not been touched, 1 if element got refined and -2 if element got removed. See return of t8_forest_adapt_t. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_outgoing</td><td>The number of outgoing elements. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">first_outgoing</td><td>The tree local index of the first outgoing element. 0 &lt;= first_outgoing &lt; which_tree-&gt;num_elements </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_incoming</td><td>The number of incoming elements. </td></tr>
@@ -359,7 +362,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </table>
   </dd>
 </dl>
-<p>If an element is being refined, <em>refine</em> and <em>num_outgoing</em> will be 1 and <em>num_incoming</em> will be the number of children. If a family is being coarsened, <em>refine</em> will be -1, <em>num_outgoing</em> will be the number of family members and <em>num_incoming</em> will be 1. Else <em>refine</em> will be 0 and <em>num_outgoing</em> and <em>num_incoming</em> will both be 1. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391" title="Given two forest where the elements in one forest are either direct children or parents of the elemen...">t8_forest_iterate_replace</a> </dd></dl>
+<p>If an element is being refined, <em>refine</em> and <em>num_outgoing</em> will be 1 and <em>num_incoming</em> will be the number of children. If a family is being coarsened, <em>refine</em> will be -1, <em>num_outgoing</em> will be the number of family members and <em>num_incoming</em> will be 1. If an element is being removed, <em>refine</em> and <em>num_outgoing</em> will be 1 and <em>num_incoming</em> will be 0. Else <em>refine</em> will be 0 and <em>num_outgoing</em> and <em>num_incoming</em> will both be 1. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391" title="Given two forest where the elements in one forest are either direct children or parents of the elemen...">t8_forest_iterate_replace</a> </dd></dl>
 
 </div>
 </div>
@@ -2005,6 +2008,35 @@ Currently <em>forest</em> must be balanced. </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A uniform forest with coarse mesh <em>cmesh</em>, eclass_scheme <em>scheme</em> and refinement level <em>level</em>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This is equivalent to calling <a class="el" href="t8__forest__general_8h.html#a8671e8128c5b13943cbf7187fe688cbb">t8_forest_init</a>, <a class="el" href="t8__forest__general_8h.html#ab5624d351d5789e115ed65eaaebdb6cf">t8_forest_set_cmesh</a>, <a class="el" href="t8__forest__general_8h.html#a909b5f515258474e381c686a4c633ed4">t8_forest_set_scheme</a>, <a class="el" href="t8__forest__general_8h.html#aa5b1316e78e0b852458cc9680b643cf3">t8_forest_set_level</a>, and <a class="el" href="t8__forest__general_8h.html#a306ce9301c2101a1c1d910299879109f">t8_forest_commit</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a138d316a8555cfe66337dcac478c3e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138d316a8555cfe66337dcac478c3e64">&#9670;&nbsp;</a></span>t8_forest_no_overlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_no_overlap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the forest has local overlapping elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest to consider. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>forest</em> has no elements which are inside each other. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is collective, but only checks local overlapping on each process. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__partition_8h.html#ab8307d030dec24b76731c93a11cabb02" title="Test if the last descendant of the last element of current rank has a smaller linear id than the stor...">t8_forest_partition_test_boundery_element</a> if you also want to test for global overlap across the process boundaries. </dd></dl>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.325-061df5</span>
+   &#160;<span id="projectnumber">1.2.0.612-85e3</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -117,6 +117,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a2298b3d7050dbfb3404418cef1d53196">dimension</a></td></tr>
 <tr class="memdesc:a2298b3d7050dbfb3404418cef1d53196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension inferred from <b>cmesh</b>. <br /></td></tr>
 <tr class="separator:a2298b3d7050dbfb3404418cef1d53196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5bb4f0f70ff8343e5c285acd80fde9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a2f5bb4f0f70ff8343e5c285acd80fde9">incomplete_trees</a></td></tr>
+<tr class="memdesc:a2f5bb4f0f70ff8343e5c285acd80fde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check whether the forest has (potential) incomplete trees.  <a href="structt8__forest.html#a2f5bb4f0f70ff8343e5c285acd80fde9">More...</a><br /></td></tr>
+<tr class="separator:a2f5bb4f0f70ff8343e5c285acd80fde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe2f168b1632db097d7761fd20d192e"><td class="memItemLeft" align="right" valign="top"><a id="acbe2f168b1632db097d7761fd20d192e"></a>
 <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#acbe2f168b1632db097d7761fd20d192e">set_from</a></td></tr>
 <tr class="memdesc:acbe2f168b1632db097d7761fd20d192e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporarily store source forest. <br /></td></tr>
@@ -297,6 +300,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 
 <p>If partitioned, for each process the linear id (at maxlevel) of its first element's first descendant. </p>
 <p><a class="el" href="t8__element__c__interface_8h.html#a75aa65b8cf5be7c79a32df339de11905">t8_element_set_linear_id</a>. Stores 0 for empty processes. Since it is memory consuming, it is usually only constructed when needed and otherwise unallocated. </p>
+
+</div>
+</div>
+<a id="a2f5bb4f0f70ff8343e5c285acd80fde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5bb4f0f70ff8343e5c285acd80fde9">&#9670;&nbsp;</a></span>incomplete_trees</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest::incomplete_trees</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag to check whether the forest has (potential) incomplete trees. </p>
+<p>A tree is incomplete if an element has been removed from it. Once an element got removed, the flag sets to 1 (true) and stays. </p>
 
 </div>
 </div>
