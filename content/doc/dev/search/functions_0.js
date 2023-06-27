@@ -517,7 +517,7 @@ var searchData=
   ['t8_5fforest_5fltreeid_5fto_5fcmesh_5fltreeid_1866',['t8_forest_ltreeid_to_cmesh_ltreeid',['../t8__forest__general_8h.html#a4a4ffe5ce6c4d16f34dd0ee2f4a731bd',1,'t8_forest.c']]],
   ['t8_5fforest_5fmin_5fnonempty_5flevel_1867',['t8_forest_min_nonempty_level',['../t8__forest__private_8h.html#a1bcc5848f907b801c07b9a1e632a9926',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5fnew_5fadapt_1868',['t8_forest_new_adapt',['../t8__forest__general_8h.html#ac86d9553e0795fd3f7f4623c748d0674',1,'t8_forest.c']]],
-  ['t8_5fforest_5fnew_5funiform_1869',['t8_forest_new_uniform',['../t8__forest__general_8h.html#a23fcca1f9c5593ee1dcd850e7d3c2c35',1,'t8_forest.c']]],
+  ['t8_5fforest_5fnew_5funiform_1869',['t8_forest_new_uniform',['../t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08',1,'t8_forest.c']]],
   ['t8_5fforest_5fno_5foverlap_1870',['t8_forest_no_overlap',['../t8__forest__general_8h.html#a138d316a8555cfe66337dcac478c3e64',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5fpartition_5fcmesh_1871',['t8_forest_partition_cmesh',['../t8__forest__general_8h.html#abd56dc491de003cab435c5b5ab0af799',1,'t8_forest.c']]],
   ['t8_5fforest_5fpartition_5fcreate_5ffirst_5fdesc_1872',['t8_forest_partition_create_first_desc',['../t8__forest__partition_8h.html#ae4f105c30c4ea9c69f9477a3d4f28813',1,'t8_forest_partition.cxx']]],

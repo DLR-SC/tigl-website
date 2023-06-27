@@ -772,7 +772,7 @@ var searchData=
   ['t8_5fforest_5fnetcdf_5fcontext_5ft_882',['t8_forest_netcdf_context_t',['../structt8__forest__netcdf__context__t.html',1,'']]],
   ['t8_5fforest_5fnetcdf_5fugrid_5fnamespace_5ft_883',['t8_forest_netcdf_ugrid_namespace_t',['../structt8__forest__netcdf__ugrid__namespace__t.html',1,'']]],
   ['t8_5fforest_5fnew_5fadapt_884',['t8_forest_new_adapt',['../t8__forest__general_8h.html#ac86d9553e0795fd3f7f4623c748d0674',1,'t8_forest.c']]],
-  ['t8_5fforest_5fnew_5funiform_885',['t8_forest_new_uniform',['../t8__forest__general_8h.html#a23fcca1f9c5593ee1dcd850e7d3c2c35',1,'t8_forest.c']]],
+  ['t8_5fforest_5fnew_5funiform_885',['t8_forest_new_uniform',['../t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08',1,'t8_forest.c']]],
   ['t8_5fforest_5fno_5foverlap_886',['t8_forest_no_overlap',['../t8__forest__general_8h.html#a138d316a8555cfe66337dcac478c3e64',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5fpartition_2eh_887',['t8_forest_partition.h',['../t8__forest__partition_8h.html',1,'']]],
   ['t8_5fforest_5fpartition_5fcmesh_888',['t8_forest_partition_cmesh',['../t8__forest__general_8h.html#abd56dc491de003cab435c5b5ab0af799',1,'t8_forest.c']]],

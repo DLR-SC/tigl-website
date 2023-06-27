@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">1.2.0.615-c90f7</span>
+   &#160;<span id="projectnumber">1.2.0.618-d3bab</span>
    </div>
    <div id="projectbrief">t8codeisaClibrarytomanageaforestofadaptivespace-treesofgeneralelementclassesinparallel.</div>
   </td>
@@ -288,9 +288,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 <tr class="memitem:a1022af56311f715bbdadda571dbe1411"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1022af56311f715bbdadda571dbe1411">t8_forest_element_point_inside</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double point[3], const double tolerance)</td></tr>
 <tr class="memdesc:a1022af56311f715bbdadda571dbe1411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given point lies inside an element or not.  <a href="t8__forest__general_8h.html#a1022af56311f715bbdadda571dbe1411">More...</a><br /></td></tr>
 <tr class="separator:a1022af56311f715bbdadda571dbe1411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23fcca1f9c5593ee1dcd850e7d3c2c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a23fcca1f9c5593ee1dcd850e7d3c2c35">t8_forest_new_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme, int level, int do_face_ghost, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:a23fcca1f9c5593ee1dcd850e7d3c2c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a uniformly refined forest on a coarse mesh.  <a href="t8__forest__general_8h.html#a23fcca1f9c5593ee1dcd850e7d3c2c35">More...</a><br /></td></tr>
-<tr class="separator:a23fcca1f9c5593ee1dcd850e7d3c2c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13122ecb8c71af117e108b554cc41f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08">t8_forest_new_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme, const int level, const int do_face_ghost, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a13122ecb8c71af117e108b554cc41f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a uniformly refined forest on a coarse mesh.  <a href="t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08">More...</a><br /></td></tr>
+<tr class="separator:a13122ecb8c71af117e108b554cc41f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86d9553e0795fd3f7f4623c748d0674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ac86d9553e0795fd3f7f4623c748d0674">t8_forest_new_adapt</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_from, <a class="el" href="t8__forest__general_8h.html#af97734e69bb2a669a3234eeb04aab0b0">t8_forest_adapt_t</a> adapt_fn, int recursive, int do_face_ghost, void *user_data)</td></tr>
 <tr class="memdesc:ac86d9553e0795fd3f7f4623c748d0674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a adapted forest from another forest.  <a href="t8__forest__general_8h.html#ac86d9553e0795fd3f7f4623c748d0674">More...</a><br /></td></tr>
 <tr class="separator:ac86d9553e0795fd3f7f4623c748d0674"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1951,8 +1951,8 @@ Currently <em>forest</em> must be balanced. </dd>
 
 </div>
 </div>
-<a id="a23fcca1f9c5593ee1dcd850e7d3c2c35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23fcca1f9c5593ee1dcd850e7d3c2c35">&#9670;&nbsp;</a></span>t8_forest_new_uniform()</h2>
+<a id="a13122ecb8c71af117e108b554cc41f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13122ecb8c71af117e108b554cc41f08">&#9670;&nbsp;</a></span>t8_forest_new_uniform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1972,13 +1972,13 @@ Currently <em>forest</em> must be balanced. </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>do_face_ghost</em>, </td>
         </tr>
         <tr>
