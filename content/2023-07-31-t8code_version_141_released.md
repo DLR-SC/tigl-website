@@ -15,10 +15,12 @@ New features include:
 
 - A function to create the connectivity for a cmesh
 
-- Improved testing
+- Improved testing by enabling tests for more parameters
 
 - Improved CI
 
 - Bug-fixes
+
+- Improve the quality of documentation and code by introducing a spell-checking script
 
 Click <a href="https://github.com/DLR-AMR/t8code/releases/tag/v1.4.1">here</a> for the full change log.
