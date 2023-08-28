@@ -108,7 +108,7 @@ a:before,
 	        transition: all .25s ease;
 }
 a {
-	color: #9231ab;
+	color: #154E56;
 }  
 a:focus,
 a:hover {
@@ -131,7 +131,7 @@ a:focus{
 	box-shadow: 0 0 7px 1px #ddd;
 }
 .section-title { 
-	color: #9231ab; /* #9231ab */
+	color: #154E56; /* #154E56 */
 	font-size: 2.3125em;
 	margin-top: 0;
 	padding-bottom: 15px;
@@ -148,7 +148,7 @@ a:focus{
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	background-color: #9231ab;
+	background-color: #154E56;
 }
 .section-title.stripe:after {
 	width: 200px;
@@ -234,7 +234,7 @@ a:focus{
 	margin: 3px;
 }
 .owl-dots .owl-dot.active {
-	background: #9231ab;
+	background: #154E56;
 }
 .carousel-indicators li.active,
 .carousel-indicators li {
@@ -246,13 +246,13 @@ a:focus{
 	background: #b8b8b8;
 }
 .carousel-indicators li.active {
-	background: #9231ab;
+	background: #154E56;
 }  
 #boxer {
 	z-index: 99999;
 }
 .title.about-title {
-	color: #9231ab;
+	color: #154E56;
     font-size: 2.3125em;
     margin-top: 0;
     margin-bottom: 20px;
@@ -260,7 +260,7 @@ a:focus{
 .website-title {
 	font-size:2em;
 	line-height: 20px;
-	color: #9231ab;
+	color: #154E56;
 	font-weight: bold;
 }
 
@@ -284,7 +284,7 @@ a:focus{
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
-	color: #9231ab;
+	color: #154E56;
 }
 .navbar-default .navbar-brand {
 	padding-top: 20px;
@@ -318,7 +318,7 @@ a:focus{
 }
 .main-mav .sub-menu li {
 	width: 160px;  
-	background: #9231ab;
+	background: #154E56;
 	padding: 0;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
@@ -353,20 +353,20 @@ a:focus{
 	line-height: 45px;
 	margin-top: 25px;
 	margin-left: 50px;
-	background: #9231ab;
+	background: #154E56;
 	position: relative;
 }
 .main-mav>li>a.donate:focus,
 .main-mav>li>a.donate:hover {
-	background: #501b5e;
+	background: #0C2E33;
 	color: #fff;
 }
 .main-mav>li>a.donate.green {
-	background: #501b5e;
+	background: #0C2E33;
 }
 .main-mav>li>a.donate.green:focus,
 .main-mav>li>a.donate.green:hover {
-	background: #501b5e; 
+	background: #0C2E33; 
 	color: #fff;
 }
 .transparent-nav #main-menu {
@@ -481,7 +481,7 @@ a:focus{
 	border-radius: 3px 0  0 3px;
 }
 .top-slider-container .slide-nav:hover {
-	background: #9231ab;
+	background: #154E56;
 	opacity: 1;
 }
 .top-slider-container:hover .slide-nav.left {
@@ -525,10 +525,10 @@ a:focus{
 }
 .top-sec-btn:hover{
 	color: #fff; 
-	background: #501b5e;
+	background: #0C2E33;
 }
 .top-sec-btn:hover:after { 
-	background: #9231ab;
+	background: #154E56;
 }
 .top-sec-btn i {
 	padding-right: 5px;
@@ -599,7 +599,7 @@ a:focus{
 	max-width: 600px;
 	text-align: left;
 	font-size: 3.5em;
-	color: #9231ab;
+	color: #154E56;
 	font-weight: 700;
 }
 .top-slider-container.v2 .top-sec-txt {
@@ -615,7 +615,7 @@ a:focus{
 	padding-bottom: 50px;
 }
 .top-slider-container.v2 .top-sec-btn {
-	background: #9231ab;
+	background: #154E56;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -624,13 +624,13 @@ a:focus{
 	height: 50px;
 }
 .top-slider-container.v2 .top-sec-btn:hover {
-	background: #501b5e;
+	background: #0C2E33;
 }
 .top-slider-container.v2 .top-sec-btn:after {
 	display: none;
 }
 .top-slider-container.v2 .video-link {
-	color: #9231ab;
+	color: #154E56;
 	font-size: 14px;
 	line-height: 40px; 
 	padding-left: 80px;
@@ -648,7 +648,7 @@ a:focus{
 	        transition: all .25s ease;
 }
 .top-slider-container.v2 .video-link:hover .icon {
-	color : #501b5e;
+	color : #0C2E33;
 }
 
 /* 4 - Slider End
@@ -685,7 +685,7 @@ a:focus{
 }
 
 .todobox .icon {
-	color: #9231ab;
+	color: #154E56;
 	float: left;
 	font-size: 2.85em;
 	padding-right: 12px;
@@ -724,7 +724,7 @@ a:focus{
 
 	text-align: center;
 	font-size: 50px;
-	color: #9231ab;
+	color: #154E56;
 	line-height: 108px;
 }
 
@@ -933,14 +933,14 @@ a:focus{
 	left: 25px;
 	right: 25px;
 	height: 2px;
-	background: #9231ab;
+	background: #154E56;
 	position: absolute;
 	z-index: -1;
 }
 .rehabilitates .steps .txt,
 .rehabilitates .count-step {
 	display: inline-block;
-	background: #9231ab;
+	background: #154E56;
 	color: #ffffff;
 	text-align: center;
 }
@@ -968,7 +968,7 @@ a:focus{
 	width: 2px;
 	height: 165px;
 	bottom: 100%;
-	background: #9231ab;
+	background: #154E56;
 }
 /* 8 - Rehabilitates End 
 ******************************************************/
@@ -1035,7 +1035,7 @@ a:focus{
 }
 .communities .take-part .donate:hover:before,
 .communities .take-part .volunteer:before {
-	background: #9231ab;
+	background: #154E56;
 }
 .communities .take-part .volunteer:hover:before,
 .communities .take-part .donate:before {
@@ -1079,7 +1079,7 @@ a:focus{
 	text-transform: uppercase; 
 }
 .follow-us .social-btn a:hover {
-	color: #9231ab;
+	color: #154E56;
 	text-decoration: none;
 }
 .follow-us .social-btn span {
@@ -1152,7 +1152,7 @@ a:focus{
 	left: 50%;
 	bottom: 5px;
 	height: 2px;
-	background: #9231ab;
+	background: #154E56;
 	width: 0;
 }
 .isotope-filters button:hover:after,
@@ -1249,7 +1249,7 @@ a:focus{
 	color: #fff;
 } 
 .single-member .name {
-	color: #9231ab;
+	color: #154E56;
 	font-size: 0.9375em;
 	font-weight:700; 
 	text-transform: uppercase;	
@@ -1301,7 +1301,7 @@ a:focus{
 .partners-logo-title {
 	font-size: 1.75em;
 	font-weight: 300;
-	color: #9231ab;
+	color: #154E56;
 	margin: 0;
 	text-align: center;
 	padding: 0 0 60px 0;
@@ -1336,7 +1336,7 @@ a:focus{
 	padding-top: 40px;
 }
 .testimonial .t-author-name {
-	color: #9231ab;
+	color: #154E56;
 	font-size: 0.9375em; 
 	text-transform: uppercase;
 	display: inline-block;
@@ -1412,7 +1412,7 @@ a:focus{
 	border: 3px solid transparent;
 }
 .testimonial .slick-center .given-by-box:before  {
-	border: 3px solid #9231ab;
+	border: 3px solid #154E56;
 }
 .testimonial .slick-center .given-by-dtls {
 	background: transparent;
@@ -1429,7 +1429,7 @@ a:focus{
 .testimonial-title {
 	font-size: 2.3125em;
 	font-weight: 300;
-	color: #9231ab;
+	color: #154E56;
 }
 .testimonial-quote {  
 	color: #282828;
@@ -1486,7 +1486,7 @@ a:focus{
 	color: #a0a0a0;
 }
 .entry-meta a:hover {
-	color: #9231ab;
+	color: #154E56;
 }
 .entry-meta i {
 	font-size: 14px;
@@ -1505,7 +1505,7 @@ a:focus{
 	padding-left: 5px;
 }
 .btn-container .read-more:hover {
-	color: #9231ab;
+	color: #154E56;
 }
 article .entry {
 	padding-bottom: 20px;
@@ -1581,7 +1581,7 @@ article.single-post {
 	padding-right: 5px;
 }
 .post-navigation a:hover {
-	color: #9231ab;
+	color: #154E56;
 }
 /*17 -  Single Page  End 
 ******************************************************/
@@ -1636,7 +1636,7 @@ article.single-post {
 }
 .comment-time a:hover,
 .comment-author a:hover {
-	color: #9231ab;
+	color: #154E56;
 }
 .comment-body .reply {
 	display: inline-block;
@@ -1647,7 +1647,7 @@ article.single-post {
 	line-height: 40px;
 	padding: 0 35px;
 	text-transform: uppercase;
-	background: #9231ab;
+	background: #154E56;
 	color: #fff;
 } 
 .comment-body .reply a:hover {
@@ -1726,7 +1726,7 @@ article.single-post {
 	background-image: none;
 	min-height: 55px;
 	margin: 0 0 30px 0;
-	border:1px solid #9231ab;
+	border:1px solid #154E56;
 	border-left-width: 75px;
 	-webkit-transition: all .25s ease;
 	-moz-transition: all .25s ease;
@@ -1740,7 +1740,7 @@ textarea.wpcf7-form-control {
 }
 .comment-form .form-control:focus,
 .wpcf7-form-control:focus {
-	border:1px solid #9231ab;
+	border:1px solid #154E56;
 }
 .comment-form .form-control,
 .comment-form .form-control:focus,
@@ -1756,7 +1756,7 @@ textarea.wpcf7-form-control {
 }  
 .contact-form .wpcf7-form-control.wpcf7-submit { 
 	border:none;
-	background-color: #9231ab;
+	background-color: #154E56;
 	color: #fff;
 	text-transform: uppercase;
 
@@ -1789,7 +1789,7 @@ div.wpcf7-mail-sent-ok {
 ******************************************************/
 .comment-reply-title {
 	font-size: 1.375em;
-	color: #9231ab;
+	color: #154E56;
 	padding-top: 55px;
 	padding-bottom: 20px;
 } 
@@ -1797,7 +1797,7 @@ div.wpcf7-mail-sent-ok {
 
 .comment-form .submit-btn {
 	border:none;
-	background-color: #9231ab;
+	background-color: #154E56;
 	color: #fff; 
 	line-height: 55px;
 	padding: 0 35px;
@@ -1829,7 +1829,7 @@ div.wpcf7-mail-sent-ok {
 }
 .widget-title:before {
 	position: absolute;
-	background: #9231ab;
+	background: #154E56;
 	content: "";
 	height: 11px;
 	width: 4px;
@@ -1852,7 +1852,7 @@ div.wpcf7-mail-sent-ok {
 	color: #4c4c4c;
 }
 .widget .latest-post .post-title:hover {
-	color: #9231ab;
+	color: #154E56;
 }
 .widget .widget_img {
 	float: left;
@@ -1873,11 +1873,11 @@ div.wpcf7-mail-sent-ok {
 .widget_news_subs .form-control {
 	line-height: 45px;
 	height: 45px;
-	border:1px solid #9231ab;
+	border:1px solid #154E56;
 	border-radius: 0;
 }
 .widget_news_subs input[type="submit"]  {
-	background: #9231ab; 
+	background: #154E56; 
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1941,11 +1941,11 @@ div.wpcf7-mail-sent-ok {
 .search-form .form-control {
 	line-height: 45px;
 	height: 45px;
-	border: 1px solid #9231ab;
+	border: 1px solid #154E56;
 	border-radius: 0;
 }
 .search-form button[type="submit"] {
-	background: #9231ab;
+	background: #154E56;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1986,8 +1986,8 @@ div.wpcf7-mail-sent-ok {
 	color: #fff;
 	height: 40px;
 	text-align: center;
-	border: 1px solid #9231ab;
-	background: #9231ab;
+	border: 1px solid #154E56;
+	background: #154E56;
 }
 .widget_calendar td {
 	height: 40px;
@@ -2022,7 +2022,7 @@ div.wpcf7-mail-sent-ok {
 	color: #a0a0a0;
 }
 .widget_recent_comments a:hover {
-	color: #9231ab;
+	color: #154E56;
 } 
 /* 22 - Widget End
 ******************************************************/
@@ -2047,8 +2047,8 @@ div.wpcf7-mail-sent-ok {
  	font-size: 13px;
 }
 .paging-navigation .page-numbers:hover {
-	border-color: #9231ab;
-	background: #9231ab;
+	border-color: #154E56;
+	background: #154E56;
 	color: #fff;
 } 
 /* 23 - Pagination End  
@@ -2115,7 +2115,7 @@ article.news-container  .entry {
 	cursor: pointer;
 }
 .donate-title {
-	color: #9231ab;
+	color: #154E56;
 	font-size: 30px;
 	max-width: 850px;
 	line-height: 48px;
@@ -2140,7 +2140,7 @@ article.news-container  .entry {
     width: 100%;
 }
 .select-cause .title {
-	color: #9231ab; 
+	color: #154E56; 
 	font-size: 30px;
 	padding: 0 15px;
 	padding-top: 10px;
@@ -2176,7 +2176,7 @@ article.news-container  .entry {
 	left: 0;
 	right: 0;
 	bottom: 50px;
-	background: #9231ab;
+	background: #154E56;
 	color: #fff;
 	font-size: 72px;
 	padding-top: 5px;
@@ -2225,9 +2225,9 @@ article.news-container  .entry {
 	        transition: all .25s ease;
 }
 .donate-amount-btn:checked+label {
-	background-color: #9231ab;
+	background-color: #154E56;
 	color: #fff;
-	border-color: #9231ab;
+	border-color: #154E56;
 }
 
 
@@ -2356,8 +2356,8 @@ article.news-container  .entry {
 	line-height: 20px;
 }
 .card-option .nav-tabs>li.active>a:after {
-	background: #9231ab;
-	border-color:#9231ab; 
+	background: #154E56;
+	border-color:#154E56; 
 	content: "\f00c";
 }
  
@@ -2377,7 +2377,7 @@ article.news-container  .entry {
 .donate-from .donate-submit {
 	border-radius: 0;
 	line-height: 50px;
-	background-color: #9231ab;
+	background-color: #154E56;
 	text-transform: uppercase;
 	text-align: center;
 	width: 180px;
@@ -2419,7 +2419,7 @@ article.news-container  .entry {
 }
 
 .upcoming-event {
-	background: #9231ab;
+	background: #154E56;
 	color: #ffffff;
 	padding: 30px 0 40px 0;
 }
@@ -2469,7 +2469,7 @@ article.news-container  .entry {
 	border-bottom: 2px solid rgba(0,0,0,.2);
 } 
 .join-us.btn:hover {
-	background: #501b5e;
+	background: #0C2E33;
 }
 
 /* 27 - Recent Event Section End
@@ -2524,7 +2524,7 @@ article.news-container  .entry {
 }
 .event-news .btn.news-btn:hover:before,
 .event-news .btn.event-btn:before {
-	background: #9231ab;
+	background: #154E56;
 }
 .event-news .btn.event-btn:hover:before,
 .event-news .btn.news-btn:before {
@@ -2554,7 +2554,7 @@ article.news-container  .entry {
 	margin: auto;
 }
 .tweet-message i.fa {
-	color: #501b5e;
+	color: #0C2E33;
 }
 .tweets-carosel .slide-nav {
 	position: absolute;
@@ -2585,7 +2585,7 @@ article.news-container  .entry {
 /* 30 - Success Story 
 ******************************************************/
 .success-story .title {
-	color: #9231ab;
+	color: #154E56;
 	font-size: 2.3125em;
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -2645,14 +2645,14 @@ article.news-container  .entry {
 }
 .pricing-box {
 	position: relative;
-	border:1px solid #9231ab;
+	border:1px solid #154E56;
 	padding: 20px 0;
 	z-index: 1;
 }
 .pricing-table .price {
 	border-radius: 100%;
-	border: 3px solid #9231ab;
-	color: #9231ab;
+	border: 3px solid #154E56;
+	color: #154E56;
 	line-height: 140px;
 	font-size: 3em;
 	font-weight: 300;
@@ -2666,7 +2666,7 @@ article.news-container  .entry {
 	content: "";
 	position: absolute;
 	height: 2px;
-	background-color: #9231ab;
+	background-color: #154E56;
 	top: 50%;
 	margin-top: -1px; 
 	width: 220px;
@@ -2678,7 +2678,7 @@ article.news-container  .entry {
 	right: 100%;
 }
 .pricing-table .price-title { 
-	color: #9231ab;
+	color: #154E56;
 	font-weight: 600;
 	font-size: 1.5em;
 	margin: 20px 0 30px 0;
@@ -2707,7 +2707,7 @@ article.news-container  .entry {
 }
 .pricing-table .feature-options li.yes:before {
 	content: "\f00c";
-	color: #9231ab;
+	color: #154E56;
 }
 
 .pricing-table .feature-options li.no:before {
@@ -2725,7 +2725,7 @@ article.news-container  .entry {
 	border-bottom: 2px solid rgba(0,0,0,.2);
 } 
 .pricing-table .sign-up.btn:hover {
-	background: #501b5e; 
+	background: #0C2E33; 
 } 
 .pricing-table.featured:before,
 .pricing-table.featured .pricing-box:before {
@@ -2735,7 +2735,7 @@ article.news-container  .entry {
 	left: -1px;
 	right: -1px;
 	bottom: 0;
-	background-color: #9231ab;
+	background-color: #154E56;
 	z-index: 0; 
 }
 .pricing-table.featured .pricing-box:before{
@@ -2775,8 +2775,8 @@ article.news-container  .entry {
 }
 .footer-social.social-btn a:hover {
 	color: #fff;
-	background: #9231ab;
-	border-color: #9231ab;
+	background: #154E56;
+	border-color: #154E56;
 }
 .footer-social.social-btn a.facebook:hover {
 	background: #3B5998;
@@ -2903,7 +2903,7 @@ article.news-container  .entry {
     }
     .navbar-default .navbar-nav>li>a:focus, 
     .navbar-default .navbar-nav>li>a:hover {
-    	background: #9231ab;
+    	background: #154E56;
     	color: #fff;
     }
     .navbar-nav>li>a:after {
@@ -2960,7 +2960,7 @@ article.news-container  .entry {
 	.navbar-default .navbar-toggle:hover, 
 	.navbar-default .navbar-toggle:focus {
 		background-color: transparent;
-		color: #9231ab;
+		color: #154E56;
 	}
 	.navbar-default .navbar-toggle {
 		border-color: transparent;
