@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -71,7 +78,7 @@ $(function() {
 <div class="title">t8_geometry_occ.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="t8__geometry__occ_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="t8__geometry__occ_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">    1</a></span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  This file is part of t8code.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  t8code is a C library to manage a collection (a forest) of multiple</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  connected adaptive space-trees of general element classes in parallel.</span></div>
@@ -100,44 +107,32 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry_8h.html">t8_geometry/t8_geometry.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__with__vertices_8h.html">t8_geometry/t8_geometry_with_vertices.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* The vertices of each edge of a hexahedron. Used in the occ geometry. */</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span>    <a class="code" href="t8__geometry__occ_8hxx.html#aaddfc229eff349347dc7dec3d4abee71">t8_edge_vertex_to_tree_vertex</a>[<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2];</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* The faces connected to each edge. */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span>    <a class="code" href="t8__geometry__occ_8hxx.html#a8cc936cd62ac6a85eb9e8aa230522dd9">t8_edge_to_face</a>[<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__geometry__occ.html">t8_geometry_occ</a> <a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* The edges connected to a face */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">   41</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span>    t8_face_to_edge[<a class="code" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__geometry__occ.html">t8_geometry_occ</a> <a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a>  *<a class="code" href="t8__geometry__occ_8h.html#a00d7ff8f994dc4dcae7e8b37add55cef">t8_geometry_occ_new</a> (<span class="keywordtype">int</span> <a class="code" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">char</span> *name_in);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">t8_geometry_occ_destroy</a> (<a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a> ** geom);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if T8_ENABLE_DEBUG</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">t8_geom_is_occ</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geometry);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_OCC_H! */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__geometry__occ_html"><div class="ttname"><a href="structt8__geometry__occ.html">t8_geometry_occ</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.hxx:77</div></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a> *</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="t8__geometry__occ_8h.html#a00d7ff8f994dc4dcae7e8b37add55cef">t8_geometry_occ_new</a> (<span class="keywordtype">int</span> <a class="code" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">char</span> *name_in);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">t8_geometry_occ_destroy</a> (<a class="code" href="structt8__geometry__occ.html">t8_geometry_occ_c</a> **geom);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if T8_ENABLE_DEBUG</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">t8_geom_is_occ</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geometry);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_OCC_H! */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__geometry__occ_html"><div class="ttname"><a href="structt8__geometry__occ.html">t8_geometry_occ</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.hxx:61</div></div>
 <div class="ttc" id="astructt8__geometry_html"><div class="ttname"><a href="structt8__geometry.html">t8_geometry</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:37</div></div>
-<div class="ttc" id="astructt8__geometry_html_a3c89ac80ad02f18bba9e5a16fe2ae96a"><div class="ttname"><a href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">t8_geometry::dimension</a></div><div class="ttdeci">int dimension</div><div class="ttdoc">The dimension of reference space for which this is a geometry.</div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:116</div></div>
+<div class="ttc" id="astructt8__geometry_html_a3c89ac80ad02f18bba9e5a16fe2ae96a"><div class="ttname"><a href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">t8_geometry::dimension</a></div><div class="ttdeci">int dimension</div><div class="ttdoc">The dimension of reference space for which this is a geometry.</div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:115</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
-<div class="ttc" id="at8__eclass_8h_html_a601ebe78feea681a24e339646a017c2b"><div class="ttname"><a href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_EDGES</div><div class="ttdoc">The maximum number of boundary edges an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:72</div></div>
-<div class="ttc" id="at8__eclass_8h_html_ac706fa304ce1d9dbcf71c3f7d84f1855"><div class="ttname"><a href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_FACES</div><div class="ttdoc">The maximum number of boundary faces an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:70</div></div>
 <div class="ttc" id="at8__geometry_8h_html"><div class="ttname"><a href="t8__geometry_8h.html">t8_geometry.h</a></div><div class="ttdoc">Typedef for the t8_geometry class in order to be usable as a pointer from .c files.</div></div>
-<div class="ttc" id="at8__geometry__occ_8h_html_a00d7ff8f994dc4dcae7e8b37add55cef"><div class="ttname"><a href="t8__geometry__occ_8h.html#a00d7ff8f994dc4dcae7e8b37add55cef">t8_geometry_occ_new</a></div><div class="ttdeci">t8_geometry_occ_c * t8_geometry_occ_new(int dimension, const char *fileprefix, const char *name_in)</div><div class="ttdoc">Create a new occ geometry of a given dimension.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:956</div></div>
-<div class="ttc" id="at8__geometry__occ_8h_html_aaaea02a572b9bc94e989f3b7b03cc8d1"><div class="ttname"><a href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">t8_geometry_occ_destroy</a></div><div class="ttdeci">void t8_geometry_occ_destroy(t8_geometry_occ_c **geom)</div><div class="ttdoc">Destroy a occ geometry that was created with t8_geometry_occ_new.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:965</div></div>
-<div class="ttc" id="at8__geometry__occ_8h_html_af538b9fee3b9931f3d8bf5be732adbd6"><div class="ttname"><a href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">t8_geom_is_occ</a></div><div class="ttdeci">int t8_geom_is_occ(const t8_geometry_c *geometry)</div><div class="ttdoc">Query whether a given geometry is t8_geometry_occ_c.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:978</div></div>
-<div class="ttc" id="at8__geometry__occ_8hxx_html_a8cc936cd62ac6a85eb9e8aa230522dd9"><div class="ttname"><a href="t8__geometry__occ_8hxx.html#a8cc936cd62ac6a85eb9e8aa230522dd9">t8_edge_to_face</a></div><div class="ttdeci">const int t8_edge_to_face[T8_ECLASS_MAX_EDGES][2]</div><div class="ttdoc">The faces connected to each edge.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:52</div></div>
-<div class="ttc" id="at8__geometry__occ_8hxx_html_aaddfc229eff349347dc7dec3d4abee71"><div class="ttname"><a href="t8__geometry__occ_8hxx.html#aaddfc229eff349347dc7dec3d4abee71">t8_edge_vertex_to_tree_vertex</a></div><div class="ttdeci">const int t8_edge_vertex_to_tree_vertex[T8_ECLASS_MAX_EDGES][2]</div><div class="ttdoc">The vertices of each edge of a hexahedron.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:47</div></div>
+<div class="ttc" id="at8__geometry__occ_8h_html_a00d7ff8f994dc4dcae7e8b37add55cef"><div class="ttname"><a href="t8__geometry__occ_8h.html#a00d7ff8f994dc4dcae7e8b37add55cef">t8_geometry_occ_new</a></div><div class="ttdeci">t8_geometry_occ_c * t8_geometry_occ_new(int dimension, const char *fileprefix, const char *name_in)</div><div class="ttdoc">Create a new occ geometry of a given dimension.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:1081</div></div>
+<div class="ttc" id="at8__geometry__occ_8h_html_aaaea02a572b9bc94e989f3b7b03cc8d1"><div class="ttname"><a href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">t8_geometry_occ_destroy</a></div><div class="ttdeci">void t8_geometry_occ_destroy(t8_geometry_occ_c **geom)</div><div class="ttdoc">Destroy a occ geometry that was created with t8_geometry_occ_new.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:1088</div></div>
+<div class="ttc" id="at8__geometry__occ_8h_html_af538b9fee3b9931f3d8bf5be732adbd6"><div class="ttname"><a href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">t8_geom_is_occ</a></div><div class="ttdeci">int t8_geom_is_occ(const t8_geometry_c *geometry)</div><div class="ttdoc">Query whether a given geometry is t8_geometry_occ_c.</div><div class="ttdef"><b>Definition:</b> t8_geometry_occ.cxx:1101</div></div>
 <div class="ttc" id="at8__geometry__with__vertices_8h_html"><div class="ttname"><a href="t8__geometry__with__vertices_8h.html">t8_geometry_with_vertices.h</a></div><div class="ttdoc">This header file provides a C interface for functions for the t8_geometry_with_vertices class.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

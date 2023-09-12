@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -99,11 +106,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa9ce74d412614f2759b112bb0ed38c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex of a triangle.  <a href="t8__dtri__bits_8h.html#aa9ce74d412614f2759b112bb0ed38c64">More...</a><br /></td></tr>
 <tr class="separator:aa9ce74d412614f2759b112bb0ed38c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71301f87d900afe93668404ac552da44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#a71301f87d900afe93668404ac552da44">t8_dtri_compute_vertex_ref_coords</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem, const int vertex, double coordinates[2])</td></tr>
-<tr class="memdesc:a71301f87d900afe93668404ac552da44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the reference coordinates of a vertex of a triangle when the tree (level 0 triangle) is embedded in [0,1]^2.  <a href="t8__dtri__bits_8h.html#a71301f87d900afe93668404ac552da44">More...</a><br /></td></tr>
+<tr class="memdesc:a71301f87d900afe93668404ac552da44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the reference coordinates of a vertex of a triangle when the tree (level 0 triangle) is embedded in \( [0,1]^2 \).  <a href="t8__dtri__bits_8h.html#a71301f87d900afe93668404ac552da44">More...</a><br /></td></tr>
 <tr class="separator:a71301f87d900afe93668404ac552da44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563fa2edeedf867c289b56edfb4ada98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#a563fa2edeedf867c289b56edfb4ada98">t8_dtri_compute_reference_coords</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem, const double *ref_coords, double out_coords[2])</td></tr>
-<tr class="memdesc:a563fa2edeedf867c289b56edfb4ada98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of a triangle element to a point in the reference space of the tree (level 0) embedded in [0,1]^2.  <a href="t8__dtri__bits_8h.html#a563fa2edeedf867c289b56edfb4ada98">More...</a><br /></td></tr>
-<tr class="separator:a563fa2edeedf867c289b56edfb4ada98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058e8732f0a6b323d956554e39785459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#a058e8732f0a6b323d956554e39785459">t8_dtri_compute_reference_coords</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem, const double *ref_coords, const size_t num_coords, const size_t skip_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a058e8732f0a6b323d956554e39785459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of a tri element to points in the reference space of the tree (level 0) embedded in \( [0,1]^2 \).  <a href="t8__dtri__bits_8h.html#a058e8732f0a6b323d956554e39785459">More...</a><br /></td></tr>
+<tr class="separator:a058e8732f0a6b323d956554e39785459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ee74e68e16350eedbc65351126097d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#ab5ee74e68e16350eedbc65351126097d">t8_dtri_compute_all_coords</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem, t8_dtri_coord_t coordinates[3][2])</td></tr>
 <tr class="memdesc:ab5ee74e68e16350eedbc65351126097d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of the four vertices of a triangle.  <a href="t8__dtri__bits_8h.html#ab5ee74e68e16350eedbc65351126097d">More...</a><br /></td></tr>
 <tr class="separator:ab5ee74e68e16350eedbc65351126097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,7 +499,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns negativ if t1 &lt; t2, zero if t1 = t2, positive if t1 &gt; t2 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns negative if t1 &lt; t2, zero if t1 = t2, positive if t1 &gt; t2 </dd></dl>
 
 </div>
 </div>
@@ -577,8 +584,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a563fa2edeedf867c289b56edfb4ada98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a563fa2edeedf867c289b56edfb4ada98">&#9670;&nbsp;</a></span>t8_dtri_compute_reference_coords()</h2>
+<a id="a058e8732f0a6b323d956554e39785459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058e8732f0a6b323d956554e39785459">&#9670;&nbsp;</a></span>t8_dtri_compute_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,8 +605,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>out_coords</em>[2]&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>skip_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -609,12 +628,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a point in the reference space of a triangle element to a point in the reference space of the tree (level 0) embedded in [0,1]^2. </p>
+<p>Convert points in the reference space of a tri element to points in the reference space of the tree (level 0) embedded in \( [0,1]^2 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input triangle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates inside the triangle element [0,1]^2 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of 2 doubles that will be filled with the reference coordinates in the tree of the triangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates in the triangle (<em>num_coords</em> times \( [0,1]^2 \)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of coordinates to evaluate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip_coords</td><td>Only used for batch computation of prisms. In all other cases 0. Skip coordinates in the <em>ref_coords</em> and <em>out_coords</em> array. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of <em>num_coords</em> x 2 x double that will be filled with the reference coordinates of the points on the triangle. </td></tr>
   </table>
   </dd>
 </dl>
@@ -653,7 +674,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the reference coordinates of a vertex of a triangle when the tree (level 0 triangle) is embedded in [0,1]^2. </p>
+<p>Compute the reference coordinates of a vertex of a triangle when the tree (level 0 triangle) is embedded in \( [0,1]^2 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input triangle. </td></tr>
@@ -820,7 +841,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>triangle</em> that conincides with <em>face_child</em>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>triangle</em> that coincides with <em>face_child</em>. </dd></dl>
 
 </div>
 </div>
@@ -896,8 +917,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given a face of an triangle return the face number of the parent of the triangle that matches the triangle's face. </p>
-<p>Or return -1 if no face of the parent matches the face.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Or return -1 if no face of the parent matches the face. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>The triangle. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>Then number of the face. </td></tr>

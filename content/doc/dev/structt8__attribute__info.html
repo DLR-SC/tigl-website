@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -83,7 +90,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:a40f1755cdf0f9487072fd33c89a99fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d9d042640cfd3f238ed779926d76d6"><td class="memItemLeft" align="right" valign="top"><a id="a73d9d042640cfd3f238ed779926d76d6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__attribute__info.html#a73d9d042640cfd3f238ed779926d76d6">key</a></td></tr>
-<tr class="memdesc:a73d9d042640cfd3f238ed779926d76d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (tree unique) key of the attribute whithin this AL. <br /></td></tr>
+<tr class="memdesc:a73d9d042640cfd3f238ed779926d76d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (tree unique) key of the attribute within this AL. <br /></td></tr>
 <tr class="separator:a73d9d042640cfd3f238ed779926d76d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd5ec4bca16a3a14151df434092dde7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__attribute__info.html#a9cd5ec4bca16a3a14151df434092dde7">attribute_offset</a></td></tr>
 <tr class="memdesc:a9cd5ec4bca16a3a14151df434092dde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of the attribute data from the first attribute info of the tree.  <a href="structt8__attribute__info.html#a9cd5ec4bca16a3a14151df434092dde7">More...</a><br /></td></tr>
@@ -95,8 +102,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure holds the information associated to an attribute of a tree. </p>
-<p>The attributes of each are stored in a key-value storage, where the key consists of the two entries (package_id,key) both being integers. The package_id serves to identify the application layer that added the attribute and the key identifies the attribute whithin that application layer.</p>
-<p>All attribute info objects of one tree are stored in an array and adding a tree's att_offset entry to the tree's adress yields this array. The attributes themselfes are stored in an array directly behind the array of the attribute infos. </p>
+<p>The attributes of each are stored in a key-value storage, where the key consists of the two entries (package_id,key) both being integers. The package_id serves to identify the application layer that added the attribute and the key identifies the attribute within that application layer.</p>
+<p>All attribute info objects of one tree are stored in an array and adding a tree's att_offset entry to the tree's address yields this array. The attributes themselves are stored in an array directly behind the array of the attribute infos. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a9cd5ec4bca16a3a14151df434092dde7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cd5ec4bca16a3a14151df434092dde7">&#9670;&nbsp;</a></span>attribute_offset</h2>
@@ -111,7 +118,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>The offset of the attribute data from the first attribute info of the tree. </p>
-<p>(Thus, the attribute is stored at adress tree + tree-&gt;att_offset + attribute_offset) </p>
+<p>(Thus, the attribute is stored at address tree + tree-&gt;att_offset + attribute_offset) </p>
 
 </div>
 </div>

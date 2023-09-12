@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -134,10 +141,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_save</b> (<a 
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (!(x)) { <a class="code" href="t8_8h.html#a3793c5b342657f8b7af99137ea5af193">t8_errorf</a> (<span class="stringliteral">&quot;file i/o error. Condition %s not fulfilled. &quot;</span>\</div>
-<div class="line">              <span class="stringliteral">&quot;Line %i in file %s\n&quot;</span>, #x, __LINE__, __FILE__);\</div>
-<div class="line">              fclose (fp); <span class="keywordflow">return</span> 0;}</div>
-<div class="ttc" id="at8_8h_html_a3793c5b342657f8b7af99137ea5af193"><div class="ttname"><a href="t8_8h.html#a3793c5b342657f8b7af99137ea5af193">t8_errorf</a></div><div class="ttdeci">void t8_errorf(const char *fmt,...)</div><div class="ttdoc">Log a message, no matter what rank, with priority SC_LP_ERROR.</div><div class="ttdef"><b>Definition:</b> t8.c:135</div></div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (!(x)) { \</div>
+<div class="line">    t8_errorf (<span class="stringliteral">&quot;file i/o error. Condition %s not fulfilled. &quot;</span> \</div>
+<div class="line">               <span class="stringliteral">&quot;Line %i in file %s\n&quot;</span>, \</div>
+<div class="line">               #x, __LINE__, __FILE__); \</div>
+<div class="line">    fclose (fp); \</div>
+<div class="line">    return 0; \</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 </div>
 </div>

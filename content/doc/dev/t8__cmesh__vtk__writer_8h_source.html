@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -106,14 +113,13 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* function declarations */</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* TODO: document this function */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span>                 t8_cmesh_vtk_write_file (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                             <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                             <span class="keywordtype">double</span> scale);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_VTK_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;t8_cmesh_vtk_write_file (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keywordtype">double</span> scale);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_VTK_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

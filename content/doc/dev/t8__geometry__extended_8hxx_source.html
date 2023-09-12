@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -106,25 +113,34 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * from reference space to physical space, the extended geometry</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * also provides functions to compute the volume of an element,</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * face normals, etc... */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structt8__geometry__extended.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structt8__geometry__extended.html">t8_geometry_extended</a>:<a class="code" href="structt8__geometry.html">t8_geometry</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structt8__geometry__extended.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structt8__geometry__extended.html">t8_geometry_extended</a>: <a class="code" href="structt8__geometry.html">t8_geometry</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">/* TODO: Properly define these functions. */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span>      t8_geom_element_volume () = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>        t8_geom_element_centroid () = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>        t8_geom_face_area () = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>        t8_geom_face_centroid () = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>        t8_geom_face_normal () = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">/* TODO: Properly define these functions. */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  t8_geom_element_volume ()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  t8_geom_element_centroid ()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  t8_geom_face_area ()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_H! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  t8_geom_face_centroid ()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  t8_geom_face_normal ()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_H! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__geometry__extended_html"><div class="ttname"><a href="structt8__geometry__extended.html">t8_geometry_extended</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_extended.hxx:41</div></div>
 <div class="ttc" id="astructt8__geometry_html"><div class="ttname"><a href="structt8__geometry.html">t8_geometry</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:37</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>

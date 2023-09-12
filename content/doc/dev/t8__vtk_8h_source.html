@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -102,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define T8_VTK_LOCIDX &quot;Int32&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* TODO: Paraview has troubles with Int64, so we switch to Int32 and be careful.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *       Investigate this further. See also vtk makro VTK_USE_64BIT_IDS */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *       Investigate this further. See also vtk macro VTK_USE_64BIT_IDS */</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define T8_VTK_GLOIDX &quot;Int32&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* TODO: these macros need to be set by configure */</span></div>
@@ -127,38 +134,36 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/* TODO: Add support for integer data type. */</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  T8_VTK_SCALAR,                <span class="comment">/* One double value per element */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  T8_VTK_VECTOR                 <span class="comment">/* 3 double values per element */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} t8_vtk_data_type_t;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html">   69</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">   71</a></span>&#160;  t8_vtk_data_type_t  <a class="code" href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">type</a>; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#aca581bcec67121956d987367c91bf3d7">   72</a></span>&#160;  <span class="keywordtype">char</span>                description[BUFSIZ];</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">   73</a></span>&#160;  <span class="keywordtype">double</span>             *<a class="code" href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">data</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/* function declarations */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/* Writes the pvtu header file that links to the processor local files.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * It is used by the cmesh and forest vtk routines.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * This function should only be called by one process.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * Return 0 on success. */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* TODO: document */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">int</span>                 t8_write_pvtu (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keywordtype">int</span> num_procs,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                   <span class="keywordtype">int</span> write_tree, <span class="keywordtype">int</span> write_rank,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                   <span class="keywordtype">int</span> write_level, <span class="keywordtype">int</span> write_id,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                   <span class="keywordtype">int</span> num_data, <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  T8_VTK_SCALAR, <span class="comment">/* One double value per element */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  T8_VTK_VECTOR  <span class="comment">/* 3 double values per element */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} t8_vtk_data_type_t;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html">   68</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">   70</a></span>&#160;  t8_vtk_data_type_t <a class="code" href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">type</a>;  </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#aca581bcec67121956d987367c91bf3d7">   71</a></span>&#160;  <span class="keywordtype">char</span> description[BUFSIZ]; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">   72</a></span>&#160;  <span class="keywordtype">double</span> *<a class="code" href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">data</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/* function declarations */</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/* Writes the pvtu header file that links to the processor local files.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * It is used by the cmesh and forest vtk routines.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * This function should only be called by one process.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * Return 0 on success. */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* TODO: document */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;t8_write_pvtu (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keywordtype">int</span> num_procs, <span class="keywordtype">int</span> write_tree, <span class="keywordtype">int</span> write_rank, <span class="keywordtype">int</span> write_level, <span class="keywordtype">int</span> write_id,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;               <span class="keywordtype">int</span> num_data, <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VTK_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__vtk__data__field__t_html"><div class="ttname"><a href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a></div><div class="ttdef"><b>Definition:</b> t8_vtk.h:70</div></div>
-<div class="ttc" id="astructt8__vtk__data__field__t_html_a6c2666d251bbe45ef922f699e3caa7b9"><div class="ttname"><a href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">t8_vtk_data_field_t::type</a></div><div class="ttdeci">t8_vtk_data_type_t type</div><div class="ttdoc">Describes of which type the data array is.</div><div class="ttdef"><b>Definition:</b> t8_vtk.h:71</div></div>
-<div class="ttc" id="astructt8__vtk__data__field__t_html_a6ea0b7c888bcf4d6922f3188128c8341"><div class="ttname"><a href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">t8_vtk_data_field_t::data</a></div><div class="ttdeci">double * data</div><div class="ttdoc">An array of length n*num_local_elements doubles with n = 1 if type = T8_VTK_SCALAR,...</div><div class="ttdef"><b>Definition:</b> t8_vtk.h:73</div></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VTK_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__vtk__data__field__t_html"><div class="ttname"><a href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a></div><div class="ttdef"><b>Definition:</b> t8_vtk.h:69</div></div>
+<div class="ttc" id="astructt8__vtk__data__field__t_html_a6c2666d251bbe45ef922f699e3caa7b9"><div class="ttname"><a href="structt8__vtk__data__field__t.html#a6c2666d251bbe45ef922f699e3caa7b9">t8_vtk_data_field_t::type</a></div><div class="ttdeci">t8_vtk_data_type_t type</div><div class="ttdoc">Describes of which type the data array is.</div><div class="ttdef"><b>Definition:</b> t8_vtk.h:70</div></div>
+<div class="ttc" id="astructt8__vtk__data__field__t_html_a6ea0b7c888bcf4d6922f3188128c8341"><div class="ttname"><a href="structt8__vtk__data__field__t.html#a6ea0b7c888bcf4d6922f3188128c8341">t8_vtk_data_field_t::data</a></div><div class="ttdeci">double * data</div><div class="ttdoc">An array of length n*num_local_elements doubles with n = 1 if type = T8_VTK_SCALAR,...</div><div class="ttdef"><b>Definition:</b> t8_vtk.h:72</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

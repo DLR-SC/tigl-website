@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -425,7 +432,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">stash</td><td>On root the stash that is to be broadcasted. On the other process an initialized stash. Its entries will get overwritten by the entries in the root stash. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">root</td><td>The mpirank of the root process. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The mpi communicator which is used fpr broadcast. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The mpi communicator which is used for broadcast. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">elem_counts</td><td>An array with three entries giving the number of elements in the classes, joinfaces and attributes arrays. </td></tr>
   </table>
   </dd>

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -86,8 +93,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3f0051ced1bdbb62f9ad3908af1aeb9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a3f0051ced1bdbb62f9ad3908af1aeb9b">T8_MPI_ECLASS_TYPE</a></td></tr>
-<tr class="memdesc:a3f0051ced1bdbb62f9ad3908af1aeb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype used for t8_eclass_t.  <a href="t8__eclass_8h.html#a3f0051ced1bdbb62f9ad3908af1aeb9b">More...</a><br /></td></tr>
+<tr class="memitem:a3f0051ced1bdbb62f9ad3908af1aeb9b"><td class="memItemLeft" align="right" valign="top"><a id="a3f0051ced1bdbb62f9ad3908af1aeb9b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a3f0051ced1bdbb62f9ad3908af1aeb9b">T8_MPI_ECLASS_TYPE</a>&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (sizeof (int) == sizeof (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>)), sc_MPI_INT)</td></tr>
+<tr class="memdesc:a3f0051ced1bdbb62f9ad3908af1aeb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype used for t8_eclass_t. <br /></td></tr>
 <tr class="separator:a3f0051ced1bdbb62f9ad3908af1aeb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac706fa304ce1d9dbcf71c3f7d84f1855"><td class="memItemLeft" align="right" valign="top"><a id="ac706fa304ce1d9dbcf71c3f7d84f1855"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>&#160;&#160;&#160;6</td></tr>
@@ -180,22 +188,22 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#abe4e86182e7c753bdfaf9b0642ebef58">t8_face_vertex_to_tree_vertex</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#a05f85727adfc2a7d3836ac390be5aab8">T8_ECLASS_MAX_CORNERS_2D</a>]</td></tr>
 <tr class="memdesc:abe4e86182e7c753bdfaf9b0642ebef58"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each face f the entry i gives the vertex number of f's i-th vertex within all vertices of the tree. <br /></td></tr>
 <tr class="separator:abe4e86182e7c753bdfaf9b0642ebef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500ceb3caf774f1a1790142e48a714e0"><td class="memItemLeft" align="right" valign="top"><a id="a500ceb3caf774f1a1790142e48a714e0"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a500ceb3caf774f1a1790142e48a714e0">t8_face_edge_to_tree_edge_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#acbd0f18b10d00c8460a68a149a5d8c61">T8_ECLASS_MAX_EDGES_2D</a>]</td></tr>
-<tr class="memdesc:a500ceb3caf774f1a1790142e48a714e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each face f the entry i gives the edge number of f's i-th edge within all edges of the tree. <br /></td></tr>
-<tr class="separator:a500ceb3caf774f1a1790142e48a714e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56036661350e3f74207767f4b545981a"><td class="memItemLeft" align="right" valign="top"><a id="a56036661350e3f74207767f4b545981a"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a56036661350e3f74207767f4b545981a">t8_face_edge_to_tree_edge</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#acbd0f18b10d00c8460a68a149a5d8c61">T8_ECLASS_MAX_EDGES_2D</a>]</td></tr>
+<tr class="memdesc:a56036661350e3f74207767f4b545981a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each face f the entry i gives the edge number of f's i-th edge within all edges of the tree. <br /></td></tr>
+<tr class="separator:a56036661350e3f74207767f4b545981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a6be50e61ca11827d8b45211d3a0c14"><td class="memItemLeft" align="right" valign="top"><a id="a2a6be50e61ca11827d8b45211d3a0c14"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a2a6be50e61ca11827d8b45211d3a0c14">t8_face_to_edge_neighbor</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#a05f85727adfc2a7d3836ac390be5aab8">T8_ECLASS_MAX_CORNERS_2D</a>]</td></tr>
 <tr class="memdesc:a2a6be50e61ca11827d8b45211d3a0c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass, each face f and the face vertex v, we get the edge number of the tree which is incident to vertex v but not part of f. <br /></td></tr>
 <tr class="separator:a2a6be50e61ca11827d8b45211d3a0c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ad301151b24351752aace1ce8bb030"><td class="memItemLeft" align="right" valign="top"><a id="a11ad301151b24351752aace1ce8bb030"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a11ad301151b24351752aace1ce8bb030">t8_edge_vertex_to_tree_vertex_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
-<tr class="memdesc:a11ad301151b24351752aace1ce8bb030"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the vertex number of e's i-th vertex within all vertices of the tree. <br /></td></tr>
-<tr class="separator:a11ad301151b24351752aace1ce8bb030"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee727a80c382d88fc5282033a727df33"><td class="memItemLeft" align="right" valign="top"><a id="aee727a80c382d88fc5282033a727df33"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#aee727a80c382d88fc5282033a727df33">t8_edge_to_face_n</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
-<tr class="memdesc:aee727a80c382d88fc5282033a727df33"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the face number of e's i-th incident face within all faces of the tree. <br /></td></tr>
-<tr class="separator:aee727a80c382d88fc5282033a727df33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256301c86f8a7483637accfbf9aea44d"><td class="memItemLeft" align="right" valign="top"><a id="a256301c86f8a7483637accfbf9aea44d"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a256301c86f8a7483637accfbf9aea44d">t8_edge_vertex_to_tree_vertex</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
+<tr class="memdesc:a256301c86f8a7483637accfbf9aea44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the vertex number of e's i-th vertex within all vertices of the tree. <br /></td></tr>
+<tr class="separator:a256301c86f8a7483637accfbf9aea44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568f718767c4c859baf6a4ccba02e8c8"><td class="memItemLeft" align="right" valign="top"><a id="a568f718767c4c859baf6a4ccba02e8c8"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a568f718767c4c859baf6a4ccba02e8c8">t8_edge_to_face</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
+<tr class="memdesc:a568f718767c4c859baf6a4ccba02e8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each eclass and each edge e the entry i gives the face number of e's i-th incident face within all faces of the tree. <br /></td></tr>
+<tr class="separator:a568f718767c4c859baf6a4ccba02e8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62982c7b72a0ab0b8d836beaf97bc430"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__eclass_8h.html#a62982c7b72a0ab0b8d836beaf97bc430">t8_eclass_face_orientation</a> [<a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>]</td></tr>
 <tr class="memdesc:a62982c7b72a0ab0b8d836beaf97bc430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each face is either 0 or 1 oriented, depending on the order of its vertices.  <a href="t8__eclass_8h.html#a62982c7b72a0ab0b8d836beaf97bc430">More...</a><br /></td></tr>
 <tr class="separator:a62982c7b72a0ab0b8d836beaf97bc430"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,28 +243,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define all possible element classes that occur in hybrid meshes. </p>
 <p>Notable examples are triangles, tetrahedra, quadrilaterals and hexahedra. We cover all dimensions between zero and three, so it is in principal possible to build a topological complex out of these element classes. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a3f0051ced1bdbb62f9ad3908af1aeb9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f0051ced1bdbb62f9ad3908af1aeb9b">&#9670;&nbsp;</a></span>T8_MPI_ECLASS_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_MPI_ECLASS_TYPE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (<a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<span class="keyword">sizeof</span> (<span class="keywordtype">int</span>) == <span class="keyword">sizeof</span> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>)),\</div>
-<div class="line">  sc_MPI_INT)</div>
-<div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:73</div></div>
-<div class="ttc" id="at8__eclass_8h_html_a343c2af26e5b41822905b164cab176ec"><div class="ttname"><a href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a></div><div class="ttdeci">enum t8_eclass t8_eclass_t</div><div class="ttdoc">This enumeration contains all possible element classes.</div></div>
-</div><!-- fragment -->
-<p>The MPI datatype used for t8_eclass_t. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ab20dcd46b3a346d537c1fe8626d579f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab20dcd46b3a346d537c1fe8626d579f9">&#9670;&nbsp;</a></span>t8_eclass</h2>
 

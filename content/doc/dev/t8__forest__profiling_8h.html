@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -182,7 +189,7 @@ const sc_statinfo_t *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_f
 <dl class="section return"><dt>Returns</dt><dd>The runtime of adapt if profiling was activated. 0 otherwise. <em>forest</em> must be committed before calling this function. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__profiling_8h.html#a40336bcb9ba3692fa85672618273e1d6" title="Enable or disable profiling for a forest.">t8_forest_set_profiling</a> </dd>
 <dd>
-<a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9" title="Set a source forest with an adapt function to be adapted on commiting.">t8_forest_set_adapt</a> </dd></dl>
+<a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9" title="Set a source forest with an adapt function to be adapted on committing.">t8_forest_set_adapt</a> </dd></dl>
 
 </div>
 </div>

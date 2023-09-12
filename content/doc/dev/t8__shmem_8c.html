@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -307,9 +314,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sendbuf</td><td>the source from this process </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sendcount</td><td>the number of items to gather on this proc </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sendtype</td><td>the type of items ot gather </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sendtype</td><td>the type of items to gather </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">recvarray</td><td>array of type recvtype where the data gets written to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">recvtype</td><td>the type of items to recieve </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recvtype</td><td>the type of items to receive </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>the mpi communicator </td></tr>
   </table>
   </dd>
@@ -825,7 +832,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
 </div><div class="memdoc">
 
 <p>Fill a t8_shmem array with an Allgather of the prefix operation over all processes. </p>
-<p>The recieve array will be (0, send0, send0 op send1, send0 op send1 op send2, ...)</p>
+<p>The receive array will be (0, send0, send0 op send1, send0 op send1 op send2, ...)</p>
 <dl class="section note"><dt>Note</dt><dd>the first entry of <em>recvarray</em> will be set to 0 using memset. The entry can be changed after calling t8_shmem_array_prefix</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -876,7 +883,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
 <p>Set an entry of a t8_shmem array that is used to store t8_gloidx_t. </p>
 <p>The array must have writing mode enabled <a class="el" href="t8__shmem_8h.html#a562990851375d86a80405b568d6e8ee3">t8_shmem_array_start_writing</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">array</td><td>The array to be mofified. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">array</td><td>The array to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The array entry to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The new value to be set. </td></tr>
   </table>

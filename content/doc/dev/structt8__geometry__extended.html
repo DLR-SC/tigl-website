@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -100,15 +107,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_face_
 <tr class="memitem:a1bdea20fbb137ecec8d6d7979b466efb inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="a1bdea20fbb137ecec8d6d7979b466efb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry</b> (int <a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, const char *<a class="el" href="structt8__geometry.html#a792d7e610379512222d49c8afbcfa2be">name</a>, const char *attribute_name=NULL)</td></tr>
 <tr class="separator:a1bdea20fbb137ecec8d6d7979b466efb inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a1ce40e1cfa78038c0d975cdc8ceed6be">~ t8_geometry</a> ()</td></tr>
-<tr class="memdesc:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#a1ce40e1cfa78038c0d975cdc8ceed6be">More...</a><br /></td></tr>
-<tr class="separator:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
+<tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
+<tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa304da6770c6d25ef05349e432e7f677 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#aa304da6770c6d25ef05349e432e7f677">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double out_coords[3]) const =0</td></tr>
-<tr class="memdesc:aa304da6770c6d25ef05349e432e7f677 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a point in the reference space $$[0,1]^dimension$$ to $$\mathbb R^3$$.  <a href="structt8__geometry.html#aa304da6770c6d25ef05349e432e7f677">More...</a><br /></td></tr>
+<tr class="memdesc:aa304da6770c6d25ef05349e432e7f677 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a point in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry.html#aa304da6770c6d25ef05349e432e7f677">More...</a><br /></td></tr>
 <tr class="separator:aa304da6770c6d25ef05349e432e7f677 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addf8439ad1481ff4c0bc8e909ba92c3c inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#addf8439ad1481ff4c0bc8e909ba92c3c">t8_geom_evalute_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian) const =0</td></tr>
-<tr class="memdesc:addf8439ad1481ff4c0bc8e909ba92c3c inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space $$[0,1]^dimension$$.  <a href="structt8__geometry.html#addf8439ad1481ff4c0bc8e909ba92c3c">More...</a><br /></td></tr>
-<tr class="separator:addf8439ad1481ff4c0bc8e909ba92c3c inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9cd4e137db831feb8905a40e9176347 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ae9cd4e137db831feb8905a40e9176347">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian) const =0</td></tr>
+<tr class="memdesc:ae9cd4e137db831feb8905a40e9176347 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry.html#ae9cd4e137db831feb8905a40e9176347">More...</a><br /></td></tr>
+<tr class="separator:ae9cd4e137db831feb8905a40e9176347 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5350a3cda1750d57e5e2cbef9f87e5e inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af5350a3cda1750d57e5e2cbef9f87e5e">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)=0</td></tr>
 <tr class="memdesc:af5350a3cda1750d57e5e2cbef9f87e5e inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry.html#af5350a3cda1750d57e5e2cbef9f87e5e">More...</a><br /></td></tr>
 <tr class="separator:af5350a3cda1750d57e5e2cbef9f87e5e inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>

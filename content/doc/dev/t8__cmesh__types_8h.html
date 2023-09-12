@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -111,25 +118,24 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a029ea34aacce8b03456166b2f90bb4ef"><td class="memItemLeft" align="right" valign="top"><a id="a029ea34aacce8b03456166b2f90bb4ef"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_VERTICES_ATTRIBUTE_KEY</b>&#160;&#160;&#160;0     /* Used to store vertex coordinates. */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_VERTICES_ATTRIBUTE_KEY</b>&#160;&#160;&#160;0            /* Used to store vertex coordinates. */</td></tr>
 <tr class="separator:a029ea34aacce8b03456166b2f90bb4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820ac30c767790731c39ae3c4f7a7d18"><td class="memItemLeft" align="right" valign="top"><a id="a820ac30c767790731c39ae3c4f7a7d18"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_GEOMETRY_ATTRIBUTE_KEY</b>&#160;&#160;&#160;1     /* Used to store the name of a tree's geometry. */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_GEOMETRY_ATTRIBUTE_KEY</b>&#160;&#160;&#160;1            /* Used to store the name of a tree's geometry. */</td></tr>
 <tr class="separator:a820ac30c767790731c39ae3c4f7a7d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bff63fa30e593e0779afdc82d738b9"><td class="memItemLeft" align="right" valign="top"><a id="a51bff63fa30e593e0779afdc82d738b9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_EDGE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;2    /* Used to store which edge is linked to which geometry */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_EDGE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;2            /* Used to store which edge is linked to which geometry */</td></tr>
 <tr class="separator:a51bff63fa30e593e0779afdc82d738b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5d2771297f89d89a11289c8e9d09e6f"><td class="memItemLeft" align="right" valign="top"><a id="aa5d2771297f89d89a11289c8e9d09e6f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_EDGE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;3 /* Used to store edge parameters */</td></tr>
 <tr class="separator:aa5d2771297f89d89a11289c8e9d09e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07c83be07f640af4c1056d71a4c52e0"><td class="memItemLeft" align="right" valign="top"><a id="ae07c83be07f640af4c1056d71a4c52e0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;T8_CMESH_OCC_EDGE_PARAMETERS_ATTRIBUTE_KEY + <a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>        /* Used to store wich face is linked to which surface */</td></tr>
+<tr class="memitem:ae07c83be07f640af4c1056d71a4c52e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</b></td></tr>
 <tr class="separator:ae07c83be07f640af4c1056d71a4c52e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2937ea7e40ca0f908e58e908b66debce"><td class="memItemLeft" align="right" valign="top"><a id="a2937ea7e40ca0f908e58e908b66debce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;T8_CMESH_OCC_FACE_ATTRIBUTE_KEY + 1  /* Used to store face parameters */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;  T8_CMESH_OCC_FACE_ATTRIBUTE_KEY + 1 /* Used to store face parameters */</td></tr>
 <tr class="separator:a2937ea7e40ca0f908e58e908b66debce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada4d0f317e6884c014b64e81385f4ce"><td class="memItemLeft" align="right" valign="top"><a id="aada4d0f317e6884c014b64e81385f4ce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_NEXT_POSSIBLE_KEY</b>&#160;&#160;&#160;T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY + <a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>     /* The next free value for a t8code attribute key */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_NEXT_POSSIBLE_KEY</b>&#160;&#160;&#160;  T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY + <a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a> /* The next free value for a t8code attribute key */</td></tr>
 <tr class="separator:aada4d0f317e6884c014b64e81385f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d21c23e1959f38260ab76a9f9e73175"><td class="memItemLeft" align="right" valign="top"><a id="a1d21c23e1959f38260ab76a9f9e73175"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a1d21c23e1959f38260ab76a9f9e73175">T8_CPROFILE_NUM_STATS</a>&#160;&#160;&#160;11</td></tr>
@@ -171,7 +177,25 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define here the datatypes needed for internal cmesh routines. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae07c83be07f640af4c1056d71a4c52e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07c83be07f640af4c1056d71a4c52e0">&#9670;&nbsp;</a></span>T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  T8_CMESH_OCC_EDGE_PARAMETERS_ATTRIBUTE_KEY \</div>
+<div class="line">  +<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a> <span class="comment">/* Used to store which face is linked to which surface */</span></div>
+<div class="ttc" id="at8__eclass_8h_html_a601ebe78feea681a24e339646a017c2b"><div class="ttname"><a href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_EDGES</div><div class="ttdoc">The maximum number of boundary edges an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a74e0d99a09de67d1143365630b0edc9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74e0d99a09de67d1143365630b0edc9e">&#9670;&nbsp;</a></span>t8_attribute_info_struct_t</h2>
 
@@ -185,8 +209,8 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
 </div><div class="memdoc">
 
 <p>This structure holds the information associated to an attribute of a tree. </p>
-<p>The attributes of each are stored in a key-value storage, where the key consists of the two entries (package_id,key) both being integers. The package_id serves to identify the application layer that added the attribute and the key identifies the attribute whithin that application layer.</p>
-<p>All attribute info objects of one tree are stored in an array and adding a tree's att_offset entry to the tree's adress yields this array. The attributes themselfes are stored in an array directly behind the array of the attribute infos. </p>
+<p>The attributes of each are stored in a key-value storage, where the key consists of the two entries (package_id,key) both being integers. The package_id serves to identify the application layer that added the attribute and the key identifies the attribute within that application layer.</p>
+<p>All attribute info objects of one tree are stored in an array and adding a tree's att_offset entry to the tree's address yields this array. The attributes themselves are stored in an array directly behind the array of the attribute infos. </p>
 
 </div>
 </div>

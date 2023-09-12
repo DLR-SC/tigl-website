@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -98,17 +105,15 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                <span class="keywordtype">double</span> *vertices,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                <span class="keywordtype">int</span> num_vertices);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, <span class="keywordtype">double</span> *vertices, <span class="keywordtype">int</span> num_vertices);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_WITH_VERTICES_H! */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
-<div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:94</div></div>
-<div class="ttc" id="at8__geometry__with__vertices_8h_html_a0e5d64eb8595f2167087eb001fdd8a50"><div class="ttname"><a href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a></div><div class="ttdeci">void t8_cmesh_set_tree_vertices(t8_cmesh_t cmesh, t8_locidx_t ltree_id, double *vertices, int num_vertices)</div><div class="ttdoc">Set the vertex coordinates of a tree in the cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.c:574</div></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_WITH_VERTICES_H! */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
+<div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:87</div></div>
+<div class="ttc" id="at8__geometry__with__vertices_8h_html_a0e5d64eb8595f2167087eb001fdd8a50"><div class="ttname"><a href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a></div><div class="ttdeci">void t8_cmesh_set_tree_vertices(t8_cmesh_t cmesh, t8_locidx_t ltree_id, double *vertices, int num_vertices)</div><div class="ttdoc">Set the vertex coordinates of a tree in the cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.c:548</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -69,8 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">t8_geometry_occ.h File Reference</div>  </div>
 </div><!--header-->
@@ -101,18 +107,6 @@ Functions</h2></td></tr>
 <tr class="memitem:af538b9fee3b9931f3d8bf5be732adbd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">t8_geom_is_occ</a> (const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geometry)</td></tr>
 <tr class="memdesc:af538b9fee3b9931f3d8bf5be732adbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given geometry is <a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a>.  <a href="t8__geometry__occ_8h.html#af538b9fee3b9931f3d8bf5be732adbd6">More...</a><br /></td></tr>
 <tr class="separator:af538b9fee3b9931f3d8bf5be732adbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aaddfc229eff349347dc7dec3d4abee71"><td class="memItemLeft" align="right" valign="top"><a id="aaddfc229eff349347dc7dec3d4abee71"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_edge_vertex_to_tree_vertex</b> [<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
-<tr class="separator:aaddfc229eff349347dc7dec3d4abee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc936cd62ac6a85eb9e8aa230522dd9"><td class="memItemLeft" align="right" valign="top"><a id="a8cc936cd62ac6a85eb9e8aa230522dd9"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_edge_to_face</b> [<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>][2]</td></tr>
-<tr class="separator:a8cc936cd62ac6a85eb9e8aa230522dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd53978310219ca9be96f764507c375"><td class="memItemLeft" align="right" valign="top"><a id="a4cd53978310219ca9be96f764507c375"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_face_to_edge</b> [<a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a>][<a class="el" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a>]</td></tr>
-<tr class="separator:a4cd53978310219ca9be96f764507c375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This header provides the C interface to create a occ geometry. </p>

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -86,8 +93,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a90fb641622e23d61f54a8e5edd73571d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__shape_8h.html#a90fb641622e23d61f54a8e5edd73571d">T8_MPI_ELEMENT_SHAPE_TYPE</a></td></tr>
-<tr class="memdesc:a90fb641622e23d61f54a8e5edd73571d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype used for t8_element_shape_t.  <a href="t8__element__shape_8h.html#a90fb641622e23d61f54a8e5edd73571d">More...</a><br /></td></tr>
+<tr class="memitem:a90fb641622e23d61f54a8e5edd73571d"><td class="memItemLeft" align="right" valign="top"><a id="a90fb641622e23d61f54a8e5edd73571d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__shape_8h.html#a90fb641622e23d61f54a8e5edd73571d">T8_MPI_ELEMENT_SHAPE_TYPE</a>&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (sizeof (int) == sizeof (<a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d027fd545a">t8_element_shape_t</a>)), sc_MPI_INT)</td></tr>
+<tr class="memdesc:a90fb641622e23d61f54a8e5edd73571d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype used for t8_element_shape_t. <br /></td></tr>
 <tr class="separator:a90fb641622e23d61f54a8e5edd73571d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331fc03f87d1f96987e2c206db60a76e"><td class="memItemLeft" align="right" valign="top"><a id="a331fc03f87d1f96987e2c206db60a76e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__shape_8h.html#a331fc03f87d1f96987e2c206db60a76e">T8_ELEMENT_SHAPE_MAX_FACES</a>&#160;&#160;&#160;6</td></tr>
@@ -142,28 +150,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_element_shape
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: comment. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a90fb641622e23d61f54a8e5edd73571d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90fb641622e23d61f54a8e5edd73571d">&#9670;&nbsp;</a></span>T8_MPI_ELEMENT_SHAPE_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_MPI_ELEMENT_SHAPE_TYPE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (<a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<span class="keyword">sizeof</span> (<span class="keywordtype">int</span>) == <span class="keyword">sizeof</span> (<a class="code" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d027fd545a">t8_element_shape_t</a>)),\</div>
-<div class="line">  sc_MPI_INT)</div>
-<div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:73</div></div>
-<div class="ttc" id="at8__element__shape_8h_html_aab8844a13783f0c1ab05e1d027fd545a"><div class="ttname"><a href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d027fd545a">t8_element_shape_t</a></div><div class="ttdeci">t8_eclass_t t8_element_shape_t</div><div class="ttdoc">Type definition for the geometric shape of an element.</div><div class="ttdef"><b>Definition:</b> t8_element_shape.h:38</div></div>
-</div><!-- fragment -->
-<p>The MPI datatype used for t8_element_shape_t. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="aab8844a13783f0c1ab05e1d027fd545a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab8844a13783f0c1ab05e1d027fd545a">&#9670;&nbsp;</a></span>t8_element_shape_t</h2>
 

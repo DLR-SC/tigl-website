@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -85,19 +92,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4a62ed7b1570ad2547c51a0ef01e68a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a4a62ed7b1570ad2547c51a0ef01e68a8">t8_refcount_ref</a>(rc)&#160;&#160;&#160;sc_refcount_ref(rc)</td></tr>
+<tr class="memitem:a4a62ed7b1570ad2547c51a0ef01e68a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a4a62ed7b1570ad2547c51a0ef01e68a8">t8_refcount_ref</a>(rc)&#160;&#160;&#160;sc_refcount_ref (rc)</td></tr>
 <tr class="memdesc:a4a62ed7b1570ad2547c51a0ef01e68a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference count by one.  <a href="t8__refcount_8h.html#a4a62ed7b1570ad2547c51a0ef01e68a8">More...</a><br /></td></tr>
 <tr class="separator:a4a62ed7b1570ad2547c51a0ef01e68a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de2d6fdb64fc26c75d928be1abdb6f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a7de2d6fdb64fc26c75d928be1abdb6f9">t8_refcount_unref</a>(rc)&#160;&#160;&#160;sc_refcount_unref(rc)</td></tr>
+<tr class="memitem:a7de2d6fdb64fc26c75d928be1abdb6f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a7de2d6fdb64fc26c75d928be1abdb6f9">t8_refcount_unref</a>(rc)&#160;&#160;&#160;sc_refcount_unref (rc)</td></tr>
 <tr class="memdesc:a7de2d6fdb64fc26c75d928be1abdb6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count by one.  <a href="t8__refcount_8h.html#a7de2d6fdb64fc26c75d928be1abdb6f9">More...</a><br /></td></tr>
 <tr class="separator:a7de2d6fdb64fc26c75d928be1abdb6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ea66b7354a76f657c81107ebe9fda9"><td class="memItemLeft" align="right" valign="top"><a id="a33ea66b7354a76f657c81107ebe9fda9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a33ea66b7354a76f657c81107ebe9fda9">t8_refcount_is_active</a>(rc)&#160;&#160;&#160;sc_refcount_is_active(rc)</td></tr>
-<tr class="memdesc:a33ea66b7354a76f657c81107ebe9fda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query wether a reference counter is has a positive value. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#a33ea66b7354a76f657c81107ebe9fda9">t8_refcount_is_active</a>(rc)&#160;&#160;&#160;sc_refcount_is_active (rc)</td></tr>
+<tr class="memdesc:a33ea66b7354a76f657c81107ebe9fda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a reference counter is has a positive value. <br /></td></tr>
 <tr class="separator:a33ea66b7354a76f657c81107ebe9fda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae130531f1873cac9a5cee55c6374e488"><td class="memItemLeft" align="right" valign="top"><a id="ae130531f1873cac9a5cee55c6374e488"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#ae130531f1873cac9a5cee55c6374e488">t8_refcount_is_last</a>(rc)&#160;&#160;&#160;sc_refcount_is_last(rc)</td></tr>
-<tr class="memdesc:ae130531f1873cac9a5cee55c6374e488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query wether a reference counter has value one. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__refcount_8h.html#ae130531f1873cac9a5cee55c6374e488">t8_refcount_is_last</a>(rc)&#160;&#160;&#160;sc_refcount_is_last (rc)</td></tr>
+<tr class="memdesc:ae130531f1873cac9a5cee55c6374e488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a reference counter has value one. <br /></td></tr>
 <tr class="separator:ae130531f1873cac9a5cee55c6374e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -134,7 +141,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rc</td><td>)</td>
-          <td>&#160;&#160;&#160;sc_refcount_ref(rc)</td>
+          <td>&#160;&#160;&#160;sc_refcount_ref (rc)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -155,13 +162,13 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rc</td><td>)</td>
-          <td>&#160;&#160;&#160;sc_refcount_unref(rc)</td>
+          <td>&#160;&#160;&#160;sc_refcount_unref (rc)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Decrease the reference count by one. </p>
-<p>The count must be greater zero on input. If the reference count reaches zero, which is indicated by the return value, the counter may NOT be used furter with <a class="el" href="t8__refcount_8h.html#a4a62ed7b1570ad2547c51a0ef01e68a8">t8_refcount_ref</a> or </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__refcount_8h.html#a7de2d6fdb64fc26c75d928be1abdb6f9" title="Decrease the reference count by one.">t8_refcount_unref</a>. It IS legal to query it with <a class="el" href="t8__refcount_8h.html#a33ea66b7354a76f657c81107ebe9fda9">t8_refcount_is_active</a> and <a class="el" href="t8__refcount_8h.html#ae130531f1873cac9a5cee55c6374e488">t8_refcount_is_last</a> and to repurpose it later by calling <a class="el" href="t8__refcount_8h.html#abfe9a7a52b0601378f03aac6909b0a4b">t8_refcount_init</a>. It is not necessary to duplicate this functionality as a function. </dd></dl>
+<p>The count must be greater zero on input. If the reference count reaches zero, which is indicated by the return value, the counter may NOT be used further with <a class="el" href="t8__refcount_8h.html#a4a62ed7b1570ad2547c51a0ef01e68a8">t8_refcount_ref</a> or </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__refcount_8h.html#a7de2d6fdb64fc26c75d928be1abdb6f9" title="Decrease the reference count by one.">t8_refcount_unref</a>. It IS legal to query it with <a class="el" href="t8__refcount_8h.html#a33ea66b7354a76f657c81107ebe9fda9">t8_refcount_is_active</a> and <a class="el" href="t8__refcount_8h.html#ae130531f1873cac9a5cee55c6374e488">t8_refcount_is_last</a> and to repurpose it later by calling <a class="el" href="t8__refcount_8h.html#abfe9a7a52b0601378f03aac6909b0a4b">t8_refcount_init</a>. It is not necessary to duplicate this functionality as a function. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rc</td><td>Reference counter </td></tr>

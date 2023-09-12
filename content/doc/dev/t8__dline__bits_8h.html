@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -153,9 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae874b9620a549f733783236964175ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#ae874b9620a549f733783236964175ef4">t8_dline_vertex_ref_coords</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem, const int vertex, double coordinates[1])</td></tr>
 <tr class="memdesc:ae874b9620a549f733783236964175ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex of a line when the tree (level 0 line) is embedded in [0,1]^1.  <a href="t8__dline__bits_8h.html#ae874b9620a549f733783236964175ef4">More...</a><br /></td></tr>
 <tr class="separator:ae874b9620a549f733783236964175ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7c0b7ac6c13f563da36f264d241b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#a0d7c0b7ac6c13f563da36f264d241b33">t8_dline_compute_reference_coords</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem, const double *ref_coords, double *out_coords)</td></tr>
-<tr class="memdesc:a0d7c0b7ac6c13f563da36f264d241b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of a line element to a point in the reference space of the tree (level 0) embedded in [0,1]^1.  <a href="t8__dline__bits_8h.html#a0d7c0b7ac6c13f563da36f264d241b33">More...</a><br /></td></tr>
-<tr class="separator:a0d7c0b7ac6c13f563da36f264d241b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0109c4a9b04dc43d68209a58e4c79bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#a0109c4a9b04dc43d68209a58e4c79bf8">t8_dline_compute_reference_coords</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem, const double *ref_coords, const size_t num_coords, const size_t skip_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a0109c4a9b04dc43d68209a58e4c79bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of a line element to points in the reference space of the tree (level 0) embedded in [0,1]^1.  <a href="t8__dline__bits_8h.html#a0109c4a9b04dc43d68209a58e4c79bf8">More...</a><br /></td></tr>
+<tr class="separator:a0109c4a9b04dc43d68209a58e4c79bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2422243ee221bd3a74c07d927d0c3c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#ac2422243ee221bd3a74c07d927d0c3c8">t8_dline_linear_id</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem, int level)</td></tr>
 <tr class="memdesc:ac2422243ee221bd3a74c07d927d0c3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the linear position of a line in an uniform grid.  <a href="t8__dline__bits_8h.html#ac2422243ee221bd3a74c07d927d0c3c8">More...</a><br /></td></tr>
 <tr class="separator:ac2422243ee221bd3a74c07d927d0c3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,12 +397,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compare two elements. </p>
-<p>returns negativ if l1 &lt; l2, zero if l1 equals l2 and positiv if l1 &gt; l2. If l2 is a copy of l1 then the elements are equal. </p>
+<p>returns negative if l1 &lt; l2, zero if l1 equals l2 and positive if l1 &gt; l2. If l2 is a copy of l1 then the elements are equal. </p>
 
 </div>
 </div>
-<a id="a0d7c0b7ac6c13f563da36f264d241b33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7c0b7ac6c13f563da36f264d241b33">&#9670;&nbsp;</a></span>t8_dline_compute_reference_coords()</h2>
+<a id="a0109c4a9b04dc43d68209a58e4c79bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0109c4a9b04dc43d68209a58e4c79bf8">&#9670;&nbsp;</a></span>t8_dline_compute_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,6 +422,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>skip_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
@@ -426,12 +445,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a point in the reference space of a line element to a point in the reference space of the tree (level 0) embedded in [0,1]^1. </p>
+<p>Convert points in the reference space of a line element to points in the reference space of the tree (level 0) embedded in [0,1]^1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input line. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinate on the line [0, 1]^1 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of 1 double that will be filled with the reference coordinates of the point on the line. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates in the line (<em>num_coords</em> times \( [0,1]^1 \)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of coordinates to evaluate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip_coords</td><td>Only used for batch computation of prisms. In all other cases 0. Skip coordinates in the <em>ref_coords</em> and <em>out_coords</em> array. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of <em>num_coords</em> x 1 x double that will be filled with the reference coordinates of the points on the line. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1143,7 +1164,7 @@ Functions</h2></td></tr>
 <p>Given a Line e that is a subface of f in one of the trees and given the orientation of the tree connection, construct the face Line of the respective tree neighbor that logically coincides with e but lies in the coordinate system of the neighbor tree. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The face element. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face elment <em>elem1</em> with respective to the coordinate system of the other tree. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face element <em>elem1</em> with respect to the coordinate system of the other tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>The orientation of the tree-tree connection. 0 if vertex 0 of face 0 coincides with vertex 0 of face 1. 1 if vertex 0 of face 0 coincides with vertex 1 of face 1. </td></tr>
   </table>
   </dd>

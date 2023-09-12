@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -98,18 +105,21 @@ Macros</h2></td></tr>
 <tr class="memitem:afee33776137ab765a38d5c84424104b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a>(c)&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;'&quot;)</td></tr>
 <tr class="memdesc:afee33776137ab765a38d5c84424104b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widely used assertion.  <a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">More...</a><br /></td></tr>
 <tr class="separator:afee33776137ab765a38d5c84424104b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ac6ee19760b635183f1616c18348ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a51ac6ee19760b635183f1616c18348ef">T8_ALLOC</a>(t,  n)</td></tr>
-<tr class="memdesc:a51ac6ee19760b635183f1616c18348ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <em>t-array</em> with <em>n</em> elements.  <a href="t8_8h.html#a51ac6ee19760b635183f1616c18348ef">More...</a><br /></td></tr>
+<tr class="memitem:a51ac6ee19760b635183f1616c18348ef"><td class="memItemLeft" align="right" valign="top"><a id="a51ac6ee19760b635183f1616c18348ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a51ac6ee19760b635183f1616c18348ef">T8_ALLOC</a>(t,  n)&#160;&#160;&#160;(t *) sc_malloc (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a> (), (n) * sizeof (t))</td></tr>
+<tr class="memdesc:a51ac6ee19760b635183f1616c18348ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <em>t-array</em> with <em>n</em> elements. <br /></td></tr>
 <tr class="separator:a51ac6ee19760b635183f1616c18348ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450a6d0a878ed2cf34e404caddc87e5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a450a6d0a878ed2cf34e404caddc87e5f">T8_ALLOC_ZERO</a>(t,  n)</td></tr>
-<tr class="memdesc:a450a6d0a878ed2cf34e404caddc87e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <em>t-array</em> with <em>n</em> elements and init to zero.  <a href="t8_8h.html#a450a6d0a878ed2cf34e404caddc87e5f">More...</a><br /></td></tr>
+<tr class="memitem:a450a6d0a878ed2cf34e404caddc87e5f"><td class="memItemLeft" align="right" valign="top"><a id="a450a6d0a878ed2cf34e404caddc87e5f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a450a6d0a878ed2cf34e404caddc87e5f">T8_ALLOC_ZERO</a>(t,  n)&#160;&#160;&#160;(t *) sc_calloc (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a> (), (size_t) (n), sizeof (t))</td></tr>
+<tr class="memdesc:a450a6d0a878ed2cf34e404caddc87e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <em>t-array</em> with <em>n</em> elements and init to zero. <br /></td></tr>
 <tr class="separator:a450a6d0a878ed2cf34e404caddc87e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a876569da34fe618166a85c01f7b92cb4"><td class="memItemLeft" align="right" valign="top"><a id="a876569da34fe618166a85c01f7b92cb4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a876569da34fe618166a85c01f7b92cb4">T8_FREE</a>(p)&#160;&#160;&#160;sc_free (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a>(), (p))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a876569da34fe618166a85c01f7b92cb4">T8_FREE</a>(p)&#160;&#160;&#160;sc_free (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a> (), (p))</td></tr>
 <tr class="memdesc:a876569da34fe618166a85c01f7b92cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate a <em>t-array</em>. <br /></td></tr>
 <tr class="separator:a876569da34fe618166a85c01f7b92cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980a13c47770aa035ad28385ff7555e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a980a13c47770aa035ad28385ff7555e4">T8_REALLOC</a>(p,  t,  n)</td></tr>
-<tr class="memdesc:a980a13c47770aa035ad28385ff7555e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reallocate the <em>t-array</em> <em>p</em> with <em>n</em> elements.  <a href="t8_8h.html#a980a13c47770aa035ad28385ff7555e4">More...</a><br /></td></tr>
+<tr class="memitem:a980a13c47770aa035ad28385ff7555e4"><td class="memItemLeft" align="right" valign="top"><a id="a980a13c47770aa035ad28385ff7555e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a980a13c47770aa035ad28385ff7555e4">T8_REALLOC</a>(p,  t,  n)&#160;&#160;&#160;(t *) sc_realloc (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a> (), (p), (n) * sizeof (t))</td></tr>
+<tr class="memdesc:a980a13c47770aa035ad28385ff7555e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reallocate the <em>t-array</em> <em>p</em> with <em>n</em> elements. <br /></td></tr>
 <tr class="separator:a980a13c47770aa035ad28385ff7555e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0acd89701a4576fe838fe2d3ac3d3f7"><td class="memItemLeft" align="right" valign="top"><a id="aa0acd89701a4576fe838fe2d3ac3d3f7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aa0acd89701a4576fe838fe2d3ac3d3f7">T8_MPI_LOCIDX</a>&#160;&#160;&#160;sc_MPI_INT</td></tr>
@@ -124,7 +134,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a5e3a362ebd314b51d3e3bf2ddae97ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum possible value of a t8_locidx_t. <br /></td></tr>
 <tr class="separator:a5e3a362ebd314b51d3e3bf2ddae97ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f803c921f94ecf62548d032b7d8ddd"><td class="memItemLeft" align="right" valign="top"><a id="ac8f803c921f94ecf62548d032b7d8ddd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ac8f803c921f94ecf62548d032b7d8ddd">t8_compare_locidx</a>(v,  w)&#160;&#160;&#160;sc_int32_compare(v,w)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ac8f803c921f94ecf62548d032b7d8ddd">t8_compare_locidx</a>(v,  w)&#160;&#160;&#160;sc_int32_compare (v, w)</td></tr>
 <tr class="memdesc:ac8f803c921f94ecf62548d032b7d8ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison function for t8_locidx_t. <br /></td></tr>
 <tr class="separator:ac8f803c921f94ecf62548d032b7d8ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e1402c7dd349cca4f0dbc13cfb4e17"><td class="memItemLeft" align="right" valign="top"><a id="a15e1402c7dd349cca4f0dbc13cfb4e17"></a>
@@ -136,7 +146,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a4cc50faa5efd034ee328b0ff357f5bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the absolute value of a t8_gloidx_t. <br /></td></tr>
 <tr class="separator:a4cc50faa5efd034ee328b0ff357f5bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaace040933e885411fb00d591ad07f7e"><td class="memItemLeft" align="right" valign="top"><a id="aaace040933e885411fb00d591ad07f7e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aaace040933e885411fb00d591ad07f7e">t8_compare_gloidx</a>(v,  w)&#160;&#160;&#160;sc_int64_compare(v,w)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aaace040933e885411fb00d591ad07f7e">t8_compare_gloidx</a>(v,  w)&#160;&#160;&#160;sc_int64_compare (v, w)</td></tr>
 <tr class="memdesc:aaace040933e885411fb00d591ad07f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison function for t8_gloidx_t. <br /></td></tr>
 <tr class="separator:aaace040933e885411fb00d591ad07f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e890a9ba0f6616e84782ca23059f2f"><td class="memItemLeft" align="right" valign="top"><a id="aa9e890a9ba0f6616e84782ca23059f2f"></a>
@@ -144,16 +154,29 @@ Macros</h2></td></tr>
 <tr class="memdesc:aa9e890a9ba0f6616e84782ca23059f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype of t8_linearidx_t. <br /></td></tr>
 <tr class="separator:aa9e890a9ba0f6616e84782ca23059f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6979ba52b1f100d484de8e9f97288599"><td class="memItemLeft" align="right" valign="top"><a id="a6979ba52b1f100d484de8e9f97288599"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_PADDING_SIZE</b>&#160;&#160;&#160;(sizeof (void*))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_PADDING_SIZE</b>&#160;&#160;&#160;(sizeof (void *))</td></tr>
 <tr class="separator:a6979ba52b1f100d484de8e9f97288599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae3ec42acfecf3c9c55541e14e8de05"><td class="memItemLeft" align="right" valign="top"><a id="abae3ec42acfecf3c9c55541e14e8de05"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#abae3ec42acfecf3c9c55541e14e8de05">T8_ADD_PADDING</a>(_x)&#160;&#160;&#160;  ((T8_PADDING_SIZE - ((_x) % T8_PADDING_SIZE)) % T8_PADDING_SIZE)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#abae3ec42acfecf3c9c55541e14e8de05">T8_ADD_PADDING</a>(_x)&#160;&#160;&#160;((T8_PADDING_SIZE - ((_x) % T8_PADDING_SIZE)) % T8_PADDING_SIZE)</td></tr>
 <tr class="memdesc:abae3ec42acfecf3c9c55541e14e8de05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of bytes that have to be added to a given byte_count such that it is a multiple of the padding size. <br /></td></tr>
 <tr class="separator:abae3ec42acfecf3c9c55541e14e8de05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae452f05444b7b442c7133af063cab73b"><td class="memItemLeft" align="right" valign="top"><a id="ae452f05444b7b442c7133af063cab73b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ae452f05444b7b442c7133af063cab73b">T8_PRECISION_EPS</a>&#160;&#160;&#160;SC_EPS</td></tr>
 <tr class="memdesc:ae452f05444b7b442c7133af063cab73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define precisions for computations. <br /></td></tr>
 <tr class="separator:ae452f05444b7b442c7133af063cab73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a42ca17168d18cf9b3a722417d5684a"><td class="memItemLeft" align="right" valign="top"><a id="a9a42ca17168d18cf9b3a722417d5684a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a9a42ca17168d18cf9b3a722417d5684a">T8_1D_TO_1D</a>(nx,  i)&#160;&#160;&#160;(i)</td></tr>
+<tr class="memdesc:a9a42ca17168d18cf9b3a722417d5684a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access multidimensional data on one-dimensional C arrays. <br /></td></tr>
+<tr class="separator:a9a42ca17168d18cf9b3a722417d5684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e27b7a52d4c798f8aaabc31acb285a"><td class="memItemLeft" align="right" valign="top"><a id="ae9e27b7a52d4c798f8aaabc31acb285a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_2D_TO_1D</b>(nx,  ny,  i,  j)&#160;&#160;&#160;((i) * (ny) + (j))</td></tr>
+<tr class="separator:ae9e27b7a52d4c798f8aaabc31acb285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4a404ce6e5c5c169b63dd7c459bb33"><td class="memItemLeft" align="right" valign="top"><a id="abd4a404ce6e5c5c169b63dd7c459bb33"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_3D_TO_1D</b>(nx,  ny,  nz,  i,  j,  k)&#160;&#160;&#160;(((i) * (ny) + (j)) * (nz) + (k))</td></tr>
+<tr class="separator:abd4a404ce6e5c5c169b63dd7c459bb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bb6ebdf293c2ab377fc3b781ac78dc"><td class="memItemLeft" align="right" valign="top"><a id="aa4bb6ebdf293c2ab377fc3b781ac78dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_4D_TO_1D</b>(nx,  ny,  nz,  nl,  i,  j,  k,  l)&#160;&#160;&#160;((((i) * (ny) + (j)) * (nz) + (k)) * (nl) + (l))</td></tr>
+<tr class="separator:aa4bb6ebdf293c2ab377fc3b781ac78dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -243,71 +266,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 <div class="textblock"><p>This is the administrative header file for t8code. </p>
 <p>It includes standard C headers via subpackages. It also provides application-level convenience code such as logging functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a51ac6ee19760b635183f1616c18348ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51ac6ee19760b635183f1616c18348ef">&#9670;&nbsp;</a></span>T8_ALLOC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_ALLOC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                        (t *) sc_malloc (<a class="code" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a>(),    \</div>
-<div class="line">                                        (n) * <span class="keyword">sizeof</span>(t))</div>
-<div class="ttc" id="at8_8h_html_a803051b20cfd1e0736e5ee631709cc61"><div class="ttname"><a href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a></div><div class="ttdeci">int t8_get_package_id(void)</div><div class="ttdoc">Query the package identity as registered in libsc.</div><div class="ttdef"><b>Definition:</b> t8.c:29</div></div>
-</div><!-- fragment -->
-<p>Allocate a <em>t-array</em> with <em>n</em> elements. </p>
-
-</div>
-</div>
-<a id="a450a6d0a878ed2cf34e404caddc87e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450a6d0a878ed2cf34e404caddc87e5f">&#9670;&nbsp;</a></span>T8_ALLOC_ZERO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_ALLOC_ZERO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                        (t *) sc_calloc (<a class="code" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a>(),    \</div>
-<div class="line">                                        (size_t) (n), <span class="keyword">sizeof</span>(t))</div>
-</div><!-- fragment -->
-<p>Allocate a <em>t-array</em> with <em>n</em> elements and init to zero. </p>
-
-</div>
-</div>
 <a id="afee33776137ab765a38d5c84424104b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afee33776137ab765a38d5c84424104b8">&#9670;&nbsp;</a></span>T8_ASSERT</h2>
 
@@ -326,44 +284,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 
 <p>Widely used assertion. </p>
 <p>Only active in debug-mode. </p>
-
-</div>
-</div>
-<a id="a980a13c47770aa035ad28385ff7555e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a980a13c47770aa035ad28385ff7555e4">&#9670;&nbsp;</a></span>T8_REALLOC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_REALLOC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                        (t *) sc_realloc (<a class="code" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a>(),   \</div>
-<div class="line">                                        (p), (n) * <span class="keyword">sizeof</span>(t))</div>
-</div><!-- fragment -->
-<p>Reallocate the <em>t-array</em> <em>p</em> with <em>n</em> elements. </p>
 
 </div>
 </div>

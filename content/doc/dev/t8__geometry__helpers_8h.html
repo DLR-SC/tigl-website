@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -91,12 +98,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a6e975fe0372dfbfe024a891b3941e4b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a6e975fe0372dfbfe024a891b3941e4b2">t8_geom_linear_interpolation</a> (const double *coefficients, const double *corner_values, int corner_value_dim, int interpolation_dim, double *evaluated_function)</td></tr>
 <tr class="memdesc:a6e975fe0372dfbfe024a891b3941e4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates linearly between 2, bilinearly between 4 or trilineraly between 8 points.  <a href="t8__geometry__helpers_8h.html#a6e975fe0372dfbfe024a891b3941e4b2">More...</a><br /></td></tr>
 <tr class="separator:a6e975fe0372dfbfe024a891b3941e4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3901ac9ff76bbceb6e96592f700ada6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#ab3901ac9ff76bbceb6e96592f700ada6">t8_geom_triangular_interpolation</a> (const double *coefficients, const double *corner_values, int corner_value_dim, int interpolation_dim, double *evaluated_function)</td></tr>
+<tr class="memdesc:ab3901ac9ff76bbceb6e96592f700ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using barycentric coordinates.  <a href="t8__geometry__helpers_8h.html#ab3901ac9ff76bbceb6e96592f700ada6">More...</a><br /></td></tr>
+<tr class="separator:ab3901ac9ff76bbceb6e96592f700ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd456a4a62fd69e4ea7cef84e02aa3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3cd456a4a62fd69e4ea7cef84e02aa3f">t8_geom_get_face_vertices</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, int face_index, int dim, double *face_vertices)</td></tr>
 <tr class="memdesc:a3cd456a4a62fd69e4ea7cef84e02aa3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the vertex coordinates of a tree face in zorder into a separate array.  <a href="t8__geometry__helpers_8h.html#a3cd456a4a62fd69e4ea7cef84e02aa3f">More...</a><br /></td></tr>
 <tr class="separator:a3cd456a4a62fd69e4ea7cef84e02aa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcbdf5fbb427dc8315b6babd4c0632eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#afcbdf5fbb427dc8315b6babd4c0632eb">t8_geom_get_edge_vertices</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, int edge_index, int dim, double *edge_vertices)</td></tr>
 <tr class="memdesc:afcbdf5fbb427dc8315b6babd4c0632eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the vertex coordinates of a tree edge in zorder into a separate array.  <a href="t8__geometry__helpers_8h.html#afcbdf5fbb427dc8315b6babd4c0632eb">More...</a><br /></td></tr>
 <tr class="separator:afcbdf5fbb427dc8315b6babd4c0632eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3e213cd8b36b3e605b5e43255cdbf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a6c3e213cd8b36b3e605b5e43255cdbf6">t8_geom_get_ref_intersection</a> (int edge_index, const double *ref_coords, double ref_intersection[2])</td></tr>
+<tr class="memdesc:a6c3e213cd8b36b3e605b5e43255cdbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a point of intersection in a triangular reference space.  <a href="t8__geometry__helpers_8h.html#a6c3e213cd8b36b3e605b5e43255cdbf6">More...</a><br /></td></tr>
+<tr class="separator:a6c3e213cd8b36b3e605b5e43255cdbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3caf1897b1be8e98ae34ffba2169bfb0">t8_geom_get_triangle_scaling_factor</a> (int edge_index, const double *tree_vertices, const double *glob_intersection, const double *glob_ref_point)</td></tr>
+<tr class="memdesc:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scaling factor for edge displacement along a triangular tree face depending on the position of the global reference point.  <a href="t8__geometry__helpers_8h.html#a3caf1897b1be8e98ae34ffba2169bfb0">More...</a><br /></td></tr>
+<tr class="separator:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines t8code internal functions that are useful for geometry implementations. </p>
@@ -319,6 +335,101 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c3e213cd8b36b3e605b5e43255cdbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3e213cd8b36b3e605b5e43255cdbf6">&#9670;&nbsp;</a></span>t8_geom_get_ref_intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_geom_get_ref_intersection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ref_intersection</em>[2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates a point of intersection in a triangular reference space. </p>
+<p>The intersection is the extension of a straight line passing through a reference point and the opposite vertex of the edge. /|\ / | \ o -&gt; reference point / o \ x -&gt; intersection point / | \ /____x____\ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edge_index</td><td>Index of the edge, the intersection lies on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array containing the coordinates of the reference point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ref_intersection</td><td>Coordinates of the intersection point. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3caf1897b1be8e98ae34ffba2169bfb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3caf1897b1be8e98ae34ffba2169bfb0">&#9670;&nbsp;</a></span>t8_geom_get_triangle_scaling_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double t8_geom_get_triangle_scaling_factor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>tree_vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>glob_intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>glob_ref_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the scaling factor for edge displacement along a triangular tree face depending on the position of the global reference point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edge_index</td><td>Index of the edge, whose displacement should be scaled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_vertices</td><td>Array with the tree vertex coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">glob_intersection</td><td>Array containing the coordinates of the intersection point of a line drawn from the opposite vertex through the glob_ref_point onto the edge with edge_index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">glob_ref_point</td><td>Array containing the coordinates of the reference point mapped into the global space. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6e975fe0372dfbfe024a891b3941e4b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e975fe0372dfbfe024a891b3941e4b2">&#9670;&nbsp;</a></span>t8_geom_linear_interpolation()</h2>
 
@@ -370,6 +481,64 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">corner_values</td><td>An array of size 2^dim * 3, giving for each corner (in zorder) of the unit square/cube its function values in space. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">corner_value_dim</td><td>The dimension of the <em>corner_values</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interpolation_dim</td><td>The dimension of the interpolation (1 for linear, 2 for bilinear, 3 for trilinear) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">evaluated_function</td><td>An array of size <em>corner_value_dim</em>, on output the result of the interpolation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3901ac9ff76bbceb6e96592f700ada6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3901ac9ff76bbceb6e96592f700ada6">&#9670;&nbsp;</a></span>t8_geom_triangular_interpolation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_geom_triangular_interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>corner_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>corner_value_dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interpolation_dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>evaluated_function</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using barycentric coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coefficients</td><td>An array of size <em>interpolation_dim</em> giving the coefficients used for the interpolation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">corner_values</td><td>An array of size 3 * <em>corner_value_dim</em> for <em>interpolation_dim</em> == 2 or 4 * <em>corner_value_dim</em> for <em>interpolation_dim</em> == 3, giving the function values of the triangle/tetrahedron for each corner (in zorder) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">corner_value_dim</td><td>The dimension of the <em>corner_values</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interpolation_dim</td><td>The dimension of the interpolation (2 for triangle, 3 for tetrahedron) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">evaluated_function</td><td>An array of size <em>corner_value_dim</em>, on output the result of the interpolation. </td></tr>
   </table>
   </dd>

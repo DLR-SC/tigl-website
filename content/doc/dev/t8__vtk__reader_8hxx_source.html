@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -110,41 +117,33 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a>          t8_vtkGrid_to_cmesh (vtkSmartPointer &lt; vtkDataSet &gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                         vtkGrid, <span class="keyword">const</span> <span class="keywordtype">int</span> partition,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                         sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;t8_vtkGrid_to_cmesh (vtkSmartPointer&lt;vtkDataSet&gt; vtkGrid, <span class="keyword">const</span> <span class="keywordtype">int</span> partition, <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">int</span> distributed_grid, sc_MPI_Comm comm);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;vtkSmartPointer &lt; vtkPointSet &gt; t8_vtkGrid_to_vtkPointSet (vtkSmartPointer &lt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                           vtkDataSet &gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                           vtkGrid);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;vtkSmartPointer &lt; vtkDataSet &gt; t8_vtk_reader (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                              <span class="keyword">const</span> <span class="keywordtype">int</span> partition,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                              <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                              sc_MPI_Comm comm,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                              <span class="keyword">const</span> vtk_file_type_t</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                              vtk_file_type);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;vtkSmartPointer &lt; vtkPointSet &gt; t8_vtk_reader_pointSet (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                        <span class="keyword">const</span> <span class="keywordtype">int</span> partition,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                        <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                        sc_MPI_Comm comm,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                        <span class="keyword">const</span> vtk_file_type_t</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                        vtk_file_type);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a>          t8_vtk_reader_cmesh (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">int</span> partition,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                         sc_MPI_Comm comm,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                         <span class="keyword">const</span> vtk_file_type_t vtk_file_type);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_VTK_READER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/* *INDENT-OFF* */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;vtkSmartPointer&lt;vtkPointSet&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;t8_vtkGrid_to_vtkPointSet (vtkSmartPointer&lt;vtkDataSet&gt; vtkGrid);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* *INDENT-ON* */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;vtkSmartPointer&lt;vtkDataSet&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;t8_vtk_reader (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keyword">const</span> <span class="keywordtype">int</span> partition, <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc, sc_MPI_Comm comm,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;               <span class="keyword">const</span> vtk_file_type_t vtk_file_type);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;vtkSmartPointer&lt;vtkPointSet&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;t8_vtk_reader_pointSet (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keyword">const</span> <span class="keywordtype">int</span> partition, <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc, sc_MPI_Comm comm,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <span class="keyword">const</span> vtk_file_type_t vtk_file_type);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;t8_vtk_reader_cmesh (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keyword">const</span> <span class="keywordtype">int</span> partition, <span class="keyword">const</span> <span class="keywordtype">int</span> main_proc, sc_MPI_Comm comm,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                     <span class="keyword">const</span> vtk_file_type_t vtk_file_type);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_VTK_READER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

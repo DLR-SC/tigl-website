@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -103,7 +110,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af010b2f38a724da275dfb25e34b1a2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the first_tree array of a given tree_part in a tree struct with a given number of trees and ghosts.  <a href="t8__cmesh__trees_8c.html#af010b2f38a724da275dfb25e34b1a2ee">More...</a><br /></td></tr>
 <tr class="separator:af010b2f38a724da275dfb25e34b1a2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a0764004034bb8aee05b6ef718a888"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#af0a0764004034bb8aee05b6ef718a888">t8_cmesh_trees_finish_part</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc)</td></tr>
-<tr class="memdesc:af0a0764004034bb8aee05b6ef718a888"><td class="mdescLeft">&#160;</td><td class="mdescRight">After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropiately.  <a href="t8__cmesh__trees_8c.html#af0a0764004034bb8aee05b6ef718a888">More...</a><br /></td></tr>
+<tr class="memdesc:af0a0764004034bb8aee05b6ef718a888"><td class="mdescLeft">&#160;</td><td class="mdescRight">After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropriately.  <a href="t8__cmesh__trees_8c.html#af0a0764004034bb8aee05b6ef718a888">More...</a><br /></td></tr>
 <tr class="separator:af0a0764004034bb8aee05b6ef718a888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2397c93a6dfd2bf2543bfc7b11ec7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a5d2397c93a6dfd2bf2543bfc7b11ec7c">t8_cmesh_trees_set_all_boundary</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
 <tr class="memdesc:a5d2397c93a6dfd2bf2543bfc7b11ec7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all neighbor fields of all local trees and ghosts to boundary.  <a href="t8__cmesh__trees_8c.html#a5d2397c93a6dfd2bf2543bfc7b11ec7c">More...</a><br /></td></tr>
@@ -175,11 +182,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_add_gh
 <tr class="memdesc:a96e6167d0ad1722eaf6698474743cb4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the trees,ghosts and their neighbors in ASCII format t stdout.  <a href="t8__cmesh__trees_8c.html#a96e6167d0ad1722eaf6698474743cb4b">More...</a><br /></td></tr>
 <tr class="separator:a96e6167d0ad1722eaf6698474743cb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06bf2dc276272798fbee485d7a1ef55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#ab06bf2dc276272798fbee485d7a1ef55">t8_cmesh_trees_bcast</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh_in, int root, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:ab06bf2dc276272798fbee485d7a1ef55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brodcast an existing valid trees structure from a root rank to all other ranks.  <a href="t8__cmesh__trees_8c.html#ab06bf2dc276272798fbee485d7a1ef55">More...</a><br /></td></tr>
+<tr class="memdesc:ab06bf2dc276272798fbee485d7a1ef55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an existing valid trees structure from a root rank to all other ranks.  <a href="t8__cmesh__trees_8c.html#ab06bf2dc276272798fbee485d7a1ef55">More...</a><br /></td></tr>
 <tr class="separator:ab06bf2dc276272798fbee485d7a1ef55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca541cb82d1f35d13919a0d96a442949"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#aca541cb82d1f35d13919a0d96a442949">t8_cmesh_trees_is_face_consistend</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
-<tr class="memdesc:aca541cb82d1f35d13919a0d96a442949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the face connection of a trees structure are consistent.  <a href="t8__cmesh__trees_8c.html#aca541cb82d1f35d13919a0d96a442949">More...</a><br /></td></tr>
-<tr class="separator:aca541cb82d1f35d13919a0d96a442949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd2def95e5244cd88138bc7e1e99a37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#afbd2def95e5244cd88138bc7e1e99a37">t8_cmesh_trees_is_face_consistent</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
+<tr class="memdesc:afbd2def95e5244cd88138bc7e1e99a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the face connection of a trees structure are consistent.  <a href="t8__cmesh__trees_8c.html#afbd2def95e5244cd88138bc7e1e99a37">More...</a><br /></td></tr>
+<tr class="separator:afbd2def95e5244cd88138bc7e1e99a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995b24dc9be84c4ccb3d122ebbeb5075"><td class="memItemLeft" align="right" valign="top"><a id="a995b24dc9be84c4ccb3d122ebbeb5075"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equal</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees_a, <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees_b)</td></tr>
 <tr class="separator:a995b24dc9be84c4ccb3d122ebbeb5075"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,7 +245,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function is the invers operation of <a class="el" href="t8__cmesh__trees_8h.html#a9655277d4ce53191800987d11f1ba442">t8_cmesh_tree_to_face_encode</a> If F = t8_eclass_max_num_faces[dimension], we get orientation = tree_to_face / F face = tree_to_face % F </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is the inverse operation of <a class="el" href="t8__cmesh__trees_8h.html#a9655277d4ce53191800987d11f1ba442">t8_cmesh_tree_to_face_encode</a> If F = t8_eclass_max_num_faces[dimension], we get orientation = tree_to_face / F face = tree_to_face % F </dd></dl>
 
 </div>
 </div>
@@ -462,7 +469,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
       </table>
 </div><div class="memdoc">
 
-<p>Brodcast an existing valid trees structure from a root rank to all other ranks. </p>
+<p>Broadcast an existing valid trees structure from a root rank to all other ranks. </p>
 <p>The trees structure must belong to cmeshes whose meta_information is already set. <a class="el" href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">t8_cmesh_bcast</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh_in</td><td>On <em>root</em> a committed, replicated cmesh. On the other ranks an initialized cmesh with the same number of trees as on <em>root</em>. </td></tr>
@@ -628,7 +635,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
       </table>
 </div><div class="memdoc">
 
-<p>After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropiately. </p>
+<p>After all classes of trees and ghosts have been set and after the number of tree attributes was set and their total size (per tree) stored temporarily in the att_offset variable we grow the part array by the needed amount of memory and set the offsets appropriately. </p>
 <p>The workflow should be: call <a class="el" href="t8__cmesh__trees_8h.html#af010b2f38a724da275dfb25e34b1a2ee">t8_cmesh_trees_start_part</a>, set tree and ghost classes maually via <a class="el" href="t8__cmesh__trees_8h.html#a194d229ea6aed135568350236695440a">t8_cmesh_trees_add_tree</a> and <a class="el" href="t8__cmesh__trees_8h.html#a6752807674c7e7dbcbeebd8b04774f5f">t8_cmesh_trees_add_ghost</a>, call <a class="el" href="t8__cmesh__trees_8h.html#ac2f6a901c2fac6152df32d4606179ded">t8_cmesh_trees_init_attributes</a>, then call this function. Afterwards successively call t8_cmesh_trees_add_attribute for each attribute and also set all face neighbors (TODO: write function). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">trees</td><td>The trees structure to be updated. </td></tr>
@@ -1245,14 +1252,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 
 </div>
 </div>
-<a id="aca541cb82d1f35d13919a0d96a442949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca541cb82d1f35d13919a0d96a442949">&#9670;&nbsp;</a></span>t8_cmesh_trees_is_face_consistend()</h2>
+<a id="afbd2def95e5244cd88138bc7e1e99a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd2def95e5244cd88138bc7e1e99a37">&#9670;&nbsp;</a></span>t8_cmesh_trees_is_face_consistent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int t8_cmesh_trees_is_face_consistend </td>
+          <td class="memname">int t8_cmesh_trees_is_face_consistent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>

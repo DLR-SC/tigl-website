@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -110,36 +117,38 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structt8__scheme__cxx.html">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">   53</a></span>&#160;  sc_refcount_t       <a class="code" href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">rc</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">   53</a></span>&#160;  sc_refcount_t <a class="code" href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">rc</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structt8__scheme__cxx.html#aeb55971c38b4c917b0441a42c1046461">   56</a></span>&#160;  <a class="code" href="structt8__eclass__scheme.html">t8_eclass_scheme_c</a> *<a class="code" href="structt8__scheme__cxx.html#aeb55971c38b4c917b0441a42c1046461">eclass_schemes</a>[<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>];</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  t8_element_corner_ref_coords[<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="code" href="t8__eclass_8h.html#a7d519a637d0557df9a16433c88a6b816">T8_ECLASS_MAX_CORNERS</a>][3];</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> t8_element_centroid_ref_coords[<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][3];</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__element_8h.html#a21dfe69028e825baa2da2fb2f55a923e">t8_scheme_cxx_ref</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> t8_element_corner_ref_coords[<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][<a class="code" href="t8__eclass_8h.html#a7d519a637d0557df9a16433c88a6b816">T8_ECLASS_MAX_CORNERS</a>][3];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> t8_element_centroid_ref_coords[<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a>][3];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="t8__element_8h.html#a21dfe69028e825baa2da2fb2f55a923e">t8_scheme_cxx_ref</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__element_8h.html#ae4d79b2b8e249849522b86d35cd13014">t8_scheme_cxx_unref</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> **pscheme);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/* TODO: document, see t8_element_cxx.hxx */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>         <a class="code" href="t8__element__cxx_8hxx.html#a7ebfef1cc4cee146e96048abb3e229e4">t8_scheme_cxx_destroy</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *s);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="t8__element_8h.html#ae4d79b2b8e249849522b86d35cd13014">t8_scheme_cxx_unref</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> **pscheme);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/* TODO: document, see t8_element_cxx.hxx */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="t8__element__cxx_8hxx.html#a7ebfef1cc4cee146e96048abb3e229e4">t8_scheme_cxx_destroy</a> (<a class="code" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *s);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_ELEMENT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_ELEMENT_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__eclass__scheme_html"><div class="ttname"><a href="structt8__eclass__scheme.html">t8_eclass_scheme</a></div><div class="ttdoc">This struct holds virtual functions for a particular element class.</div><div class="ttdef"><b>Definition:</b> t8_element_cxx.hxx:47</div></div>
 <div class="ttc" id="astructt8__scheme__cxx_html"><div class="ttname"><a href="structt8__scheme__cxx.html">t8_scheme_cxx</a></div><div class="ttdoc">The scheme holds implementations for one or more element classes.</div><div class="ttdef"><b>Definition:</b> t8_element.h:51</div></div>
 <div class="ttc" id="astructt8__scheme__cxx_html_a44579e71fbcf69dc378b61e9f9a55f82"><div class="ttname"><a href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">t8_scheme_cxx::rc</a></div><div class="ttdeci">sc_refcount_t rc</div><div class="ttdoc">Reference counter for this scheme.</div><div class="ttdef"><b>Definition:</b> t8_element.h:53</div></div>
 <div class="ttc" id="astructt8__scheme__cxx_html_aeb55971c38b4c917b0441a42c1046461"><div class="ttname"><a href="structt8__scheme__cxx.html#aeb55971c38b4c917b0441a42c1046461">t8_scheme_cxx::eclass_schemes</a></div><div class="ttdeci">t8_eclass_scheme_c * eclass_schemes[T8_ECLASS_COUNT]</div><div class="ttdoc">This array holds one virtual table per element class.</div><div class="ttdef"><b>Definition:</b> t8_element.h:56</div></div>
 <div class="ttc" id="at8__eclass_8h_html"><div class="ttname"><a href="t8__eclass_8h.html">t8_eclass.h</a></div><div class="ttdoc">We define all possible element classes that occur in hybrid meshes.</div></div>
-<div class="ttc" id="at8__eclass_8h_html_a7d519a637d0557df9a16433c88a6b816"><div class="ttname"><a href="t8__eclass_8h.html#a7d519a637d0557df9a16433c88a6b816">T8_ECLASS_MAX_CORNERS</a></div><div class="ttdeci">#define T8_ECLASS_MAX_CORNERS</div><div class="ttdoc">The maximum number of cornes an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:78</div></div>
-<div class="ttc" id="at8__eclass_8h_html_ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf"><div class="ttname"><a href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a></div><div class="ttdeci">@ T8_ECLASS_COUNT</div><div class="ttdoc">This is no element class but can be used as the number of element classes.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:59</div></div>
-<div class="ttc" id="at8__element_8h_html_a21dfe69028e825baa2da2fb2f55a923e"><div class="ttname"><a href="t8__element_8h.html#a21dfe69028e825baa2da2fb2f55a923e">t8_scheme_cxx_ref</a></div><div class="ttdeci">void t8_scheme_cxx_ref(t8_scheme_cxx_t *scheme)</div><div class="ttdoc">Increase the reference counter of a scheme.</div><div class="ttdef"><b>Definition:</b> t8_element.c:70</div></div>
+<div class="ttc" id="at8__eclass_8h_html_a7d519a637d0557df9a16433c88a6b816"><div class="ttname"><a href="t8__eclass_8h.html#a7d519a637d0557df9a16433c88a6b816">T8_ECLASS_MAX_CORNERS</a></div><div class="ttdeci">#define T8_ECLASS_MAX_CORNERS</div><div class="ttdoc">The maximum number of cornes an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:75</div></div>
+<div class="ttc" id="at8__eclass_8h_html_ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf"><div class="ttname"><a href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a6a4207fbc19d30ad977d5965bdaccacf">T8_ECLASS_COUNT</a></div><div class="ttdeci">@ T8_ECLASS_COUNT</div><div class="ttdoc">This is no element class but can be used as the number of element classes.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:58</div></div>
+<div class="ttc" id="at8__element_8h_html_a21dfe69028e825baa2da2fb2f55a923e"><div class="ttname"><a href="t8__element_8h.html#a21dfe69028e825baa2da2fb2f55a923e">t8_scheme_cxx_ref</a></div><div class="ttdeci">void t8_scheme_cxx_ref(t8_scheme_cxx_t *scheme)</div><div class="ttdoc">Increase the reference counter of a scheme.</div><div class="ttdef"><b>Definition:</b> t8_element.c:82</div></div>
 <div class="ttc" id="at8__element_8h_html_ac4c605cddc1aad4d36398a773768f738"><div class="ttname"><a href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a></div><div class="ttdeci">struct t8_element t8_element_t</div><div class="ttdoc">Opaque structure for a generic element, only used as pointer.</div><div class="ttdef"><b>Definition:</b> t8_element.h:42</div></div>
-<div class="ttc" id="at8__element_8h_html_ae4d79b2b8e249849522b86d35cd13014"><div class="ttname"><a href="t8__element_8h.html#ae4d79b2b8e249849522b86d35cd13014">t8_scheme_cxx_unref</a></div><div class="ttdeci">void t8_scheme_cxx_unref(t8_scheme_cxx_t **pscheme)</div><div class="ttdoc">Decrease the reference counter of a scheme.</div><div class="ttdef"><b>Definition:</b> t8_element.c:78</div></div>
+<div class="ttc" id="at8__element_8h_html_ae4d79b2b8e249849522b86d35cd13014"><div class="ttname"><a href="t8__element_8h.html#ae4d79b2b8e249849522b86d35cd13014">t8_scheme_cxx_unref</a></div><div class="ttdeci">void t8_scheme_cxx_unref(t8_scheme_cxx_t **pscheme)</div><div class="ttdoc">Decrease the reference counter of a scheme.</div><div class="ttdef"><b>Definition:</b> t8_element.c:90</div></div>
 <div class="ttc" id="at8__element__cxx_8hxx_html_a7ebfef1cc4cee146e96048abb3e229e4"><div class="ttname"><a href="t8__element__cxx_8hxx.html#a7ebfef1cc4cee146e96048abb3e229e4">t8_scheme_cxx_destroy</a></div><div class="ttdeci">void t8_scheme_cxx_destroy(t8_scheme_cxx_t *s)</div><div class="ttdoc">Destroy an implementation of a particular element class.</div><div class="ttdef"><b>Definition:</b> t8_element_cxx.cxx:31</div></div>
 <div class="ttc" id="at8__element__shape_8h_html"><div class="ttname"><a href="t8__element__shape_8h.html">t8_element_shape.h</a></div><div class="ttdoc">TODO: comment.</div></div>
 </div><!-- fragment --></div><!-- contents -->

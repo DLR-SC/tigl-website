@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -106,18 +113,16 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/* put declarations here */</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a>          <a class="code" href="t8__cmesh__triangle_8h.html#a85a50db30f9d95493122b79574b62c3c">t8_cmesh_from_triangle_file</a> (<span class="keywordtype">char</span> *fileprefix,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                 <span class="keywordtype">int</span> partition,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                 sc_MPI_Comm comm,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                 <span class="keywordtype">int</span> do_dup);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="t8__cmesh__triangle_8h.html#a85a50db30f9d95493122b79574b62c3c">t8_cmesh_from_triangle_file</a> (<span class="keywordtype">char</span> *fileprefix, <span class="keywordtype">int</span> partition, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_dup);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_TRIANGLE_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_TRIANGLE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
-<div class="ttc" id="at8__cmesh__triangle_8h_html_a85a50db30f9d95493122b79574b62c3c"><div class="ttname"><a href="t8__cmesh__triangle_8h.html#a85a50db30f9d95493122b79574b62c3c">t8_cmesh_from_triangle_file</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_from_triangle_file(char *fileprefix, int partition, sc_MPI_Comm comm, int do_dup)</div><div class="ttdoc">Open a .node, .ele and .neigh file created by TRIANGLE to read and create a cmesh from them.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_triangle.c:651</div></div>
+<div class="ttc" id="at8__cmesh__triangle_8h_html_a85a50db30f9d95493122b79574b62c3c"><div class="ttname"><a href="t8__cmesh__triangle_8h.html#a85a50db30f9d95493122b79574b62c3c">t8_cmesh_from_triangle_file</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_from_triangle_file(char *fileprefix, int partition, sc_MPI_Comm comm, int do_dup)</div><div class="ttdoc">Open a .node, .ele and .neigh file created by TRIANGLE to read and create a cmesh from them.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_triangle.c:610</div></div>
 <div class="ttc" id="at8__eclass_8h_html"><div class="ttname"><a href="t8__eclass_8h.html">t8_eclass.h</a></div><div class="ttdoc">We define all possible element classes that occur in hybrid meshes.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

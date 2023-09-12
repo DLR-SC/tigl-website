@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -121,7 +128,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a48cd5a52e37d1f6a09b7e488386f3354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute whether a given prism shares a given face with its root tree.  <a href="t8__dprism__bits_8h.html#a48cd5a52e37d1f6a09b7e488386f3354">More...</a><br /></td></tr>
 <tr class="separator:a48cd5a52e37d1f6a09b7e488386f3354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e1c0404f088d71a2f4b1f21382eb2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a55e1c0404f088d71a2f4b1f21382eb2b">t8_dprism_is_inside_root</a> (<a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p)</td></tr>
-<tr class="memdesc:a55e1c0404f088d71a2f4b1f21382eb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a prism lies inside of the root prism, that is the triangle of level 0, anchor node (0,0) and type 0.  <a href="t8__dprism__bits_8h.html#a55e1c0404f088d71a2f4b1f21382eb2b">More...</a><br /></td></tr>
+<tr class="memdesc:a55e1c0404f088d71a2f4b1f21382eb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a prism lies inside of the root prism, that is the prism of level 0, anchor node (0,0) and type 0.  <a href="t8__dprism__bits_8h.html#a55e1c0404f088d71a2f4b1f21382eb2b">More...</a><br /></td></tr>
 <tr class="separator:a55e1c0404f088d71a2f4b1f21382eb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ffb7c1c56a67b24853424248de61a7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a4ffb7c1c56a67b24853424248de61a7f">t8_dprism_child</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int childid, <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *child)</td></tr>
 <tr class="memdesc:a4ffb7c1c56a67b24853424248de61a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the childid-th child in Morton order of a prism.  <a href="t8__dprism__bits_8h.html#a4ffb7c1c56a67b24853424248de61a7f">More...</a><br /></td></tr>
@@ -144,9 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afa061f765e01526ea4ee70b4a46a25d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#afa061f765e01526ea4ee70b4a46a25d3">t8_dprism_ancestor_id</a> (<a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int level)</td></tr>
 <tr class="memdesc:afa061f765e01526ea4ee70b4a46a25d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the position of the ancestor of this child at level <em>level</em> within its siblings.  <a href="t8__dprism__bits_8h.html#afa061f765e01526ea4ee70b4a46a25d3">More...</a><br /></td></tr>
 <tr class="separator:afa061f765e01526ea4ee70b4a46a25d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc450903c4ad7285b85a31bfc8e9250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#affc450903c4ad7285b85a31bfc8e9250">t8_dprism_children_at_face</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int face, <a class="el" href="structt8__dprism.html">t8_dprism_t</a> **children, int num_children)</td></tr>
-<tr class="memdesc:affc450903c4ad7285b85a31bfc8e9250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a prism and a face of the prism, compute all children of the prism that touch the face.  <a href="t8__dprism__bits_8h.html#affc450903c4ad7285b85a31bfc8e9250">More...</a><br /></td></tr>
-<tr class="separator:affc450903c4ad7285b85a31bfc8e9250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6986a38afb354d66cd67629a1d5c2b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#ad6986a38afb354d66cd67629a1d5c2b7">t8_dprism_children_at_face</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int face, <a class="el" href="structt8__dprism.html">t8_dprism_t</a> **children, int num_children, int *child_indices)</td></tr>
+<tr class="memdesc:ad6986a38afb354d66cd67629a1d5c2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a prism and a face of the prism, compute all children of the prism that touch the face.  <a href="t8__dprism__bits_8h.html#ad6986a38afb354d66cd67629a1d5c2b7">More...</a><br /></td></tr>
+<tr class="separator:ad6986a38afb354d66cd67629a1d5c2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2a385a533315717055ad54235aedc29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#ad2a385a533315717055ad54235aedc29">t8_dprism_face_child_face</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem, int face, int face_child)</td></tr>
 <tr class="memdesc:ad2a385a533315717055ad54235aedc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a face of a prism and a child number of a child of that face, return the face number of the child of the prism that matches the child face.  <a href="t8__dprism__bits_8h.html#ad2a385a533315717055ad54235aedc29">More...</a><br /></td></tr>
 <tr class="separator:ad2a385a533315717055ad54235aedc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,11 +179,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6d5d82a01b3185bb086a330728b8da51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex of a prism.  <a href="t8__dprism__bits_8h.html#a6d5d82a01b3185bb086a330728b8da51">More...</a><br /></td></tr>
 <tr class="separator:a6d5d82a01b3185bb086a330728b8da51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bc9177a0c424454a9e597c3b70843ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a2bc9177a0c424454a9e597c3b70843ed">t8_dprism_vertex_ref_coords</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem, int vertex, double coords[3])</td></tr>
-<tr class="memdesc:a2bc9177a0c424454a9e597c3b70843ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the reference coordinates of a vertex of a prism when the tree (level 0) is embedded in [0,1]^3.  <a href="t8__dprism__bits_8h.html#a2bc9177a0c424454a9e597c3b70843ed">More...</a><br /></td></tr>
+<tr class="memdesc:a2bc9177a0c424454a9e597c3b70843ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the reference coordinates of a vertex of a prism when the tree (level 0) is embedded in \( [0,1]^3 \).  <a href="t8__dprism__bits_8h.html#a2bc9177a0c424454a9e597c3b70843ed">More...</a><br /></td></tr>
 <tr class="separator:a2bc9177a0c424454a9e597c3b70843ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81e0ac3f40b403daf8ab76044758e4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#ad81e0ac3f40b403daf8ab76044758e4f">t8_dprism_compute_reference_coords</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem, const double *ref_coords, double *out_coords)</td></tr>
-<tr class="memdesc:ad81e0ac3f40b403daf8ab76044758e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of a prism element to a point in the reference space of the tree (level 0) embedded in [0,1]^3.  <a href="t8__dprism__bits_8h.html#ad81e0ac3f40b403daf8ab76044758e4f">More...</a><br /></td></tr>
-<tr class="separator:ad81e0ac3f40b403daf8ab76044758e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c88ef8dd898e339fde456649f69380c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a8c88ef8dd898e339fde456649f69380c">t8_dprism_compute_reference_coords</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a8c88ef8dd898e339fde456649f69380c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of a prism element to points in the reference space of the tree (level 0) embedded in \( [0,1]^3 \).  <a href="t8__dprism__bits_8h.html#a8c88ef8dd898e339fde456649f69380c">More...</a><br /></td></tr>
+<tr class="separator:a8c88ef8dd898e339fde456649f69380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff2998af4c99e242c7fb9a0cd4117962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#aff2998af4c99e242c7fb9a0cd4117962">t8_dprism_linear_id</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int level)</td></tr>
 <tr class="memdesc:aff2998af4c99e242c7fb9a0cd4117962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the linear position of a prism in an uniform grid.  <a href="t8__dprism__bits_8h.html#aff2998af4c99e242c7fb9a0cd4117962">More...</a><br /></td></tr>
 <tr class="separator:aff2998af4c99e242c7fb9a0cd4117962"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,8 +357,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
 
 </div>
 </div>
-<a id="affc450903c4ad7285b85a31bfc8e9250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affc450903c4ad7285b85a31bfc8e9250">&#9670;&nbsp;</a></span>t8_dprism_children_at_face()</h2>
+<a id="ad6986a38afb354d66cd67629a1d5c2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6986a38afb354d66cd67629a1d5c2b7">&#9670;&nbsp;</a></span>t8_dprism_children_at_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +385,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_children</em>&#160;</td>
+          <td class="paramname"><em>num_children</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>child_indices</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -471,12 +484,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
 </div><div class="memdoc">
 
 <p>Compare two elements. </p>
-<p>returns negativ if p1 &lt; p2, zero if p1 equals p2 and positiv if p1 &gt; p2. If p2 is a copy of p1 then the elements are equal. </p>
+<p>returns negative if p1 &lt; p2, zero if p1 equals p2 and positive if p1 &gt; p2. If p2 is a copy of p1 then the elements are equal. </p>
 
 </div>
 </div>
-<a id="ad81e0ac3f40b403daf8ab76044758e4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad81e0ac3f40b403daf8ab76044758e4f">&#9670;&nbsp;</a></span>t8_dprism_compute_reference_coords()</h2>
+<a id="a8c88ef8dd898e339fde456649f69380c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c88ef8dd898e339fde456649f69380c">&#9670;&nbsp;</a></span>t8_dprism_compute_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,6 +509,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
@@ -507,12 +526,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
       </table>
 </div><div class="memdoc">
 
-<p>Convert a point in the reference space of a prism element to a point in the reference space of the tree (level 0) embedded in [0,1]^3. </p>
+<p>Convert points in the reference space of a prism element to points in the reference space of the tree (level 0) embedded in \( [0,1]^3 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input prism. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates inside the prism element [0,1]^3 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of 3 doubles that will be filled with the reference coordinates in the tree of the prism. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates in the prism (<em>num_coords</em> times \( [0,1]^3 \)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of coordinates to evaluate </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of <em>num_coords</em> x 3 x double that will be filled with the reference coordinates of the points on the prism. </td></tr>
   </table>
   </dd>
 </dl>
@@ -718,7 +737,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>p</em> that conincides with <em>face_child</em>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>p</em> that coincides with <em>face_child</em>. </dd></dl>
 
 </div>
 </div>
@@ -795,8 +814,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
 </div><div class="memdoc">
 
 <p>Given a face of a prism return the face number of the parent of the prism that matches the prism's face. </p>
-<p>Or return -1 if no face of the parent matches the face.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Or return -1 if no face of the parent matches the face. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">prism</td><td>The prism. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>Then number of the face. </td></tr>
@@ -1051,14 +1069,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
       </table>
 </div><div class="memdoc">
 
-<p>Test if a prism lies inside of the root prism, that is the triangle of level 0, anchor node (0,0) and type 0. </p>
+<p>Test if a prism lies inside of the root prism, that is the prism of level 0, anchor node (0,0) and type 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Input prism. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true If <em>p</em> lies inside of the root pris. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true If <em>p</em> lies inside of the root prism. </dd></dl>
 
 </div>
 </div>
@@ -1096,7 +1114,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>face</em> is a subface of the triangle's root element. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>face</em> is a subface of the prisms's root element. </dd></dl>
 
 </div>
 </div>
@@ -1526,7 +1544,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
       </table>
 </div><div class="memdoc">
 
-<p>Compute the reference coordinates of a vertex of a prism when the tree (level 0) is embedded in [0,1]^3. </p>
+<p>Compute the reference coordinates of a vertex of a prism when the tree (level 0) is embedded in \( [0,1]^3 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input prism. </td></tr>

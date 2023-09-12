@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -101,18 +108,16 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__dquad__bits_8h.html#a11e40635561a29f6805741827168c4a6">t8_dquad_compute_reference_coords</a> (<span class="keyword">const</span> <a class="code" href="structt8__dquad.html">t8_dquad_t</a> *</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                       elem,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                       <span class="keyword">const</span> <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                       *ref_coords,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                       <span class="keywordtype">double</span> *out_coords);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">t8_dquad_compute_reference_coords</a> (<span class="keyword">const</span> <a class="code" href="structt8__dquad.html">t8_dquad_t</a> *elem, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                   <span class="keywordtype">double</span> *out_coords);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DQUAD_BITS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dquad_html"><div class="ttname"><a href="structt8__dquad.html">t8_dquad</a></div><div class="ttdef"><b>Definition:</b> t8_dquad.h:53</div></div>
 <div class="ttc" id="at8__dquad_8h_html"><div class="ttname"><a href="t8__dquad_8h.html">t8_dquad.h</a></div><div class="ttdoc">TODO: document this.</div></div>
-<div class="ttc" id="at8__dquad__bits_8h_html_a11e40635561a29f6805741827168c4a6"><div class="ttname"><a href="t8__dquad__bits_8h.html#a11e40635561a29f6805741827168c4a6">t8_dquad_compute_reference_coords</a></div><div class="ttdeci">void t8_dquad_compute_reference_coords(const t8_dquad_t *elem, const double *ref_coords, double *out_coords)</div><div class="ttdoc">Convert a point in the reference space of a quad element to a point in the reference space of the tre...</div><div class="ttdef"><b>Definition:</b> t8_dquad_bits.c:27</div></div>
+<div class="ttc" id="at8__dquad__bits_8h_html_ad2c82af7361b5e741ba43dfd2b3c592e"><div class="ttname"><a href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">t8_dquad_compute_reference_coords</a></div><div class="ttdeci">void t8_dquad_compute_reference_coords(const t8_dquad_t *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</div><div class="ttdoc">Convert points in the reference space of a quad element to points in the reference space of the tree ...</div><div class="ttdef"><b>Definition:</b> t8_dquad_bits.c:27</div></div>
 <div class="ttc" id="at8__element_8h_html"><div class="ttname"><a href="t8__element_8h.html">t8_element.h</a></div><div class="ttdoc">This file defines basic operations on an element in a refinement tree.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

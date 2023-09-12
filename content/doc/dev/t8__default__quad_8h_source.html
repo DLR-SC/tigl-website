@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -103,28 +110,31 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">   44</a></span>&#160;<span class="preprocessor">#define T8_QUAD_GET_TDIM(quad) ((int) (quad)-&gt;pad8)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a8fa4c018fe3da9fdc4b16a462476cb55">   49</a></span>&#160;<span class="preprocessor">#define T8_QUAD_GET_TNORMAL(quad)                               \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">  ( T8_ASSERT (T8_QUAD_GET_TDIM(quad) == 3),                    \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    ((int) (quad)-&gt;pad16) )</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a5377b19cd687db6efc38ef5e83cf4c04">   56</a></span>&#160;<span class="preprocessor">#define T8_QUAD_GET_TCOORD(quad)                                \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  ( T8_ASSERT (T8_QUAD_GET_TDIM(quad) == 3),                    \</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    ((int) (quad)-&gt;p.user_long) )</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#aca37524bcd4209be1f9167bdbd7bab79">   61</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TDIM(quad,dim)                              \</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">  do { T8_ASSERT ((dim) == 2 || (dim) == 3);                    \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">       (quad)-&gt;pad8 = (int8_t) (dim); } while (0)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#abd18fe110768cde07ee46840243732a8">   66</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TNORMAL(quad,normal)                        \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">  do { T8_ASSERT ((normal) &gt;= 0 &amp;&amp; (normal) &lt; 3);               \</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">       (quad)-&gt;pad16 = (int16_t) (normal); } while (0)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a8fa4c018fe3da9fdc4b16a462476cb55">   49</a></span>&#160;<span class="preprocessor">#define T8_QUAD_GET_TNORMAL(quad) (T8_ASSERT (T8_QUAD_GET_TDIM (quad) == 3), ((int) (quad)-&gt;pad16))</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a5377b19cd687db6efc38ef5e83cf4c04">   54</a></span>&#160;<span class="preprocessor">#define T8_QUAD_GET_TCOORD(quad) (T8_ASSERT (T8_QUAD_GET_TDIM (quad) == 3), ((int) (quad)-&gt;p.user_long))</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#aca37524bcd4209be1f9167bdbd7bab79">   57</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TDIM(quad, dim) \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  do { \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    T8_ASSERT ((dim) == 2 || (dim) == 3); \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    (quad)-&gt;pad8 = (int8_t) (dim); \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  } while (0)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#abd18fe110768cde07ee46840243732a8">   64</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TNORMAL(quad, normal) \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">  do { \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    T8_ASSERT ((normal) &gt;= 0 &amp;&amp; (normal) &lt; 3); \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    (quad)-&gt;pad16 = (int16_t) (normal); \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  } while (0)</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a5108015be515944d6cc3dd3409bb3d00">   71</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TCOORD(quad,coord)                          \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  do { (quad)-&gt;p.user_long = (long) (coord); } while (0)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#ae96fdcc3e65fbccbfcb156e950027f94">   75</a></span>&#160;t8_eclass_scheme_t *<a class="code" href="t8__default__quad_8h.html#ae96fdcc3e65fbccbfcb156e950027f94">t8_default_scheme_new_quad</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_DEFAULT_QUAD_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#a5108015be515944d6cc3dd3409bb3d00">   71</a></span>&#160;<span class="preprocessor">#define T8_QUAD_SET_TCOORD(quad, coord) \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  do { \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    (quad)-&gt;p.user_long = (long) (coord); \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">  } while (0)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;t8_eclass_scheme_t*</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="t8__default__quad_8h.html#ae96fdcc3e65fbccbfcb156e950027f94">   78</a></span>&#160;<a class="code" href="t8__default__quad_8h.html#ae96fdcc3e65fbccbfcb156e950027f94">t8_default_scheme_new_quad</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_DEFAULT_QUAD_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="at8__default__quad_8h_html_abf25a57304c9510b9f5126df0bf4c24d"><div class="ttname"><a href="t8__default__quad_8h.html#abf25a57304c9510b9f5126df0bf4c24d">t8_pquad_t</a></div><div class="ttdeci">p4est_quadrant_t t8_pquad_t</div><div class="ttdoc">The structure holding a quadrilateral element in the default scheme.</div><div class="ttdef"><b>Definition:</b> t8_default_quad.h:41</div></div>
 <div class="ttc" id="at8__default__quad_8h_html_ae96fdcc3e65fbccbfcb156e950027f94"><div class="ttname"><a href="t8__default__quad_8h.html#ae96fdcc3e65fbccbfcb156e950027f94">t8_default_scheme_new_quad</a></div><div class="ttdeci">t8_eclass_scheme_t * t8_default_scheme_new_quad(void)</div><div class="ttdoc">Provide an implementation for the quadrilateral element class.</div></div>
 <div class="ttc" id="at8__element_8h_html"><div class="ttname"><a href="t8__element_8h.html">t8_element.h</a></div><div class="ttdoc">This file defines basic operations on an element in a refinement tree.</div></div>

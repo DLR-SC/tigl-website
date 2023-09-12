@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -84,15 +91,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc1640bbce207346e079443bfc98e788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#abc1640bbce207346e079443bfc98e788">t8_geometry_analytic</a> (int <a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, const char *<a class="el" href="structt8__geometry.html#a792d7e610379512222d49c8afbcfa2be">name</a>, <a class="el" href="t8__geometry__analytic_8hxx.html#a77688cc0ba40c6d4fc2ced183d5219eb">t8_geom_analytic_fn</a> analytical, <a class="el" href="t8__geometry__analytic_8hxx.html#a6dbebb7be848d29cd477de0b88d39f53">t8_geom_analytic_jacobian_fn</a> jacobian, t8_geom_load_tree_data_fn load_tree_data, const void *user_data)</td></tr>
 <tr class="memdesc:abc1640bbce207346e079443bfc98e788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with analytical and jacobian functions.  <a href="structt8__geometry__analytic.html#abc1640bbce207346e079443bfc98e788">More...</a><br /></td></tr>
 <tr class="separator:abc1640bbce207346e079443bfc98e788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed83c4a0f602a78a1c66abceb90b450a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#aed83c4a0f602a78a1c66abceb90b450a">~ t8_geometry_analytic</a> ()</td></tr>
-<tr class="memdesc:aed83c4a0f602a78a1c66abceb90b450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__analytic.html#aed83c4a0f602a78a1c66abceb90b450a">More...</a><br /></td></tr>
-<tr class="separator:aed83c4a0f602a78a1c66abceb90b450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e18fee502729f90039d11c8beeec574"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">~t8_geometry_analytic</a> ()</td></tr>
+<tr class="memdesc:a5e18fee502729f90039d11c8beeec574"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">More...</a><br /></td></tr>
+<tr class="separator:a5e18fee502729f90039d11c8beeec574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef37e5efe9d7d2f262db7d52a978b4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a8ef37e5efe9d7d2f262db7d52a978b4c">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double out_coords[3]) const</td></tr>
-<tr class="memdesc:a8ef37e5efe9d7d2f262db7d52a978b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a point in the reference space $$[0,1]^dimension$$ to $$\mathbb R^3$$.  <a href="structt8__geometry__analytic.html#a8ef37e5efe9d7d2f262db7d52a978b4c">More...</a><br /></td></tr>
+<tr class="memdesc:a8ef37e5efe9d7d2f262db7d52a978b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a point in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry__analytic.html#a8ef37e5efe9d7d2f262db7d52a978b4c">More...</a><br /></td></tr>
 <tr class="separator:a8ef37e5efe9d7d2f262db7d52a978b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf53b14fe8432b6aa6f094ae7143f39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#aadf53b14fe8432b6aa6f094ae7143f39">t8_geom_evalute_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian) const</td></tr>
-<tr class="memdesc:aadf53b14fe8432b6aa6f094ae7143f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space $$[0,1]^dimension$$.  <a href="structt8__geometry__analytic.html#aadf53b14fe8432b6aa6f094ae7143f39">More...</a><br /></td></tr>
-<tr class="separator:aadf53b14fe8432b6aa6f094ae7143f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ea607b01769165d22f3e723c969a41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#aa2ea607b01769165d22f3e723c969a41">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian) const</td></tr>
+<tr class="memdesc:aa2ea607b01769165d22f3e723c969a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry__analytic.html#aa2ea607b01769165d22f3e723c969a41">More...</a><br /></td></tr>
+<tr class="separator:aa2ea607b01769165d22f3e723c969a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c63c543256a52e5978e68ce17dbc648"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a6c63c543256a52e5978e68ce17dbc648">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a6c63c543256a52e5978e68ce17dbc648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry__analytic.html#a6c63c543256a52e5978e68ce17dbc648">More...</a><br /></td></tr>
 <tr class="separator:a6c63c543256a52e5978e68ce17dbc648"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,9 +110,9 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_analy
 <tr class="memitem:a1bdea20fbb137ecec8d6d7979b466efb inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="a1bdea20fbb137ecec8d6d7979b466efb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry</b> (int <a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, const char *<a class="el" href="structt8__geometry.html#a792d7e610379512222d49c8afbcfa2be">name</a>, const char *attribute_name=NULL)</td></tr>
 <tr class="separator:a1bdea20fbb137ecec8d6d7979b466efb inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a1ce40e1cfa78038c0d975cdc8ceed6be">~ t8_geometry</a> ()</td></tr>
-<tr class="memdesc:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#a1ce40e1cfa78038c0d975cdc8ceed6be">More...</a><br /></td></tr>
-<tr class="separator:a1ce40e1cfa78038c0d975cdc8ceed6be inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
+<tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
+<tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,8 +197,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="aed83c4a0f602a78a1c66abceb90b450a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed83c4a0f602a78a1c66abceb90b450a">&#9670;&nbsp;</a></span>~ t8_geometry_analytic()</h2>
+<a id="a5e18fee502729f90039d11c8beeec574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e18fee502729f90039d11c8beeec574">&#9670;&nbsp;</a></span>~t8_geometry_analytic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +207,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual t8_geometry_analytic::~ <a class="el" href="structt8__geometry__analytic.html">t8_geometry_analytic</a> </td>
+          <td class="memname">virtual t8_geometry_analytic::~t8_geometry_analytic </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -265,32 +272,24 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Map a point in the reference space $$[0,1]^dimension$$ to $$\mathbb R^3$$. </p>
+<p>Map a point in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in \( [0,1]^\mathrm{dim} \). </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Since this is the identity geometry, <em>out_coords</em> will be equal to <em>ref_coords</em>.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>Since this is the identity geometry, <em>out_coords</em> will be equal to <em>ref_coords</em>. </dd></dl>
 
 <p>Implements <a class="el" href="structt8__geometry.html#aa304da6770c6d25ef05349e432e7f677">t8_geometry</a>.</p>
 
 </div>
 </div>
-<a id="aadf53b14fe8432b6aa6f094ae7143f39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf53b14fe8432b6aa6f094ae7143f39">&#9670;&nbsp;</a></span>t8_geom_evalute_jacobian()</h2>
+<a id="aa2ea607b01769165d22f3e723c969a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ea607b01769165d22f3e723c969a41">&#9670;&nbsp;</a></span>t8_geom_evaluate_jacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +298,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_geometry_analytic::t8_geom_evalute_jacobian </td>
+          <td class="memname">void t8_geometry_analytic::t8_geom_evaluate_jacobian </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
@@ -320,7 +319,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>jacobian_out</em>&#160;</td>
+          <td class="paramname"><em>jacobian</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -335,27 +334,19 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space $$[0,1]^dimension$$. </p>
+<p>Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size dimension x 3. Indices 3*i, 3*i+1, 3*i+2 correspond to the i-th column of the jacobian (Entry 3*i + j is del f_j/del x_i). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in \( [0,1]^\mathrm{dim} \). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size \( \mathrm{dim} \cdot 3 \). Indices \( 3 \cdot i\) , \( 3 \cdot i+1 \) , \( 3 \cdot i+2 \) correspond to the \( i \)-th column of the jacobian (Entry \( 3 \cdot i + j \) is \( \frac{\partial f_j}{\partial x_i} \)). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The jacobian will be (1) (1 0) (1 0 0) dim 1: J = (0) dim 2: J = (0 1) dim 3: J = (0 1 0) (0) (0 0) (0 0 1)</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size dimension x 3. Indices 3*i, 3*i+1, 3*i+2 correspond to the i-th column of the jacobian (Entry 3*i + j is del f_j/del x_i). </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>The jacobian will be (1) (1 0) (1 0 0) dim 1: J = (0) dim 2: J = (0 1) dim 3: J = (0 1 0) (0) (0 0) (0 0 1) </dd></dl>
 
-<p>Implements <a class="el" href="structt8__geometry.html#addf8439ad1481ff4c0bc8e909ba92c3c">t8_geometry</a>.</p>
+<p>Implements <a class="el" href="structt8__geometry.html#ae9cd4e137db831feb8905a40e9176347">t8_geometry</a>.</p>
 
 </div>
 </div>

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -142,13 +149,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a909b5f515258474e381c686a4c633ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element scheme associated to a forest.  <a href="t8__forest__general_8h.html#a909b5f515258474e381c686a4c633ed4">More...</a><br /></td></tr>
 <tr class="separator:a909b5f515258474e381c686a4c633ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b1316e78e0b852458cc9680b643cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#aa5b1316e78e0b852458cc9680b643cf3">t8_forest_set_level</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, int level)</td></tr>
-<tr class="memdesc:aa5b1316e78e0b852458cc9680b643cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial refinement level to be used when <b>forest</b> is commited.  <a href="t8__forest__general_8h.html#aa5b1316e78e0b852458cc9680b643cf3">More...</a><br /></td></tr>
+<tr class="memdesc:aa5b1316e78e0b852458cc9680b643cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial refinement level to be used when <b>forest</b> is committed.  <a href="t8__forest__general_8h.html#aa5b1316e78e0b852458cc9680b643cf3">More...</a><br /></td></tr>
 <tr class="separator:aa5b1316e78e0b852458cc9680b643cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a738007649f51394de30c98e4f8d2d6cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a738007649f51394de30c98e4f8d2d6cb">t8_forest_set_copy</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> from)</td></tr>
-<tr class="memdesc:a738007649f51394de30c98e4f8d2d6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a forest as source for copying on commiting.  <a href="t8__forest__general_8h.html#a738007649f51394de30c98e4f8d2d6cb">More...</a><br /></td></tr>
+<tr class="memdesc:a738007649f51394de30c98e4f8d2d6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a forest as source for copying on committing.  <a href="t8__forest__general_8h.html#a738007649f51394de30c98e4f8d2d6cb">More...</a><br /></td></tr>
 <tr class="separator:a738007649f51394de30c98e4f8d2d6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b66fdbf9b87c73ae5434b65fc2bfd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> set_from, <a class="el" href="t8__forest__general_8h.html#af97734e69bb2a669a3234eeb04aab0b0">t8_forest_adapt_t</a> adapt_fn, int recursive)</td></tr>
-<tr class="memdesc:a67b66fdbf9b87c73ae5434b65fc2bfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a source forest with an adapt function to be adapted on commiting.  <a href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">More...</a><br /></td></tr>
+<tr class="memdesc:a67b66fdbf9b87c73ae5434b65fc2bfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a source forest with an adapt function to be adapted on committing.  <a href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">More...</a><br /></td></tr>
 <tr class="separator:a67b66fdbf9b87c73ae5434b65fc2bfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc48a9274b531319b4e28f983050152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a7bc48a9274b531319b4e28f983050152">t8_forest_set_user_data</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, void *data)</td></tr>
 <tr class="memdesc:a7bc48a9274b531319b4e28f983050152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the user data of a forest.  <a href="t8__forest__general_8h.html#a7bc48a9274b531319b4e28f983050152">More...</a><br /></td></tr>
@@ -1096,7 +1103,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The maximum level of refinement that is allowed for an element in this forest. It is guarenteed that any tree in <em>forest</em> can be refined this many times and it is not allowed to refine further. <em>forest</em> must be committed before calling this function. For forest with a single element class (non-hybrid) maxlevel is the maximum refinement level of this element class, whilst for hybrid forests the maxlevel is the minimum of all maxlevels of the element classes in this forest. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum level of refinement that is allowed for an element in this forest. It is guaranteed that any tree in <em>forest</em> can be refined this many times and it is not allowed to refine further. <em>forest</em> must be committed before calling this function. For forest with a single element class (non-hybrid) maxlevel is the maximum refinement level of this element class, whilst for hybrid forests the maxlevel is the minimum of all maxlevels of the element classes in this forest. </dd></dl>
 
 </div>
 </div>
@@ -1950,7 +1957,7 @@ Currently <em>forest</em> must be balanced. </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new forest that is adapted from <em>forest_from</em>. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This is equivalent to calling <a class="el" href="t8__forest__general_8h.html#a8671e8128c5b13943cbf7187fe688cbb">t8_forest_init</a>, <a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a>, \red t8_forest_set_ghost, and <a class="el" href="t8__forest__general_8h.html#a306ce9301c2101a1c1d910299879109f">t8_forest_commit</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is equivalent to calling <a class="el" href="t8__forest__general_8h.html#a8671e8128c5b13943cbf7187fe688cbb">t8_forest_init</a>, <a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a>, <a class="el" href="t8__forest__general_8h.html#addd122e73a15816cc4008fca293cca7b">t8_forest_set_ghost</a>, and <a class="el" href="t8__forest__general_8h.html#a306ce9301c2101a1c1d910299879109f">t8_forest_commit</a> </dd></dl>
 
 </div>
 </div>
@@ -2039,7 +2046,7 @@ Currently <em>forest</em> must be balanced. </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if <em>forest</em> has no elements which are inside each other. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is collective, but only checks local overlapping on each process. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__partition_8h.html#ab8307d030dec24b76731c93a11cabb02" title="Test if the last descendant of the last element of current rank has a smaller linear id than the stor...">t8_forest_partition_test_boundery_element</a> if you also want to test for global overlap across the process boundaries. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__partition_8h.html#a280c068e9c54a0c3678fa3403d2a4d3e" title="Test if the last descendant of the last element of current rank has a smaller linear id than the stor...">t8_forest_partition_test_boundary_element</a> if you also want to test for global overlap across the process boundaries. </dd></dl>
 
 </div>
 </div>
@@ -2156,12 +2163,12 @@ Currently <em>forest</em> must be balanced. </dd>
       </table>
 </div><div class="memdoc">
 
-<p>Set a source forest with an adapt function to be adapted on commiting. </p>
+<p>Set a source forest with an adapt function to be adapted on committing. </p>
 <p>By default, the forest takes ownership of the source <b>set_from</b> such that it will be destroyed on calling <a class="el" href="t8__forest__general_8h.html#a306ce9301c2101a1c1d910299879109f">t8_forest_commit</a>. To keep ownership of <b>set_from</b>, call <a class="el" href="t8__forest__general_8h.html#a87ef4ae265d4f6e47c125894fb142977">t8_forest_ref</a> before passing it into this function. This means that it is ILLEGAL to continue using <b>set_from</b> or dereferencing it UNLESS it is referenced directly before passing it into this function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">forest</td><td>The forest </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">set_from</td><td>The source forest from which <b>forest</b> will be adapted. We take ownership. This can be prevented by referencing <b>set_from</b>. If NULL, a previously (or later) set forest will be taken (<a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a>, <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adapt_fn</td><td>The adapt function used on commiting. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adapt_fn</td><td>The adapt function used on committing. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">recursive</td><td>A flag specifying whether adaptation is to be done recursively or not. If the value is zero, adaptation is not recursive and it is recursive otherwise. </td></tr>
   </table>
   </dd>
@@ -2209,7 +2216,7 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">forest</td><td>The forest. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">set_from</td><td>A second forest that should be balanced. We take ownership. This can be prevented by referencing <b>set_from</b>. If NULL, a previously (or later) set forest will be taken (<a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a>, <a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">no_repartition</td><td>Balance constructs several intermediate forest that are refined from each other. In order to maintain a balanced load these forest are repartitioned in each round and the resulting forest is load-balanced per default. If this behaviour is not desired, <em>no_repartition</em> should be set to true. If <em>no_repartition</em> is false, an additional call of <a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a> is not neccessary. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">no_repartition</td><td>Balance constructs several intermediate forest that are refined from each other. In order to maintain a balanced load these forest are repartitioned in each round and the resulting forest is load-balanced per default. If this behaviour is not desired, <em>no_repartition</em> should be set to true. If <em>no_repartition</em> is false, an additional call of <a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a> is not necessary. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2288,7 +2295,7 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
       </table>
 </div><div class="memdoc">
 
-<p>Set a forest as source for copying on commiting. </p>
+<p>Set a forest as source for copying on committing. </p>
 <p>By default, the forest takes ownership of the source <b>from</b> such that it will be destroyed on calling <a class="el" href="t8__forest__general_8h.html#a306ce9301c2101a1c1d910299879109f">t8_forest_commit</a>. To keep ownership of <b>from</b>, call <a class="el" href="t8__forest__general_8h.html#a87ef4ae265d4f6e47c125894fb142977">t8_forest_ref</a> before passing it into this function. This means that it is ILLEGAL to continue using <b>from</b> or dereferencing it UNLESS it is referenced directly before passing it into this function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">forest</td><td>The forest. </td></tr>
@@ -2419,11 +2426,11 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
       </table>
 </div><div class="memdoc">
 
-<p>Set the initial refinement level to be used when <b>forest</b> is commited. </p>
+<p>Set the initial refinement level to be used when <b>forest</b> is committed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">forest</td><td>The forest whose level will be set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The initial refinement level of <b>forest</b>, when it is commited. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The initial refinement level of <b>forest</b>, when it is committed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2464,7 +2471,7 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
 </div><div class="memdoc">
 
 <p>Set a source forest to be partitioned during commit. </p>
-<p>The partitioning is done according to the SFC and each rank is assinged the same (maybe +1) number of elements. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The partitioning is done according to the SFC and each rank is assigned the same (maybe +1) number of elements. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">forest</td><td>The forest. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">set_from</td><td>A second forest that should be partitioned. We take ownership. This can be prevented by referencing <b>set_from</b>. If NULL, a previously (or later) set forest will be taken (<a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a>, <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a>). </td></tr>
@@ -2472,7 +2479,7 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This setting can be combined with <a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a> and <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a>. The order in which these operations are executed is always 1) Adapt 2) Balance 3) Partition If <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a> is called with the <em>no_repartition</em> parameter set as false, it is not neccessary to call <a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a> additionally. </dd>
+<dl class="section note"><dt>Note</dt><dd>This setting can be combined with <a class="el" href="t8__forest__general_8h.html#a67b66fdbf9b87c73ae5434b65fc2bfd9">t8_forest_set_adapt</a> and <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a>. The order in which these operations are executed is always 1) Adapt 2) Balance 3) Partition If <a class="el" href="t8__forest__general_8h.html#a4d759bcefbcdc06b1bc00e7dd16f4099">t8_forest_set_balance</a> is called with the <em>no_repartition</em> parameter set as false, it is not necessary to call <a class="el" href="t8__forest__general_8h.html#a05da93c37e3cf8d6a1716f7f1ef7ff33">t8_forest_set_partition</a> additionally. </dd>
 <dd>
 This setting may not be combined with <a class="el" href="t8__forest__general_8h.html#a738007649f51394de30c98e4f8d2d6cb">t8_forest_set_copy</a> and overwrites this setting. </dd></dl>
 

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -139,7 +146,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a539ead8049133ddd30333929a8772192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a forest of six connected noncannoical oriented prisms.  <a href="t8__cmesh__examples_8h.html#a539ead8049133ddd30333929a8772192">More...</a><br /></td></tr>
 <tr class="separator:a539ead8049133ddd30333929a8772192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">t8_cmesh_new_disjoint_bricks</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, int x_periodic, int y_periodic, int z_periodic, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a partitoned cmesh of quads whose local trees are given by an num_x by num_y brick connectivity from p4est or a num_x by num_y by num_z brick connectivity from p8est.  <a href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">More...</a><br /></td></tr>
+<tr class="memdesc:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a partitioned cmesh of quads whose local trees are given by an num_x by num_y brick connectivity from p4est or a num_x by num_y by num_z brick connectivity from p8est.  <a href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">More...</a><br /></td></tr>
 <tr class="separator:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34c80253ff9e8751871c6efcb5cbddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ad34c80253ff9e8751871c6efcb5cbddd">t8_cmesh_new_tet_orientation_test</a> (sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ad34c80253ff9e8751871c6efcb5cbddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a tetrahedral cmesh that has all possible face to face connections and orientations.  <a href="t8__cmesh__examples_8h.html#ad34c80253ff9e8751871c6efcb5cbddd">More...</a><br /></td></tr>
@@ -162,6 +169,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, const int do_partition, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">More...</a><br /></td></tr>
 <tr class="separator:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66799e32a9ce310ef773163da68f3912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a66799e32a9ce310ef773163da68f3912">t8_cmesh_new_squared_disk</a> (const double radius, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a66799e32a9ce310ef773163da68f3912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a squared disk of given radius.  <a href="t8__cmesh__examples_8h.html#a66799e32a9ce310ef773163da68f3912">More...</a><br /></td></tr>
+<tr class="separator:a66799e32a9ce310ef773163da68f3912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide example coarse meshes in this file. </p>
@@ -267,7 +277,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a partitoned cmesh of quads whose local trees are given by an num_x by num_y brick connectivity from p4est or a num_x by num_y by num_z brick connectivity from p8est. </p>
+<p>Create a partitioned cmesh of quads whose local trees are given by an num_x by num_y brick connectivity from p4est or a num_x by num_y by num_z brick connectivity from p8est. </p>
 <p>num_x and num_y and num_z can be different for different MPI ranks. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">num_x</td><td>The number of trees in x direction for this rank. Must be &gt;= 0. </td></tr>
@@ -641,7 +651,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A comitted cmesh consisting of 6 Tets, 6 prism and 4 hex. Together, they form a cube. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A committed cmesh consisting of 6 Tets, 6 prism and 4 hex. Together, they form a cube. </dd></dl>
 
 </div>
 </div>
@@ -1061,6 +1071,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A cmesh with <em>num_trees</em> many hexahedrons. </dd></dl>
+
+</div>
+</div>
+<a id="a66799e32a9ce310ef773163da68f3912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66799e32a9ce310ef773163da68f3912">&#9670;&nbsp;</a></span>t8_cmesh_new_squared_disk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_squared_disk </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a squared disk of given radius. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the sphere. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A cmesh representing the spherical surface. </dd></dl>
 
 </div>
 </div>

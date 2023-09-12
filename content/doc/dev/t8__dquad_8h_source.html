@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -110,17 +117,16 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="t8__dquad_8h.html#a46c53b26bc19fa874170de961145561f">   48</a></span>&#160;<span class="preprocessor">#define T8_DQUAD_LEN(l) (1 &lt;&lt; (T8_DQUAD_MAXLEVEL - (l)))</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">typedef</span> int32_t     t8_dquad_coord_t;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">typedef</span> int32_t t8_dquad_coord_t;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structt8__dquad.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dquad.html">t8_dquad</a></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  int8_t              level;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structt8__dquad.html#afcc8dc0f64a84fe3957057b7b65c3fc5">   55</a></span>&#160;  t8_dquad_coord_t    <a class="code" href="structt8__dquad.html#afcc8dc0f64a84fe3957057b7b65c3fc5">x</a>;  </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structt8__dquad.html#aada3921bc1d2ea5f0c64b67bd74cf05b">   56</a></span>&#160;  t8_dquad_coord_t    <a class="code" href="structt8__dquad.html#aada3921bc1d2ea5f0c64b67bd74cf05b">y</a>;  </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="structt8__dquad.html">t8_dquad_t</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DQUAD_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  int8_t level;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structt8__dquad.html#afcc8dc0f64a84fe3957057b7b65c3fc5">   55</a></span>&#160;  t8_dquad_coord_t <a class="code" href="structt8__dquad.html#afcc8dc0f64a84fe3957057b7b65c3fc5">x</a>; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structt8__dquad.html#aada3921bc1d2ea5f0c64b67bd74cf05b">   56</a></span>&#160;  t8_dquad_coord_t <a class="code" href="structt8__dquad.html#aada3921bc1d2ea5f0c64b67bd74cf05b">y</a>; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <a class="code" href="structt8__dquad.html">t8_dquad_t</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DQUAD_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dquad_html"><div class="ttname"><a href="structt8__dquad.html">t8_dquad</a></div><div class="ttdef"><b>Definition:</b> t8_dquad.h:53</div></div>
 <div class="ttc" id="astructt8__dquad_html_aada3921bc1d2ea5f0c64b67bd74cf05b"><div class="ttname"><a href="structt8__dquad.html#aada3921bc1d2ea5f0c64b67bd74cf05b">t8_dquad::y</a></div><div class="ttdeci">t8_dquad_coord_t y</div><div class="ttdoc">The y integer coordinate of the anchor node.</div><div class="ttdef"><b>Definition:</b> t8_dquad.h:56</div></div>
 <div class="ttc" id="astructt8__dquad_html_afcc8dc0f64a84fe3957057b7b65c3fc5"><div class="ttname"><a href="structt8__dquad.html#afcc8dc0f64a84fe3957057b7b65c3fc5">t8_dquad::x</a></div><div class="ttdeci">t8_dquad_coord_t x</div><div class="ttdoc">The x integer coordinate of the anchor node.</div><div class="ttdef"><b>Definition:</b> t8_dquad.h:55</div></div>

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -98,14 +105,12 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a>          <a class="code" href="t8__cmesh__occ_8hxx.html#aec932348cf92b214da89cb8d46aee4bf">t8_cmesh_new_hollow_cylinder</a> (sc_MPI_Comm comm,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                  <span class="keywordtype">int</span> num_tangential_trees,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                  <span class="keywordtype">int</span> num_axial_trees,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                  <span class="keywordtype">int</span> num_radial_trees,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                  <span class="keywordtype">int</span> with_occ_geometry);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:83</div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="t8__cmesh__occ_8hxx.html#aec932348cf92b214da89cb8d46aee4bf">t8_cmesh_new_hollow_cylinder</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_tangential_trees, <span class="keywordtype">int</span> num_axial_trees, <span class="keywordtype">int</span> num_radial_trees,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                              <span class="keywordtype">int</span> with_occ_geometry);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
 <div class="ttc" id="at8__cmesh__occ_8hxx_html_aec932348cf92b214da89cb8d46aee4bf"><div class="ttname"><a href="t8__cmesh__occ_8hxx.html#aec932348cf92b214da89cb8d46aee4bf">t8_cmesh_new_hollow_cylinder</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_new_hollow_cylinder(sc_MPI_Comm comm, int num_tangential_trees, int num_axial_trees, int num_radial_trees, int with_occ_geometry)</div><div class="ttdoc">Construct a hollow cylinder out of hexes with an inner diameter of 0.5, an outer diameter of 1 and a ...</div><div class="ttdef"><b>Definition:</b> t8_cmesh_occ.cxx:50</div></div>
 </div><!-- fragment --></div><!-- contents -->

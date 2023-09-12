@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -1072,8 +1079,8 @@ The element must not exist in the forest, but an ancestor of its first descendan
 <p>Return the eclass scheme of a given element class associated to a forest. </p>
 <p>This function does not check whether the given forest is committed, use with caution and only if you are sure that the eclass_scheme was set. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">forest.</td><td>A nearly committed forest. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eclass.</td><td>An element class. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>A nearly committed forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eclass</td><td>An element class. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1117,7 +1124,7 @@ The element must not exist in the forest, but an ancestor of its first descendan
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the elemen with index <em>elem_in_tree</em> of the element array of <em>tree</em>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the element with index <em>elem_in_tree</em> of the element array of <em>tree</em>. </dd></dl>
 
 </div>
 </div>
@@ -1222,7 +1229,7 @@ The element must not exist in the forest, but an ancestor of its first descendan
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of family or zero, if <em>elements</em> does not contain a family. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The check works for complete and incomplete forests. In the case of complete forests, the scheme based element funktion </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The check works for complete and incomplete forests. In the case of complete forests, the scheme based element function </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__element__c__interface_8h.html#a32e2876567a049c380ea08ab6d03f96a" title="Query whether a given set of elements is a family or not.">t8_element_is_family</a> is recommended. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the element with id <em>el_considered</em> is not the first family member, return 0. Therefore, if </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>is x &gt; 0, the first x elements in <em>elements</em> form a family. </dd></dl>

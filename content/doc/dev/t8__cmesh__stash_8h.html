@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -95,7 +102,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attribute information that is stored before a cmesh is committed.  <a href="structt8__stash__attribute.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__stash.html">t8_stash</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stash data structure is used to store information about the cmesh before it is commited.  <a href="structt8__stash.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stash data structure is used to store information about the cmesh before it is committed.  <a href="structt8__stash.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -115,7 +122,7 @@ typedef struct <a class="el" href="structt8__stash__joinface.html">t8_stash_join
 <tr class="memdesc:a708282f12534175ec17d01ff29275460"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attribute information that is stored before a cmesh is committed.  <a href="t8__cmesh__stash_8h.html#a708282f12534175ec17d01ff29275460">More...</a><br /></td></tr>
 <tr class="separator:a708282f12534175ec17d01ff29275460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff171cfff37f99bd1f51b0bfee1fedf9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__stash.html">t8_stash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#aff171cfff37f99bd1f51b0bfee1fedf9">t8_stash_struct_t</a></td></tr>
-<tr class="memdesc:aff171cfff37f99bd1f51b0bfee1fedf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stash data structure is used to store information about the cmesh before it is commited.  <a href="t8__cmesh__stash_8h.html#aff171cfff37f99bd1f51b0bfee1fedf9">More...</a><br /></td></tr>
+<tr class="memdesc:aff171cfff37f99bd1f51b0bfee1fedf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stash data structure is used to store information about the cmesh before it is committed.  <a href="t8__cmesh__stash_8h.html#aff171cfff37f99bd1f51b0bfee1fedf9">More...</a><br /></td></tr>
 <tr class="separator:aff171cfff37f99bd1f51b0bfee1fedf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -204,8 +211,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The stash data structure is used to store information about the cmesh before it is commited. </p>
-<p>In particular we store the eclasses of the trees, the face-connections and the tree attributes. Using the stash structure allows us to have a very flexible interface. When constructing a new mesh, the user can specify all these mesh entities in arbitrary order. As soon as the cmesh is commited the information is copied from the stash to the cmesh in an order mannered. </p>
+<p>The stash data structure is used to store information about the cmesh before it is committed. </p>
+<p>In particular we store the eclasses of the trees, the face-connections and the tree attributes. Using the stash structure allows us to have a very flexible interface. When constructing a new mesh, the user can specify all these mesh entities in arbitrary order. As soon as the cmesh is committed the information is copied from the stash to the cmesh in an order mannered. </p>
 
 </div>
 </div>
@@ -498,7 +505,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">stash</td><td>On root the stash that is to be broadcasted. On the other process an initialized stash. Its entries will get overwritten by the entries in the root stash. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">root</td><td>The mpirank of the root process. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The mpi communicator which is used fpr broadcast. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The mpi communicator which is used for broadcast. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">elem_counts</td><td>An array with three entries giving the number of elements in the classes, joinfaces and attributes arrays. </td></tr>
   </table>
   </dd>

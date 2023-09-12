@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -116,17 +123,17 @@ Macros</h2></td></tr>
 <tr class="memdesc:a763515a35bae85ecf9f47b266924d131"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the root pyramid in integer coordinates. <br /></td></tr>
 <tr class="separator:a763515a35bae85ecf9f47b266924d131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5b66d55e8dfb7bc396b380794c0fdd"><td class="memItemLeft" align="right" valign="top"><a id="aee5b66d55e8dfb7bc396b380794c0fdd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#aee5b66d55e8dfb7bc396b380794c0fdd">T8_DPYRAMID_LEN</a>(l)&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a>- (l)))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#aee5b66d55e8dfb7bc396b380794c0fdd">T8_DPYRAMID_LEN</a>(l)&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a> - (l)))</td></tr>
 <tr class="memdesc:aee5b66d55e8dfb7bc396b380794c0fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of a pyramid at a given level in integer coordinates. <br /></td></tr>
 <tr class="separator:aee5b66d55e8dfb7bc396b380794c0fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982c391d4a2b15e0d7a4b5c98a084e29"><td class="memItemLeft" align="right" valign="top"><a id="a982c391d4a2b15e0d7a4b5c98a084e29"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a982c391d4a2b15e0d7a4b5c98a084e29">T8_DPYRAMID_NUM_TYPES</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:a982c391d4a2b15e0d7a4b5c98a084e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of types of a pyramid. <br /></td></tr>
 <tr class="separator:a982c391d4a2b15e0d7a4b5c98a084e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a4d2f5836986f3e850611459e5b74d"><td class="memItemLeft" align="right" valign="top"><a id="ad9a4d2f5836986f3e850611459e5b74d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#ad9a4d2f5836986f3e850611459e5b74d">T8_DPYRAMID_ROOT_TPYE</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:ad9a4d2f5836986f3e850611459e5b74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the root pyramid. <br /></td></tr>
-<tr class="separator:ad9a4d2f5836986f3e850611459e5b74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5881a58d65cb1dac4ce3edc484152a"><td class="memItemLeft" align="right" valign="top"><a id="a4a5881a58d65cb1dac4ce3edc484152a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a4a5881a58d65cb1dac4ce3edc484152a">T8_DPYRAMID_ROOT_TYPE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:a4a5881a58d65cb1dac4ce3edc484152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the root pyramid. <br /></td></tr>
+<tr class="separator:a4a5881a58d65cb1dac4ce3edc484152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1ca12e421afa8121c4ae7d720c4864"><td class="memItemLeft" align="right" valign="top"><a id="a2f1ca12e421afa8121c4ae7d720c4864"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a2f1ca12e421afa8121c4ae7d720c4864">T8_DPYRAMID_FIRST_TYPE</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:a2f1ca12e421afa8121c4ae7d720c4864"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first type of pyramids in the shape of a pyramid. <br /></td></tr>
@@ -135,7 +142,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a4e70b122877b1262289e19dfc2445c5c">T8_DPYRAMID_SECOND_TYPE</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memdesc:a4e70b122877b1262289e19dfc2445c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second type of pyramids in the shape of a pyramid. <br /></td></tr>
 <tr class="separator:a4e70b122877b1262289e19dfc2445c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10df8d071245ff814b2f862a5988d6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a10df8d071245ff814b2f862a5988d6e3">T8_DTRI_ROOT_BY_DPYRAMID_ROOT</a>&#160;&#160;&#160;(1 &lt;&lt;(<a class="el" href="t8__dtri_8h.html#a462b22e53ad54f3fdb0839b2dc567438">T8_DTRI_MAXLEVEL</a> - <a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a>))</td></tr>
+<tr class="memitem:a10df8d071245ff814b2f862a5988d6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid_8h.html#a10df8d071245ff814b2f862a5988d6e3">T8_DTRI_ROOT_BY_DPYRAMID_ROOT</a>&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="t8__dtri_8h.html#a462b22e53ad54f3fdb0839b2dc567438">T8_DTRI_MAXLEVEL</a> - <a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a>))</td></tr>
 <tr class="memdesc:a10df8d071245ff814b2f862a5988d6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of a triangle divided by the length of a pyramid.  <a href="t8__dpyramid_8h.html#a10df8d071245ff814b2f862a5988d6e3">More...</a><br /></td></tr>
 <tr class="separator:a10df8d071245ff814b2f862a5988d6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -162,7 +169,7 @@ typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define T8_DTRI_ROOT_BY_DPYRAMID_ROOT&#160;&#160;&#160;(1 &lt;&lt;(<a class="el" href="t8__dtri_8h.html#a462b22e53ad54f3fdb0839b2dc567438">T8_DTRI_MAXLEVEL</a> - <a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a>))</td>
+          <td class="memname">#define T8_DTRI_ROOT_BY_DPYRAMID_ROOT&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="t8__dtri_8h.html#a462b22e53ad54f3fdb0839b2dc567438">T8_DTRI_MAXLEVEL</a> - <a class="el" href="t8__dpyramid_8h.html#ad8de898e7567fc79fcce7517a5db2942">T8_DPYRAMID_MAXLEVEL</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -140,9 +147,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#ad15caeb0c93b80c9410b1add4cb2e6cb">t8_dvertex_vertex_ref_coords</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, int vertex, double coords[])</td></tr>
 <tr class="memdesc:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a vertex (always 0) inside the [0,1]^0 reference space.  <a href="t8__dvertex__bits_8h.html#ad15caeb0c93b80c9410b1add4cb2e6cb">More...</a><br /></td></tr>
 <tr class="separator:ad15caeb0c93b80c9410b1add4cb2e6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c56fc2cc05d8dc5507ba5616d95481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#a17c56fc2cc05d8dc5507ba5616d95481">t8_dvertex_compute_reference_coords</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, const double *ref_coords, double *out_coords)</td></tr>
-<tr class="memdesc:a17c56fc2cc05d8dc5507ba5616d95481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a refrence coordinate (always 0) inside the [0,1]^0 reference space.  <a href="t8__dvertex__bits_8h.html#a17c56fc2cc05d8dc5507ba5616d95481">More...</a><br /></td></tr>
-<tr class="separator:a17c56fc2cc05d8dc5507ba5616d95481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190844cbd25d71f76ca8edbad52a84cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#a190844cbd25d71f76ca8edbad52a84cc">t8_dvertex_compute_reference_coords</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a190844cbd25d71f76ca8edbad52a84cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of a vertex element to points in the reference space of the tree (level 0) embedded in \( [0,1]^1 \).  <a href="t8__dvertex__bits_8h.html#a190844cbd25d71f76ca8edbad52a84cc">More...</a><br /></td></tr>
+<tr class="separator:a190844cbd25d71f76ca8edbad52a84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53985baca874fef7d0f2d01a372b1c40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dvertex__bits_8h.html#a53985baca874fef7d0f2d01a372b1c40">t8_dvertex_linear_id</a> (const <a class="el" href="structt8__dvertex.html">t8_dvertex_t</a> *elem, int level)</td></tr>
 <tr class="memdesc:a53985baca874fef7d0f2d01a372b1c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the linear position of a vertex in an uniform grid.  <a href="t8__dvertex__bits_8h.html#a53985baca874fef7d0f2d01a372b1c40">More...</a><br /></td></tr>
 <tr class="separator:a53985baca874fef7d0f2d01a372b1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,12 +333,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compare two elements. </p>
-<p>returns negativ if l1 &lt; l2, zero if l1 equals l2 and positiv if l1 &gt; l2. If l2 is a copy of l1 then the elements are equal. </p>
+<p>returns negative if l1 &lt; l2, zero if l1 equals l2 and positive if l1 &gt; l2. If l2 is a copy of l1 then the elements are equal. </p>
 
 </div>
 </div>
-<a id="a17c56fc2cc05d8dc5507ba5616d95481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c56fc2cc05d8dc5507ba5616d95481">&#9670;&nbsp;</a></span>t8_dvertex_compute_reference_coords()</h2>
+<a id="a190844cbd25d71f76ca8edbad52a84cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190844cbd25d71f76ca8edbad52a84cc">&#9670;&nbsp;</a></span>t8_dvertex_compute_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,6 +358,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
@@ -362,12 +375,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the coordinates of a refrence coordinate (always 0) inside the [0,1]^0 reference space. </p>
+<p>Convert points in the reference space of a vertex element to points in the reference space of the tree (level 0) embedded in \( [0,1]^1 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Vertex whose vertex is computed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinate inside the vertex (must be 0). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The coordinates of the computed vertex, must have one entry (will be set to 0). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input vertex. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates in the vertex (<em>num_coords</em> times \( [0,1]^1 \)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of coordinates to evaluate </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of <em>num_coords</em> x 1 x double that will be filled with the reference coordinates of the points on the vertex (will be set to 0). </td></tr>
   </table>
   </dd>
 </dl>
@@ -937,7 +951,7 @@ Functions</h2></td></tr>
 <p>Given a vertex e that is a subface of f in one of the trees and given the orientation of the tree connection, construct the face vertex of the respective tree neighbor that logically coincides with e but lies in the coordinate system of the neighbor tree. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The face element. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face elment <em>elem1</em> with respective to the coordinate system of the other tree. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face element <em>elem1</em> with respect to the coordinate system of the other tree. </td></tr>
   </table>
   </dd>
 </dl>

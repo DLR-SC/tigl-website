@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -123,7 +130,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_init<
 <tr class="memdesc:a3f4bd7c847b19b8478bd015a4cf88728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference count of a ghost structure.  <a href="t8__forest__ghost_8h.html#a3f4bd7c847b19b8478bd015a4cf88728">More...</a><br /></td></tr>
 <tr class="separator:a3f4bd7c847b19b8478bd015a4cf88728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf42cdbc5d93164bc6ce8d60ff61d632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__ghost_8h.html#abf42cdbc5d93164bc6ce8d60ff61d632">t8_forest_ghost_unref</a> (<a class="el" href="structt8__forest__ghost.html">t8_forest_ghost_t</a> *pghost)</td></tr>
-<tr class="memdesc:abf42cdbc5d93164bc6ce8d60ff61d632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descrease the reference count of a ghost structure.  <a href="t8__forest__ghost_8h.html#abf42cdbc5d93164bc6ce8d60ff61d632">More...</a><br /></td></tr>
+<tr class="memdesc:abf42cdbc5d93164bc6ce8d60ff61d632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count of a ghost structure.  <a href="t8__forest__ghost_8h.html#abf42cdbc5d93164bc6ce8d60ff61d632">More...</a><br /></td></tr>
 <tr class="separator:abf42cdbc5d93164bc6ce8d60ff61d632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa52506838a745c37eca78bb51e9ae576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__ghost_8h.html#aa52506838a745c37eca78bb51e9ae576">t8_forest_ghost_destroy</a> (<a class="el" href="structt8__forest__ghost.html">t8_forest_ghost_t</a> *pghost)</td></tr>
 <tr class="memdesc:aa52506838a745c37eca78bb51e9ae576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that a ghost structure has only one reference left and destroy it.  <a href="t8__forest__ghost_8h.html#aa52506838a745c37eca78bb51e9ae576">More...</a><br /></td></tr>
@@ -532,7 +539,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_creat
       </table>
 </div><div class="memdoc">
 
-<p>Descrease the reference count of a ghost structure. </p>
+<p>Decrease the reference count of a ghost structure. </p>
 <p>If the counter reaches zero, the ghost structure is destroyed. See also <a class="el" href="t8__forest__ghost_8h.html#aa52506838a745c37eca78bb51e9ae576">t8_forest_ghost_destroy</a>, which is to be preferred when it is known that the last reference to a cmesh is deleted. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">pghost</td><td>On input, the ghost structure pointed to must exist with positive reference count. If the reference count reaches zero, the ghost structure is destroyed and this pointer is set to NULL. Otherwise, the pointer is not changed. </td></tr>

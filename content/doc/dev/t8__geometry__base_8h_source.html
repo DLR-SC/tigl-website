@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -101,13 +108,15 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__geometry__base_8h.html#a304810e4515793ede0418107143f499c">t8_geom_get_dimension</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geom);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>         *<a class="code" href="t8__geometry__base_8h.html#a3ee93ddf0a888f533ade5f10b4679c3c">t8_geom_get_name</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geom);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="t8__geometry__base_8h.html#a304810e4515793ede0418107143f499c">t8_geom_get_dimension</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geom);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="t8__geometry__base_8h.html#a3ee93ddf0a888f533ade5f10b4679c3c">t8_geom_get_name</a> (<span class="keyword">const</span> <a class="code" href="structt8__geometry.html">t8_geometry_c</a> *geom);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_BASE_H! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_BASE_H! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__geometry_html"><div class="ttname"><a href="structt8__geometry.html">t8_geometry</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:37</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8__geometry_8h_html"><div class="ttname"><a href="t8__geometry_8h.html">t8_geometry.h</a></div><div class="ttdoc">Typedef for the t8_geometry class in order to be usable as a pointer from .c files.</div></div>

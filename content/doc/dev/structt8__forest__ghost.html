@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -88,20 +95,21 @@ Data Fields</h2></td></tr>
 <a class="el" href="t8__forest__general_8h.html#a66c8c7b66309558f04832866f27ba6e7">t8_ghost_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a75d31c9d480f533e09ef3aa6ef4b3b51">ghost_type</a></td></tr>
 <tr class="memdesc:a75d31c9d480f533e09ef3aa6ef4b3b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes which neighbors are considered ghosts. <br /></td></tr>
 <tr class="separator:a75d31c9d480f533e09ef3aa6ef4b3b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac642ad1829daa8271e5df218b36bc547"><td class="memItemLeft" align="right" valign="top"><a id="ac642ad1829daa8271e5df218b36bc547"></a>
-sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><b>ghost_trees</b></td></tr>
+<tr class="memitem:ac642ad1829daa8271e5df218b36bc547"><td class="memItemLeft" align="right" valign="top">sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#ac642ad1829daa8271e5df218b36bc547">ghost_trees</a></td></tr>
+<tr class="memdesc:ac642ad1829daa8271e5df218b36bc547"><td class="mdescLeft">&#160;</td><td class="mdescRight">ghost tree data: global_id.  <a href="structt8__forest__ghost.html#ac642ad1829daa8271e5df218b36bc547">More...</a><br /></td></tr>
 <tr class="separator:ac642ad1829daa8271e5df218b36bc547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be04f411b5114c74e493a376becf40c"><td class="memItemLeft" align="right" valign="top"><a id="a4be04f411b5114c74e493a376becf40c"></a>
-sc_hash_t *&#160;</td><td class="memItemRight" valign="bottom"><b>global_tree_to_ghost_tree</b></td></tr>
+<tr class="memitem:a4be04f411b5114c74e493a376becf40c"><td class="memItemLeft" align="right" valign="top">sc_hash_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a4be04f411b5114c74e493a376becf40c">global_tree_to_ghost_tree</a></td></tr>
+<tr class="memdesc:a4be04f411b5114c74e493a376becf40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexes into ghost_trees.  <a href="structt8__forest__ghost.html#a4be04f411b5114c74e493a376becf40c">More...</a><br /></td></tr>
 <tr class="separator:a4be04f411b5114c74e493a376becf40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79731fd1dd71c3a54f6c184d0eba46b2"><td class="memItemLeft" align="right" valign="top"><a id="a79731fd1dd71c3a54f6c184d0eba46b2"></a>
-sc_hash_t *&#160;</td><td class="memItemRight" valign="bottom"><b>process_offsets</b></td></tr>
+sc_hash_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a79731fd1dd71c3a54f6c184d0eba46b2">process_offsets</a></td></tr>
+<tr class="memdesc:a79731fd1dd71c3a54f6c184d0eba46b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process, return the first ghost tree and within it the first element of that process. <br /></td></tr>
 <tr class="separator:a79731fd1dd71c3a54f6c184d0eba46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60cb7853942f6236643cc1beb664c8b6"><td class="memItemLeft" align="right" valign="top"><a id="a60cb7853942f6236643cc1beb664c8b6"></a>
-sc_hash_array_t *&#160;</td><td class="memItemRight" valign="bottom"><b>remote_ghosts</b></td></tr>
+<tr class="memitem:a60cb7853942f6236643cc1beb664c8b6"><td class="memItemLeft" align="right" valign="top">sc_hash_array_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a60cb7853942f6236643cc1beb664c8b6">remote_ghosts</a></td></tr>
+<tr class="memdesc:a60cb7853942f6236643cc1beb664c8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of local trees that have ghost elements for another process.  <a href="structt8__forest__ghost.html#a60cb7853942f6236643cc1beb664c8b6">More...</a><br /></td></tr>
 <tr class="separator:a60cb7853942f6236643cc1beb664c8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4fdace2819dcf89dcc50f25a11d5754"><td class="memItemLeft" align="right" valign="top"><a id="ab4fdace2819dcf89dcc50f25a11d5754"></a>
-sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><b>remote_processes</b></td></tr>
+<tr class="memitem:ab4fdace2819dcf89dcc50f25a11d5754"><td class="memItemLeft" align="right" valign="top">sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#ab4fdace2819dcf89dcc50f25a11d5754">remote_processes</a></td></tr>
+<tr class="memdesc:ab4fdace2819dcf89dcc50f25a11d5754"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ranks of the processes for which local elements are ghost.  <a href="structt8__forest__ghost.html#ab4fdace2819dcf89dcc50f25a11d5754">More...</a><br /></td></tr>
 <tr class="separator:ab4fdace2819dcf89dcc50f25a11d5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfd6cbdef6a232ba2f9e14e25495749"><td class="memItemLeft" align="right" valign="top"><a id="a1bfd6cbdef6a232ba2f9e14e25495749"></a>
 sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><b>glo_tree_mempool</b></td></tr>
@@ -110,6 +118,75 @@ sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><b>glo_tree_me
 sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><b>proc_offset_mempool</b></td></tr>
 <tr class="separator:a4186503c29bc0884020c0f5a0116289d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ac642ad1829daa8271e5df218b36bc547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac642ad1829daa8271e5df218b36bc547">&#9670;&nbsp;</a></span>ghost_trees</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sc_array_t* t8_forest_ghost::ghost_trees</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ghost tree data: global_id. </p>
+<p>eclass. elements. In linear id order </p>
+
+</div>
+</div>
+<a id="a4be04f411b5114c74e493a376becf40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be04f411b5114c74e493a376becf40c">&#9670;&nbsp;</a></span>global_tree_to_ghost_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sc_hash_t* t8_forest_ghost::global_tree_to_ghost_tree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indexes into ghost_trees. </p>
+<p>Given a global tree id I give the index i such that the tree is in ghost_trees[i] </p>
+
+</div>
+</div>
+<a id="a60cb7853942f6236643cc1beb664c8b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cb7853942f6236643cc1beb664c8b6">&#9670;&nbsp;</a></span>remote_ghosts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sc_hash_array_t* t8_forest_ghost::remote_ghosts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>array of local trees that have ghost elements for another process. </p>
+<p>for each tree an array of t8_element_t * of the local ghost elements. Also an array of t8_locidx_t of the local indices of these elements within the tree. It is a hash table, hashed with the rank of a remote process. Sorted within each process by linear id. </p>
+
+</div>
+</div>
+<a id="ab4fdace2819dcf89dcc50f25a11d5754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fdace2819dcf89dcc50f25a11d5754">&#9670;&nbsp;</a></span>remote_processes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sc_array_t* t8_forest_ghost::remote_processes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The ranks of the processes for which local elements are ghost. </p>
+<p>Array of int's. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/t8_forest/<a class="el" href="t8__forest__types_8h_source.html">t8_forest_types.h</a></li>
 </ul>

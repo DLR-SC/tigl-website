@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -90,30 +97,29 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a763515a35bae85ecf9f47b266924d131">   28</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_ROOT_LEN (1 &lt;&lt; (T8_DPYRAMID_MAXLEVEL))</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#aee5b66d55e8dfb7bc396b380794c0fdd">   31</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_LEN(l) (1 &lt;&lt; (T8_DPYRAMID_MAXLEVEL- (l)))</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#aee5b66d55e8dfb7bc396b380794c0fdd">   31</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_LEN(l) (1 &lt;&lt; (T8_DPYRAMID_MAXLEVEL - (l)))</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a982c391d4a2b15e0d7a4b5c98a084e29">   34</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_NUM_TYPES 8</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#ad9a4d2f5836986f3e850611459e5b74d">   37</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_ROOT_TPYE 6</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a4a5881a58d65cb1dac4ce3edc484152a">   37</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_ROOT_TYPE 6</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a2f1ca12e421afa8121c4ae7d720c4864">   40</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_FIRST_TYPE 6</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a4e70b122877b1262289e19dfc2445c5c">   43</a></span>&#160;<span class="preprocessor">#define T8_DPYRAMID_SECOND_TYPE 7</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a10df8d071245ff814b2f862a5988d6e3">   47</a></span>&#160;<span class="preprocessor">#define T8_DTRI_ROOT_BY_DPYRAMID_ROOT (1 &lt;&lt;(T8_DTRI_MAXLEVEL - T8_DPYRAMID_MAXLEVEL))</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a10df8d071245ff814b2f862a5988d6e3">   47</a></span>&#160;<span class="preprocessor">#define T8_DTRI_ROOT_BY_DPYRAMID_ROOT (1 &lt;&lt; (T8_DTRI_MAXLEVEL - T8_DPYRAMID_MAXLEVEL))</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a2d59658b710e740b1da3ff880ac9896b">   50</a></span>&#160;<span class="keyword">typedef</span> int32_t     <a class="code" href="t8__dpyramid_8h.html#a2d59658b710e740b1da3ff880ac9896b">t8_dpyramid_coord_t</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#a2d59658b710e740b1da3ff880ac9896b">   50</a></span>&#160;<span class="keyword">typedef</span> int32_t <a class="code" href="t8__dpyramid_8h.html#a2d59658b710e740b1da3ff880ac9896b">t8_dpyramid_coord_t</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">   56</a></span>&#160;<span class="keyword">typedef</span> int8_t <a class="code" href="t8__dpyramid_8h.html#aa2c1284d03da8a90691ecf8190c3f275">t8_dpyramid_type_t</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structt8__dpyramid.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dpyramid.html">t8_dpyramid</a></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="structt8__dtet.html">t8_dtet_t</a>           pyramid;  <span class="comment">/* Coordinates, level and type */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t              switch_shape_at_level;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">   69</a></span>&#160;<a class="code" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="structt8__dtet.html">t8_dtet_t</a> pyramid; <span class="comment">/* Coordinates, level and type */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t switch_shape_at_level;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">   68</a></span>&#160;} <a class="code" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPYRAMID_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dpyramid_html"><div class="ttname"><a href="structt8__dpyramid.html">t8_dpyramid</a></div><div class="ttdoc">This data type stores a pyramid.</div><div class="ttdef"><b>Definition:</b> t8_dpyramid.h:65</div></div>
 <div class="ttc" id="astructt8__dtet_html"><div class="ttname"><a href="structt8__dtet.html">t8_dtet</a></div><div class="ttdoc">This data type stores a tetrahedron.</div><div class="ttdef"><b>Definition:</b> t8_dtet.h:71</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>

@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -118,16 +125,15 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="t8__dprism_8h.html#a5b18f39e31c9dd561d2029894211121d">   62</a></span>&#160;<span class="preprocessor">#define T8_DPRISM_ROOT_BY_DLINE_ROOT (1 &lt;&lt; (T8_DLINE_MAXLEVEL - T8_DPRISM_MAXLEVEL))</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">typedef</span> int32_t     t8_dprism_coord_t;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">typedef</span> int32_t t8_dprism_coord_t;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structt8__dprism.html">   66</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dprism.html">t8_dprism</a></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="structt8__dline.html">t8_dline_t</a>          line;     <span class="comment">/*z coordinate + level */</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="structt8__dtri.html">t8_dtri_t</a>           tri;      <span class="comment">/*x,y coordinate + level + type */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="structt8__dprism.html">t8_dprism_t</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPRISM_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="structt8__dline.html">t8_dline_t</a> line; <span class="comment">/*z coordinate + level */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="structt8__dtri.html">t8_dtri_t</a> tri;   <span class="comment">/*x,y coordinate + level + type */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <a class="code" href="structt8__dprism.html">t8_dprism_t</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DPRISM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dline_html"><div class="ttname"><a href="structt8__dline.html">t8_dline</a></div><div class="ttdef"><b>Definition:</b> t8_dline.h:53</div></div>
 <div class="ttc" id="astructt8__dprism_html"><div class="ttname"><a href="structt8__dprism.html">t8_dprism</a></div><div class="ttdef"><b>Definition:</b> t8_dprism.h:67</div></div>
 <div class="ttc" id="astructt8__dtri_html"><div class="ttname"><a href="structt8__dtri.html">t8_dtri</a></div><div class="ttdef"><b>Definition:</b> t8_dtri.h:66</div></div>

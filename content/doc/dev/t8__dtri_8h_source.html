@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -118,21 +125,20 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="t8__dtri_8h.html#a28a8f41f6a2a270974eeaf0886d69c55">   60</a></span>&#160;<span class="preprocessor">#define T8_DLINE_ROOT_BY_DTRI_ROOT (1 &lt;&lt; (T8_DLINE_MAXLEVEL - T8_DTRI_MAXLEVEL))</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> int8_t      t8_dtri_type_t;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> int32_t     t8_dtri_coord_t;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> int8_t t8_dtri_type_t;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> int32_t t8_dtri_coord_t;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structt8__dtri.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dtri.html">t8_dtri</a></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t              level;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  t8_dtri_type_t      type;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  t8_dtri_coord_t     x, y;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  t8_dtri_coord_t     n;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="structt8__dtri.html">t8_dtri_t</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t level;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  t8_dtri_type_t type;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  t8_dtri_coord_t x, y;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  t8_dtri_coord_t n;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="structt8__dtri.html">t8_dtri_t</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dtri_html"><div class="ttname"><a href="structt8__dtri.html">t8_dtri</a></div><div class="ttdef"><b>Definition:</b> t8_dtri.h:66</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 </div><!-- fragment --></div><!-- contents -->

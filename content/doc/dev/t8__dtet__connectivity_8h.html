@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -139,7 +146,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a0cbdee0a97cc2dc662eb0bd4cfff1616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the indices of the corner of each face of a tetrahedron.  <a href="t8__dtet__connectivity_8h.html#a0cbdee0a97cc2dc662eb0bd4cfff1616">More...</a><br /></td></tr>
 <tr class="separator:a0cbdee0a97cc2dc662eb0bd4cfff1616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba051ffedf905c77829aa3b1f1fd8fd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtet__connectivity_8h.html#afba051ffedf905c77829aa3b1f1fd8fd">t8_dtet_parent_type_type_to_face</a> [6][6]</td></tr>
-<tr class="memdesc:afba051ffedf905c77829aa3b1f1fd8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each combination parent_type, type with parent_type != type, provide the face number of the face of a tet that lies whithin a face of the parent.  <a href="t8__dtet__connectivity_8h.html#afba051ffedf905c77829aa3b1f1fd8fd">More...</a><br /></td></tr>
+<tr class="memdesc:afba051ffedf905c77829aa3b1f1fd8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each combination parent_type, type with parent_type != type, provide the face number of the face of a tet that lies within a face of the parent.  <a href="t8__dtet__connectivity_8h.html#afba051ffedf905c77829aa3b1f1fd8fd">More...</a><br /></td></tr>
 <tr class="separator:afba051ffedf905c77829aa3b1f1fd8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -240,7 +247,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table>
 </div><div class="memdoc">
 
-<p>For each combination parent_type, type with parent_type != type, provide the face number of the face of a tet that lies whithin a face of the parent. </p>
+<p>For each combination parent_type, type with parent_type != type, provide the face number of the face of a tet that lies within a face of the parent. </p>
 <p>For each combination there is exactly one of these faces. If parent_type = type then there are multiple faces and thus this case is not covered here. If face is 0 or 3, then the corresponding parent face is also 0 resp. 3. If face is 1 or 2, then the corresponding parent face is 2 resp. 1. Some combination such as parent_type = 0 type = 3 (in general the pair (i, i+3)) do not correspond to any face relations since no tet of the given type has a parent of the parent type. In these cases, the array stores -1. We also store -1 for the parent_type = type combination. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__dtet__bits_8h.html#aebb73e125afd86583954a6839c2dc0c9" title="Given a face of an tet return the face number of the parent of the tet that matches the tet&#39;s face.">t8_dtet_face_parent_face</a> </dd></dl>
 
 </div>

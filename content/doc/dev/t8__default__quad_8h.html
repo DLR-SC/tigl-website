@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -89,21 +96,20 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a>(quad)&#160;&#160;&#160;((int) (quad)-&gt;pad8)</td></tr>
 <tr class="memdesc:ac0799de740f830cdcf0e7ac96d9f89e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the toplevel dimension. <br /></td></tr>
 <tr class="separator:ac0799de740f830cdcf0e7ac96d9f89e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa4c018fe3da9fdc4b16a462476cb55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a8fa4c018fe3da9fdc4b16a462476cb55">T8_QUAD_GET_TNORMAL</a>(quad)</td></tr>
+<tr class="memitem:a8fa4c018fe3da9fdc4b16a462476cb55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a8fa4c018fe3da9fdc4b16a462476cb55">T8_QUAD_GET_TNORMAL</a>(quad)&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="el" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a> (quad) == 3), ((int) (quad)-&gt;pad16))</td></tr>
 <tr class="memdesc:a8fa4c018fe3da9fdc4b16a462476cb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the direction of the third dimension.  <a href="t8__default__quad_8h.html#a8fa4c018fe3da9fdc4b16a462476cb55">More...</a><br /></td></tr>
 <tr class="separator:a8fa4c018fe3da9fdc4b16a462476cb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5377b19cd687db6efc38ef5e83cf4c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a5377b19cd687db6efc38ef5e83cf4c04">T8_QUAD_GET_TCOORD</a>(quad)</td></tr>
+<tr class="memitem:a5377b19cd687db6efc38ef5e83cf4c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a5377b19cd687db6efc38ef5e83cf4c04">T8_QUAD_GET_TCOORD</a>(quad)&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="el" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a> (quad) == 3), ((int) (quad)-&gt;p.user_long))</td></tr>
 <tr class="memdesc:a5377b19cd687db6efc38ef5e83cf4c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the coordinate in the third dimension.  <a href="t8__default__quad_8h.html#a5377b19cd687db6efc38ef5e83cf4c04">More...</a><br /></td></tr>
 <tr class="separator:a5377b19cd687db6efc38ef5e83cf4c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca37524bcd4209be1f9167bdbd7bab79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#aca37524bcd4209be1f9167bdbd7bab79">T8_QUAD_SET_TDIM</a>(quad,  dim)</td></tr>
 <tr class="memdesc:aca37524bcd4209be1f9167bdbd7bab79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the toplevel dimension of a quadrilateral.  <a href="t8__default__quad_8h.html#aca37524bcd4209be1f9167bdbd7bab79">More...</a><br /></td></tr>
 <tr class="separator:aca37524bcd4209be1f9167bdbd7bab79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd18fe110768cde07ee46840243732a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#abd18fe110768cde07ee46840243732a8">T8_QUAD_SET_TNORMAL</a>(quad,  normal)</td></tr>
-<tr class="memdesc:abd18fe110768cde07ee46840243732a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the direction of the third demension.  <a href="t8__default__quad_8h.html#abd18fe110768cde07ee46840243732a8">More...</a><br /></td></tr>
+<tr class="memdesc:abd18fe110768cde07ee46840243732a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the direction of the third dimension.  <a href="t8__default__quad_8h.html#abd18fe110768cde07ee46840243732a8">More...</a><br /></td></tr>
 <tr class="separator:abd18fe110768cde07ee46840243732a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5108015be515944d6cc3dd3409bb3d00"><td class="memItemLeft" align="right" valign="top"><a id="a5108015be515944d6cc3dd3409bb3d00"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a5108015be515944d6cc3dd3409bb3d00">T8_QUAD_SET_TCOORD</a>(quad,  coord)&#160;&#160;&#160;  do { (quad)-&gt;p.user_long = (long) (coord); } while (0)</td></tr>
-<tr class="memdesc:a5108015be515944d6cc3dd3409bb3d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coordinate in the third dimension. <br /></td></tr>
+<tr class="memitem:a5108015be515944d6cc3dd3409bb3d00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__quad_8h.html#a5108015be515944d6cc3dd3409bb3d00">T8_QUAD_SET_TCOORD</a>(quad,  coord)</td></tr>
+<tr class="memdesc:a5108015be515944d6cc3dd3409bb3d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coordinate in the third dimension.  <a href="t8__default__quad_8h.html#a5108015be515944d6cc3dd3409bb3d00">More...</a><br /></td></tr>
 <tr class="separator:a5108015be515944d6cc3dd3409bb3d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -134,15 +140,11 @@ t8_eclass_scheme_t *&#160;</td><td class="memItemRight" valign="bottom"><a class
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">quad</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="el" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a> (quad) == 3), ((int) (quad)-&gt;p.user_long))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  ( <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="code" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a>(quad) == 3),                    \</div>
-<div class="line">    ((int) (quad)-&gt;p.user_long) )</div>
-<div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:73</div></div>
-<div class="ttc" id="at8__default__quad_8h_html_ac0799de740f830cdcf0e7ac96d9f89e9"><div class="ttname"><a href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a></div><div class="ttdeci">#define T8_QUAD_GET_TDIM(quad)</div><div class="ttdoc">Return the toplevel dimension.</div><div class="ttdef"><b>Definition:</b> t8_default_quad.h:44</div></div>
-</div><!-- fragment -->
+
 <p>Return the coordinate in the third dimension. </p>
 <p>This is only valid to call if the toplevel dimension is three. </p>
 
@@ -159,15 +161,46 @@ t8_eclass_scheme_t *&#160;</td><td class="memItemRight" valign="bottom"><a class
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">quad</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;(<a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="el" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a> (quad) == 3), ((int) (quad)-&gt;pad16))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  ( <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<a class="code" href="t8__default__quad_8h.html#ac0799de740f830cdcf0e7ac96d9f89e9">T8_QUAD_GET_TDIM</a>(quad) == 3),                    \</div>
-<div class="line">    ((int) (quad)-&gt;pad16) )</div>
-</div><!-- fragment -->
+
 <p>Return the direction of the third dimension. </p>
 <p>This is only valid to call if the toplevel dimension is three. </p>
+
+</div>
+</div>
+<a id="a5108015be515944d6cc3dd3409bb3d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5108015be515944d6cc3dd3409bb3d00">&#9670;&nbsp;</a></span>T8_QUAD_SET_TCOORD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T8_QUAD_SET_TCOORD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">quad, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">coord&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { \</div>
+<div class="line">    (quad)-&gt;p.user_long = (<span class="keywordtype">long</span>) (coord); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+<p>Set the coordinate in the third dimension. </p>
 
 </div>
 </div>
@@ -196,8 +229,10 @@ t8_eclass_scheme_t *&#160;</td><td class="memItemRight" valign="bottom"><a class
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> ((dim) == 2 || (dim) == 3);                    \</div>
-<div class="line">       (quad)-&gt;pad8 = (int8_t) (dim); } <span class="keywordflow">while</span> (0)</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { \</div>
+<div class="line">    T8_ASSERT ((dim) == 2 || (dim) == 3); \</div>
+<div class="line">    (quad)-&gt;pad8 = (int8_t) (dim); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Set the toplevel dimension of a quadrilateral. </p>
 
@@ -228,10 +263,12 @@ t8_eclass_scheme_t *&#160;</td><td class="memItemRight" valign="bottom"><a class
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> ((normal) &gt;= 0 &amp;&amp; (normal) &lt; 3);               \</div>
-<div class="line">       (quad)-&gt;pad16 = (int16_t) (normal); } <span class="keywordflow">while</span> (0)</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { \</div>
+<div class="line">    T8_ASSERT ((normal) &gt;= 0 &amp;&amp; (normal) &lt; 3); \</div>
+<div class="line">    (quad)-&gt;pad16 = (int16_t) (normal); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p>Set the direction of the third demension. </p>
+<p>Set the direction of the third dimension. </p>
 
 </div>
 </div>

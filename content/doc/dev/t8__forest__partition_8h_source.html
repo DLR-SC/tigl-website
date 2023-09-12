@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -103,31 +110,31 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* TODO: document */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span>                t8_forest_partition (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__partition_8h.html#a91864822041e0457583c8584e47e9a19">t8_forest_partition_create_offsets</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="t8__forest__partition_8h.html#a24efa0070a67ed9f186ccb74539acc1a">   53</a></span>&#160;<span class="keywordtype">int</span>                 <a class="code" href="t8__forest__partition_8h.html#a24efa0070a67ed9f186ccb74539acc1a">t8_forest_partition_next_nonempty_rank</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                            forest, <span class="keywordtype">int</span> rank);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__partition_8h.html#ae4f105c30c4ea9c69f9477a3d4f28813">t8_forest_partition_create_first_desc</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                           forest);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__partition_8h.html#a134f29c2ad4a52330ddff7a07959ceec">t8_forest_partition_create_tree_offsets</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                             forest);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/* TODO: document */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* data_in has length forest_from-&gt;num_local_elements</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * data_out   --  --  forest_to-&gt;num_local_elements</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span>                t8_forest_partition_data (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest_from,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                              <a class="code" href="structt8__forest.html">t8_forest_t</a> forest_to,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                              <span class="keyword">const</span> sc_array_t *data_in,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                              sc_array_t *data_out);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span>                <a class="code" href="t8__forest__partition_8h.html#ab8307d030dec24b76731c93a11cabb02">t8_forest_partition_test_boundery_element</a> (<span class="keyword">const</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                               <a class="code" href="structt8__forest.html">t8_forest_t</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                               forest);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;t8_forest_partition (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="t8__forest__partition_8h.html#a91864822041e0457583c8584e47e9a19">t8_forest_partition_create_offsets</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="t8__forest__partition_8h.html#a24efa0070a67ed9f186ccb74539acc1a">   56</a></span>&#160;<a class="code" href="t8__forest__partition_8h.html#a24efa0070a67ed9f186ccb74539acc1a">t8_forest_partition_next_nonempty_rank</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keywordtype">int</span> rank);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="t8__forest__partition_8h.html#ae4f105c30c4ea9c69f9477a3d4f28813">t8_forest_partition_create_first_desc</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="t8__forest__partition_8h.html#a134f29c2ad4a52330ddff7a07959ceec">t8_forest_partition_create_tree_offsets</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/* TODO: document */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/* data_in has length forest_from-&gt;num_local_elements</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * data_out   --  --  forest_to-&gt;num_local_elements</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;t8_forest_partition_data (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest_from, <a class="code" href="structt8__forest.html">t8_forest_t</a> forest_to, <span class="keyword">const</span> sc_array_t *data_in,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                          sc_array_t *data_out);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="t8__forest__partition_8h.html#a280c068e9c54a0c3678fa3403d2a4d3e">t8_forest_partition_test_boundary_element</a> (<span class="keyword">const</span> <a class="code" href="structt8__forest.html">t8_forest_t</a> forest);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
@@ -135,11 +142,11 @@ $(function() {
 <div class="ttc" id="astructt8__forest_html"><div class="ttname"><a href="structt8__forest.html">t8_forest</a></div><div class="ttdoc">This structure is private to the implementation.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:69</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8__forest__general_8h_html"><div class="ttname"><a href="t8__forest__general_8h.html">t8_forest_general.h</a></div><div class="ttdoc">We define the forest of trees in this file.</div></div>
-<div class="ttc" id="at8__forest__partition_8h_html_a134f29c2ad4a52330ddff7a07959ceec"><div class="ttname"><a href="t8__forest__partition_8h.html#a134f29c2ad4a52330ddff7a07959ceec">t8_forest_partition_create_tree_offsets</a></div><div class="ttdeci">void t8_forest_partition_create_tree_offsets(t8_forest_t forest)</div><div class="ttdoc">Create the array tree offsets of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:371</div></div>
+<div class="ttc" id="at8__forest__partition_8h_html_a134f29c2ad4a52330ddff7a07959ceec"><div class="ttname"><a href="t8__forest__partition_8h.html#a134f29c2ad4a52330ddff7a07959ceec">t8_forest_partition_create_tree_offsets</a></div><div class="ttdeci">void t8_forest_partition_create_tree_offsets(t8_forest_t forest)</div><div class="ttdoc">Create the array tree offsets of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:335</div></div>
 <div class="ttc" id="at8__forest__partition_8h_html_a24efa0070a67ed9f186ccb74539acc1a"><div class="ttname"><a href="t8__forest__partition_8h.html#a24efa0070a67ed9f186ccb74539acc1a">t8_forest_partition_next_nonempty_rank</a></div><div class="ttdeci">int t8_forest_partition_next_nonempty_rank(t8_forest_t forest, int rank)</div><div class="ttdoc">If t8_forest_partition_create_offsets was already called, compute for a given rank the next greater r...</div></div>
-<div class="ttc" id="at8__forest__partition_8h_html_a91864822041e0457583c8584e47e9a19"><div class="ttname"><a href="t8__forest__partition_8h.html#a91864822041e0457583c8584e47e9a19">t8_forest_partition_create_offsets</a></div><div class="ttdeci">void t8_forest_partition_create_offsets(t8_forest_t forest)</div><div class="ttdoc">Create the element_offset array of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:96</div></div>
-<div class="ttc" id="at8__forest__partition_8h_html_ab8307d030dec24b76731c93a11cabb02"><div class="ttname"><a href="t8__forest__partition_8h.html#ab8307d030dec24b76731c93a11cabb02">t8_forest_partition_test_boundery_element</a></div><div class="ttdeci">void t8_forest_partition_test_boundery_element(const t8_forest_t forest)</div><div class="ttdoc">Test if the last descendant of the last element of current rank has a smaller linear id than the stor...</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:166</div></div>
-<div class="ttc" id="at8__forest__partition_8h_html_ae4f105c30c4ea9c69f9477a3d4f28813"><div class="ttname"><a href="t8__forest__partition_8h.html#ae4f105c30c4ea9c69f9477a3d4f28813">t8_forest_partition_create_first_desc</a></div><div class="ttdeci">void t8_forest_partition_create_first_desc(t8_forest_t forest)</div><div class="ttdoc">Create the array of global_first_descendant ids of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:274</div></div>
+<div class="ttc" id="at8__forest__partition_8h_html_a280c068e9c54a0c3678fa3403d2a4d3e"><div class="ttname"><a href="t8__forest__partition_8h.html#a280c068e9c54a0c3678fa3403d2a4d3e">t8_forest_partition_test_boundary_element</a></div><div class="ttdeci">void t8_forest_partition_test_boundary_element(const t8_forest_t forest)</div><div class="ttdoc">Test if the last descendant of the last element of current rank has a smaller linear id than the stor...</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:154</div></div>
+<div class="ttc" id="at8__forest__partition_8h_html_a91864822041e0457583c8584e47e9a19"><div class="ttname"><a href="t8__forest__partition_8h.html#a91864822041e0457583c8584e47e9a19">t8_forest_partition_create_offsets</a></div><div class="ttdeci">void t8_forest_partition_create_offsets(t8_forest_t forest)</div><div class="ttdoc">Create the element_offset array of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:89</div></div>
+<div class="ttc" id="at8__forest__partition_8h_html_ae4f105c30c4ea9c69f9477a3d4f28813"><div class="ttname"><a href="t8__forest__partition_8h.html#ae4f105c30c4ea9c69f9477a3d4f28813">t8_forest_partition_create_first_desc</a></div><div class="ttdeci">void t8_forest_partition_create_first_desc(t8_forest_t forest)</div><div class="ttdoc">Create the array of global_first_descendant ids of a partitioned forest.</div><div class="ttdef"><b>Definition:</b> t8_forest_partition.cxx:252</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->

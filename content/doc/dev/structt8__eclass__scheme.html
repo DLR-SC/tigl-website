@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -96,9 +103,9 @@ Inheritance diagram for t8_eclass_scheme:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9df510b1b1730e6ded800fd50c3d2b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aa9df510b1b1730e6ded800fd50c3d2b9">~ t8_eclass_scheme</a> ()</td></tr>
-<tr class="memdesc:aa9df510b1b1730e6ded800fd50c3d2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__eclass__scheme.html#aa9df510b1b1730e6ded800fd50c3d2b9">More...</a><br /></td></tr>
-<tr class="separator:aa9df510b1b1730e6ded800fd50c3d2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefc72cd9e751e4c4bf4abc1dce28212"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#abefc72cd9e751e4c4bf4abc1dce28212">~t8_eclass_scheme</a> ()</td></tr>
+<tr class="memdesc:abefc72cd9e751e4c4bf4abc1dce28212"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__eclass__scheme.html#abefc72cd9e751e4c4bf4abc1dce28212">More...</a><br /></td></tr>
+<tr class="separator:abefc72cd9e751e4c4bf4abc1dce28212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d997d6150d4b1df332f8bc3269abc71"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a1d997d6150d4b1df332f8bc3269abc71">t8_element_size</a> (void) const</td></tr>
 <tr class="memdesc:a1d997d6150d4b1df332f8bc3269abc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual table for a particular implementation of an element class.  <a href="structt8__eclass__scheme.html#a1d997d6150d4b1df332f8bc3269abc71">More...</a><br /></td></tr>
 <tr class="separator:a1d997d6150d4b1df332f8bc3269abc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,9 +238,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad66ada8062fb8e7a6a68025c04b99675"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[]) const =0</td></tr>
 <tr class="memdesc:ad66ada8062fb8e7a6a68025c04b99675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">More...</a><br /></td></tr>
 <tr class="separator:ad66ada8062fb8e7a6a68025c04b99675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea50363a923feb90535508ee2e78f9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aaea50363a923feb90535508ee2e78f9f">t8_element_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const double *ref_coords, const void *user_data, double *out_coords) const =0</td></tr>
-<tr class="memdesc:aaea50363a923feb90535508ee2e78f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of an element to a point in the reference space of the tree.  <a href="structt8__eclass__scheme.html#aaea50363a923feb90535508ee2e78f9f">More...</a><br /></td></tr>
-<tr class="separator:aaea50363a923feb90535508ee2e78f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee286d901c89f287c7ab068f67b28b30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aee286d901c89f287c7ab068f67b28b30">t8_element_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const double *ref_coords, const size_t num_coords, double *out_coords) const =0</td></tr>
+<tr class="memdesc:aee286d901c89f287c7ab068f67b28b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of an element to points in the reference space of the tree.  <a href="structt8__eclass__scheme.html#aee286d901c89f287c7ab068f67b28b30">More...</a><br /></td></tr>
+<tr class="separator:aee286d901c89f287c7ab068f67b28b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">t8_element_array_index</a> (sc_array_t *array, size_t it) const</td></tr>
 <tr class="memdesc:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a t8_element in an array indexed by a size_t.  <a href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">More...</a><br /></td></tr>
 <tr class="separator:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,8 +289,8 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct holds virtual functions for a particular element class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa9df510b1b1730e6ded800fd50c3d2b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9df510b1b1730e6ded800fd50c3d2b9">&#9670;&nbsp;</a></span>~ t8_eclass_scheme()</h2>
+<a id="abefc72cd9e751e4c4bf4abc1dce28212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abefc72cd9e751e4c4bf4abc1dce28212">&#9670;&nbsp;</a></span>~t8_eclass_scheme()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +299,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual t8_eclass_scheme::~ <a class="el" href="structt8__eclass__scheme.html">t8_eclass_scheme</a> </td>
+          <td class="memname">virtual t8_eclass_scheme::~t8_eclass_scheme </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -822,7 +829,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>negativ if elem1 &lt; elem2, zero if elem1 equals elem2 and positiv if elem1 &gt; elem2. If elem2 is a copy of elem1 then the elements are equal. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>negative if elem1 &lt; elem2, zero if elem1 equals elem2 and positive if elem1 &gt; elem2. If elem2 is a copy of elem1 then the elements are equal. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#a63d73411a2893a4e87abf19b3006ce9e">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a8f5032369c4c3c94e8dabef11c1a182a">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a730013699da283a319a0a3edd700aabf">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#af599b01e81b460469b8adaa8d7f8d46e">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a508ca6a4303754403dde375bb792074f">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a3ae670c86dd23e0ec1f23e035dde8d37">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#afb5c367ee72917e93e61e4ae1ff11098">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#ad70aa6ddb925853887f9f1b88b1a9e47">t8_default_scheme_hex_c</a>.</p>
 
@@ -866,7 +873,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <p><b>dest</b> must be an existing element. No memory is allocated by this function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The element whose entries will be copied to <b>dest</b>. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">dest</td><td>This element's entries will be overwritted with the entries of <b>source</b>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dest</td><td>This element's entries will be overwritten with the entries of <b>source</b>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1164,7 +1171,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>elem</em> that conincides with <em>face_child</em>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The face number of the face of a child of <em>elem</em> that coincides with <em>face_child</em>. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#a89b251c3a7b46d72e84a04a83cf33ff4">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a279aba0d87d5e4ceb7a9aeb2fac18b4e">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a27e585e2ca1493e42bebc7ba9622f0de">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ab060c8c26da5479fc8f4478352656d1b">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a962a943dce96182e99e2fb84aee1f227">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a9c834cee3526ccef0b43df8a046aaf17">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#ab4c0ea5823bc2b54349e8976d517b3a8">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a0e611295d5bebe08574cba2257ec397f">t8_default_scheme_hex_c</a>.</p>
 
@@ -2422,8 +2429,8 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
 
 </div>
 </div>
-<a id="aaea50363a923feb90535508ee2e78f9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaea50363a923feb90535508ee2e78f9f">&#9670;&nbsp;</a></span>t8_element_reference_coords()</h2>
+<a id="aee286d901c89f287c7ab068f67b28b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee286d901c89f287c7ab068f67b28b30">&#9670;&nbsp;</a></span>t8_element_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2446,8 +2453,8 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>user_data</em>, </td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2468,18 +2475,18 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
 </table>
 </div><div class="memdoc">
 
-<p>Convert a point in the reference space of an element to a point in the reference space of the tree. </p>
+<p>Convert points in the reference space of an element to points in the reference space of the tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">coords_input</td><td>The coordinates of the point in the reference space of the element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>User data. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The coordinates of the point in the reference space of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coords_input</td><td>The coordinates \( [0,1]^\mathrm{dim} \) of the point in the reference space of the element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of \( dim\)-sized coordinates to evaluate. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The coordinates of the points in the reference space of the tree. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a96d6b1219b28cd4256c3b314adf20153">t8_default_scheme_common_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a76fec94058614524997ffa00fd92534d">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a86b9f416a61724a2c2c67b9146f893ed">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a72a60e12c10ef2678a749cc0c03edc14">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a02060b1213f69198db9f87a6fd4bddb9">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a13e57a865ba4f32a541b2aedb5071595">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a1c567279e82be6dc30f4450d513d115d">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a0c0c6a638b8f0c1e906e305d54c16792">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a92e4d17fe9d7432fa830eedb15d94ad3">t8_default_scheme_hex_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a24c212c9197d0644f3788cad1492d522">t8_default_scheme_common_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#ab4b992df9c8af3d9cf731847aa834a4b">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a636c5c52776ae40eb93ae12b1c17bdfb">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ab4a30c5e5ca3e336d8038d3c6a03a1ba">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ac41c79334797efab29d5f030d25fbba3">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#abde2a9ad7c248a86324fd5629a6b1c25">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a8b0e87e6da031029e9777e5001ee91f5">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#aab854e7af3f6e7b49faf89dc81e4d09e">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a47c54ec29ad14b8edea5719f25cee45a">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
@@ -2835,7 +2842,7 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
 <p>Given an element e that is a subface of f in one of the trees and given the orientation of the tree connection, construct the face element of the respective tree neighbor that logically coincides with e but lies in the coordinate system of the neighbor tree. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The face element. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face elment <em>elem1</em> with respective to the coordinate system of the other tree. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face element <em>elem1</em> with respect to the coordinate system of the other tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>The orientation of the tree-tree connection. </td></tr>
   </table>
   </dd>

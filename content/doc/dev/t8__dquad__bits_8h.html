@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -83,15 +90,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a11e40635561a29f6805741827168c4a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dquad__bits_8h.html#a11e40635561a29f6805741827168c4a6">t8_dquad_compute_reference_coords</a> (const <a class="el" href="structt8__dquad.html">t8_dquad_t</a> *elem, const double *ref_coords, double *out_coords)</td></tr>
-<tr class="memdesc:a11e40635561a29f6805741827168c4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point in the reference space of a quad element to a point in the reference space of the tree (level 0) embedded in [0,1]^2.  <a href="t8__dquad__bits_8h.html#a11e40635561a29f6805741827168c4a6">More...</a><br /></td></tr>
-<tr class="separator:a11e40635561a29f6805741827168c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c82af7361b5e741ba43dfd2b3c592e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">t8_dquad_compute_reference_coords</a> (const <a class="el" href="structt8__dquad.html">t8_dquad_t</a> *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:ad2c82af7361b5e741ba43dfd2b3c592e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of a quad element to points in the reference space of the tree (level 0) embedded in \( [0,1]^2 \).  <a href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">More...</a><br /></td></tr>
+<tr class="separator:ad2c82af7361b5e741ba43dfd2b3c592e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definitions of quad-specific functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a11e40635561a29f6805741827168c4a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11e40635561a29f6805741827168c4a6">&#9670;&nbsp;</a></span>t8_dquad_compute_reference_coords()</h2>
+<a id="ad2c82af7361b5e741ba43dfd2b3c592e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c82af7361b5e741ba43dfd2b3c592e">&#9670;&nbsp;</a></span>t8_dquad_compute_reference_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,6 +118,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
@@ -122,12 +135,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a point in the reference space of a quad element to a point in the reference space of the tree (level 0) embedded in [0,1]^2. </p>
+<p>Convert points in the reference space of a quad element to points in the reference space of the tree (level 0) embedded in \( [0,1]^2 \). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input quad. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinate on the quad [0, 1]^2 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of 1 double that will be filled with the reference coordinates of the point on the quad. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates in the quad (<em>num_coords</em> times \( [0,1]^2 \)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of coordinates to evaluate </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>An array of <em>num_coords</em> x 2 x double that will be filled with the reference coordinates of the points on the quad. </td></tr>
   </table>
   </dd>
 </dl>
