@@ -93,9 +93,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab41599ba8f675822359e17108a732969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#ab41599ba8f675822359e17108a732969">t8_forest_element_coordinate</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, int corner_number, double *coordinates)</td></tr>
 <tr class="memdesc:ab41599ba8f675822359e17108a732969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given vertex of an element if a geometry for this tree is registered in the forest's cmesh.  <a href="t8__forest__geometrical_8h.html#ab41599ba8f675822359e17108a732969">More...</a><br /></td></tr>
 <tr class="separator:ab41599ba8f675822359e17108a732969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b01ef8424a6ddd7a87bc342dc1c85a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#a2b01ef8424a6ddd7a87bc342dc1c85a1">t8_forest_element_from_ref_coords</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *ref_coord, double *coords_out, sc_array_t *stretch_factors)</td></tr>
-<tr class="memdesc:a2b01ef8424a6ddd7a87bc342dc1c85a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a point inside an element inside a tree.  <a href="t8__forest__geometrical_8h.html#a2b01ef8424a6ddd7a87bc342dc1c85a1">More...</a><br /></td></tr>
-<tr class="separator:a2b01ef8424a6ddd7a87bc342dc1c85a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5de0111345d3603146322891aaf9139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#af5de0111345d3603146322891aaf9139">t8_forest_element_from_ref_coords</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *ref_coord, const size_t num_coords, double *coords_out, sc_array_t *stretch_factors)</td></tr>
+<tr class="memdesc:af5de0111345d3603146322891aaf9139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a point inside an element inside a tree.  <a href="t8__forest__geometrical_8h.html#af5de0111345d3603146322891aaf9139">More...</a><br /></td></tr>
+<tr class="separator:af5de0111345d3603146322891aaf9139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474b134743046b3f6203b5712ddae605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#a474b134743046b3f6203b5712ddae605">t8_forest_element_centroid</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, double *coordinates)</td></tr>
 <tr class="memdesc:a474b134743046b3f6203b5712ddae605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of the centroid of an element if a geometry for this tree is registered in the forest's cmesh.  <a href="t8__forest__geometrical_8h.html#a474b134743046b3f6203b5712ddae605">More...</a><br /></td></tr>
 <tr class="separator:a474b134743046b3f6203b5712ddae605"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,8 +441,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b01ef8424a6ddd7a87bc342dc1c85a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b01ef8424a6ddd7a87bc342dc1c85a1">&#9670;&nbsp;</a></span>t8_forest_element_from_ref_coords()</h2>
+<a id="af5de0111345d3603146322891aaf9139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5de0111345d3603146322891aaf9139">&#9670;&nbsp;</a></span>t8_forest_element_from_ref_coords()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,6 +474,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>coords_out</em>, </td>
         </tr>
@@ -499,6 +505,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>The forest local id of the tree in which the element is. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref_coord</td><td>The reference coordinates of the point inside the element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>The number of coordinate sets in ref_coord (dimension x double). </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">coords_out</td><td>On input an allocated array to store 3 doubles, on output the x, y and z coordinates of the point inside the domain. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">stretch_factors</td><td>An element-wise array with d (dimension) doubles per element, which are used to stretch the element beyond its original boundary. The array must be of length forest-&gt;local_num_elements * d. If NULL, no stretching is applied. </td></tr>
   </table>

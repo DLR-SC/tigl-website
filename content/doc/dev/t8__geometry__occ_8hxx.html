@@ -75,8 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
 <div class="title">t8_geometry_occ.hxx File Reference</div>  </div>
 </div><!--header-->
@@ -101,44 +100,11 @@ $(function() {
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a6479a00e8436b564d01d57db9effc628"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__occ_8hxx.html#a6479a00e8436b564d01d57db9effc628">t8_geom_occ_fn</a>) (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double out_coords[3], const void *tree_data)</td></tr>
-<tr class="memdesc:a6479a00e8436b564d01d57db9effc628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of an occ geometry function.  <a href="t8__geometry__occ_8hxx.html#a6479a00e8436b564d01d57db9effc628">More...</a><br /></td></tr>
-<tr class="separator:a6479a00e8436b564d01d57db9effc628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This geometry implements OpenCASCADE geometries. </p>
 <p>It enables the option to link different 1 and 2 dimensional occ geometries to the edges and faces of refinement trees. The geometry of the refinement tree is extended into the volume accordingly. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a6479a00e8436b564d01d57db9effc628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6479a00e8436b564d01d57db9effc628">&#9670;&nbsp;</a></span>t8_geom_occ_fn</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* t8_geom_occ_fn) (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double out_coords[3], const void *tree_data)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition of an occ geometry function. </p>
-<p>This function maps reference coordinates to physical coordinates regarding the occ geometries linked to the cells edges and faces. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in \( [0,1]^\mathrm{dim} \). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree_data</td><td>The data of the current tree as loaded by a t8_geom_load_tree_data_fn. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <hr class="footer"/>

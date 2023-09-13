@@ -137,12 +137,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_handler_is_com
 <tr class="memitem:aafef90cc8539857421208905d19cb97a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">t8_geom_handler_find_geometry</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler, const char *name)</td></tr>
 <tr class="memdesc:aafef90cc8539857421208905d19cb97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a geometry's name find that geometry in the geometry handler and return it.  <a href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">More...</a><br /></td></tr>
 <tr class="separator:aafef90cc8539857421208905d19cb97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2c79d12f1a599b82b16e237a899204"><td class="memItemLeft" align="right" valign="top"><a id="add2c79d12f1a599b82b16e237a899204"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_evaluate</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *out_coords)</td></tr>
-<tr class="separator:add2c79d12f1a599b82b16e237a899204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50d7a21f35c638b4b91778a089bf28e1"><td class="memItemLeft" align="right" valign="top"><a id="a50d7a21f35c638b4b91778a089bf28e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian)</td></tr>
-<tr class="separator:a50d7a21f35c638b4b91778a089bf28e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="memItemLeft" align="right" valign="top"><a id="ae6ce04aa3d7965126f7b9cae3da79bef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_evaluate</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="separator:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc5c1077097e643565e61d9dc17b3a7"><td class="memItemLeft" align="right" valign="top"><a id="afdc5c1077097e643565e61d9dc17b3a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian)</td></tr>
+<tr class="separator:afdc5c1077097e643565e61d9dc17b3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Typedef for the <a class="el" href="structt8__geometry.html">t8_geometry</a> class in order to be usable as a pointer from .c files. </p>

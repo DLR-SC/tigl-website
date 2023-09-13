@@ -93,12 +93,12 @@ Inheritance diagram for t8_geometry_squared_disk:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa60abddfccdaf3b17ee1847e284e1aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__geometry__squared__disk.html#aa60abddfccdaf3b17ee1847e284e1aa4">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double out_coords[3]) const</td></tr>
-<tr class="memdesc:aa60abddfccdaf3b17ee1847e284e1aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map five quads to a disk.  <a href="classt8__geometry__squared__disk.html#aa60abddfccdaf3b17ee1847e284e1aa4">More...</a><br /></td></tr>
-<tr class="separator:aa60abddfccdaf3b17ee1847e284e1aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9723b9341bb9cdf450842ff5261f862d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__geometry__squared__disk.html#a9723b9341bb9cdf450842ff5261f862d">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, double *jacobian) const</td></tr>
-<tr class="memdesc:a9723b9341bb9cdf450842ff5261f862d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="classt8__geometry__squared__disk.html#a9723b9341bb9cdf450842ff5261f862d">More...</a><br /></td></tr>
-<tr class="separator:a9723b9341bb9cdf450842ff5261f862d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e732c474151d055e75aa787a06c89c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__geometry__squared__disk.html#ad2e732c474151d055e75aa787a06c89c">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double out_coords[3]) const</td></tr>
+<tr class="memdesc:ad2e732c474151d055e75aa787a06c89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map five quads to a disk.  <a href="classt8__geometry__squared__disk.html#ad2e732c474151d055e75aa787a06c89c">More...</a><br /></td></tr>
+<tr class="separator:ad2e732c474151d055e75aa787a06c89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f86ceed87c8526a4edd383d8da8a71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__geometry__squared__disk.html#ac5f86ceed87c8526a4edd383d8da8a71">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian) const</td></tr>
+<tr class="memdesc:ac5f86ceed87c8526a4edd383d8da8a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="classt8__geometry__squared__disk.html#ac5f86ceed87c8526a4edd383d8da8a71">More...</a><br /></td></tr>
+<tr class="separator:ac5f86ceed87c8526a4edd383d8da8a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b49088ac5e41f3711d5fe8bfa197f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__geometry__squared__disk.html#ab0b49088ac5e41f3711d5fe8bfa197f1">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:ab0b49088ac5e41f3711d5fe8bfa197f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="classt8__geometry__squared__disk.html#ab0b49088ac5e41f3711d5fe8bfa197f1">More...</a><br /></td></tr>
 <tr class="separator:ab0b49088ac5e41f3711d5fe8bfa197f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
 <tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
 <tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79511346d3aec1b3edb4540f0041e6c3 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a79511346d3aec1b3edb4540f0041e6c3">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords) const =0</td></tr>
+<tr class="memdesc:a79511346d3aec1b3edb4540f0041e6c3 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps points in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry.html#a79511346d3aec1b3edb4540f0041e6c3">More...</a><br /></td></tr>
+<tr class="separator:a79511346d3aec1b3edb4540f0041e6c3 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,14 +134,11 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This geometry maps five quads to a disk. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa60abddfccdaf3b17ee1847e284e1aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa60abddfccdaf3b17ee1847e284e1aa4">&#9670;&nbsp;</a></span>t8_geom_evaluate()</h2>
+<a id="ad2e732c474151d055e75aa787a06c89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e732c474151d055e75aa787a06c89c">&#9670;&nbsp;</a></span>t8_geom_evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void t8_geometry_squared_disk::t8_geom_evaluate </td>
@@ -161,6 +161,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>out_coords</em>[3]&#160;</td>
         </tr>
@@ -170,11 +176,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Map five quads to a disk. </p>
@@ -182,8 +183,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> x <em>num_coords</em> many entries, specifying a point in /f$ [0,1]^\mathrm{dim} /f$. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>The number of points to map. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. The length is <em>num_coords</em> * 3.</td></tr>
   </table>
   </dd>
 </dl>
@@ -196,12 +198,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
  +----------+
 </pre><p> The central quad (id = 0) is mapped as is, while the outer edges of other four quads are stretched onto a circle with a radius determined by the four outer corners (denoted by "+") in the schematic above. </p>
 
-<p>Implements <a class="el" href="structt8__geometry.html#aa304da6770c6d25ef05349e432e7f677">t8_geometry</a>.</p>
-
 </div>
 </div>
-<a id="a9723b9341bb9cdf450842ff5261f862d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9723b9341bb9cdf450842ff5261f862d">&#9670;&nbsp;</a></span>t8_geom_evaluate_jacobian()</h2>
+<a id="ac5f86ceed87c8526a4edd383d8da8a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f86ceed87c8526a4edd383d8da8a71">&#9670;&nbsp;</a></span>t8_geom_evaluate_jacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,6 +230,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>jacobian</em>&#160;</td>
         </tr>
@@ -251,13 +257,14 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">glreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in \( [0,1]^\mathrm{dim} \). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size \( \mathrm{dim} \cdot 3 \). Indices \( 3 \cdot i\) , \( 3 \cdot i+1 \) , \( 3 \cdot i+2 \) correspond to the \( i \)-th column of the jacobian (Entry \( 3 \cdot i + j \) is \( \frac{\partial f_j}{\partial x_i} \)). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> x <em>num_coords</em> many entries, specifying points in \( [0,1]^\mathrm{dim} \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Amount of points of /f$ \mathrm{dim} /f$ to map. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size <em>num_coords</em> x dimension x 3. Indices \( 3 \cdot i\) , \( 3 \cdot i+1 \) , \( 3 \cdot i+2 \) correspond to the \( i \)-th column of the jacobian (Entry \( 3 \cdot i + j \) is \( \frac{\partial f_j}{\partial x_i} \)). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="structt8__geometry.html#ae9cd4e137db831feb8905a40e9176347">t8_geometry</a>.</p>
+<p>Implements <a class="el" href="structt8__geometry.html#a8e6d9e084a795989b603cc2c9e9cec9e">t8_geometry</a>.</p>
 
 </div>
 </div>
