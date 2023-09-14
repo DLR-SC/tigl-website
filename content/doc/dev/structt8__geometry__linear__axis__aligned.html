@@ -89,8 +89,8 @@ Inheritance diagram for t8_geometry_linear_axis_aligned:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a88727b322fb21491bf2dc3724c391d"><td class="memItemLeft" align="right" valign="top"><a id="a7a88727b322fb21491bf2dc3724c391d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_linear_axis_aligned</b> (int dim)</td></tr>
+<tr class="memitem:a7a88727b322fb21491bf2dc3724c391d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__linear__axis__aligned.html#a7a88727b322fb21491bf2dc3724c391d">t8_geometry_linear_axis_aligned</a> (int dim)</td></tr>
+<tr class="memdesc:a7a88727b322fb21491bf2dc3724c391d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the linear, axis-aligned geometry with a given dimension.  <a href="structt8__geometry__linear__axis__aligned.html#a7a88727b322fb21491bf2dc3724c391d">More...</a><br /></td></tr>
 <tr class="separator:a7a88727b322fb21491bf2dc3724c391d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6bc57f5e7ec7cff8576e9b69a39e77"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77">~t8_geometry_linear_axis_aligned</a> ()</td></tr>
 <tr class="memdesc:ada6bc57f5e7ec7cff8576e9b69a39e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77">More...</a><br /></td></tr>
@@ -148,6 +148,32 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a792d7e610379512222d49c8afbcfa2be inherit pro_attribs_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7a88727b322fb21491bf2dc3724c391d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a88727b322fb21491bf2dc3724c391d">&#9670;&nbsp;</a></span>t8_geometry_linear_axis_aligned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t8_geometry_linear_axis_aligned::t8_geometry_linear_axis_aligned </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dim</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor of the linear, axis-aligned geometry with a given dimension. </p>
+<p>The geometry is only viable for the line/quad/hex tree types and uses two vertices (min and max coords) per tree. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> function. Sets the dimension and the name to "t8_geom_linear_axis_aligned_{dim}" </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>0 &lt;= <em>dimension</em> &lt;= 3. The dimension. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ada6bc57f5e7ec7cff8576e9b69a39e77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada6bc57f5e7ec7cff8576e9b69a39e77">&#9670;&nbsp;</a></span>~t8_geometry_linear_axis_aligned()</h2>
 

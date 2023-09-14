@@ -88,9 +88,9 @@ Inheritance diagram for t8_geometry_analytic:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abc1640bbce207346e079443bfc98e788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#abc1640bbce207346e079443bfc98e788">t8_geometry_analytic</a> (int <a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, const char *<a class="el" href="structt8__geometry.html#a792d7e610379512222d49c8afbcfa2be">name</a>, <a class="el" href="t8__geometry__analytic_8hxx.html#af027886d27dd2f80b608f334ed953436">t8_geom_analytic_fn</a> analytical, <a class="el" href="t8__geometry__analytic_8hxx.html#a7ac276c86f805a471fc34360a42b072a">t8_geom_analytic_jacobian_fn</a> jacobian, t8_geom_load_tree_data_fn load_tree_data, const void *user_data)</td></tr>
-<tr class="memdesc:abc1640bbce207346e079443bfc98e788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with analytical and jacobian functions.  <a href="structt8__geometry__analytic.html#abc1640bbce207346e079443bfc98e788">More...</a><br /></td></tr>
-<tr class="separator:abc1640bbce207346e079443bfc98e788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6783cf10f863d8ce490bc6d3732695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#afd6783cf10f863d8ce490bc6d3732695">t8_geometry_analytic</a> (int dim, const char *<a class="el" href="structt8__geometry.html#a792d7e610379512222d49c8afbcfa2be">name</a>, <a class="el" href="t8__geometry__analytic_8hxx.html#af027886d27dd2f80b608f334ed953436">t8_geom_analytic_fn</a> analytical, <a class="el" href="t8__geometry__analytic_8hxx.html#a7ac276c86f805a471fc34360a42b072a">t8_geom_analytic_jacobian_fn</a> jacobian, t8_geom_load_tree_data_fn load_tree_data, const void *user_data)</td></tr>
+<tr class="memdesc:afd6783cf10f863d8ce490bc6d3732695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the analytic geometry with a given dimension.  <a href="structt8__geometry__analytic.html#afd6783cf10f863d8ce490bc6d3732695">More...</a><br /></td></tr>
+<tr class="separator:afd6783cf10f863d8ce490bc6d3732695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e18fee502729f90039d11c8beeec574"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">~t8_geometry_analytic</a> ()</td></tr>
 <tr class="memdesc:a5e18fee502729f90039d11c8beeec574"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">More...</a><br /></td></tr>
 <tr class="separator:a5e18fee502729f90039d11c8beeec574"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a792d7e610379512222d49c8afbcfa2be inherit pro_attribs_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abc1640bbce207346e079443bfc98e788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1640bbce207346e079443bfc98e788">&#9670;&nbsp;</a></span>t8_geometry_analytic()</h2>
+<a id="afd6783cf10f863d8ce490bc6d3732695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6783cf10f863d8ce490bc6d3732695">&#9670;&nbsp;</a></span>t8_geometry_analytic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">t8_geometry_analytic::t8_geometry_analytic </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dimension</em>, </td>
+          <td class="paramname"><em>dim</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -183,10 +183,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Constructor with analytical and jacobian functions. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor of the analytic geometry with a given dimension. </p>
+<p>The geometry is viable with all tree types and uses a user-provided analytic and jacobian function. The actual mappings are done by these functions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dimension</td><td>The dimension of this geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>The dimension of this geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name to give this geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">analytical</td><td>The analytical function to use for this geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">jacobian</td><td>The jacobian of <em>analytical</em>. </td></tr>

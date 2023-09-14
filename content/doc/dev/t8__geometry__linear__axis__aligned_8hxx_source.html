@@ -110,30 +110,28 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structt8__geometry__linear__axis__aligned.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a>: <span class="keyword">public</span> <a class="code" href="classt8__geometry__with__vertices.html">t8_geometry_with_vertices</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">/* Basic constructor that sets the dimension and the name</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * to &quot;t8_geom_linear_axis_aligned_{dim}&quot; */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a> (<span class="keywordtype">int</span> dim);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">/* Base constructor with no arguments. We need this since it</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * is called from derived class constructors.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * Sets dimension and name to invalid values. */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a> (): <a class="code" href="classt8__geometry__with__vertices.html">t8_geometry_with_vertices</a> ()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77">~t8_geometry_linear_axis_aligned</a> ();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html#a59e1a3daec7c98bba0026f4c7fd2353f">t8_geom_evaluate</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keywordtype">double</span> *out_coords) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html#abc8383df8d79968d981e891048636b71">t8_geom_evaluate_jacobian</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                             <span class="keywordtype">double</span> *jacobian) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_LINEAR_AXIS_ALIGNED_HXX! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a> (<span class="keywordtype">int</span> dim);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">/* Base constructor with no arguments. We need this since it</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * is called from derived class constructors.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * Sets dimension and name to invalid values. */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a> (): <a class="code" href="classt8__geometry__with__vertices.html">t8_geometry_with_vertices</a> ()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77">~t8_geometry_linear_axis_aligned</a> ();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html#a59e1a3daec7c98bba0026f4c7fd2353f">t8_geom_evaluate</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordtype">double</span> *out_coords) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="structt8__geometry__linear__axis__aligned.html#abc8383df8d79968d981e891048636b71">t8_geom_evaluate_jacobian</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                             <span class="keywordtype">double</span> *jacobian) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_LINEAR_AXIS_ALIGNED_HXX! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclasst8__geometry__with__vertices_html"><div class="ttname"><a href="classt8__geometry__with__vertices.html">t8_geometry_with_vertices</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_with_vertices.hxx:38</div></div>
 <div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:87</div></div>
 <div class="ttc" id="astructt8__geometry__linear__axis__aligned_html"><div class="ttname"><a href="structt8__geometry__linear__axis__aligned.html">t8_geometry_linear_axis_aligned</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_linear_axis_aligned.hxx:36</div></div>
