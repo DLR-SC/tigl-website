@@ -89,12 +89,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac8d9402d85a09255dc38d360e647ffd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#ac8d9402d85a09255dc38d360e647ffd8">t8_geom_compute_linear_geometry</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, const double *ref_coords, double out_coords[3])</td></tr>
-<tr class="memdesc:ac8d9402d85a09255dc38d360e647ffd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear geometry of a tree at a given reference coordinate.  <a href="t8__geometry__helpers_8h.html#ac8d9402d85a09255dc38d360e647ffd8">More...</a><br /></td></tr>
-<tr class="separator:ac8d9402d85a09255dc38d360e647ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c96f068ad9e71dfe0108d22d1e7bb34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a6c96f068ad9e71dfe0108d22d1e7bb34">t8_geom_compute_linear_axis_aligned_geometry</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, const double *ref_coords, double out_coords[3])</td></tr>
-<tr class="memdesc:a6c96f068ad9e71dfe0108d22d1e7bb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear, axis-aligned geometry of a tree at a given reference coordinate.  <a href="t8__geometry__helpers_8h.html#a6c96f068ad9e71dfe0108d22d1e7bb34">More...</a><br /></td></tr>
-<tr class="separator:a6c96f068ad9e71dfe0108d22d1e7bb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ba3a402824ffad33d870fba0a17e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#af9ba3a402824ffad33d870fba0a17e3f">t8_geom_compute_linear_geometry</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:af9ba3a402824ffad33d870fba0a17e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear geometry of a tree at a given reference coordinate.  <a href="t8__geometry__helpers_8h.html#af9ba3a402824ffad33d870fba0a17e3f">More...</a><br /></td></tr>
+<tr class="separator:af9ba3a402824ffad33d870fba0a17e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1494f74c1f30ffc2346f59927d5cb3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a1494f74c1f30ffc2346f59927d5cb3b8">t8_geom_compute_linear_axis_aligned_geometry</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:a1494f74c1f30ffc2346f59927d5cb3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear, axis-aligned geometry of a tree at a given reference coordinate.  <a href="t8__geometry__helpers_8h.html#a1494f74c1f30ffc2346f59927d5cb3b8">More...</a><br /></td></tr>
+<tr class="separator:a1494f74c1f30ffc2346f59927d5cb3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e975fe0372dfbfe024a891b3941e4b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a6e975fe0372dfbfe024a891b3941e4b2">t8_geom_linear_interpolation</a> (const double *coefficients, const double *corner_values, int corner_value_dim, int interpolation_dim, double *evaluated_function)</td></tr>
 <tr class="memdesc:a6e975fe0372dfbfe024a891b3941e4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates linearly between 2, bilinearly between 4 or trilineraly between 8 points.  <a href="t8__geometry__helpers_8h.html#a6e975fe0372dfbfe024a891b3941e4b2">More...</a><br /></td></tr>
 <tr class="separator:a6e975fe0372dfbfe024a891b3941e4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +117,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines t8code internal functions that are useful for geometry implementations. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6c96f068ad9e71dfe0108d22d1e7bb34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c96f068ad9e71dfe0108d22d1e7bb34">&#9670;&nbsp;</a></span>t8_geom_compute_linear_axis_aligned_geometry()</h2>
+<a id="a1494f74c1f30ffc2346f59927d5cb3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1494f74c1f30ffc2346f59927d5cb3b8">&#9670;&nbsp;</a></span>t8_geom_compute_linear_axis_aligned_geometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,8 +144,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>out_coords</em>[3]&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -156,11 +162,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compute the linear, axis-aligned geometry of a tree at a given reference coordinate. </p>
-<p>This function is faster than <a class="el" href="t8__geometry__helpers_8h.html#ac8d9402d85a09255dc38d360e647ffd8">t8_geom_compute_linear_geometry</a>, but only works for axis-aligned trees of <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a9667a79817957d7f2446d73a9778b8b5">T8_ECLASS_LINE</a>, <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a81e3f71a30727a94fc1c80da130297a9">T8_ECLASS_QUAD</a> and <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a5780818d0b9120d3267db871196f866a">T8_ECLASS_HEX</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function is faster than <a class="el" href="t8__geometry__helpers_8h.html#af9ba3a402824ffad33d870fba0a17e3f">t8_geom_compute_linear_geometry</a>, but only works for axis-aligned trees of <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a9667a79817957d7f2446d73a9778b8b5">T8_ECLASS_LINE</a>, <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a81e3f71a30727a94fc1c80da130297a9">T8_ECLASS_QUAD</a> and <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a5780818d0b9120d3267db871196f866a">T8_ECLASS_HEX</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of the tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_vertices</td><td>Array with the tree vertex coordinates. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates of the point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of points to evaluate. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The output coordinates. </td></tr>
   </table>
   </dd>
@@ -168,8 +175,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac8d9402d85a09255dc38d360e647ffd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d9402d85a09255dc38d360e647ffd8">&#9670;&nbsp;</a></span>t8_geom_compute_linear_geometry()</h2>
+<a id="af9ba3a402824ffad33d870fba0a17e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ba3a402824ffad33d870fba0a17e3f">&#9670;&nbsp;</a></span>t8_geom_compute_linear_geometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,8 +202,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>out_coords</em>[3]&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,6 +225,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of the tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_vertices</td><td>Array with the tree vertex coordinates. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates of the point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Number of points to evaluate. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The output coordinates. </td></tr>
   </table>
   </dd>
