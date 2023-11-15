@@ -97,9 +97,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3c027c43c669ed008480f8533097fd04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a3c027c43c669ed008480f8533097fd04">t8_cmesh_new_from_p8est</a> (p8est_connectivity_t *conn, sc_MPI_Comm comm, int do_partition)</td></tr>
 <tr class="memdesc:a3c027c43c669ed008480f8533097fd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a cmesh from a given p8est_connectivity structure.  <a href="t8__cmesh__examples_8h.html#a3c027c43c669ed008480f8533097fd04">More...</a><br /></td></tr>
 <tr class="separator:a3c027c43c669ed008480f8533097fd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123128d5b49678452a4f533f2a563122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a123128d5b49678452a4f533f2a563122">t8_cmesh_new_empty</a> (sc_MPI_Comm comm, int do_partition, int dimension)</td></tr>
-<tr class="memdesc:a123128d5b49678452a4f533f2a563122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cmesh that has no trees.  <a href="t8__cmesh__examples_8h.html#a123128d5b49678452a4f533f2a563122">More...</a><br /></td></tr>
-<tr class="separator:a123128d5b49678452a4f533f2a563122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bca2dc00d0fe702d50aa72bbf56d163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">t8_cmesh_new_empty</a> (sc_MPI_Comm comm, const int do_partition, const int dimension)</td></tr>
+<tr class="memdesc:a3bca2dc00d0fe702d50aa72bbf56d163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cmesh that has no trees.  <a href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">More...</a><br /></td></tr>
+<tr class="separator:a3bca2dc00d0fe702d50aa72bbf56d163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e5738807dc66bbfebb41e3dbb6e013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ad3e5738807dc66bbfebb41e3dbb6e013">t8_cmesh_new_from_class</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ad3e5738807dc66bbfebb41e3dbb6e013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a cmesh that consists only of one tree of a given element class.  <a href="t8__cmesh__examples_8h.html#ad3e5738807dc66bbfebb41e3dbb6e013">More...</a><br /></td></tr>
 <tr class="separator:ad3e5738807dc66bbfebb41e3dbb6e013"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,8 +294,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a123128d5b49678452a4f533f2a563122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a123128d5b49678452a4f533f2a563122">&#9670;&nbsp;</a></span>t8_cmesh_new_empty()</h2>
+<a id="a3bca2dc00d0fe702d50aa72bbf56d163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bca2dc00d0fe702d50aa72bbf56d163">&#9670;&nbsp;</a></span>t8_cmesh_new_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,13 +309,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>do_partition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>dimension</em>&#160;</td>
         </tr>
         <tr>
