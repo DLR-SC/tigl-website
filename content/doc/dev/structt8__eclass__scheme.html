@@ -205,9 +205,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d7025ee2682a97ff45a17b2c3101866"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a1d7025ee2682a97ff45a17b2c3101866">t8_element_last_descendant_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *last_desc, int level) const =0</td></tr>
 <tr class="memdesc:a1d7025ee2682a97ff45a17b2c3101866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the last descendant of an element at a given level that touches a given face.  <a href="structt8__eclass__scheme.html#a1d7025ee2682a97ff45a17b2c3101866">More...</a><br /></td></tr>
 <tr class="separator:a1d7025ee2682a97ff45a17b2c3101866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac769b6c0b2ec27d1912077e912fdf758"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ac769b6c0b2ec27d1912077e912fdf758">t8_element_boundary</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int min_dim, int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **boundary) const =0</td></tr>
-<tr class="memdesc:ac769b6c0b2ec27d1912077e912fdf758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct all codimension-one boundary elements of a given element.  <a href="structt8__eclass__scheme.html#ac769b6c0b2ec27d1912077e912fdf758">More...</a><br /></td></tr>
-<tr class="separator:ac769b6c0b2ec27d1912077e912fdf758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af974396ce0764b2a42e7b5b68e05a8f2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#af974396ce0764b2a42e7b5b68e05a8f2">t8_element_is_root_boundary</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int face) const =0</td></tr>
 <tr class="memdesc:af974396ce0764b2a42e7b5b68e05a8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute whether a given element shares a given face with its root tree.  <a href="structt8__eclass__scheme.html#af974396ce0764b2a42e7b5b68e05a8f2">More...</a><br /></td></tr>
 <tr class="separator:af974396ce0764b2a42e7b5b68e05a8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,66 +406,6 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the it-th element in <b>array</b>. We provide a default implementation of this routine that should suffice for most use cases. </dd></dl>
-
-</div>
-</div>
-<a id="ac769b6c0b2ec27d1912077e912fdf758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac769b6c0b2ec27d1912077e912fdf758">&#9670;&nbsp;</a></span>t8_element_boundary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void t8_eclass_scheme::t8_element_boundary </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>min_dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **&#160;</td>
-          <td class="paramname"><em>boundary</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct all codimension-one boundary elements of a given element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The input element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A face of <em>elem</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>face</em> is a subface of the element's root element. </dd></dl>
-
-<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#acaed61b770ca92e3f85b38d67b3c0140">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#aade5c123f927cade8718dc08133c45cb">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a68d53fb4bae347cdd66f275e9695e7b7">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ad580430eb26fdc869beeabf15d8f7d3d">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a8d80f467a9c4f1362a456805d27ee794">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#ab95778f28788e8e100b2dbc8425965e9">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#acfaa29335af9cf9ce5d4c0670a842fa8">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#ad42ecaa9784fc7ea678266558569c4de">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>

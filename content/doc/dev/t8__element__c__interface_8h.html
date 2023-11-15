@@ -189,7 +189,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ade69ead3b782fcb76634e4d67d9c0c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the last descendant of an element at a given level that touches a given face.  <a href="t8__element__c__interface_8h.html#ade69ead3b782fcb76634e4d67d9c0c29">More...</a><br /></td></tr>
 <tr class="separator:ade69ead3b782fcb76634e4d67d9c0c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6ad9828448761eecf57d4e09d68e00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a9e6ad9828448761eecf57d4e09d68e00">t8_element_is_root_boundary</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int face)</td></tr>
-<tr class="memdesc:a9e6ad9828448761eecf57d4e09d68e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct all codimension-one boundary elements of a given element.  <a href="t8__element__c__interface_8h.html#a9e6ad9828448761eecf57d4e09d68e00">More...</a><br /></td></tr>
+<tr class="memdesc:a9e6ad9828448761eecf57d4e09d68e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute whether a given element shares a given face with its root tree.  <a href="t8__element__c__interface_8h.html#a9e6ad9828448761eecf57d4e09d68e00">More...</a><br /></td></tr>
 <tr class="separator:a9e6ad9828448761eecf57d4e09d68e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc1689396a75db1e6890cecdba93bca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a6cc1689396a75db1e6890cecdba93bca">t8_element_face_neighbor_inside</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *neigh, int face, int *neigh_face)</td></tr>
 <tr class="memdesc:a6cc1689396a75db1e6890cecdba93bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the face neighbor of a given element if this face neighbor is inside the root tree.  <a href="t8__element__c__interface_8h.html#a6cc1689396a75db1e6890cecdba93bca">More...</a><br /></td></tr>
@@ -1507,16 +1507,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct all codimension-one boundary elements of a given element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The input element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A face of <em>elem</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>face</em> is a subface of the element's root element. Compute whether a given element shares a given face with its root tree. </dd></dl>
+<p>Compute whether a given element shares a given face with its root tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
