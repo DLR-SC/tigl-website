@@ -100,6 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af50a6cc691f7e96d62715891dd9f1977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#af50a6cc691f7e96d62715891dd9f1977">t8_dprism_compare</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p1, const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p2)</td></tr>
 <tr class="memdesc:af50a6cc691f7e96d62715891dd9f1977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two elements.  <a href="t8__dprism__bits_8h.html#af50a6cc691f7e96d62715891dd9f1977">More...</a><br /></td></tr>
 <tr class="separator:af50a6cc691f7e96d62715891dd9f1977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881c7ea188013e5ba934ae0c8cd0860d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a881c7ea188013e5ba934ae0c8cd0860d">t8_dprism_equal</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem1, const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *elem2)</td></tr>
+<tr class="memdesc:a881c7ea188013e5ba934ae0c8cd0860d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two elements are equal.  <a href="t8__dprism__bits_8h.html#a881c7ea188013e5ba934ae0c8cd0860d">More...</a><br /></td></tr>
+<tr class="separator:a881c7ea188013e5ba934ae0c8cd0860d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84623b0b769095fd74b547b0d768b7d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a84623b0b769095fd74b547b0d768b7d5">t8_dprism_init_linear_id</a> (<a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int level, <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> id)</td></tr>
 <tr class="memdesc:a84623b0b769095fd74b547b0d768b7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a prism as the prism with a given global id in a uniform refinement of a given level.  <a href="t8__dprism__bits_8h.html#a84623b0b769095fd74b547b0d768b7d5">More...</a><br /></td></tr>
 <tr class="separator:a84623b0b769095fd74b547b0d768b7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +193,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a590d6f7e4b4c4b5fb29861a5e08624a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a590d6f7e4b4c4b5fb29861a5e08624a8">t8_dprism_is_valid</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p)</td></tr>
 <tr class="memdesc:a590d6f7e4b4c4b5fb29861a5e08624a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether all entries of a prism are in valid ranges.  <a href="t8__dprism__bits_8h.html#a590d6f7e4b4c4b5fb29861a5e08624a8">More...</a><br /></td></tr>
 <tr class="separator:a590d6f7e4b4c4b5fb29861a5e08624a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ad65b947427814c9af1c99f53c66bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a92ad65b947427814c9af1c99f53c66bb">t8_dprism_debug_print</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p)</td></tr>
-<tr class="memdesc:a92ad65b947427814c9af1c99f53c66bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the coordinates, the level and the type of a prism.  <a href="t8__dprism__bits_8h.html#a92ad65b947427814c9af1c99f53c66bb">More...</a><br /></td></tr>
-<tr class="separator:a92ad65b947427814c9af1c99f53c66bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -626,29 +626,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
 
 </div>
 </div>
-<a id="a92ad65b947427814c9af1c99f53c66bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92ad65b947427814c9af1c99f53c66bb">&#9670;&nbsp;</a></span>t8_dprism_debug_print()</h2>
+<a id="a881c7ea188013e5ba934ae0c8cd0860d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881c7ea188013e5ba934ae0c8cd0860d">&#9670;&nbsp;</a></span>t8_dprism_equal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_dprism_debug_print </td>
+          <td class="memname">int t8_dprism_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *&#160;</td>
+          <td class="paramname"><em>elem2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print the coordinates, the level and the type of a prism. </p>
+<p>Check if two elements are equal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>prism to be considered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The first element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem2</td><td>The second element. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the elements are equal, 0 if they are not equal </dd></dl>
 
 </div>
 </div>

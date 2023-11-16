@@ -96,6 +96,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a078da4adfb0ef57ce73cde453e24f915"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#a078da4adfb0ef57ce73cde453e24f915">t8_dtri_compare</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t1, const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t2)</td></tr>
 <tr class="memdesc:a078da4adfb0ef57ce73cde453e24f915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two triangle in their linear order.  <a href="t8__dtri__bits_8h.html#a078da4adfb0ef57ce73cde453e24f915">More...</a><br /></td></tr>
 <tr class="separator:a078da4adfb0ef57ce73cde453e24f915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea1c133882a0d0bdcdeac7d48600c9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#a2ea1c133882a0d0bdcdeac7d48600c9e">t8_dtri_equal</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem1, const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *elem2)</td></tr>
+<tr class="memdesc:a2ea1c133882a0d0bdcdeac7d48600c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two elements are equal.  <a href="t8__dtri__bits_8h.html#a2ea1c133882a0d0bdcdeac7d48600c9e">More...</a><br /></td></tr>
+<tr class="separator:a2ea1c133882a0d0bdcdeac7d48600c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af312e9ba1ea6e1ad2e5053a6a51ba98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#af312e9ba1ea6e1ad2e5053a6a51ba98d">t8_dtri_parent</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t, <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *parent)</td></tr>
 <tr class="memdesc:af312e9ba1ea6e1ad2e5053a6a51ba98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the parent of a triangle.  <a href="t8__dtri__bits_8h.html#af312e9ba1ea6e1ad2e5053a6a51ba98d">More...</a><br /></td></tr>
 <tr class="separator:af312e9ba1ea6e1ad2e5053a6a51ba98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,9 +210,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae00a55d357dd2044243e87344a015d01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#ae00a55d357dd2044243e87344a015d01">t8_dtri_is_valid</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t)</td></tr>
 <tr class="memdesc:ae00a55d357dd2044243e87344a015d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether all entries of a triangle are in valid ranges.  <a href="t8__dtri__bits_8h.html#ae00a55d357dd2044243e87344a015d01">More...</a><br /></td></tr>
 <tr class="separator:ae00a55d357dd2044243e87344a015d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6db88cac0f9aaef26a683b4d3e79f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#ae6db88cac0f9aaef26a683b4d3e79f2c">t8_dtri_debug_print</a> (const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t)</td></tr>
-<tr class="memdesc:ae6db88cac0f9aaef26a683b4d3e79f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a triangle.  <a href="t8__dtri__bits_8h.html#ae6db88cac0f9aaef26a683b4d3e79f2c">More...</a><br /></td></tr>
-<tr class="separator:ae6db88cac0f9aaef26a683b4d3e79f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1dba434645ca6603363e27cab6914d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtri__bits_8h.html#ac1dba434645ca6603363e27cab6914d7">t8_dtri_init</a> (<a class="el" href="structt8__dtri.html">t8_dtri_t</a> *t)</td></tr>
 <tr class="memdesc:ac1dba434645ca6603363e27cab6914d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sensible default values for a triangle.  <a href="t8__dtri__bits_8h.html#ac1dba434645ca6603363e27cab6914d7">More...</a><br /></td></tr>
 <tr class="separator:ac1dba434645ca6603363e27cab6914d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -774,29 +774,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6db88cac0f9aaef26a683b4d3e79f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6db88cac0f9aaef26a683b4d3e79f2c">&#9670;&nbsp;</a></span>t8_dtri_debug_print()</h2>
+<a id="a2ea1c133882a0d0bdcdeac7d48600c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea1c133882a0d0bdcdeac7d48600c9e">&#9670;&nbsp;</a></span>t8_dtri_equal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_dtri_debug_print </td>
+          <td class="memname">int t8_dtri_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structt8__dtri.html">t8_dtri_t</a> *&#160;</td>
+          <td class="paramname"><em>elem2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print a triangle. </p>
+<p>Check if two elements are equal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>triangle to be considered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The first element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem2</td><td>The second element. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the elements are equal, 0 if they are not equal </dd></dl>
 
 </div>
 </div>

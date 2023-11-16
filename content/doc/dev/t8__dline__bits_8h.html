@@ -100,6 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9794f1e5a9c96d24df7031af438cb75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#ad9794f1e5a9c96d24df7031af438cb75">t8_dline_compare</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *l1, const <a class="el" href="structt8__dline.html">t8_dline_t</a> *l2)</td></tr>
 <tr class="memdesc:ad9794f1e5a9c96d24df7031af438cb75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two elements.  <a href="t8__dline__bits_8h.html#ad9794f1e5a9c96d24df7031af438cb75">More...</a><br /></td></tr>
 <tr class="separator:ad9794f1e5a9c96d24df7031af438cb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ad4fd8e326542d65065d0882438fb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#ac6ad4fd8e326542d65065d0882438fb5">t8_dline_equal</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem1, const <a class="el" href="structt8__dline.html">t8_dline_t</a> *elem2)</td></tr>
+<tr class="memdesc:ac6ad4fd8e326542d65065d0882438fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two elements are equal.  <a href="t8__dline__bits_8h.html#ac6ad4fd8e326542d65065d0882438fb5">More...</a><br /></td></tr>
+<tr class="separator:ac6ad4fd8e326542d65065d0882438fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fdd489537ab47cb016e3e887ae9de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#a27fdd489537ab47cb016e3e887ae9de3">t8_dline_parent</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *l, <a class="el" href="structt8__dline.html">t8_dline_t</a> *parent)</td></tr>
 <tr class="memdesc:a27fdd489537ab47cb016e3e887ae9de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the parent of a line.  <a href="t8__dline__bits_8h.html#a27fdd489537ab47cb016e3e887ae9de3">More...</a><br /></td></tr>
 <tr class="separator:a27fdd489537ab47cb016e3e887ae9de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,9 +172,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a12286f882a83981734d92b5f173164c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#a12286f882a83981734d92b5f173164c0">t8_dline_is_valid</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *l)</td></tr>
 <tr class="memdesc:a12286f882a83981734d92b5f173164c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether all entries of a line are in valid ranges.  <a href="t8__dline__bits_8h.html#a12286f882a83981734d92b5f173164c0">More...</a><br /></td></tr>
 <tr class="separator:a12286f882a83981734d92b5f173164c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5e4d9eefd964c027da8ae798bb2dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#a7e5e4d9eefd964c027da8ae798bb2dd2">t8_dline_debug_print</a> (const <a class="el" href="structt8__dline.html">t8_dline_t</a> *l)</td></tr>
-<tr class="memdesc:a7e5e4d9eefd964c027da8ae798bb2dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a line.  <a href="t8__dline__bits_8h.html#a7e5e4d9eefd964c027da8ae798bb2dd2">More...</a><br /></td></tr>
-<tr class="separator:a7e5e4d9eefd964c027da8ae798bb2dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7cb534c2b1a7d7b14fdcaf632d5cc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dline__bits_8h.html#abd7cb534c2b1a7d7b14fdcaf632d5cc3">t8_dline_init</a> (<a class="el" href="structt8__dline.html">t8_dline_t</a> *l)</td></tr>
 <tr class="memdesc:abd7cb534c2b1a7d7b14fdcaf632d5cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default values for a line, such that it passes <a class="el" href="t8__dline__bits_8h.html#a12286f882a83981734d92b5f173164c0">t8_dline_is_valid</a>.  <a href="t8__dline__bits_8h.html#abd7cb534c2b1a7d7b14fdcaf632d5cc3">More...</a><br /></td></tr>
 <tr class="separator:abd7cb534c2b1a7d7b14fdcaf632d5cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,29 +496,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e5e4d9eefd964c027da8ae798bb2dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e5e4d9eefd964c027da8ae798bb2dd2">&#9670;&nbsp;</a></span>t8_dline_debug_print()</h2>
+<a id="ac6ad4fd8e326542d65065d0882438fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ad4fd8e326542d65065d0882438fb5">&#9670;&nbsp;</a></span>t8_dline_equal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_dline_debug_print </td>
+          <td class="memname">int t8_dline_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structt8__dline.html">t8_dline_t</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structt8__dline.html">t8_dline_t</a> *&#160;</td>
+          <td class="paramname"><em>elem2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print a line. </p>
+<p>Check if two elements are equal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>line to be initialized </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The first element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem2</td><td>The second element. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the elements are equal, 0 if they are not equal </dd></dl>
 
 </div>
 </div>
