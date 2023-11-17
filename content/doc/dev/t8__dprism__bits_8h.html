@@ -166,12 +166,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afd4d854df6e8f132883bfe85b23178c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#afd4d854df6e8f132883bfe85b23178c2">t8_dprism_tree_face</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int face)</td></tr>
 <tr class="memdesc:afd4d854df6e8f132883bfe85b23178c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a prism and a face of this prism.  <a href="t8__dprism__bits_8h.html#afd4d854df6e8f132883bfe85b23178c2">More...</a><br /></td></tr>
 <tr class="separator:afd4d854df6e8f132883bfe85b23178c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed9b1d848b0257f19ec5c3bc39cf2b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#abed9b1d848b0257f19ec5c3bc39cf2b7">t8_dprism_root_face_to_face</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, int root_face)</td></tr>
-<tr class="memdesc:abed9b1d848b0257f19ec5c3bc39cf2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a prism and a face of the root prism.  <a href="t8__dprism__bits_8h.html#abed9b1d848b0257f19ec5c3bc39cf2b7">More...</a><br /></td></tr>
-<tr class="separator:abed9b1d848b0257f19ec5c3bc39cf2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a480d4384ba45e6235bbd9655a0777f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a6a480d4384ba45e6235bbd9655a0777f">t8_dprism_extrude_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int root_face)</td></tr>
-<tr class="memdesc:a6a480d4384ba45e6235bbd9655a0777f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a boundary face inside a root tree's face construct the element inside the root tree that has the given face as a face.  <a href="t8__dprism__bits_8h.html#a6a480d4384ba45e6235bbd9655a0777f">More...</a><br /></td></tr>
-<tr class="separator:a6a480d4384ba45e6235bbd9655a0777f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf5b4ad5baf6e0c7a1f1469cfa01396"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a1cf5b4ad5baf6e0c7a1f1469cfa01396">t8_dprism_extrude_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int root_face)</td></tr>
+<tr class="memdesc:a1cf5b4ad5baf6e0c7a1f1469cfa01396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a boundary face inside a root tree's face construct the element inside the root tree that has the given face as a face.  <a href="t8__dprism__bits_8h.html#a1cf5b4ad5baf6e0c7a1f1469cfa01396">More...</a><br /></td></tr>
+<tr class="separator:a1cf5b4ad5baf6e0c7a1f1469cfa01396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f96177c241b9ba06b8cda77430710f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dprism__bits_8h.html#a94f96177c241b9ba06b8cda77430710f">t8_dprism_last_descendant</a> (const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *p, <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *s, int level)</td></tr>
 <tr class="memdesc:a94f96177c241b9ba06b8cda77430710f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the last descendant of a prism at a given level.  <a href="t8__dprism__bits_8h.html#a94f96177c241b9ba06b8cda77430710f">More...</a><br /></td></tr>
 <tr class="separator:a94f96177c241b9ba06b8cda77430710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -664,8 +661,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
 
 </div>
 </div>
-<a id="a6a480d4384ba45e6235bbd9655a0777f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a480d4384ba45e6235bbd9655a0777f">&#9670;&nbsp;</a></span>t8_dprism_extrude_face()</h2>
+<a id="a1cf5b4ad5baf6e0c7a1f1469cfa01396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf5b4ad5baf6e0c7a1f1469cfa01396">&#9670;&nbsp;</a></span>t8_dprism_extrude_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,7 +682,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>root_face</em>&#160;</td>
         </tr>
         <tr>
@@ -1356,45 +1353,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__d
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd><em>p</em> may point to the same prism as <em>parent</em>. </dd></dl>
-
-</div>
-</div>
-<a id="abed9b1d848b0257f19ec5c3bc39cf2b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed9b1d848b0257f19ec5c3bc39cf2b7">&#9670;&nbsp;</a></span>t8_dprism_root_face_to_face()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_dprism_root_face_to_face </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__dprism.html">t8_dprism_t</a> *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>root_face</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Given a prism and a face of the root prism. </p>
-<p>If the prism lies on the tree boundary, return the corresponding face number of the prism. If not the return value is arbitrary. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>The prism. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The index of a face of the root element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of the face of <em>p</em> that is a subface of <em>face</em>, if <em>p</em> is on the tree boundary. Any arbitrary integer if <em>p</em> is not at a tree boundary. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>For boundary prism, this function is the inverse of <a class="el" href="t8__dprism__bits_8h.html#afd4d854df6e8f132883bfe85b23178c2">t8_dprism_tree_face</a> </dd></dl>
 
 </div>
 </div>
