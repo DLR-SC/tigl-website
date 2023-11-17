@@ -244,7 +244,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Constructor of the occ geometry with a given dimension. </p>
-<p>The geometry is currently viable with quad/hex and triangle trees. Tets will be supported soon. The geometry uses as many vertices as the tree type has, as well as additional geometry information, which is extracted from a .brep file. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> function. Since the internals of this geometry are finely tuned to the .brep file it is recommended to only use it with the t8_cmesh_readmshfile function. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The geometry is currently viable with quad/hex and triangle trees. Tets will be supported soon. The geometry uses as many vertices as the tree type has, as well as additional geometry information, which is extracted from a .brep file. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a> function. Since the internals of this geometry are finely tuned to the .brep file it is recommended to only use it with the t8_cmesh_readmshfile function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>The dimension of this geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fileprefix</td><td>Prefix of a .brep file from which to extract an occ geometry. </td></tr>
@@ -288,7 +288,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Constructor of the occ geometry with a given dimension. </p>
-<p>The geometry is currently viable with quad/hex and triangle trees. Tets will be supported soon. The geometry uses as many vertices as the tree type has, as well as additional geometry information, which is given via the <em>occ_shape</em>. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> function. This constructor can be used in short scripts or in combination with a mesh generator, to omit the file IO of the <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a> (int dim, const char *fileprefix, const char *name) constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The geometry is currently viable with quad/hex and triangle trees. Tets will be supported soon. The geometry uses as many vertices as the tree type has, as well as additional geometry information, which is given via the <em>occ_shape</em>. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a> function. This constructor can be used in short scripts or in combination with a mesh generator, to omit the file IO of the <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a> (int dim, const char *fileprefix, const char *name) constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>The dimension of this geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">occ_shape</td><td>Occ shape geometry. </td></tr>

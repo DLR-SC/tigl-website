@@ -88,15 +88,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0e5d64eb8595f2167087eb001fdd8a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">t8_cmesh_set_tree_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, double *vertices, int num_vertices)</td></tr>
-<tr class="memdesc:a0e5d64eb8595f2167087eb001fdd8a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vertex coordinates of a tree in the cmesh.  <a href="t8__geometry__with__vertices_8h.html#a0e5d64eb8595f2167087eb001fdd8a50">More...</a><br /></td></tr>
-<tr class="separator:a0e5d64eb8595f2167087eb001fdd8a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431cb3f32f6661d7eaabfb2cf041ec5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, double *vertices, int num_vertices)</td></tr>
+<tr class="memdesc:a431cb3f32f6661d7eaabfb2cf041ec5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vertex coordinates of a tree in the cmesh.  <a href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">More...</a><br /></td></tr>
+<tr class="separator:a431cb3f32f6661d7eaabfb2cf041ec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This header file provides a C interface for functions for the <a class="el" href="classt8__geometry__with__vertices.html">t8_geometry_with_vertices</a> class. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a0e5d64eb8595f2167087eb001fdd8a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5d64eb8595f2167087eb001fdd8a50">&#9670;&nbsp;</a></span>t8_cmesh_set_tree_vertices()</h2>
+<a id="a431cb3f32f6661d7eaabfb2cf041ec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431cb3f32f6661d7eaabfb2cf041ec5f">&#9670;&nbsp;</a></span>t8_cmesh_set_tree_vertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,8 +110,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>ltree_id</em>, </td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtree_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <p>This is currently inefficient, since the vertices are duplicated for each tree. Eventually this function will be replaced by a more efficient one. It is not allowed to call this function after <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a>. The eclass of the tree has to be set before calling this function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local number of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree_id</td><td>The global number of the tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>An array of 3 doubles per tree vertex. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_vertices</td><td>The number of verticess in <em>vertices</em>. Must match the number of corners of the tree. </td></tr>
   </table>
