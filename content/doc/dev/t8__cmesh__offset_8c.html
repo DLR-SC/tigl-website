@@ -87,48 +87,51 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a286e5dd4a9c8f4e4982c4cb7871a45b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a286e5dd4a9c8f4e4982c4cb7871a45b0">t8_offset_first</a> (int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:a286e5dd4a9c8f4e4982c4cb7871a45b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global id of the first local tree of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#a286e5dd4a9c8f4e4982c4cb7871a45b0">More...</a><br /></td></tr>
-<tr class="separator:a286e5dd4a9c8f4e4982c4cb7871a45b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b4ede36175b732bccbe28259e255535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a8b4ede36175b732bccbe28259e255535">t8_offset_first_tree_to_entry</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> first_tree, int shared)</td></tr>
-<tr class="memdesc:a8b4ede36175b732bccbe28259e255535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the global tree id of the first local tree of a process and the flag whether it is shared or not, compute the entry in the offset array.  <a href="t8__cmesh__offset_8c.html#a8b4ede36175b732bccbe28259e255535">More...</a><br /></td></tr>
-<tr class="separator:a8b4ede36175b732bccbe28259e255535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac47d60ef8e5c193702f5517e10e6167e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ac47d60ef8e5c193702f5517e10e6167e">t8_offset_num_trees</a> (int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:ac47d60ef8e5c193702f5517e10e6167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of trees of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#ac47d60ef8e5c193702f5517e10e6167e">More...</a><br /></td></tr>
-<tr class="separator:ac47d60ef8e5c193702f5517e10e6167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e73611561c3888eb1b1ce59414b5c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a0e73611561c3888eb1b1ce59414b5c38">t8_offset_last</a> (int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:a0e73611561c3888eb1b1ce59414b5c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last local tree of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#a0e73611561c3888eb1b1ce59414b5c38">More...</a><br /></td></tr>
-<tr class="separator:a0e73611561c3888eb1b1ce59414b5c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08c7b6cb0c64500caf278f9153e97f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ae08c7b6cb0c64500caf278f9153e97f4">t8_offset_empty</a> (int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:ae08c7b6cb0c64500caf278f9153e97f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given process has no local trees in a given partition.  <a href="t8__cmesh__offset_8c.html#ae08c7b6cb0c64500caf278f9153e97f4">More...</a><br /></td></tr>
-<tr class="separator:ae08c7b6cb0c64500caf278f9153e97f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a7ab69cfa5dae6405a00d2e650adcfcb9">t8_offset_next_nonempty_rank</a> (int rank, int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the next higher rank that is not empty.  <a href="t8__cmesh__offset_8c.html#a7ab69cfa5dae6405a00d2e650adcfcb9">More...</a><br /></td></tr>
-<tr class="separator:a7ab69cfa5dae6405a00d2e650adcfcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acebbf06b494d1c1aa48d8eb16c290037"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#acebbf06b494d1c1aa48d8eb16c290037">t8_offset_consistent</a> (int mpisize, const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset_shmem, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
-<tr class="memdesc:acebbf06b494d1c1aa48d8eb16c290037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given offset array represents a valid partition.  <a href="t8__cmesh__offset_8c.html#acebbf06b494d1c1aa48d8eb16c290037">More...</a><br /></td></tr>
-<tr class="separator:acebbf06b494d1c1aa48d8eb16c290037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18a695eea2b6f52314bed2931f594b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ae18a695eea2b6f52314bed2931f594b3">t8_offset_in_range</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> tree_id, int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:ae18a695eea2b6f52314bed2931f594b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a given global tree id is a local tree of a given process in a certain partition.  <a href="t8__cmesh__offset_8c.html#ae18a695eea2b6f52314bed2931f594b3">More...</a><br /></td></tr>
-<tr class="separator:ae18a695eea2b6f52314bed2931f594b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa482977bc19171a853cc30c410992e63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#aa482977bc19171a853cc30c410992e63">t8_offset_any_owner_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
-<tr class="memdesc:aa482977bc19171a853cc30c410992e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find any process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#aa482977bc19171a853cc30c410992e63">More...</a><br /></td></tr>
-<tr class="separator:aa482977bc19171a853cc30c410992e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d868eb23292a7848fdc5cf2ec99dcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#aa0d868eb23292a7848fdc5cf2ec99dcd">t8_offset_first_owner_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int *some_owner)</td></tr>
-<tr class="memdesc:aa0d868eb23292a7848fdc5cf2ec99dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the smallest process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#aa0d868eb23292a7848fdc5cf2ec99dcd">More...</a><br /></td></tr>
-<tr class="separator:aa0d868eb23292a7848fdc5cf2ec99dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e49489d1e0f37b7c6877ff033533f8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a7e49489d1e0f37b7c6877ff033533f8d">t8_offset_next_owner_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int current_owner)</td></tr>
-<tr class="memdesc:a7e49489d1e0f37b7c6877ff033533f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process current_owner that has the tree gtree as local tree, find the next bigger rank that also has this tree as local tree.  <a href="t8__cmesh__offset_8c.html#a7e49489d1e0f37b7c6877ff033533f8d">More...</a><br /></td></tr>
-<tr class="separator:a7e49489d1e0f37b7c6877ff033533f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c54f837a14788d1e8ca43833965f652"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a6c54f837a14788d1e8ca43833965f652">t8_offset_prev_owner_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int current_owner)</td></tr>
-<tr class="memdesc:a6c54f837a14788d1e8ca43833965f652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process current_owner that has the tree gtree as local tree, find the next smaller rank that also has this tree as local tree.  <a href="t8__cmesh__offset_8c.html#a6c54f837a14788d1e8ca43833965f652">More...</a><br /></td></tr>
-<tr class="separator:a6c54f837a14788d1e8ca43833965f652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51aebd9fffb1a6fc387b2bcd63e11325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a51aebd9fffb1a6fc387b2bcd63e11325">t8_offset_last_owner_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int *some_owner)</td></tr>
-<tr class="memdesc:a51aebd9fffb1a6fc387b2bcd63e11325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the biggest process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#a51aebd9fffb1a6fc387b2bcd63e11325">More...</a><br /></td></tr>
-<tr class="separator:a51aebd9fffb1a6fc387b2bcd63e11325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5f03c89b515e10f09a3a2f367bfa4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a1f5f03c89b515e10f09a3a2f367bfa4e">t8_offset_all_owners_of_tree</a> (int mpisize, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, sc_array_t *owners)</td></tr>
-<tr class="memdesc:a1f5f03c89b515e10f09a3a2f367bfa4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a list of all processes that own a specific tree.n <em>offset</em> minus 1.  <a href="t8__cmesh__offset_8c.html#a1f5f03c89b515e10f09a3a2f367bfa4e">More...</a><br /></td></tr>
-<tr class="separator:a1f5f03c89b515e10f09a3a2f367bfa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5201bf8f23c07d1216e4ff1b64bfd6e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a5201bf8f23c07d1216e4ff1b64bfd6e7">t8_offset_first</a> (const int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:a5201bf8f23c07d1216e4ff1b64bfd6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global id of the first local tree of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#a5201bf8f23c07d1216e4ff1b64bfd6e7">More...</a><br /></td></tr>
+<tr class="separator:a5201bf8f23c07d1216e4ff1b64bfd6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada432e25c3e2d0891559e0652506dc1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ada432e25c3e2d0891559e0652506dc1c">t8_offset_first_tree_to_entry</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> first_tree, const int shared)</td></tr>
+<tr class="memdesc:ada432e25c3e2d0891559e0652506dc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the global tree id of the first local tree of a process and the flag whether it is shared or not, compute the entry in the offset array.  <a href="t8__cmesh__offset_8c.html#ada432e25c3e2d0891559e0652506dc1c">More...</a><br /></td></tr>
+<tr class="separator:ada432e25c3e2d0891559e0652506dc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee10bc0f6c9449e815d65ffb71f4b3b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#aee10bc0f6c9449e815d65ffb71f4b3b0">t8_offset_num_trees</a> (const int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:aee10bc0f6c9449e815d65ffb71f4b3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of trees of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#aee10bc0f6c9449e815d65ffb71f4b3b0">More...</a><br /></td></tr>
+<tr class="separator:aee10bc0f6c9449e815d65ffb71f4b3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c3d99dc7a8bf46e6c12644c774deed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ac6c3d99dc7a8bf46e6c12644c774deed">t8_offset_last</a> (const int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:ac6c3d99dc7a8bf46e6c12644c774deed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last local tree of a given process in a partition.  <a href="t8__cmesh__offset_8c.html#ac6c3d99dc7a8bf46e6c12644c774deed">More...</a><br /></td></tr>
+<tr class="separator:ac6c3d99dc7a8bf46e6c12644c774deed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba52c1b826ca58ab490dd15a3393ba9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a9ba52c1b826ca58ab490dd15a3393ba9">t8_offset_empty</a> (const int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:a9ba52c1b826ca58ab490dd15a3393ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given process has no local trees in a given partition.  <a href="t8__cmesh__offset_8c.html#a9ba52c1b826ca58ab490dd15a3393ba9">More...</a><br /></td></tr>
+<tr class="separator:a9ba52c1b826ca58ab490dd15a3393ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092f2bb68cbe6f2ac0f7f8960539bcb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a092f2bb68cbe6f2ac0f7f8960539bcb7">t8_offset_next_nonempty_rank</a> (const int rank, const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:a092f2bb68cbe6f2ac0f7f8960539bcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the next higher rank that is not empty.  <a href="t8__cmesh__offset_8c.html#a092f2bb68cbe6f2ac0f7f8960539bcb7">More...</a><br /></td></tr>
+<tr class="separator:a092f2bb68cbe6f2ac0f7f8960539bcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8428593d0b264665538ff6da02a10d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a7e8428593d0b264665538ff6da02a10d">t8_offset_consistent</a> (const int mpisize, const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset_shmem, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
+<tr class="memdesc:a7e8428593d0b264665538ff6da02a10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given offset array represents a valid partition.  <a href="t8__cmesh__offset_8c.html#a7e8428593d0b264665538ff6da02a10d">More...</a><br /></td></tr>
+<tr class="separator:a7e8428593d0b264665538ff6da02a10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea0684ef706382b780ab29ca212e871"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#aaea0684ef706382b780ab29ca212e871">t8_offset_in_range</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> tree_id, const int proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:aaea0684ef706382b780ab29ca212e871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a given global tree id is a local tree of a given process in a certain partition.  <a href="t8__cmesh__offset_8c.html#aaea0684ef706382b780ab29ca212e871">More...</a><br /></td></tr>
+<tr class="separator:aaea0684ef706382b780ab29ca212e871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6646950dcb8b54dd1aaa2096612d3c24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a6646950dcb8b54dd1aaa2096612d3c24">t8_offset_any_owner_of_tree_ext</a> (const int mpisize, const int start_proc, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:a6646950dcb8b54dd1aaa2096612d3c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find any process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#a6646950dcb8b54dd1aaa2096612d3c24">More...</a><br /></td></tr>
+<tr class="separator:a6646950dcb8b54dd1aaa2096612d3c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7245c693950d083feb11d65d5af065af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a7245c693950d083feb11d65d5af065af">t8_offset_any_owner_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset)</td></tr>
+<tr class="memdesc:a7245c693950d083feb11d65d5af065af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find any process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#a7245c693950d083feb11d65d5af065af">More...</a><br /></td></tr>
+<tr class="separator:a7245c693950d083feb11d65d5af065af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc06ce7e752e169a87a13195cce3a66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#abbc06ce7e752e169a87a13195cce3a66">t8_offset_first_owner_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int *some_owner)</td></tr>
+<tr class="memdesc:abbc06ce7e752e169a87a13195cce3a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the smallest process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#abbc06ce7e752e169a87a13195cce3a66">More...</a><br /></td></tr>
+<tr class="separator:abbc06ce7e752e169a87a13195cce3a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85aad929edbf6e443cafe69fd3db647"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ac85aad929edbf6e443cafe69fd3db647">t8_offset_next_owner_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, const int current_owner)</td></tr>
+<tr class="memdesc:ac85aad929edbf6e443cafe69fd3db647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process current_owner that has the tree gtree as local tree, find the next bigger rank that also has this tree as local tree.  <a href="t8__cmesh__offset_8c.html#ac85aad929edbf6e443cafe69fd3db647">More...</a><br /></td></tr>
+<tr class="separator:ac85aad929edbf6e443cafe69fd3db647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415c95316bc45a993c1e4f6e06f1a50c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a415c95316bc45a993c1e4f6e06f1a50c">t8_offset_prev_owner_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, const int current_owner)</td></tr>
+<tr class="memdesc:a415c95316bc45a993c1e4f6e06f1a50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a process current_owner that has the tree gtree as local tree, find the next smaller rank that also has this tree as local tree.  <a href="t8__cmesh__offset_8c.html#a415c95316bc45a993c1e4f6e06f1a50c">More...</a><br /></td></tr>
+<tr class="separator:a415c95316bc45a993c1e4f6e06f1a50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0874c0162e7785e48afce753f4940b7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a0874c0162e7785e48afce753f4940b7c">t8_offset_last_owner_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, int *some_owner)</td></tr>
+<tr class="memdesc:a0874c0162e7785e48afce753f4940b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the biggest process that has a given tree as local tree.  <a href="t8__cmesh__offset_8c.html#a0874c0162e7785e48afce753f4940b7c">More...</a><br /></td></tr>
+<tr class="separator:a0874c0162e7785e48afce753f4940b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeda61b045cb1db32da2928a88ebffa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#abeda61b045cb1db32da2928a88ebffa0">t8_offset_all_owners_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, sc_array_t *owners)</td></tr>
+<tr class="memdesc:abeda61b045cb1db32da2928a88ebffa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a list of all processes that own a specific tree.n <em>offset</em> minus 1.  <a href="t8__cmesh__offset_8c.html#abeda61b045cb1db32da2928a88ebffa0">More...</a><br /></td></tr>
+<tr class="separator:abeda61b045cb1db32da2928a88ebffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f466d9af9d1d2715aebd4270ead709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a86f466d9af9d1d2715aebd4270ead709">t8_offset_nosend</a> (int proc, int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
 <tr class="memdesc:a86f466d9af9d1d2715aebd4270ead709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartition setting a given process does send any of its local trees to any other process (including itself)  <a href="t8__cmesh__offset_8c.html#a86f466d9af9d1d2715aebd4270ead709">More...</a><br /></td></tr>
 <tr class="separator:a86f466d9af9d1d2715aebd4270ead709"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,8 +151,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this file. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a1f5f03c89b515e10f09a3a2f367bfa4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f5f03c89b515e10f09a3a2f367bfa4e">&#9670;&nbsp;</a></span>t8_offset_all_owners_of_tree()</h2>
+<a id="abeda61b045cb1db32da2928a88ebffa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeda61b045cb1db32da2928a88ebffa0">&#9670;&nbsp;</a></span>t8_offset_all_owners_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,13 +160,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_offset_all_owners_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -199,8 +202,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa482977bc19171a853cc30c410992e63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa482977bc19171a853cc30c410992e63">&#9670;&nbsp;</a></span>t8_offset_any_owner_of_tree()</h2>
+<a id="a7245c693950d083feb11d65d5af065af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7245c693950d083feb11d65d5af065af">&#9670;&nbsp;</a></span>t8_offset_any_owner_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,13 +211,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_any_owner_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -244,8 +247,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acebbf06b494d1c1aa48d8eb16c290037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acebbf06b494d1c1aa48d8eb16c290037">&#9670;&nbsp;</a></span>t8_offset_consistent()</h2>
+<a id="a6646950dcb8b54dd1aaa2096612d3c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6646950dcb8b54dd1aaa2096612d3c24">&#9670;&nbsp;</a></span>t8_offset_any_owner_of_tree_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_offset_any_owner_of_tree_ext </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>mpisize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>start_proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find any process that has a given tree as local tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of MPI ranks, also the number of entries in <em>offset</em> minus 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_proc</td><td>The mpirank to start the search with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree</td><td>The global id of a tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The partition to be considered. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An MPI rank that has <em>gtree</em> as a local tree. </dd></dl>
+
+</div>
+</div>
+<a id="a7e8428593d0b264665538ff6da02a10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8428593d0b264665538ff6da02a10d">&#9670;&nbsp;</a></span>t8_offset_consistent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +308,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_consistent </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
@@ -265,7 +320,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>num_trees</em>&#160;</td>
         </tr>
         <tr>
@@ -294,8 +349,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae08c7b6cb0c64500caf278f9153e97f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae08c7b6cb0c64500caf278f9153e97f4">&#9670;&nbsp;</a></span>t8_offset_empty()</h2>
+<a id="a9ba52c1b826ca58ab490dd15a3393ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba52c1b826ca58ab490dd15a3393ba9">&#9670;&nbsp;</a></span>t8_offset_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +358,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_empty </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>, </td>
         </tr>
         <tr>
@@ -332,8 +387,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a286e5dd4a9c8f4e4982c4cb7871a45b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286e5dd4a9c8f4e4982c4cb7871a45b0">&#9670;&nbsp;</a></span>t8_offset_first()</h2>
+<a id="a5201bf8f23c07d1216e4ff1b64bfd6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5201bf8f23c07d1216e4ff1b64bfd6e7">&#9670;&nbsp;</a></span>t8_offset_first()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +396,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_offset_first </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>, </td>
         </tr>
         <tr>
@@ -370,8 +425,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0d868eb23292a7848fdc5cf2ec99dcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0d868eb23292a7848fdc5cf2ec99dcd">&#9670;&nbsp;</a></span>t8_offset_first_owner_of_tree()</h2>
+<a id="abbc06ce7e752e169a87a13195cce3a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc06ce7e752e169a87a13195cce3a66">&#9670;&nbsp;</a></span>t8_offset_first_owner_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,13 +434,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_first_owner_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -422,8 +477,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b4ede36175b732bccbe28259e255535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b4ede36175b732bccbe28259e255535">&#9670;&nbsp;</a></span>t8_offset_first_tree_to_entry()</h2>
+<a id="ada432e25c3e2d0891559e0652506dc1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada432e25c3e2d0891559e0652506dc1c">&#9670;&nbsp;</a></span>t8_offset_first_tree_to_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,13 +486,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_offset_first_tree_to_entry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>first_tree</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>shared</em>&#160;</td>
         </tr>
         <tr>
@@ -463,8 +518,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae18a695eea2b6f52314bed2931f594b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18a695eea2b6f52314bed2931f594b3">&#9670;&nbsp;</a></span>t8_offset_in_range()</h2>
+<a id="aaea0684ef706382b780ab29ca212e871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea0684ef706382b780ab29ca212e871">&#9670;&nbsp;</a></span>t8_offset_in_range()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,13 +527,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_in_range </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>tree_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>, </td>
         </tr>
         <tr>
@@ -508,8 +563,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e73611561c3888eb1b1ce59414b5c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e73611561c3888eb1b1ce59414b5c38">&#9670;&nbsp;</a></span>t8_offset_last()</h2>
+<a id="ac6c3d99dc7a8bf46e6c12644c774deed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c3d99dc7a8bf46e6c12644c774deed">&#9670;&nbsp;</a></span>t8_offset_last()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,7 +572,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_offset_last </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>, </td>
         </tr>
         <tr>
@@ -546,8 +601,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a51aebd9fffb1a6fc387b2bcd63e11325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51aebd9fffb1a6fc387b2bcd63e11325">&#9670;&nbsp;</a></span>t8_offset_last_owner_of_tree()</h2>
+<a id="a0874c0162e7785e48afce753f4940b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0874c0162e7785e48afce753f4940b7c">&#9670;&nbsp;</a></span>t8_offset_last_owner_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,13 +610,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_last_owner_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -598,8 +653,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ab69cfa5dae6405a00d2e650adcfcb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ab69cfa5dae6405a00d2e650adcfcb9">&#9670;&nbsp;</a></span>t8_offset_next_nonempty_rank()</h2>
+<a id="a092f2bb68cbe6f2ac0f7f8960539bcb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092f2bb68cbe6f2ac0f7f8960539bcb7">&#9670;&nbsp;</a></span>t8_offset_next_nonempty_rank()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -607,13 +662,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_next_nonempty_rank </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>rank</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
@@ -643,8 +698,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e49489d1e0f37b7c6877ff033533f8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e49489d1e0f37b7c6877ff033533f8d">&#9670;&nbsp;</a></span>t8_offset_next_owner_of_tree()</h2>
+<a id="ac85aad929edbf6e443cafe69fd3db647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85aad929edbf6e443cafe69fd3db647">&#9670;&nbsp;</a></span>t8_offset_next_owner_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,13 +707,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_next_owner_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -747,8 +802,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac47d60ef8e5c193702f5517e10e6167e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac47d60ef8e5c193702f5517e10e6167e">&#9670;&nbsp;</a></span>t8_offset_num_trees()</h2>
+<a id="aee10bc0f6c9449e815d65ffb71f4b3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee10bc0f6c9449e815d65ffb71f4b3b0">&#9670;&nbsp;</a></span>t8_offset_num_trees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -756,7 +811,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_offset_num_trees </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>, </td>
         </tr>
         <tr>
@@ -785,8 +840,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c54f837a14788d1e8ca43833965f652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c54f837a14788d1e8ca43833965f652">&#9670;&nbsp;</a></span>t8_offset_prev_owner_of_tree()</h2>
+<a id="a415c95316bc45a993c1e4f6e06f1a50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415c95316bc45a993c1e4f6e06f1a50c">&#9670;&nbsp;</a></span>t8_offset_prev_owner_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -794,13 +849,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_offset_prev_owner_of_tree </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>mpisize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>gtree</em>, </td>
         </tr>
         <tr>
@@ -812,7 +867,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>current_owner</em>&#160;</td>
         </tr>
         <tr>
