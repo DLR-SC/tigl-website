@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e18fee502729f90039d11c8beeec574"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">~t8_geometry_analytic</a> ()</td></tr>
 <tr class="memdesc:a5e18fee502729f90039d11c8beeec574"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">More...</a><br /></td></tr>
 <tr class="separator:a5e18fee502729f90039d11c8beeec574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18d973b2c2d8df55252906a940f76a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ae18d973b2c2d8df55252906a940f76a4">t8_geom_get_type</a> () const</td></tr>
+<tr class="memdesc:ae18d973b2c2d8df55252906a940f76a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this geometry.  <a href="structt8__geometry__analytic.html#ae18d973b2c2d8df55252906a940f76a4">More...</a><br /></td></tr>
+<tr class="separator:ae18d973b2c2d8df55252906a940f76a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ab153daef7d179a21ea0044cf5ffa6ef3">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords) const</td></tr>
 <tr class="memdesc:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps points in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry__analytic.html#ab153daef7d179a21ea0044cf5ffa6ef3">More...</a><br /></td></tr>
 <tr class="separator:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +363,36 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section note"><dt>Note</dt><dd>The jacobian will be (1) (1 0) (1 0 0) dim 1: J = (0) dim 2: J = (0 1) dim 3: J = (0 1 0) (0) (0 0) (0 0 1) </dd></dl>
 
 <p>Implements <a class="el" href="structt8__geometry.html#a8e6d9e084a795989b603cc2c9e9cec9e">t8_geometry</a>.</p>
+
+</div>
+</div>
+<a id="ae18d973b2c2d8df55252906a940f76a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18d973b2c2d8df55252906a940f76a4">&#9670;&nbsp;</a></span>t8_geom_get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a> t8_geometry_analytic::t8_geom_get_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the type of this geometry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The type. </dd></dl>
+
+<p>Implements <a class="el" href="structt8__geometry.html#a8fb808a5c5ee4b7594c129ffbfce0abf">t8_geometry</a>.</p>
 
 </div>
 </div>
