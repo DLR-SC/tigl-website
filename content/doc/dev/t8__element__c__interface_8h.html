@@ -215,9 +215,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a74607f90e9f33ac36aa2e3a510886daf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a74607f90e9f33ac36aa2e3a510886daf">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, int level)</td></tr>
 <tr class="memdesc:a74607f90e9f33ac36aa2e3a510886daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="t8__element__c__interface_8h.html#a74607f90e9f33ac36aa2e3a510886daf">More...</a><br /></td></tr>
 <tr class="separator:a74607f90e9f33ac36aa2e3a510886daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8040836ec3124cf994ba873debbc1f43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a8040836ec3124cf994ba873debbc1f43">t8_element_root_len</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
-<tr class="memdesc:a8040836ec3124cf994ba873debbc1f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the root length of a given element, that is the length of its level 0 ancestor.  <a href="t8__element__c__interface_8h.html#a8040836ec3124cf994ba873debbc1f43">More...</a><br /></td></tr>
-<tr class="separator:a8040836ec3124cf994ba873debbc1f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ead72c4dcec625a6132995f545a9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a49ead72c4dcec625a6132995f545a9a1">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[])</td></tr>
 <tr class="memdesc:a49ead72c4dcec625a6132995f545a9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="t8__element__c__interface_8h.html#a49ead72c4dcec625a6132995f545a9a1">More...</a><br /></td></tr>
 <tr class="separator:a49ead72c4dcec625a6132995f545a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2189,44 +2186,6 @@ If an element was created by <a class="el" href="t8__element__c__interface_8h.ht
 
 <p>Returns true, if there is one element in the tree, that does not refine into 2^dim children. </p>
 <p>Returns false otherwise. </p>
-
-</div>
-</div>
-<a id="a8040836ec3124cf994ba873debbc1f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8040836ec3124cf994ba873debbc1f43">&#9670;&nbsp;</a></span>t8_element_root_len()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_element_root_len </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Compute the root length of a given element, that is the length of its level 0 ancestor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element whose root length should be computed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The root length of <em>elem</em> </dd></dl>
 
 </div>
 </div>

@@ -217,9 +217,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01775f844e306c2b9fefbbd22c36be3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__prism__c.html#a01775f844e306c2b9fefbbd22c36be3e">t8_element_anchor</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int anchor[3]) const</td></tr>
 <tr class="memdesc:a01775f844e306c2b9fefbbd22c36be3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the integer coordinates of the anchor node of an element.  <a href="structt8__default__scheme__prism__c.html#a01775f844e306c2b9fefbbd22c36be3e">More...</a><br /></td></tr>
 <tr class="separator:a01775f844e306c2b9fefbbd22c36be3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ae480488680c4d64bd57db50babcbe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__prism__c.html#aa9ae480488680c4d64bd57db50babcbe">t8_element_root_len</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
-<tr class="memdesc:aa9ae480488680c4d64bd57db50babcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the root length of a given element, that is the length of its level 0 ancestor.  <a href="structt8__default__scheme__prism__c.html#aa9ae480488680c4d64bd57db50babcbe">More...</a><br /></td></tr>
-<tr class="separator:aa9ae480488680c4d64bd57db50babcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf16ab341f1edbb03781a31f5ba36ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__default__scheme__prism__c.html#a0cf16ab341f1edbb03781a31f5ba36ea">t8_element_vertex_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int vertex, int coords[]) const</td></tr>
 <tr class="memdesc:a0cf16ab341f1edbb03781a31f5ba36ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integer coordinates of a given element vertex.  <a href="structt8__default__scheme__prism__c.html#a0cf16ab341f1edbb03781a31f5ba36ea">More...</a><br /></td></tr>
 <tr class="separator:a0cf16ab341f1edbb03781a31f5ba36ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2264,43 +2261,6 @@ If an element was created by <a class="el" href="structt8__default__scheme__pris
 <p>Returns false otherwise. </p><dl class="section return"><dt>Returns</dt><dd>0, because prisms refine regularly </dd></dl>
 
 <p>Implements <a class="el" href="structt8__eclass__scheme.html#a56b8947c4f80dc83da28491a6e8d7fbf">t8_eclass_scheme</a>.</p>
-
-</div>
-</div>
-<a id="aa9ae480488680c4d64bd57db50babcbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9ae480488680c4d64bd57db50babcbe">&#9670;&nbsp;</a></span>t8_element_root_len()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_default_scheme_prism_c::t8_element_root_len </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the root length of a given element, that is the length of its level 0 ancestor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element whose root length should be computed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The root length of <em>elem</em> </dd></dl>
-
-<p>Implements <a class="el" href="structt8__eclass__scheme.html#a88d32dfd6609e869653c48f8a1977ac4">t8_eclass_scheme</a>.</p>
 
 </div>
 </div>

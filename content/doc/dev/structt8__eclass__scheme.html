@@ -232,9 +232,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f229d1be5b7dfb84dbf07191a1c167e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a9f229d1be5b7dfb84dbf07191a1c167e">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *s, int level) const =0</td></tr>
 <tr class="memdesc:a9f229d1be5b7dfb84dbf07191a1c167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="structt8__eclass__scheme.html#a9f229d1be5b7dfb84dbf07191a1c167e">More...</a><br /></td></tr>
 <tr class="separator:a9f229d1be5b7dfb84dbf07191a1c167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d32dfd6609e869653c48f8a1977ac4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a88d32dfd6609e869653c48f8a1977ac4">t8_element_root_len</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
-<tr class="memdesc:a88d32dfd6609e869653c48f8a1977ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the root length of a given element, that is the length of its level 0 ancestor.  <a href="structt8__eclass__scheme.html#a88d32dfd6609e869653c48f8a1977ac4">More...</a><br /></td></tr>
-<tr class="separator:a88d32dfd6609e869653c48f8a1977ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66ada8062fb8e7a6a68025c04b99675"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[]) const =0</td></tr>
 <tr class="memdesc:ad66ada8062fb8e7a6a68025c04b99675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">More...</a><br /></td></tr>
 <tr class="separator:ad66ada8062fb8e7a6a68025c04b99675"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2510,43 +2507,6 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
 <p>Returns false otherwise. </p><dl class="section return"><dt>Returns</dt><dd>non-zero if there is one element in the tree that does not refine into 2^dim children. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ae2e8811cbdcdac8d0cc7a16001ca55cb">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a359b75acc94a872a790134d434dac5cc">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a4bbb56b6988aefad026eb5f36d9c7e44">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aa98470baecd6d07bb951bcd7babf6cb8">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#ab9a98617ef481ae7145ba46ae4456097">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a76b246b31fd6594998521ccb28f49804">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a97364e494b294ec86cbd01c0bce0701b">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#ae3bdd4f5ac2b794b52a6e0d3d9545fe0">t8_default_scheme_hex_c</a>.</p>
-
-</div>
-</div>
-<a id="a88d32dfd6609e869653c48f8a1977ac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d32dfd6609e869653c48f8a1977ac4">&#9670;&nbsp;</a></span>t8_element_root_len()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int t8_eclass_scheme::t8_element_root_len </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the root length of a given element, that is the length of its level 0 ancestor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element whose root length should be computed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The root length of <em>elem</em> </dd></dl>
-
-<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#a2761a8f24a6dfcf78333e491b47fcaf2">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a64fa4df8084dc8fc993fe8b0065593b0">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a9032e49811a20f673dc641e90232f397">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a744a509357b543ba62de4ec7a20172f5">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a1b4d8058fe164e53a6a6901544ad879b">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#aa9ae480488680c4d64bd57db50babcbe">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a973a56e07b86ea59d913cc76f24f9fd3">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a362aaac7cf7e00859214d27afc427eef">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
