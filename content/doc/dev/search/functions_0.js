@@ -452,7 +452,7 @@ var searchData=
   ['t8_5fforest_5felement_5ffind_5fowner_1849',['t8_forest_element_find_owner',['../t8__forest__private_8h.html#a8bab5008ba8b6da28cf42bcf4264c941',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5felement_5ffind_5fowner_5fext_1850',['t8_forest_element_find_owner_ext',['../t8__forest__private_8h.html#a428cfc4ddf6d2f0f577c9284b56ae4b1',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5felement_5ffind_5fowner_5fold_1851',['t8_forest_element_find_owner_old',['../t8__forest__private_8h.html#a6b0a1311180ec13164c6ad0142c6669e',1,'t8_forest_cxx.cxx']]],
-  ['t8_5fforest_5felement_5ffrom_5fref_5fcoords_1852',['t8_forest_element_from_ref_coords',['../t8__forest__geometrical_8h.html#a6041bacfd0553fdd54e283b83160c837',1,'t8_forest_geometrical.h']]],
+  ['t8_5fforest_5felement_5ffrom_5fref_5fcoords_1852',['t8_forest_element_from_ref_coords',['../t8__forest__geometrical_8h.html#a6041bacfd0553fdd54e283b83160c837',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5felement_5ffrom_5fref_5fcoords_5fext_1853',['t8_forest_element_from_ref_coords_ext',['../t8__forest__geometrical_8h.html#a45e48d4c2cf8f53ef9595fe55d787df9',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5felement_5fhalf_5fface_5fneighbors_1854',['t8_forest_element_half_face_neighbors',['../t8__forest__private_8h.html#a2fc2a7d7f6263970666f255bb851e01d',1,'t8_forest_cxx.cxx']]],
   ['t8_5fforest_5felement_5fhas_5fleaf_5fdesc_1855',['t8_forest_element_has_leaf_desc',['../t8__forest__private_8h.html#afc8c76472210bd9e8f3abb841c08d733',1,'t8_forest_cxx.cxx']]],
