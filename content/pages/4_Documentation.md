@@ -1,9 +1,10 @@
 Title: Documentation
-Date: 2023-07-03 14:50
+Date: 2023-12-01 11:14
 Category: Documentation
 Author: Sandro Elsweijer
 
  - [t8code dev](../doc/dev/index.html)
+ - [t8code v1.6.0](../doc/v1.6.0/index.html)
  - [t8code v1.5.0](../doc/v1.5.0/index.html)
  - [t8code v1.3.0](../doc/v1.3.0/index.html)
  - [t8code v1.2.0](../doc/v1.2.0/index.html)
