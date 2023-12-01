@@ -11,7 +11,7 @@ The most important changes are:
 
 - Sweet sweet performance upgrades in geometry module
 
-- New depth-first-search
+- New depth-first-search testsuite for element-testing
 
 - Resolved many long overdue to-dos
 
