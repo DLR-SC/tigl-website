@@ -172,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a66799e32a9ce310ef773163da68f3912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a66799e32a9ce310ef773163da68f3912">t8_cmesh_new_squared_disk</a> (const double radius, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a66799e32a9ce310ef773163da68f3912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a squared disk of given radius.  <a href="t8__cmesh__examples_8h.html#a66799e32a9ce310ef773163da68f3912">More...</a><br /></td></tr>
 <tr class="separator:a66799e32a9ce310ef773163da68f3912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794043392b54c52e8653291c05402908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a794043392b54c52e8653291c05402908">t8_cmesh_new_triangulated_spherical_surface</a> (const double radius, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a794043392b54c52e8653291c05402908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a triangulated spherical surface of given radius.  <a href="t8__cmesh__examples_8h.html#a794043392b54c52e8653291c05402908">More...</a><br /></td></tr>
+<tr class="separator:a794043392b54c52e8653291c05402908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide example coarse meshes in this file. </p>
@@ -1136,6 +1139,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A committed and replicated cmesh of 24 tetrahedron trees in which each (face -&gt; face, orientation) face connection is set at least once. Note that most faces in this cmesh are boundary faces. </dd></dl>
+
+</div>
+</div>
+<a id="a794043392b54c52e8653291c05402908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794043392b54c52e8653291c05402908">&#9670;&nbsp;</a></span>t8_cmesh_new_triangulated_spherical_surface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_triangulated_spherical_surface </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a triangulated spherical surface of given radius. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the sphere. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A cmesh representing the spherical surface. </dd></dl>
 
 </div>
 </div>
