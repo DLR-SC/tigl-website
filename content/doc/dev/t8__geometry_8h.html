@@ -160,6 +160,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_handler_is_com
 <tr class="memitem:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#afc34ebaf8fc2472681d1ba79d64d93b9">t8_geom_handler_get_unique_geometry</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
 <tr class="memdesc:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a geometry handler only has one registered geometry, get a pointer to this geometry.  <a href="t8__geometry_8h.html#afc34ebaf8fc2472681d1ba79d64d93b9">More...</a><br /></td></tr>
 <tr class="separator:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c30f8fad5ba402122069f41779ccdb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a3c30f8fad5ba402122069f41779ccdb8">t8_geom_handler_deactivate_tree</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
+<tr class="memdesc:a3c30f8fad5ba402122069f41779ccdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate the current active tree.  <a href="t8__geometry_8h.html#a3c30f8fad5ba402122069f41779ccdb8">More...</a><br /></td></tr>
+<tr class="separator:a3c30f8fad5ba402122069f41779ccdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafef90cc8539857421208905d19cb97a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">t8_geom_handler_find_geometry</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler, const char *name)</td></tr>
 <tr class="memdesc:aafef90cc8539857421208905d19cb97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a geometry's name find that geometry in the geometry handler and return it.  <a href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">More...</a><br /></td></tr>
 <tr class="separator:aafef90cc8539857421208905d19cb97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,6 +253,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3c30f8fad5ba402122069f41779ccdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c30f8fad5ba402122069f41779ccdb8">&#9670;&nbsp;</a></span>t8_geom_handler_deactivate_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_geom_handler_deactivate_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
+          <td class="paramname"><em>geom_handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deactivate the current active tree. </p>
+<p>Can be used to reload data, after it has been moved, for example by the partition-algorithm</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom_handler</td><td>The geometry handler, where the tree has to be deactivated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd><em>geom_handler</em> must be committed before calling this function. </dd></dl>
 
 </div>
 </div>
