@@ -6,12 +6,12 @@ Author: Johannes Holke and Sandro Elsweijer
 The t8code developer team wishes merry Christmas, happy holidays and a happy new year 2024.
 <img src="images/christmas23/AMR_christmas_card_2023.gif" height="600" />
 
+This year's Christmas mesh shows a christmas tree with sparkling lights and demonstrates on of our new features developed in 2023: CAD-based geometry interpolation.
 
-TODO: Change text
+We store the original CAD geometry of the boundary surfaces/edges in the coarse mesh and using a newly developed volume interpolation scheme we can recover the accurate geometry of all points inside the coarse tree.
+Thus, the more we refine, the more accurate our representation looks.
 
-It demonstrates our new hanging node resolving feature developed by Florian Becker in his <a href="https://elib.dlr.de/187499"> Master's thesis</a> - soon to be integrated into the t8code main branch.
-The image was created with our <a href="https://github.com/dlr-amr/png2mesh">png2mesh</a> library. See also the <a href="https://github.com/DLR-AMR/t8data/tree/main/png2mesh/ChristmasCard2022"> t8data repository </a> if you want to recreate the mesh.
-Ref: 1.https://elib.dlr.de/186570/
-     2.https://elib.dlr.de/186561/
-     3.https://elib.dlr.de/200442/1/Masterthesis_Jakob_Fussbroich.pdf
+The left hand side of the tree shows the linear geometry while the right hand side shows a curved one.
+
+This feature is based on the works of Sandro Elsweijer and Jakob Fussbroich. For more information, see our [research note at IMR2022](https://elib.dlr.de/186570/), [Sandro's thesis](https://elib.dlr.de/186561) (implementation for quads/hexes) and [Jakob's thesis](https://elib.dlr.de/200442) (implementation for triangles/tets).
 
