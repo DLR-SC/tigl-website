@@ -103,16 +103,19 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef T8_GEOMETRY_WITH_VERTICES_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define T8_GEOMETRY_WITH_VERTICES_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, <span class="keywordtype">double</span> *vertices, <span class="keywordtype">int</span> num_vertices);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, <span class="keywordtype">double</span> *vertices, <span class="keywordtype">int</span> num_vertices);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_WITH_VERTICES_H! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_WITH_VERTICES_H! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:88</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:98</div></div>
+<div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
 <div class="ttc" id="at8__geometry__with__vertices_8h_html_a431cb3f32f6661d7eaabfb2cf041ec5f"><div class="ttname"><a href="t8__geometry__with__vertices_8h.html#a431cb3f32f6661d7eaabfb2cf041ec5f">t8_cmesh_set_tree_vertices</a></div><div class="ttdeci">void t8_cmesh_set_tree_vertices(t8_cmesh_t cmesh, t8_gloidx_t gtree_id, double *vertices, int num_vertices)</div><div class="ttdoc">Set the vertex coordinates of a tree in the cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.c:548</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
