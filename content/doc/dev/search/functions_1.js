@@ -7,6 +7,6 @@ var searchData=
   ['_7et8_5fgeometry_5flinear_2112',['~t8_geometry_linear',['../structt8__geometry__linear.html#a3caec39f25cb90993e637c4eb059be5a',1,'t8_geometry_linear']]],
   ['_7et8_5fgeometry_5flinear_5faxis_5faligned_2113',['~t8_geometry_linear_axis_aligned',['../structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77',1,'t8_geometry_linear_axis_aligned']]],
   ['_7et8_5fgeometry_5focc_2114',['~t8_geometry_occ',['../structt8__geometry__occ.html#a3e6c13e85e7fbb64e6f1bc2039deafea',1,'t8_geometry_occ']]],
-  ['_7et8_5fgeometry_5fwith_5fvertices_2115',['~t8_geometry_with_vertices',['../classt8__geometry__with__vertices.html#ac12d9f9def92fc9fe27ea8ec188a4f48',1,'t8_geometry_with_vertices']]],
+  ['_7et8_5fgeometry_5fwith_5fvertices_2115',['~t8_geometry_with_vertices',['../structt8__geometry__with__vertices.html#ac12d9f9def92fc9fe27ea8ec188a4f48',1,'t8_geometry_with_vertices']]],
   ['_7et8_5fgeometry_5fzero_2116',['~t8_geometry_zero',['../structt8__geometry__zero.html#a7acbacb3b5d9ea8a6f8304f5b61a3893',1,'t8_geometry_zero']]]
 ];
