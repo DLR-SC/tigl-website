@@ -152,12 +152,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a08cb9b865e3e7c1b4d656a702630d7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a08cb9b865e3e7c1b4d656a702630d7df">t8_cmesh_set_attribute_string</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, int package_id, int key, const char *string)</td></tr>
 <tr class="memdesc:a08cb9b865e3e7c1b4d656a702630d7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a string as an attribute at a tree in a cmesh.  <a href="t8__cmesh_8c.html#a08cb9b865e3e7c1b4d656a702630d7df">More...</a><br /></td></tr>
 <tr class="separator:a08cb9b865e3e7c1b4d656a702630d7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81643700fffbc1c9450b3445bef7628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#ae81643700fffbc1c9450b3445bef7628">t8_cmesh_set_attribute_gloidx_array</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, int package_id, int key, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *data, size_t data_count, int data_persists)</td></tr>
+<tr class="memdesc:ae81643700fffbc1c9450b3445bef7628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store an array of t8_gloidx_t as an attribute at a tree in a cmesh.  <a href="t8__cmesh_8c.html#ae81643700fffbc1c9450b3445bef7628">More...</a><br /></td></tr>
+<tr class="separator:ae81643700fffbc1c9450b3445bef7628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a23b83b8b0710a2c8ce33dcd63e859c4b">t8_cmesh_get_tree_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the vertex coordinates of a tree.  <a href="t8__cmesh_8c.html#a23b83b8b0710a2c8ce33dcd63e859c4b">More...</a><br /></td></tr>
 <tr class="separator:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#ae1ef646ebb5234eba7993c1ed4cfafa1">t8_cmesh_get_attribute</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int package_id, int key, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
 <tr class="memdesc:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree.  <a href="t8__cmesh_8c.html#ae1ef646ebb5234eba7993c1ed4cfafa1">More...</a><br /></td></tr>
 <tr class="separator:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a3795c7b9f08df3bf1bb9946c0b41eb5a">t8_cmesh_get_attribute_gloidx_array</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int package_id, int key, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const size_t data_count)</td></tr>
+<tr class="memdesc:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree for a gloidx_t array.  <a href="t8__cmesh_8c.html#a3795c7b9f08df3bf1bb9946c0b41eb5a">More...</a><br /></td></tr>
+<tr class="separator:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a4918cb34d7d837ead1c8963adda4363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory array storing the partition table of a partitioned cmesh.  <a href="t8__cmesh_8c.html#a4918cb34d7d837ead1c8963adda4363c">More...</a><br /></td></tr>
 <tr class="separator:a4918cb34d7d837ead1c8963adda4363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -544,12 +550,81 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A key used to identify the attribute under all attributes of this tree with the same <em>package_id</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_id</td><td>The local number of the tree. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">data_size</td><td>The size of the attribute in bytes. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The attribute pointer of the tree <em>ltree_id</em> or NULL if the attribute is not found. <em>cmesh</em> must be committed before calling this function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute pointer of the tree <em>ltree_id</em> or NULL if the attribute is not found. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><em>cmesh</em> must be committed before calling this function. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa" title="Store an attribute at a tree in a cmesh.">t8_cmesh_set_attribute</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3795c7b9f08df3bf1bb9946c0b41eb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3795c7b9f08df3bf1bb9946c0b41eb5a">&#9670;&nbsp;</a></span>t8_cmesh_get_attribute_gloidx_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>* t8_cmesh_get_attribute_gloidx_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>package_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>ltree_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>data_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the attribute pointer of a tree for a gloidx_t array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">package_id</td><td>The identifier of a valid software package. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>sc_package_register </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A key used to identify the attribute under all attributes of this tree with the same <em>package_id</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_id</td><td>The local number of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_count</td><td>The number of entries in the array that are requested. This must be smaller or equal to the <em>data_count</em> parameter of the corresponding call to <a class="el" href="t8__cmesh_8h.html#ad0d1703216f125ec0d57e4b1034bbe16">t8_cmesh_set_attribute_gloidx_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute pointer of the tree <em>ltree_id</em> or NULL if the attribute is not found. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><em>cmesh</em> must be committed before calling this function. </dd>
+<dd>
+No check is performed whether the attribute actually stored <em>data_count</em> many entries since we do not store the number of data entries of the attribute array. You can keep track of the data count yourself by using another attribute. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__cmesh_8h.html#ad0d1703216f125ec0d57e4b1034bbe16" title="Store an array of t8_gloidx_t as an attribute at a tree in a cmesh.">t8_cmesh_set_attribute_gloidx_array</a> </dd></dl>
 
 </div>
 </div>
@@ -1420,6 +1495,89 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 
 </div>
 </div>
+<a id="ae81643700fffbc1c9450b3445bef7628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81643700fffbc1c9450b3445bef7628">&#9670;&nbsp;</a></span>t8_cmesh_set_attribute_gloidx_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_set_attribute_gloidx_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtree_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>package_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>data_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_persists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store an array of t8_gloidx_t as an attribute at a tree in a cmesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree_id</td><td>The global id of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">package_id</td><td>Unique identifier of a valid software package. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>sc_package_register </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>An integer key used to identify this attribute under all attributes with the same package_id. <em>key</em> must be a unique value for this tree and package_id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The array to store as attribute. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_count</td><td>The number of entries in <em>data</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_persists</td><td>This flag can be used to optimize memory. If true then t8code assumes that the attribute data is present at the memory that <em>data</em> points to when <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a> is called (This is more memory efficient). If the flag is false an internal copy of the data is created immediately and this copy is used at commit. In both cases a copy of the data is used by t8_code after t8_cmesh_commit. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>You can also use <a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa">t8_cmesh_set_attribute</a>, but we recommend using this specialized function for arrays. </dd>
+<dd>
+If an attribute with the given package_id and key already exists, then it will get overwritten. </dd>
+<dd>
+We do not store the number of data entries <em>data_count</em> of the attribute array. You can keep track of the data count yourself by using another attribute. </dd></dl>
+
+</div>
+</div>
 <a id="a08cb9b865e3e7c1b4d656a702630d7df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08cb9b865e3e7c1b4d656a702630d7df">&#9670;&nbsp;</a></span>t8_cmesh_set_attribute_string()</h2>
 
@@ -1481,7 +1639,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>You can also use <a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa">t8_cmesh_set_attribute</a>, but we recommend using this specialized function for strings. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You can also use <a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa">t8_cmesh_set_attribute</a>, but we recommend using this specialized function for strings. </dd>
+<dd>
+If an attribute with the given package_id and key already exists, then it will get overwritten. </dd></dl>
 
 </div>
 </div>
