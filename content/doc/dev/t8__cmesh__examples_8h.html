@@ -179,6 +179,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adeee8ac30c92cfe5be99cef5bebb589c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#adeee8ac30c92cfe5be99cef5bebb589c">t8_cmesh_new_quadrangulated_spherical_surface</a> (const double radius, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:adeee8ac30c92cfe5be99cef5bebb589c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a quadrangulated spherical surface of given radius.  <a href="t8__cmesh__examples_8h.html#adeee8ac30c92cfe5be99cef5bebb589c">More...</a><br /></td></tr>
 <tr class="separator:adeee8ac30c92cfe5be99cef5bebb589c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67bab32ce478ba42a47b6be52d77f05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#aa67bab32ce478ba42a47b6be52d77f05">t8_cmesh_new_cubed_spherical_shell</a> (const double inner_radius, const double shell_thickness, const int num_levels, const int num_layers, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:aa67bab32ce478ba42a47b6be52d77f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cubed spherical shell of given inner radius and thickness.  <a href="t8__cmesh__examples_8h.html#aa67bab32ce478ba42a47b6be52d77f05">More...</a><br /></td></tr>
+<tr class="separator:aa67bab32ce478ba42a47b6be52d77f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide example coarse meshes in this file. </p>
@@ -225,6 +228,65 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A valid cmesh, as if _init and _commit had been called. </dd></dl>
+
+</div>
+</div>
+<a id="aa67bab32ce478ba42a47b6be52d77f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67bab32ce478ba42a47b6be52d77f05">&#9670;&nbsp;</a></span>t8_cmesh_new_cubed_spherical_shell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_cubed_spherical_shell </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>inner_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>shell_thickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_levels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_layers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a cubed spherical shell of given inner radius and thickness. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inner_radius</td><td>Radius of the inner side of the shell. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shell_thickness</td><td>Thickness of the shell. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_levels</td><td>Number of trees per patch in longitudinal and latitudinal direction given as level of refinement: 4^num_levels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_layers</td><td>Number of layers of the shell. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A cmesh representing the spherical surface. </dd></dl>
 
 </div>
 </div>
