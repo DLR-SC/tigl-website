@@ -113,9 +113,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a3348d07b3c2953bcbb8b2e1aa919f182">t8_cmesh_is_initialized</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a cmesh is not NULL, initialized and not committed.  <a href="t8__cmesh_8h.html#a3348d07b3c2953bcbb8b2e1aa919f182">More...</a><br /></td></tr>
 <tr class="separator:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa787da4f0dc2bb09e7fd05d9e924a137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aa787da4f0dc2bb09e7fd05d9e924a137">t8_cmesh_is_committed</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
-<tr class="memdesc:aa787da4f0dc2bb09e7fd05d9e924a137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a cmesh is not NULL, initialized and committed.  <a href="t8__cmesh_8h.html#aa787da4f0dc2bb09e7fd05d9e924a137">More...</a><br /></td></tr>
-<tr class="separator:aa787da4f0dc2bb09e7fd05d9e924a137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aa03ffd62ff4811b38709eb6f6f9adcdd">t8_cmesh_is_committed</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
+<tr class="memdesc:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a cmesh is not NULL, initialized and committed.  <a href="t8__cmesh_8h.html#aa03ffd62ff4811b38709eb6f6f9adcdd">More...</a><br /></td></tr>
+<tr class="separator:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca420ae1dff4761f7c6ceb7e7574701b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aca420ae1dff4761f7c6ceb7e7574701b">t8_cmesh_no_negative_volume</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:aca420ae1dff4761f7c6ceb7e7574701b"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a cmesh is committed, check whether all trees in a cmesh do have positive volume.  <a href="t8__cmesh_8h.html#aca420ae1dff4761f7c6ceb7e7574701b">More...</a><br /></td></tr>
 <tr class="separator:aca420ae1dff4761f7c6ceb7e7574701b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,12 +251,12 @@ const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa
 <tr class="memitem:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a23b83b8b0710a2c8ce33dcd63e859c4b">t8_cmesh_get_tree_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the vertex coordinates of a tree.  <a href="t8__cmesh_8h.html#a23b83b8b0710a2c8ce33dcd63e859c4b">More...</a><br /></td></tr>
 <tr class="separator:a23b83b8b0710a2c8ce33dcd63e859c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ae1ef646ebb5234eba7993c1ed4cfafa1">t8_cmesh_get_attribute</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int package_id, int key, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
-<tr class="memdesc:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree.  <a href="t8__cmesh_8h.html#ae1ef646ebb5234eba7993c1ed4cfafa1">More...</a><br /></td></tr>
-<tr class="separator:ae1ef646ebb5234eba7993c1ed4cfafa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a3795c7b9f08df3bf1bb9946c0b41eb5a">t8_cmesh_get_attribute_gloidx_array</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int package_id, int key, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const size_t data_count)</td></tr>
-<tr class="memdesc:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree for a gloidx_t array.  <a href="t8__cmesh_8h.html#a3795c7b9f08df3bf1bb9946c0b41eb5a">More...</a><br /></td></tr>
-<tr class="separator:a3795c7b9f08df3bf1bb9946c0b41eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9082603e4c443774fe92312e97a0ef1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#af9082603e4c443774fe92312e97a0ef1">t8_cmesh_get_attribute</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int package_id, const int key, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
+<tr class="memdesc:af9082603e4c443774fe92312e97a0ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree.  <a href="t8__cmesh_8h.html#af9082603e4c443774fe92312e97a0ef1">More...</a><br /></td></tr>
+<tr class="separator:af9082603e4c443774fe92312e97a0ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f7b7eb11be1c27326833a45549beaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a54f7b7eb11be1c27326833a45549beaf">t8_cmesh_get_attribute_gloidx_array</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int package_id, const int key, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const size_t data_count)</td></tr>
+<tr class="memdesc:a54f7b7eb11be1c27326833a45549beaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the attribute pointer of a tree for a gloidx_t array.  <a href="t8__cmesh_8h.html#a54f7b7eb11be1c27326833a45549beaf">More...</a><br /></td></tr>
+<tr class="separator:a54f7b7eb11be1c27326833a45549beaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a4918cb34d7d837ead1c8963adda4363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory array storing the partition table of a partitioned cmesh.  <a href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">More...</a><br /></td></tr>
 <tr class="separator:a4918cb34d7d837ead1c8963adda4363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,8 +571,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 
 </div>
 </div>
-<a id="ae1ef646ebb5234eba7993c1ed4cfafa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1ef646ebb5234eba7993c1ed4cfafa1">&#9670;&nbsp;</a></span>t8_cmesh_get_attribute()</h2>
+<a id="af9082603e4c443774fe92312e97a0ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9082603e4c443774fe92312e97a0ef1">&#9670;&nbsp;</a></span>t8_cmesh_get_attribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,25 +580,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
         <tr>
           <td class="memname">void* t8_cmesh_get_attribute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>package_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
           <td class="paramname"><em>ltree_id</em>&#160;</td>
         </tr>
         <tr>
@@ -631,8 +631,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 
 </div>
 </div>
-<a id="a3795c7b9f08df3bf1bb9946c0b41eb5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3795c7b9f08df3bf1bb9946c0b41eb5a">&#9670;&nbsp;</a></span>t8_cmesh_get_attribute_gloidx_array()</h2>
+<a id="a54f7b7eb11be1c27326833a45549beaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f7b7eb11be1c27326833a45549beaf">&#9670;&nbsp;</a></span>t8_cmesh_get_attribute_gloidx_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,25 +640,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>* t8_cmesh_get_attribute_gloidx_array </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>package_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
           <td class="paramname"><em>ltree_id</em>, </td>
         </tr>
         <tr>
@@ -1223,8 +1223,8 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 
 </div>
 </div>
-<a id="aa787da4f0dc2bb09e7fd05d9e924a137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa787da4f0dc2bb09e7fd05d9e924a137">&#9670;&nbsp;</a></span>t8_cmesh_is_committed()</h2>
+<a id="aa03ffd62ff4811b38709eb6f6f9adcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03ffd62ff4811b38709eb6f6f9adcdd">&#9670;&nbsp;</a></span>t8_cmesh_is_committed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1232,7 +1232,7 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
         <tr>
           <td class="memname">int t8_cmesh_is_committed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em></td><td>)</td>
           <td></td>
         </tr>

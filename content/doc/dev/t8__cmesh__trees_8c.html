@@ -94,9 +94,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a67df28464b59ec241fe612e55a5f2f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__part__tree.html">t8_part_tree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a67df28464b59ec241fe612e55a5f2f5e">t8_cmesh_trees_get_part</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc)</td></tr>
-<tr class="memdesc:a67df28464b59ec241fe612e55a5f2f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return one part of a specified tree array.  <a href="t8__cmesh__trees_8c.html#a67df28464b59ec241fe612e55a5f2f5e">More...</a><br /></td></tr>
-<tr class="separator:a67df28464b59ec241fe612e55a5f2f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c31aa98555f22a8ec0a1bd8330e3a42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__part__tree.html">t8_part_tree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a8c31aa98555f22a8ec0a1bd8330e3a42">t8_cmesh_trees_get_part</a> (const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, const int proc)</td></tr>
+<tr class="memdesc:a8c31aa98555f22a8ec0a1bd8330e3a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return one part of a specified tree array.  <a href="t8__cmesh__trees_8c.html#a8c31aa98555f22a8ec0a1bd8330e3a42">More...</a><br /></td></tr>
+<tr class="separator:a8c31aa98555f22a8ec0a1bd8330e3a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9594a93b4c0f90da88acbb491bfd1d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a9594a93b4c0f90da88acbb491bfd1d23">t8_cmesh_trees_init</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> *ptrees, int num_procs, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_ghosts)</td></tr>
 <tr class="memdesc:a9594a93b4c0f90da88acbb491bfd1d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a trees structure and allocate its parts.  <a href="t8__cmesh__trees_8c.html#a9594a93b4c0f90da88acbb491bfd1d23">More...</a><br /></td></tr>
 <tr class="separator:a9594a93b4c0f90da88acbb491bfd1d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +166,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_add_at
 <tr class="memitem:ac32fd9e9ea103cada64be1e6d7a37ca8"><td class="memItemLeft" align="right" valign="top"><a id="ac32fd9e9ea103cada64be1e6d7a37ca8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_add_ghost_attribute</b> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, int proc, <a class="el" href="t8__cmesh__stash_8h.html#a708282f12534175ec17d01ff29275460">t8_stash_attribute_struct_t</a> *attr, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_ghost_id, size_t index, size_t *attribute_data_offset)</td></tr>
 <tr class="separator:ac32fd9e9ea103cada64be1e6d7a37ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a9e47465cce7f5520c4f4a21cf7086bf9">t8_cmesh_trees_get_attribute</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, int package_id, int key, size_t *size, int is_ghost)</td></tr>
-<tr class="memdesc:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an attribute that is stored at a tree.  <a href="t8__cmesh__trees_8c.html#a9e47465cce7f5520c4f4a21cf7086bf9">More...</a><br /></td></tr>
-<tr class="separator:a9e47465cce7f5520c4f4a21cf7086bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0d544524aa2e65255a56ccafbdeb6a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a7f0d544524aa2e65255a56ccafbdeb6a">t8_cmesh_trees_get_numproc</a> (<a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
-<tr class="memdesc:a7f0d544524aa2e65255a56ccafbdeb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of parts of a trees structure.  <a href="t8__cmesh__trees_8c.html#a7f0d544524aa2e65255a56ccafbdeb6a">More...</a><br /></td></tr>
-<tr class="separator:a7f0d544524aa2e65255a56ccafbdeb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2faa52d36bff96f5058f56ee720b6d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#af2faa52d36bff96f5058f56ee720b6d1">t8_cmesh_trees_get_attribute</a> (const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const int package_id, const int key, size_t *size, const int is_ghost)</td></tr>
+<tr class="memdesc:af2faa52d36bff96f5058f56ee720b6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an attribute that is stored at a tree.  <a href="t8__cmesh__trees_8c.html#af2faa52d36bff96f5058f56ee720b6d1">More...</a><br /></td></tr>
+<tr class="separator:af2faa52d36bff96f5058f56ee720b6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418cd571576f4936bbbbe55980f31189"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a418cd571576f4936bbbbe55980f31189">t8_cmesh_trees_get_numproc</a> (const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a> trees)</td></tr>
+<tr class="memdesc:a418cd571576f4936bbbbe55980f31189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of parts of a trees structure.  <a href="t8__cmesh__trees_8c.html#a418cd571576f4936bbbbe55980f31189">More...</a><br /></td></tr>
+<tr class="separator:a418cd571576f4936bbbbe55980f31189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9655277d4ce53191800987d11f1ba442"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__trees_8c.html#a9655277d4ce53191800987d11f1ba442">t8_cmesh_tree_to_face_encode</a> (const int dimension, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> face, const int orientation)</td></tr>
 <tr class="memdesc:a9655277d4ce53191800987d11f1ba442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the tree-to-face information given a face and orientation value of a face connection.  <a href="t8__cmesh__trees_8c.html#a9655277d4ce53191800987d11f1ba442">More...</a><br /></td></tr>
 <tr class="separator:a9655277d4ce53191800987d11f1ba442"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,8 +646,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 
 </div>
 </div>
-<a id="a9e47465cce7f5520c4f4a21cf7086bf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e47465cce7f5520c4f4a21cf7086bf9">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_attribute()</h2>
+<a id="af2faa52d36bff96f5058f56ee720b6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2faa52d36bff96f5058f56ee720b6d1">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_attribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,25 +655,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
         <tr>
           <td class="memname">void* t8_cmesh_trees_get_attribute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
           <td class="paramname"><em>trees</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
           <td class="paramname"><em>ltree_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>package_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -968,8 +968,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 
 </div>
 </div>
-<a id="a7f0d544524aa2e65255a56ccafbdeb6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f0d544524aa2e65255a56ccafbdeb6a">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_numproc()</h2>
+<a id="a418cd571576f4936bbbbe55980f31189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418cd571576f4936bbbbe55980f31189">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_numproc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -977,7 +977,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
         <tr>
           <td class="memname">size_t t8_cmesh_trees_get_numproc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
           <td class="paramname"><em>trees</em></td><td>)</td>
           <td></td>
         </tr>
@@ -995,8 +995,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
 
 </div>
 </div>
-<a id="a67df28464b59ec241fe612e55a5f2f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67df28464b59ec241fe612e55a5f2f5e">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_part()</h2>
+<a id="a8c31aa98555f22a8ec0a1bd8330e3a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c31aa98555f22a8ec0a1bd8330e3a42">&#9670;&nbsp;</a></span>t8_cmesh_trees_get_part()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1004,13 +1004,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_is_equa
         <tr>
           <td class="memname"><a class="el" href="structt8__part__tree.html">t8_part_tree_t</a> t8_cmesh_trees_get_part </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees_t</a>&#160;</td>
           <td class="paramname"><em>trees</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>proc</em>&#160;</td>
         </tr>
         <tr>
