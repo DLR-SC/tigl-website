@@ -96,12 +96,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a30c51b123eba1694a8cf0d00c8194ddd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh.html#a30c51b123eba1694a8cf0d00c8194ddd">face_knowledge</a></td></tr>
 <tr class="memdesc:a30c51b123eba1694a8cf0d00c8194ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If partitioned the level of face knowledge that is expected.  <a href="structt8__cmesh.html#a30c51b123eba1694a8cf0d00c8194ddd">More...</a><br /></td></tr>
 <tr class="separator:a30c51b123eba1694a8cf0d00c8194ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b64ca3a9398615fd2145e2e7b245a5"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh.html#a87b64ca3a9398615fd2145e2e7b245a5">set_refine_level</a></td></tr>
-<tr class="memdesc:a87b64ca3a9398615fd2145e2e7b245a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cmesh is derived from a second cmesh, a refinement level is specified here.  <a href="structt8__cmesh.html#a87b64ca3a9398615fd2145e2e7b245a5">More...</a><br /></td></tr>
-<tr class="separator:a87b64ca3a9398615fd2145e2e7b245a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7768b90dfda5e75527e4ecb8874ccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh.html#a9c7768b90dfda5e75527e4ecb8874ccb">set_refine_scheme</a></td></tr>
-<tr class="memdesc:a9c7768b90dfda5e75527e4ecb8874ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cmesh is to be refined, the scheme that describes the refinement pattern.  <a href="structt8__cmesh.html#a9c7768b90dfda5e75527e4ecb8874ccb">More...</a><br /></td></tr>
-<tr class="separator:a9c7768b90dfda5e75527e4ecb8874ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ac9cc52f286701b1392c663408b786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh.html#a53ac9cc52f286701b1392c663408b786">set_partition_scheme</a></td></tr>
 <tr class="memdesc:a53ac9cc52f286701b1392c663408b786"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cmesh is to be partitioned according to a uniform level, the scheme that describes the refinement pattern.  <a href="structt8__cmesh.html#a53ac9cc52f286701b1392c663408b786">More...</a><br /></td></tr>
 <tr class="separator:a53ac9cc52f286701b1392c663408b786"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,40 +328,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 
 <p>If the cmesh is to be partitioned according to a uniform level, the scheme that describes the refinement pattern. </p>
 <p>See t8_cmesh_set_partition. </p>
-
-</div>
-</div>
-<a id="a87b64ca3a9398615fd2145e2e7b245a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87b64ca3a9398615fd2145e2e7b245a5">&#9670;&nbsp;</a></span>set_refine_level</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int8_t t8_cmesh::set_refine_level</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If the cmesh is derived from a second cmesh, a refinement level is specified here. </p>
-<p><a class="el" href="t8__cmesh_8h.html#aec27dd0425316269576fa4c69d7121e4">t8_cmesh_set_derive</a> <a class="el" href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">t8_cmesh_set_refine</a>. </p>
-
-</div>
-</div>
-<a id="a9c7768b90dfda5e75527e4ecb8874ccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c7768b90dfda5e75527e4ecb8874ccb">&#9670;&nbsp;</a></span>set_refine_scheme</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a>* t8_cmesh::set_refine_scheme</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If the cmesh is to be refined, the scheme that describes the refinement pattern. </p>
-<p>See <a class="el" href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">t8_cmesh_set_refine</a>. </p>
 
 </div>
 </div>

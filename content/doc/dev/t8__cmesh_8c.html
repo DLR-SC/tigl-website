@@ -122,9 +122,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#ae640d2a19a094bfdceaa7d33084a9b8b">t8_cmesh_set_partition_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int element_level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts)</td></tr>
 <tr class="memdesc:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh where the partition table is derived from an assumed uniform refinement of a given level.  <a href="t8__cmesh_8c.html#ae640d2a19a094bfdceaa7d33084a9b8b">More...</a><br /></td></tr>
 <tr class="separator:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2e34579894e8d47ebfc44e80e8626b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#a7b2e34579894e8d47ebfc44e80e8626b">t8_cmesh_set_refine</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme)</td></tr>
-<tr class="memdesc:a7b2e34579894e8d47ebfc44e80e8626b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the cmesh to a given level.  <a href="t8__cmesh_8c.html#a7b2e34579894e8d47ebfc44e80e8626b">More...</a><br /></td></tr>
-<tr class="separator:a7b2e34579894e8d47ebfc44e80e8626b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcab2c626867dac73bc5d3aeccc8decd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#abcab2c626867dac73bc5d3aeccc8decd">t8_cmesh_get_first_treeid</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:abcab2c626867dac73bc5d3aeccc8decd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global index of the first local tree of a cmesh.  <a href="t8__cmesh_8c.html#abcab2c626867dac73bc5d3aeccc8decd">More...</a><br /></td></tr>
 <tr class="separator:abcab2c626867dac73bc5d3aeccc8decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1954,43 +1951,6 @@ If an attribute with the given package_id and key already exists, then it will g
   </dd>
 </dl>
 <p>Profiling is disabled by default. The cmesh must not be committed before calling this function. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__cmesh_8h.html#a4824f088e902bcd3f249595791c9fa1d" title="Print the collected statistics from a cmesh profile.">t8_cmesh_print_profile</a> </dd></dl>
-
-</div>
-</div>
-<a id="a7b2e34579894e8d47ebfc44e80e8626b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2e34579894e8d47ebfc44e80e8626b">&#9670;&nbsp;</a></span>t8_cmesh_set_refine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_cmesh_set_refine </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
-          <td class="paramname"><em>cmesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td>
-          <td class="paramname"><em>scheme</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Refine the cmesh to a given level. </p>
-<p>Thus split each tree into x^level subtrees TODO: implement </p>
 
 </div>
 </div>

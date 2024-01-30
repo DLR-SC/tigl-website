@@ -13,7 +13,5 @@ var searchData=
   ['set_5fpartition_112',['set_partition',['../structt8__cmesh.html#a11ad220c640167922d321663076680ea',1,'t8_cmesh']]],
   ['set_5fpartition_5flevel_113',['set_partition_level',['../structt8__cmesh.html#a7e1926d5e95da7d4ee5db5ef36290efc',1,'t8_cmesh']]],
   ['set_5fpartition_5fscheme_114',['set_partition_scheme',['../structt8__cmesh.html#a53ac9cc52f286701b1392c663408b786',1,'t8_cmesh']]],
-  ['set_5frefine_5flevel_115',['set_refine_level',['../structt8__cmesh.html#a87b64ca3a9398615fd2145e2e7b245a5',1,'t8_cmesh']]],
-  ['set_5frefine_5fscheme_116',['set_refine_scheme',['../structt8__cmesh.html#a9c7768b90dfda5e75527e4ecb8874ccb',1,'t8_cmesh']]],
-  ['stash_117',['stash',['../structt8__cmesh.html#a8cd04fd30455ce17719573ad556858c8',1,'t8_cmesh']]]
+  ['stash_115',['stash',['../structt8__cmesh.html#a8cd04fd30455ce17719573ad556858c8',1,'t8_cmesh']]]
 ];
