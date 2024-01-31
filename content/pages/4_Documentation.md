@@ -4,6 +4,7 @@ Category: Documentation
 Author: Sandro Elsweijer
 
  - [t8code dev](../doc/dev/index.html)
+ - [t8code latest](../doc/latest.html)
  - [t8code v1.6.0](../doc/v1.6.0/index.html)
  - [t8code v1.5.0](../doc/v1.5.0/index.html)
  - [t8code v1.3.0](../doc/v1.3.0/index.html)
