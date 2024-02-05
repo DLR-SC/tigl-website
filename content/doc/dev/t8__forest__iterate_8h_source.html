@@ -141,10 +141,10 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;t8_forest_split_array (<span class="keyword">const</span> <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <a class="code" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, <span class="keywordtype">size_t</span> *offsets);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* TODO: comment */</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* Iterate over all leafs of an element that touch a given face of the element */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* Iterate over all leaves of an element that touch a given face of the element */</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* Callback is called in each recursive step with element as input.</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * leaf_index is only not negative if element is a leaf, in which case it indicates</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * the index of the leaf in the leafs of the tree. If it is negative, it is</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * the index of the leaf in the leaves of the tree. If it is negative, it is</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * - (index + 1) */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/* Top-down iteration and callback is called on each intermediate level.</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * If it returns false, the current element is not traversed further */</span></div>

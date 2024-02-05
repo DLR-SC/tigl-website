@@ -241,12 +241,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">t8_element_array_index</a> (sc_array_t *array, size_t it) const</td></tr>
 <tr class="memdesc:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a t8_element in an array indexed by a size_t.  <a href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">More...</a><br /></td></tr>
 <tr class="separator:a79f4f14ea3a6ea9820c8db1b1fae9534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d8a214ebbad4fa5ad9ebe8b14d4663"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ac8d8a214ebbad4fa5ad9ebe8b14d4663">t8_element_count_leafs</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int level) const =0</td></tr>
-<tr class="memdesc:ac8d8a214ebbad4fa5ad9ebe8b14d4663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level an element would produce.  <a href="structt8__eclass__scheme.html#ac8d8a214ebbad4fa5ad9ebe8b14d4663">More...</a><br /></td></tr>
-<tr class="separator:ac8d8a214ebbad4fa5ad9ebe8b14d4663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5667aea005f349457da504cd708e26ba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a5667aea005f349457da504cd708e26ba">t8_element_count_leafs_from_root</a> (int level) const =0</td></tr>
-<tr class="memdesc:a5667aea005f349457da504cd708e26ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level the root element will produce.  <a href="structt8__eclass__scheme.html#a5667aea005f349457da504cd708e26ba">More...</a><br /></td></tr>
-<tr class="separator:a5667aea005f349457da504cd708e26ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c665131e2c9db3e8299c5c10affa928"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">t8_element_count_leaves</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int level) const =0</td></tr>
+<tr class="memdesc:a0c665131e2c9db3e8299c5c10affa928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level an element would produce.  <a href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">More...</a><br /></td></tr>
+<tr class="separator:a0c665131e2c9db3e8299c5c10affa928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a899bc345873d01dc185088df25663a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a1a899bc345873d01dc185088df25663a">t8_element_count_leaves_from_root</a> (int level) const =0</td></tr>
+<tr class="memdesc:a1a899bc345873d01dc185088df25663a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level the root element will produce.  <a href="structt8__eclass__scheme.html#a1a899bc345873d01dc185088df25663a">More...</a><br /></td></tr>
+<tr class="separator:a1a899bc345873d01dc185088df25663a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0f89b4c910dddf3b6574dd1c359462f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aa0f89b4c910dddf3b6574dd1c359462f">t8_element_general_function</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const void *indata, void *outdata) const =0</td></tr>
 <tr class="memdesc:aa0f89b4c910dddf3b6574dd1c359462f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has no defined effect but each implementation is free to provide its own meaning of it.  <a href="structt8__eclass__scheme.html#aa0f89b4c910dddf3b6574dd1c359462f">More...</a><br /></td></tr>
 <tr class="separator:aa0f89b4c910dddf3b6574dd1c359462f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -823,8 +823,8 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="ac8d8a214ebbad4fa5ad9ebe8b14d4663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d8a214ebbad4fa5ad9ebe8b14d4663">&#9670;&nbsp;</a></span>t8_element_count_leafs()</h2>
+<a id="a0c665131e2c9db3e8299c5c10affa928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c665131e2c9db3e8299c5c10affa928">&#9670;&nbsp;</a></span>t8_element_count_leaves()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -833,7 +833,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_eclass_scheme::t8_element_count_leafs </td>
+          <td class="memname">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_eclass_scheme::t8_element_count_leaves </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -868,12 +868,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <dl class="section return"><dt>Returns</dt><dd>Suppose <em>t</em> is uniformly refined up to level <em>level</em>. The return value is the resulting number of elements (of the given level). If <em>level</em> &lt; t8_element_level(t), the return value should be 0.</dd></dl>
 <p>Example: If <em>t</em> is a line element that refines into 2 line elements on each level, then the return value is max(0, 2^{<em>level</em> - level(<em>t</em>)}). Thus, if <em>t's</em> level is 0, and <em>level</em> = 3, the return value is 2^3 = 8. </p>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a0c45736abd231233656fbfa26e340e24">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a32910795c5b4cb22d4326d1848e510e9">t8_default_scheme_common_c</a>.</p>
 
 </div>
 </div>
-<a id="a5667aea005f349457da504cd708e26ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5667aea005f349457da504cd708e26ba">&#9670;&nbsp;</a></span>t8_element_count_leafs_from_root()</h2>
+<a id="a1a899bc345873d01dc185088df25663a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a899bc345873d01dc185088df25663a">&#9670;&nbsp;</a></span>t8_element_count_leaves_from_root()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +882,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_eclass_scheme::t8_element_count_leafs_from_root </td>
+          <td class="memname">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_eclass_scheme::t8_element_count_leaves_from_root </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>level</em></td><td>)</td>
@@ -903,10 +903,10 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="structt8__eclass__scheme.html#ac8d8a214ebbad4fa5ad9ebe8b14d4663">t8_element_count_leafs</a> if the input element is the root (level 0) element.</dd></dl>
-<p>This is a convenience function, and can be implemented via <a class="el" href="structt8__eclass__scheme.html#ac8d8a214ebbad4fa5ad9ebe8b14d4663">t8_element_count_leafs</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">t8_element_count_leaves</a> if the input element is the root (level 0) element.</dd></dl>
+<p>This is a convenience function, and can be implemented via <a class="el" href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">t8_element_count_leaves</a>. </p>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a9583d24e32fda778e40a30a4768bb16d">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">t8_default_scheme_common_c</a>.</p>
 
 </div>
 </div>
@@ -2555,7 +2555,7 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element whose entries will be set. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The level of the uniform refinement to consider. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The linear id. id must fulfil 0 &lt;= id &lt; 'number of leafs in the uniform refinement' </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The linear id. id must fulfil 0 &lt;= id &lt; 'number of leaves in the uniform refinement' </td></tr>
   </table>
   </dd>
 </dl>
