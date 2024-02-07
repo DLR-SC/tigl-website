@@ -208,6 +208,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ad1619a8f06e6c0f986eb06beb2f2a768">t8_forest_get_local_id</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a global tree id compute the forest local id of this tree.  <a href="t8__forest__general_8h.html#ad1619a8f06e6c0f986eb06beb2f2a768">More...</a><br /></td></tr>
 <tr class="separator:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d5765513a205a493e523ef550fc1f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ac2d5765513a205a493e523ef550fc1f3">t8_forest_get_local_or_ghost_id</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:ac2d5765513a205a493e523ef550fc1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a global tree id compute the forest local id of this tree.  <a href="t8__forest__general_8h.html#ac2d5765513a205a493e523ef550fc1f3">More...</a><br /></td></tr>
+<tr class="separator:ac2d5765513a205a493e523ef550fc1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4ffe5ce6c4d16f34dd0ee2f4a731bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a4a4ffe5ce6c4d16f34dd0ee2f4a731bd">t8_forest_ltreeid_to_cmesh_ltreeid</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a4a4ffe5ce6c4d16f34dd0ee2f4a731bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the local id of a tree in a forest, compute the tree's local id in the associated cmesh.  <a href="t8__forest__general_8h.html#a4a4ffe5ce6c4d16f34dd0ee2f4a731bd">More...</a><br /></td></tr>
 <tr class="separator:a4a4ffe5ce6c4d16f34dd0ee2f4a731bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +223,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a59074ce7f350a4e711ac95c46c07a962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a59074ce7f350a4e711ac95c46c07a962">t8_forest_leaf_face_neighbors</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **pneighbor_leaves[], int face, int *dual_faces[], int *num_neighbors, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> **pelement_indices, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> **pneigh_scheme, int forest_is_balanced)</td></tr>
 <tr class="memdesc:a59074ce7f350a4e711ac95c46c07a962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the leaf face neighbors of a forest.  <a href="t8__forest__general_8h.html#a59074ce7f350a4e711ac95c46c07a962">More...</a><br /></td></tr>
 <tr class="separator:a59074ce7f350a4e711ac95c46c07a962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c1951a9da45c06b1c5eb1936914308"><td class="memItemLeft" align="right" valign="top"><a id="ad8c1951a9da45c06b1c5eb1936914308"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_leaf_face_neighbors_ext</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **pneighbor_leaves[], int face, int *dual_faces[], int *num_neighbors, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> **pelement_indices, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> **pneigh_scheme, int forest_is_balanced, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *gneigh_tree)</td></tr>
+<tr class="separator:ad8c1951a9da45c06b1c5eb1936914308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#af18f68a52bd5a9d46b79b7efdac25bd5">t8_forest_ghost_exchange_data</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, sc_array_t *element_data)</td></tr>
 <tr class="memdesc:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange ghost information of user defined element data.  <a href="t8__forest__general_8h.html#af18f68a52bd5a9d46b79b7efdac25bd5">More...</a><br /></td></tr>
 <tr class="separator:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1153,6 +1159,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of elements on this process in <em>forest</em>. <em>forest</em> must be committed before calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="ac2d5765513a205a493e523ef550fc1f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d5765513a205a493e523ef550fc1f3">&#9670;&nbsp;</a></span>t8_forest_get_local_or_ghost_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> t8_forest_get_local_or_ghost_id </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a global tree id compute the forest local id of this tree. </p>
+<p>If the tree is a local tree, then the local id is between 0 and the number of local trees. If the tree is a ghost, then the local id is between num_local_trees and num_local_trees + num_ghost_trees. If the tree is neither a local tree nor a ghost tree, a negative number is returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of a tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The tree's local id in <em>forest</em>, if it is a local tree. num_local_trees + the ghosts id, if it is a ghost tree. A negative number if not. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/DLR-AMR/t8code/wiki/Tree-indexing">https://github.com/DLR-AMR/t8code/wiki/Tree-indexing</a> for more details about tree indexing. </dd></dl>
 
 </div>
 </div>
