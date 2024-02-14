@@ -113,6 +113,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3caf1897b1be8e98ae34ffba2169bfb0">t8_geom_get_triangle_scaling_factor</a> (int edge_index, const double *tree_vertices, const double *glob_intersection, const double *glob_ref_point)</td></tr>
 <tr class="memdesc:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scaling factor for edge displacement along a triangular tree face depending on the position of the global reference point.  <a href="t8__geometry__helpers_8h.html#a3caf1897b1be8e98ae34ffba2169bfb0">More...</a><br /></td></tr>
 <tr class="separator:a3caf1897b1be8e98ae34ffba2169bfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3130db310c0cf36db0b63a7f18016399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3130db310c0cf36db0b63a7f18016399">t8_vertex_point_inside</a> (const double vertex_coords[3], const double point[3], const double tolerance)</td></tr>
+<tr class="memdesc:a3130db310c0cf36db0b63a7f18016399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point lies inside a vertex.  <a href="t8__geometry__helpers_8h.html#a3130db310c0cf36db0b63a7f18016399">More...</a><br /></td></tr>
+<tr class="separator:a3130db310c0cf36db0b63a7f18016399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1ecea315d8a6764cb4e5934fd218e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a6f1ecea315d8a6764cb4e5934fd218e3">t8_line_point_inside</a> (const double *p_0, const double *vec, const double *point, const double tolerance)</td></tr>
+<tr class="memdesc:a6f1ecea315d8a6764cb4e5934fd218e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is inside a line that is defined by a starting point <em>p_0</em> and a vector <em>vec</em>.  <a href="t8__geometry__helpers_8h.html#a6f1ecea315d8a6764cb4e5934fd218e3">More...</a><br /></td></tr>
+<tr class="separator:a6f1ecea315d8a6764cb4e5934fd218e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad858d045c1bd43284c82691b0b9ae30c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#ad858d045c1bd43284c82691b0b9ae30c">t8_triangle_point_inside</a> (const double p_0[3], const double v[3], const double w[3], const double point[3], const double tolerance)</td></tr>
+<tr class="memdesc:ad858d045c1bd43284c82691b0b9ae30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is inside of a triangle described by a point <em>p_0</em> and two vectors <em>v</em> and <em>w</em>.  <a href="t8__geometry__helpers_8h.html#ad858d045c1bd43284c82691b0b9ae30c">More...</a><br /></td></tr>
+<tr class="separator:ad858d045c1bd43284c82691b0b9ae30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7af082a23cd04d848e22757bb7cd463"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#ac7af082a23cd04d848e22757bb7cd463">t8_plane_point_inside</a> (const double point_on_face[3], const double face_normal[3], const double point[3])</td></tr>
+<tr class="memdesc:ac7af082a23cd04d848e22757bb7cd463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point lays on the inner side of a plane of a bilinearly interpolated volume element.  <a href="t8__geometry__helpers_8h.html#ac7af082a23cd04d848e22757bb7cd463">More...</a><br /></td></tr>
+<tr class="separator:ac7af082a23cd04d848e22757bb7cd463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines t8code internal functions that are useful for geometry implementations. </p>
@@ -557,6 +569,211 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6f1ecea315d8a6764cb4e5934fd218e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1ecea315d8a6764cb4e5934fd218e3">&#9670;&nbsp;</a></span>t8_line_point_inside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_line_point_inside </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>p_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a point is inside a line that is defined by a starting point <em>p_0</em> and a vector <em>vec</em>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_0</td><td>Starting point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>Direction of the line (not normalized) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The coordinates of the point to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>A double &gt; 0 defining the tolerance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the point is outside, 1 otherwise. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ac7af082a23cd04d848e22757bb7cd463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7af082a23cd04d848e22757bb7cd463">&#9670;&nbsp;</a></span>t8_plane_point_inside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_plane_point_inside </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>point_on_face</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>face_normal</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>point</em>[3]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a point lays on the inner side of a plane of a bilinearly interpolated volume element. </p>
+<p>the plane is described by a point and the normal of the face. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point_on_face</td><td>A point on the plane </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_normal</td><td>The normal of the face </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The point to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the point is outside, 1 otherwise. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ad858d045c1bd43284c82691b0b9ae30c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad858d045c1bd43284c82691b0b9ae30c">&#9670;&nbsp;</a></span>t8_triangle_point_inside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_triangle_point_inside </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>p_0</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>v</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>w</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>point</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a point is inside of a triangle described by a point <em>p_0</em> and two vectors <em>v</em> and <em>w</em>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_0</td><td>The first vertex of a triangle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>The vector from p_0 to p_1 (second vertex in the triangle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The vector from p_0 to p_2 (third vertex in the triangle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The coordinates of the point to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>A double &gt; 0 defining the tolerance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the point is outside, 1 otherwise. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a3130db310c0cf36db0b63a7f18016399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3130db310c0cf36db0b63a7f18016399">&#9670;&nbsp;</a></span>t8_vertex_point_inside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_vertex_point_inside </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>vertex_coords</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>point</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a point lies inside a vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_coords</td><td>The coordinates of the vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The coordinates of the point to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>A double &gt; 0 defining the tolerance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the point is outside, 1 otherwise. <br  />
+ </dd></dl>
 
 </div>
 </div>

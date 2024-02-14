@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76569db87da3e28ea17d8e007dccb93a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__zero.html#a76569db87da3e28ea17d8e007dccb93a">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian) const</td></tr>
 <tr class="memdesc:a76569db87da3e28ea17d8e007dccb93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry__zero.html#a76569db87da3e28ea17d8e007dccb93a">More...</a><br /></td></tr>
 <tr class="separator:a76569db87da3e28ea17d8e007dccb93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e16406ad6a02195749f8164c78ca6d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__zero.html#a3e16406ad6a02195749f8164c78ca6d5">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance)</td></tr>
+<tr class="separator:a3e16406ad6a02195749f8164c78ca6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39600e0e8b8571109b4c70113ea3c056"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__zero.html#a39600e0e8b8571109b4c70113ea3c056">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a39600e0e8b8571109b4c70113ea3c056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry__zero.html#a39600e0e8b8571109b4c70113ea3c056">More...</a><br /></td></tr>
 <tr class="separator:a39600e0e8b8571109b4c70113ea3c056"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +115,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
 <tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
 <tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance) const</td></tr>
+<tr class="memdesc:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">More...</a><br /></td></tr>
+<tr class="separator:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">t8_geom_point_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, const double tolerance) const</td></tr>
+<tr class="memdesc:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a single points lies inside an element.  <a href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">More...</a><br /></td></tr>
+<tr class="separator:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,6 +408,84 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 
 <p>Implements <a class="el" href="structt8__geometry.html#af5350a3cda1750d57e5e2cbef9f87e5e">t8_geometry</a>.</p>
+
+</div>
+</div>
+<a id="a3e16406ad6a02195749f8164c78ca6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e16406ad6a02195749f8164c78ca6d5">&#9670;&nbsp;</a></span>t8_geom_point_batch_inside_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_geometry_zero::t8_geom_point_batch_inside_element </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>ltreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>is_inside</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest of the element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>The local tree id of the element's tree </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>points to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_points</td><td>Number of points to check </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">is_inside</td><td>Array to fill with flags whether the point is inside or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>Tolerance of the inside-check </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

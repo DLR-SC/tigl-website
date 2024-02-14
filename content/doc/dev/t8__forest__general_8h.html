@@ -301,12 +301,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_leaf_face_n
 <tr class="memitem:a77017fff1d894405248be40cafb6a210"><td class="memItemLeft" align="right" valign="top"><a id="a77017fff1d894405248be40cafb6a210"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
 <tr class="separator:a77017fff1d894405248be40cafb6a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1022af56311f715bbdadda571dbe1411"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1022af56311f715bbdadda571dbe1411">t8_forest_element_point_inside</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double point[3], const double tolerance)</td></tr>
-<tr class="memdesc:a1022af56311f715bbdadda571dbe1411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given point lies inside an element or not.  <a href="t8__forest__general_8h.html#a1022af56311f715bbdadda571dbe1411">More...</a><br /></td></tr>
-<tr class="separator:a1022af56311f715bbdadda571dbe1411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb9814be30d07dfdb353ce9ca476855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#aceb9814be30d07dfdb353ce9ca476855">t8_forest_element_point_batch_inside</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, int num_points, int *is_inside, const double tolerance)</td></tr>
-<tr class="memdesc:aceb9814be30d07dfdb353ce9ca476855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="t8__forest__general_8h.html#aceb9814be30d07dfdb353ce9ca476855">More...</a><br /></td></tr>
-<tr class="separator:aceb9814be30d07dfdb353ce9ca476855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a5ab5fa2729b78c865fd7995bc8d7d36b">t8_forest_element_points_inside</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, int num_points, int *is_inside, const double tolerance)</td></tr>
+<tr class="memdesc:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="t8__forest__general_8h.html#a5ab5fa2729b78c865fd7995bc8d7d36b">More...</a><br /></td></tr>
+<tr class="separator:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13122ecb8c71af117e108b554cc41f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08">t8_forest_new_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme, const int level, const int do_face_ghost, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a13122ecb8c71af117e108b554cc41f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a uniformly refined forest on a coarse mesh.  <a href="t8__forest__general_8h.html#a13122ecb8c71af117e108b554cc41f08">More...</a><br /></td></tr>
 <tr class="separator:a13122ecb8c71af117e108b554cc41f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -647,14 +644,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 
 </div>
 </div>
-<a id="aceb9814be30d07dfdb353ce9ca476855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceb9814be30d07dfdb353ce9ca476855">&#9670;&nbsp;</a></span>t8_forest_element_point_batch_inside()</h2>
+<a id="a5ab5fa2729b78c865fd7995bc8d7d36b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab5fa2729b78c865fd7995bc8d7d36b">&#9670;&nbsp;</a></span>t8_forest_element_points_inside()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_forest_element_point_batch_inside </td>
+          <td class="memname">void t8_forest_element_points_inside </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
           <td class="paramname"><em>forest</em>, </td>
@@ -717,66 +714,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a1022af56311f715bbdadda571dbe1411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1022af56311f715bbdadda571dbe1411">&#9670;&nbsp;</a></span>t8_forest_element_point_inside()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_forest_element_point_inside </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
-          <td class="paramname"><em>forest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>ltreeid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>point</em>[3], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>tolerance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Query whether a given point lies inside an element or not. </p>
-<p>For bilinearly interpolated elements. </p><dl class="section note"><dt>Note</dt><dd>For 2D quadrilateral elements this function is only an approximation. It is correct if the four vertices lie in the same plane, but it may produce only approximate results if the vertices do not lie in the same plane. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The forest local id of the tree in which the element is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>3-dimensional coordinates of the point to check </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>tolerance that we allow the point to not exactly match the element. If this value is larger we detect more points. If it is zero we probably do not detect points even if they are inside due to rounding errors. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if <em>point</em> lies within <em>element</em>, false otherwise. The return value is also true if the point lies on the element boundary. Thus, this function may return true for different leaf elements, if they are neighbors and the point lies on the common boundary. </dd></dl>
 
 </div>
 </div>
