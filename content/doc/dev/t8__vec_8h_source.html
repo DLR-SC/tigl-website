@@ -207,46 +207,48 @@ $(function() {
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;t8_vec_eq (<span class="keyword">const</span> <span class="keywordtype">double</span> vec_x[3], <span class="keyword">const</span> <span class="keywordtype">double</span> vec_y[3], <span class="keyword">const</span> <span class="keywordtype">double</span> eps)</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">return</span> fabs (vec_x[0] - vec_y[0]) &lt; eps &amp;&amp; fabs (vec_x[1] - vec_y[1]) &lt; eps &amp;&amp; fabs (vec_x[2] - vec_y[2]) &lt; eps;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;t8_vec_rescale (<span class="keywordtype">double</span> vec[3], <span class="keyword">const</span> <span class="keywordtype">double</span> new_length)</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  t8_vec_normalize (vec);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  t8_vec_ax (vec, new_length);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;t8_vec_tri_normal (<span class="keyword">const</span> <span class="keywordtype">double</span> p1[3], <span class="keyword">const</span> <span class="keywordtype">double</span> p2[3], <span class="keyword">const</span> <span class="keywordtype">double</span> p3[3], <span class="keywordtype">double</span> normal[3])</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">double</span> a[3]; <span class="comment">/* First triangle side. */</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">double</span> b[3]; <span class="comment">/* Second triangle side. */</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  a[0] = p2[0] - p1[0];</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  a[1] = p2[1] - p1[1];</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  a[2] = p2[2] - p1[2];</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  b[0] = p3[0] - p1[0];</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  b[1] = p3[1] - p1[1];</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  b[2] = p3[2] - p1[2];</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  t8_vec_cross (a, b, normal);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;t8_vec_swap (<span class="keywordtype">double</span> p1[3], <span class="keywordtype">double</span> p2[3])</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordtype">double</span> tmp;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    tmp = p1[i];</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    p1[i] = p2[i];</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    p2[i] = tmp;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VEC_H! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (eps &gt; 0);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">return</span> fabs (vec_x[0] - vec_y[0]) &lt;= eps &amp;&amp; fabs (vec_x[1] - vec_y[1]) &lt;= eps &amp;&amp; fabs (vec_x[2] - vec_y[2]) &lt;= eps;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;t8_vec_rescale (<span class="keywordtype">double</span> vec[3], <span class="keyword">const</span> <span class="keywordtype">double</span> new_length)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  t8_vec_normalize (vec);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  t8_vec_ax (vec, new_length);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;t8_vec_tri_normal (<span class="keyword">const</span> <span class="keywordtype">double</span> p1[3], <span class="keyword">const</span> <span class="keywordtype">double</span> p2[3], <span class="keyword">const</span> <span class="keywordtype">double</span> p3[3], <span class="keywordtype">double</span> normal[3])</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">double</span> a[3]; <span class="comment">/* First triangle side. */</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">double</span> b[3]; <span class="comment">/* Second triangle side. */</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  a[0] = p2[0] - p1[0];</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  a[1] = p2[1] - p1[1];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  a[2] = p2[2] - p1[2];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  b[0] = p3[0] - p1[0];</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  b[1] = p3[1] - p1[1];</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  b[2] = p3[2] - p1[2];</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  t8_vec_cross (a, b, normal);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;t8_vec_swap (<span class="keywordtype">double</span> p1[3], <span class="keywordtype">double</span> p2[3])</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">double</span> tmp;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    tmp = p1[i];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    p1[i] = p2[i];</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    p2[i] = tmp;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VEC_H! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
+<div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
