@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: src/t8_geometry/t8_geometry_implementations/t8_geometry_occ.h File Reference</title>
+<title>t8: src/t8_geometry/t8_geometry_implementations/t8_geometry_cad.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,88 +78,88 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">t8_geometry_occ.h File Reference</div>  </div>
+<div class="title">t8_geometry_cad.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This header provides the C interface to create a occ geometry.  
+<p>This header provides the C interface to create a cad geometry.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="t8_8h_source.html">t8.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__geometry_8h_source.html">t8_geometry/t8_geometry.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__geometry__with__vertices_8h_source.html">t8_geometry/t8_geometry_with_vertices.h</a>&gt;</code><br />
 </div>
-<p><a href="t8__geometry__occ_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="t8__geometry__cad_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a9e350bf03d2e081e18744ed0e5fa0e59"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a></td></tr>
-<tr class="memdesc:a9e350bf03d2e081e18744ed0e5fa0e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef holds virtual functions for a particular geometry.  <a href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">More...</a><br /></td></tr>
-<tr class="separator:a9e350bf03d2e081e18744ed0e5fa0e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3869853239ac099691c4cc27d934e57f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__geometry__cad.html">t8_geometry_cad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a></td></tr>
+<tr class="memdesc:a3869853239ac099691c4cc27d934e57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef holds virtual functions for a particular geometry.  <a href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">More...</a><br /></td></tr>
+<tr class="separator:a3869853239ac099691c4cc27d934e57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a31729d698cc1699edd9212782bdb6431"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__occ_8h.html#a31729d698cc1699edd9212782bdb6431">t8_geometry_occ_new</a> (int dim, const char *fileprefix, const char *name_in)</td></tr>
-<tr class="memdesc:a31729d698cc1699edd9212782bdb6431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new occ geometry with a given dimension.  <a href="t8__geometry__occ_8h.html#a31729d698cc1699edd9212782bdb6431">More...</a><br /></td></tr>
-<tr class="separator:a31729d698cc1699edd9212782bdb6431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaea02a572b9bc94e989f3b7b03cc8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">t8_geometry_occ_destroy</a> (<a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a> **geom)</td></tr>
-<tr class="memdesc:aaaea02a572b9bc94e989f3b7b03cc8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a occ geometry that was created with <a class="el" href="t8__geometry__occ_8h.html#a31729d698cc1699edd9212782bdb6431">t8_geometry_occ_new</a>.  <a href="t8__geometry__occ_8h.html#aaaea02a572b9bc94e989f3b7b03cc8d1">More...</a><br /></td></tr>
-<tr class="separator:aaaea02a572b9bc94e989f3b7b03cc8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815ecab06c90a9171200fe3913e7e6e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__cad_8h.html#a815ecab06c90a9171200fe3913e7e6e9">t8_geometry_cad_new</a> (int dim, const char *fileprefix, const char *name_in)</td></tr>
+<tr class="memdesc:a815ecab06c90a9171200fe3913e7e6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new cad geometry with a given dimension.  <a href="t8__geometry__cad_8h.html#a815ecab06c90a9171200fe3913e7e6e9">More...</a><br /></td></tr>
+<tr class="separator:a815ecab06c90a9171200fe3913e7e6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4f49f4bf39eb5d9159a60a8b68e0ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__cad_8h.html#acd4f49f4bf39eb5d9159a60a8b68e0ee">t8_geometry_cad_destroy</a> (<a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a> **geom)</td></tr>
+<tr class="memdesc:acd4f49f4bf39eb5d9159a60a8b68e0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a cad geometry that was created with <a class="el" href="t8__geometry__cad_8h.html#a815ecab06c90a9171200fe3913e7e6e9">t8_geometry_cad_new</a>.  <a href="t8__geometry__cad_8h.html#acd4f49f4bf39eb5d9159a60a8b68e0ee">More...</a><br /></td></tr>
+<tr class="separator:acd4f49f4bf39eb5d9159a60a8b68e0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This header provides the C interface to create a occ geometry. </p>
+<div class="textblock"><p>This header provides the C interface to create a cad geometry. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9e350bf03d2e081e18744ed0e5fa0e59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e350bf03d2e081e18744ed0e5fa0e59">&#9670;&nbsp;</a></span>t8_geometry_occ_c</h2>
+<a id="a3869853239ac099691c4cc27d934e57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3869853239ac099691c4cc27d934e57f">&#9670;&nbsp;</a></span>t8_geometry_cad_c</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a> <a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a></td>
+          <td class="memname">typedef struct <a class="el" href="structt8__geometry__cad.html">t8_geometry_cad</a> <a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>This typedef holds virtual functions for a particular geometry. </p>
-<p>We need it so that we can use t8_geometry_occ_c pointers in .c files without them seeing the actual C++ code (and then not compiling) </p>
+<p>We need it so that we can use t8_geometry_cad_c pointers in .c files without them seeing the actual C++ code (and then not compiling) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaaea02a572b9bc94e989f3b7b03cc8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaea02a572b9bc94e989f3b7b03cc8d1">&#9670;&nbsp;</a></span>t8_geometry_occ_destroy()</h2>
+<a id="acd4f49f4bf39eb5d9159a60a8b68e0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4f49f4bf39eb5d9159a60a8b68e0ee">&#9670;&nbsp;</a></span>t8_geometry_cad_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_geometry_occ_destroy </td>
+          <td class="memname">void t8_geometry_cad_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a> **&#160;</td>
           <td class="paramname"><em>geom</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroy a occ geometry that was created with <a class="el" href="t8__geometry__occ_8h.html#a31729d698cc1699edd9212782bdb6431">t8_geometry_occ_new</a>. </p>
+<p>Destroy a cad geometry that was created with <a class="el" href="t8__geometry__cad_8h.html#a815ecab06c90a9171200fe3913e7e6e9">t8_geometry_cad_new</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom</td><td>A occ geometry. Set to NULL on output. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom</td><td>A cad geometry. Set to NULL on output. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a31729d698cc1699edd9212782bdb6431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31729d698cc1699edd9212782bdb6431">&#9670;&nbsp;</a></span>t8_geometry_occ_new()</h2>
+<a id="a815ecab06c90a9171200fe3913e7e6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815ecab06c90a9171200fe3913e7e6e9">&#9670;&nbsp;</a></span>t8_geometry_cad_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__geometry__occ_8h.html#a9e350bf03d2e081e18744ed0e5fa0e59">t8_geometry_occ_c</a>* t8_geometry_occ_new </td>
+          <td class="memname"><a class="el" href="t8__geometry__cad_8h.html#a3869853239ac099691c4cc27d934e57f">t8_geometry_cad_c</a>* t8_geometry_cad_new </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
@@ -184,16 +184,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a new occ geometry with a given dimension. </p>
+<p>Create a new cad geometry with a given dimension. </p>
 <p>The geometry is currently viable with quad/hex and triangle trees. Tets will be supported soon. The geometry uses as many vertices as the tree type has, as well as additional geometry information, which is extracted from a .brep file. The vertices are saved via the <a class="el" href="t8__geometry__with__vertices_8h.html#a9e2cc0254f1107eb4966ab272d45bd57">t8_cmesh_set_tree_vertices</a> function. Since the internals of this geometry are finely tuned to the .brep file it is recommended to only use it with the t8_cmesh_readmshfile function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>0 &lt;= <em>dimension</em> &lt;= 3. The dimension. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fileprefix</td><td>Prefix of a .brep file from which to extract an occ geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileprefix</td><td>Prefix of a .brep file from which to extract an cad geometry. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name to give this geometry. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to an allocated <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a> struct, as if the <a class="el" href="structt8__geometry__occ.html">t8_geometry_occ</a> (int dim, const *char fileprefix, const char *name) constructor was called. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an allocated <a class="el" href="structt8__geometry__cad.html">t8_geometry_cad</a> struct, as if the <a class="el" href="structt8__geometry__cad.html">t8_geometry_cad</a> (int dim, const *char fileprefix, const char *name) constructor was called. </dd></dl>
 
 </div>
 </div>

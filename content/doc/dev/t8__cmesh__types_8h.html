@@ -123,18 +123,19 @@ Macros</h2></td></tr>
 <tr class="memitem:a820ac30c767790731c39ae3c4f7a7d18"><td class="memItemLeft" align="right" valign="top"><a id="a820ac30c767790731c39ae3c4f7a7d18"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_GEOMETRY_ATTRIBUTE_KEY</b>&#160;&#160;&#160;1            /* Used to store the name of a tree's geometry. */</td></tr>
 <tr class="separator:a820ac30c767790731c39ae3c4f7a7d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51bff63fa30e593e0779afdc82d738b9"><td class="memItemLeft" align="right" valign="top"><a id="a51bff63fa30e593e0779afdc82d738b9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_EDGE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;2            /* Used to store which edge is linked to which geometry */</td></tr>
-<tr class="separator:a51bff63fa30e593e0779afdc82d738b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d2771297f89d89a11289c8e9d09e6f"><td class="memItemLeft" align="right" valign="top"><a id="aa5d2771297f89d89a11289c8e9d09e6f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_EDGE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;3 /* Used to store edge parameters */</td></tr>
-<tr class="separator:aa5d2771297f89d89a11289c8e9d09e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07c83be07f640af4c1056d71a4c52e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</b></td></tr>
-<tr class="separator:ae07c83be07f640af4c1056d71a4c52e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2937ea7e40ca0f908e58e908b66debce"><td class="memItemLeft" align="right" valign="top"><a id="a2937ea7e40ca0f908e58e908b66debce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;  T8_CMESH_OCC_FACE_ATTRIBUTE_KEY + 1 /* Used to store face parameters */</td></tr>
-<tr class="separator:a2937ea7e40ca0f908e58e908b66debce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada4d0f317e6884c014b64e81385f4ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_NEXT_POSSIBLE_KEY</b></td></tr>
+<tr class="memitem:a7e729deb6873da383ac2a24d4a33e17c"><td class="memItemLeft" align="right" valign="top"><a id="a7e729deb6873da383ac2a24d4a33e17c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_EDGE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;2            /* Used to store which edge is linked to which geometry */</td></tr>
+<tr class="separator:a7e729deb6873da383ac2a24d4a33e17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073924a011d7e52150e4eb0c284d0450"><td class="memItemLeft" align="right" valign="top"><a id="a073924a011d7e52150e4eb0c284d0450"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;3 /* Used to store edge parameters */</td></tr>
+<tr class="separator:a073924a011d7e52150e4eb0c284d0450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013c530f653bb0a2e750dae1a7489cd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</b></td></tr>
+<tr class="separator:a013c530f653bb0a2e750dae1a7489cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f18b52bbbbe808a266b99cfad1e5c0"><td class="memItemLeft" align="right" valign="top"><a id="a30f18b52bbbbe808a266b99cfad1e5c0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;  T8_CMESH_CAD_FACE_ATTRIBUTE_KEY + 1 /* Used to store face parameters */</td></tr>
+<tr class="separator:a30f18b52bbbbe808a266b99cfad1e5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada4d0f317e6884c014b64e81385f4ce"><td class="memItemLeft" align="right" valign="top"><a id="aada4d0f317e6884c014b64e81385f4ce"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_NEXT_POSSIBLE_KEY</b>&#160;&#160;&#160;  T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY + <a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a> /* The next free value for a t8code attribute key */</td></tr>
 <tr class="separator:aada4d0f317e6884c014b64e81385f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d21c23e1959f38260ab76a9f9e73175"><td class="memItemLeft" align="right" valign="top"><a id="a1d21c23e1959f38260ab76a9f9e73175"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a1d21c23e1959f38260ab76a9f9e73175">T8_CPROFILE_NUM_STATS</a>&#160;&#160;&#160;11</td></tr>
@@ -177,35 +178,18 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define here the datatypes needed for internal cmesh routines. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aada4d0f317e6884c014b64e81385f4ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada4d0f317e6884c014b64e81385f4ce">&#9670;&nbsp;</a></span>T8_CMESH_NEXT_POSSIBLE_KEY</h2>
+<a id="a013c530f653bb0a2e750dae1a7489cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013c530f653bb0a2e750dae1a7489cd4">&#9670;&nbsp;</a></span>T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define T8_CMESH_NEXT_POSSIBLE_KEY</td>
+          <td class="memname">#define T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  T8_CMESH_OCC_FACE_PARAMETERS_ATTRIBUTE_KEY \</div>
-<div class="line">  +<a class="code" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a> <span class="comment">/* The next free value for a t8code attribute key */</span></div>
-<div class="ttc" id="at8__eclass_8h_html_ac706fa304ce1d9dbcf71c3f7d84f1855"><div class="ttname"><a href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_FACES</div><div class="ttdoc">The maximum number of boundary faces an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:67</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae07c83be07f640af4c1056d71a4c52e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae07c83be07f640af4c1056d71a4c52e0">&#9670;&nbsp;</a></span>T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T8_CMESH_OCC_FACE_ATTRIBUTE_KEY</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  T8_CMESH_OCC_EDGE_PARAMETERS_ATTRIBUTE_KEY \</div>
+<b>Value:</b><div class="fragment"><div class="line">  T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY \</div>
 <div class="line">  +<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a> <span class="comment">/* Used to store which face is linked to which surface */</span></div>
 <div class="ttc" id="at8__eclass_8h_html_a601ebe78feea681a24e339646a017c2b"><div class="ttname"><a href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_EDGES</div><div class="ttdoc">The maximum number of boundary edges an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:69</div></div>
 </div><!-- fragment -->
