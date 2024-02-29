@@ -242,6 +242,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af4a07f9354179702f3b6aa0155f71573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#af4a07f9354179702f3b6aa0155f71573">t8_element_destroy</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elems)</td></tr>
 <tr class="memdesc:af4a07f9354179702f3b6aa0155f71573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate an array of elements.  <a href="t8__element__c__interface_8h.html#af4a07f9354179702f3b6aa0155f71573">More...</a><br /></td></tr>
 <tr class="separator:af4a07f9354179702f3b6aa0155f71573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4668a19209bf21a94e05d7e5165818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a6c4668a19209bf21a94e05d7e5165818">t8_element_root</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
+<tr class="memdesc:a6c4668a19209bf21a94e05d7e5165818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an element with the root element.  <a href="t8__element__c__interface_8h.html#a6c4668a19209bf21a94e05d7e5165818">More...</a><br /></td></tr>
+<tr class="separator:a6c4668a19209bf21a94e05d7e5165818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines the c interface to (some of) the member functions of the t8_eclass_scheme_c class. </p>
@@ -2186,6 +2189,43 @@ If an element was created by <a class="el" href="t8__element__c__interface_8h.ht
 
 <p>Returns true, if there is one element in the tree, that does not refine into 2^dim children. </p>
 <p>Returns false otherwise. </p>
+
+</div>
+</div>
+<a id="a6c4668a19209bf21a94e05d7e5165818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4668a19209bf21a94e05d7e5165818">&#9670;&nbsp;</a></span>t8_element_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_element_root </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills an element with the root element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element to be filled with root. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

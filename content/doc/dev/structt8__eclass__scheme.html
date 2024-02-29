@@ -268,6 +268,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c98178cbcc9fefb1394875decc81f79"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a3c98178cbcc9fefb1394875decc81f79">t8_element_destroy</a> (int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elem) const =0</td></tr>
 <tr class="memdesc:a3c98178cbcc9fefb1394875decc81f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate an array of elements.  <a href="structt8__eclass__scheme.html#a3c98178cbcc9fefb1394875decc81f79">More...</a><br /></td></tr>
 <tr class="separator:a3c98178cbcc9fefb1394875decc81f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057602a4444b897318195d1aa7d44e37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">t8_element_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
+<tr class="memdesc:a057602a4444b897318195d1aa7d44e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the root element  <a href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">More...</a><br /></td></tr>
+<tr class="separator:a057602a4444b897318195d1aa7d44e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -2507,6 +2510,42 @@ If an element was created by <a class="el" href="structt8__eclass__scheme.html#a
 <p>Returns false otherwise. </p><dl class="section return"><dt>Returns</dt><dd>non-zero if there is one element in the tree that does not refine into 2^dim children. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ae2e8811cbdcdac8d0cc7a16001ca55cb">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a359b75acc94a872a790134d434dac5cc">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a4bbb56b6988aefad026eb5f36d9c7e44">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aa98470baecd6d07bb951bcd7babf6cb8">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#ab9a98617ef481ae7145ba46ae4456097">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a76b246b31fd6594998521ccb28f49804">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a97364e494b294ec86cbd01c0bce0701b">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#ae3bdd4f5ac2b794b52a6e0d3d9545fe0">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
+<a id="a057602a4444b897318195d1aa7d44e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057602a4444b897318195d1aa7d44e37">&#9670;&nbsp;</a></span>t8_element_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_eclass_scheme::t8_element_root </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>create the root element </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element that is filled with the root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#aa3754bebdd16ab639459b90ffda3d968">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#ac98ed3ec352c45f5ac3b86b763028e75">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a39da486f45dff0bb19bf789e855f974e">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a092d4acd2bacd4d08846ca96f688aa70">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#afa4a6652b7bd2cf055bc649b704c9996">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a081fddebf9af353d2001202c78555be4">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a440ba5957da884f848fd752bec406577">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a67fd7d365e0cd798ed786d250b8ee75d">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
