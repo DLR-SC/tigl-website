@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#aa03ffd62ff4811b38709eb6f6f9adcdd">t8_cmesh_is_committed</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a cmesh is not NULL, initialized and committed.  <a href="t8__cmesh_8c.html#aa03ffd62ff4811b38709eb6f6f9adcdd">More...</a><br /></td></tr>
 <tr class="separator:aa03ffd62ff4811b38709eb6f6f9adcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ee6572ab9721476ce2376625c48da1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#ab9ee6572ab9721476ce2376625c48da1">t8_cmesh_validate_geometry</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
+<tr class="memdesc:ab9ee6572ab9721476ce2376625c48da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the geometry of the mesh for validity.  <a href="t8__cmesh_8c.html#ab9ee6572ab9721476ce2376625c48da1">More...</a><br /></td></tr>
+<tr class="separator:ab9ee6572ab9721476ce2376625c48da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade54f37296ef5eabcfbe647355d3fc52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8c.html#ade54f37296ef5eabcfbe647355d3fc52">t8_cmesh_comm_is_valid</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ade54f37296ef5eabcfbe647355d3fc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given MPI communicator assigns the same rank and mpisize as stored in a cmesh.  <a href="t8__cmesh_8c.html#ade54f37296ef5eabcfbe647355d3fc52">More...</a><br /></td></tr>
 <tr class="separator:ade54f37296ef5eabcfbe647355d3fc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2290,6 +2293,33 @@ If an attribute with the given package_id and key already exists, then it will g
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab9ee6572ab9721476ce2376625c48da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ee6572ab9721476ce2376625c48da1">&#9670;&nbsp;</a></span>t8_cmesh_validate_geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool t8_cmesh_validate_geometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the geometry of the mesh for validity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>This cmesh is examined. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the geometry of the cmesh is valid. </dd></dl>
 
 </div>
 </div>
