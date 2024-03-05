@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a896891cdc5c3a64ce96b49684320673c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance) const</td></tr>
 <tr class="memdesc:a896891cdc5c3a64ce96b49684320673c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">More...</a><br /></td></tr>
 <tr class="separator:a896891cdc5c3a64ce96b49684320673c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab633cd447c7333d08c77a343df0c6741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">t8_geom_point_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, const double tolerance) const</td></tr>
-<tr class="memdesc:ab633cd447c7333d08c77a343df0c6741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a single points lies inside an element.  <a href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">More...</a><br /></td></tr>
-<tr class="separator:ab633cd447c7333d08c77a343df0c6741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afbd14dd26541b42143a176953fb434"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a2afbd14dd26541b42143a176953fb434">t8_geom_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh) const</td></tr>
+<tr class="memdesc:a2afbd14dd26541b42143a176953fb434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the currently active tree has a negative volume.  <a href="structt8__geometry.html#a2afbd14dd26541b42143a176953fb434">More...</a><br /></td></tr>
+<tr class="separator:a2afbd14dd26541b42143a176953fb434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,8 +525,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ab633cd447c7333d08c77a343df0c6741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab633cd447c7333d08c77a343df0c6741">&#9670;&nbsp;</a></span>t8_geom_point_inside_element()</h2>
+<a id="a2afbd14dd26541b42143a176953fb434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2afbd14dd26541b42143a176953fb434">&#9670;&nbsp;</a></span>t8_geom_tree_negative_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,67 +535,31 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int t8_geometry::t8_geom_point_inside_element </td>
+          <td class="memname">virtual bool t8_geometry::t8_geom_tree_negative_volume </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
-          <td class="paramname"><em>forest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>ltreeid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>num_points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>tolerance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Query whether a single points lies inside an element. </p>
+<p>Check if the currently active tree has a negative volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The forest local id of the tree in which the element is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>3-dimensional coordinates of the points to check </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_points</td><td>The number of points to check </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">is_inside</td><td>An array of length <em>num_points</em>, filled with 0/1 on output. True (non-zero) if a <em>point</em> lies within an <em>element</em>, false otherwise. The return value is also true if the point lies on the element boundary. Thus, this function may return true for different leaf elements, if they are neighbors and the point lies on the common boundary. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>Tolerance that we allow the point to not exactly match the element. If this value is larger we detect more points. If it is zero we probably do not detect points even if they are inside due to rounding errors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh containing the tree to check </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if the tree with id ltree_id has a negative volume. 0 otherwise. <br  />
+ </dd></dl>
+
+<p>Reimplemented in <a class="el" href="structt8__geometry__with__vertices.html#a2db56abe2fa3b0863ba4de6df190eb98">t8_geometry_with_vertices</a>, <a class="el" href="structt8__geometry__zero.html#a264f0ff5815c95c18f5928d88d4e7449">t8_geometry_zero</a>, and <a class="el" href="structt8__geometry__linear__axis__aligned.html#a4c91744016984e81af64152a7c851a11">t8_geometry_linear_axis_aligned</a>.</p>
 
 </div>
 </div>

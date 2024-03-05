@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: src/t8_geometry/t8_geometry_implementations/t8_geometry_linear_axis_aligned.h Source File</title>
+<title>t8: src/t8_geometry/t8_geometry_implementations/t8_geometry_zero.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -75,15 +75,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">t8_geometry_linear_axis_aligned.h</div>  </div>
+<div class="title">t8_geometry_zero.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="t8__geometry__linear__axis__aligned_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="t8__geometry__zero_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  This file is part of t8code.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  t8code is a C library to manage a collection (a forest) of multiple</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  connected adaptive space-trees of general element classes in parallel.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  Copyright (C) 2015 the developers</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  Copyright (C) 2024 the developers</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  t8code is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  it under the terms of the GNU General Public License as published by</span></div>
@@ -100,30 +100,30 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef T8_GEOMETRY_LINEAR_AXIS_ALIGNED_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define T8_GEOMETRY_LINEAR_AXIS_ALIGNED_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8_8h.html">t8.h</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry_8h.html">t8_geometry/t8_geometry.h</a>&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__with__vertices_8h.html">t8_geometry/t8_geometry_with_vertices.h</a>&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structt8__geometry.html">t8_geometry_c</a> *</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="t8__geometry__linear__axis__aligned_8h.html#ad79736ae67db06d99d2c8d68f0087c42">t8_geometry_linear_axis_aligned_new</a> (<span class="keywordtype">int</span> dim);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="t8__geometry__linear__axis__aligned_8h.html#a94fe89ad4154e5f0365ce63227228aa1">t8_geometry_linear_axis_aligned_destroy</a> (<a class="code" href="structt8__geometry.html">t8_geometry_c</a> **geom);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_LINEAR_AXIS_ALIGNED_H! */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef T8_GEOMETRY_zero_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define T8_GEOMETRY_zero_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8_8h.html">t8.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry_8h.html">t8_geometry/t8_geometry.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__with__vertices_8h.html">t8_geometry/t8_geometry_with_vertices.h</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="structt8__geometry.html">t8_geometry_c</a> *</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="t8__geometry__zero_8h.html#aabf6ba2ffe06151017ee76678f7ea4c2">t8_geometry_zero_new</a> (<span class="keywordtype">int</span> dim);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="t8__geometry__zero_8h.html#a8023f353eda6242d32c40d04cdeff8ab">t8_geometry_zero_destroy</a> (<a class="code" href="structt8__geometry.html">t8_geometry_c</a> **geom);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_zero_H! */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__geometry_html"><div class="ttname"><a href="structt8__geometry.html">t8_geometry</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_base.hxx:39</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8__geometry_8h_html"><div class="ttname"><a href="t8__geometry_8h.html">t8_geometry.h</a></div><div class="ttdoc">Typedef for the t8_geometry class in order to be usable as a pointer from .c files.</div></div>
-<div class="ttc" id="at8__geometry__linear__axis__aligned_8h_html_a94fe89ad4154e5f0365ce63227228aa1"><div class="ttname"><a href="t8__geometry__linear__axis__aligned_8h.html#a94fe89ad4154e5f0365ce63227228aa1">t8_geometry_linear_axis_aligned_destroy</a></div><div class="ttdeci">void t8_geometry_linear_axis_aligned_destroy(t8_geometry_c **geom)</div><div class="ttdoc">Destroy a linear, axis-aligned geometry that was created with t8_geometry_linear_axis_aligned_new.</div><div class="ttdef"><b>Definition:</b> t8_geometry_linear_axis_aligned.cxx:126</div></div>
-<div class="ttc" id="at8__geometry__linear__axis__aligned_8h_html_ad79736ae67db06d99d2c8d68f0087c42"><div class="ttname"><a href="t8__geometry__linear__axis__aligned_8h.html#ad79736ae67db06d99d2c8d68f0087c42">t8_geometry_linear_axis_aligned_new</a></div><div class="ttdeci">t8_geometry_c * t8_geometry_linear_axis_aligned_new(int dim)</div><div class="ttdoc">Create a new linear, axis-aligned geometry of a given dimension.</div><div class="ttdef"><b>Definition:</b> t8_geometry_linear_axis_aligned.cxx:119</div></div>
 <div class="ttc" id="at8__geometry__with__vertices_8h_html"><div class="ttname"><a href="t8__geometry__with__vertices_8h.html">t8_geometry_with_vertices.h</a></div><div class="ttdoc">This header file provides a C interface for functions for the t8_geometry_with_vertices class.</div></div>
+<div class="ttc" id="at8__geometry__zero_8h_html_a8023f353eda6242d32c40d04cdeff8ab"><div class="ttname"><a href="t8__geometry__zero_8h.html#a8023f353eda6242d32c40d04cdeff8ab">t8_geometry_zero_destroy</a></div><div class="ttdeci">void t8_geometry_zero_destroy(t8_geometry_c **geom)</div><div class="ttdoc">Destroy a zero geometry that was created with t8_geometry_zero_new.</div><div class="ttdef"><b>Definition:</b> t8_geometry_zero.cxx:79</div></div>
+<div class="ttc" id="at8__geometry__zero_8h_html_aabf6ba2ffe06151017ee76678f7ea4c2"><div class="ttname"><a href="t8__geometry__zero_8h.html#aabf6ba2ffe06151017ee76678f7ea4c2">t8_geometry_zero_new</a></div><div class="ttdeci">t8_geometry_c * t8_geometry_zero_new(int dim)</div><div class="ttdoc">Create a new zero geometry of a given dimension.</div><div class="ttdef"><b>Definition:</b> t8_geometry_zero.cxx:72</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->

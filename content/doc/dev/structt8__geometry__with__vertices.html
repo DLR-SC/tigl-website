@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34fb922d37517b433302c510c90e51ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#a34fb922d37517b433302c510c90e51ba">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a34fb922d37517b433302c510c90e51ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry__with__vertices.html#a34fb922d37517b433302c510c90e51ba">More...</a><br /></td></tr>
 <tr class="separator:a34fb922d37517b433302c510c90e51ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db56abe2fa3b0863ba4de6df190eb98"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#a2db56abe2fa3b0863ba4de6df190eb98">t8_geom_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh) const</td></tr>
+<tr class="memdesc:a2db56abe2fa3b0863ba4de6df190eb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the currently active tree has no negative volume.  <a href="structt8__geometry__with__vertices.html#a2db56abe2fa3b0863ba4de6df190eb98">More...</a><br /></td></tr>
+<tr class="separator:a2db56abe2fa3b0863ba4de6df190eb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ceb77b879cb145a3de7e87955035432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#a1ceb77b879cb145a3de7e87955035432">t8_geom_get_type</a> () const</td></tr>
 <tr class="memdesc:a1ceb77b879cb145a3de7e87955035432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this geometry.  <a href="structt8__geometry__with__vertices.html#a1ceb77b879cb145a3de7e87955035432">More...</a><br /></td></tr>
 <tr class="separator:a1ceb77b879cb145a3de7e87955035432"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +130,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance) const</td></tr>
 <tr class="memdesc:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">More...</a><br /></td></tr>
 <tr class="separator:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">t8_geom_point_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, const double tolerance) const</td></tr>
-<tr class="memdesc:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a single points lies inside an element.  <a href="structt8__geometry.html#ab633cd447c7333d08c77a343df0c6741">More...</a><br /></td></tr>
-<tr class="separator:ab633cd447c7333d08c77a343df0c6741 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +264,46 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Implements <a class="el" href="structt8__geometry.html#af5350a3cda1750d57e5e2cbef9f87e5e">t8_geometry</a>.</p>
 
 <p>Reimplemented in <a class="el" href="structt8__geometry__cad.html#a729d90e1acf4f2fc42316daa90f8adc9">t8_geometry_cad</a>.</p>
+
+</div>
+</div>
+<a id="a2db56abe2fa3b0863ba4de6df190eb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db56abe2fa3b0863ba4de6df190eb98">&#9670;&nbsp;</a></span>t8_geom_tree_negative_volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool t8_geometry_with_vertices::t8_geom_tree_negative_volume </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check that the currently active tree has no negative volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh containing the tree to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if the tree with id ltree_id has a negative volume. 0 otherwise. <br  />
+ </dd></dl>
+
+<p>Reimplemented from <a class="el" href="structt8__geometry.html#a2afbd14dd26541b42143a176953fb434">t8_geometry</a>.</p>
+
+<p>Reimplemented in <a class="el" href="structt8__geometry__linear__axis__aligned.html#a4c91744016984e81af64152a7c851a11">t8_geometry_linear_axis_aligned</a>.</p>
 
 </div>
 </div>

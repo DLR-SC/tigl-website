@@ -88,6 +88,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="t8_8h_source.html">t8.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__refcount_8h_source.html">t8_refcount.h</a>&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__cmesh_8h_source.html">t8_cmesh.h</a>&gt;</code><br />
 </div>
 <p><a href="t8__geometry_8h_source.html">Go to the source code of this file.</a></p>
@@ -175,6 +176,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
 <tr class="memitem:a68117855d8c857fe98cf733565550c7f"><td class="memItemLeft" align="right" valign="top"><a id="a68117855d8c857fe98cf733565550c7f"></a>
 <a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_get_type</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="separator:a68117855d8c857fe98cf733565550c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acfc79e504f88d0ec7eccb67271cb84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a4acfc79e504f88d0ec7eccb67271cb84">t8_geometry_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
+<tr class="memdesc:a4acfc79e504f88d0ec7eccb67271cb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tree has a negative volume.  <a href="t8__geometry_8h.html#a4acfc79e504f88d0ec7eccb67271cb84">More...</a><br /></td></tr>
+<tr class="separator:a4acfc79e504f88d0ec7eccb67271cb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Typedef for the <a class="el" href="structt8__geometry.html">t8_geometry</a> class in order to be usable as a pointer from .c files. </p>
@@ -515,6 +519,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4acfc79e504f88d0ec7eccb67271cb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acfc79e504f88d0ec7eccb67271cb84">&#9670;&nbsp;</a></span>t8_geometry_tree_negative_volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool t8_geometry_tree_negative_volume </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>ltree_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a tree has a negative volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh containing the tree to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local id of the tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the tree with id ltree_id has a negative volume. False otherwise. <br  />
+ </dd></dl>
 
 </div>
 </div>
