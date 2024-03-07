@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['rc_2247',['rc',['../structt8__cmesh.html#a0f7b9157355206a86a6e327708b13b68',1,'t8_cmesh::rc()'],['../structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82',1,'t8_scheme_cxx::rc()'],['../structt8__forest.html#a420bb85f0ac44944c7e04d5d710c59a4',1,'t8_forest::rc()'],['../structt8__forest__ghost.html#a40e44b8f7f10915deff501732185866e',1,'t8_forest_ghost::rc()'],['../structt8__geometry__handler.html#a74b2fb4e844fd39a6b3783d234eb4f8e',1,'t8_geometry_handler::rc()']]],
-  ['recv_5frequests_2248',['recv_requests',['../structt8__ghost__data__exchange__t.html#a06196b2fc3ae23db67ac48ec355d93c8',1,'t8_ghost_data_exchange_t']]],
-  ['registered_5fgeometries_2249',['registered_geometries',['../structt8__geometry__handler.html#ac8f2f1d4e67a89ee8223f3db5c084496',1,'t8_geometry_handler']]],
-  ['remote_5fghosts_2250',['remote_ghosts',['../structt8__forest__ghost.html#a60cb7853942f6236643cc1beb664c8b6',1,'t8_forest_ghost']]],
-  ['remote_5fprocesses_2251',['remote_processes',['../structt8__forest__ghost.html#ab4fdace2819dcf89dcc50f25a11d5754',1,'t8_forest_ghost']]]
+  ['package_5fid_2246',['package_id',['../structt8__attribute__info.html#a40f1755cdf0f9487072fd33c89a99fcd',1,'t8_attribute_info::package_id()'],['../structt8__stash__attribute.html#a79b167753d3fc068d03b92486d89c3cf',1,'t8_stash_attribute::package_id()']]],
+  ['partition_5fbytes_5fsent_2247',['partition_bytes_sent',['../structt8__cprofile.html#ac9904ad23f2ff1cd9400977a3a6a8275',1,'t8_cprofile::partition_bytes_sent()'],['../structt8__profile.html#a0372051c5944ba4e64d94d5a3695f77d',1,'t8_profile::partition_bytes_sent()']]],
+  ['partition_5felements_5frecv_2248',['partition_elements_recv',['../structt8__profile.html#a41128118769c5b2a017db21fb77a13dc',1,'t8_profile']]],
+  ['partition_5felements_5fshipped_2249',['partition_elements_shipped',['../structt8__profile.html#a7f1c4290ba5a103ec9e6637e779eb3ba',1,'t8_profile']]],
+  ['partition_5fghosts_5frecv_2250',['partition_ghosts_recv',['../structt8__cprofile.html#a070d9ddaba41f00891395e1ba3ae4f3f',1,'t8_cprofile']]],
+  ['partition_5fghosts_5fshipped_2251',['partition_ghosts_shipped',['../structt8__cprofile.html#aa50a6073c01007c13d4861a22cc4fa4a',1,'t8_cprofile']]],
+  ['partition_5fprocs_5fsent_2252',['partition_procs_sent',['../structt8__cprofile.html#a4fb207f6b2d8596f1f8e357a9cc85053',1,'t8_cprofile::partition_procs_sent()'],['../structt8__profile.html#aa8856b9afd28dc1745f1ffbc22fb9f26',1,'t8_profile::partition_procs_sent()']]],
+  ['partition_5fruntime_2253',['partition_runtime',['../structt8__cprofile.html#afad751b1c49116045dd985e95efb7b8e',1,'t8_cprofile::partition_runtime()'],['../structt8__profile.html#a9a8ed459fb2eaaf362a997b47838406d',1,'t8_profile::partition_runtime()']]],
+  ['partition_5ftrees_5frecv_2254',['partition_trees_recv',['../structt8__cprofile.html#acc0f72628251c3383f1b334a331f8f38',1,'t8_cprofile']]],
+  ['partition_5ftrees_5fshipped_2255',['partition_trees_shipped',['../structt8__cprofile.html#a73bd588d2939dc15410ecdf9dc40edcf',1,'t8_cprofile']]],
+  ['process_5foffsets_2256',['process_offsets',['../structt8__forest__ghost.html#a79731fd1dd71c3a54f6c184d0eba46b2',1,'t8_forest_ghost']]],
+  ['profile_2257',['profile',['../structt8__cmesh.html#a05feffe090e5e07b08c8fcaee61f24be',1,'t8_cmesh::profile()'],['../structt8__forest.html#ab47b0aa7f7ce77ead3ec33e84b2e40e9',1,'t8_forest::profile()']]]
 ];

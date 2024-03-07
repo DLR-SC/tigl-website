@@ -75,7 +75,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -84,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Typedef for the <a class="el" href="structt8__geometry.html">t8_geometry</a> class in order to be usable as a pointer from .c files.  
+<p>Typedef for the <a class="el" href="structt8__geometry.html" title="The base class for all geometries.">t8_geometry</a> class in order to be usable as a pointer from .c files.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="t8_8h_source.html">t8.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__refcount_8h_source.html">t8_refcount.h</a>&gt;</code><br />
@@ -93,11 +92,6 @@ $(function() {
 </div>
 <p><a href="t8__geometry_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a997db73b2726b9562eeb3d44f18a85be"><td class="memItemLeft" align="right" valign="top"><a id="a997db73b2726b9562eeb3d44f18a85be"></a>
@@ -107,9 +101,9 @@ typedef enum <a class="el" href="t8__geometry_8h.html#a70366f0da37b3e4aa38a3095b
 <tr class="memitem:ae2af0c6e5462aced669b9d505370bdaa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__geometry.html">t8_geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a></td></tr>
 <tr class="memdesc:ae2af0c6e5462aced669b9d505370bdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef holds virtual functions for a particular geometry.  <a href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">More...</a><br /></td></tr>
 <tr class="separator:ae2af0c6e5462aced669b9d505370bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01d2ea074ace17197454cef9e4321b2"><td class="memItemLeft" align="right" valign="top"><a id="af01d2ea074ace17197454cef9e4321b2"></a>
-typedef struct <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_handler_t</b></td></tr>
-<tr class="separator:af01d2ea074ace17197454cef9e4321b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3099cfbeec3a781d79e2ba98ea379bf4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a3099cfbeec3a781d79e2ba98ea379bf4">t8_geometry_handler_c</a></td></tr>
+<tr class="memdesc:a3099cfbeec3a781d79e2ba98ea379bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef holds virtual functions for the geometry handler.  <a href="t8__geometry_8h.html#a3099cfbeec3a781d79e2ba98ea379bf4">More...</a><br /></td></tr>
+<tr class="separator:a3099cfbeec3a781d79e2ba98ea379bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -134,54 +128,21 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad4c46d083adf294fe1bc139eb763328c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#ad4c46d083adf294fe1bc139eb763328c">t8_geom_handler_init</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **pgeom_handler)</td></tr>
-<tr class="memdesc:ad4c46d083adf294fe1bc139eb763328c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a geometry handler.  <a href="t8__geometry_8h.html#ad4c46d083adf294fe1bc139eb763328c">More...</a><br /></td></tr>
-<tr class="separator:ad4c46d083adf294fe1bc139eb763328c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0046522fc1abe7b08bac7c042e063f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a6f0046522fc1abe7b08bac7c042e063f">t8_geom_handler_ref</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="memdesc:a6f0046522fc1abe7b08bac7c042e063f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference counter of a geometry handler.  <a href="t8__geometry_8h.html#a6f0046522fc1abe7b08bac7c042e063f">More...</a><br /></td></tr>
-<tr class="separator:a6f0046522fc1abe7b08bac7c042e063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c252a53d2334ef22fe591562c1827b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a0c252a53d2334ef22fe591562c1827b7">t8_geom_handler_unref</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **pgeom_handler)</td></tr>
-<tr class="memdesc:a0c252a53d2334ef22fe591562c1827b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count of a geometry handler, if the refcount reaches 0, the handler will get destroyed.  <a href="t8__geometry_8h.html#a0c252a53d2334ef22fe591562c1827b7">More...</a><br /></td></tr>
-<tr class="separator:a0c252a53d2334ef22fe591562c1827b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ebbb2f0c7c74c4dd90b82dd9aad1453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a0ebbb2f0c7c74c4dd90b82dd9aad1453">t8_geom_handler_destroy</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **pgeom_handler)</td></tr>
-<tr class="memdesc:a0ebbb2f0c7c74c4dd90b82dd9aad1453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a geometry handler and free its memory.  <a href="t8__geometry_8h.html#a0ebbb2f0c7c74c4dd90b82dd9aad1453">More...</a><br /></td></tr>
-<tr class="separator:a0ebbb2f0c7c74c4dd90b82dd9aad1453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076788b011535d13f1c78877cb37cf3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a076788b011535d13f1c78877cb37cf3a">t8_geom_handler_register_geometry</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler, const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geometry)</td></tr>
-<tr class="memdesc:a076788b011535d13f1c78877cb37cf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a geometry to the geometry handler.  <a href="t8__geometry_8h.html#a076788b011535d13f1c78877cb37cf3a">More...</a><br /></td></tr>
-<tr class="separator:a076788b011535d13f1c78877cb37cf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27fe940a1d8f60c517d7b5ff62f2d730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a27fe940a1d8f60c517d7b5ff62f2d730">t8_geom_handler_commit</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="memdesc:a27fe940a1d8f60c517d7b5ff62f2d730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit a geometry handler.  <a href="t8__geometry_8h.html#a27fe940a1d8f60c517d7b5ff62f2d730">More...</a><br /></td></tr>
-<tr class="separator:a27fe940a1d8f60c517d7b5ff62f2d730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896507441915c31966d29bd8b8e03aa0"><td class="memItemLeft" align="right" valign="top"><a id="a896507441915c31966d29bd8b8e03aa0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_handler_is_committed</b> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="separator:a896507441915c31966d29bd8b8e03aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673860267cef75332c094823473a332d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a673860267cef75332c094823473a332d">t8_geom_handler_get_num_geometries</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="memdesc:a673860267cef75332c094823473a332d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of registered geometries.  <a href="t8__geometry_8h.html#a673860267cef75332c094823473a332d">More...</a><br /></td></tr>
-<tr class="separator:a673860267cef75332c094823473a332d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#afc34ebaf8fc2472681d1ba79d64d93b9">t8_geom_handler_get_unique_geometry</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="memdesc:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a geometry handler only has one registered geometry, get a pointer to this geometry.  <a href="t8__geometry_8h.html#afc34ebaf8fc2472681d1ba79d64d93b9">More...</a><br /></td></tr>
-<tr class="separator:afc34ebaf8fc2472681d1ba79d64d93b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c30f8fad5ba402122069f41779ccdb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a3c30f8fad5ba402122069f41779ccdb8">t8_geom_handler_deactivate_tree</a> (<a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler)</td></tr>
-<tr class="memdesc:a3c30f8fad5ba402122069f41779ccdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate the current active tree.  <a href="t8__geometry_8h.html#a3c30f8fad5ba402122069f41779ccdb8">More...</a><br /></td></tr>
-<tr class="separator:a3c30f8fad5ba402122069f41779ccdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafef90cc8539857421208905d19cb97a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">t8_geom_handler_find_geometry</a> (const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *geom_handler, const char *name)</td></tr>
-<tr class="memdesc:aafef90cc8539857421208905d19cb97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a geometry's name find that geometry in the geometry handler and return it.  <a href="t8__geometry_8h.html#aafef90cc8539857421208905d19cb97a">More...</a><br /></td></tr>
-<tr class="separator:aafef90cc8539857421208905d19cb97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="memItemLeft" align="right" valign="top"><a id="ae6ce04aa3d7965126f7b9cae3da79bef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_evaluate</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memitem:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#ae6ce04aa3d7965126f7b9cae3da79bef">t8_geometry_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords)</td></tr>
+<tr class="memdesc:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the geometry of a tree at a given reference point.  <a href="t8__geometry_8h.html#ae6ce04aa3d7965126f7b9cae3da79bef">More...</a><br /></td></tr>
 <tr class="separator:ae6ce04aa3d7965126f7b9cae3da79bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc5c1077097e643565e61d9dc17b3a7"><td class="memItemLeft" align="right" valign="top"><a id="afdc5c1077097e643565e61d9dc17b3a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian)</td></tr>
+<tr class="memitem:afdc5c1077097e643565e61d9dc17b3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#afdc5c1077097e643565e61d9dc17b3a7">t8_geometry_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian)</td></tr>
+<tr class="memdesc:afdc5c1077097e643565e61d9dc17b3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the jacobian of a tree at a given reference point.  <a href="t8__geometry_8h.html#afdc5c1077097e643565e61d9dc17b3a7">More...</a><br /></td></tr>
 <tr class="separator:afdc5c1077097e643565e61d9dc17b3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68117855d8c857fe98cf733565550c7f"><td class="memItemLeft" align="right" valign="top"><a id="a68117855d8c857fe98cf733565550c7f"></a>
-<a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_get_type</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memitem:a68117855d8c857fe98cf733565550c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a68117855d8c857fe98cf733565550c7f">t8_geometry_get_type</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:a68117855d8c857fe98cf733565550c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the geometry type of a tree.  <a href="t8__geometry_8h.html#a68117855d8c857fe98cf733565550c7f">More...</a><br /></td></tr>
 <tr class="separator:a68117855d8c857fe98cf733565550c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4acfc79e504f88d0ec7eccb67271cb84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a4acfc79e504f88d0ec7eccb67271cb84">t8_geometry_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
-<tr class="memdesc:a4acfc79e504f88d0ec7eccb67271cb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tree has a negative volume.  <a href="t8__geometry_8h.html#a4acfc79e504f88d0ec7eccb67271cb84">More...</a><br /></td></tr>
-<tr class="separator:a4acfc79e504f88d0ec7eccb67271cb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e02e86dd1cf99d62c4d4f096190733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#aa6e02e86dd1cf99d62c4d4f096190733">t8_geometry_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:aa6e02e86dd1cf99d62c4d4f096190733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tree has a negative volume.  <a href="t8__geometry_8h.html#aa6e02e86dd1cf99d62c4d4f096190733">More...</a><br /></td></tr>
+<tr class="separator:aa6e02e86dd1cf99d62c4d4f096190733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Typedef for the <a class="el" href="structt8__geometry.html">t8_geometry</a> class in order to be usable as a pointer from .c files. </p>
+<div class="textblock"><p>Typedef for the <a class="el" href="structt8__geometry.html" title="The base class for all geometries.">t8_geometry</a> class in order to be usable as a pointer from .c files. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae2af0c6e5462aced669b9d505370bdaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2af0c6e5462aced669b9d505370bdaa">&#9670;&nbsp;</a></span>t8_geometry_c</h2>
@@ -197,6 +158,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
 
 <p>This typedef holds virtual functions for a particular geometry. </p>
 <p>We need it so that we can use t8_geometry_c pointers in .c files without them seeing the actual C++ code (and then not compiling) </p>
+
+</div>
+</div>
+<a id="a3099cfbeec3a781d79e2ba98ea379bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3099cfbeec3a781d79e2ba98ea379bf4">&#9670;&nbsp;</a></span>t8_geometry_handler_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler</a> <a class="el" href="t8__geometry_8h.html#a3099cfbeec3a781d79e2ba98ea379bf4">t8_geometry_handler_c</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This typedef holds virtual functions for the geometry handler. </p>
+<p>We need it so that we can use t8_geometry_handler_c pointers in .c files without them seeing the actual C++ code (and then not compiling) TODO: Delete this when the cmesh is a proper cpp class. </p>
 
 </div>
 </div>
@@ -234,103 +212,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a27fe940a1d8f60c517d7b5ff62f2d730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27fe940a1d8f60c517d7b5ff62f2d730">&#9670;&nbsp;</a></span>t8_geom_handler_commit()</h2>
+<a id="ae6ce04aa3d7965126f7b9cae3da79bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ce04aa3d7965126f7b9cae3da79bef">&#9670;&nbsp;</a></span>t8_geometry_evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_geom_handler_commit </td>
+          <td class="memname">void t8_geometry_evaluate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Commit a geometry handler. </p>
-<p>This specifies that no geometries will be added to it and makes it ready to be used. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom_handler</td><td>An initialized but not committed geometry handler. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3c30f8fad5ba402122069f41779ccdb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c30f8fad5ba402122069f41779ccdb8">&#9670;&nbsp;</a></span>t8_geom_handler_deactivate_tree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_geom_handler_deactivate_tree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deactivate the current active tree. </p>
-<p>Can be used to reload data, after it has been moved, for example by the partition-algorithm</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom_handler</td><td>The geometry handler, where the tree has to be deactivated. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd><em>geom_handler</em> must be committed before calling this function. </dd></dl>
-
-</div>
-</div>
-<a id="a0ebbb2f0c7c74c4dd90b82dd9aad1453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ebbb2f0c7c74c4dd90b82dd9aad1453">&#9670;&nbsp;</a></span>t8_geom_handler_destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_geom_handler_destroy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **&#160;</td>
-          <td class="paramname"><em>pgeom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy a geometry handler and free its memory. </p>
-<p>This is only valid if its reference count is 1. If you are unsure, call <a class="el" href="t8__geometry_8h.html#a0c252a53d2334ef22fe591562c1827b7">t8_geom_handler_unref</a> instead. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pgeom_handler</td><td>Pointer to an initialized geometry handler. Will point to NULL afterwards. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aafef90cc8539857421208905d19cb97a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafef90cc8539857421208905d19cb97a">&#9670;&nbsp;</a></span>t8_geom_handler_find_geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a>* t8_geom_handler_find_geometry </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em>, </td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>out_coords</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -340,142 +256,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
       </table>
 </div><div class="memdoc">
 
-<p>Given a geometry's name find that geometry in the geometry handler and return it. </p>
+<p>Evaluates the geometry of a tree at a given reference point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom_handler</td><td>A committed geometry handler. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of a geometry. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the geometry or NULL if it was not found. </dd></dl>
-
-</div>
-</div>
-<a id="a673860267cef75332c094823473a332d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a673860267cef75332c094823473a332d">&#9670;&nbsp;</a></span>t8_geom_handler_get_num_geometries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t t8_geom_handler_get_num_geometries </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the number of registered geometries. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom_handler</td><td>A geometry handler (must be initialized and may or may not be committed). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of registered geometries in <em>geom_handler</em>. </dd></dl>
-
-</div>
-</div>
-<a id="afc34ebaf8fc2472681d1ba79d64d93b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc34ebaf8fc2472681d1ba79d64d93b9">&#9670;&nbsp;</a></span>t8_geom_handler_get_unique_geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a>* t8_geom_handler_get_unique_geometry </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If a geometry handler only has one registered geometry, get a pointer to this geometry. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom_handler</td><td>Must be committed and have exactly one geometry registered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The only registered geometry of <em>geom_handler</em>. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Most cmeshes will have only one geometry and this function is an optimization for that special case. It is used for example in t8_cmesh_get_tree_geometry. </dd></dl>
-
-</div>
-</div>
-<a id="ad4c46d083adf294fe1bc139eb763328c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c46d083adf294fe1bc139eb763328c">&#9670;&nbsp;</a></span>t8_geom_handler_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_geom_handler_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **&#160;</td>
-          <td class="paramname"><em>pgeom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize a geometry handler. </p>
-<p>This will allocate memory. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pgeom_handler</td><td>On input a pointer to unallocated memory. On output this will point to an initialized geometry handler. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of the tree </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates at which to evaluate the geometry </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>The number of reference coordinates </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The evaluated coordinates </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a6f0046522fc1abe7b08bac7c042e063f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0046522fc1abe7b08bac7c042e063f">&#9670;&nbsp;</a></span>t8_geom_handler_ref()</h2>
+<a id="a68117855d8c857fe98cf733565550c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68117855d8c857fe98cf733565550c7f">&#9670;&nbsp;</a></span>t8_geometry_get_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_geom_handler_ref </td>
+          <td class="memname"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a> t8_geometry_get_type </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Increase the reference counter of a geometry handler. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom_handler</td><td>An initialized geometry handler. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a076788b011535d13f1c78877cb37cf3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a076788b011535d13f1c78877cb37cf3a">&#9670;&nbsp;</a></span>t8_geom_handler_register_geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_geom_handler_register_geometry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> *&#160;</td>
-          <td class="paramname"><em>geom_handler</em>, </td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td>
-          <td class="paramname"><em>geometry</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -485,45 +296,78 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
       </table>
 </div><div class="memdoc">
 
-<p>Add a geometry to the geometry handler. </p>
+<p>This function returns the geometry type of a tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">geom_handler</td><td>An initialized but not committed geometry handler. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">geometry</td><td>The geometry to add. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of the tree </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The geometry type of the tree with id gtreeid </dd></dl>
 
 </div>
 </div>
-<a id="a0c252a53d2334ef22fe591562c1827b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c252a53d2334ef22fe591562c1827b7">&#9670;&nbsp;</a></span>t8_geom_handler_unref()</h2>
+<a id="afdc5c1077097e643565e61d9dc17b3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc5c1077097e643565e61d9dc17b3a7">&#9670;&nbsp;</a></span>t8_geometry_jacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_geom_handler_unref </td>
+          <td class="memname">void t8_geometry_jacobian </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__geometry__handler.html">t8_geometry_handler_t</a> **&#160;</td>
-          <td class="paramname"><em>pgeom_handler</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>jacobian</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrease the reference count of a geometry handler, if the refcount reaches 0, the handler will get destroyed. </p>
+<p>Evaluates the jacobian of a tree at a given reference point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pgeom_handler</td><td>Pointer to an initialized geometry handler. If the refcount reaches 0, will point to NULL afterwards. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of the tree </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>The reference coordinates at which to evaluate the jacobian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>The number of reference coordinates </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at the reference coordinates </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4acfc79e504f88d0ec7eccb67271cb84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4acfc79e504f88d0ec7eccb67271cb84">&#9670;&nbsp;</a></span>t8_geometry_tree_negative_volume()</h2>
+<a id="aa6e02e86dd1cf99d62c4d4f096190733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e02e86dd1cf99d62c4d4f096190733">&#9670;&nbsp;</a></span>t8_geometry_tree_negative_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,8 +381,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>ltree_id</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -551,12 +395,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_jacobian<
 <p>Check if a tree has a negative volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh containing the tree to check </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local id of the tree </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of the tree </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the tree with id ltree_id has a negative volume. False otherwise. <br  />
+<dl class="section return"><dt>Returns</dt><dd>True if the tree with id gtreeid has a negative volume. False otherwise. <br  />
  </dd></dl>
 
 </div>

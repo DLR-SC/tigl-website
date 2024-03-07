@@ -173,12 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6c7e46e449c518574728e836d0a3289a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">t8_cmesh_bcast</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh_in, int root, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a6c7e46e449c518574728e836d0a3289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a cmesh structure that exists only on one process to all processes in the cmesh's communicator.  <a href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">More...</a><br /></td></tr>
 <tr class="separator:a6c7e46e449c518574728e836d0a3289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075f22fc226b76685dac166c4abfe7ca"><td class="memItemLeft" align="right" valign="top"><a id="a075f22fc226b76685dac166c4abfe7ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_register_geometry</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geometry)</td></tr>
-<tr class="separator:a075f22fc226b76685dac166c4abfe7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a889468aefa0a69250f4d76dbb032b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a4a889468aefa0a69250f4d76dbb032b4">t8_cmesh_set_tree_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const char *geom_name)</td></tr>
-<tr class="memdesc:a4a889468aefa0a69250f4d76dbb032b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the geometry for a tree, thus specify which geometry to use for this tree.  <a href="t8__cmesh_8h.html#a4a889468aefa0a69250f4d76dbb032b4">More...</a><br /></td></tr>
-<tr class="separator:a4a889468aefa0a69250f4d76dbb032b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0399bf93f360d0bd6bf942992a6c77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a3e0399bf93f360d0bd6bf942992a6c77">t8_cmesh_register_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> **geometry)</td></tr>
+<tr class="memdesc:a3e0399bf93f360d0bd6bf942992a6c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a geometry in the cmesh.  <a href="t8__cmesh_8h.html#a3e0399bf93f360d0bd6bf942992a6c77">More...</a><br /></td></tr>
+<tr class="separator:a3e0399bf93f360d0bd6bf942992a6c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">t8_cmesh_set_tree_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geom)</td></tr>
+<tr class="memdesc:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the geometry for a tree, thus specify which geometry to use for this tree.  <a href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">More...</a><br /></td></tr>
+<tr class="separator:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac819795480f1b8fe562e3561761a0184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ac819795480f1b8fe562e3561761a0184"><td class="mdescLeft">&#160;</td><td class="mdescRight">After allocating and adding properties to a cmesh, finish its construction.  <a href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">More...</a><br /></td></tr>
 <tr class="separator:ac819795480f1b8fe562e3561761a0184"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,8 +209,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_save</b> (<a 
 <tr class="memitem:abcab2c626867dac73bc5d3aeccc8decd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#abcab2c626867dac73bc5d3aeccc8decd">t8_cmesh_get_first_treeid</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:abcab2c626867dac73bc5d3aeccc8decd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global index of the first local tree of a cmesh.  <a href="t8__cmesh_8h.html#abcab2c626867dac73bc5d3aeccc8decd">More...</a><br /></td></tr>
 <tr class="separator:abcab2c626867dac73bc5d3aeccc8decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756d04d7c680512d3dc0b595f384f837"><td class="memItemLeft" align="right" valign="top"><a id="a756d04d7c680512d3dc0b595f384f837"></a>
-const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_get_tree_geometry</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memitem:a756d04d7c680512d3dc0b595f384f837"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a756d04d7c680512d3dc0b595f384f837">t8_cmesh_get_tree_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:a756d04d7c680512d3dc0b595f384f837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the geometry of a tree.  <a href="t8__cmesh_8h.html#a756d04d7c680512d3dc0b595f384f837">More...</a><br /></td></tr>
 <tr class="separator:a756d04d7c680512d3dc0b595f384f837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78c708349d14effdf93b3b2646f691e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ad78c708349d14effdf93b3b2646f691e">t8_cmesh_treeid_is_local_tree</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:ad78c708349d14effdf93b3b2646f691e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given t8_locidx_t belongs to a local tree of a cmesh.  <a href="t8__cmesh_8h.html#ad78c708349d14effdf93b3b2646f691e">More...</a><br /></td></tr>
@@ -375,7 +375,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>For the root process this is a pointer to <em>cmesh_in</em>. Else, a pointer to a newly allocated cmesh structure with the same values as <em>conn_in</em> on the root process. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>It is illegal to broadcast a cmesh with a registered geometry (t8_cmesh_register_geometry). All geometries must be registered after the broadcast (You can set tree attributes before bcast, though). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is illegal to broadcast a cmesh with a registered geometry (<a class="el" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh_register_geometry</a>). All geometries must be registered after the broadcast (You can set tree attributes before bcast, though). </dd></dl>
 
 </div>
 </div>
@@ -1162,6 +1162,44 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 
 </div>
 </div>
+<a id="a756d04d7c680512d3dc0b595f384f837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756d04d7c680512d3dc0b595f384f837">&#9670;&nbsp;</a></span>t8_cmesh_get_tree_geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a>* t8_cmesh_get_tree_geometry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the geometry of a tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree id of the tree for which the geometry should be returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The geometry of the tree. </dd></dl>
+
+</div>
+</div>
 <a id="a23b83b8b0710a2c8ce33dcd63e859c4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23b83b8b0710a2c8ce33dcd63e859c4b">&#9670;&nbsp;</a></span>t8_cmesh_get_tree_vertices()</h2>
 
@@ -1487,6 +1525,44 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3e0399bf93f360d0bd6bf942992a6c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0399bf93f360d0bd6bf942992a6c77">&#9670;&nbsp;</a></span>t8_cmesh_register_geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_register_geometry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> **&#160;</td>
+          <td class="paramname"><em>geometry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a geometry in the cmesh. </p>
+<p>The cmesh takes ownership of the geometry. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">geometry</td><td>The geometry to register.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If no geometry is registered and cmesh is modified from another cmesh then the other cmesh's geometries are used. </p><dl class="section note"><dt>Note</dt><dd>If you need to use <a class="el" href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">t8_cmesh_bcast</a>, then all geometries must be registered <em>after</em> the bcast operation, not before. </dd></dl>
 
 </div>
 </div>
@@ -2113,8 +2189,8 @@ If an attribute with the given package_id and key already exists, then it will g
 
 </div>
 </div>
-<a id="a4a889468aefa0a69250f4d76dbb032b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a889468aefa0a69250f4d76dbb032b4">&#9670;&nbsp;</a></span>t8_cmesh_set_tree_geometry()</h2>
+<a id="af63ca9ee92aa14f63cc8a70bd14cf8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63ca9ee92aa14f63cc8a70bd14cf8ed">&#9670;&nbsp;</a></span>t8_cmesh_set_tree_geometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2134,8 +2210,8 @@ If an attribute with the given package_id and key already exists, then it will g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>geom_name</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td>
+          <td class="paramname"><em>geom</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2150,7 +2226,7 @@ If an attribute with the given package_id and key already exists, then it will g
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A non-committed cmesh. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>A global tree id in <em>cmesh</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom_name</td><td>The name of the geometry to use for this tree. See also t8_cmesh_get_tree_geometry </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">geom</td><td>The geometry to use for this tree. See also <a class="el" href="t8__cmesh_8h.html#a756d04d7c680512d3dc0b595f384f837">t8_cmesh_get_tree_geometry</a> </td></tr>
   </table>
   </dd>
 </dl>

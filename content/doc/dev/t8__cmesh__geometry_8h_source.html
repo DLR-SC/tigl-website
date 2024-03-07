@@ -109,8 +109,8 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="t8__cmesh__geometry_8h.html#af06811a30c1dbf7cf180ae7ebf5adaf1">t8_cmesh_get_tree_geom_name</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="t8__cmesh__geometry_8h.html#ae447333ff05116f21ca1d7ce4ed8d81b">t8_cmesh_get_tree_geom_hash</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
@@ -119,7 +119,7 @@ $(function() {
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:100</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
-<div class="ttc" id="at8__cmesh__geometry_8h_html_af06811a30c1dbf7cf180ae7ebf5adaf1"><div class="ttname"><a href="t8__cmesh__geometry_8h.html#af06811a30c1dbf7cf180ae7ebf5adaf1">t8_cmesh_get_tree_geom_name</a></div><div class="ttdeci">const char * t8_cmesh_get_tree_geom_name(t8_cmesh_t cmesh, t8_gloidx_t gtreeid)</div><div class="ttdoc">Get the name of the geometry stored for a tree in a cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_geometry.cxx:77</div></div>
+<div class="ttc" id="at8__cmesh__geometry_8h_html_ae447333ff05116f21ca1d7ce4ed8d81b"><div class="ttname"><a href="t8__cmesh__geometry_8h.html#ae447333ff05116f21ca1d7ce4ed8d81b">t8_cmesh_get_tree_geom_hash</a></div><div class="ttdeci">size_t t8_cmesh_get_tree_geom_hash(t8_cmesh_t cmesh, t8_gloidx_t gtreeid)</div><div class="ttdoc">Get the hash of the geometry stored for a tree in a cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_geometry.cxx:73</div></div>
 <div class="ttc" id="at8__cmesh__types_8h_html"><div class="ttname"><a href="t8__cmesh__types_8h.html">t8_cmesh_types.h</a></div><div class="ttdoc">We define here the datatypes needed for internal cmesh routines.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
