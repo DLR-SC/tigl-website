@@ -230,9 +230,20 @@ $(function() {
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="t8__dtet__bits_8h.html#a3947bbb786325a5addd2fd110ec7bb3d">  379</a></span>&#160;<a class="code" href="t8__dtet__bits_8h.html#a3947bbb786325a5addd2fd110ec7bb3d">t8_dtet_init</a> (<a class="code" href="structt8__dtet.html">t8_dtet_t</a> *t);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTET_BITS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;t8_dtet_element_pack (<a class="code" href="structt8__dtet.html">t8_dtet_t</a> **<span class="keyword">const</span> elements, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, <span class="keywordtype">void</span> *send_buffer, <span class="keyword">const</span> <span class="keywordtype">int</span> buffer_size,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                      <span class="keywordtype">int</span> *position, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;t8_dtet_element_pack_size (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, sc_MPI_Comm comm, <span class="keywordtype">int</span> *pack_size);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;t8_dtet_element_unpack (<span class="keywordtype">void</span> *recvbuf, <span class="keyword">const</span> <span class="keywordtype">int</span> buffer_size, <span class="keywordtype">int</span> *position, <a class="code" href="structt8__dtet.html">t8_dtet_t</a> **elements,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTET_BITS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dtet_html"><div class="ttname"><a href="structt8__dtet.html">t8_dtet</a></div><div class="ttdoc">This data type stores a tetrahedron.</div><div class="ttdef"><b>Definition:</b> t8_dtet.h:71</div></div>
 <div class="ttc" id="at8_8h_html_ae5c6845909c4725136233464e6db11bb"><div class="ttname"><a href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a></div><div class="ttdeci">uint64_t t8_linearidx_t</div><div class="ttdoc">A type for storing SFC indices.</div><div class="ttdef"><b>Definition:</b> t8.h:109</div></div>
 <div class="ttc" id="at8__dtet_8h_html"><div class="ttname"><a href="t8__dtet_8h.html">t8_dtet.h</a></div><div class="ttdoc">TODO: document this.</div></div>

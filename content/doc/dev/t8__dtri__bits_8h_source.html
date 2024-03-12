@@ -236,9 +236,20 @@ $(function() {
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<a class="code" href="t8__dtri__bits_8h.html#ac1dba434645ca6603363e27cab6914d7">t8_dtri_init</a> (<a class="code" href="structt8__dtri.html">t8_dtri_t</a> *t);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_BITS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;t8_dtri_element_pack (<a class="code" href="structt8__dtri.html">t8_dtri_t</a> **<span class="keyword">const</span> elements, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, <span class="keywordtype">void</span> *send_buffer, <span class="keyword">const</span> <span class="keywordtype">int</span> buffer_size,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                      <span class="keywordtype">int</span> *position, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;t8_dtri_element_pack_size (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, sc_MPI_Comm comm, <span class="keywordtype">int</span> *pack_size);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;t8_dtri_element_unpack (<span class="keywordtype">void</span> *recvbuf, <span class="keyword">const</span> <span class="keywordtype">int</span> buffer_size, <span class="keywordtype">int</span> *position, <a class="code" href="structt8__dtri.html">t8_dtri_t</a> **elements,</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_BITS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__dtri_html"><div class="ttname"><a href="structt8__dtri.html">t8_dtri</a></div><div class="ttdef"><b>Definition:</b> t8_dtri.h:66</div></div>
 <div class="ttc" id="at8_8h_html_ae5c6845909c4725136233464e6db11bb"><div class="ttname"><a href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a></div><div class="ttdeci">uint64_t t8_linearidx_t</div><div class="ttdoc">A type for storing SFC indices.</div><div class="ttdef"><b>Definition:</b> t8.h:109</div></div>
 <div class="ttc" id="at8__dtri_8h_html"><div class="ttname"><a href="t8__dtri_8h.html">t8_dtri.h</a></div><div class="ttdoc">TODO: document this.</div></div>

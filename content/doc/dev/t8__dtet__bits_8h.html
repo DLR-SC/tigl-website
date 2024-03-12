@@ -210,6 +210,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a3947bbb786325a5addd2fd110ec7bb3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dtet__bits_8h.html#a3947bbb786325a5addd2fd110ec7bb3d">t8_dtet_init</a> (<a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> *t)</td></tr>
 <tr class="memdesc:a3947bbb786325a5addd2fd110ec7bb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sensible default values for a tet.  <a href="t8__dtet__bits_8h.html#a3947bbb786325a5addd2fd110ec7bb3d">More...</a><br /></td></tr>
 <tr class="separator:a3947bbb786325a5addd2fd110ec7bb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0658efd620ae1b6194b808e06a6b163c"><td class="memItemLeft" align="right" valign="top"><a id="a0658efd620ae1b6194b808e06a6b163c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_dtet_element_pack</b> (<a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> **const elements, const unsigned int count, void *send_buffer, const int buffer_size, int *position, sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a0658efd620ae1b6194b808e06a6b163c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07022af2d00446882eec16e888c8607"><td class="memItemLeft" align="right" valign="top"><a id="af07022af2d00446882eec16e888c8607"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_dtet_element_pack_size</b> (const unsigned int count, sc_MPI_Comm comm, int *pack_size)</td></tr>
+<tr class="separator:af07022af2d00446882eec16e888c8607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772100c431f794cc5a2d898538c828d8"><td class="memItemLeft" align="right" valign="top"><a id="a772100c431f794cc5a2d898538c828d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_dtet_element_unpack</b> (void *recvbuf, const int buffer_size, int *position, <a class="el" href="t8__dtet_8h.html#a7a69acf9a08099f910b1272af13ee32b">t8_dtet_t</a> **elements, const unsigned int count, sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a772100c431f794cc5a2d898538c828d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definitions of tet-specific functions. </p>

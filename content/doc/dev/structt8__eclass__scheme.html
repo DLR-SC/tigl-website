@@ -271,6 +271,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a057602a4444b897318195d1aa7d44e37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">t8_element_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
 <tr class="memdesc:a057602a4444b897318195d1aa7d44e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the root element  <a href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">More...</a><br /></td></tr>
 <tr class="separator:a057602a4444b897318195d1aa7d44e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f86c97b2ea5a7a85097cea448b4406d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a4f86c97b2ea5a7a85097cea448b4406d">t8_element_MPI_Pack</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **const elements, const unsigned int count, void *send_buffer, int buffer_size, int *position, sc_MPI_Comm comm) const =0</td></tr>
+<tr class="memdesc:a4f86c97b2ea5a7a85097cea448b4406d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack multiple elements into contiguous memory, so they can be sent via MPI.  <a href="structt8__eclass__scheme.html#a4f86c97b2ea5a7a85097cea448b4406d">More...</a><br /></td></tr>
+<tr class="separator:a4f86c97b2ea5a7a85097cea448b4406d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83545e009cded7b0f3a2d09500a48835"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a83545e009cded7b0f3a2d09500a48835">t8_element_MPI_Pack_size</a> (const unsigned int count, sc_MPI_Comm comm, int *pack_size) const =0</td></tr>
+<tr class="memdesc:a83545e009cded7b0f3a2d09500a48835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine an upper bound for the size of the packed message of <b>count</b> elements.  <a href="structt8__eclass__scheme.html#a83545e009cded7b0f3a2d09500a48835">More...</a><br /></td></tr>
+<tr class="separator:a83545e009cded7b0f3a2d09500a48835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90286176e42e015b1133389c368860a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a90286176e42e015b1133389c368860a4">t8_element_MPI_Unpack</a> (void *recvbuf, const int buffer_size, int *position, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elements, const unsigned int count, sc_MPI_Comm comm) const =0</td></tr>
+<tr class="memdesc:a90286176e42e015b1133389c368860a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack multiple elements from contiguous memory that was received via MPI.  <a href="structt8__eclass__scheme.html#a90286176e42e015b1133389c368860a4">More...</a><br /></td></tr>
+<tr class="separator:a90286176e42e015b1133389c368860a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -2066,6 +2075,210 @@ We recommend to use the assertion T8_ASSERT (t8_element_is_valid (elem)) in the 
 <dl class="section return"><dt>Returns</dt><dd>The maximum allowed level for elements of class <b>ts</b>. </dd></dl>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ad90742c40a9d5e1ebcfc50cafbe360e0">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a12b2d7807e078f8ae2fc36b334273421">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#aede8b80651a27c21041b79ba2bf6ebdd">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a0e3e9fc764119cca7155d960bde3f093">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#aa21fcd702fd8fc0285cf4d0100e825ab">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a3038baf1df05e4bff109b45d341cf22e">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a3b9cf8e4d4ee378bca0876e3800cb2fe">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#ab269fff72b0862da0d26802d7217a283">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
+<a id="a4f86c97b2ea5a7a85097cea448b4406d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f86c97b2ea5a7a85097cea448b4406d">&#9670;&nbsp;</a></span>t8_element_MPI_Pack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_eclass_scheme::t8_element_MPI_Pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **const&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>send_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pack multiple elements into contiguous memory, so they can be sent via MPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>Array of elements that are to be packed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Number of elements to pack </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">send_buffer</td><td>Buffer in which to pack the elements </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>size of the buffer (in order to check that we don't access out of range) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">position</td><td>the position of the first byte that is not already packed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>MPI Communicator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#a851253d4be6c3c0a793c9b5c26c233b0">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a4bf1b698f4804936a75d77fca8585407">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a5d8740fd17c361689f77baa6b30e491f">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a28cafe3d0beac276a8b5a0fdf1b43f20">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#ab90903aadbbcf1a22049fd106c855b01">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#abeed874e5885d1a5570223409dd57400">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a8c6dc78978e2d8e4699e398458a51c20">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a6fb02633498baf28b88ec3e35773dcf0">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
+<a id="a83545e009cded7b0f3a2d09500a48835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83545e009cded7b0f3a2d09500a48835">&#9670;&nbsp;</a></span>t8_element_MPI_Pack_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_eclass_scheme::t8_element_MPI_Pack_size </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pack_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine an upper bound for the size of the packed message of <b>count</b> elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Number of elements to pack </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>MPI Communicator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pack_size</td><td>upper bound on the message size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ae82bcf441cedfa237043078288d2e5fc">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a54e0740313ea885a20a51aab59118a8c">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#af21e8cc53acf0541ac1fd67ab61aace1">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aa0871c0d3e04663ad8c287cc639cc58a">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#aec7ffb0a640d4ce2091b28b8c440c138">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#ae9a6e356e7dd789f512f791ec479e428">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#ae7f1ddb326eb030ee28e7aad53a2c346">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a0406a7f7c7f7c19eb05dad5ca97a1201">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
+<a id="a90286176e42e015b1133389c368860a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90286176e42e015b1133389c368860a4">&#9670;&nbsp;</a></span>t8_element_MPI_Unpack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_eclass_scheme::t8_element_MPI_Unpack </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>recvbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unpack multiple elements from contiguous memory that was received via MPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recvbuf</td><td>Buffer from which to unpack the elements </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>size of the buffer (in order to check that we don't access out of range) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">position</td><td>the position of the first byte that is not already packed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>Array of initialised elements that is to be filled from the message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Number of elements to unpack </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>MPI Communicator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ae388235cfa9d3978930522c3c969b3e3">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a3e76d06fa339fc45b03bb890f392cc32">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a9f8fa583715e19da2b5002c09fe7fb31">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aa43019c61f8572313bd50704644e9690">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a0cc633aba145881a80460c3cb4064520">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#ac713d8087039c834b67e0497720fffb6">t8_default_scheme_prism_c</a>, and <a class="el" href="structt8__default__scheme__line__c.html#a466a8b15f4ddfdf5ffbbb4c958a44a98">t8_default_scheme_line_c</a>.</p>
 
 </div>
 </div>
