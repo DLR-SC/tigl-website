@@ -98,11 +98,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a82cea50ab42155d93fd340c7883d3dc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a82cea50ab42155d93fd340c7883d3dc3">t8_element_maxlevel</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts)</td></tr>
 <tr class="memdesc:a82cea50ab42155d93fd340c7883d3dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum allowed level for any element of a given class.  <a href="t8__element__c__interface_8h.html#a82cea50ab42155d93fd340c7883d3dc3">More...</a><br /></td></tr>
 <tr class="separator:a82cea50ab42155d93fd340c7883d3dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ec88f3c855e455d3ea790e24f088d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a66ec88f3c855e455d3ea790e24f088d9">t8_element_child_eclass</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, int childid)</td></tr>
-<tr class="memdesc:a66ec88f3c855e455d3ea790e24f088d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of each child in the ordering of the implementation.  <a href="t8__element__c__interface_8h.html#a66ec88f3c855e455d3ea790e24f088d9">More...</a><br /></td></tr>
-<tr class="separator:a66ec88f3c855e455d3ea790e24f088d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70250c69cfc23b346ff47ab4ae5cc1d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a70250c69cfc23b346ff47ab4ae5cc1d9">t8_element_level</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
-<tr class="memdesc:a70250c69cfc23b346ff47ab4ae5cc1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the level of a particular element.  <a href="t8__element__c__interface_8h.html#a70250c69cfc23b346ff47ab4ae5cc1d9">More...</a><br /></td></tr>
+<tr class="memitem:a70250c69cfc23b346ff47ab4ae5cc1d9"><td class="memItemLeft" align="right" valign="top"><a id="a70250c69cfc23b346ff47ab4ae5cc1d9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_element_level</b> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
 <tr class="separator:a70250c69cfc23b346ff47ab4ae5cc1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6692d42e5fadec3282c35ef86cc5f08e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a6692d42e5fadec3282c35ef86cc5f08e">t8_element_copy</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *source, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *dest)</td></tr>
 <tr class="memdesc:a6692d42e5fadec3282c35ef86cc5f08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all entries of <b>source</b> to <b>dest</b>.  <a href="t8__element__c__interface_8h.html#a6692d42e5fadec3282c35ef86cc5f08e">More...</a><br /></td></tr>
@@ -155,9 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a85834aa9a392b69ccd29d8cfec29e859"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a85834aa9a392b69ccd29d8cfec29e859">t8_element_ancestor_id</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int level)</td></tr>
 <tr class="memdesc:a85834aa9a392b69ccd29d8cfec29e859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the ancestor id of an element, that is the child id at a given level.  <a href="t8__element__c__interface_8h.html#a85834aa9a392b69ccd29d8cfec29e859">More...</a><br /></td></tr>
 <tr class="separator:a85834aa9a392b69ccd29d8cfec29e859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e2876567a049c380ea08ab6d03f96a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a32e2876567a049c380ea08ab6d03f96a">t8_element_is_family</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **fam)</td></tr>
-<tr class="memdesc:a32e2876567a049c380ea08ab6d03f96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given set of elements is a family or not.  <a href="t8__element__c__interface_8h.html#a32e2876567a049c380ea08ab6d03f96a">More...</a><br /></td></tr>
-<tr class="separator:a32e2876567a049c380ea08ab6d03f96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70953e17c8b6d13f902ab047474460d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a70953e17c8b6d13f902ab047474460d1">t8_element_is_family</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *const *fam)</td></tr>
+<tr class="memdesc:a70953e17c8b6d13f902ab047474460d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given set of elements is a family or not.  <a href="t8__element__c__interface_8h.html#a70953e17c8b6d13f902ab047474460d1">More...</a><br /></td></tr>
+<tr class="separator:a70953e17c8b6d13f902ab047474460d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a2d8e2783cc1ada97e6a8ca8023d1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a31a2d8e2783cc1ada97e6a8ca8023d1a">t8_element_nca</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *nca)</td></tr>
 <tr class="memdesc:a31a2d8e2783cc1ada97e6a8ca8023d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest common ancestor of two elements.  <a href="t8__element__c__interface_8h.html#a31a2d8e2783cc1ada97e6a8ca8023d1a">More...</a><br /></td></tr>
 <tr class="separator:a31a2d8e2783cc1ada97e6a8ca8023d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,21 +209,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a716501b713d90046fbc4b84da820897c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a716501b713d90046fbc4b84da820897c">t8_element_last_descendant</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *desc, int level)</td></tr>
 <tr class="memdesc:a716501b713d90046fbc4b84da820897c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the last descendant of a given element.  <a href="t8__element__c__interface_8h.html#a716501b713d90046fbc4b84da820897c">More...</a><br /></td></tr>
 <tr class="separator:a716501b713d90046fbc4b84da820897c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74607f90e9f33ac36aa2e3a510886daf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a74607f90e9f33ac36aa2e3a510886daf">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, int level)</td></tr>
-<tr class="memdesc:a74607f90e9f33ac36aa2e3a510886daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="t8__element__c__interface_8h.html#a74607f90e9f33ac36aa2e3a510886daf">More...</a><br /></td></tr>
-<tr class="separator:a74607f90e9f33ac36aa2e3a510886daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0857ebe534e0318f81d64f144f7ea484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a0857ebe534e0318f81d64f144f7ea484">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2)</td></tr>
+<tr class="memdesc:a0857ebe534e0318f81d64f144f7ea484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="t8__element__c__interface_8h.html#a0857ebe534e0318f81d64f144f7ea484">More...</a><br /></td></tr>
+<tr class="separator:a0857ebe534e0318f81d64f144f7ea484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ead72c4dcec625a6132995f545a9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a49ead72c4dcec625a6132995f545a9a1">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[])</td></tr>
 <tr class="memdesc:a49ead72c4dcec625a6132995f545a9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="t8__element__c__interface_8h.html#a49ead72c4dcec625a6132995f545a9a1">More...</a><br /></td></tr>
 <tr class="separator:a49ead72c4dcec625a6132995f545a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e552421b8f2773dfb3742f32eeafbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a32e552421b8f2773dfb3742f32eeafbb">t8_element_count_leaves</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int level)</td></tr>
-<tr class="memdesc:a32e552421b8f2773dfb3742f32eeafbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a t8_element in an array indexed by a size_t.  <a href="t8__element__c__interface_8h.html#a32e552421b8f2773dfb3742f32eeafbb">More...</a><br /></td></tr>
+<tr class="memdesc:a32e552421b8f2773dfb3742f32eeafbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level an element would produce.  <a href="t8__element__c__interface_8h.html#a32e552421b8f2773dfb3742f32eeafbb">More...</a><br /></td></tr>
 <tr class="separator:a32e552421b8f2773dfb3742f32eeafbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa98ed6f10388a39fcded55a7bda0a89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#afa98ed6f10388a39fcded55a7bda0a89">t8_element_count_leaves_from_root</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, int level)</td></tr>
 <tr class="memdesc:afa98ed6f10388a39fcded55a7bda0a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level the root element will produce.  <a href="t8__element__c__interface_8h.html#afa98ed6f10388a39fcded55a7bda0a89">More...</a><br /></td></tr>
 <tr class="separator:afa98ed6f10388a39fcded55a7bda0a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e468b415f696b3f13a642fce87ad1b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#a9e468b415f696b3f13a642fce87ad1b3">t8_element_general_function</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const void *indata, void *outdata)</td></tr>
-<tr class="memdesc:a9e468b415f696b3f13a642fce87ad1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has no defined effect but each implementation is free to provide its own meaning of it.  <a href="t8__element__c__interface_8h.html#a9e468b415f696b3f13a642fce87ad1b3">More...</a><br /></td></tr>
-<tr class="separator:a9e468b415f696b3f13a642fce87ad1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2013dcbd159a99901a5a819eeb9441e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e">t8_element_is_valid</a> (const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
 <tr class="memdesc:ac2013dcbd159a99901a5a819eeb9441e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="t8__element__c__interface_8h.html#ac2013dcbd159a99901a5a819eeb9441e">More...</a><br /></td></tr>
 <tr class="separator:ac2013dcbd159a99901a5a819eeb9441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,49 +400,10 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>This must be a valid element, bigger than maxlevel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">childid</td><td>The number of the child to construct. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">child</td><td>The storage for this element must exist and match the element class of the child. For a pyramid, for example, it may be either a tetrahedron or a pyramid depending on <em>childid</em>. This can be checked by <em>t8_element_child_eclass</em>. On output, a valid element. It is valid to call this function with elem = child. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">child</td><td>The storage for this element must exist. On output, a valid element. It is valid to call this function with elem = child. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__element__c__interface_8h.html#a66ec88f3c855e455d3ea790e24f088d9" title="Return the type of each child in the ordering of the implementation.">t8_element_child_eclass</a> </dd></dl>
-
-</div>
-</div>
-<a id="a66ec88f3c855e455d3ea790e24f088d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66ec88f3c855e455d3ea790e24f088d9">&#9670;&nbsp;</a></span>t8_element_child_eclass()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> t8_element_child_eclass </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>childid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the type of each child in the ordering of the implementation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">childid</td><td>Must be between 0 and the number of children (exclusive). The number of children is defined in <em>t8_element_num_children</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The type for the given child. </dd></dl>
 
 </div>
 </div>
@@ -538,9 +493,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__element__c__interface_8h.html#a8947eff31bdf92f237051986f684c1a3" title="Compute the number of children of an element when it is refined.">t8_element_num_children</a> </dd>
-<dd>
-<a class="el" href="t8__element__c__interface_8h.html#a66ec88f3c855e455d3ea790e24f088d9" title="Return the type of each child in the ordering of the implementation.">t8_element_child_eclass</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__element__c__interface_8h.html#a8947eff31bdf92f237051986f684c1a3" title="Compute the number of children of an element when it is refined.">t8_element_num_children</a> </dd></dl>
 
 </div>
 </div>
@@ -731,15 +684,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return a pointer to a t8_element in an array indexed by a size_t. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>The sc_array storing \t t8_element_t pointers. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>The index of the element that should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the it-th element in <b>array</b>. We provide a default implementation of this routine that should suffice for most use cases. Count how many leaf descendants of a given uniform level an element would produce. </dd></dl>
+<p>Count how many leaf descendants of a given uniform level an element would produce. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
@@ -1295,57 +1240,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9e468b415f696b3f13a642fce87ad1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e468b415f696b3f13a642fce87ad1b3">&#9670;&nbsp;</a></span>t8_element_general_function()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_element_general_function </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>indata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>outdata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function has no defined effect but each implementation is free to provide its own meaning of it. </p>
-<p>Thus this function can be used to compute or lookup very scheme implementation specific data. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>An valid element </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">indata</td><td>Pointer to input data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outdata</td><td>Pointer to output data. For the correct usage of <em>indata</em> and <em>outdata</em> see the specific implementations of the scheme. For example the default scheme triangle and tetrahedron implementations use this function to return the type of a tri/tet to the caller. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a108ba9d5c3215c5a3bda68d51130afe3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a108ba9d5c3215c5a3bda68d51130afe3">&#9670;&nbsp;</a></span>t8_element_get_corner_face()</h2>
 
@@ -1497,8 +1391,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a32e2876567a049c380ea08ab6d03f96a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e2876567a049c380ea08ab6d03f96a">&#9670;&nbsp;</a></span>t8_element_is_family()</h2>
+<a id="a70953e17c8b6d13f902ab047474460d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70953e17c8b6d13f902ab047474460d1">&#9670;&nbsp;</a></span>t8_element_is_family()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1512,7 +1406,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *const *&#160;</td>
           <td class="paramname"><em>fam</em>&#160;</td>
         </tr>
         <tr>
@@ -1730,44 +1624,6 @@ We recommend to use the assertion T8_ASSERT (t8_element_is_valid (elem)) in the 
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a70250c69cfc23b346ff47ab4ae5cc1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70250c69cfc23b346ff47ab4ae5cc1d9">&#9670;&nbsp;</a></span>t8_element_level()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_element_level </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the level of a particular element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element whose level should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The level of <b>elem</b>. </dd></dl>
 
 </div>
 </div>
@@ -2594,8 +2450,8 @@ If an element was created by <a class="el" href="t8__element__c__interface_8h.ht
 
 </div>
 </div>
-<a id="a74607f90e9f33ac36aa2e3a510886daf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74607f90e9f33ac36aa2e3a510886daf">&#9670;&nbsp;</a></span>t8_element_successor()</h2>
+<a id="a0857ebe534e0318f81d64f144f7ea484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0857ebe534e0318f81d64f144f7ea484">&#9670;&nbsp;</a></span>t8_element_successor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2616,13 +2472,7 @@ If an element was created by <a class="el" href="t8__element__c__interface_8h.ht
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
+          <td class="paramname"><em>elem2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -100,6 +100,9 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#abd28ea8d44e6b2f7b282c500a6ccec91">~t8_default_scheme_common_c</a> ()</td></tr>
 <tr class="memdesc:abd28ea8d44e6b2f7b282c500a6ccec91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for all default schemes. <br /></td></tr>
 <tr class="separator:abd28ea8d44e6b2f7b282c500a6ccec91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4187ce354135741e72bdf07d5a57f44a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a4187ce354135741e72bdf07d5a57f44a">t8_element_deinit</a> (int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const override</td></tr>
+<tr class="memdesc:a4187ce354135741e72bdf07d5a57f44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize an array of allocated elements.  <a href="classt8__default__scheme__common__c.html#a4187ce354135741e72bdf07d5a57f44a">More...</a><br /></td></tr>
+<tr class="separator:a4187ce354135741e72bdf07d5a57f44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5930cb9ae3c5482871629327639751c5"><td class="memItemLeft" align="right" valign="top"><a id="a5930cb9ae3c5482871629327639751c5"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a5930cb9ae3c5482871629327639751c5">t8_element_num_corners</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
 <tr class="memdesc:a5930cb9ae3c5482871629327639751c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of corners of a given element. <br /></td></tr>
@@ -125,9 +128,6 @@ virtual <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d0
 <tr class="memitem:a4ad696f2788bea5e0305ee7ecca40064"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">t8_element_count_leaves_from_root</a> (int level) const</td></tr>
 <tr class="memdesc:a4ad696f2788bea5e0305ee7ecca40064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level the root element will produce.  <a href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">More...</a><br /></td></tr>
 <tr class="separator:a4ad696f2788bea5e0305ee7ecca40064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad863b6897690951c96a2ec1b6bc66e09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#ad863b6897690951c96a2ec1b6bc66e09">t8_element_general_function</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const void *indata, void *outdata) const</td></tr>
-<tr class="memdesc:ad863b6897690951c96a2ec1b6bc66e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common implementation of the general function for the default scheme has no effect.  <a href="classt8__default__scheme__common__c.html#ad863b6897690951c96a2ec1b6bc66e09">More...</a><br /></td></tr>
-<tr class="separator:ad863b6897690951c96a2ec1b6bc66e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265d98b1cf352346194e2c8f107c5959"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a265d98b1cf352346194e2c8f107c5959">t8_element_vertex_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int vertex, int coords[]) const =0</td></tr>
 <tr class="memdesc:a265d98b1cf352346194e2c8f107c5959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integer coordinates of a given element vertex.  <a href="classt8__default__scheme__common__c.html#a265d98b1cf352346194e2c8f107c5959">More...</a><br /></td></tr>
 <tr class="separator:a265d98b1cf352346194e2c8f107c5959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,9 +153,6 @@ virtual <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d0
 <tr class="memitem:a94dc4be4cd857d01848c8a3dc7bae574 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a94dc4be4cd857d01848c8a3dc7bae574">t8_element_maxlevel</a> (void) const =0</td></tr>
 <tr class="memdesc:a94dc4be4cd857d01848c8a3dc7bae574 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum allowed level for any element of a given class.  <a href="structt8__eclass__scheme.html#a94dc4be4cd857d01848c8a3dc7bae574">More...</a><br /></td></tr>
 <tr class="separator:a94dc4be4cd857d01848c8a3dc7bae574 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d7309bebe6545fe711319b3c0b1a7d inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a43d7309bebe6545fe711319b3c0b1a7d">t8_element_child_eclass</a> (int childid) const =0</td></tr>
-<tr class="memdesc:a43d7309bebe6545fe711319b3c0b1a7d inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of each child in the ordering of the implementation.  <a href="structt8__eclass__scheme.html#a43d7309bebe6545fe711319b3c0b1a7d">More...</a><br /></td></tr>
-<tr class="separator:a43d7309bebe6545fe711319b3c0b1a7d inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b0ee3ca4b6ee41f01ec9d54b01c58f5 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a4b0ee3ca4b6ee41f01ec9d54b01c58f5">t8_element_level</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
 <tr class="memdesc:a4b0ee3ca4b6ee41f01ec9d54b01c58f5 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the level of a particular element.  <a href="structt8__eclass__scheme.html#a4b0ee3ca4b6ee41f01ec9d54b01c58f5">More...</a><br /></td></tr>
 <tr class="separator:a4b0ee3ca4b6ee41f01ec9d54b01c58f5 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,9 +201,9 @@ virtual <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d0
 <tr class="memitem:aa3e4dfad8f39566f51525f9fa088486c inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aa3e4dfad8f39566f51525f9fa088486c">t8_element_ancestor_id</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int level) const =0</td></tr>
 <tr class="memdesc:aa3e4dfad8f39566f51525f9fa088486c inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the ancestor id of an element, that is the child id at a given level.  <a href="structt8__eclass__scheme.html#aa3e4dfad8f39566f51525f9fa088486c">More...</a><br /></td></tr>
 <tr class="separator:aa3e4dfad8f39566f51525f9fa088486c inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292b72a95dca8e46686209943a047064 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a292b72a95dca8e46686209943a047064">t8_element_is_family</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **fam) const =0</td></tr>
-<tr class="memdesc:a292b72a95dca8e46686209943a047064 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given set of elements is a family or not.  <a href="structt8__eclass__scheme.html#a292b72a95dca8e46686209943a047064">More...</a><br /></td></tr>
-<tr class="separator:a292b72a95dca8e46686209943a047064 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3db005a489d7a15f99ae413dec0b231 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aa3db005a489d7a15f99ae413dec0b231">t8_element_is_family</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *const *fam) const =0</td></tr>
+<tr class="memdesc:aa3db005a489d7a15f99ae413dec0b231 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given set of elements is a family or not.  <a href="structt8__eclass__scheme.html#aa3db005a489d7a15f99ae413dec0b231">More...</a><br /></td></tr>
+<tr class="separator:aa3db005a489d7a15f99ae413dec0b231 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdfca78d1fd88429cf6a967e59b4d9c inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#afbdfca78d1fd88429cf6a967e59b4d9c">t8_element_nca</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *nca) const =0</td></tr>
 <tr class="memdesc:afbdfca78d1fd88429cf6a967e59b4d9c inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest common ancestor of two elements.  <a href="structt8__eclass__scheme.html#afbdfca78d1fd88429cf6a967e59b4d9c">More...</a><br /></td></tr>
 <tr class="separator:afbdfca78d1fd88429cf6a967e59b4d9c inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,24 +255,21 @@ virtual <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d0
 <tr class="memitem:a969ffd6c7dcdbd92c3aab6bbc2182db3 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a969ffd6c7dcdbd92c3aab6bbc2182db3">t8_element_last_descendant</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *desc, int level) const =0</td></tr>
 <tr class="memdesc:a969ffd6c7dcdbd92c3aab6bbc2182db3 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the last descendant of a given element.  <a href="structt8__eclass__scheme.html#a969ffd6c7dcdbd92c3aab6bbc2182db3">More...</a><br /></td></tr>
 <tr class="separator:a969ffd6c7dcdbd92c3aab6bbc2182db3 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f229d1be5b7dfb84dbf07191a1c167e inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a9f229d1be5b7dfb84dbf07191a1c167e">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *s, int level) const =0</td></tr>
-<tr class="memdesc:a9f229d1be5b7dfb84dbf07191a1c167e inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="structt8__eclass__scheme.html#a9f229d1be5b7dfb84dbf07191a1c167e">More...</a><br /></td></tr>
-<tr class="separator:a9f229d1be5b7dfb84dbf07191a1c167e inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af485304c9bc3a37bed751e72e3d020e7 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#af485304c9bc3a37bed751e72e3d020e7">t8_element_successor</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *s) const =0</td></tr>
+<tr class="memdesc:af485304c9bc3a37bed751e72e3d020e7 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the successor in a uniform refinement of a given element.  <a href="structt8__eclass__scheme.html#af485304c9bc3a37bed751e72e3d020e7">More...</a><br /></td></tr>
+<tr class="separator:af485304c9bc3a37bed751e72e3d020e7 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66ada8062fb8e7a6a68025c04b99675 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">t8_element_vertex_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, const int vertex, double coords[]) const =0</td></tr>
 <tr class="memdesc:ad66ada8062fb8e7a6a68025c04b99675 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension).  <a href="structt8__eclass__scheme.html#ad66ada8062fb8e7a6a68025c04b99675">More...</a><br /></td></tr>
 <tr class="separator:ad66ada8062fb8e7a6a68025c04b99675 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f4f14ea3a6ea9820c8db1b1fae9534 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">t8_element_array_index</a> (sc_array_t *array, size_t it) const</td></tr>
-<tr class="memdesc:a79f4f14ea3a6ea9820c8db1b1fae9534 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a t8_element in an array indexed by a size_t.  <a href="structt8__eclass__scheme.html#a79f4f14ea3a6ea9820c8db1b1fae9534">More...</a><br /></td></tr>
-<tr class="separator:a79f4f14ea3a6ea9820c8db1b1fae9534 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a550c35b8b1bfbfb075175bc959463c inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">t8_element_is_valid</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
 <tr class="memdesc:a5a550c35b8b1bfbfb075175bc959463c inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c">More...</a><br /></td></tr>
 <tr class="separator:a5a550c35b8b1bfbfb075175bc959463c inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade1612c07bfc4d2cf2f690a821e1819 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aade1612c07bfc4d2cf2f690a821e1819">t8_element_to_string</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, char *debug_string, const int string_size) const =0</td></tr>
 <tr class="memdesc:aade1612c07bfc4d2cf2f690a821e1819 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a string with readable information about the element.  <a href="structt8__eclass__scheme.html#aade1612c07bfc4d2cf2f690a821e1819">More...</a><br /></td></tr>
 <tr class="separator:aade1612c07bfc4d2cf2f690a821e1819 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba15786134ee8bb1a6fb660409a21d68 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">t8_element_init</a> (int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int called_new) const =0</td></tr>
-<tr class="memdesc:aba15786134ee8bb1a6fb660409a21d68 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an array of allocated elements.  <a href="structt8__eclass__scheme.html#aba15786134ee8bb1a6fb660409a21d68">More...</a><br /></td></tr>
-<tr class="separator:aba15786134ee8bb1a6fb660409a21d68 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7a76e00da6bfb7c32ad840d854da30 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a2c7a76e00da6bfb7c32ad840d854da30">t8_element_init</a> (int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
+<tr class="memdesc:a2c7a76e00da6bfb7c32ad840d854da30 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an array of allocated elements.  <a href="structt8__eclass__scheme.html#a2c7a76e00da6bfb7c32ad840d854da30">More...</a><br /></td></tr>
+<tr class="separator:a2c7a76e00da6bfb7c32ad840d854da30 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057602a4444b897318195d1aa7d44e37 inherit pub_methods_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">t8_element_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const =0</td></tr>
 <tr class="memdesc:a057602a4444b897318195d1aa7d44e37 inherit pub_methods_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the root element  <a href="structt8__eclass__scheme.html#a057602a4444b897318195d1aa7d44e37">More...</a><br /></td></tr>
 <tr class="separator:a057602a4444b897318195d1aa7d44e37 inherit pub_methods_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,8 +291,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a2ca2c9c4824ad3886eb095f2e66e205c inherit pub_attribs_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">The element class. <br /></td></tr>
 <tr class="separator:a2ca2c9c4824ad3886eb095f2e66e205c inherit pub_attribs_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_structt8__eclass__scheme"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structt8__eclass__scheme')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="structt8__eclass__scheme.html">t8_eclass_scheme</a></td></tr>
-<tr class="memitem:a58ceb81070cc1a68eb37a92ed287ae79 inherit pro_attribs_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a58ceb81070cc1a68eb37a92ed287ae79">element_size</a></td></tr>
-<tr class="memdesc:a58ceb81070cc1a68eb37a92ed287ae79 inherit pro_attribs_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">This scheme defines the operations for a particular element class.  <a href="structt8__eclass__scheme.html#a58ceb81070cc1a68eb37a92ed287ae79">More...</a><br /></td></tr>
+<tr class="memitem:a58ceb81070cc1a68eb37a92ed287ae79 inherit pro_attribs_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top"><a id="a58ceb81070cc1a68eb37a92ed287ae79"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#a58ceb81070cc1a68eb37a92ed287ae79">element_size</a></td></tr>
+<tr class="memdesc:a58ceb81070cc1a68eb37a92ed287ae79 inherit pro_attribs_structt8__eclass__scheme"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size in bytes of an element of class <em>eclass</em>. <br /></td></tr>
 <tr class="separator:a58ceb81070cc1a68eb37a92ed287ae79 inherit pro_attribs_structt8__eclass__scheme"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf16793349e86b890d03c21a1b82043d inherit pro_attribs_structt8__eclass__scheme"><td class="memItemLeft" align="right" valign="top"><a id="aaf16793349e86b890d03c21a1b82043d"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__eclass__scheme.html#aaf16793349e86b890d03c21a1b82043d">ts_context</a></td></tr>
@@ -475,8 +470,8 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="ad863b6897690951c96a2ec1b6bc66e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad863b6897690951c96a2ec1b6bc66e09">&#9670;&nbsp;</a></span>t8_element_general_function()</h2>
+<a id="a4187ce354135741e72bdf07d5a57f44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4187ce354135741e72bdf07d5a57f44a">&#9670;&nbsp;</a></span>t8_element_deinit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,22 +480,16 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_default_scheme_common_c::t8_element_general_function </td>
+          <td class="memname">void t8_default_scheme_common_c::t8_element_deinit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>indata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>outdata</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -510,25 +499,23 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The common implementation of the general function for the default scheme has no effect. </p>
-<p>This function literally does nothing. The tri, tet and prism scheme override this implementation with a function that stores the type of the element in <em>outdata</em>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Deinitialize an array of allocated elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>A valid element </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">indata</td><td>Is ignored. Can be NULL. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outdata</td><td>Is ignored. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The number of elements to be deinitialized. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elems</td><td>On input an array of <b>length</b> many allocated and initialized elements, on output an array of <b>length</b> many allocated, but not initialized elements. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Calling this function has no effect. See the specialized implementations in <a class="el" href="t8__default__tri__cxx_8hxx_source.html">t8_default_tri_cxx.hxx</a>, <a class="el" href="t8__default__tet__cxx_8hxx.html" title="The default implementation for tetrahedra.">t8_default_tet_cxx.hxx</a> and <a class="el" href="t8__default__prism__cxx_8hxx.html" title="The default implementation for prisms.">t8_default_prism_cxx.hxx</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call this function if you called t8_element_init on the element pointers. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structt8__eclass__scheme.html#a2c7a76e00da6bfb7c32ad840d854da30" title="Initialize an array of allocated elements.">t8_element_init</a> </dd></dl>
 
-<p>Implements <a class="el" href="structt8__eclass__scheme.html#aa0f89b4c910dddf3b6574dd1c359462f">t8_eclass_scheme</a>.</p>
-
-<p>Reimplemented in <a class="el" href="structt8__default__scheme__tri__c.html#ac1739674a62faabe9533e13a10b8d859">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a266a32a7552ed060606aa95d0193d906">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#afab8e3552d543f41ccd2bca682758c1a">t8_default_scheme_pyramid_c</a>, and <a class="el" href="structt8__default__scheme__prism__c.html#abf2cdaef6c4360a482499be926fcd08b">t8_default_scheme_prism_c</a>.</p>
+<p>Implements <a class="el" href="structt8__eclass__scheme.html#a3db62f088bda027e3410195ebd9181cd">t8_eclass_scheme</a>.</p>
 
 </div>
 </div>
