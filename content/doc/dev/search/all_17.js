@@ -1,13 +1,4 @@
 var searchData=
 [
-  ['_7et8_5fdefault_5fscheme_5fcommon_5fc_1240',['~t8_default_scheme_common_c',['../classt8__default__scheme__common__c.html#abd28ea8d44e6b2f7b282c500a6ccec91',1,'t8_default_scheme_common_c']]],
-  ['_7et8_5feclass_5fscheme_1241',['~t8_eclass_scheme',['../structt8__eclass__scheme.html#abefc72cd9e751e4c4bf4abc1dce28212',1,'t8_eclass_scheme']]],
-  ['_7et8_5fgeometry_1242',['~t8_geometry',['../structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34',1,'t8_geometry']]],
-  ['_7et8_5fgeometry_5fanalytic_1243',['~t8_geometry_analytic',['../structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574',1,'t8_geometry_analytic']]],
-  ['_7et8_5fgeometry_5fcad_1244',['~t8_geometry_cad',['../structt8__geometry__cad.html#a8b54980457226ebb62005f8de6a7e657',1,'t8_geometry_cad']]],
-  ['_7et8_5fgeometry_5fhandler_1245',['~t8_geometry_handler',['../structt8__geometry__handler.html#a7c8982b4147653636f633e88b401bad1',1,'t8_geometry_handler']]],
-  ['_7et8_5fgeometry_5flinear_1246',['~t8_geometry_linear',['../structt8__geometry__linear.html#a3caec39f25cb90993e637c4eb059be5a',1,'t8_geometry_linear']]],
-  ['_7et8_5fgeometry_5flinear_5faxis_5faligned_1247',['~t8_geometry_linear_axis_aligned',['../structt8__geometry__linear__axis__aligned.html#ada6bc57f5e7ec7cff8576e9b69a39e77',1,'t8_geometry_linear_axis_aligned']]],
-  ['_7et8_5fgeometry_5fwith_5fvertices_1248',['~t8_geometry_with_vertices',['../structt8__geometry__with__vertices.html#ac12d9f9def92fc9fe27ea8ec188a4f48',1,'t8_geometry_with_vertices']]],
-  ['_7et8_5fgeometry_5fzero_1249',['~t8_geometry_zero',['../structt8__geometry__zero.html#a7acbacb3b5d9ea8a6f8304f5b61a3893',1,'t8_geometry_zero']]]
+  ['z_1256',['z',['../structt8__dhex.html#adbb4779dab14e8c25bd8d98fcc182805',1,'t8_dhex::z()'],['../structt8__dtet.html#a4e43487fec279f5e0f6065446ff8ecb5',1,'t8_dtet::z()']]]
 ];
