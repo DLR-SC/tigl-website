@@ -1,9 +1,10 @@
 Title: Documentation
-Date: 2023-05-04 11:40
+Date: 2024-03-15 09:31
 Category: Documentation
 Author: Martin Siggel
 
- - [Latest Release (TiGL 3.3.0)](../doc/latest/index.html)
+ - [Latest Release (TiGL 3.3.1)](../doc/latest/index.html)
+ - [TiGL 3.3.0](../doc/3.3.0/index.html)
  - [TiGL 3.2.3](../doc/3.2.3/index.html)
  - [TiGL 3.2.2](../doc/3.2.2/index.html)
  - [TiGL 3.2.1](../doc/3.2.1/index.html)
