@@ -2702,13 +2702,13 @@ If an element was created by <a class="el" href="t8__element__c__interface_8h.ht
 <p>Compute the coordinates of a given element vertex inside a reference tree that is embedded into [0,1]^d (d = dimension). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>Implementation of a class scheme. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>The element to be considered. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertex</td><td>The id of the vertex whose coordinates shall be computed. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">coords</td><td>An array of at least as many doubles as the element's dimension whose entries will be filled with the coordinates of <em>vertex</em>. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>coords should be zero-initialized, as only the first d coords will be set, but when used elsewhere all coords might be used. </dd></dl>
 
 </div>
 </div>
