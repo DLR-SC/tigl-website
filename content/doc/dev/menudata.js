@@ -129,7 +129,8 @@ var menudata={children:[
 {text:"Variables",url:"globals_vars.html",children:[
 {text:"d",url:"globals_vars.html#index_d"},
 {text:"e",url:"globals_vars.html#index_e"},
-{text:"f",url:"globals_vars.html#index_f"}]},
+{text:"f",url:"globals_vars.html#index_f"},
+{text:"r",url:"globals_vars.html#index_r"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"a",url:"globals_type.html#index_a"},
 {text:"c",url:"globals_type.html#index_c"},
