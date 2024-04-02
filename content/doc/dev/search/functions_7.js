@@ -206,7 +206,7 @@ var searchData=
   ['t8_5fdprism_5ftree_5fface_1675',['t8_dprism_tree_face',['../t8__dprism__bits_8h.html#afd4d854df6e8f132883bfe85b23178c2',1,'t8_dprism_bits.c']]],
   ['t8_5fdprism_5fvertex_5fcoords_1676',['t8_dprism_vertex_coords',['../t8__dprism__bits_8h.html#a6d5d82a01b3185bb086a330728b8da51',1,'t8_dprism_bits.c']]],
   ['t8_5fdprism_5fvertex_5fref_5fcoords_1677',['t8_dprism_vertex_ref_coords',['../t8__dprism__bits_8h.html#a2bc9177a0c424454a9e597c3b70843ed',1,'t8_dprism_bits.c']]],
-  ['t8_5fdpyramid_5fancestor_1678',['t8_dpyramid_ancestor',['../t8__dpyramid__bits_8h.html#acd093111c01bebec2fdfc37781ea757b',1,'t8_dpyramid_bits.c']]],
+  ['t8_5fdpyramid_5fancestor_1678',['t8_dpyramid_ancestor',['../t8__dpyramid__bits_8h.html#a1b81611c38a713e2ea5ad273c2f13cce',1,'t8_dpyramid_bits.c']]],
   ['t8_5fdpyramid_5fancestor_5fid_1679',['t8_dpyramid_ancestor_id',['../t8__dpyramid__bits_8h.html#a0ba759a13e599f391e13e887e65943b2',1,'t8_dpyramid_bits.c']]],
   ['t8_5fdpyramid_5fboundary_5fface_1680',['t8_dpyramid_boundary_face',['../t8__dpyramid__bits_8h.html#ad03bfa6f5a6a7384202d87935ed780e2',1,'t8_dpyramid_bits.c']]],
   ['t8_5fdpyramid_5fchild_1681',['t8_dpyramid_child',['../t8__dpyramid__bits_8h.html#aed1ff78c292b3bd48f95355886dea3e0',1,'t8_dpyramid_bits.c']]],
