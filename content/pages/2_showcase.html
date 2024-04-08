@@ -29,7 +29,32 @@
 				<!--</div>--><!-- /.overlay -->
 			<!--</div>--><!-- /.background-bg -->
 		<!--</section>--><!-- /#success-story -->
+		
+		<section id="success-story">
+			<div class="success-story background-bg"> 
+				<div class="overlay subsection-padding"> 
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<h2 class="title">
+									Optimizing geometrical accuracy by curved mesh elements
+								</h2>
+								<p>Achieving a precise geometrical representation in numerical simulations typically involves refining mesh elements around curved areas of the geometry. However, this traditional method results in increased memory usage due to the greater number of elements involved. Utilizing polynomials to curve elements to the geometry is a common strategy for enhancing geometrical resolution. Yet, the accuracy of this approach hinges on the degree of the polynomial; insufficient degrees lead to subpar geometrical resolution, even with adaptive mesh refinement techniques.
+									Our innovative approach involves enriching the initial mesh with geometrical data. By leveraging the parametric description of the geometry, we directly interpolate and curve each element to conform precisely to the geometry. Unlike polynomial-based methods, our approach ensures an exact representation of the geometry at every refinement level.
+									The GIF is a demonstration of this geometry interpolation algorithm in action, showcasing curved tetrahedral mesh elements conforming to an airplane geometry while a refinement plane of level 2 moves along the aircraft's axis.
+									In benchmark tests conducted on a workstation with 100 parallel processes, we achieved remarkable results. Without visualization output, our algorithm processed up to 5.6 billion tetrahedra, with load-balancing taking a mere 7 seconds thanks to the exceptional efficiency of our t8code technology.</p>
 
+							</div><!-- /.col-md-6 -->
+	
+			<div class="galerry-item">
+                                <img src="images/showcase/aircarft_gif_20fps.gif" alt="img 1">
+                                <a href="images/showcase/aircarft_gif_20fps.gif" class="boxer"><span class="item-title">Adaptive mesh refinement of a curved tetrahedra mesh on an airplane geoemetry</span></a>
+                            </div>
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+				</div><!-- /.overlay -->
+			</div><!-- /.background-bg -->
+		</section><!-- /#success-story -->
         <section id="success-story">
 			<div class="success-story background-bg"> 
 				<div class="overlay subsection-padding"> 
