@@ -11,7 +11,7 @@ If you have any questions, contact
 
 <div class="contact-text">
   <p class="address">
-    <a href="https://www.dlr.de/sc/desktopdefault.aspx/tabid-1195/mailcontact-34880/" class="contact-title"><i class="fa fa-envelope"></i> Dr. Jan Kleinert</a><br/>
+    <a href="mailto:tigl@dlr.de" class="contact-title"><i class="fa fa-envelope"></i> Dr. Jan Kleinert</a><br/>
     Group Lead of "Simulation and Optimization of technical Systems"<br/>
     German Aerospace Center (DLR)<br/>
     Institute for Software Technology, High-Performance Computing<br/>
@@ -32,7 +32,7 @@ If you do not want to receive messages from the mailing list you can unsubscribe
 
 [Unsubscribe from TiGL-News](mailto:listserv@dlr.de?subject=Unsubscribe&body=signoff%20tigl)
 
-__If you experience problems subscribing or unsubscribing please let us know by sending a mail to [tigl@dlr.de](mailto:listserv@dlr.de).__
+__If you experience problems subscribing or unsubscribing please let us know by sending a mail to [tigl@dlr.de](mailto:tigl@dlr.de).__
 
 We store the information entered by you in order to provide you with service.
 It is only used for this purpose and is not transferred to third parties.
