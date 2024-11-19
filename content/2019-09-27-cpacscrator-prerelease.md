@@ -1,43 +1,21 @@
-Title: CPACS Creator Pre-Release
-Date: 2019-09-27 14:57
+Title: CPACS Creator Update Pre-Release
+Date: 2024-11-19 11:18
 Category: News
-Author: Jan Kleinert
+Author: Meike Kobold
 
-**We are happy to announce a pre-release of the CPACS Creator!**
+**We are happy to update the pre-release of the CPACS Creator to Version 0.2.0**
 
-CPACS Creator was developed by *Malo Drougard* at [CFS Engineering](https://cfse.ch/) and will be replace the TiGLViewer in a future release. 
-
-<div class="feature-image">
-	<img src="images/cpacscreator-gui.png"/>
-</div>
-
-## Features
-
-With the CPACS Creator, you can edit your CPACS files in the TiGLViewer or create an airplane from scratch with just a few mouse clicks. You can
-
-  - add wings and fuselages to your vehicle
-  - modify high-level parameters such as width, height, length, positions, dihedral or sweep angle
-  - add sections or exchange profile curves
-  - manipulate transformations and positionings
-
-and much more!
-
-The high-level cpacs editing functions are also available in the API. You can now easily create small variations of the same aircraft from a python script:
-
-```python
-wing = wings.get_wing("Wing")
-
-for sweep in range(50, 80, 2):
-    wing.set_sweep(sweep)
-    save(tixi_h, aircraft, "Output/out-sweep-" + str(sweep) + ".xml")
-```
+This update includes an update to the recent release of TiGL 3.4.0 and hence is compatible to CPACS 3.4.
 
 ## Installation
 
 The pre-release is available as a conda package. We recommend installation into a clean conda environment
 
 ```bash
-conda create -n cpacscreator python=3.6 cpacscreator -c dlr-sc
+conda create -n cpacscreator python=3.11 cpacscreator -c dlr-sc
 ```
+
+
+CPACS Creator was developed by *Malo Drougard* at [CFS Engineering](https://cfse.ch/) as an extension of the TiGLViewer.
 
 You can find the documentation [here](pages/documentation). **Enjoy!**

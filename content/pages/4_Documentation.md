@@ -1,5 +1,5 @@
 Title: Documentation
-Date: 2024-11-12 14:12
+Date: 2024-11-19 11:18
 Category: Documentation
 Author: Martin Siggel
 
@@ -13,4 +13,5 @@ Author: Martin Siggel
  - [TiGL 3.1.0](../doc/3.1.0/index.html)
  - [TiGL 3.0.0](../doc/3.0.0/index.html)
  - [TiGL 2.2.3](../doc/2.2.3/index.html)
+ - [CPACS Creator 0.2 (pre-release)](../doc/cpacscreator-0.2/index.html)
  - [CPACS Creator 0.1 (pre-release)](../doc/cpacscreator-0.1/index.html)
