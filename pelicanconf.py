@@ -26,7 +26,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Institute for Software Technology', 'http://www.dlr.de/sc'),
+LINKS = (('Institute of Software Technology', 'https://www.dlr.de/en/sc'),
          ('Imprint', '%s/pages/imprint.html' % SITEURL),
          ('Privacy', '%s/pages/privacy.html' % SITEURL),
          ('Terms of use', '%s/pages/terms-of-use.html' % SITEURL),
