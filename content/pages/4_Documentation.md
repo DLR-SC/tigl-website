@@ -1,9 +1,10 @@
 Title: Documentation
-Date: 2025-09-23 19:07
+Date: 2026-09-01 13:03
 Category: Documentation
 Author: Martin Siggel
 
- - [Latest Release (TiGL 3.5.0-rc1)](../doc/latest/index.html)
+ - [Latest Release (TiGL 3.5.0)](../doc/latest/index.html)
+ - [TiGL 3.5.0-rc1](../doc/3.5.0-rc1/index.html)
  - [TiGL 3.4.1](../doc/3.4.1/index.html)
  - [TiGL 3.4.0](../doc/3.4.0/index.html)
  - [TiGL 3.3.1](../doc/3.3.1/index.html)
