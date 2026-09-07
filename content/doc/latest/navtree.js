@@ -815,8 +815,8 @@ function initNavTree(toroot,relpath,allMembersFile) {
     } else {
       container.style.gridTemplateColumns = 'auto';
     }
-    const width = parseInt(Cookie.readSetting(RESIZE_COOKIE_NAME,250));
-    const pagenavWidth = parseInt(Cookie.readSetting(PAGENAV_COOKIE_NAME,250));
+    const width = parseInt(Cookie.readSetting(RESIZE_COOKIE_NAME,200));
+    const pagenavWidth = parseInt(Cookie.readSetting(PAGENAV_COOKIE_NAME,200));
     if (width) { restoreWidth(width+barWidth,pagenavWidth); } else { resizeWidth(); }
     const url = location.href;
     const i=url.indexOf("#");

@@ -42,8 +42,8 @@ h2.groupheader {
 #main-menu {
     background-image: None;
     text-shadow: None;
-    padding-top: 31px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 #main-menu li {
@@ -169,8 +169,8 @@ th.markdownTableHeadLeft, th.markdownTableHeadRight, th.markdownTableHeadCenter,
 /*** Footer ***/
 
 .section-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 address.footer {
@@ -197,16 +197,16 @@ img.footer {
     border: 1px solid #949494;
     color: #919191;
     display: inline-block;
-    font-size: 18px;
-    line-height: 42px;
-    height: 45px;
-    width: 45px;
+    font-size: 14px;
+    line-height: 28px;
+    height: 30px;
+    width: 30px;
     text-align: center;
-    margin: 0 15px 30px 15px;
+    margin: 0 10px 0 10px;
 }
 
 a.github  i {
-    margin-top: 12px;
+    margin-top: 3px;
 }
 
 .site-info {

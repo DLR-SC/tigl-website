@@ -242,7 +242,7 @@ div.nav-sync-icon:hover span.sync-icon-right {
 #page-nav {
 	background: var(--nav-background-color);
 	display: block;
-	width: 250px;
+	width: 200px;
 	box-sizing: content-box;
         position: relative;
 	border-left: 1px solid var(--nav-border-color);
