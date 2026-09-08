@@ -195,7 +195,7 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
-  html:not(.dark-mode) {
+  html[data-theme="dark"] {
     color-scheme: dark;
 
 /* page base colors */
