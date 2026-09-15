@@ -1,5 +1,5 @@
 var structtigl_1_1CTiglInterpolatePointsWithKinks_1_1Result =
 [
-    [ "Handle", "structtigl_1_1CTiglInterpolatePointsWithKinks_1_1Result.html#aba031f015ab35c257d531e8d8ecdd078", null ],
+    [ "curve", "structtigl_1_1CTiglInterpolatePointsWithKinks_1_1Result.html#a5e856a0851528b0d7ff242beb8f7ba44", null ],
     [ "parameters", "structtigl_1_1CTiglInterpolatePointsWithKinks_1_1Result.html#a1ef94dfd0c10ab033ae129c3d050105f", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['9_0',['Version 0.9',['../md_ChangeLog.html#autotoc_md38',1,'']]]
+  ['usage_0',['API Usage',['../lib_usage.html',1,'lib']]]
 ];

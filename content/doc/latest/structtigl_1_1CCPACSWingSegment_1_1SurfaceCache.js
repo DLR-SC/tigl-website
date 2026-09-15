@@ -1,7 +1,7 @@
 var structtigl_1_1CCPACSWingSegment_1_1SurfaceCache =
 [
-    [ "Handle", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a2214084b97653e92cbfd14a0ff155780", null ],
-    [ "Handle", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a6c86dbf9e25eb277fc3c31a8bfb2040d", null ],
-    [ "Handle", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a1303574136ccc3640845418053146567", null ],
-    [ "Handle", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#acdb07165ae43aa4f5bcf207792231a61", null ]
+    [ "lowerSurface", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a9632e88c1545a5e1dd2447b418c5878a", null ],
+    [ "lowerSurfaceLocal", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a43314f265af631350506f9b999239bdd", null ],
+    [ "upperSurface", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a34f7b9cd32698bf5f1d462c4418cfd24", null ],
+    [ "upperSurfaceLocal", "structtigl_1_1CCPACSWingSegment_1_1SurfaceCache.html#a4d07f40bf67a9345fa220b5645791681", null ]
 ];
