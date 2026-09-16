@@ -12,7 +12,7 @@ var classtigl_1_1CTiglWingChordface =
     [ "GetElementEtas", "classtigl_1_1CTiglWingChordface.html#a6511846b5f20502121eed55a0db77bff", null ],
     [ "GetEtaXsi", "classtigl_1_1CTiglWingChordface.html#a46b0b8fc09bcdf63c51c958902292996", null ],
     [ "GetPoint", "classtigl_1_1CTiglWingChordface.html#afc1ae6ca9e444a1520b209d24c54cd0d", null ],
-    [ "Handle", "classtigl_1_1CTiglWingChordface.html#a35a6fbc65c1bc7ce89e4da1d6929244e", null ],
+    [ "GetSurface", "classtigl_1_1CTiglWingChordface.html#a5200b497829410cef99a3391d4044c8b", null ],
     [ "Reset", "classtigl_1_1CTiglWingChordface.html#adf43db50c3123a96f45b4565030acc19", null ],
     [ "SetUID", "classtigl_1_1CTiglWingChordface.html#a986477ed1862a31fda435084b68e52cd", null ],
     [ "unregisterShape", "classtigl_1_1CTiglWingChordface.html#a21b6c28c3d1d3a567b499c91581fc8e9", null ],

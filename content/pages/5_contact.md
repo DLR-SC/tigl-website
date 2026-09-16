@@ -12,7 +12,7 @@ If you have any questions, contact
 <div class="contact-text">
   <p class="address">
     <a href="mailto:tigl@dlr.de" class="contact-title"><i class="fa fa-envelope"></i> Dr. Jan Kleinert</a><br/>
-    Group Lead of "Simulation and Optimization of technical Systems"<br/>
+    Group Lead of "Digital Twin Computing"<br/>
     German Aerospace Center (DLR)<br/>
     Institute for Software Technology, High-Performance Computing<br/>
     D-51147, Cologne<br/>

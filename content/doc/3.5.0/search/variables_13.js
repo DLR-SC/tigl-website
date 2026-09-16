@@ -6,7 +6,7 @@ var searchData=
   ['tiglerrorstrings_3',['TiglErrorStrings',['../tigl__error__strings_8h.html#af44f92caba29afa9d22d7b2158c15226',1,'tigl_error_strings.h']]],
   ['tipuidcache_4',['tipUidCache',['../classtigl_1_1CTiglWingHelper.html#a9cf0b8789f619799ab447c222400e14f',1,'tigl::CTiglWingHelper']]],
   ['tixidocumenthandle_5',['tixiDocumentHandle',['../classtigl_1_1CCPACSConfiguration.html#a15d95a1e917a05cc0c58f750dc797460',1,'tigl::CCPACSConfiguration']]],
-  ['tolerance_6',['tolerance',['../classtigl_1_1CTiglBSplineAlgorithms.html#a3f1939a8257fb003a4e1d3f06901fc66',1,'tigl::CTiglBSplineAlgorithms::tolerance'],['../classtigl_1_1CTiglIntersectionCalculation.html#abfc90bd36b42995686d84125421877d9',1,'tigl::CTiglIntersectionCalculation::tolerance']]],
+  ['tolerance_6',['tolerance',['../classtigl_1_1CTiglIntersectionCalculation.html#abfc90bd36b42995686d84125421877d9',1,'tigl::CTiglIntersectionCalculation']]],
   ['tosection_7',['toSection',['../structtigl_1_1NacelleGuideCurveParameters.html#aeba326ce22afb7ab6b32b156cc268096',1,'tigl::NacelleGuideCurveParameters']]],
   ['totaltransformation_8',['totalTransformation',['../classtigl_1_1CTiglControlSurfaceTransformation.html#a271feb95ed536e3bbc49a9eaf0ca2894',1,'tigl::CTiglControlSurfaceTransformation']]],
   ['tozeta_9',['toZeta',['../structtigl_1_1NacelleGuideCurveParameters.html#add97a133a9ca083285bef2c3ab306ec7',1,'tigl::NacelleGuideCurveParameters']]],

@@ -370,5 +370,5 @@ var searchData=
   ['cpacsobjectmap_367',['CPACSObjectMap',['../classtigl_1_1CTiglUIDManager.html#a29de5a8529a98cc46ccf1424ecaab3af',1,'tigl::CTiglUIDManager']]],
   ['cpointcontainer_368',['CPointContainer',['../classtigl_1_1ITiglWireAlgorithm.html#a33c7326c00806613887a7311f6d3695c',1,'tigl::ITiglWireAlgorithm']]],
   ['createprofilealgocallback_369',['CreateProfileAlgoCallback',['../namespacetigl.html#aad359a314c207909b5a3fcef9ffbed08',1,'tigl']]],
-  ['curvearray_370',['CurveArray',['../classtigl_1_1CTiglGordonSurfaceBuilder.html#a41ec11b552ebff301302b29d29a8d8a4',1,'tigl::CTiglGordonSurfaceBuilder::CurveArray'],['../classtigl_1_1CTiglInterpolateCurveNetwork.html#a0acbcd98dd5aa79b56c934a7a129589b',1,'tigl::CTiglInterpolateCurveNetwork::CurveArray']]]
+  ['curvearray_370',['CurveArray',['../classtigl_1_1CTiglGordonSurfaceBuilder.html#aeaceba5b9494c24ea8a9a2fc97429be1',1,'tigl::CTiglGordonSurfaceBuilder::CurveArray'],['../classtigl_1_1CTiglInterpolateCurveNetwork.html#a8dee78f35db17a5222bee378ec2e00bc',1,'tigl::CTiglInterpolateCurveNetwork::CurveArray']]]
 ];

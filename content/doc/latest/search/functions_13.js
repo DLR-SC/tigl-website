@@ -17,9 +17,10 @@ var searchData=
   ['updateribsetdatacache_14',['UpdateRibSetDataCache',['../classtigl_1_1CCPACSWingRibsDefinition.html#a5b729ccfd8addc766f0f34bfa3a7de72',1,'tigl::CCPACSWingRibsDefinition']]],
   ['updatesurfaceproperties_15',['UpdateSurfaceProperties',['../classtigl_1_1CCPACSFuselageSegment.html#a672f08cfcfc0459499f0b56d52322bf3',1,'tigl::CCPACSFuselageSegment']]],
   ['updateuidreferences_16',['UpdateUIDReferences',['../classtigl_1_1CTiglUIDManager.html#a0bcaf5f8458a03ca2973c1ffc7cf5631',1,'tigl::CTiglUIDManager']]],
-  ['upper_5fcurve_17',['upper_curve',['../classtigl_1_1CTiglNACA4Calculator.html#a51f4ed5a0d91edc227cc1fde040eff39',1,'tigl::CTiglNACA4Calculator']]],
-  ['upperpoint_18',['upperPoint',['../classtigl_1_1CControlSurfaceBorderBuilder.html#a3764ad6e709155ac605cd928713964f2',1,'tigl::CControlSurfaceBorderBuilder']]],
-  ['uppertangent_19',['upperTangent',['../classtigl_1_1CControlSurfaceBorderBuilder.html#a268368c2080435eb71d36929843f7858',1,'tigl::CControlSurfaceBorderBuilder']]],
-  ['uprev_20',['UPrev',['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#acd7c1444c427ef8fe97852f4c9afc0c5',1,'tigl::CTiglRectGridSurface::AnnotatedFace::UPrev()'],['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#a5a3a94888d8b526ea9d9ba2ac3fdacc8',1,'tigl::CTiglRectGridSurface::AnnotatedFace::UPrev() const']]],
-  ['uvtoetaxsi_21',['uvToEtaXsi',['../classtigl_1_1CCPACSWingSegment.html#af11bd4a2e3be6f02a96289f7034fa166',1,'tigl::CCPACSWingSegment']]]
+  ['upper_5fbspline_17',['upper_bspline',['../classtigl_1_1CTiglNACA4Calculator.html#a766fbefddda89b1d3d9135f5734dfe4e',1,'tigl::CTiglNACA4Calculator']]],
+  ['upper_5fcurve_18',['upper_curve',['../classtigl_1_1CTiglNACA4Calculator.html#a51f4ed5a0d91edc227cc1fde040eff39',1,'tigl::CTiglNACA4Calculator']]],
+  ['upperpoint_19',['upperPoint',['../classtigl_1_1CControlSurfaceBorderBuilder.html#a3764ad6e709155ac605cd928713964f2',1,'tigl::CControlSurfaceBorderBuilder']]],
+  ['uppertangent_20',['upperTangent',['../classtigl_1_1CControlSurfaceBorderBuilder.html#a268368c2080435eb71d36929843f7858',1,'tigl::CControlSurfaceBorderBuilder']]],
+  ['uprev_21',['UPrev',['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#acd7c1444c427ef8fe97852f4c9afc0c5',1,'tigl::CTiglRectGridSurface::AnnotatedFace::UPrev()'],['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#a5a3a94888d8b526ea9d9ba2ac3fdacc8',1,'tigl::CTiglRectGridSurface::AnnotatedFace::UPrev() const']]],
+  ['uvtoetaxsi_22',['uvToEtaXsi',['../classtigl_1_1CCPACSWingSegment.html#af11bd4a2e3be6f02a96289f7034fa166',1,'tigl::CCPACSWingSegment']]]
 ];

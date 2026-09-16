@@ -33,13 +33,11 @@ var searchData=
   ['nprofiles_30',['NProfiles',['../classtigl_1_1CTiglCurveNetworkSorter.html#a81cbfd49fd699d4aa091e7d7514af47d',1,'tigl::CTiglCurveNetworkSorter']]],
   ['nrows_31',['NRows',['../classtigl_1_1CTiglRectGridSurface.html#aaf01408156ec4962a461ab53db1d9299',1,'tigl::CTiglRectGridSurface']]],
   ['nrows_32',['nrows',['../classtigl_1_1CTiglRectGridSurface.html#acaa60e1e625fe221d43b144500795fcb',1,'tigl::CTiglRectGridSurface']]],
-  ['nseg_5fu_33',['nseg_u',['../classtigl_1_1CTiglBSplineAlgorithms.html#acef6db30ae4c46e7a3fab979499f22a9',1,'tigl::CTiglBSplineAlgorithms']]],
-  ['nseg_5fv_34',['nseg_v',['../classtigl_1_1CTiglBSplineAlgorithms.html#ae7bc8ea4ed0d8392da17120a06665b78',1,'tigl::CTiglBSplineAlgorithms']]],
-  ['nshapes_35',['NShapes',['../classtigl_1_1CTiglCADExporter.html#ac8a73aaefaadf13889d1dea0b63af051',1,'tigl::CTiglCADExporter']]],
-  ['nu_36',['nu',['../structtigl_1_1CTiglConcatSurfaces_1_1SegmentsSize.html#af31b981eb49fbc7bd171d2dfc3cdc277',1,'tigl::CTiglConcatSurfaces::SegmentsSize']]],
-  ['nullshape_37',['nullShape',['../classtigl_1_1CTiglShapeCache.html#a142268b61372cc9b7704c2b23a75ff8c',1,'tigl::CTiglShapeCache']]],
-  ['number_5fof_5fribs_38',['NUMBER_OF_RIBS',['../classtigl_1_1CCPACSWingRibsPositioning.html#ae732da1bd77d26abe9666d17b652e3ddac8c29f3449c4a23850c787553293f89b',1,'tigl::CCPACSWingRibsPositioning']]],
-  ['numberofribs_39',['numberOfRibs',['../structtigl_1_1CCPACSWingRibsDefinition_1_1RibSetDataCache.html#ace8b9b94f4aaee168859c92829b5120f',1,'tigl::CCPACSWingRibsDefinition::RibSetDataCache']]],
-  ['numgetpointbehaviors_40',['numGetPointBehaviors',['../tigl_8h.html#ab632c44c2aa3cf3f34e9076984baf0f0aa58f1cb39a3e2ba6f34ae4f6c28dea62',1,'tigl.h']]],
-  ['nv_41',['nv',['../structtigl_1_1CTiglConcatSurfaces_1_1SegmentsSize.html#aa6cdfb7cbeb8f9896fe5a5e40c8d6fbf',1,'tigl::CTiglConcatSurfaces::SegmentsSize']]]
+  ['nshapes_33',['NShapes',['../classtigl_1_1CTiglCADExporter.html#ac8a73aaefaadf13889d1dea0b63af051',1,'tigl::CTiglCADExporter']]],
+  ['nu_34',['nu',['../structtigl_1_1CTiglConcatSurfaces_1_1SegmentsSize.html#af31b981eb49fbc7bd171d2dfc3cdc277',1,'tigl::CTiglConcatSurfaces::SegmentsSize']]],
+  ['nullshape_35',['nullShape',['../classtigl_1_1CTiglShapeCache.html#a142268b61372cc9b7704c2b23a75ff8c',1,'tigl::CTiglShapeCache']]],
+  ['number_5fof_5fribs_36',['NUMBER_OF_RIBS',['../classtigl_1_1CCPACSWingRibsPositioning.html#ae732da1bd77d26abe9666d17b652e3ddac8c29f3449c4a23850c787553293f89b',1,'tigl::CCPACSWingRibsPositioning']]],
+  ['numberofribs_37',['numberOfRibs',['../structtigl_1_1CCPACSWingRibsDefinition_1_1RibSetDataCache.html#ace8b9b94f4aaee168859c92829b5120f',1,'tigl::CCPACSWingRibsDefinition::RibSetDataCache']]],
+  ['numgetpointbehaviors_38',['numGetPointBehaviors',['../tigl_8h.html#ab632c44c2aa3cf3f34e9076984baf0f0aa58f1cb39a3e2ba6f34ae4f6c28dea62',1,'tigl.h']]],
+  ['nv_39',['nv',['../structtigl_1_1CTiglConcatSurfaces_1_1SegmentsSize.html#aa6cdfb7cbeb8f9896fe5a5e40c8d6fbf',1,'tigl::CTiglConcatSurfaces::SegmentsSize']]]
 ];

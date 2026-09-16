@@ -6,7 +6,7 @@ var classtigl_1_1CCSTCurveBuilder =
     ] ],
     [ "CCSTCurveBuilder", "classtigl_1_1CCSTCurveBuilder.html#ae41ab7a0d928573affedeb5c7df0b288", null ],
     [ "B", "classtigl_1_1CCSTCurveBuilder.html#a944bc970103ccd41e777a1af3753ecd8", null ],
-    [ "Handle", "classtigl_1_1CCSTCurveBuilder.html#a2de94098f686edc26cd8113b5ae6da78", null ],
+    [ "Curve", "classtigl_1_1CCSTCurveBuilder.html#a3b0e446a792340a051ef76f3741e2b8c", null ],
     [ "N1", "classtigl_1_1CCSTCurveBuilder.html#a9cfdac0e255b480c3254895c12cc5a06", null ],
     [ "N2", "classtigl_1_1CCSTCurveBuilder.html#af48158d2f6d5a9c72ef93aeb704c9042", null ],
     [ "T", "classtigl_1_1CCSTCurveBuilder.html#a3310012916ebee3d2947029047432779", null ],

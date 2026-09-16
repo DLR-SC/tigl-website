@@ -31,7 +31,7 @@
 								The CPACS model contains a parametric description of wings, fuselages,
 								engines, control surfaces or the inner aircraft structure. TiGL computes
 								CAD models from these components and gives access to them via
-								file exports and query functions.
+								file exports, query and modification functions.
 							</p>
 						</div><!-- /.col-md-6 -->
 
@@ -85,7 +85,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h2 class="title">
-										Structure Model, Flaps
+										Structure Model and Leading/Trailing Edge Devices
 									</h2>
 									<p>
 										For structural analyses, TiGL builds a wing structure model consisting
@@ -94,7 +94,7 @@
 										the finite element method.
 										In addition to the structural model, TiGL can be used to model different control
 										surfaces like ailerons, landing flaps and leading edge devices. The control surface
-										devices can then be extended with TiGL API functions or from the TiGL Viewer. 
+										devices can then be extended with TiGL API functions or from the TiGL Creator. 
 									</p>
 								</div><!-- /.col-md-6 -->
 		
@@ -185,19 +185,21 @@
 								Visualization
 							</h2>
 							<p>
-								Instead of using directly the TiGL library, we also ship the program TiGL Viewer
-								with each software release. This is a simple viewer visualizes the geometries
-								created by TiGL. It comes with a JavaScript based console that allows to 
-								automate the visualization to e.g. create movies. 
-								TiGL Viewer can import and display also other CAD formats. This comes really handy when
-								developing CPACS files to re-create existing aircraft configurations.
+								Instead of using the TiGL library directly, we also ship a GUI, the TiGL Creator, 
+								with each software release. This is a viewer to visualize the geometries
+								created by TiGL. Furthermore, TiGL Creator is capable of editing wings and
+								fuselages in a CPACS configuration. These can, e.g., be added, modified in size
+								or orientation or deleted completely without manually touchin the CPACS file.
+								It comes with a JavaScript based console that allows to automate the visualization
+								to e.g. create movies. TiGL Creator can import and display also other CAD formats.
+								This comes really handy when developing CPACS files to re-create existing aircraft configurations.
 
 							</p>
 						</div><!-- /.col-md-6 -->
 
 						<div class="col-md-6">
 							<div class="feature-image">
-								<img src="images/features/TiGLViewer.png"/>
+								<img src="images/features/TiGLCreator_3_5_0.png"/>
 
 							</div>
 						</div><!-- /.col-md-6 -->

@@ -11,7 +11,8 @@ var searchData=
   ['logtoconsole_8',['LogToConsole',['../classtigl_1_1CTiglLogging.html#a4d374741f4070f5d8020427e221b37c7',1,'tigl::CTiglLogging']]],
   ['logtofile_9',['LogToFile',['../classtigl_1_1CTiglLogging.html#aad4dea1809155f9a4fffe6f69e31ee21',1,'tigl::CTiglLogging']]],
   ['logtostream_10',['LogToStream',['../classtigl_1_1CTiglLogging.html#ac319401034e1a5193d7ccb32bd1d7598',1,'tigl::CTiglLogging']]],
-  ['lower_5fcurve_11',['lower_curve',['../classtigl_1_1CTiglNACA4Calculator.html#a3390ad54aa46632256fa5fff6a437838',1,'tigl::CTiglNACA4Calculator']]],
-  ['lowerpoint_12',['lowerPoint',['../classtigl_1_1CControlSurfaceBorderBuilder.html#aa95438d32e406467251145c66f097065',1,'tigl::CControlSurfaceBorderBuilder']]],
-  ['lowertangent_13',['lowerTangent',['../classtigl_1_1CControlSurfaceBorderBuilder.html#ab3d0841fa2eb8e689e213b2de50e1a9f',1,'tigl::CControlSurfaceBorderBuilder']]]
+  ['lower_5fbspline_11',['lower_bspline',['../classtigl_1_1CTiglNACA4Calculator.html#ac3b94f09e07d2bb290f0bb43da0506bd',1,'tigl::CTiglNACA4Calculator']]],
+  ['lower_5fcurve_12',['lower_curve',['../classtigl_1_1CTiglNACA4Calculator.html#a3390ad54aa46632256fa5fff6a437838',1,'tigl::CTiglNACA4Calculator']]],
+  ['lowerpoint_13',['lowerPoint',['../classtigl_1_1CControlSurfaceBorderBuilder.html#aa95438d32e406467251145c66f097065',1,'tigl::CControlSurfaceBorderBuilder']]],
+  ['lowertangent_14',['lowerTangent',['../classtigl_1_1CControlSurfaceBorderBuilder.html#ab3d0841fa2eb8e689e213b2de50e1a9f',1,'tigl::CControlSurfaceBorderBuilder']]]
 ];

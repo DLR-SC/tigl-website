@@ -30,7 +30,7 @@ var hierarchy =
       [ "tigl::disable_adl::any::any_conceptImpl< T >", "classtigl_1_1disable__adl_1_1any_1_1any__conceptImpl.html", null ]
     ] ],
     [ "tigl::BoundingBoxHeightWidth", "structtigl_1_1BoundingBoxHeightWidth.html", null ],
-    [ "tigl::Cache&lt; CacheStruct, CpacsClass &gt;", "classtigl_1_1Cache.html", null ],
+    [ "tigl::Cache< CacheStruct, CpacsClass >", "classtigl_1_1Cache.html", null ],
     [ "tigl::CControlSurfaceBorderBuilder", "classtigl_1_1CControlSurfaceBorderBuilder.html", null ],
     [ "tigl::CCPACSComponent::MassCache", "structtigl_1_1CCPACSComponent_1_1MassCache.html", null ],
     [ "tigl::CCPACSConfiguration", "classtigl_1_1CCPACSConfiguration.html", null ],
@@ -44,7 +44,7 @@ var hierarchy =
     [ "tigl::CCPACSFuselageSegment::SurfaceCache", "structtigl_1_1CCPACSFuselageSegment_1_1SurfaceCache.html", null ],
     [ "tigl::CCPACSFuselageSegment::SurfacePropertiesCache", "structtigl_1_1CCPACSFuselageSegment_1_1SurfacePropertiesCache.html", null ],
     [ "tigl::CCPACSFuselageStringerFramePosition::RelativePositionCache", "structtigl_1_1CCPACSFuselageStringerFramePosition_1_1RelativePositionCache.html", null ],
-    [ "tigl::CCPACSGuideCurveAlgo&lt; profileGetPointAlgo &gt;", "classtigl_1_1CCPACSGuideCurveAlgo.html", null ],
+    [ "tigl::CCPACSGuideCurveAlgo< profileGetPointAlgo >", "classtigl_1_1CCPACSGuideCurveAlgo.html", null ],
     [ "tigl::CCPACSLeadingEdgeDevice::HingePoints", "structtigl_1_1CCPACSLeadingEdgeDevice_1_1HingePoints.html", null ],
     [ "tigl::CCPACSNacelleCowl::WireCache", "structtigl_1_1CCPACSNacelleCowl_1_1WireCache.html", null ],
     [ "tigl::CCPACSTrailingEdgeDevice::HingePoints", "structtigl_1_1CCPACSTrailingEdgeDevice_1_1HingePoints.html", null ],
@@ -151,8 +151,8 @@ var hierarchy =
     [ "tigl::CTiglPolyObject", "classtigl_1_1CTiglPolyObject.html", null ],
     [ "tigl::CTiglProjectOnLinearSpline", "classtigl_1_1CTiglProjectOnLinearSpline.html", null ],
     [ "tigl::CTiglProjectPointOnCurveAtAngle", "classtigl_1_1CTiglProjectPointOnCurveAtAngle.html", null ],
-    [ "tigl::CTiglRectGridSurface&lt; Annotation &gt;", "classtigl_1_1CTiglRectGridSurface.html", null ],
-    [ "tigl::CTiglRectGridSurface&lt; Annotation &gt;::AnnotatedFace", "classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html", null ],
+    [ "tigl::CTiglRectGridSurface< Annotation >", "classtigl_1_1CTiglRectGridSurface.html", null ],
+    [ "tigl::CTiglRectGridSurface< Annotation >::AnnotatedFace", "classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html", null ],
     [ "tigl::CTiglSectionElement", "classtigl_1_1CTiglSectionElement.html", [
       [ "tigl::CTiglFuselageSectionElement", "classtigl_1_1CTiglFuselageSectionElement.html", null ],
       [ "tigl::CTiglWingSectionElement", "classtigl_1_1CTiglWingSectionElement.html", null ]
@@ -1098,7 +1098,7 @@ var hierarchy =
     [ "tigl::NacelleGuideCurveParameters", "structtigl_1_1NacelleGuideCurveParameters.html", null ],
     [ "tigl::ProjectResult", "structtigl_1_1ProjectResult.html", null ],
     [ "tigl::ReentryGuard", "structtigl_1_1ReentryGuard.html", null ],
-    [ "tigl::ScopeLockedReference&lt; T &gt;", "classtigl_1_1ScopeLockedReference.html", null ],
+    [ "tigl::ScopeLockedReference< T >", "classtigl_1_1ScopeLockedReference.html", null ],
     [ "tigl::TracePoint", "classtigl_1_1TracePoint.html", null ],
     [ "tigl::ValueWithDerivative", "classtigl_1_1ValueWithDerivative.html", null ],
     [ "tigl::WingCellInternal::Point2D", "structtigl_1_1WingCellInternal_1_1Point2D.html", null ],

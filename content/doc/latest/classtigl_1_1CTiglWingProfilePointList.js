@@ -22,7 +22,7 @@ var classtigl_1_1CTiglWingProfilePointList =
     [ "isProfileClosed", "classtigl_1_1CTiglWingProfilePointList.html#a6c4353a33be7049f6bce05c2f24a5d42", null ],
     [ "openProfilePoints", "classtigl_1_1CTiglWingProfilePointList.html#aa321fed0e3f7da0aa73e3e6927e4e492", null ],
     [ "operator=", "classtigl_1_1CTiglWingProfilePointList.html#ac4a88797c98c3b0a42b9699f841f12df", null ],
-    [ "trimUpperLowerCurve", "classtigl_1_1CTiglWingProfilePointList.html#a092b777304673a69c8221f5b61f1cc87", null ],
+    [ "trimUpperLowerCurve", "classtigl_1_1CTiglWingProfilePointList.html#ad3287f77392f2c8e23604af7c1be7c3c", null ],
     [ "c_blendingDistance", "classtigl_1_1CTiglWingProfilePointList.html#a3f81c29b7518912d605ed14dfe5031e3", null ],
     [ "c_prescribedLEParam", "classtigl_1_1CTiglWingProfilePointList.html#a198a75f6d7103c451bfc2f483f3a4397", null ],
     [ "c_trailingEdgeRelGap", "classtigl_1_1CTiglWingProfilePointList.html#adeaf7927352f19bd56ff27e50a7ef2e5", null ],

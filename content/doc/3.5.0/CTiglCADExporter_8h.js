@@ -1,6 +1,6 @@
 var CTiglCADExporter_8h =
 [
-    [ "tigl::CCADExporterBuilder&lt; T &gt;", "classtigl_1_1CCADExporterBuilder.html", "classtigl_1_1CCADExporterBuilder" ],
+    [ "tigl::CCADExporterBuilder< T >", "classtigl_1_1CCADExporterBuilder.html", "classtigl_1_1CCADExporterBuilder" ],
     [ "tigl::CTiglCADExporter", "classtigl_1_1CTiglCADExporter.html", "classtigl_1_1CTiglCADExporter" ],
     [ "tigl::DefaultExporterOption", "classtigl_1_1DefaultExporterOption.html", "classtigl_1_1DefaultExporterOption" ],
     [ "tigl::DefaultShapeExportOptions", "classtigl_1_1DefaultShapeExportOptions.html", "classtigl_1_1DefaultShapeExportOptions" ],

@@ -6,7 +6,7 @@ var classtigl_1_1CCPACSNacelleCowl =
     [ "BuildOuterShape", "classtigl_1_1CCPACSNacelleCowl.html#abde643455699b2d59e5588873de161a0", null ],
     [ "BuildOuterShapeWires", "classtigl_1_1CCPACSNacelleCowl.html#ac301d0c0c6ed075c7461fdda1e02dc94", null ],
     [ "GetEndZetaBlendingSurface", "classtigl_1_1CCPACSNacelleCowl.html#a3adfcec6daf7934dc34907d4a934c69d", null ],
+    [ "GetGuideCurve", "classtigl_1_1CCPACSNacelleCowl.html#a798e17036230d3e47b2b73473c5cecad", null ],
     [ "GetStartZetaBlendingSurface", "classtigl_1_1CCPACSNacelleCowl.html#a57fb3fdb7e04668b7594037036c09e27", null ],
-    [ "Handle", "classtigl_1_1CCPACSNacelleCowl.html#a1dddc8fcc3c96f2ad003949fcd67a24e", null ],
     [ "wireCache", "classtigl_1_1CCPACSNacelleCowl.html#aaf4495ff69c73f2e36b09a7a1983d806", null ]
 ];
