@@ -43,7 +43,7 @@ var NAVTREE =
     ] ],
     [ "TiGL Library", "lib.html", "lib" ],
     [ "Tutorials", "tuto.html", [
-      [ "Create an aircraft from scratch", "tuto.html#tuto_create_from_scratch", null ],
+      [ "Create an Aircraft from Scratch", "tuto.html#tuto_create_from_scratch", null ],
       [ "Python Scripting", "tuto.html#tuto_python", null ]
     ] ],
     [ "Changelog", "md_ChangeLog.html", [
@@ -294,14 +294,14 @@ var NAVTREEINDEX =
 "classtigl_1_1generated_1_1CPACSWingSection.html#a882be6990134142483955674e21d2fb7",
 "classtigl_1_1generated_1_1CPACSWingShell.html#a7719654a020855707fc5ce6e31828034",
 "dir_44ff0c78a3ac1026781d2554ce171410.html",
-"gui.html#navigation",
-"namespacetigl.html#a3f1ad1f22a154bec9cfe46a0cfcd5f82",
-"namespacetigl.html#aa9a7934c22b1669de948eb16fd9fb9e0",
-"namespacetigl_1_1generated.html#a21a14b4344e04cd2b5f58443d9b18cb8",
-"parameters_def.html#sec_chord_pt",
-"structtigl_1_1CCPACSWingRibsDefinition_1_1CutGeometry.html#ad3acf73b0d583ed08b73cd326a1b321d",
-"structtigl_1_1NacelleGuideCurveParameters.html#aa0decac85fd5978596ee24712717ffa3",
-"tigl_8h.html#ad569158eaac6909a55f687d0ee3a13a8ae54c31a855b907f263d49edcdbe677bd"
+"group__Enums.html#ggaf7c2caa59faf3dbda9805c33e1fe82fbacd7e349099d1a114e7c18121e4c45e1e",
+"namespacemembers_e.html",
+"namespacetigl.html#a598c630bed05c60347d7ed2e94a89ad5",
+"namespacetigl.html#ad0291d7d6e17a47420fd12232717fb87",
+"namespacetigl_1_1generated.html#a69cbd66b151482e5c7d3bd5ffec3ee60a1afadafee9e277af92a1f56a6ce6c24c",
+"structtigl_1_1CCPACSFuselageProfile_1_1SizeCache.html",
+"structtigl_1_1CCPACSWingSparSegment_1_1GeometryCache.html#a6de26a7cd6ab30fcac3f9d56427ec37e",
+"tigl_8h.html#a45d52073ea2eacdf8ab97e65ba0bab5d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

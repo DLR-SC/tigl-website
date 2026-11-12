@@ -100,6 +100,6 @@ var searchData=
   ['python_97',['Python',['../tigl_installation.html#python',1,'']]],
   ['python_20api_98',['Internal python API',['../lib.html#lib_python',1,'']]],
   ['python_20bindings_99',['Internal Python bindings',['../tigl_installation.html#internalpython',1,'']]],
-  ['python_20demo_100',['Python-Demo',['..//localdata2/gold_sv/TiGL/3nd_tigl/examples/README.md#lib_intrernal_python_demo',1,'']]],
+  ['python_20demo_100',['Python-Demo',['..//localdata2/gold_sv/TiGL/2nd_tigl/examples/README.md#lib_intrernal_python_demo',1,'']]],
   ['python_20scripting_101',['Python Scripting',['../tuto.html#tuto_python',1,'']]]
 ];

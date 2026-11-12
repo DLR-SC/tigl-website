@@ -7,6 +7,7 @@ var CPACSSystemConnection__connectionType_8h =
       [ "tigl::generated::hydraulic", "namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7af5f57dd2372e37507ff67bcfb82ad0bb", null ],
       [ "tigl::generated::mechanical", "namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7a74598d3e777f0f8251b13696f4bd758f", null ],
       [ "tigl::generated::fluid", "namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7aaada74cea9930c6d1a318c9902466e71", null ],
+      [ "tigl::generated::heat", "namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7a26a4dcd0d5d5b3cdfc5d2bf280b24374", null ],
       [ "tigl::generated::data", "namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7a7c70534e1865101de7d3932b479cefc6", null ]
     ] ],
     [ "tigl::generated::CPACSSystemConnection_connectionTypeToString", "namespacetigl_1_1generated.html#a50706260c2777150d9f1e43a26a73aca", null ],

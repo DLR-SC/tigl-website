@@ -110,6 +110,9 @@ $(function(){initNavTree('namespacetigl_1_1ControlSurfaceDeviceHelper.html','');
 Functions</h2></td></tr>
 <tr class="memitem:a03ee331c5136bec4b774ae24a0e17c79" id="r_a03ee331c5136bec4b774ae24a0e17c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tigl__internal_8h.html#aba5231aeb0385c8ac2c668ab3376f04f">TIGL_EXPORT</a> gp_Pnt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ee331c5136bec4b774ae24a0e17c79">calc_hinge_point</a> (<a class="el" href="namespacetigl.html#a52e5ec05a64c4f17d11d6d9562447515">CCPACSControlSurfaceHingePoint</a> const &amp;hinge_point, <a class="el" href="classtigl_1_1CCPACSEtaIsoLine.html">CCPACSEtaIsoLine</a> const &amp;etaLE, <a class="el" href="classtigl_1_1CCPACSWingComponentSegment.html">CCPACSWingComponentSegment</a> const &amp;cSegment, <a class="el" href="classtigl_1_1CTiglUIDManager.html">CTiglUIDManager</a> const *uidMgr, std::string const &amp;innerOuter)</td></tr>
 <tr class="separator:a03ee331c5136bec4b774ae24a0e17c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4987203cbcc4296799cdf69ff56e569d" id="r_a4987203cbcc4296799cdf69ff56e569d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tigl__internal_8h.html#aba5231aeb0385c8ac2c668ab3376f04f">TIGL_EXPORT</a> <a class="el" href="classtigl_1_1CTiglTransformation.html">CTiglTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4987203cbcc4296799cdf69ff56e569d">GetBorderAirfoilTransformation</a> (const <a class="el" href="classtigl_1_1CTiglControlSurfaceBorderCoordinateSystem.html">CTiglControlSurfaceBorderCoordinateSystem</a> &amp;coords, double scalZ)</td></tr>
+<tr class="memdesc:a4987203cbcc4296799cdf69ff56e569d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places the airfoil of a control surface border into the plane of that border. The airfoil has a unit chord, scalZ is a fraction of the chord of the border.  <br /></td></tr>
+<tr class="separator:a4987203cbcc4296799cdf69ff56e569d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2799536aaa792e226cd7f7a1fa290705" id="r_a2799536aaa792e226cd7f7a1fa290705"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tigl__internal_8h.html#aba5231aeb0385c8ac2c668ab3376f04f">TIGL_EXPORT</a> gp_Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2799536aaa792e226cd7f7a1fa290705">GetNormalOfControlSurfaceDevice</a> (const <a class="el" href="classtigl_1_1CCPACSWingComponentSegment.html">CCPACSWingComponentSegment</a> &amp;cSegment)</td></tr>
 <tr class="separator:a2799536aaa792e226cd7f7a1fa290705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2eba88dfa93c06fabffa33642d9903" id="r_a2f2eba88dfa93c06fabffa33642d9903"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tigl__internal_8h.html#aba5231aeb0385c8ac2c668ab3376f04f">TIGL_EXPORT</a> <a class="el" href="PNamedShape_8h.html#ae04e46d7b6033600c9875335689591c9">PNamedShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f2eba88dfa93c06fabffa33642d9903">GetTransformedFlapShape</a> (<a class="el" href="PNamedShape_8h.html#ae04e46d7b6033600c9875335689591c9">PNamedShape</a> deviceShape, gp_Trsf T)</td></tr>
@@ -151,6 +154,29 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4987203cbcc4296799cdf69ff56e569d" name="a4987203cbcc4296799cdf69ff56e569d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4987203cbcc4296799cdf69ff56e569d">&#9670;&#160;</a></span>GetBorderAirfoilTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tigl__internal_8h.html#aba5231aeb0385c8ac2c668ab3376f04f">TIGL_EXPORT</a> <a class="el" href="classtigl_1_1CTiglTransformation.html">CTiglTransformation</a> tigl::ControlSurfaceDeviceHelper::GetBorderAirfoilTransformation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtigl_1_1CTiglControlSurfaceBorderCoordinateSystem.html">CTiglControlSurfaceBorderCoordinateSystem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>coords</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>scalZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Places the airfoil of a control surface border into the plane of that border. The airfoil has a unit chord, scalZ is a fraction of the chord of the border. </p>
 
 </div>
 </div>

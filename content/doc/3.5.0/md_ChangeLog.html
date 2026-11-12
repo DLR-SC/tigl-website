@@ -115,7 +115,7 @@ Changes since last release</h1>
 </ul>
 </li>
 <li>TiGLCreator<ul>
-<li>none</li>
+<li>Implement a manager to deal with user-defined spotlights and to dimm the default lighting. The spotlights can now be added, edited, copied, deleted and turned off/on again directly via the GUI. Also, light cones can be activated to make the spotlight visible. The CPACS Tree is extended by a tab called 'Others' (<a href="https://github.com/DLR-SC/tigl/issues/1439">#1439</a>)</li>
 </ul>
 </li>
 <li>Build System<ul>
@@ -125,7 +125,13 @@ Changes since last release</h1>
 </ul>
 </li>
 <li>Fixes<ul>
+<li>Fix console bug under Linux: When opening TiGL, the console at first was spoiled with a warning and needed a fresh prompt for the user to enter commands <a href="https://github.com/DLR-SC/tigl/issues/1460">#1460</a></li>
 <li>Fix an issue that the header of the docu did not show the TiGL logo anymore due to the switch to a newer doxygen version internally <a href="https://github.com/DLR-SC/tigl/issues/1444">#1444</a></li>
+<li>Fix a crash when a control surface defines a <code>wingCutOut</code> (<a href="https://github.com/DLR-SC/tigl/pull/1454">#1454</a>)</li>
+<li>Fix a crash when the border of a leading edge device gives <code>xsiTEUpper</code> and <code>xsiTELower</code> instead of <code>xsiTE</code> and its <code>wingCutOut</code> has borders of its own</li>
+<li>Fix the Windows NSIS installer (<code>.exe</code>) not including the Matlab/Python bindings, headers and internal C++ bindings, which were only present in the <code>.zip</code> release artifact (<a href="https://github.com/DLR-SC/tigl/issues/1456">#1456</a>)</li>
+<li>Fix the thickness scaling of a control surface contour (<code>contourReferenceType</code>): <code>scalZ</code> is a fraction of the chord of the border, not a length in metres.</li>
+<li>Fix the direction of a cross beam strut (<a href="https://github.com/DLR-SC/tigl/pull/1459">#1459</a>): <code>angleX</code> is now measured from the +z-axis about the x-axis, as defined in CPACS and consistent with <code>referenceAngle</code> (previously from the −y-axis). This changes the strut orientation of existing CPACS files; without <code>angleX</code>, struts are now vertical.</li>
 </ul>
 </li>
 </ul>
@@ -247,7 +253,7 @@ Version 3.4.1</h1>
 <p>2025/09/08</p>
 <ul>
 <li>New API functions:<ul>
-<li>New function <code><a class="el" href="tigl_8h.html#aec0f96f7ca211705b4e0df67348dc8a9" title="Transforms a local point in a component to the global coordinate system.">tiglComponentTransformPointToGlobal</a></code> to transform component-local coordinates into global coordinates (<a href="https://github.com/dlr-sc/tigl/issues/1064">#1064</a>)</li>
+<li>New function <code><a class="el" href="group__ComponentUtilityFunctions.html#gaec0f96f7ca211705b4e0df67348dc8a9" title="Transforms a local point in a component to the global coordinate system.">tiglComponentTransformPointToGlobal</a></code> to transform component-local coordinates into global coordinates (<a href="https://github.com/dlr-sc/tigl/issues/1064">#1064</a>)</li>
 </ul>
 </li>
 <li>General changes:<ul>
@@ -319,8 +325,8 @@ Version 3.3.0</h1>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li>New functions <code><a class="el" href="tigl_8h.html#a3dc26292809cdebb6378c2b1888a6346" title="Sets a flag, whether ducts defined in CPACS shall be removed from using Boolean operations.">tiglConfigurationSetWithDuctCutouts</a></code> and <code><a class="el" href="tigl_8h.html#a6b29b4fcb68fecd0814348185bd56ce8" title="Gets the flag, ether ducts defined in CPACS shall be removed from using Boolean operations,...">tiglConfigurationGetWithDuctCutouts</a></code> that set and get the flag whether the ducts defined in CPACS shall be removed from the configuration using Boolean operations.</li>
-<li>New function #<a class="el" href="tigl_8h.html#a4812cd852662ebe8c1aca888ebe0f159" title="tiglGetCrossSectionArea returns the area of the intersection of either the fused aircraft or its comp...">tiglGetCrossSectionArea</a>' that allows cutting either a whole configuration or single parts with a plane and calculating the cross section area. This functionality can be used for the application for Whitcomb's area rule (#763).</li>
+<li>New functions <code><a class="el" href="group__ComponentUtilityFunctions.html#ga3dc26292809cdebb6378c2b1888a6346" title="Sets a flag, whether ducts defined in CPACS shall be removed from using Boolean operations.">tiglConfigurationSetWithDuctCutouts</a></code> and <code><a class="el" href="group__ComponentUtilityFunctions.html#ga6b29b4fcb68fecd0814348185bd56ce8" title="Gets the flag, ether ducts defined in CPACS shall be removed from using Boolean operations,...">tiglConfigurationGetWithDuctCutouts</a></code> that set and get the flag whether the ducts defined in CPACS shall be removed from the configuration using Boolean operations.</li>
+<li>New function #<a class="el" href="group__SurfaceAreaFunctions.html#ga4812cd852662ebe8c1aca888ebe0f159" title="tiglGetCrossSectionArea returns the area of the intersection of either the fused aircraft or its comp...">tiglGetCrossSectionArea</a>' that allows cutting either a whole configuration or single parts with a plane and calculating the cross section area. This functionality can be used for the application for Whitcomb's area rule (#763).</li>
 </ul>
 </li>
 <li>Fixes:<ul>
@@ -330,7 +336,7 @@ Version 3.3.0</h1>
 <li>Fix bug concerning the conversion of the internal parametrization of the faces of a wing to contour coordinates (#930).</li>
 <li>Update CI (#918, #839).</li>
 <li>Fix a compilation error with gcc 12.2 (#948).</li>
-<li>Fix bug in <code><a class="el" href="tigl_8h.html#afcf8f83bcad4b57675a4370e16eb773f" title="Computes the area of the trimmed upper wing segment surface. This function can be e....">tiglWingGetSegmentUpperSurfaceAreaTrimmed</a></code> (#961).</li>
+<li>Fix bug in <code><a class="el" href="group__SurfaceAreaFunctions.html#gafcf8f83bcad4b57675a4370e16eb773f" title="Computes the area of the trimmed upper wing segment surface. This function can be e....">tiglWingGetSegmentUpperSurfaceAreaTrimmed</a></code> (#961).</li>
 </ul>
 </li>
 <li>TiGLViewer:<ul>
@@ -377,7 +383,7 @@ Version 3.2.1</h1>
 <p>01/07/2021</p>
 <ul>
 <li>Fixes:<ul>
-<li>Fixed function <code><a class="el" href="tigl_8h.html#a85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> ignoring the GetPointBehaviour that was introduced in TIGL 3.1.0: Since TiGL 3.0.0, the getPoint functions now use the parametrization of the wing surface geometries instead . This behaviour can be switched back to the old bevahiour using <code><a class="el" href="tigl_8h.html#a65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code>. Before fixing now <code><a class="el" href="tigl_8h.html#a85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code>, the functions always used the old behaviour such that the back and fort computation etaXsi -&gt; point -&gt; etaXsi did not result in the same values.</li>
+<li>Fixed function <code><a class="el" href="group__WingFunctions.html#ga85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> ignoring the GetPointBehaviour that was introduced in TIGL 3.1.0: Since TiGL 3.0.0, the getPoint functions now use the parametrization of the wing surface geometries instead . This behaviour can be switched back to the old bevahiour using <code><a class="el" href="group__WingFunctions.html#ga65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code>. Before fixing now <code><a class="el" href="group__WingFunctions.html#ga85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code>, the functions always used the old behaviour such that the back and fort computation etaXsi -&gt; point -&gt; etaXsi did not result in the same values.</li>
 </ul>
 </li>
 </ul>
@@ -394,7 +400,7 @@ Version 3.2.0</h1>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li>New function <code><a class="el" href="tigl_8h.html#aed5f9b6d99a282bddbe2e7c938898209" title="Given a straight line section in space defined by a pair of segment / component segment (eta,...">tiglWingInterpolateXsi</a></code>, that generalizes the functions <code><a class="el" href="tigl_8h.html#ac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code> and <code><a class="el" href="tigl_8h.html#a831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code>. Both old functions are now deprecated.</li>
+<li>New function <code><a class="el" href="group__WingFunctions.html#gaed5f9b6d99a282bddbe2e7c938898209" title="Given a straight line section in space defined by a pair of segment / component segment (eta,...">tiglWingInterpolateXsi</a></code>, that generalizes the functions <code><a class="el" href="group__WingFunctions.html#gac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code> and <code><a class="el" href="group__WingFunctions.html#ga831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code>. Both old functions are now deprecated.</li>
 </ul>
 </li>
 <li>Fixes:<ul>
@@ -402,7 +408,7 @@ Version 3.2.0</h1>
 <li>Fixed fuselage profiles, that had different positions than y=0 at start or end point.</li>
 <li>Fixed crash, if first guide curve point is (0,0,0) or last point is (0,1,0).</li>
 <li>Fixed wrong position of trailing edge device borders, if referenceUID is referring to a segment.</li>
-<li>Fixed a bug in <code><a class="el" href="tigl_8h.html#a0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code> and <code><a class="el" href="tigl_8h.html#ad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code>, if the leading edge has zero size.</li>
+<li>Fixed a bug in <code><a class="el" href="group__WingFunctions.html#ga0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code> and <code><a class="el" href="group__WingFunctions.html#gad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code>, if the leading edge has zero size.</li>
 </ul>
 </li>
 <li>Python Bindings:<ul>
@@ -420,23 +426,23 @@ Version 3.1.0</h1>
 <li>Added support for fuselage walls</li>
 <li>Support for fuselage profiles with kinks.</li>
 <li>Added support for new symmetry flags <code>inherit</code> and <code>none</code>. The symmetry flag <code>inherit</code> causes a geometric component to inherit the symmetry flag from its parent geometry. This was and still is the default behavior in TiGL. The new symmetry type <code>none</code> allows the addition of components to mirrored geometries without respecting the symmetry of the parent.</li>
-<li>Substantially improve performance of <code><a class="el" href="tigl_8h.html#aed059f68458588260b0f2120b6609444" title="Checks whether a point lies inside the given geometric object. Note that the symmetry attribute is ig...">tiglCheckPointInside</a></code>.</li>
+<li>Substantially improve performance of <code><a class="el" href="group__ComponentUtilityFunctions.html#gaed059f68458588260b0f2120b6609444" title="Checks whether a point lies inside the given geometric object. Note that the symmetry attribute is ig...">tiglCheckPointInside</a></code>.</li>
 <li>Reduce complexity of the fuselage geometry: The profiles of the fuselage are reparametrized to create simpler a B-spline surface. This will improve robustness of boolean operations and increase the general performance at the cost of a small error in the geometry creation, that should be negligable in most cases.</li>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li>Added new api function <code><a class="el" href="tigl_8h.html#ac104f6c1e120633374fdc9899de501bd" title="Returns the type of a geometric component.">tiglComponentGetType</a></code></li>
+<li>Added new api function <code><a class="el" href="group__ComponentUtilityFunctions.html#gac104f6c1e120633374fdc9899de501bd" title="Returns the type of a geometric component.">tiglComponentGetType</a></code></li>
 <li><p class="startli">For control devices, the <code>deflection</code> value has been renamed to <code>control_parameter</code>. Therefore the functions</p><ul>
-<li><code><a class="el" href="tigl_8h.html#af4ca93b080c7e9be5a1c95b37aec2998" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetMinimumControlParameter.">tiglControlSurfaceGetMinimumDeflection</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#acd7c30a323c80a672abd8c0447ae0995" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetMaximumControlParameter.">tiglControlSurfaceGetMaximumDeflection</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#af28d7c781fd54694bb9387438888d9cf" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetControlParameter.">tiglControlSurfaceGetDeflection</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a352bc40e09be692cd62941a885a8e5e5" title="This function is deprecated. It has been renamed to tiglControlSurfaceSetControlParameter.">tiglControlSurfaceSetDeflection</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#gaf4ca93b080c7e9be5a1c95b37aec2998" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetMinimumControlParameter.">tiglControlSurfaceGetMinimumDeflection</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#gacd7c30a323c80a672abd8c0447ae0995" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetMaximumControlParameter.">tiglControlSurfaceGetMaximumDeflection</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#gaf28d7c781fd54694bb9387438888d9cf" title="This function is deprecated. It has been renamed to tiglControlSurfaceGetControlParameter.">tiglControlSurfaceGetDeflection</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#ga352bc40e09be692cd62941a885a8e5e5" title="This function is deprecated. It has been renamed to tiglControlSurfaceSetControlParameter.">tiglControlSurfaceSetDeflection</a></code></li>
 </ul>
 <p class="startli">are marked as deprecated. Please use the new functions</p><ul>
-<li><code><a class="el" href="tigl_8h.html#abeb09740bedbf78d0128ed79a0601c29" title="Returns the minimum value for the control parameter of a control device.">tiglControlSurfaceGetMinimumControlParameter</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#adde1f938f9f067b14139d487dd85192e" title="Returns the maximum value for the control parameter of a control device.">tiglControlSurfaceGetMaximumControlParameter</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a8878dd6a5c83ccf6e5c0a1c9f0dff735" title="Returns the current value for the control parameter of a control device.">tiglControlSurfaceGetControlParameter</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a8a51929236b0dce9c5423a4feeb5dfb5" title="Sets the current value for the control parameter of a control device.">tiglControlSurfaceSetControlParameter</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#gabeb09740bedbf78d0128ed79a0601c29" title="Returns the minimum value for the control parameter of a control device.">tiglControlSurfaceGetMinimumControlParameter</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#gadde1f938f9f067b14139d487dd85192e" title="Returns the maximum value for the control parameter of a control device.">tiglControlSurfaceGetMaximumControlParameter</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#ga8878dd6a5c83ccf6e5c0a1c9f0dff735" title="Returns the current value for the control parameter of a control device.">tiglControlSurfaceGetControlParameter</a></code></li>
+<li><code><a class="el" href="group__WingFunctions.html#ga8a51929236b0dce9c5423a4feeb5dfb5" title="Sets the current value for the control parameter of a control device.">tiglControlSurfaceSetControlParameter</a></code></li>
 </ul>
 <p class="startli">instead.</p>
 </li>
@@ -470,8 +476,8 @@ Version 3.0.0</h1>
 <li>New modeling of pylons.</li>
 <li>New modeling of fuselage structure elements like doors, beams, frames and pressure bulkheads.</li>
 <li>Automated creation of CPACS reading and writing routines. This allows much better vality checks of the CPACS document.</li>
-<li>The "GetPoint" function of wings / fuselages operate now on the actual wing/fuselage shape (e.g. in case of guide curves). Before, these function operated on the linear loft, which is different from the actual shape. To be backwards compatible, <code><a class="el" href="tigl_8h.html#a0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code>, <code><a class="el" href="tigl_8h.html#ad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code>, and <code><a class="el" href="tigl_8h.html#a4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> still use the linear loft by default. If the actual smooth surface is desired, the new function <code><a class="el" href="tigl_8h.html#a65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code> and <code><a class="el" href="tigl_8h.html#a376d308b2735fa6797ab2dbf877d5603" title="Sets the behavior of the tiglFuselageGetPoint function.">tiglFuselageSetGetPointBehavior</a></code> must be used to enable smooth lofts. <b>Note: Using the actual smooth wing shape, <code><a class="el" href="tigl_8h.html#a0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code> and <code><a class="el" href="tigl_8h.html#ad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code> do not use the wing chord surface anymore as a reference coordinate system, but relies on the wing surface parametrization.</b> <b>This change was required, since there would be no other way to retrieve points around the leading edge, that is on front of the trapezoidal chord surface.</b></li>
-<li>Improved speed of <code><a class="el" href="tigl_8h.html#a4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> function. Also, the paramter xsi is now interpreted as the relative curve parameter instead of the relative circumference.</li>
+<li>The "GetPoint" function of wings / fuselages operate now on the actual wing/fuselage shape (e.g. in case of guide curves). Before, these function operated on the linear loft, which is different from the actual shape. To be backwards compatible, <code><a class="el" href="group__WingFunctions.html#ga0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code>, <code><a class="el" href="group__WingFunctions.html#gad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code>, and <code><a class="el" href="group__FuselageFunctions.html#ga4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> still use the linear loft by default. If the actual smooth surface is desired, the new function <code><a class="el" href="group__WingFunctions.html#ga65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code> and <code><a class="el" href="group__FuselageFunctions.html#ga376d308b2735fa6797ab2dbf877d5603" title="Sets the behavior of the tiglFuselageGetPoint function.">tiglFuselageSetGetPointBehavior</a></code> must be used to enable smooth lofts. <b>Note: Using the actual smooth wing shape, <code><a class="el" href="group__WingFunctions.html#ga0522075fa74baa1c844c841a545397c5" title="Returns a point on the upper wing surface for a a given wing and segment index.">tiglWingGetUpperPoint</a></code> and <code><a class="el" href="group__WingFunctions.html#gad3e6018b0ee31cba109206a3515f73b4" title="Returns a point on the lower wing surface for a a given wing and segment index.">tiglWingGetLowerPoint</a></code> do not use the wing chord surface anymore as a reference coordinate system, but relies on the wing surface parametrization.</b> <b>This change was required, since there would be no other way to retrieve points around the leading edge, that is on front of the trapezoidal chord surface.</b></li>
+<li>Improved speed of <code><a class="el" href="group__FuselageFunctions.html#ga4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> function. Also, the paramter xsi is now interpreted as the relative curve parameter instead of the relative circumference.</li>
 <li>Improved robustness of fuselage loft computation.</li>
 <li>The TIGL library was renamed to tigl3. The TIGLViewer was renamed to tiglviewer-3.</li>
 <li>The windows builds are now using the Visual C++ 2015 Toolchain.</li>
@@ -479,20 +485,20 @@ Version 3.0.0</h1>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li><code><a class="el" href="tigl_8h.html#a00b9382fd418bb4b99f84f800cd835b8" title="Projects a points onto the chord face of the wing component segment and returns the eta/xsi coordinat...">tiglWingComponentSegmentPointGetEtaXsi</a></code> computes the eta/xsi coordinates of a point on the component segment.</li>
-<li><code><a class="el" href="tigl_8h.html#ae555e24368d3db4db4ed76991798dd75" title="tiglIntersectWithPlaneSegment computes the intersection line(s) between a shape and a plane segment....">tiglIntersectWithPlaneSegment</a></code> computes the intersection of a CPACS shape (e.g. wing) with a plane of finite size.</li>
-<li><code><a class="el" href="tigl_8h.html#a7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code> to compute the intersection of two curves.</li>
-<li><code><a class="el" href="tigl_8h.html#aedb5aab8c518033ee8073e08271edd47" title="tiglGetCurveIntersectionPoint returns an intersection point calculated by tiglGetCurveIntersection">tiglGetCurveIntersectionPoint</a></code> to query the intersection point(s) computed by <code><a class="el" href="tigl_8h.html#a7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code>.</li>
-<li><code><a class="el" href="tigl_8h.html#ab70465e6629ced3c314fd0196191de5a" title="tiglGetCurveIntersectionCount returns the number of intersection points computed by tiglGetCurveInter...">tiglGetCurveIntersectionCount</a></code> returns the number of intersection points computed by <code><a class="el" href="tigl_8h.html#a7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code>.</li>
-<li><code><a class="el" href="tigl_8h.html#aa49629f4ce146562bc7b7b8bed7fe5c1" title="tiglGetCurveParameter projects a point onto a curve of an intersection line. The intersection line is...">tiglGetCurveParameter</a></code> projects a point onto a curve and returns the curve parameter of the point.</li>
-<li><code><a class="el" href="tigl_8h.html#ac2d12f27f12887b503a4052343ace0d7" title="Returns the section center of a fuselage.">tiglFuselageGetSectionCenter</a></code> computes the center of a fuselage section defined by its eta coordinate.</li>
-<li><code><a class="el" href="tigl_8h.html#a37debdfafa4b12048ee8b703bcd46e8c" title="Returns the value of the area of a cross section of a fuselage.">tiglFuselageGetCrossSectionArea</a></code> computes the area of a fuselage section.</li>
-<li><code><a class="el" href="tigl_8h.html#af5988412417836e920d1c51c5ba69c82" title="Returns the length of center line of the given fuselage with all its segments which connects all the ...">tiglFuselageGetCenterLineLength</a></code> computes the length of the centerline of the fuselage.</li>
-<li><code><a class="el" href="tigl_8h.html#aed059f68458588260b0f2120b6609444" title="Checks whether a point lies inside the given geometric object. Note that the symmetry attribute is ig...">tiglCheckPointInside</a></code> checks, whether a point lies inside some object (defined by its uid).</li>
-<li><code><a class="el" href="tigl_8h.html#a03b8443285dbbec012d01d8c2142c331" title="Exports the boolean fused geometry of a fuselage (selected by uid) to BREP format.">tiglExportFuselageBREPByUID</a></code> and <code><a class="el" href="tigl_8h.html#ae0e0f80c220250e59e53d0985defef12" title="Exports the boolean fused geometry of a wing (selected by uid) to BREP format.">tiglExportWingBREPByUID</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a22af55197aae3c30ef743b5c7894f71f" title="Sets options for the geometry export.">tiglSetExportOptions</a></code> sets exports-specific options</li>
-<li><code><a class="el" href="tigl_8h.html#a376d308b2735fa6797ab2dbf877d5603" title="Sets the behavior of the tiglFuselageGetPoint function.">tiglFuselageSetGetPointBehavior</a></code> and <code><a class="el" href="tigl_8h.html#a65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code> to adjust, whether the get point functions should return linear loft values or points on the actual shape.<ul>
-<li><code><a class="el" href="tigl_8h.html#ac2cd49233a7572471407decd5e257980" title="Set the directory path for debug data.">tiglSetDebugDataDirectory</a></code> specifies the directory of the crashdump data.</li>
+<li><code><a class="el" href="group__WingFunctions.html#ga00b9382fd418bb4b99f84f800cd835b8" title="Projects a points onto the chord face of the wing component segment and returns the eta/xsi coordinat...">tiglWingComponentSegmentPointGetEtaXsi</a></code> computes the eta/xsi coordinates of a point on the component segment.</li>
+<li><code><a class="el" href="group__BooleanFunctions.html#gae555e24368d3db4db4ed76991798dd75" title="tiglIntersectWithPlaneSegment computes the intersection line(s) between a shape and a plane segment....">tiglIntersectWithPlaneSegment</a></code> computes the intersection of a CPACS shape (e.g. wing) with a plane of finite size.</li>
+<li><code><a class="el" href="group__BooleanFunctions.html#ga7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code> to compute the intersection of two curves.</li>
+<li><code><a class="el" href="group__BooleanFunctions.html#gaedb5aab8c518033ee8073e08271edd47" title="tiglGetCurveIntersectionPoint returns an intersection point calculated by tiglGetCurveIntersection">tiglGetCurveIntersectionPoint</a></code> to query the intersection point(s) computed by <code><a class="el" href="group__BooleanFunctions.html#ga7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code>.</li>
+<li><code><a class="el" href="group__BooleanFunctions.html#gab70465e6629ced3c314fd0196191de5a" title="tiglGetCurveIntersectionCount returns the number of intersection points computed by tiglGetCurveInter...">tiglGetCurveIntersectionCount</a></code> returns the number of intersection points computed by <code><a class="el" href="group__BooleanFunctions.html#ga7c8cf95be3558678cd6a126e8f86998d" title="tiglGetCurveIntersection computes intersection point of two (intersection) curves....">tiglGetCurveIntersection</a></code>.</li>
+<li><code><a class="el" href="group__BooleanFunctions.html#gaa49629f4ce146562bc7b7b8bed7fe5c1" title="tiglGetCurveParameter projects a point onto a curve of an intersection line. The intersection line is...">tiglGetCurveParameter</a></code> projects a point onto a curve and returns the curve parameter of the point.</li>
+<li><code><a class="el" href="group__FuselageFunctions.html#gac2d12f27f12887b503a4052343ace0d7" title="Returns the section center of a fuselage.">tiglFuselageGetSectionCenter</a></code> computes the center of a fuselage section defined by its eta coordinate.</li>
+<li><code><a class="el" href="group__FuselageFunctions.html#ga37debdfafa4b12048ee8b703bcd46e8c" title="Returns the value of the area of a cross section of a fuselage.">tiglFuselageGetCrossSectionArea</a></code> computes the area of a fuselage section.</li>
+<li><code><a class="el" href="group__FuselageFunctions.html#gaf5988412417836e920d1c51c5ba69c82" title="Returns the length of center line of the given fuselage with all its segments which connects all the ...">tiglFuselageGetCenterLineLength</a></code> computes the length of the centerline of the fuselage.</li>
+<li><code><a class="el" href="group__ComponentUtilityFunctions.html#gaed059f68458588260b0f2120b6609444" title="Checks whether a point lies inside the given geometric object. Note that the symmetry attribute is ig...">tiglCheckPointInside</a></code> checks, whether a point lies inside some object (defined by its uid).</li>
+<li><code><a class="el" href="group__Export.html#ga03b8443285dbbec012d01d8c2142c331" title="Exports the boolean fused geometry of a fuselage (selected by uid) to BREP format.">tiglExportFuselageBREPByUID</a></code> and <code><a class="el" href="group__Export.html#gae0e0f80c220250e59e53d0985defef12" title="Exports the boolean fused geometry of a wing (selected by uid) to BREP format.">tiglExportWingBREPByUID</a></code></li>
+<li><code><a class="el" href="group__Export.html#ga22af55197aae3c30ef743b5c7894f71f" title="Sets options for the geometry export.">tiglSetExportOptions</a></code> sets exports-specific options</li>
+<li><code><a class="el" href="group__FuselageFunctions.html#ga376d308b2735fa6797ab2dbf877d5603" title="Sets the behavior of the tiglFuselageGetPoint function.">tiglFuselageSetGetPointBehavior</a></code> and <code><a class="el" href="group__WingFunctions.html#ga65a2b93fe8edbf050d82ca709baf538c" title="Sets the behavior of the tiglWingGetUpperPoint and tiglWingGetLowerPoint functions.">tiglWingSetGetPointBehavior</a></code> to adjust, whether the get point functions should return linear loft values or points on the actual shape.<ul>
+<li><code><a class="el" href="group__ComponentUtilityFunctions.html#gac2cd49233a7572471407decd5e257980" title="Set the directory path for debug data.">tiglSetDebugDataDirectory</a></code> specifies the directory of the crashdump data.</li>
 </ul>
 </li>
 </ul>
@@ -504,7 +510,7 @@ Version 3.0.0</h1>
 <li><code>tiglComponentIntersectionPoints</code></li>
 </ul>
 </li>
-<li>Removed function <code>tiglExportVTKSetOptions</code>. This is now replaced by <code><a class="el" href="tigl_8h.html#a22af55197aae3c30ef743b5c7894f71f" title="Sets options for the geometry export.">tiglSetExportOptions</a></code><ul>
+<li>Removed function <code>tiglExportVTKSetOptions</code>. This is now replaced by <code><a class="el" href="group__Export.html#ga22af55197aae3c30ef743b5c7894f71f" title="Sets options for the geometry export.">tiglSetExportOptions</a></code><ul>
 <li><code>tiglWingGetWettedArea</code> now returns surface area of the wing, if the wing has no parent. Previously this caused a crash.</li>
 </ul>
 </li>
@@ -577,8 +583,8 @@ Version 2.2.1</h1>
 <p>18/08/2017</p>
 <ul>
 <li>General changes:<ul>
-<li>Improved calculation time of <code><a class="el" href="tigl_8h.html#a1d814bf52a0a2f270f45723c17cd64b1" title="Returns a point on a fuselage surface for a given fuselage and segment index and an angle alpha (degr...">tiglFuselageGetPointAngle</a></code> by roughly a factor of 30. The results might be a different than in previous versions, but the function should be more robust now.</li>
-<li>Improved calculation time of <code><a class="el" href="tigl_8h.html#a4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> by applying caching. This leads only to a benefit in case of a large number of GetPoint calls (~30) per fuselage segment. This will be even improved in TiGL 3.</li>
+<li>Improved calculation time of <code><a class="el" href="group__FuselageFunctions.html#ga1d814bf52a0a2f270f45723c17cd64b1" title="Returns a point on a fuselage surface for a given fuselage and segment index and an angle alpha (degr...">tiglFuselageGetPointAngle</a></code> by roughly a factor of 30. The results might be a different than in previous versions, but the function should be more robust now.</li>
+<li>Improved calculation time of <code><a class="el" href="group__FuselageFunctions.html#ga4245dd0f2b1175c12dc23e9a26c33796" title="Returns a point on a fuselage surface for a given fuselage and segment index.">tiglFuselageGetPoint</a></code> by applying caching. This leads only to a benefit in case of a large number of GetPoint calls (~30) per fuselage segment. This will be even improved in TiGL 3.</li>
 </ul>
 </li>
 <li>New API functions:<ul>
@@ -586,8 +592,8 @@ Version 2.2.1</h1>
 </ul>
 </li>
 <li>Changed API:<ul>
-<li>Ignore Symmetry face in <code><a class="el" href="tigl_8h.html#a87e4881d5d9c6d1a0f1f97bd5ec38349" title="Returns the surface area of the fuselage. Currently, the area includes also the faces on the fuselage...">tiglFuselageGetSurfaceArea</a></code> for half fuselages</li>
-<li>In <code><a class="el" href="tigl_8h.html#a1d814bf52a0a2f270f45723c17cd64b1" title="Returns a point on a fuselage surface for a given fuselage and segment index and an angle alpha (degr...">tiglFuselageGetPointAngle</a></code> the cross section center is used as starting point of the angle rather than the origin of the yz-plane</li>
+<li>Ignore Symmetry face in <code><a class="el" href="group__SurfaceAreaFunctions.html#ga87e4881d5d9c6d1a0f1f97bd5ec38349" title="Returns the surface area of the fuselage. Currently, the area includes also the faces on the fuselage...">tiglFuselageGetSurfaceArea</a></code> for half fuselages</li>
+<li>In <code><a class="el" href="group__FuselageFunctions.html#ga1d814bf52a0a2f270f45723c17cd64b1" title="Returns a point on a fuselage surface for a given fuselage and segment index and an angle alpha (degr...">tiglFuselageGetPointAngle</a></code> the cross section center is used as starting point of the angle rather than the origin of the yz-plane</li>
 </ul>
 </li>
 <li>Fixes:<ul>
@@ -610,7 +616,7 @@ Version 2.2.0</h1>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li>New API function <code><a class="el" href="tigl_8h.html#aa39e935e1ca53949f22dc58d8bab3ea1" title="Writes a CPACS configuration based on the data and geometry structure in memory.">tiglSaveCPACSConfiguration</a></code> for writing the CPACS configuration into a file.</li>
+<li>New API function <code><a class="el" href="group__GeneralFunctions.html#gaa39e935e1ca53949f22dc58d8bab3ea1" title="Writes a CPACS configuration based on the data and geometry structure in memory.">tiglSaveCPACSConfiguration</a></code> for writing the CPACS configuration into a file.</li>
 </ul>
 </li>
 <li>TiGLViewer:<ul>
@@ -635,42 +641,42 @@ Version 2.1.7</h1>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li><code><a class="el" href="tigl_8h.html#a831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code>: This function should be used to compute points on the wing that lie on a straight line between two given points.</li>
-<li><code><a class="el" href="tigl_8h.html#ac2e723a47431c00d1bd5e5e5fc47c751" title="Returns the index of a fuselage.">tiglFuselageGetIndex</a></code> to compute the index based on the fuselage UID.</li>
+<li><code><a class="el" href="group__WingFunctions.html#ga831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code>: This function should be used to compute points on the wing that lie on a straight line between two given points.</li>
+<li><code><a class="el" href="group__FuselageFunctions.html#gac2e723a47431c00d1bd5e5e5fc47c751" title="Returns the index of a fuselage.">tiglFuselageGetIndex</a></code> to compute the index based on the fuselage UID.</li>
 <li>Added new API functions for rotors and rotor blades:<ul>
-<li><code><a class="el" href="tigl_8h.html#a32e75d40e891d059c6d82e383ee2b180" title="Returns the number of rotors in a CPACS configuration.">tiglGetRotorCount</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#aec3e15cd57380fff19a8f4f743dee4dc" title="Returns the UID of a rotor. The string returned must not be deleted by the caller via free()....">tiglRotorGetUID</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a75a6b1f52df9d96352ff670310c1d5d6" title="Returns the Index of a rotor.">tiglRotorGetIndex</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#ac959d8fe3d54e104966ab63fd7ea138d" title="Returns the radius of the rotor.">tiglRotorGetRadius</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#acdb32ef76bf127cf3a0a29f3240de723" title="Returns the reference area of the rotor.">tiglRotorGetReferenceArea</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#ac80e0c15039d9d95755684ffbeada78e" title="Returns the total blade planform area of the rotor.">tiglRotorGetTotalBladePlanformArea</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#ae9ff18a2a455f44821afd26842c941cb" title="Returns the solidity of the rotor.">tiglRotorGetSolidity</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#ac31a153734f5e74fe389bb3822ebcdce" title="Returns the surface area of the rotor.">tiglRotorGetSurfaceArea</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#aef6873a3a76fbee7bf4fbbf4e83268c6" title="Returns the volume of the rotor.">tiglRotorGetVolume</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a5c6a16d68141c5c8b8baeee21cb225bb" title="Returns the tip speed of the rotor in [m/s].">tiglRotorGetTipSpeed</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a25c0ace5fe176ae37a7f9766451453fa" title="Returns the total number of rotor blades attached to a rotor.">tiglRotorGetRotorBladeCount</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#af623ed6ce68a84373897c20b6a4b1c01" title="Returns the index of the parent wing definition of a rotor blade.">tiglRotorBladeGetWingIndex</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#ad56e9e3c58ed2044698ccc0828045daf" title="Returns the UID of the parent wing definition of a rotor blade.">tiglRotorBladeGetWingUID</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a68313e34da7a333b6752a2989f1849d6" title="Returns the azimuth angle of a rotor blade in degrees.">tiglRotorBladeGetAzimuthAngle</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#abf890366571495a628c7ef09609f1873" title="Returns the radius of a rotor blade.">tiglRotorBladeGetRadius</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a5ddc16ff4aceba1ec17b84804eb49fab" title="Returns the planform area of the rotor blade.">tiglRotorBladeGetPlanformArea</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a80c500af19dec621fc0a22742e92f530" title="Returns the surface area of the rotor blade.">tiglRotorBladeGetSurfaceArea</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a6c35af2549d4842bd5a255064cc7e3de" title="Returns the volume of the rotor blade.">tiglRotorBladeGetVolume</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a4a14dfba0755d4ff66cce5fd1cac0249" title="Returns the tip speed of a rotor blade [m/s].">tiglRotorBladeGetTipSpeed</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#a983796746d82aaf58e00100ebab1d309" title="Returns the local radius of a rotor blade.">tiglRotorBladeGetLocalRadius</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#abda9805f57d2c8b0e25f04c31e1dba69" title="Returns the local chord length of a rotor blade.">tiglRotorBladeGetLocalChord</a></code></li>
-<li><code><a class="el" href="tigl_8h.html#acd7a2a597935c7f8a2f5340fcda15ce4" title="Returns the local twist angle [deg] of a rotor blade.">tiglRotorBladeGetLocalTwistAngle</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#ga32e75d40e891d059c6d82e383ee2b180" title="Returns the number of rotors in a CPACS configuration.">tiglGetRotorCount</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gaec3e15cd57380fff19a8f4f743dee4dc" title="Returns the UID of a rotor. The string returned must not be deleted by the caller via free()....">tiglRotorGetUID</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#ga75a6b1f52df9d96352ff670310c1d5d6" title="Returns the Index of a rotor.">tiglRotorGetIndex</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gac959d8fe3d54e104966ab63fd7ea138d" title="Returns the radius of the rotor.">tiglRotorGetRadius</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gacdb32ef76bf127cf3a0a29f3240de723" title="Returns the reference area of the rotor.">tiglRotorGetReferenceArea</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gac80e0c15039d9d95755684ffbeada78e" title="Returns the total blade planform area of the rotor.">tiglRotorGetTotalBladePlanformArea</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gae9ff18a2a455f44821afd26842c941cb" title="Returns the solidity of the rotor.">tiglRotorGetSolidity</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gac31a153734f5e74fe389bb3822ebcdce" title="Returns the surface area of the rotor.">tiglRotorGetSurfaceArea</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#gaef6873a3a76fbee7bf4fbbf4e83268c6" title="Returns the volume of the rotor.">tiglRotorGetVolume</a></code></li>
+<li><code><a class="el" href="group__RotorFunctions.html#ga5c6a16d68141c5c8b8baeee21cb225bb" title="Returns the tip speed of the rotor in [m/s].">tiglRotorGetTipSpeed</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga25c0ace5fe176ae37a7f9766451453fa" title="Returns the total number of rotor blades attached to a rotor.">tiglRotorGetRotorBladeCount</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#gaf623ed6ce68a84373897c20b6a4b1c01" title="Returns the index of the parent wing definition of a rotor blade.">tiglRotorBladeGetWingIndex</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#gad56e9e3c58ed2044698ccc0828045daf" title="Returns the UID of the parent wing definition of a rotor blade.">tiglRotorBladeGetWingUID</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga68313e34da7a333b6752a2989f1849d6" title="Returns the azimuth angle of a rotor blade in degrees.">tiglRotorBladeGetAzimuthAngle</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#gabf890366571495a628c7ef09609f1873" title="Returns the radius of a rotor blade.">tiglRotorBladeGetRadius</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga5ddc16ff4aceba1ec17b84804eb49fab" title="Returns the planform area of the rotor blade.">tiglRotorBladeGetPlanformArea</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga80c500af19dec621fc0a22742e92f530" title="Returns the surface area of the rotor blade.">tiglRotorBladeGetSurfaceArea</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga6c35af2549d4842bd5a255064cc7e3de" title="Returns the volume of the rotor blade.">tiglRotorBladeGetVolume</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga4a14dfba0755d4ff66cce5fd1cac0249" title="Returns the tip speed of a rotor blade [m/s].">tiglRotorBladeGetTipSpeed</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#ga983796746d82aaf58e00100ebab1d309" title="Returns the local radius of a rotor blade.">tiglRotorBladeGetLocalRadius</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#gabda9805f57d2c8b0e25f04c31e1dba69" title="Returns the local chord length of a rotor blade.">tiglRotorBladeGetLocalChord</a></code></li>
+<li><code><a class="el" href="group__RotorBladeFunctions.html#gacd7a2a597935c7f8a2f5340fcda15ce4" title="Returns the local twist angle [deg] of a rotor blade.">tiglRotorBladeGetLocalTwistAngle</a></code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Fixes:<ul>
 <li>Fixed parent-child transformations in case of multiple root components.</li>
-<li>Fixed an error in <code><a class="el" href="tigl_8h.html#ac8d60a11c34ee6608d4db9b0d5bce3d6" title="Returns x,y,z coordinates for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentGetPoint</a></code> in case of multiple intersections of the eta plane with the wing. This was the case for e.g. box wings. (issue #176).</li>
-<li>Fixed bug <code><a class="el" href="tigl_8h.html#a3eca0a250aeb2b6ac8c7db78f0d6d100" title="Returns the span of a wing.">tiglWingGetSpan</a></code> in wing span computation when no wing symmetry is given (e.g. for a VTP) (issue #185 and #195).</li>
-<li>Fixed another bug in <code><a class="el" href="tigl_8h.html#a3eca0a250aeb2b6ac8c7db78f0d6d100" title="Returns the span of a wing.">tiglWingGetSpan</a></code> when the symmetry plane was the Y-Z plane (issue #174).</li>
-<li>Fixed incorrect result in <code><a class="el" href="tigl_8h.html#a85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> near wing sections, returning the wrong section (issue#187).</li>
-<li>Fixed an issue in <code><a class="el" href="tigl_8h.html#a85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> in case the airfoil is completely above the chord surface.</li>
+<li>Fixed an error in <code><a class="el" href="group__WingFunctions.html#gac8d60a11c34ee6608d4db9b0d5bce3d6" title="Returns x,y,z coordinates for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentGetPoint</a></code> in case of multiple intersections of the eta plane with the wing. This was the case for e.g. box wings. (issue #176).</li>
+<li>Fixed bug <code><a class="el" href="group__WingFunctions.html#ga3eca0a250aeb2b6ac8c7db78f0d6d100" title="Returns the span of a wing.">tiglWingGetSpan</a></code> in wing span computation when no wing symmetry is given (e.g. for a VTP) (issue #185 and #195).</li>
+<li>Fixed another bug in <code><a class="el" href="group__WingFunctions.html#ga3eca0a250aeb2b6ac8c7db78f0d6d100" title="Returns the span of a wing.">tiglWingGetSpan</a></code> when the symmetry plane was the Y-Z plane (issue #174).</li>
+<li>Fixed incorrect result in <code><a class="el" href="group__WingFunctions.html#ga85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> near wing sections, returning the wrong section (issue#187).</li>
+<li>Fixed an issue in <code><a class="el" href="group__WingFunctions.html#ga85415d9ee0a32900781d8a2c6fd1aa7d" title="Inverse function to tiglWingGetLowerPoint and tiglWingGetLowerPoint. Calculates to a point (x,...">tiglWingGetSegmentEtaXsi</a></code> in case the airfoil is completely above the chord surface.</li>
 <li>Fixed point projection on the geometry for large scale data (eg a factor of 1000) by making the convergence criterium size dependent (issue #203).</li>
 </ul>
 </li>
@@ -685,7 +691,7 @@ Version 2.1.7</h1>
 <li>Language bindings:<ul>
 <li>Started experimental python bindings for the internal API. This allows a direct manipulation of the geometry objects from python together with the OpenCASCADE python bindings (pythoncc).</li>
 <li>The source code of the matlab bindings is now shipped on all systems. In addition, we distribute a Makefile which can be used to compile the Matlab bindings when needed.</li>
-<li>Added function <code><a class="el" href="tigl_8h.html#a831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code> to java bindings.</li>
+<li>Added function <code><a class="el" href="group__WingFunctions.html#ga831d1beef2b4ef202a3b48764ea81ef6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentComputeEtaIntersection</a></code> to java bindings.</li>
 </ul>
 </li>
 </ul>
@@ -703,27 +709,27 @@ Version 2.1.5</h1>
 <p>01/07/2015</p>
 <ul>
 <li>Changed API:<ul>
-<li>Added an output argument in the function <code><a class="el" href="tigl_8h.html#ac3e9e53db585b9aedc0b246c1e793dff" title="Returns eta, xsi, segmentUID and wingUID for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentPointGetSegmentEtaXsi</a></code> that returns the error of the computation.</li>
-<li>The function <code><a class="el" href="tigl_8h.html#ac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code> uses a new algorithm that should ensure straight flap leading edges and straight spars. Also, a new parameter <code>hasWarning</code> was added, to inform the user, that the returned segment xsi value is not in the valid range [0,1]. This might be the case, if a spar is partially located outside the wing.</li>
+<li>Added an output argument in the function <code><a class="el" href="group__WingFunctions.html#gac3e9e53db585b9aedc0b246c1e793dff" title="Returns eta, xsi, segmentUID and wingUID for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentPointGetSegmentEtaXsi</a></code> that returns the error of the computation.</li>
+<li>The function <code><a class="el" href="group__WingFunctions.html#gac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code> uses a new algorithm that should ensure straight flap leading edges and straight spars. Also, a new parameter <code>hasWarning</code> was added, to inform the user, that the returned segment xsi value is not in the valid range [0,1]. This might be the case, if a spar is partially located outside the wing.</li>
 <li>Removed macros TIGL_VERSION and TIGL_VERSION_MAJOR from <a class="el" href="tigl_8h.html" title="Declaration of the TIGL C interface.">tigl.h</a>. Please use tigl_version.h instead.</li>
 </ul>
 </li>
 <li>General changes:<ul>
 <li>External geometries can be included into the CPACS file using a link to a STEP file. The allows e.g. the use of engines and nacelles. (Note: this is not yet included in the CPACS standard)</li>
 <li>Improved computation of half model fuselage profiles. Now, fuselages are c2 continuous at the symmetry plane.</li>
-<li>Improved computation speed of <code><a class="el" href="tigl_8h.html#ac8d60a11c34ee6608d4db9b0d5bce3d6" title="Returns x,y,z coordinates for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentGetPoint</a></code> by a factor of 30 to 600 (depending on the geometry).</li>
-<li>Reduced execution time of <code><a class="el" href="tigl_8h.html#a7527c08934e7d0cce68bdc4edc440e65" title="Opens a CPACS configuration and builds up the data and geometry structure in memory.">tiglOpenCPACSConfiguration</a></code>.</li>
+<li>Improved computation speed of <code><a class="el" href="group__WingFunctions.html#gac8d60a11c34ee6608d4db9b0d5bce3d6" title="Returns x,y,z coordinates for a given eta and xsi on a componentSegment.">tiglWingComponentSegmentGetPoint</a></code> by a factor of 30 to 600 (depending on the geometry).</li>
+<li>Reduced execution time of <code><a class="el" href="group__GeneralFunctions.html#ga7527c08934e7d0cce68bdc4edc440e65" title="Opens a CPACS configuration and builds up the data and geometry structure in memory.">tiglOpenCPACSConfiguration</a></code>.</li>
 <li>All TiXI messages (errors/warnings) are now printed to the TiGL log.</li>
 <li>Ported to OpenCASCADE 6.8.0.</li>
 </ul>
 </li>
 <li>New API functions:<ul>
-<li><code><a class="el" href="tigl_8h.html#a029b55971d582516344e3069e6f45d13" title="Exports the fused/trimmed geometry of a CPACS configuration to BREP format.">tiglExportFusedBREP</a></code> to export the fused configuration to the BRep file format.</li>
+<li><code><a class="el" href="group__Export.html#ga029b55971d582516344e3069e6f45d13" title="Exports the fused/trimmed geometry of a CPACS configuration to BREP format.">tiglExportFusedBREP</a></code> to export the fused configuration to the BRep file format.</li>
 </ul>
 </li>
 <li>Fixes:<ul>
 <li>Fixed bug, where guide curves on half model fuselages were not touching the symmetry plane.</li>
-<li>Fixed a TIGL_MATH_ERROR bug in <code><a class="el" href="tigl_8h.html#ac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code>.</li>
+<li>Fixed a TIGL_MATH_ERROR bug in <code><a class="el" href="group__WingFunctions.html#gac6b86fc59fa26afbaaba71500f5d31a6" title="This function is deprecated. Use the generalized function tiglWingInterpolateXsi.">tiglWingComponentSegmentGetSegmentIntersection</a></code>.</li>
 </ul>
 </li>
 <li>TiGL Viewer:<ul>

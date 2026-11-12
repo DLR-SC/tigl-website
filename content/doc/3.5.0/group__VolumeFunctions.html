@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TiGL: Functions for volume calculations</title>
+<title>TiGL: Functions for Volume Calculations</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="https://dlr-sc.github.io/tigl/theme/css/font-awesome.min.css" rel="stylesheet"> 
 <script type="text/javascript" src="jquery.js"></script>
@@ -100,10 +100,216 @@ $(function(){initNavTree('group__VolumeFunctions.html',''); initResizable(true);
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Functions for volume calculations</div></div>
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Functions for Volume Calculations</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga47ea4bda0fd4b95d14a4058de756daa4" id="r_ga47ea4bda0fd4b95d14a4058de756daa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga47ea4bda0fd4b95d14a4058de756daa4">tiglFuselageGetSegmentVolume</a> (<a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a> cpacsHandle, int fuselageIndex, int segmentIndex, double *volumePtr)</td></tr>
+<tr class="memdesc:ga47ea4bda0fd4b95d14a4058de756daa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the volume of a segment of a fuselage.  <br /></td></tr>
+<tr class="separator:ga47ea4bda0fd4b95d14a4058de756daa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa7b0985fea3eac0c3433a20abc3ec5" id="r_ga8aa7b0985fea3eac0c3433a20abc3ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8aa7b0985fea3eac0c3433a20abc3ec5">tiglFuselageGetVolume</a> (<a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a> cpacsHandle, int fuselageIndex, double *volumePtr)</td></tr>
+<tr class="memdesc:ga8aa7b0985fea3eac0c3433a20abc3ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the volume of the fuselage.  <br /></td></tr>
+<tr class="separator:ga8aa7b0985fea3eac0c3433a20abc3ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7333499add0f50a79f18f698dea011cc" id="r_ga7333499add0f50a79f18f698dea011cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7333499add0f50a79f18f698dea011cc">tiglWingGetSegmentVolume</a> (<a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a> cpacsHandle, int wingIndex, int segmentIndex, double *volumePtr)</td></tr>
+<tr class="memdesc:ga7333499add0f50a79f18f698dea011cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the volume of a segment of a wing.  <br /></td></tr>
+<tr class="separator:ga7333499add0f50a79f18f698dea011cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e618cafe7f4279b53b0d9a61a8200cc" id="r_ga9e618cafe7f4279b53b0d9a61a8200cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e618cafe7f4279b53b0d9a61a8200cc">tiglWingGetVolume</a> (<a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a> cpacsHandle, int wingIndex, double *volumePtr)</td></tr>
+<tr class="memdesc:ga9e618cafe7f4279b53b0d9a61a8200cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the volume of the wing.  <br /></td></tr>
+<tr class="separator:ga9e618cafe7f4279b53b0d9a61a8200cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Function for volume calculations on wings/fuselages. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga47ea4bda0fd4b95d14a4058de756daa4" name="ga47ea4bda0fd4b95d14a4058de756daa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47ea4bda0fd4b95d14a4058de756daa4">&#9670;&#160;</a></span>tiglFuselageGetSegmentVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a> tiglFuselageGetSegmentVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a></td>          <td class="paramname"><span class="paramname"><em>cpacsHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fuselageIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>segmentIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>volumePtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the volume of a segment of a fuselage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpacsHandle</td><td>Handle for the CPACS configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fuselageIndex</td><td>The index of a fuselage, starting at 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">segmentIndex</td><td>The index of a segment, starting at 1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">volumePtr</td><td>The pointer to a variable for the volume of the fuselage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>TIGL_SUCCESS if no error occurred</li>
+<li>TIGL_NOT_FOUND if no configuration was found for the given handle</li>
+<li>TIGL_INDEX_ERROR if fuselageIndex, sectionIndex or elementIndex are not valid</li>
+<li>TIGL_NULL_POINTER if volumePtr is a null pointer</li>
+<li>TIGL_ERROR if some other error occurred </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga8aa7b0985fea3eac0c3433a20abc3ec5" name="ga8aa7b0985fea3eac0c3433a20abc3ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aa7b0985fea3eac0c3433a20abc3ec5">&#9670;&#160;</a></span>tiglFuselageGetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a> tiglFuselageGetVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a></td>          <td class="paramname"><span class="paramname"><em>cpacsHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fuselageIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>volumePtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the volume of the fuselage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpacsHandle</td><td>Handle for the CPACS configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fuselageIndex</td><td>Index of the fuselage to calculate the volume, starting at 1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">volumePtr</td><td>The volume of the fuselage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>TIGL_SUCCESS if no error occurred</li>
+<li>TIGL_NOT_FOUND if no configuration was found for the given handle</li>
+<li>TIGL_INDEX_ERROR if fuselageIndex is less or equal zero</li>
+<li>TIGL_ERROR if some other error occurred </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga7333499add0f50a79f18f698dea011cc" name="ga7333499add0f50a79f18f698dea011cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7333499add0f50a79f18f698dea011cc">&#9670;&#160;</a></span>tiglWingGetSegmentVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a> tiglWingGetSegmentVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a></td>          <td class="paramname"><span class="paramname"><em>cpacsHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wingIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>segmentIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>volumePtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the volume of a segment of a wing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpacsHandle</td><td>Handle for the CPACS configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wingIndex</td><td>The index of a wing, starting at 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">segmentIndex</td><td>The index of a segment, starting at 1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">volumePtr</td><td>The pointer to a variable for the volume of the wing</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>TIGL_SUCCESS if no error occurred</li>
+<li>TIGL_NOT_FOUND if no configuration was found for the given handle</li>
+<li>TIGL_INDEX_ERROR if wingIndex, sectionIndex or elementIndex are not valid</li>
+<li>TIGL_NULL_POINTER if volumePtr is a null pointer</li>
+<li>TIGL_ERROR if some other error occurred </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga9e618cafe7f4279b53b0d9a61a8200cc" name="ga9e618cafe7f4279b53b0d9a61a8200cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e618cafe7f4279b53b0d9a61a8200cc">&#9670;&#160;</a></span>tiglWingGetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Enums.html#gae4212d9da7caf3bb581e9826a48b1a66">TiglReturnCode</a> tiglWingGetVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tigl_8h.html#a54892c50fc76c014c6e9c66237adc03b">TiglCPACSConfigurationHandle</a></td>          <td class="paramname"><span class="paramname"><em>cpacsHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wingIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>volumePtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the volume of the wing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpacsHandle</td><td>Handle for the CPACS configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wingIndex</td><td>Index of the Wing to calculate the volume, starting at 1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">volumePtr</td><td>The volume of the wing</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>TIGL_SUCCESS if no error occurred</li>
+<li>TIGL_NOT_FOUND if no configuration was found for the given handle</li>
+<li>TIGL_INDEX_ERROR if wingIndex is less or equal zero</li>
+<li>TIGL_ERROR if some other error occurred </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.10-->
