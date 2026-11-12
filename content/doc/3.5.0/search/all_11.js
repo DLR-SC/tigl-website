@@ -9,7 +9,7 @@ var searchData=
   ['halfcube_6',['halfCube',['../namespacetigl_1_1generated.html#a3c2abaaca4bc8574fa18b1fde2b80127a0be3b7685851bedc31daa4997ab3ddda',1,'tigl::generated']]],
   ['halfsphere_7',['halfSphere',['../namespacetigl_1_1generated.html#a3c2abaaca4bc8574fa18b1fde2b80127a4e16a7d6904f83e8c5f9d8c839e0eb8e',1,'tigl::generated']]],
   ['handlecounter_8',['handleCounter',['../classtigl_1_1CCPACSConfigurationManager.html#a183fbb0f33af36d067b3a3ed7a1edcb4',1,'tigl::CCPACSConfigurationManager']]],
-  ['handling_20functions_9',['General TIGL handling functions',['../group__GeneralFunctions.html',1,'']]],
+  ['handling_20functions_9',['General TIGL Handling Functions',['../group__GeneralFunctions.html',1,'']]],
   ['hasanalyticgradient_10',['hasAnalyticGradient',['../classtigl_1_1CTiglPointTranslator_1_1SegmentProjection.html#a4a1354d9c0b54924eae2cd7eac81ed40',1,'tigl::CTiglPointTranslator::SegmentProjection::hasAnalyticGradient()'],['../classtigl_1_1ITiglObjectiveFunction.html#a6a5f8cf11aabed2fa08c2e4ac8882132',1,'tigl::ITiglObjectiveFunction::hasAnalyticGradient()']]],
   ['hasanalytichessian_11',['hasAnalyticHessian',['../classtigl_1_1CTiglPointTranslator_1_1SegmentProjection.html#a7d1859c4feafcde4d6e4797f811375e2',1,'tigl::CTiglPointTranslator::SegmentProjection::hasAnalyticHessian()'],['../classtigl_1_1ITiglObjectiveFunction.html#abaf1009795f247ee0bab0fc90345d901',1,'tigl::ITiglObjectiveFunction::hasAnalyticHessian()']]],
   ['hasbluntte_12',['HasBluntTE',['../classtigl_1_1CCPACSNacelleProfile.html#a4a735a7cdfa408b294b1fc918d0a0552',1,'tigl::CCPACSNacelleProfile::HasBluntTE()'],['../classtigl_1_1CCPACSWingProfile.html#ab6b8361d5854eb5ab92e72d90bca700a',1,'tigl::CCPACSWingProfile::HasBluntTE()'],['../classtigl_1_1CCPACSWingProfileCST.html#ab43aac4071577cc513e10c181a1bdb1c',1,'tigl::CCPACSWingProfileCST::HasBluntTE()'],['../classtigl_1_1CTiglWingProfileNACA.html#aa93d62b572dd10f3d5ddaa51fd5c6715',1,'tigl::CTiglWingProfileNACA::HasBluntTE()'],['../classtigl_1_1CTiglWingProfilePointList.html#a7487a8bc6b9fe456679a3b927484db94',1,'tigl::CTiglWingProfilePointList::HasBluntTE()'],['../classtigl_1_1ITiglWingProfileAlgo.html#a7ff4ab4900f614e9931132425239efb7',1,'tigl::ITiglWingProfileAlgo::HasBluntTE()']]],
@@ -33,10 +33,11 @@ var searchData=
   ['haszeroscaling_30',['HasZeroScaling',['../classtigl_1_1CTiglTransformation.html#a946b668627a7bf2efef439a45ac564fa',1,'tigl::CTiglTransformation']]],
   ['hat_31',['HAT',['../namespacetigl_1_1generated.html#ade7fe84b5e53b3d948b798f1bd97a63ca0327dbaf7b1ea4b74195d361d7b85ebf',1,'tigl::generated']]],
   ['header_32',['header',['../classtigl_1_1CCPACSConfiguration.html#a59b0aeaaa05453bd801bd1fd1500a0bc',1,'tigl::CCPACSConfiguration']]],
-  ['height_33',['height',['../structtigl_1_1CCPACSFuselageProfile_1_1SizeCache.html#ad770eb27e5ad8ee97f7af863ac40a961',1,'tigl::CCPACSFuselageProfile::SizeCache']]],
-  ['high_20level_20parameters_34',['High-level Parameters',['../parameters_def.html',1,'index']]],
-  ['hingeless_35',['hingeless',['../namespacetigl_1_1generated.html#a2e5ba796d9eae298f2236b192e46ab0ba5a9820767a2e30112c60b2fff52e2df2',1,'tigl::generated']]],
-  ['hingepoints_36',['HingePoints',['../structtigl_1_1CCPACSLeadingEdgeDevice_1_1HingePoints.html',1,'tigl::CCPACSLeadingEdgeDevice::HingePoints'],['../structtigl_1_1CCPACSTrailingEdgeDevice_1_1HingePoints.html',1,'tigl::CCPACSTrailingEdgeDevice::HingePoints']]],
-  ['hitcount_37',['hitCount',['../classtigl_1_1TracePoint.html#a43013f1f8ad1a7b1bd2a613886c0a78b',1,'tigl::TracePoint']]],
-  ['hydraulic_38',['hydraulic',['../namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7af5f57dd2372e37507ff67bcfb82ad0bb',1,'tigl::generated']]]
+  ['heat_33',['heat',['../namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7a26a4dcd0d5d5b3cdfc5d2bf280b24374',1,'tigl::generated']]],
+  ['height_34',['height',['../structtigl_1_1CCPACSFuselageProfile_1_1SizeCache.html#ad770eb27e5ad8ee97f7af863ac40a961',1,'tigl::CCPACSFuselageProfile::SizeCache']]],
+  ['high_20level_20parameters_35',['High-level Parameters',['../parameters_def.html',1,'index']]],
+  ['hingeless_36',['hingeless',['../namespacetigl_1_1generated.html#a2e5ba796d9eae298f2236b192e46ab0ba5a9820767a2e30112c60b2fff52e2df2',1,'tigl::generated']]],
+  ['hingepoints_37',['HingePoints',['../structtigl_1_1CCPACSLeadingEdgeDevice_1_1HingePoints.html',1,'tigl::CCPACSLeadingEdgeDevice::HingePoints'],['../structtigl_1_1CCPACSTrailingEdgeDevice_1_1HingePoints.html',1,'tigl::CCPACSTrailingEdgeDevice::HingePoints']]],
+  ['hitcount_38',['hitCount',['../classtigl_1_1TracePoint.html#a43013f1f8ad1a7b1bd2a613886c0a78b',1,'tigl::TracePoint']]],
+  ['hydraulic_39',['hydraulic',['../namespacetigl_1_1generated.html#ab2d9e5db564972bc19ba8d3cee6fc3e7af5f57dd2372e37507ff67bcfb82ad0bb',1,'tigl::generated']]]
 ];

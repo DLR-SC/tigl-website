@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['surface_20area_20calculations_0',['Functions for surface area calculations',['../group__SurfaceAreaFunctions.html',1,'']]]
+  ['surface_20area_20calculations_0',['Functions for Surface Area Calculations',['../group__SurfaceAreaFunctions.html',1,'']]]
 ];

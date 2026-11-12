@@ -2,6 +2,7 @@ var namespacetigl =
 [
     [ "ControlSurfaceDeviceHelper", "namespacetigl_1_1ControlSurfaceDeviceHelper.html", [
       [ "calc_hinge_point", "namespacetigl_1_1ControlSurfaceDeviceHelper.html#a03ee331c5136bec4b774ae24a0e17c79", null ],
+      [ "GetBorderAirfoilTransformation", "namespacetigl_1_1ControlSurfaceDeviceHelper.html#a4987203cbcc4296799cdf69ff56e569d", null ],
       [ "GetNormalOfControlSurfaceDevice", "namespacetigl_1_1ControlSurfaceDeviceHelper.html#a2799536aaa792e226cd7f7a1fa290705", null ],
       [ "GetTransformedFlapShape", "namespacetigl_1_1ControlSurfaceDeviceHelper.html#a2f2eba88dfa93c06fabffa33642d9903", null ],
       [ "outerShapeGetLoft", "namespacetigl_1_1ControlSurfaceDeviceHelper.html#aeffa18c1c0ac92bc07a6aac8caf978c0", null ]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handling_20functions_0',['General TIGL handling functions',['../group__GeneralFunctions.html',1,'']]]
+  ['handling_20functions_0',['General TIGL Handling Functions',['../group__GeneralFunctions.html',1,'']]]
 ];

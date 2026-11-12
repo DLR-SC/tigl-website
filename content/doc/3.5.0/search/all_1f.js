@@ -63,7 +63,7 @@ var searchData=
   ['vmin_60',['vmin',['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#a349c057aabb504ec1918ee17b5394056',1,'tigl::CTiglRectGridSurface::AnnotatedFace']]],
   ['vminor_61',['vMinor',['../classVersion.html#a10b151cd0d2f83f78ed62ae32576c808',1,'Version']]],
   ['vnext_62',['VNext',['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#a252c9839aa0741ea99a67bdab076ded3',1,'tigl::CTiglRectGridSurface::AnnotatedFace::VNext()'],['../classtigl_1_1CTiglRectGridSurface_1_1AnnotatedFace.html#a9313dba7bbbc7f4a00e327dfaf224fb5',1,'tigl::CTiglRectGridSurface::AnnotatedFace::VNext() const']]],
-  ['volume_20calculations_63',['Functions for volume calculations',['../group__VolumeFunctions.html',1,'']]],
+  ['volume_20calculations_63',['Functions for Volume Calculations',['../group__VolumeFunctions.html',1,'']]],
   ['volumecache_64',['volumeCache',['../classtigl_1_1CCPACSWingSegment.html#a946aba49c0da4ba6dd0ff2e3142a1588',1,'tigl::CCPACSWingSegment']]],
   ['vparams_65',['vparams',['../classCTiglMakeLoft.html#aceeaaf6e67798ee80596cd8b0340aca5',1,'CTiglMakeLoft']]],
   ['vpatch_66',['vPatch',['../classVersion.html#a872cb3c5d989233747c4475b0dc65a54',1,'Version']]],

@@ -45,7 +45,7 @@ var searchData=
   ['log_5fmax_5flevel_42',['LOG_MAX_LEVEL',['../CTiglLogging_8h.html#aaba7ea47d8de80bb53fc76918ba7b534',1,'CTiglLogging.h']]],
   ['log_5fmin_5flevel_43',['LOG_MIN_LEVEL',['../CTiglLogging_8h.html#ab48526a24f804ca3bfef6424a7cb0052',1,'CTiglLogging.h']]],
   ['logfilestream_44',['logFileStream',['../classtigl_1_1CTiglFileLogger.html#a928c943c2e8d0b7332fa1fedb02db8cd',1,'tigl::CTiglFileLogger']]],
-  ['logging_20functions_45',['Logging functions.',['../group__LoggingFunctions.html',1,'']]],
+  ['logging_20functions_45',['Logging Functions',['../group__LoggingFunctions.html',1,'']]],
   ['logmessage_46',['LogMessage',['../classtigl_1_1CTiglConsoleLogger.html#a18556a1b135872845d898fa184c7f224',1,'tigl::CTiglConsoleLogger::LogMessage()'],['../classtigl_1_1CTiglFileLogger.html#a23fd3020c9d46292f8c79d16b6e3432a',1,'tigl::CTiglFileLogger::LogMessage()'],['../classtigl_1_1CTiglLogSplitter.html#aa036688f216ae5c4bcbf6f3e625eb21e',1,'tigl::CTiglLogSplitter::LogMessage()'],['../classtigl_1_1ITiglLogger.html#a72b390f60979e40faed40fec0d31dc63',1,'tigl::ITiglLogger::LogMessage()']]],
   ['logtoconsole_47',['LogToConsole',['../classtigl_1_1CTiglLogging.html#a4d374741f4070f5d8020427e221b37c7',1,'tigl::CTiglLogging']]],
   ['logtofile_48',['LogToFile',['../classtigl_1_1CTiglLogging.html#aad4dea1809155f9a4fffe6f69e31ee21',1,'tigl::CTiglLogging']]],

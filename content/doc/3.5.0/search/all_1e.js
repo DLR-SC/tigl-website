@@ -58,7 +58,7 @@ var searchData=
   ['usablevolume_55',['usableVolume',['../namespacetigl_1_1generated.html#add65404f90827e0e50fe7e36e4bc2ec0a8e282775daf659f52aed8af2bbdd5006',1,'tigl::generated']]],
   ['usage_56',['Usage',['../lib_usage.html',1,'API Usage'],['../gui_console.html#console_basic',1,'Basic Usage']]],
   ['using_20the_20pixi_20package_20manager_57',['Using the Pixi package manager',['../tigl_installation.html#pixi',1,'']]],
-  ['utility_20functions_58',['Generic utility functions.',['../group__ComponentUtilityFunctions.html',1,'']]],
+  ['utility_20functions_58',['Generic Utility Functions',['../group__ComponentUtilityFunctions.html',1,'']]],
   ['uvresult_59',['UVResult',['../structUVResult.html',1,'']]],
   ['uvtoetaxsi_60',['uvToEtaXsi',['../classtigl_1_1CCPACSWingSegment.html#af11bd4a2e3be6f02a96289f7034fa166',1,'tigl::CCPACSWingSegment']]]
 ];
